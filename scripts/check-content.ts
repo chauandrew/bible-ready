@@ -12,14 +12,24 @@ import { findAmbiguities } from "../lib/generate";
 
 const CONTENT_ROOT = join(__dirname, "..", "content");
 const errors: string[] = [];
+/** Printed but non-fatal: content the generator already refuses to build a
+ * question from, so nothing broken ships — it just isn't pulling its weight. */
+const warnings: string[] = [];
 
 // Standard ESV verse counts per book (versification matches KJV/ESV for
 // nearly all books). Only books actually present in content/ are checked;
 // this is deliberately not filled out for all 66 until they're needed.
 const VERSE_COUNTS: Record<string, number> = {
   genesis: 1533,
+  exodus: 1213,
+  psalms: 2461,
 };
 const VERSE_BUDGET_PCT = 0.25;
+/** Crossway's ESV permission is capped in absolute verses across the whole work,
+ * not just as a share of each book — a percentage gate alone would wave through
+ * 615 verses of Psalms. Counted across every book in content/. */
+const VERSE_BUDGET_TOTAL = 500;
+let totalVersesQuoted = 0;
 
 function loadBook(bookId: string) {
   const dir = join(CONTENT_ROOT, bookId);
@@ -50,6 +60,13 @@ function wordCount(s: string): number {
 
 const CHAPTER_SUMMARY_MIN_WORDS = 15;
 const CHAPTER_SUMMARY_MAX_WORDS = 45;
+/** Share of a book's authored questions whose correct option may be the single
+ * longest. Pure chance on four options is 25%; this leaves room without letting
+ * the pattern become a strategy. */
+const LENGTH_TELL_MAX = 0.5;
+/** Share of words two correct answers may have in common before they count as
+ * the same question asked twice. */
+const NEAR_DUPLICATE_OVERLAP = 0.7;
 
 function checkBook(bookId: string) {
   const dirents = readdirSync(CONTENT_ROOT, { withFileTypes: true });
@@ -100,14 +117,32 @@ function checkBook(bookId: string) {
   if (sortedArcs.length !== arcs.length || sortedArcs.length !== book.arcOrder.length) {
     errors.push(`arcs: arcOrder does not exactly match the set of arcs`);
   }
+  // Holds for every book: a backwards range is always wrong. It used to be
+  // checked only for contiguous books, leaving "selection" books unguarded.
+  for (const arc of arcs) {
+    if (arc.endChapter < arc.startChapter) {
+      errors.push(`arcs: "${arc.id}" has endChapter (${arc.endChapter}) before startChapter (${arc.startChapter})`);
+    }
+  }
+  // A selection arc's range is display metadata rather than membership, but it
+  // still has to bracket the chapters actually assigned to it.
+  if (isSelection) {
+    for (const arc of arcs) {
+      const members = chapters.filter((c) => c.arcId === arc.id).map((c) => c.number);
+      const outside = members.filter((n) => n < arc.startChapter || n > arc.endChapter);
+      if (outside.length) {
+        errors.push(
+          `arcs: "${arc.id}" displays range ${arc.startChapter}-${arc.endChapter} but contains chapter(s) ${outside.join(", ")}`
+        );
+      }
+    }
+  }
+
   if (!isSelection) {
     let expectedStart = 1;
     for (const arc of sortedArcs) {
       if (arc.startChapter !== expectedStart) {
         errors.push(`arcs: "${arc.id}" starts at ${arc.startChapter}, expected ${expectedStart} (gap or overlap)`);
-      }
-      if (arc.endChapter < arc.startChapter) {
-        errors.push(`arcs: "${arc.id}" has endChapter before startChapter`);
       }
       expectedStart = arc.endChapter + 1;
     }
@@ -145,6 +180,31 @@ function checkBook(bookId: string) {
   }
   for (const q of quotes) {
     if (!peopleIds.has(q.speakerId)) errors.push(`quotes: "${q.id}" references missing person "${q.speakerId}"`);
+    // Events already got this check; quotes never did, so a quote's displayed
+    // citation could disagree with the verse it actually quotes.
+    if (q.citation.chapter !== q.chapter) {
+      errors.push(`quotes: "${q.id}" citation chapter (${q.citation.chapter}) does not match quote chapter (${q.chapter})`);
+    }
+    if (q.citation.verses !== undefined && q.citation.verses !== String(q.verse)) {
+      errors.push(`quotes: "${q.id}" citation verses ("${q.citation.verses}") does not match quote verse (${q.verse})`);
+    }
+  }
+
+  // Every item must belong to the book whose directory it lives in — the failure
+  // mode when a new book's files are copied from an existing one.
+  for (const [label, items] of [
+    ["arcs", arcs],
+    ["chapters", chapters],
+    ["events", events],
+    ["quotes", quotes],
+    ["questions", questions],
+    ["decks", decks],
+  ] as [string, { id: string; book: string }[]][]) {
+    for (const item of items) {
+      if (item.book !== book.id) {
+        errors.push(`${label}: "${item.id}" declares book "${item.book}" but lives under "${book.id}"`);
+      }
+    }
   }
   for (const p of people) {
     for (const rel of p.relations) {
@@ -167,10 +227,57 @@ function checkBook(bookId: string) {
     if (new Set(normalizedOptions).size !== normalizedOptions.length) {
       errors.push(`questions: "${q.id}" has duplicate options`);
     }
-    const chapterLeak = new RegExp(`(chapter|genesis)\\s+0*${q.citation.chapter}\\b`, "i");
+    // Derived from the book rather than hardcoded to "genesis", so "In Psalm 23..."
+    // is caught the same way "In Genesis 23..." is.
+    const names = [...new Set(["chapter", book.id, book.name, book.citationName ?? book.name])];
+    const chapterLeak = new RegExp(`(${names.join("|")})\\s+0*${q.citation.chapter}\\b`, "i");
     if (chapterLeak.test(q.prompt)) {
       errors.push(`questions: "${q.id}" prompt leaks its own chapter reference (${q.citation.chapter})`);
     }
+  }
+
+  // --- near-duplicate authored questions --------------------------------------
+  // Four questions once asked the same thing with near-identical correct answers,
+  // so a single 10-question quiz could serve two or three of them. Exact-match
+  // dedup misses that; compare the correct answers as word sets instead.
+  const answerWords = questions.map((q) => ({
+    id: q.id,
+    words: new Set(
+      q.options[q.correctIndex]
+        .toLowerCase()
+        .replace(/[^a-z0-9 ]/g, "")
+        .split(/\s+/)
+        .filter((w) => w.length > 3)
+    ),
+  }));
+  for (let i = 0; i < answerWords.length; i++) {
+    for (let j = i + 1; j < answerWords.length; j++) {
+      const a = answerWords[i], b = answerWords[j];
+      if (a.words.size < 4 || b.words.size < 4) continue;
+      const shared = [...a.words].filter((w) => b.words.has(w)).length;
+      const overlap = shared / Math.min(a.words.size, b.words.size);
+      if (overlap > NEAR_DUPLICATE_OVERLAP) {
+        errors.push(
+          `questions: "${a.id}" and "${b.id}" have near-identical correct answers (${Math.round(overlap * 100)}% shared words)`
+        );
+      }
+    }
+  }
+
+  // --- authored-answer length tell -------------------------------------------
+  // The classic multiple-choice giveaway: if the correct option is reliably the
+  // longest one, a reader who knows nothing scores well by picking the longest.
+  // Judged over the corpus, not per question — some answers are legitimately the
+  // meatiest option; what must not hold is the *pattern*.
+  const longestIsCorrect = questions.filter((q) => {
+    const lengths = q.options.map((o) => o.length);
+    const max = Math.max(...lengths);
+    return lengths[q.correctIndex] === max && lengths.filter((l) => l === max).length === 1;
+  }).length;
+  if (questions.length >= 10 && longestIsCorrect / questions.length > LENGTH_TELL_MAX) {
+    errors.push(
+      `questions: the correct option is the single longest in ${longestIsCorrect}/${questions.length} questions (${((longestIsCorrect / questions.length) * 100).toFixed(0)}%) — over the ${LENGTH_TELL_MAX * 100}% ceiling, so "pick the longest" beats knowing the material`
+    );
   }
 
   // --- event name cleanliness ----------------------------------------------
@@ -196,25 +303,30 @@ function checkBook(bookId: string) {
   for (const q of questions) if (!q.citation) errors.push(`questions: "${q.id}" missing citation`);
 
   // --- ESV license budget ----------------------------------------------------
-  const totalVerses = VERSE_COUNTS[bookId];
-  if (totalVerses) {
-    const byChapter = new Map<number, number[]>();
-    for (const q of quotes) {
-      const list = byChapter.get(q.chapter) ?? [];
-      list.push(q.verse);
-      byChapter.set(q.chapter, list);
-    }
-    for (const [chapter, verses] of byChapter) {
-      const sorted = [...verses].sort((a, b) => a - b);
-      for (let i = 1; i < sorted.length; i++) {
-        if (sorted[i] === sorted[i - 1] + 1) {
-          errors.push(
-            `quotes: chapter ${chapter} has contiguous quoted verses ${sorted[i - 1]}-${sorted[i]} — license is for individual verses only`
-          );
-        }
+  // The contiguity rule holds regardless of whether we know the book's length,
+  // so it runs unconditionally — it used to sit inside the branch below and was
+  // silently skipped for any book missing from VERSE_COUNTS.
+  const byChapter = new Map<number, number[]>();
+  for (const q of quotes) {
+    const list = byChapter.get(q.chapter) ?? [];
+    list.push(q.verse);
+    byChapter.set(q.chapter, list);
+  }
+  for (const [chapter, verses] of byChapter) {
+    const sorted = [...new Set(verses)].sort((a, b) => a - b);
+    for (let i = 1; i < sorted.length; i++) {
+      if (sorted[i] === sorted[i - 1] + 1) {
+        errors.push(
+          `quotes: chapter ${chapter} has contiguous quoted verses ${sorted[i - 1]}-${sorted[i]} — license is for individual verses only`
+        );
       }
     }
-    const uniqueQuoted = new Set(quotes.map((q) => `${q.chapter}:${q.verse}`)).size;
+  }
+
+  const uniqueQuoted = new Set(quotes.map((q) => `${q.chapter}:${q.verse}`)).size;
+  totalVersesQuoted += uniqueQuoted;
+  const totalVerses = VERSE_COUNTS[bookId];
+  if (totalVerses) {
     const pct = uniqueQuoted / totalVerses;
     if (pct > VERSE_BUDGET_PCT) {
       errors.push(
@@ -222,13 +334,24 @@ function checkBook(bookId: string) {
       );
     }
   } else {
-    console.warn(`(no verse-count reference for "${bookId}" — skipping ESV budget check)`);
+    console.warn(`(no verse-count reference for "${bookId}" — skipping its ESV percentage check)`);
   }
 
-  // --- generated-question ambiguity (whole corpus) ----------------------------
-  const ambiguities = findAmbiguities({ book, arcs, chapters, people, events, quotes });
-  for (const problem of ambiguities) {
-    errors.push(`generated: ${problem.id} — ${problem.reason}`);
+  // --- generated-question ambiguity ------------------------------------------
+  // Once for the whole book, then once per arc — because /quiz/<arc> is its own
+  // module with its own generated pool, and the whole-book pass alone cannot see
+  // whether an arc-scoped quiz still has four options to offer.
+  const bookData = { book, arcs, chapters, people, events, quotes };
+  const report = (label: string, problem: { id: string; reason: string; severity?: string }) => {
+    const line = `${label}: ${problem.id} — ${problem.reason}`;
+    (problem.severity === "warn" ? warnings : errors).push(line);
+  };
+  for (const problem of findAmbiguities(bookData)) report("generated", problem);
+  for (const arc of arcs) {
+    const scopeChapters = chapters.filter((c) => c.arcId === arc.id).map((c) => c.number);
+    for (const problem of findAmbiguities({ ...bookData, scopeChapters })) {
+      report(`generated[module ${arc.id}]`, problem);
+    }
   }
 }
 
@@ -237,6 +360,18 @@ const books = readdirSync(CONTENT_ROOT, { withFileTypes: true })
   .map((d) => d.name);
 
 for (const bookId of books) checkBook(bookId);
+
+if (totalVersesQuoted > VERSE_BUDGET_TOTAL) {
+  errors.push(
+    `quotes: ${totalVersesQuoted} verses quoted across all books exceeds the ${VERSE_BUDGET_TOTAL}-verse ESV permission cap`
+  );
+}
+
+if (warnings.length) {
+  console.warn(`\ncheck:content warnings (${warnings.length}) — not failures, but content that generates nothing:\n`);
+  for (const w of warnings) console.warn(`  - ${w}`);
+  console.warn("");
+}
 
 if (errors.length) {
   console.error(`\ncheck:content failed with ${errors.length} problem(s):\n`);
