@@ -201,8 +201,16 @@ export function dataForBooks(bookIds: string[]): { data: BookData; questions: Au
 
 /** Every flashcard from every deck in the requested books, as one merged list — used both
  * for "the whole book, not just one category deck" and for "multiple books at a time". */
-export function cardsForBooks(bookIds: string[]): { front: string; back: string }[] {
-  const cards: { front: string; back: string }[] = [];
+export interface Flashcard {
+  front: string;
+  /** A few-word headline — `Event.shortName`, falling back to `name` for events that
+   * don't have one yet. */
+  backShort: string;
+  backLong: string;
+}
+
+export function cardsForBooks(bookIds: string[]): Flashcard[] {
+  const cards: Flashcard[] = [];
   for (const id of bookIds) {
     const content = booksContent[id];
     if (!content) continue;
@@ -211,7 +219,7 @@ export function cardsForBooks(bookIds: string[]): { front: string; back: string 
       for (const eventId of deck.cardEventIds) {
         const e = eventMap.get(eventId);
         if (!e) continue;
-        cards.push({ front: formatCitation(e.citation), back: `${e.name} — ${e.summary}` });
+        cards.push({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary });
       }
     }
   }

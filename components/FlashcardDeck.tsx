@@ -2,7 +2,13 @@
 
 import { useEffect, useState } from "react";
 
-export default function FlashcardDeck({ title, cards }: { title: string; cards: { front: string; back: string }[] }) {
+export default function FlashcardDeck({
+  title,
+  cards,
+}: {
+  title: string;
+  cards: { front: string; backShort: string; backLong: string }[];
+}) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const card = cards[index];
@@ -57,9 +63,20 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
         onClick={() => setFlipped(!flipped)}
         aria-pressed={flipped}
         aria-label={flipped ? "Card, showing the answer. Activate to flip back." : "Card, showing the reference. Activate to flip."}
-        style={{ width: "100%", minHeight: "clamp(180px, 28vw, 260px)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", fontSize: "1.15rem", cursor: "pointer", transition: "border-color 0.15s ease" }}
+        style={{ width: "100%", minHeight: "clamp(180px, 28vw, 260px)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", padding: "1.5rem", cursor: "pointer", transition: "border-color 0.15s ease" }}
       >
-        <span aria-live="polite">{flipped ? card.back : card.front}</span>
+        <span aria-live="polite">
+          {flipped ? (
+            <>
+              <div style={{ fontFamily: "var(--font-voice)", fontWeight: 700, fontSize: "1.3rem" }}>{card.backShort}</div>
+              <div style={{ fontFamily: "var(--font-sans)", fontWeight: 400, fontSize: "0.9rem", color: "var(--text-secondary)", marginTop: "0.6rem" }}>
+                {card.backLong}
+              </div>
+            </>
+          ) : (
+            <div style={{ fontSize: "1.15rem" }}>{card.front}</div>
+          )}
+        </span>
       </button>
       <p className="citation" style={{ textAlign: "center", marginBottom: "1rem" }}>
         Tap the card to flip · Space to flip · ← → to move

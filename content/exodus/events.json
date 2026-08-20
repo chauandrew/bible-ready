@@ -179,6 +179,7 @@
     "book": "exodus",
     "chapter": 3,
     "name": "God appears to Moses in the burning bush",
+    "shortName": "The burning bush",
     "citation": {
       "book": "exodus",
       "chapter": 3
@@ -196,6 +197,7 @@
     "book": "exodus",
     "chapter": 3,
     "name": "God commissions Moses to deliver Israel",
+    "shortName": "God commissions Moses",
     "citation": {
       "book": "exodus",
       "chapter": 3
@@ -213,6 +215,7 @@
     "book": "exodus",
     "chapter": 3,
     "name": "God reveals his name to Moses",
+    "shortName": "God reveals his name",
     "citation": {
       "book": "exodus",
       "chapter": 3
@@ -230,6 +233,7 @@
     "book": "exodus",
     "chapter": 4,
     "name": "God gives Moses miraculous signs to perform",
+    "shortName": "Moses' miraculous signs",
     "citation": {
       "book": "exodus",
       "chapter": 4
@@ -247,6 +251,7 @@
     "book": "exodus",
     "chapter": 4,
     "name": "Moses objects that he is slow of speech",
+    "shortName": "Moses objects",
     "citation": {
       "book": "exodus",
       "chapter": 4
@@ -264,6 +269,7 @@
     "book": "exodus",
     "chapter": 4,
     "name": "God appoints Aaron to speak for Moses",
+    "shortName": "God appoints Aaron",
     "citation": {
       "book": "exodus",
       "chapter": 4
@@ -281,6 +287,7 @@
     "book": "exodus",
     "chapter": 4,
     "name": "Moses and Aaron reunite at the mountain of God",
+    "shortName": "Moses and Aaron reunite",
     "citation": {
       "book": "exodus",
       "chapter": 4
@@ -298,6 +305,7 @@
     "book": "exodus",
     "chapter": 4,
     "name": "Moses and Aaron gather Israel's elders in Egypt",
+    "shortName": "Moses gathers Israel's elders",
     "citation": {
       "book": "exodus",
       "chapter": 4
@@ -401,6 +409,7 @@
     "book": "exodus",
     "chapter": 7,
     "name": "The Nile turns to blood",
+    "shortName": "The Nile turns to blood",
     "citation": {
       "book": "exodus",
       "chapter": 7
@@ -419,6 +428,7 @@
     "book": "exodus",
     "chapter": 8,
     "name": "Frogs overrun the land of Egypt",
+    "shortName": "The plague of frogs",
     "citation": {
       "book": "exodus",
       "chapter": 8
@@ -437,6 +447,7 @@
     "book": "exodus",
     "chapter": 8,
     "name": "The dust becomes gnats throughout Egypt",
+    "shortName": "The plague of gnats",
     "citation": {
       "book": "exodus",
       "chapter": 8
@@ -454,6 +465,7 @@
     "book": "exodus",
     "chapter": 8,
     "name": "Swarms of flies invade Egypt but spare Goshen",
+    "shortName": "The plague of flies",
     "citation": {
       "book": "exodus",
       "chapter": 8
@@ -472,6 +484,7 @@
     "book": "exodus",
     "chapter": 9,
     "name": "A plague kills the Egyptians' livestock",
+    "shortName": "The plague on livestock",
     "citation": {
       "book": "exodus",
       "chapter": 9
@@ -489,6 +502,7 @@
     "book": "exodus",
     "chapter": 9,
     "name": "Boils break out on the Egyptians",
+    "shortName": "The plague of boils",
     "citation": {
       "book": "exodus",
       "chapter": 9
@@ -507,6 +521,7 @@
     "book": "exodus",
     "chapter": 9,
     "name": "Hail devastates the crops and livestock of Egypt",
+    "shortName": "The plague of hail",
     "citation": {
       "book": "exodus",
       "chapter": 9
@@ -525,6 +540,7 @@
     "book": "exodus",
     "chapter": 10,
     "name": "Locusts strip Egypt's remaining crops",
+    "shortName": "The plague of locusts",
     "citation": {
       "book": "exodus",
       "chapter": 10
@@ -543,6 +559,7 @@
     "book": "exodus",
     "chapter": 10,
     "name": "Darkness covers the land of Egypt for three days",
+    "shortName": "The plague of darkness",
     "citation": {
       "book": "exodus",
       "chapter": 10
@@ -560,6 +577,7 @@
     "book": "exodus",
     "chapter": 11,
     "name": "God warns Moses of the coming death of the firstborn",
+    "shortName": "God warns of the firstborn's death",
     "citation": {
       "book": "exodus",
       "chapter": 11
@@ -577,6 +595,7 @@
     "book": "exodus",
     "chapter": 12,
     "name": "God institutes the Passover meal and instructions",
+    "shortName": "The first Passover",
     "citation": {
       "book": "exodus",
       "chapter": 12
@@ -594,6 +613,7 @@
     "book": "exodus",
     "chapter": 12,
     "name": "The tenth plague strikes every firstborn in Egypt",
+    "shortName": "The death of the firstborn",
     "citation": {
       "book": "exodus",
       "chapter": 12
@@ -610,6 +630,7 @@
     "book": "exodus",
     "chapter": 12,
     "name": "Israel departs Egypt from Rameses",
+    "shortName": "Israel departs Egypt",
     "citation": {
       "book": "exodus",
       "chapter": 12
@@ -628,6 +649,7 @@
     "book": "exodus",
     "chapter": 13,
     "name": "God commands the consecration of the firstborn",
+    "shortName": "Consecrating the firstborn",
     "citation": {
       "book": "exodus",
       "chapter": 13
@@ -646,6 +668,7 @@
     "book": "exodus",
     "chapter": 13,
     "name": "A pillar of cloud and fire leads Israel",
+    "shortName": "The pillar of cloud and fire",
     "citation": {
       "book": "exodus",
       "chapter": 13
@@ -663,6 +686,7 @@
     "book": "exodus",
     "chapter": 14,
     "name": "Pharaoh pursues Israel with his army",
+    "shortName": "Pharaoh pursues Israel",
     "citation": {
       "book": "exodus",
       "chapter": 14
@@ -680,6 +704,7 @@
     "book": "exodus",
     "chapter": 14,
     "name": "Israel crosses the Red Sea on dry ground",
+    "shortName": "Crossing the Red Sea",
     "citation": {
       "book": "exodus",
       "chapter": 14
@@ -697,6 +722,7 @@
     "book": "exodus",
     "chapter": 14,
     "name": "The sea closes over Pharaoh's army",
+    "shortName": "The sea closes on Pharaoh",
     "citation": {
       "book": "exodus",
       "chapter": 14

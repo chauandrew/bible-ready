@@ -133,6 +133,13 @@ export const EventSchema = z.object({
   /** Clean noun phrase, e.g. "Noah builds the ark". No trailing punctuation,
    * no "the moment when...", no leaked chapter references. */
   name: z.string(),
+  /** A few-word flashcard headline, e.g. "The flood" for an event named "The
+   * flood covers the whole earth" — deliberately shorter than `name` and
+   * allowed to repeat across events (several chapters can share a topic).
+   * Only used for flashcard display, never by the generator, so it doesn't
+   * need `name`'s distinctness guarantees. Optional — only events referenced
+   * by a flashcard deck need one; falls back to `name` when absent. */
+  shortName: z.string().optional(),
   citation: CitationSchema,
   /** Optional on purpose — most events aren't "about" a place. Only set this
    * when the location is itself part of the narrative (arriving in Egypt,
