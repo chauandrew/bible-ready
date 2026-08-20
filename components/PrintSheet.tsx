@@ -42,6 +42,23 @@ export default function PrintSheet({
                 {item.options.map((opt) => <li key={opt}>☐ {opt}</li>)}
               </ul>
             )}
+            {/* Sequence and match items used to print as a bare prompt with
+                nothing to order or match — unanswerable on paper. */}
+            {"displayItems" in item && (
+              <ul style={{ listStyle: "none", paddingLeft: "1rem", marginTop: "0.3rem" }}>
+                {item.displayItems.map((entry) => <li key={entry}>___ {entry}</li>)}
+              </ul>
+            )}
+            {"lefts" in item && (
+              <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem", paddingLeft: "1rem", marginTop: "0.3rem" }}>
+                <ul style={{ listStyle: "none", padding: 0 }}>
+                  {item.lefts.map((left) => <li key={left}>___ {left}</li>)}
+                </ul>
+                <ul style={{ listStyle: "none", padding: 0 }}>
+                  {item.rights.map((right, i) => <li key={right}>{String.fromCharCode(65 + i)}. {right}</li>)}
+                </ul>
+              </div>
+            )}
           </li>
         ))}
       </ol>
