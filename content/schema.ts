@@ -31,6 +31,14 @@ export const CoverageDepthSchema = z.enum(["narrative", "sparse", "argument", "s
 export const BookSchema = z.object({
   id: BookIdSchema,
   name: z.string(),
+  /** How the book reads in a citation or a "what is X about" prompt when that
+   * differs from `name` — "Psalm 23:1", not "Psalms 23:1". Defaults to `name`. */
+  citationName: z.string().optional(),
+  /** Wording for the questions generated from `Event.place`. Narrative books
+   * ask about real locations; a "selection" book may repurpose the field (a
+   * psalm's occasion, say), where "where does this happen" is nonsense. */
+  placeAsk: z.string().default("Where does this happen"),
+  placeMatchAsk: z.string().default("to where it happens"),
   chapterCount: z.number().int().positive(),
   coverageDepth: CoverageDepthSchema,
   arcOrder: z.array(z.string()),
@@ -91,7 +99,9 @@ export const EventSchema = z.object({
    * when the location is itself part of the narrative (arriving in Egypt,
    * crossing the Red Sea, meeting at a named site), since that's what makes
    * "where does this happen" a question worth asking. The generator skips
-   * "where"/matching questions entirely for events with no place set. */
+   * "where"/matching questions entirely for events with no place set.
+   * The place must not be named in `name` — "Abram builds an altar at Shechem"
+   * answers its own "where does this happen" question. */
   place: z.string().optional(),
   peopleIds: z.array(z.string()).default([]),
   /** Position within the chapter, used for sequence questions. */
@@ -111,7 +121,10 @@ export const QuoteSchema = z.object({
   chapter: z.number().int().positive(),
   verse: z.number().int().positive(),
   speakerId: z.string(),
-  /** Verbatim ESV text of a single verse. No ranges. */
+  /** Verbatim ESV text from a single verse. No ranges. Quote the *spoken words
+   * only* — the narrator's "And God said to Noah," frame names the speaker and
+   * hands away the answer to the generated "who says this" question. Narration
+   * with no speaker in it doesn't belong here at all. */
   text: z.string(),
   citation: CitationSchema,
 });

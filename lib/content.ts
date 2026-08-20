@@ -90,8 +90,12 @@ export function personsForEvent(event: Event): Person[] {
   return event.peopleIds.map((id) => personById.get(id)).filter((p): p is Person => !!p);
 }
 
+/** Book id -> how it reads in a citation. One entry per loaded book; `citationName`
+ * exists for books whose citation form differs from their name ("Psalm 23:1"). */
+const citationNames = new Map<string, string>([[genesis.id, genesis.citationName ?? genesis.name]]);
+
 export function formatCitation(c: { book: string; chapter: number; verses?: string }): string {
-  const bookName = c.book === "genesis" ? "Genesis" : c.book;
+  const bookName = citationNames.get(c.book) ?? c.book;
   return c.verses ? `${bookName} ${c.chapter}:${c.verses}` : `${bookName} ${c.chapter}`;
 }
 
@@ -109,13 +113,12 @@ export function dataForModule(moduleId: string): { data: BookData; questions: Au
   }
   const arc = arcById.get(moduleId);
   if (!arc) return null;
-  const arcChapters = chaptersForArc(arc.id);
-  const chapterNumbers = new Set(arcChapters.map((c) => c.number));
-  const arcEvents = events.filter((e) => chapterNumbers.has(e.chapter));
-  const arcQuotes = quotes.filter((q) => chapterNumbers.has(q.chapter));
-  const arcQuestions = authoredQuestions.filter((q) => chapterNumbers.has(q.citation.chapter));
+  // Pass the whole book and scope by chapter rather than handing the generator a
+  // pre-filtered slice: an arc restricts what gets *asked*, but its distractors
+  // still need the book-wide pools (a 2-chapter arc can't supply 3 wrong chapters).
+  const chapterNumbers = chaptersForArc(arc.id).map((c) => c.number);
   return {
-    data: { book: genesis, arcs: [arc], chapters: arcChapters, people, events: arcEvents, quotes: arcQuotes },
-    questions: arcQuestions,
+    data: { book: genesis, arcs, chapters, people, events, quotes, scopeChapters: chapterNumbers },
+    questions: authoredQuestions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
   };
 }

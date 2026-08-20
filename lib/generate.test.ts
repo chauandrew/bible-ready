@@ -8,7 +8,7 @@ import { hashSeed } from "./rng";
 // of a real corpus (50 chapters), unlike a two-chapter fixture would be.
 function fixture(): BookData {
   return {
-    book: { id: "genesis" },
+    book: { id: "genesis", name: "Genesis" },
     arcs: [{ id: "creation", book: "genesis", name: "Creation", startChapter: 1, endChapter: 5, summary: "s" }],
     chapters: [
       { id: "gen-1", book: "genesis", number: 1, title: "Creation of the world", summary: "s", arcId: "creation", eventIds: [] },

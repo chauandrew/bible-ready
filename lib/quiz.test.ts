@@ -6,7 +6,7 @@ import type { AuthoredQuestion } from "../content/schema";
 
 function fixtureData(): BookData {
   return {
-    book: { id: "genesis" },
+    book: { id: "genesis", name: "Genesis" },
     arcs: [{ id: "creation", book: "genesis", name: "Creation", startChapter: 1, endChapter: 5, summary: "s" }],
     chapters: [1, 2, 3, 4, 5].map((n) => ({
       id: `gen-${n}`,
