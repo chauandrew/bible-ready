@@ -167,7 +167,7 @@
       "chapter": 32,
       "verses": "1-5"
     },
-    "place": "a companion psalm to Psalm 51's confession of sin",
+    "place": "quoted by Paul in Romans 4 as evidence that God counts righteousness apart from works",
     "peopleIds": [
       "david"
     ],
@@ -255,7 +255,7 @@
       "chapter": 90,
       "verses": "12-17"
     },
-    "place": "the only psalm in the Psalter attributed to Moses",
+    "place": "the only psalm whose heading attributes it to Moses",
     "peopleIds": [
       "moses"
     ],
@@ -291,7 +291,7 @@
       "chapter": 100,
       "verses": "1-5"
     },
-    "place": "traditionally used as a call to worship in Christian liturgy",
+    "place": "the basis of the hymn \"All People That on Earth Do Dwell\", sung to the Old Hundredth tune",
     "peopleIds": [
       "the-psalmist"
     ],
@@ -345,7 +345,7 @@
       "chapter": 130,
       "verses": "1-6"
     },
-    "place": "one of the Psalms of Ascent, traditionally sung by pilgrims approaching Jerusalem",
+    "place": "known in Latin as \"De Profundis\", one of the church's seven penitential psalms",
     "peopleIds": [
       "the-psalmist"
     ],
@@ -397,7 +397,7 @@
       "chapter": 145,
       "verses": "1-9"
     },
-    "place": "an acrostic psalm - each verse begins with a successive letter of the Hebrew alphabet",
+    "place": "an acrostic psalm that works through the Hebrew alphabet in order",
     "peopleIds": [
       "david"
     ],
