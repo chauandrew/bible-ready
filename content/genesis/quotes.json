@@ -5,7 +5,7 @@
     "chapter": 1,
     "verse": 3,
     "speakerId": "god",
-    "text": "And God said, \"Let there be light,\" and there was light.",
+    "text": "Let there be light.",
     "citation": {
       "book": "genesis",
       "chapter": 1,
@@ -18,7 +18,7 @@
     "chapter": 2,
     "verse": 23,
     "speakerId": "adam",
-    "text": "Then the man said, \"This at last is bone of my bones and flesh of my flesh; she shall be called Woman, because she was taken out of Man.\"",
+    "text": "This at last is bone of my bones and flesh of my flesh; she shall be called Woman, because she was taken out of Man.",
     "citation": {
       "book": "genesis",
       "chapter": 2,
@@ -31,7 +31,7 @@
     "chapter": 3,
     "verse": 9,
     "speakerId": "god",
-    "text": "But the LORD God called to the man and said to him, \"Where are you?\"",
+    "text": "Where are you?",
     "citation": {
       "book": "genesis",
       "chapter": 3,
@@ -44,7 +44,7 @@
     "chapter": 4,
     "verse": 9,
     "speakerId": "cain",
-    "text": "Then the LORD said to Cain, \"Where is Abel your brother?\" He said, \"I do not know; am I my brother's keeper?\"",
+    "text": "I do not know; am I my brother's keeper?",
     "citation": {
       "book": "genesis",
       "chapter": 4,
@@ -57,7 +57,7 @@
     "chapter": 6,
     "verse": 13,
     "speakerId": "god",
-    "text": "And God said to Noah, \"I have determined to make an end of all flesh, for the earth is filled with violence through them. Behold, I will destroy them with the earth.\"",
+    "text": "I have determined to make an end of all flesh, for the earth is filled with violence through them. Behold, I will destroy them with the earth.",
     "citation": {
       "book": "genesis",
       "chapter": 6,
@@ -96,7 +96,7 @@
     "chapter": 12,
     "verse": 1,
     "speakerId": "god",
-    "text": "Now the LORD said to Abram, \"Go from your country and your kindred and your father's house to the land that I will show you.\"",
+    "text": "Go from your country and your kindred and your father's house to the land that I will show you.",
     "citation": {
       "book": "genesis",
       "chapter": 12,
@@ -104,16 +104,16 @@
     }
   },
   {
-    "id": "q-15-6",
+    "id": "q-15-5",
     "book": "genesis",
     "chapter": 15,
-    "verse": 6,
-    "speakerId": "abraham",
-    "text": "And he believed the LORD, and he counted it to him as righteousness.",
+    "verse": 5,
+    "speakerId": "god",
+    "text": "Look toward heaven, and number the stars, if you are able to number them.",
     "citation": {
       "book": "genesis",
       "chapter": 15,
-      "verses": "6"
+      "verses": "5"
     }
   },
   {
@@ -148,7 +148,7 @@
     "chapter": 21,
     "verse": 6,
     "speakerId": "sarah",
-    "text": "And Sarah said, \"God has made laughter for me; everyone who hears will laugh over me.\"",
+    "text": "God has made laughter for me; everyone who hears will laugh over me.",
     "citation": {
       "book": "genesis",
       "chapter": 21,
@@ -161,7 +161,7 @@
     "chapter": 22,
     "verse": 8,
     "speakerId": "abraham",
-    "text": "Abraham said, \"God will provide for himself the lamb for a burnt offering, my son.\" So they went both of them together.",
+    "text": "God will provide for himself the lamb for a burnt offering, my son.",
     "citation": {
       "book": "genesis",
       "chapter": 22,
@@ -174,7 +174,7 @@
     "chapter": 25,
     "verse": 32,
     "speakerId": "esau",
-    "text": "Esau said, \"I am about to die; of what use is a birthright to me?\"",
+    "text": "I am about to die; of what use is a birthright to me?",
     "citation": {
       "book": "genesis",
       "chapter": 25,
@@ -195,29 +195,29 @@
     }
   },
   {
-    "id": "q-29-20",
+    "id": "q-29-25",
     "book": "genesis",
     "chapter": 29,
-    "verse": 20,
+    "verse": 25,
     "speakerId": "jacob",
-    "text": "So Jacob served seven years for Rachel, and they seemed to him but a few days because of the love he had for her.",
+    "text": "What is this you have done to me? Did I not serve with you for Rachel? Why then have you deceived me?",
     "citation": {
       "book": "genesis",
       "chapter": 29,
-      "verses": "20"
+      "verses": "25"
     }
   },
   {
-    "id": "q-32-28",
+    "id": "q-32-26",
     "book": "genesis",
     "chapter": 32,
-    "verse": 28,
-    "speakerId": "god",
-    "text": "Then he said, \"Your name shall no longer be called Jacob, but Israel, for you have striven with God and with men, and have prevailed.\"",
+    "verse": 26,
+    "speakerId": "jacob",
+    "text": "I will not let you go unless you bless me.",
     "citation": {
       "book": "genesis",
       "chapter": 32,
-      "verses": "28"
+      "verses": "26"
     }
   },
   {
@@ -226,7 +226,7 @@
     "chapter": 37,
     "verse": 22,
     "speakerId": "reuben",
-    "text": "And Reuben said to them, \"Shed no blood; throw him into this pit that is in the wilderness, but do not lay a hand on him\"—that he might rescue him out of their hand to restore him to his father.",
+    "text": "Shed no blood; throw him into this pit that is in the wilderness, but do not lay a hand on him",
     "citation": {
       "book": "genesis",
       "chapter": 37,
@@ -247,16 +247,16 @@
     }
   },
   {
-    "id": "q-45-4",
+    "id": "q-45-5",
     "book": "genesis",
     "chapter": 45,
-    "verse": 4,
+    "verse": 5,
     "speakerId": "joseph",
-    "text": "So Joseph said to his brothers, \"Come near to me, please.\" And they came near. And he said, \"I am your brother, Joseph, whom you sold into Egypt.\"",
+    "text": "And now do not be distressed or angry with yourselves because you sold me here, for God sent me before you to preserve life.",
     "citation": {
       "book": "genesis",
       "chapter": 45,
-      "verses": "4"
+      "verses": "5"
     }
   },
   {
