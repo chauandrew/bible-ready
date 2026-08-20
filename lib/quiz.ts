@@ -89,6 +89,27 @@ export function selectQuizMulti(
   return selectFromPools(generatedPool, authoredPool, opts);
 }
 
+/** Picks the single global "question of the day" — same date -> same item, deterministically seeded. */
+export function selectDailyQuestion(
+  sources: { data: BookData; questions: AuthoredQuestion[] }[],
+  dateStr: string // "YYYY-MM-DD", Pacific-time day
+): QuizItem {
+  const generatedPool = sources.flatMap((s) => generateAll(s.data));
+  const authoredPool = sources.flatMap((s) => s.questions);
+  const combined: QuizItem[] = [
+    ...authoredPool.map((q) => toRuntimeAuthored(q, hashSeed(`qotd:${dateStr}:${q.id}`))),
+    ...generatedPool.map((g) => {
+      const itemSeed = hashSeed(`qotd:${dateStr}:${g.id}`);
+      if (g.type === "sequence") return toRuntimeSequence(g as GeneratedSequence, itemSeed);
+      if (g.type === "match") return toRuntimeMatch(g as GeneratedMatch, itemSeed);
+      if (g.type === "free-response") return toRuntimeFreeResponse(g as GeneratedFreeResponse);
+      return toRuntimeMC(g as GeneratedMC, itemSeed);
+    }),
+  ];
+  const index = hashSeed(`qotd:${dateStr}`) % combined.length;
+  return combined[index];
+}
+
 function selectFromPools(
   generatedPool: GeneratedItem[],
   authoredQuestions: AuthoredQuestion[],

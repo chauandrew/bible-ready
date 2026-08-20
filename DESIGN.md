@@ -182,6 +182,15 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   anything). Add it to `wiredBookIds` once that page treatment exists.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
+- **Question of the Day (`/qotd`) is Phase 1 only.** One deterministic daily
+  question (`selectDailyQuestion` in `lib/quiz.ts`, seeded off a
+  Pacific-time date string the same way `selectQuiz`/`selectQuizMulti` seed
+  off a URL param), a local timer, and a results screen — all still 100%
+  static, no backend. There's no cross-user percentile/leaderboard yet;
+  that's Phase 2, which will add a small, scoped Supabase (Postgres + RLS)
+  exception to the "no backend" architecture below — see the plan this was
+  built from for the schema. Until then, `lib/dailyQuestion.ts`'s
+  `QotdResult` percentile fields are always empty.
 
 ## Checklist: adding a new book
 
