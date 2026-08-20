@@ -513,7 +513,6 @@
       "book": "genesis",
       "chapter": 10
     },
-    "place": "Shinar",
     "peopleIds": [
       "nimrod"
     ],
@@ -530,7 +529,6 @@
       "book": "genesis",
       "chapter": 11
     },
-    "place": "Babel",
     "peopleIds": [],
     "order": 0,
     "summary": "The people settle in Shinar and set out to build a city and a tower reaching to the heavens.",
@@ -561,7 +559,6 @@
       "book": "genesis",
       "chapter": 11
     },
-    "place": "Ur of the Chaldeans",
     "peopleIds": [
       "abraham"
     ],
@@ -578,7 +575,6 @@
       "book": "genesis",
       "chapter": 11
     },
-    "place": "Haran",
     "peopleIds": [
       "abraham"
     ],
@@ -595,7 +591,6 @@
       "book": "genesis",
       "chapter": 12
     },
-    "place": "Haran",
     "peopleIds": [
       "god",
       "abraham"
@@ -613,7 +608,6 @@
       "book": "genesis",
       "chapter": 12
     },
-    "place": "Shechem",
     "peopleIds": [
       "abraham"
     ],
@@ -630,7 +624,6 @@
       "book": "genesis",
       "chapter": 12
     },
-    "place": "Egypt",
     "peopleIds": [
       "abraham",
       "sarah"
@@ -648,7 +641,6 @@
       "book": "genesis",
       "chapter": 13
     },
-    "place": "Bethel",
     "peopleIds": [
       "abraham",
       "lot"
@@ -872,7 +864,6 @@
       "book": "genesis",
       "chapter": 19
     },
-    "place": "Sodom",
     "peopleIds": [
       "lot"
     ],
@@ -905,6 +896,7 @@
       "book": "genesis",
       "chapter": 20
     },
+    "place": "Gerar",
     "peopleIds": [
       "abraham",
       "sarah"
@@ -1045,7 +1037,6 @@
       "book": "genesis",
       "chapter": 23
     },
-    "place": "Hebron",
     "peopleIds": [
       "abraham"
     ],
@@ -1078,6 +1069,7 @@
       "book": "genesis",
       "chapter": 24
     },
+    "place": "the city of Nahor",
     "peopleIds": [
       "rebekah"
     ],
@@ -1244,7 +1236,7 @@
     "id": "e29-0",
     "book": "genesis",
     "chapter": 29,
-    "name": "Jacob meets Rachel at the well near Haran",
+    "name": "Jacob meets Rachel at the well",
     "citation": {
       "book": "genesis",
       "chapter": 29
@@ -1356,7 +1348,6 @@
       "book": "genesis",
       "chapter": 31
     },
-    "place": "Gilead",
     "peopleIds": [
       "jacob",
       "laban"
@@ -1420,7 +1411,7 @@
     "id": "e33-1",
     "book": "genesis",
     "chapter": 33,
-    "name": "Jacob settles near Shechem and buys land",
+    "name": "Jacob buys a field from the sons of Hamor",
     "citation": {
       "book": "genesis",
       "chapter": 33
@@ -1471,7 +1462,7 @@
     "id": "e35-0",
     "book": "genesis",
     "chapter": 35,
-    "name": "Jacob returns to Bethel and builds an altar",
+    "name": "Jacob purifies his household and builds an altar",
     "citation": {
       "book": "genesis",
       "chapter": 35
@@ -1562,7 +1553,6 @@
       "book": "genesis",
       "chapter": 37
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "reuben",
@@ -1644,7 +1634,7 @@
     "id": "e40-0",
     "book": "genesis",
     "chapter": 40,
-    "name": "Joseph interprets the cupbearer and baker's dreams in prison",
+    "name": "Joseph interprets the cupbearer and baker's dreams",
     "citation": {
       "book": "genesis",
       "chapter": 40
@@ -1677,7 +1667,7 @@
     "id": "e41-0",
     "book": "genesis",
     "chapter": 41,
-    "name": "Joseph interprets Pharaoh's dreams of famine",
+    "name": "Joseph interprets dreams of seven fat and seven thin years",
     "citation": {
       "book": "genesis",
       "chapter": 41
@@ -1733,7 +1723,6 @@
       "book": "genesis",
       "chapter": 42
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "reuben",
@@ -1870,7 +1859,6 @@
       "book": "genesis",
       "chapter": 46
     },
-    "place": "Egypt",
     "peopleIds": [
       "jacob"
     ],
@@ -1999,7 +1987,7 @@
     "id": "e50-0",
     "book": "genesis",
     "chapter": 50,
-    "name": "Jacob is buried in the cave of Machpelah in Canaan",
+    "name": "Jacob is buried in the cave of Machpelah",
     "citation": {
       "book": "genesis",
       "chapter": 50
