@@ -5,7 +5,7 @@ import { useRouter } from "next/navigation";
 /** Generates a fresh seed per click and jumps straight into a running quiz —
  * QuizSetup already auto-starts when `?s=` is present, so this skips its
  * "10 questions. Start" screen entirely rather than duplicating that logic. */
-export default function QuickQuizCard({ bookId, bookName }: { bookId: string; bookName: string }) {
+export default function QuickQuizCard({ bookId }: { bookId: string }) {
   const router = useRouter();
 
   function start() {
@@ -15,7 +15,7 @@ export default function QuickQuizCard({ bookId, bookName }: { bookId: string; bo
 
   return (
     <button type="button" className="card" onClick={start}>
-      <div style={{ fontWeight: 600, color: "var(--text)" }}>Quick quiz — all of {bookName}</div>
+      <div style={{ fontWeight: 600, color: "var(--text)" }}>Quick Quiz</div>
       <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
         10 mixed questions, ends with your score.
       </div>
