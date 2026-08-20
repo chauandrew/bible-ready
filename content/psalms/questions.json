@@ -53,7 +53,7 @@
     "id": "psalms-q6",
     "book": "psalms",
     "category": "character",
-    "prompt": "Which king wrote the largest share of the psalms in this collection, including songs of both deep sorrow and exuberant praise?",
+    "prompt": "Which king is credited with the largest share of the psalms in this collection, including songs of both deep sorrow and exuberant praise?",
     "options": ["David", "Solomon", "Hezekiah", "Josiah"],
     "correctIndex": 0,
     "citation": { "book": "psalms", "chapter": 103 }
@@ -272,7 +272,7 @@
     "id": "psalms-q22",
     "book": "psalms",
     "category": "covenant",
-    "prompt": "The psalm welcoming 'the King of glory' entering the temple gates echoes which covenant theme?",
+    "prompt": "The psalm welcoming 'the King of glory' in through the city's ancient gates echoes which covenant theme?",
     "options": [
       "God's kingship over Israel and its worship",
       "The covenant with Noah after the flood",
@@ -286,7 +286,7 @@
     "id": "psalms-q23",
     "book": "psalms",
     "category": "covenant",
-    "prompt": "Which promise underlies the confidence of the psalm 'God is our refuge and strength' that Zion will not be moved?",
+    "prompt": "Which promise underlies the confidence of the psalm 'God is our refuge and strength' that the city of God will not be moved?",
     "options": [
       "God's covenant commitment to dwell with and defend his people",
       "A treaty with a foreign king",
@@ -300,14 +300,15 @@
     "id": "psalms-q24",
     "book": "psalms",
     "category": "covenant",
-    "prompt": "The psalm reflecting on human frailty and asking God to 'teach us to number our days' looks back to which earlier era?",
+    "prompt": "In the psalm attributed to Moses, what does the opening line call God, grounding the whole prayer in his long relationship with his people?",
     "options": [
-      "Moses and the wilderness generation",
-      "Abraham and the patriarchs",
-      "David and the united kingdom",
-      "Solomon and the temple's dedication"
+      "Our dwelling place in all generations",
+      "Our rock and our redeemer",
+      "A sun and shield",
+      "Our refuge and strength"
     ],
     "correctIndex": 0,
-    "citation": { "book": "psalms", "chapter": 90 }
+    "citation": { "book": "psalms", "chapter": 90 },
+    "explanation": "It opens \"Lord, you have been our dwelling place in all generations.\""
   }
 ]
