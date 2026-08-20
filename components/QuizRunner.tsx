@@ -3,7 +3,7 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect, categoryOf } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
 import { recordSession, clearMissed } from "@/lib/progress";
 import { formatCitation, chapterSummaryFor } from "@/lib/content";
@@ -96,13 +96,25 @@ function SequenceQuestion({
   return (
     <div>
       <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {!checked && chosen.length > 0 && (
+        <p className="citation" style={{ marginBottom: "0.4rem" }}>Tap a placed event to undo it.</p>
+      )}
       {chosen.length > 0 && (
         <ol style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", marginBottom: "0.75rem", paddingLeft: "1.2rem" }}>
           {chosen.map((c, i) => (
-            <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : undefined}>
-              {checked && <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>}
-              {checked && <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>}
-              {c}
+            <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : { marginBottom: "0.35rem" }}>
+              {checked ? (
+                <>
+                  <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>
+                  <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>
+                  {c}
+                </>
+              ) : (
+                <button type="button" className="option" style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem" }} onClick={() => setChosen(chosen.filter((x) => x !== c))}>
+                  {c}
+                  <span className="sr-only"> — tap to remove</span>
+                </button>
+              )}
             </li>
           ))}
         </ol>
@@ -437,7 +449,7 @@ export default function QuizRunner({
           </button>
         </div>
         <div className="eyebrow">
-          {index + 1} / {items.length} · {categoryOf(item)}
+          {index + 1} / {items.length}
         </div>
       </div>
       <div
