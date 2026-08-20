@@ -93,7 +93,6 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * own section yet.
  */
 export const wiredBookIds: string[] = ["genesis", "exodus"];
-export const wiredBooks: Book[] = wiredBookIds.map((id) => booksContent[id].book);
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

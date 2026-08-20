@@ -1,5 +1,5 @@
 import type { Arc, Chapter, Event, Person, Quote } from "../content/schema";
-import { mulberry32, hashSeed, shuffle } from "./rng";
+import { mulberry32, shuffle } from "./rng";
 
 /**
  * The generator: turns the events/chapters/quotes backbone into quiz items.
@@ -406,12 +406,6 @@ export function toRuntimeMC(item: GeneratedMC, seed: number): RuntimeMC {
     correctIndex: options.indexOf(item.correctAnswer),
     citation: item.citation,
   };
-}
-
-/** Deterministically pick `count` items from the exhaustive generated pool for a given seed string. */
-export function pickGenerated<T extends { id: string }>(pool: T[], seedStr: string, count: number): T[] {
-  const rand = mulberry32(hashSeed(seedStr));
-  return shuffle(pool, rand).slice(0, count);
 }
 
 // ---------------------------------------------------------------------------
