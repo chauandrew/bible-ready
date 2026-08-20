@@ -36,13 +36,13 @@
     "citation": {"book": "exodus", "chapter": 4, "verses": "10"}
   },
   {
-    "id": "exo-q-5-1",
+    "id": "exo-q-5-2",
     "book": "exodus",
     "chapter": 5,
-    "verse": 1,
-    "speakerId": "moses",
-    "text": "Let my people go, that they may hold a feast to me in the wilderness.",
-    "citation": {"book": "exodus", "chapter": 5, "verses": "1"}
+    "verse": 2,
+    "speakerId": "pharaoh",
+    "text": "Who is the LORD, that I should obey his voice and let Israel go? I do not know the LORD, and moreover, I will not let Israel go.",
+    "citation": {"book": "exodus", "chapter": 5, "verses": "2"}
   },
   {
     "id": "exo-q-6-6",
