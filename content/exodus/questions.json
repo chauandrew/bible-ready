@@ -123,16 +123,16 @@
     "id": "exo-q-arc-4",
     "book": "exodus",
     "category": "arc",
-    "prompt": "What must happen before Israel can actually leave, once Pharaoh finally agrees to release them?",
+    "prompt": "In what order do the last events in Egypt happen?",
     "options": [
-      "They must keep the Passover and then travel from Rameses toward the wilderness",
-      "They must first defeat Pharaoh's army in battle",
-      "They must wait forty years in Goshen",
-      "They must rebuild the cities they constructed for Pharaoh"
+      "Israel keeps the Passover, the firstborn die, Pharaoh releases Israel, and the people leave Rameses",
+      "Pharaoh releases Israel, the people leave Rameses, and they keep the first Passover on the road",
+      "The firstborn die, Israel keeps the Passover, and Pharaoh's army escorts the people to the border",
+      "Israel leaves Rameses, waits forty years in Goshen, and then keeps the first Passover"
     ],
     "correctIndex": 0,
     "citation": {"book": "exodus", "chapter": 12},
-    "explanation": "Israel departs from Rameses right after the Passover night."
+    "explanation": "Passover night comes first; the deaths at midnight are what finally make Pharaoh send Israel out (12:29-37)."
   },
   {
     "id": "exo-q-arc-5",
