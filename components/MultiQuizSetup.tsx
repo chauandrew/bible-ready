@@ -11,10 +11,8 @@ export default function MultiQuizSetup({ defaultCount = 15 }: { defaultCount?: n
   const router = useRouter();
   const params = useSearchParams();
   const seedFromUrl = params.get("s");
-  const modeFromUrl = params.get("mode") === "quiz" ? "quiz" : params.get("mode") === "study" ? "study" : null;
   const booksFromUrl = params.get("books")?.split(",").filter(Boolean) ?? [];
 
-  const [mode, setMode] = useState<"study" | "quiz">(modeFromUrl ?? "study");
   const [selected, setSelected] = useState<Set<string>>(
     new Set(booksFromUrl.length ? booksFromUrl : bookRegistry.map((b) => b.id))
   );
@@ -25,7 +23,7 @@ export default function MultiQuizSetup({ defaultCount = 15 }: { defaultCount?: n
     const bookIds = booksFromUrl.length ? booksFromUrl : [...selected];
     const sources = dataForBooks(bookIds);
     const items = selectQuizMulti(sources, { seedStr: `bible:${bookIds.join("+")}:${seed}`, targetCount: defaultCount });
-    return <QuizRunner items={items} mode={mode} moduleId="bible" backHref="/" backLabel="Back to all books" />;
+    return <QuizRunner items={items} mode="study" moduleId="bible" backHref="/" backLabel="Back to all books" />;
   }
 
   return (
@@ -39,24 +37,12 @@ export default function MultiQuizSetup({ defaultCount = 15 }: { defaultCount?: n
 
       <BookPicker books={bookRegistry} selected={selected} onChange={setSelected} />
 
-      <div className="card" style={{ marginBottom: "1rem" }}>
-        <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>Mode</p>
-        <div style={{ display: "flex", gap: "0.5rem" }}>
-          <button type="button" className="btn" style={mode === "study" ? { borderColor: "var(--accent)" } : undefined} onClick={() => setMode("study")}>
-            Study — reveal after each question
-          </button>
-          <button type="button" className="btn" style={mode === "quiz" ? { borderColor: "var(--accent)" } : undefined} onClick={() => setMode("quiz")}>
-            Quiz — review at the end
-          </button>
-        </div>
-      </div>
-
       <button
         type="button"
         className="btn btn-primary"
         disabled={selected.size === 0}
         onClick={() => {
-          router.replace(`?s=${seed}&mode=${mode}&books=${[...selected].join(",")}`);
+          router.replace(`?s=${seed}&books=${[...selected].join(",")}`);
           setStarted(true);
         }}
       >
