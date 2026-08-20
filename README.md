@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bible Ready
 
-## Getting Started
+A study and quiz app for the book of Genesis, built for youth ministry leaders and
+the high schoolers they teach. Domain knowledge over trivia: what happens, where,
+and to whom — not theological debate.
 
-First, run the development server:
+Static site, no backend, no database. Content is developer-authored JSON validated
+by Zod. Progress is tracked in the browser via `localStorage`.
+
+## Develop
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Content
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Genesis content lives in `content/genesis/*.json`, validated against `content/schema.ts`.
+Quiz questions come from two sources:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Generated** — derived at runtime from `events.json`/`quotes.json`/`chapters.json`
+  by `lib/generate.ts` (which chapter, where, who says it, what a chapter is about,
+  event ordering, matching). Exhaustively validated at build time so nothing ambiguous
+  ships.
+- **Authored** — hand-written thematic questions in `questions.json` (themes, arcs,
+  covenants, characters, the book's argument) that a generator can't produce.
 
-## Learn More
+Run the content gate before committing any content change:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run check:content
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Test
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm test
+```
 
-## Deploy on Vercel
+## Build
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Fully static (`output: "export"` in `next.config.ts`) — no serverless functions.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+```

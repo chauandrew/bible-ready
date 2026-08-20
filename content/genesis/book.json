@@ -1,0 +1,17 @@
+{
+  "id": "genesis",
+  "name": "Genesis",
+  "chapterCount": 50,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "creation",
+    "fall",
+    "flood",
+    "nations",
+    "abraham-call",
+    "abraham-family",
+    "jacob-esau",
+    "jacob-family",
+    "joseph"
+  ]
+}

@@ -1,0 +1,94 @@
+import { test } from "node:test";
+import assert from "node:assert/strict";
+import { selectQuiz, scoreQuiz, gapReport, type Answer } from "./quiz";
+import type { BookData } from "./generate";
+import type { AuthoredQuestion } from "../content/schema";
+
+function fixtureData(): BookData {
+  return {
+    book: { id: "genesis", name: "Genesis" },
+    arcs: [{ id: "creation", book: "genesis", name: "Creation", startChapter: 1, endChapter: 5, summary: "s" }],
+    chapters: [1, 2, 3, 4, 5].map((n) => ({
+      id: `gen-${n}`,
+      book: "genesis",
+      number: n,
+      title: `Chapter ${n} title`,
+      summary: "s",
+      arcId: "creation",
+      eventIds: [],
+    })),
+    people: [{ id: "adam", name: "Adam", summary: "s", firstAppearance: { book: "genesis", chapter: 1 }, relations: [] }],
+    events: [1, 2, 3, 4, 5].map((n) => ({
+      id: `e${n}`,
+      book: "genesis",
+      chapter: n,
+      name: `Event number ${n}`,
+      citation: { book: "genesis", chapter: n },
+      place: `place-${n}`,
+      peopleIds: ["adam"],
+      order: 0,
+      summary: "s",
+      notable: true,
+    })),
+    quotes: [{ id: "q1", book: "genesis", chapter: 1, verse: 1, speakerId: "adam", text: "hello", citation: { book: "genesis", chapter: 1, verses: "1" } }],
+  };
+}
+
+const authored: AuthoredQuestion[] = [
+  {
+    id: "a1",
+    book: "genesis",
+    category: "theme",
+    prompt: "What is the theme?",
+    options: ["Grace", "Law", "Wrath", "Silence"],
+    correctIndex: 0,
+    citation: { book: "genesis", chapter: 1 },
+  },
+];
+
+test("selectQuiz with the same seed produces an identical question sequence", () => {
+  const data = fixtureData();
+  const a = selectQuiz(data, authored, { seedStr: "replay-seed", targetCount: 5 });
+  const b = selectQuiz(data, authored, { seedStr: "replay-seed", targetCount: 5 });
+  assert.deepEqual(a.map((i) => i.id), b.map((i) => i.id));
+  assert.deepEqual(a, b);
+});
+
+test("selectQuiz falls back to generated-only when authored pool is empty", () => {
+  const data = fixtureData();
+  const items = selectQuiz(data, [], { seedStr: "no-authored", targetCount: 5 });
+  assert.equal(items.length, 5);
+  assert.ok(items.every((i) => i.kind === "generated"));
+});
+
+test("scoreQuiz and gapReport produce expected percentages for a known answer key", () => {
+  const data = fixtureData();
+  const items = selectQuiz(data, authored, { seedStr: "score-test", targetCount: 5 });
+
+  // Answer everything correctly except deliberately miss one MC item.
+  let missedOne = false;
+  const answers: Answer[] = items.map((item) => {
+    if (item.kind === "authored" || item.type === "chapter" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+      if (!missedOne) {
+        missedOne = true;
+        return { itemId: item.id, kind: "mc", selectedIndex: (item.correctIndex + 1) % item.options.length };
+      }
+      return { itemId: item.id, kind: "mc", selectedIndex: item.correctIndex };
+    }
+    if (item.type === "sequence") return { itemId: item.id, kind: "sequence", order: item.correctOrder };
+    if (item.type === "match") return { itemId: item.id, kind: "match", pairs: item.correctPairs };
+    throw new Error(`unexpected item type in test fixture: ${item.id}`);
+  });
+
+  const score = scoreQuiz(items, answers);
+  assert.equal(score.total, 5);
+  assert.equal(score.correct, 4);
+  assert.equal(score.percent, 80);
+  assert.equal(score.missedIds.length, 1);
+
+  const report = gapReport(items, answers);
+  const totalRight = Object.values(report).reduce((sum, r) => sum + r.right, 0);
+  const totalWrong = Object.values(report).reduce((sum, r) => sum + r.wrong, 0);
+  assert.equal(totalRight, 4);
+  assert.equal(totalWrong, 1);
+});

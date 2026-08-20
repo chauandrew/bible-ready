@@ -1,0 +1,104 @@
+[
+  {
+    "id": "deck-creation-fall",
+    "book": "genesis",
+    "name": "Creation and the fall",
+    "cardEventIds": [
+      "e1-0",
+      "e1-1",
+      "e1-2",
+      "e1-3",
+      "e2-0",
+      "e2-1",
+      "e2-2",
+      "e3-0",
+      "e3-1",
+      "e3-2",
+      "e3-3",
+      "e4-0"
+    ]
+  },
+  {
+    "id": "deck-flood",
+    "book": "genesis",
+    "name": "Noah and the flood",
+    "cardEventIds": [
+      "e6-0",
+      "e6-1",
+      "e6-2",
+      "e7-0",
+      "e7-1",
+      "e7-2",
+      "e8-0",
+      "e8-1",
+      "e8-2",
+      "e9-0",
+      "e9-1",
+      "e9-2"
+    ]
+  },
+  {
+    "id": "deck-abraham",
+    "book": "genesis",
+    "name": "Abraham's covenant journey",
+    "cardEventIds": [
+      "e12-0",
+      "e12-1",
+      "e12-2",
+      "e13-0",
+      "e13-1",
+      "e14-0",
+      "e14-1",
+      "e15-0",
+      "e15-1",
+      "e16-0",
+      "e16-1",
+      "e17-0",
+      "e17-1",
+      "e18-0"
+    ]
+  },
+  {
+    "id": "deck-jacob",
+    "book": "genesis",
+    "name": "Jacob's story",
+    "cardEventIds": [
+      "e25-0",
+      "e25-1",
+      "e26-0",
+      "e26-1",
+      "e27-0",
+      "e27-1",
+      "e28-0",
+      "e28-1",
+      "e29-0",
+      "e29-1",
+      "e30-0",
+      "e30-1",
+      "e30-2",
+      "e31-0"
+    ]
+  },
+  {
+    "id": "deck-joseph",
+    "book": "genesis",
+    "name": "Joseph's story",
+    "cardEventIds": [
+      "e37-0",
+      "e37-1",
+      "e38-0",
+      "e38-1",
+      "e39-0",
+      "e39-1",
+      "e40-0",
+      "e40-1",
+      "e41-0",
+      "e41-1",
+      "e41-2",
+      "e42-0",
+      "e42-1",
+      "e43-0",
+      "e43-1"
+    ]
+  }
+]

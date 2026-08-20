@@ -1,0 +1,275 @@
+[
+  {
+    "id": "q-1-3",
+    "book": "genesis",
+    "chapter": 1,
+    "verse": 3,
+    "speakerId": "god",
+    "text": "Let there be light.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 1,
+      "verses": "3"
+    }
+  },
+  {
+    "id": "q-2-23",
+    "book": "genesis",
+    "chapter": 2,
+    "verse": 23,
+    "speakerId": "adam",
+    "text": "This at last is bone of my bones and flesh of my flesh; she shall be called Woman, because she was taken out of Man.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 2,
+      "verses": "23"
+    }
+  },
+  {
+    "id": "q-3-9",
+    "book": "genesis",
+    "chapter": 3,
+    "verse": 9,
+    "speakerId": "god",
+    "text": "Where are you?",
+    "citation": {
+      "book": "genesis",
+      "chapter": 3,
+      "verses": "9"
+    }
+  },
+  {
+    "id": "q-4-9",
+    "book": "genesis",
+    "chapter": 4,
+    "verse": 9,
+    "speakerId": "cain",
+    "text": "I do not know; am I my brother's keeper?",
+    "citation": {
+      "book": "genesis",
+      "chapter": 4,
+      "verses": "9"
+    }
+  },
+  {
+    "id": "q-6-13",
+    "book": "genesis",
+    "chapter": 6,
+    "verse": 13,
+    "speakerId": "god",
+    "text": "I have determined to make an end of all flesh, for the earth is filled with violence through them. Behold, I will destroy them with the earth.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 6,
+      "verses": "13"
+    }
+  },
+  {
+    "id": "q-9-13",
+    "book": "genesis",
+    "chapter": 9,
+    "verse": 13,
+    "speakerId": "god",
+    "text": "I have set my bow in the cloud, and it shall be a sign of the covenant between me and the earth.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 9,
+      "verses": "13"
+    }
+  },
+  {
+    "id": "q-11-7",
+    "book": "genesis",
+    "chapter": 11,
+    "verse": 7,
+    "speakerId": "god",
+    "text": "Come, let us go down and there confuse their language, so that they may not understand one another's speech.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 11,
+      "verses": "7"
+    }
+  },
+  {
+    "id": "q-12-1",
+    "book": "genesis",
+    "chapter": 12,
+    "verse": 1,
+    "speakerId": "god",
+    "text": "Go from your country and your kindred and your father's house to the land that I will show you.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 12,
+      "verses": "1"
+    }
+  },
+  {
+    "id": "q-15-5",
+    "book": "genesis",
+    "chapter": 15,
+    "verse": 5,
+    "speakerId": "god",
+    "text": "Look toward heaven, and number the stars, if you are able to number them.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 15,
+      "verses": "5"
+    }
+  },
+  {
+    "id": "q-17-5",
+    "book": "genesis",
+    "chapter": 17,
+    "verse": 5,
+    "speakerId": "god",
+    "text": "No longer shall your name be called Abram, but your name shall be Abraham, for I have made you the father of a multitude of nations.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 17,
+      "verses": "5"
+    }
+  },
+  {
+    "id": "q-18-14",
+    "book": "genesis",
+    "chapter": 18,
+    "verse": 14,
+    "speakerId": "god",
+    "text": "Is anything too hard for the LORD? At the appointed time I will return to you, about this time next year, and Sarah shall have a son.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 18,
+      "verses": "14"
+    }
+  },
+  {
+    "id": "q-21-6",
+    "book": "genesis",
+    "chapter": 21,
+    "verse": 6,
+    "speakerId": "sarah",
+    "text": "God has made laughter for me; everyone who hears will laugh over me.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 21,
+      "verses": "6"
+    }
+  },
+  {
+    "id": "q-22-8",
+    "book": "genesis",
+    "chapter": 22,
+    "verse": 8,
+    "speakerId": "abraham",
+    "text": "God will provide for himself the lamb for a burnt offering, my son.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 22,
+      "verses": "8"
+    }
+  },
+  {
+    "id": "q-25-32",
+    "book": "genesis",
+    "chapter": 25,
+    "verse": 32,
+    "speakerId": "esau",
+    "text": "I am about to die; of what use is a birthright to me?",
+    "citation": {
+      "book": "genesis",
+      "chapter": 25,
+      "verses": "32"
+    }
+  },
+  {
+    "id": "q-28-15",
+    "book": "genesis",
+    "chapter": 28,
+    "verse": 15,
+    "speakerId": "god",
+    "text": "Behold, I am with you and will keep you wherever you go, and will bring you back to this land. For I will not leave you until I have done what I have promised you.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 28,
+      "verses": "15"
+    }
+  },
+  {
+    "id": "q-29-25",
+    "book": "genesis",
+    "chapter": 29,
+    "verse": 25,
+    "speakerId": "jacob",
+    "text": "What is this you have done to me? Did I not serve with you for Rachel? Why then have you deceived me?",
+    "citation": {
+      "book": "genesis",
+      "chapter": 29,
+      "verses": "25"
+    }
+  },
+  {
+    "id": "q-32-26",
+    "book": "genesis",
+    "chapter": 32,
+    "verse": 26,
+    "speakerId": "jacob",
+    "text": "I will not let you go unless you bless me.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 32,
+      "verses": "26"
+    }
+  },
+  {
+    "id": "q-37-22",
+    "book": "genesis",
+    "chapter": 37,
+    "verse": 22,
+    "speakerId": "reuben",
+    "text": "Shed no blood; throw him into this pit that is in the wilderness, but do not lay a hand on him",
+    "citation": {
+      "book": "genesis",
+      "chapter": 37,
+      "verses": "22"
+    }
+  },
+  {
+    "id": "q-41-40",
+    "book": "genesis",
+    "chapter": 41,
+    "verse": 40,
+    "speakerId": "pharaoh",
+    "text": "You shall be over my house, and all my people shall order themselves as you command. Only as regards the throne will I be greater than you.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 41,
+      "verses": "40"
+    }
+  },
+  {
+    "id": "q-45-5",
+    "book": "genesis",
+    "chapter": 45,
+    "verse": 5,
+    "speakerId": "joseph",
+    "text": "And now do not be distressed or angry with yourselves because you sold me here, for God sent me before you to preserve life.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 45,
+      "verses": "5"
+    }
+  },
+  {
+    "id": "q-50-20",
+    "book": "genesis",
+    "chapter": 50,
+    "verse": 20,
+    "speakerId": "joseph",
+    "text": "As for you, you meant evil against me, but God meant it for good, to bring it about that many people should be kept alive, as they are today.",
+    "citation": {
+      "book": "genesis",
+      "chapter": 50,
+      "verses": "20"
+    }
+  }
+]

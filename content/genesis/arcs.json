@@ -1,0 +1,74 @@
+[
+  {
+    "id": "creation",
+    "book": "genesis",
+    "name": "Creation",
+    "startChapter": 1,
+    "endChapter": 2,
+    "summary": "God creates the heavens, earth, and humanity in six days and rests on the seventh, establishing the pattern of the created order."
+  },
+  {
+    "id": "fall",
+    "book": "genesis",
+    "name": "The fall and early humanity",
+    "startChapter": 3,
+    "endChapter": 5,
+    "summary": "Sin enters the world through Adam and Eve's disobedience and escalates through Cain's murder of Abel, though the human line continues through Seth to Noah."
+  },
+  {
+    "id": "flood",
+    "book": "genesis",
+    "name": "Noah and the flood",
+    "startChapter": 6,
+    "endChapter": 9,
+    "summary": "Human wickedness leads God to judge the earth with a flood, preserving Noah's family and establishing a covenant never to destroy the earth this way again."
+  },
+  {
+    "id": "nations",
+    "book": "genesis",
+    "name": "Nations and Babel",
+    "startChapter": 10,
+    "endChapter": 11,
+    "summary": "The descendants of Noah spread into distinct nations and languages, an expansion that culminates in humanity's prideful attempt to build the tower of Babel."
+  },
+  {
+    "id": "abraham-call",
+    "book": "genesis",
+    "name": "Abraham's call and covenant",
+    "startChapter": 12,
+    "endChapter": 17,
+    "summary": "God calls Abram out of his homeland and repeatedly promises him land, descendants, and blessing, sealing this covenant through dramatic signs and the mark of circumcision."
+  },
+  {
+    "id": "abraham-family",
+    "book": "genesis",
+    "name": "Abraham's family",
+    "startChapter": 18,
+    "endChapter": 24,
+    "summary": "Abraham's family navigates the destruction of Sodom, the long-awaited birth of Isaac, and Sarah's death, ending with the search for a wife to carry the promise forward."
+  },
+  {
+    "id": "jacob-esau",
+    "book": "genesis",
+    "name": "Jacob and Esau",
+    "startChapter": 25,
+    "endChapter": 28,
+    "summary": "Twin rivals Esau and Jacob struggle from birth over the birthright and blessing, and Jacob flees his brother's anger toward his mother's homeland with a promise renewed at Bethel."
+  },
+  {
+    "id": "jacob-family",
+    "book": "genesis",
+    "name": "Jacob's family",
+    "startChapter": 29,
+    "endChapter": 36,
+    "summary": "Jacob builds a large family and fortune under his uncle Laban, then returns to Canaan facing his estranged brother, family conflict, and personal loss along the way."
+  },
+  {
+    "id": "joseph",
+    "book": "genesis",
+    "name": "Joseph",
+    "startChapter": 37,
+    "endChapter": 50,
+    "summary": "Sold into slavery by his own brothers, Joseph rises to power in Egypt and ultimately reconciles with his family, preserving them through famine and closing out Genesis."
+  }
+]
