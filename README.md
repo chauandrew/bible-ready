@@ -45,3 +45,22 @@ Fully static (`output: "export"` in `next.config.ts`) — no serverless function
 ```bash
 npm run build
 ```
+
+## Deploy to Vercel
+
+1. Push this repo to GitHub.
+2. In Vercel, "Add New Project" and import the repo.
+3. Vercel auto-detects Next.js, runs `npm run build`, and serves the static
+   `out/` directory produced by `output: "export"`. No project settings need
+   to change and no environment variables are required.
+
+No `vercel.json` is included on purpose: this is a plain static export with
+no functions, no redirects, and no headers that need overriding, so Vercel's
+zero-config static-site handling (including the auto-generated 404 page) is
+enough. Add one later only if a real need shows up (custom headers,
+redirects, etc.).
+
+[Vercel Analytics](https://vercel.com/docs/analytics) and
+[Speed Insights](https://vercel.com/docs/speed-insights) are wired into
+`app/layout.tsx`. Both only report data when served from a Vercel domain —
+they no-op in local dev and in the static `out/` build.
