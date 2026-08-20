@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, scoreQuiz, gapReport, type Answer } from "./quiz";
+import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, type Answer } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -92,4 +92,32 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
   const totalWrong = Object.values(report).reduce((sum, r) => sum + r.wrong, 0);
   assert.equal(totalRight, 4);
   assert.equal(totalWrong, 1);
+});
+
+test("selectDailyQuestion with the same date produces the same item", () => {
+  const data = fixtureData();
+  const sources = [{ data, questions: authored }];
+  const a = selectDailyQuestion(sources, "2026-08-20");
+  const b = selectDailyQuestion(sources, "2026-08-20");
+  assert.equal(a.id, b.id);
+  assert.deepEqual(a, b);
+});
+
+test("selectDailyQuestion varies across dates", () => {
+  const data = fixtureData();
+  const sources = [{ data, questions: authored }];
+  const first = selectDailyQuestion(sources, "2026-08-20");
+  const dates = ["2026-08-21", "2026-08-22", "2026-08-23", "2026-08-24", "2026-08-25"];
+  const sawDifferent = dates.some((d) => selectDailyQuestion(sources, d).id !== first.id);
+  assert.ok(sawDifferent, "expected at least one different date to pick a different item");
+});
+
+test("selectDailyQuestion always returns a valid item, never undefined via the modulo index", () => {
+  const data = fixtureData();
+  const sources = [{ data, questions: authored }];
+  for (const d of ["2026-01-01", "2026-06-15", "2026-12-31", "2026-08-20"]) {
+    const item = selectDailyQuestion(sources, d);
+    // item.id would throw on undefined if the modulo index picked an out-of-range slot.
+    assert.ok(item && typeof item.id === "string" && item.id.length > 0);
+  }
 });

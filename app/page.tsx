@@ -24,7 +24,17 @@ export default function Home() {
         Study and quiz on the main events and storyline — what happens, where, and to whom.
       </p>
 
-      <h2 className="section-title">Study one book</h2>
+      <h2 className="section-title">Question of the Day</h2>
+      <div className="grid-cards" style={{ marginBottom: "0.5rem" }}>
+        <Link href="/qotd" className="card">
+          <div style={{ fontWeight: 600, color: "var(--text)" }}>Play today&apos;s question</div>
+          <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+            One shared question, once a day — answer as fast as you can.
+          </div>
+        </Link>
+      </div>
+
+      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Study one book</h2>
       <p className="page-lede" style={{ marginBottom: "1rem" }}>
         Chapters, people, quizzes, flashcards, and a diagnostic exam — all for one book.
       </p>
