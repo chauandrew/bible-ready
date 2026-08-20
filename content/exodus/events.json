@@ -159,6 +159,22 @@
     "notable": true
   },
   {
+    "id": "exo-e-c2-5",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "The king of Egypt dies and God remembers his covenant",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "god"
+    ],
+    "order": 5,
+    "summary": "Years pass, the king of Egypt dies, and Israel groans under slavery and cries out; God hears them and remembers his covenant with Abraham, Isaac, and Jacob.",
+    "notable": true
+  },
+  {
     "id": "exo-e-c3-0",
     "book": "exodus",
     "chapter": 3,

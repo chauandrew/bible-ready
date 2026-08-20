@@ -13,9 +13,9 @@
     "book": "exodus",
     "number": 2,
     "title": "Moses Born and Flees",
-    "summary": "A Hebrew baby is hidden, then set afloat on the Nile and rescued by Pharaoh's daughter, who raises him as her own. Grown, Moses kills an Egyptian, flees to Midian, and marries Zipporah there.",
+    "summary": "A Hebrew baby is hidden, set afloat on the Nile, and rescued by Pharaoh's daughter, who raises him as her own. Grown, Moses kills an Egyptian and flees to Midian, where he marries Zipporah. Egypt's king dies, and God hears Israel's groaning.",
     "arcId": "exo-arc-egypt",
-    "eventIds": ["exo-e-c2-0", "exo-e-c2-1", "exo-e-c2-2", "exo-e-c2-3", "exo-e-c2-4"]
+    "eventIds": ["exo-e-c2-0", "exo-e-c2-1", "exo-e-c2-2", "exo-e-c2-3", "exo-e-c2-4", "exo-e-c2-5"]
   },
   {
     "id": "exo-ch-3",

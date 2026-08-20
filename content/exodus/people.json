@@ -118,8 +118,8 @@
   {
     "id": "god",
     "name": "God",
-    "summary": "The LORD, who appears to Moses at the burning bush, reveals his covenant name, and delivers Israel from slavery in Egypt.",
-    "firstAppearance": {"book": "exodus", "chapter": 3},
+    "summary": "The LORD, who hears Israel's groaning in Egypt, appears to Moses at the burning bush, reveals his covenant name, and delivers his people from slavery.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
     "relations": []
   }
 ]
