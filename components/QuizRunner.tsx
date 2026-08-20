@@ -426,10 +426,15 @@ export default function QuizRunner({
 
   return (
     <main className="container">
-      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
-        <button type="button" className="btn" disabled={index === 0} onClick={() => setIndex(index - 1)}>
-          ← Back
-        </button>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem", flexWrap: "wrap", gap: "0.5rem" }}>
+        <div style={{ display: "flex", gap: "0.5rem" }}>
+          <button type="button" className="btn" onClick={() => router.push(backHref)}>
+            {backLabel}
+          </button>
+          <button type="button" className="btn" disabled={index === 0} onClick={() => setIndex(index - 1)}>
+            ← Previous
+          </button>
+        </div>
         <div className="eyebrow">
           {index + 1} / {items.length} · {categoryOf(item)}
         </div>

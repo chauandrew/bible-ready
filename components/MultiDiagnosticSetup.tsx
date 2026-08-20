@@ -18,6 +18,7 @@ export default function MultiDiagnosticSetup() {
         seedStr={`bible-diagnostic-v1:${bookIds.sort().join("+")}`}
         moduleId="diagnostic-bible"
         backHref="/"
+        backLabel="Back to all books"
       />
     );
   }

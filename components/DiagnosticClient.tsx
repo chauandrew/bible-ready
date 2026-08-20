@@ -30,12 +30,14 @@ export default function DiagnosticClient({
   count = DIAGNOSTIC_COUNT,
   moduleId = "diagnostic",
   backHref = "/genesis",
+  backLabel = "Back to Genesis",
 }: {
   sources: { data: BookData; questions: AuthoredQuestion[] }[];
   seedStr?: string;
   count?: number;
   moduleId?: string;
   backHref?: string;
+  backLabel?: string;
 }) {
   const items: QuizItem[] = selectQuizMulti(sources, { seedStr, targetCount: count });
 
@@ -45,6 +47,7 @@ export default function DiagnosticClient({
       mode="quiz"
       moduleId={moduleId}
       backHref={backHref}
+      backLabel={backLabel}
       resultsExtra={(report) => (
         <div style={{ marginBottom: "1.5rem" }}>
           <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>Where to focus</p>
