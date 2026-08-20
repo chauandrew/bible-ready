@@ -1,20 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function FlashcardDeck({ title, cards }: { title: string; cards: { front: string; back: string }[] }) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
   const card = cards[index];
-
-  if (!card) {
-    return (
-      <main className="container">
-        <h1 className="page-title" style={{ marginTop: "1rem" }}>{title}</h1>
-        <p style={{ color: "var(--text-secondary)" }}>This deck has no cards yet.</p>
-      </main>
-    );
-  }
 
   function next() {
     setFlipped(false);
@@ -23,6 +14,36 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
   function prev() {
     setFlipped(false);
     setIndex((i) => (i - 1 + cards.length) % cards.length);
+  }
+
+  // Hotkeys: space/enter flips, arrow keys move — so studying doesn't require
+  // reaching for the mouse between every card.
+  useEffect(() => {
+    if (cards.length === 0) return;
+    function onKeyDown(e: KeyboardEvent) {
+      if (e.key === " " || e.key === "Enter") {
+        e.preventDefault();
+        setFlipped((f) => !f);
+      } else if (e.key === "ArrowRight") {
+        e.preventDefault();
+        next();
+      } else if (e.key === "ArrowLeft") {
+        e.preventDefault();
+        prev();
+      }
+    }
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cards.length]);
+
+  if (!card) {
+    return (
+      <main className="container">
+        <h1 className="page-title" style={{ marginTop: "1rem" }}>{title}</h1>
+        <p style={{ color: "var(--text-secondary)" }}>This deck has no cards yet.</p>
+      </main>
+    );
   }
 
   return (
@@ -40,7 +61,9 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
       >
         <span aria-live="polite">{flipped ? card.back : card.front}</span>
       </button>
-      <p className="citation" style={{ textAlign: "center", marginBottom: "1rem" }}>Tap the card to flip</p>
+      <p className="citation" style={{ textAlign: "center", marginBottom: "1rem" }}>
+        Tap the card to flip · Space to flip · ← → to move
+      </p>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
         <button type="button" className="btn" onClick={prev}>← Prev</button>
         <button type="button" className="btn btn-primary" onClick={next}>Next →</button>
