@@ -288,11 +288,14 @@ function checkBook(bookId: string) {
   }
 
   // --- chapter summary parallelism ------------------------------------------
+  // Note: the generated "what is chapter N about" question uses chapter *titles*,
+  // not these summaries, so this band is an editorial consistency rule rather
+  // than an answer-leak guard — the comment used to claim otherwise.
   for (const c of chapters) {
     const words = wordCount(c.summary);
     if (words < CHAPTER_SUMMARY_MIN_WORDS || words > CHAPTER_SUMMARY_MAX_WORDS) {
       errors.push(
-        `chapters: "${c.id}" summary is ${words} words, expected ${CHAPTER_SUMMARY_MIN_WORDS}-${CHAPTER_SUMMARY_MAX_WORDS} (parallelism guard, prevents length leaking the answer)`
+        `chapters: "${c.id}" summary is ${words} words, expected ${CHAPTER_SUMMARY_MIN_WORDS}-${CHAPTER_SUMMARY_MAX_WORDS} (parallelism guard: summaries sit side by side on the chapter pages)`
       );
     }
   }

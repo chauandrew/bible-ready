@@ -60,8 +60,9 @@ export const ChapterSchema = z.object({
   book: BookIdSchema,
   number: z.number().int().positive(),
   title: z.string(),
-  /** One paragraph, kept to a consistent length band across the corpus so that
-   * generated "what is chapter N about" distractors don't leak the answer by length. */
+  /** One paragraph, kept to a consistent length band across the corpus so the
+   * chapter pages read consistently. Note this is *not* what the generated
+   * "what is chapter N about" question offers as options — that uses `title`. */
   summary: z.string(),
   arcId: z.string(),
   eventIds: z.array(z.string()),
