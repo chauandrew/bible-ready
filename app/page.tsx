@@ -1,69 +1,45 @@
-import Image from "next/image";
+import Link from "next/link";
+import { genesis, arcs } from "@/lib/content";
+
+const modules = [
+  { href: "/quiz/all", label: "Quick quiz — all of Genesis", desc: "10 mixed questions, ends with your score." },
+  { href: "/diagnostic", label: "Diagnostic exam", desc: "A fixed 25-question exam, then a breakdown of where to focus." },
+  { href: "/study/chapters", label: "Study chapters", desc: "Browse all 50 chapters, grouped by narrative arc." },
+  { href: "/study/people", label: "People", desc: "Key figures and the family line." },
+  { href: "/study/flashcards", label: "Flashcards", desc: "Flip through key events, one card at a time." },
+  { href: "/progress", label: "Your progress", desc: "Scores, weak spots, and questions to practice again." },
+  { href: "/print/all", label: "Print a worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
+];
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <main className="container">
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>{genesis.name}</p>
+      <h1 style={{ fontSize: "1.6rem", marginBottom: "0.35rem" }}>Bible Ready</h1>
+      <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>
+        Learn the storyline of {genesis.name} — what happens, where, and to whom.
+      </p>
+
+      <div style={{ display: "grid", gap: "0.75rem" }}>
+        {modules.map((m) => (
+          <Link key={m.href} href={m.href} className="card" style={{ display: "block", textDecoration: "none" }}>
+            <div style={{ fontWeight: 600, color: "var(--text)" }}>{m.label}</div>
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+              {m.desc}
+            </div>
+          </Link>
+        ))}
+      </div>
+
+      <p className="eyebrow" style={{ marginTop: "2rem" }}>Narrative arcs</p>
+      <div style={{ display: "grid", gap: "0.5rem", marginTop: "0.5rem" }}>
+        {arcs.map((a) => (
+          <Link key={a.id} href={`/study/arcs/${a.id}`} className="card" style={{ display: "flex", justifyContent: "space-between", textDecoration: "none" }}>
+            <span>{a.name}</span>
+            <span className="citation">{a.startChapter}–{a.endChapter}</span>
+          </Link>
+        ))}
+      </div>
+    </main>
   );
 }

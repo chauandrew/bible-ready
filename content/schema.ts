@@ -1,0 +1,150 @@
+import { z } from "zod";
+
+// ---------------------------------------------------------------------------
+// Shared primitives
+// ---------------------------------------------------------------------------
+
+export const BookIdSchema = z.string().regex(/^[a-z0-9-]+$/);
+
+/** "Genesis 22:2" or "Genesis 3" (verses optional). Used on every citable item. */
+export const CitationSchema = z.object({
+  book: BookIdSchema,
+  chapter: z.number().int().positive(),
+  verses: z.string().regex(/^\d+(-\d+)?$/).optional(),
+});
+export type Citation = z.infer<typeof CitationSchema>;
+
+// ---------------------------------------------------------------------------
+// Book / arcs / chapters
+// ---------------------------------------------------------------------------
+
+export const CoverageDepthSchema = z.enum(["narrative", "sparse", "argument"]);
+
+export const BookSchema = z.object({
+  id: BookIdSchema,
+  name: z.string(),
+  chapterCount: z.number().int().positive(),
+  coverageDepth: CoverageDepthSchema,
+  arcOrder: z.array(z.string()),
+});
+export type Book = z.infer<typeof BookSchema>;
+
+export const ArcSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  name: z.string(),
+  startChapter: z.number().int().positive(),
+  endChapter: z.number().int().positive(),
+  summary: z.string(),
+});
+export type Arc = z.infer<typeof ArcSchema>;
+
+export const ChapterSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  number: z.number().int().positive(),
+  title: z.string(),
+  /** One paragraph, kept to a consistent length band across the corpus so that
+   * generated "what is chapter N about" distractors don't leak the answer by length. */
+  summary: z.string(),
+  arcId: z.string(),
+  eventIds: z.array(z.string()),
+});
+export type Chapter = z.infer<typeof ChapterSchema>;
+
+// ---------------------------------------------------------------------------
+// People
+// ---------------------------------------------------------------------------
+
+export const PersonSchema = z.object({
+  id: z.string(),
+  name: z.string(),
+  summary: z.string(),
+  firstAppearance: CitationSchema,
+  relations: z
+    .array(z.object({ personId: z.string(), relation: z.string() }))
+    .default([]),
+});
+export type Person = z.infer<typeof PersonSchema>;
+
+// ---------------------------------------------------------------------------
+// Events — the backbone
+// ---------------------------------------------------------------------------
+
+export const EventSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  chapter: z.number().int().positive(),
+  /** Clean noun phrase, e.g. "Noah builds the ark". No trailing punctuation,
+   * no "the moment when...", no leaked chapter references. */
+  name: z.string(),
+  citation: CitationSchema,
+  place: z.string(),
+  peopleIds: z.array(z.string()).default([]),
+  /** Position within the chapter, used for sequence questions. */
+  order: z.number().int().nonnegative(),
+  summary: z.string(),
+  notable: z.boolean().default(false),
+});
+export type Event = z.infer<typeof EventSchema>;
+
+// ---------------------------------------------------------------------------
+// Quotes — short verbatim ESV text, budget-tracked
+// ---------------------------------------------------------------------------
+
+export const QuoteSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  chapter: z.number().int().positive(),
+  verse: z.number().int().positive(),
+  speakerId: z.string(),
+  /** Verbatim ESV text of a single verse. No ranges. */
+  text: z.string(),
+  citation: CitationSchema,
+});
+export type Quote = z.infer<typeof QuoteSchema>;
+
+// ---------------------------------------------------------------------------
+// Hand-authored thematic questions
+// ---------------------------------------------------------------------------
+
+export const AuthoredQuestionSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  category: z.enum(["theme", "arc", "covenant", "character", "argument"]),
+  prompt: z.string(),
+  options: z.array(z.string()).min(2),
+  correctIndex: z.number().int().nonnegative(),
+  citation: CitationSchema,
+  /** Shown only after answering, in Study mode. Answer confirmation, not an essay. */
+  explanation: z.string().optional(),
+});
+export type AuthoredQuestion = z.infer<typeof AuthoredQuestionSchema>;
+
+// ---------------------------------------------------------------------------
+// Flashcard decks
+// ---------------------------------------------------------------------------
+
+export const DeckSchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  name: z.string(),
+  cardEventIds: z.array(z.string()),
+});
+export type Deck = z.infer<typeof DeckSchema>;
+
+// ---------------------------------------------------------------------------
+// Whole-book content bundle (what lib/content.ts loads per book)
+// ---------------------------------------------------------------------------
+
+export const BookContentSchema = z.object({
+  book: BookSchema,
+  arcs: z.array(ArcSchema),
+  chapters: z.array(ChapterSchema),
+  people: z.array(PersonSchema),
+  events: z.array(EventSchema),
+  quotes: z.array(QuoteSchema),
+  questions: z.array(AuthoredQuestionSchema),
+  decks: z.array(DeckSchema),
+});
+export type BookContent = z.infer<typeof BookContentSchema>;
