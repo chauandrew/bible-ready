@@ -50,14 +50,14 @@
     "category": "theme",
     "prompt": "What does God's revelation of his name at the burning bush emphasize about who he is?",
     "options": [
-      "He is the eternal, self-existent God who keeps his promises",
+      "He is the God who simply is, and the same God who made promises to Abraham, Isaac, and Jacob",
       "He is one of several gods Israel may choose to worship",
       "He is a new god unrelated to the God of Abraham",
       "He refuses to identify himself at all"
     ],
     "correctIndex": 0,
     "citation": {"book": "exodus", "chapter": 3},
-    "explanation": "God's name points to his eternal, unchanging character as covenant keeper."
+    "explanation": "God gives the name alongside \"the God of your fathers\" and the promise \"I will be with you\" (3:12, 3:15). \"I AM WHO I AM\" is read more than one way, from God's self-existence to his promised presence."
   },
   {
     "id": "exo-q-theme-5",
@@ -303,7 +303,7 @@
     "id": "exo-q-argument-2",
     "book": "exodus",
     "category": "argument",
-    "prompt": "Why does God harden Pharaoh's heart rather than letting the earliest plagues end the conflict?",
+    "prompt": "What reason does God give for the confrontation dragging on instead of ending with the earliest plagues?",
     "options": [
       "So that his power and name would be displayed through a fuller demonstration of judgment",
       "Because Pharaoh's magicians controlled the outcome",
@@ -312,7 +312,7 @@
     ],
     "correctIndex": 0,
     "citation": {"book": "exodus", "chapter": 9},
-    "explanation": "God ties the escalation to making his power known, as he tells Pharaoh directly."
+    "explanation": "God ties the escalation to making his power known (9:16). Exodus describes the hardening both ways: Pharaoh hardens his own heart (8:15, 8:32, 9:34) and the LORD hardens it (9:12, 10:1, 14:4)."
   },
   {
     "id": "exo-q-argument-3",
