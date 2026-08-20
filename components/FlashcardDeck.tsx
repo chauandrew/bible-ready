@@ -28,13 +28,17 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
   return (
     <main className="container">
       <div className="eyebrow" style={{ marginTop: "1rem" }}>{title} · {index + 1}/{cards.length}</div>
+      {/* aria-pressed + a live region: flipping swapped the text silently, so a
+          screen reader announced nothing when the card turned over. */}
       <button
         type="button"
         className="card"
         onClick={() => setFlipped(!flipped)}
+        aria-pressed={flipped}
+        aria-label={flipped ? "Card, showing the answer. Activate to flip back." : "Card, showing the reference. Activate to flip."}
         style={{ width: "100%", minHeight: "180px", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", fontSize: "1.1rem", cursor: "pointer" }}
       >
-        {flipped ? card.back : card.front}
+        <span aria-live="polite">{flipped ? card.back : card.front}</span>
       </button>
       <p className="citation" style={{ textAlign: "center", marginBottom: "1rem" }}>Tap the card to flip</p>
       <div style={{ display: "flex", justifyContent: "space-between" }}>
