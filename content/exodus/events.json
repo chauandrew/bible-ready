@@ -167,7 +167,6 @@
       "book": "exodus",
       "chapter": 3
     },
-    "place": "Horeb",
     "peopleIds": [
       "moses",
       "god"
@@ -253,7 +252,6 @@
       "book": "exodus",
       "chapter": 4
     },
-    "place": "Midian",
     "peopleIds": [
       "moses",
       "aaron"
@@ -271,13 +269,12 @@
       "book": "exodus",
       "chapter": 4
     },
-    "place": "the mountain of God",
     "peopleIds": [
       "moses",
       "aaron"
     ],
     "order": 3,
-    "summary": "Moses leaves Midian with his family, and Aaron meets him at the mountain of God, where Moses tells him all that the LORD has said.",
+    "summary": "Moses leaves Midian with his family, and Aaron meets him at the mountain of God (Horeb), where Moses tells him all that the LORD has said.",
     "notable": true
   },
   {
@@ -289,7 +286,6 @@
       "book": "exodus",
       "chapter": 4
     },
-    "place": "Egypt",
     "peopleIds": [
       "moses",
       "aaron"
