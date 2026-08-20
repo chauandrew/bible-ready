@@ -27,6 +27,10 @@ export interface ProgressState {
   categoryStats: Record<string, { right: number; wrong: number }>;
 }
 
+function isPlainObject(v: unknown): v is Record<string, never> {
+  return typeof v === "object" && v !== null && !Array.isArray(v);
+}
+
 function emptyState(): ProgressState {
   return { v: 1, sessions: [], best: {}, missed: [], categoryStats: {} };
 }
@@ -38,7 +42,17 @@ export function loadProgress(): ProgressState {
     if (!raw) return emptyState();
     const parsed = JSON.parse(raw);
     if (parsed?.v !== 1) return emptyState();
-    return { ...emptyState(), ...parsed };
+    // Spreading a v1-shaped but corrupt payload straight in was enough to
+    // white-screen the app: `sessions: "x"` survives the version check and then
+    // throws on the first .push(). Take each field only if it has the right shape.
+    const empty = emptyState();
+    return {
+      v: 1,
+      sessions: Array.isArray(parsed.sessions) ? parsed.sessions : empty.sessions,
+      best: isPlainObject(parsed.best) ? parsed.best : empty.best,
+      missed: Array.isArray(parsed.missed) ? parsed.missed.filter((id: unknown) => typeof id === "string") : empty.missed,
+      categoryStats: isPlainObject(parsed.categoryStats) ? parsed.categoryStats : empty.categoryStats,
+    };
   } catch {
     return emptyState();
   }
