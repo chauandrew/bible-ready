@@ -202,7 +202,17 @@ export function gapReport(items: QuizItem[], answers: Answer[]): Record<string, 
 
 /** Build a quiz from specific question ids (e.g. the missed-question bank), in the given order. */
 export function quizFromIds(data: BookData, authoredQuestions: AuthoredQuestion[], ids: string[]): QuizItem[] {
-  const generatedPool = generateAll(data);
+  return quizFromIdsMulti([{ data, questions: authoredQuestions }], ids);
+}
+
+/** Same as {@link quizFromIds}, but resolving ids against several books' pools at once —
+ * a missed question saved from a multi-book quiz can come from any of them. */
+export function quizFromIdsMulti(
+  sources: { data: BookData; questions: AuthoredQuestion[] }[],
+  ids: string[]
+): QuizItem[] {
+  const generatedPool = sources.flatMap((s) => generateAll(s.data));
+  const authoredQuestions = sources.flatMap((s) => s.questions);
   const generatedById = new Map(generatedPool.map((g) => [g.id, g]));
   const authoredById = new Map(authoredQuestions.map((q) => [q.id, q]));
 

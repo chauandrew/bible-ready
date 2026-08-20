@@ -13,12 +13,16 @@ export default function QuizSetup({
   data,
   questions,
   defaultCount = 10,
+  backHref,
+  backLabel,
 }: {
   moduleId: string;
   moduleLabel: string;
   data: BookData;
   questions: AuthoredQuestion[];
   defaultCount?: number;
+  backHref: string;
+  backLabel: string;
 }) {
   const router = useRouter();
   const params = useSearchParams();
@@ -31,7 +35,7 @@ export default function QuizSetup({
 
   if (started) {
     const items = selectQuiz(data, questions, { seedStr: `${moduleId}:${seed}`, targetCount: defaultCount });
-    return <QuizRunner items={items} mode={mode} moduleId={moduleId} />;
+    return <QuizRunner items={items} mode={mode} moduleId={moduleId} backHref={backHref} backLabel={backLabel} />;
   }
 
   return (

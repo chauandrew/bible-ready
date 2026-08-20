@@ -1,14 +1,15 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { people, personById, formatCitation } from "@/lib/content";
+import { peopleForBook, personInBook, formatCitation, wiredBookIds, bookMeta } from "@/lib/content";
 
 export function generateStaticParams() {
-  return people.map((p) => ({ id: p.id }));
+  return wiredBookIds.flatMap((book) => peopleForBook(book).map((p) => ({ book, id: p.id })));
 }
 
-export default async function PersonPage({ params }: { params: Promise<{ id: string }> }) {
-  const { id } = await params;
-  const person = personById.get(id);
+export default async function PersonPage({ params }: { params: Promise<{ book: string; id: string }> }) {
+  const { book: bookId, id } = await params;
+  if (!bookMeta(bookId) || !wiredBookIds.includes(bookId)) notFound();
+  const person = personInBook(bookId, id);
   if (!person) notFound();
 
   return (
@@ -24,9 +25,9 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
           <p className="eyebrow">Family</p>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.4rem", marginTop: "0.5rem" }}>
             {person.relations.map((r) => {
-              const other = personById.get(r.personId);
+              const other = personInBook(bookId, r.personId);
               return other ? (
-                <Link key={r.personId} href={`/study/people/${r.personId}`} className="card" style={{ display: "flex", justifyContent: "space-between" }}>
+                <Link key={r.personId} href={`/${bookId}/study/people/${r.personId}`} className="card" style={{ display: "flex", justifyContent: "space-between" }}>
                   <span>{other.name}</span>
                   <span className="citation">{r.relation}</span>
                 </Link>

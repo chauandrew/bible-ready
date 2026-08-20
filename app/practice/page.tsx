@@ -2,8 +2,8 @@
 
 import { useEffect, useState } from "react";
 import { loadProgress } from "@/lib/progress";
-import { dataForModule } from "@/lib/content";
-import { quizFromIds } from "@/lib/quiz";
+import { bookRegistry, dataForBooks } from "@/lib/content";
+import { quizFromIdsMulti } from "@/lib/quiz";
 import QuizRunner from "@/components/QuizRunner";
 
 export default function PracticePage() {
@@ -27,8 +27,8 @@ export default function PracticePage() {
     );
   }
 
-  const resolved = dataForModule("all")!;
-  const items = quizFromIds(resolved.data, resolved.questions, ids);
+  const sources = dataForBooks(bookRegistry.map((b) => b.id));
+  const items = quizFromIdsMulti(sources, ids);
 
-  return <QuizRunner items={items} mode="study" moduleId="practice" />;
+  return <QuizRunner items={items} mode="study" moduleId="practice" backHref="/" backLabel="Back to all books" />;
 }
