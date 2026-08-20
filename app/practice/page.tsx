@@ -21,7 +21,7 @@ export default function PracticePage() {
   if (ids.length === 0) {
     return (
       <main className="container">
-        <h1 style={{ fontSize: "1.4rem", margin: "1rem 0" }}>Practice your misses</h1>
+        <h1 className="page-title" style={{ marginTop: "1rem" }}>Practice your misses</h1>
         <p style={{ color: "var(--text-secondary)" }}>Nothing to practice — you have no missed questions saved.</p>
       </main>
     );

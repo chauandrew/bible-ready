@@ -10,7 +10,7 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
   if (!card) {
     return (
       <main className="container">
-        <h1 style={{ fontSize: "1.4rem", margin: "1rem 0" }}>{title}</h1>
+        <h1 className="page-title" style={{ marginTop: "1rem" }}>{title}</h1>
         <p style={{ color: "var(--text-secondary)" }}>This deck has no cards yet.</p>
       </main>
     );
@@ -26,7 +26,7 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
   }
 
   return (
-    <main className="container">
+    <main className="container" style={{ maxWidth: "560px" }}>
       <div className="eyebrow" style={{ marginTop: "1rem" }}>{title} · {index + 1}/{cards.length}</div>
       {/* aria-pressed + a live region: flipping swapped the text silently, so a
           screen reader announced nothing when the card turned over. */}
@@ -36,7 +36,7 @@ export default function FlashcardDeck({ title, cards }: { title: string; cards: 
         onClick={() => setFlipped(!flipped)}
         aria-pressed={flipped}
         aria-label={flipped ? "Card, showing the answer. Activate to flip back." : "Card, showing the reference. Activate to flip."}
-        style={{ width: "100%", minHeight: "180px", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", fontSize: "1.1rem", cursor: "pointer" }}
+        style={{ width: "100%", minHeight: "clamp(180px, 28vw, 260px)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", fontSize: "1.15rem", cursor: "pointer", transition: "border-color 0.15s ease" }}
       >
         <span aria-live="polite">{flipped ? card.back : card.front}</span>
       </button>

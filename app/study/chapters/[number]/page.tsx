@@ -17,11 +17,11 @@ export default async function ChapterPage({ params }: { params: Promise<{ number
   const next = chapterByNumber.get(chapter.number + 1);
 
   return (
-    <main className="container">
+    <main className="container" style={{ maxWidth: "760px" }}>
       <p className="eyebrow" style={{ marginTop: "1rem" }}>
         {arc ? <Link href={`/study/arcs/${arc.id}`}>{arc.name}</Link> : null}
       </p>
-      <h1 style={{ fontSize: "1.4rem", marginBottom: "0.5rem" }}>
+      <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem)" }}>
         Genesis {chapter.number} — {chapter.title}
       </h1>
       <p style={{ marginBottom: "1.25rem" }}>{chapter.summary}</p>
@@ -29,7 +29,7 @@ export default async function ChapterPage({ params }: { params: Promise<{ number
       {events.length > 0 && (
         <>
           <p className="eyebrow">What happens</p>
-          <div style={{ display: "grid", gap: "0.5rem", margin: "0.5rem 0 1.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(230px, 1fr))", gap: "0.5rem", margin: "0.5rem 0 1.5rem" }}>
             {events.map((e) => (
               <div key={e.id} className="card">
                 <div style={{ fontWeight: 600 }}>{e.name}</div>

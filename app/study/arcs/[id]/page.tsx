@@ -13,19 +13,19 @@ export default async function ArcPage({ params }: { params: Promise<{ id: string
   const chapters = chaptersForArc(arc.id);
 
   return (
-    <main className="container">
+    <main className="container-wide">
       <p className="eyebrow" style={{ marginTop: "1rem" }}>Genesis {arc.startChapter}–{arc.endChapter}</p>
-      <h1 style={{ fontSize: "1.4rem", marginBottom: "0.5rem" }}>{arc.name}</h1>
-      <p style={{ marginBottom: "1rem" }}>{arc.summary}</p>
+      <h1 className="page-title">{arc.name}</h1>
+      <p className="page-lede" style={{ marginBottom: "1.25rem" }}>{arc.summary}</p>
 
-      <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1.5rem" }}>
+      <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1.75rem" }}>
         <Link href={`/quiz/${arc.id}`} className="btn btn-primary">Quiz this arc</Link>
         <Link href={`/print/${arc.id}`} className="btn">Print worksheet</Link>
       </div>
 
-      <div style={{ display: "grid", gap: "0.5rem" }}>
+      <div className="grid-cards" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
         {chapters.map((c) => (
-          <Link key={c.id} href={`/study/chapters/${c.number}`} className="card" style={{ display: "block", textDecoration: "none" }}>
+          <Link key={c.id} href={`/study/chapters/${c.number}`} className="card">
             <div style={{ fontWeight: 600 }}>Genesis {c.number} — {c.title}</div>
           </Link>
         ))}

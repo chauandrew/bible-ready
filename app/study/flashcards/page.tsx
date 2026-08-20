@@ -3,14 +3,14 @@ import { decks } from "@/lib/content";
 
 export default function FlashcardsIndex() {
   return (
-    <main className="container">
-      <h1 style={{ fontSize: "1.4rem", margin: "1rem 0" }}>Flashcards</h1>
+    <main className="container-wide">
+      <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Flashcards</h1>
       {decks.length === 0 ? (
         <p style={{ color: "var(--text-secondary)" }}>No decks yet.</p>
       ) : (
-        <div style={{ display: "grid", gap: "0.5rem" }}>
+        <div className="grid-cards">
           {decks.map((d) => (
-            <Link key={d.id} href={`/study/flashcards/${d.id}`} className="card" style={{ display: "block", textDecoration: "none" }}>
+            <Link key={d.id} href={`/study/flashcards/${d.id}`} className="card">
               {d.name}
             </Link>
           ))}

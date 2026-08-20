@@ -13,7 +13,7 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
 
   return (
     <main className="container">
-      <h1 style={{ fontSize: "1.4rem", margin: "1rem 0 0.25rem" }}>{person.name}</h1>
+      <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem)", marginBottom: "0.25rem" }}>{person.name}</h1>
       <p className="citation" style={{ marginBottom: "0.75rem" }}>
         First appears {formatCitation(person.firstAppearance)}
       </p>
@@ -22,11 +22,11 @@ export default async function PersonPage({ params }: { params: Promise<{ id: str
       {person.relations.length > 0 && (
         <>
           <p className="eyebrow">Family</p>
-          <div style={{ display: "grid", gap: "0.4rem", marginTop: "0.5rem" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "0.4rem", marginTop: "0.5rem" }}>
             {person.relations.map((r) => {
               const other = personById.get(r.personId);
               return other ? (
-                <Link key={r.personId} href={`/study/people/${r.personId}`} className="card" style={{ display: "flex", justifyContent: "space-between", textDecoration: "none" }}>
+                <Link key={r.personId} href={`/study/people/${r.personId}`} className="card" style={{ display: "flex", justifyContent: "space-between" }}>
                   <span>{other.name}</span>
                   <span className="citation">{r.relation}</span>
                 </Link>
