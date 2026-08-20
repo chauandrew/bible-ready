@@ -24,25 +24,32 @@
     ]
   },
   {
-    "id": "deck-wisdom-repentance",
+    "id": "deck-wisdom-creation-presence",
     "book": "psalms",
-    "name": "Psalms of wisdom and repentance",
+    "name": "Psalms of wisdom, creation, and God's presence",
     "cardEventIds": [
       "psalms-1-e1",
       "psalms-1-e2",
       "psalms-8-e1",
       "psalms-19-e1",
+      "psalms-24-e1",
+      "psalms-90-e1",
+      "psalms-90-e2",
+      "psalms-139-e1",
+      "psalms-139-e2"
+    ]
+  },
+  {
+    "id": "deck-repentance-lament",
+    "book": "psalms",
+    "name": "Psalms of repentance and lament",
+    "cardEventIds": [
       "psalms-22-e1",
       "psalms-22-e2",
-      "psalms-24-e1",
       "psalms-32-e1",
       "psalms-51-e1",
       "psalms-51-e2",
-      "psalms-90-e1",
-      "psalms-90-e2",
-      "psalms-130-e1",
-      "psalms-139-e1",
-      "psalms-139-e2"
+      "psalms-130-e1"
     ]
   }
 ]
