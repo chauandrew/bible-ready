@@ -22,7 +22,7 @@
     "book": "exodus",
     "number": 3,
     "title": "The Burning Bush",
-    "summary": "While tending sheep near Horeb, Moses sees a bush ablaze yet unburned and God speaks to him from within it. God reveals his covenant name and sends Moses to rescue Israel from slavery in Egypt.",
+    "summary": "While tending sheep near Horeb, Moses sees a bush ablaze yet unburned and God speaks to him from within it. God sends Moses to rescue Israel from slavery and, when Moses asks, reveals his covenant name.",
     "arcId": "exo-arc-call",
     "eventIds": ["exo-e-c3-0", "exo-e-c3-1", "exo-e-c3-2"]
   },

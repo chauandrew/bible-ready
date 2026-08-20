@@ -180,23 +180,6 @@
     "id": "exo-e-c3-1",
     "book": "exodus",
     "chapter": 3,
-    "name": "God reveals his name to Moses",
-    "citation": {
-      "book": "exodus",
-      "chapter": 3
-    },
-    "peopleIds": [
-      "moses",
-      "god"
-    ],
-    "order": 1,
-    "summary": "God tells Moses his covenant name and identifies himself as the God of Abraham, Isaac, and Jacob.",
-    "notable": true
-  },
-  {
-    "id": "exo-e-c3-2",
-    "book": "exodus",
-    "chapter": 3,
     "name": "God commissions Moses to deliver Israel",
     "citation": {
       "book": "exodus",
@@ -206,8 +189,25 @@
       "moses",
       "god"
     ],
-    "order": 2,
+    "order": 1,
     "summary": "God tells Moses that he has seen Israel's suffering and sends him to Pharaoh to bring the people out of Egypt.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c3-2",
+    "book": "exodus",
+    "chapter": 3,
+    "name": "God reveals his name to Moses",
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 2,
+    "summary": "When Moses asks what name to give Israel, God answers \"I AM WHO I AM\" and identifies himself as the God of Abraham, Isaac, and Jacob.",
     "notable": true
   },
   {
