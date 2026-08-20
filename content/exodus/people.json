@@ -1,0 +1,125 @@
+[
+  {
+    "id": "moses",
+    "name": "Moses",
+    "summary": "A Hebrew raised in Pharaoh's household who becomes the reluctant deliverer God calls at the burning bush to lead Israel out of slavery in Egypt.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "aaron", "relation": "brother"},
+      {"personId": "miriam", "relation": "sister"},
+      {"personId": "jochebed", "relation": "mother"},
+      {"personId": "amram", "relation": "father"},
+      {"personId": "zipporah", "relation": "wife"},
+      {"personId": "jethro", "relation": "father-in-law"}
+    ]
+  },
+  {
+    "id": "aaron",
+    "name": "Aaron",
+    "summary": "Moses' older brother, appointed by God to speak on his behalf before Pharaoh and to perform signs in front of Israel.",
+    "firstAppearance": {"book": "exodus", "chapter": 4},
+    "relations": [
+      {"personId": "moses", "relation": "brother"},
+      {"personId": "miriam", "relation": "sister"},
+      {"personId": "jochebed", "relation": "mother"},
+      {"personId": "amram", "relation": "father"}
+    ]
+  },
+  {
+    "id": "miriam",
+    "name": "Miriam",
+    "summary": "Moses' sister, who watches over him as an infant on the Nile and arranges for their mother to nurse him in Pharaoh's household.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "moses", "relation": "brother"},
+      {"personId": "aaron", "relation": "brother"},
+      {"personId": "jochebed", "relation": "mother"},
+      {"personId": "amram", "relation": "father"}
+    ]
+  },
+  {
+    "id": "pharaoh",
+    "name": "Pharaoh",
+    "summary": "The unnamed king of Egypt who enslaves Israel and repeatedly refuses to let the people go despite ten escalating plagues.",
+    "firstAppearance": {"book": "exodus", "chapter": 1},
+    "relations": []
+  },
+  {
+    "id": "jochebed",
+    "name": "Jochebed",
+    "summary": "Moses' mother, who hides him for three months and then sets him afloat on the Nile in a basket to save his life.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "amram", "relation": "husband"},
+      {"personId": "moses", "relation": "son"},
+      {"personId": "aaron", "relation": "son"},
+      {"personId": "miriam", "relation": "daughter"}
+    ]
+  },
+  {
+    "id": "amram",
+    "name": "Amram",
+    "summary": "Moses' father, a Levite who marries Jochebed.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "jochebed", "relation": "wife"},
+      {"personId": "moses", "relation": "son"},
+      {"personId": "aaron", "relation": "son"},
+      {"personId": "miriam", "relation": "daughter"}
+    ]
+  },
+  {
+    "id": "pharaohs-daughter",
+    "name": "Pharaoh's Daughter",
+    "summary": "The Egyptian princess who finds baby Moses in the Nile, has him nursed by his own mother, and raises him in Pharaoh's household.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "moses", "relation": "adopted son"}
+    ]
+  },
+  {
+    "id": "zipporah",
+    "name": "Zipporah",
+    "summary": "Moses' wife, one of the daughters of Jethro, the priest of Midian.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "moses", "relation": "husband"},
+      {"personId": "jethro", "relation": "father"}
+    ]
+  },
+  {
+    "id": "jethro",
+    "name": "Jethro",
+    "summary": "The priest of Midian, also called Reuel, who takes Moses in as a shepherd and gives him his daughter Zipporah in marriage.",
+    "firstAppearance": {"book": "exodus", "chapter": 2},
+    "relations": [
+      {"personId": "zipporah", "relation": "daughter"},
+      {"personId": "moses", "relation": "son-in-law"}
+    ]
+  },
+  {
+    "id": "shiphrah",
+    "name": "Shiphrah",
+    "summary": "One of two Hebrew midwives who fear God and defy Pharaoh's order to kill newborn Hebrew boys.",
+    "firstAppearance": {"book": "exodus", "chapter": 1},
+    "relations": [
+      {"personId": "puah", "relation": "fellow midwife"}
+    ]
+  },
+  {
+    "id": "puah",
+    "name": "Puah",
+    "summary": "One of two Hebrew midwives who fear God and defy Pharaoh's order to kill newborn Hebrew boys.",
+    "firstAppearance": {"book": "exodus", "chapter": 1},
+    "relations": [
+      {"personId": "shiphrah", "relation": "fellow midwife"}
+    ]
+  },
+  {
+    "id": "god",
+    "name": "God",
+    "summary": "The LORD, who appears to Moses at the burning bush, reveals his covenant name, and delivers Israel from slavery in Egypt.",
+    "firstAppearance": {"book": "exodus", "chapter": 3},
+    "relations": []
+  }
+]

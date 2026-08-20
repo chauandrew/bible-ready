@@ -1,0 +1,7 @@
+{
+  "id": "exodus",
+  "name": "Exodus",
+  "chapterCount": 14,
+  "coverageDepth": "narrative",
+  "arcOrder": ["exo-arc-egypt", "exo-arc-call", "exo-arc-plagues", "exo-arc-exodus-sea"]
+}
