@@ -34,7 +34,8 @@ export default async function ChapterPage({ params }: { params: Promise<{ number
               <div key={e.id} className="card">
                 <div style={{ fontWeight: 600 }}>{e.name}</div>
                 <div className="citation" style={{ marginTop: "0.2rem" }}>
-                  {e.place} · {formatCitation(e.citation)}
+                  {e.place ? `${e.place} · ` : ""}
+                  {formatCitation(e.citation)}
                   {personsForEvent(e).length > 0 && ` · ${personsForEvent(e).map((p) => p.name).join(", ")}`}
                 </div>
               </div>

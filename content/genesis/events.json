@@ -8,7 +8,6 @@
       "book": "genesis",
       "chapter": 1
     },
-    "place": "the heavens",
     "peopleIds": [
       "god"
     ],
@@ -25,7 +24,6 @@
       "book": "genesis",
       "chapter": 1
     },
-    "place": "the sky and seas",
     "peopleIds": [
       "god"
     ],
@@ -42,7 +40,6 @@
       "book": "genesis",
       "chapter": 1
     },
-    "place": "the earth",
     "peopleIds": [
       "god"
     ],
@@ -59,7 +56,6 @@
       "book": "genesis",
       "chapter": 1
     },
-    "place": "the earth",
     "peopleIds": [
       "god",
       "adam",
@@ -78,7 +74,6 @@
       "book": "genesis",
       "chapter": 2
     },
-    "place": "the heavens",
     "peopleIds": [
       "god"
     ],
@@ -95,7 +90,6 @@
       "book": "genesis",
       "chapter": 2
     },
-    "place": "Eden",
     "peopleIds": [
       "god",
       "adam"
@@ -113,7 +107,6 @@
       "book": "genesis",
       "chapter": 2
     },
-    "place": "Eden",
     "peopleIds": [
       "god",
       "adam",
@@ -132,7 +125,6 @@
       "book": "genesis",
       "chapter": 3
     },
-    "place": "Eden",
     "peopleIds": [
       "eve"
     ],
@@ -149,7 +141,6 @@
       "book": "genesis",
       "chapter": 3
     },
-    "place": "Eden",
     "peopleIds": [
       "adam",
       "eve"
@@ -167,7 +158,6 @@
       "book": "genesis",
       "chapter": 3
     },
-    "place": "Eden",
     "peopleIds": [
       "god",
       "adam",
@@ -186,7 +176,6 @@
       "book": "genesis",
       "chapter": 3
     },
-    "place": "the garden gate",
     "peopleIds": [
       "god",
       "adam",
@@ -205,7 +194,6 @@
       "book": "genesis",
       "chapter": 4
     },
-    "place": "east of Eden",
     "peopleIds": [
       "cain",
       "abel",
@@ -224,7 +212,6 @@
       "book": "genesis",
       "chapter": 4
     },
-    "place": "the field",
     "peopleIds": [
       "cain",
       "abel"
@@ -242,7 +229,6 @@
       "book": "genesis",
       "chapter": 4
     },
-    "place": "the land of Nod",
     "peopleIds": [
       "god",
       "cain"
@@ -260,7 +246,6 @@
       "book": "genesis",
       "chapter": 4
     },
-    "place": "east of Eden",
     "peopleIds": [
       "adam",
       "eve",
@@ -279,7 +264,6 @@
       "book": "genesis",
       "chapter": 5
     },
-    "place": "the earth",
     "peopleIds": [
       "enoch",
       "god"
@@ -297,7 +281,6 @@
       "book": "genesis",
       "chapter": 5
     },
-    "place": "the earth",
     "peopleIds": [
       "noah"
     ],
@@ -314,7 +297,6 @@
       "book": "genesis",
       "chapter": 6
     },
-    "place": "the earth",
     "peopleIds": [
       "god"
     ],
@@ -331,7 +313,6 @@
       "book": "genesis",
       "chapter": 6
     },
-    "place": "the earth",
     "peopleIds": [
       "noah"
     ],
@@ -348,7 +329,6 @@
       "book": "genesis",
       "chapter": 6
     },
-    "place": "the earth",
     "peopleIds": [
       "god",
       "noah"
@@ -366,7 +346,6 @@
       "book": "genesis",
       "chapter": 7
     },
-    "place": "the ark",
     "peopleIds": [
       "noah",
       "shem",
@@ -386,7 +365,6 @@
       "book": "genesis",
       "chapter": 7
     },
-    "place": "the earth",
     "peopleIds": [
       "noah"
     ],
@@ -403,7 +381,6 @@
       "book": "genesis",
       "chapter": 7
     },
-    "place": "the earth",
     "peopleIds": [],
     "order": 2,
     "summary": "Every living thing outside the ark perishes in the flood, leaving only Noah and those with him.",
@@ -418,7 +395,6 @@
       "book": "genesis",
       "chapter": 8
     },
-    "place": "the ark",
     "peopleIds": [
       "noah"
     ],
@@ -435,7 +411,6 @@
       "book": "genesis",
       "chapter": 8
     },
-    "place": "Mount Ararat",
     "peopleIds": [
       "noah"
     ],
@@ -452,7 +427,6 @@
       "book": "genesis",
       "chapter": 8
     },
-    "place": "Mount Ararat",
     "peopleIds": [
       "noah",
       "god"
@@ -470,7 +444,6 @@
       "book": "genesis",
       "chapter": 9
     },
-    "place": "Mount Ararat",
     "peopleIds": [
       "god",
       "noah"
@@ -488,7 +461,6 @@
       "book": "genesis",
       "chapter": 9
     },
-    "place": "the sky",
     "peopleIds": [
       "god",
       "noah"
@@ -506,7 +478,6 @@
       "book": "genesis",
       "chapter": 9
     },
-    "place": "Noah's tent",
     "peopleIds": [
       "noah",
       "ham"
@@ -524,7 +495,6 @@
       "book": "genesis",
       "chapter": 10
     },
-    "place": "the earth",
     "peopleIds": [
       "shem",
       "ham",
@@ -575,7 +545,6 @@
       "book": "genesis",
       "chapter": 11
     },
-    "place": "Babel",
     "peopleIds": [
       "god"
     ],
@@ -697,7 +666,6 @@
       "book": "genesis",
       "chapter": 13
     },
-    "place": "Canaan",
     "peopleIds": [
       "god",
       "abraham"
@@ -715,7 +683,6 @@
       "book": "genesis",
       "chapter": 14
     },
-    "place": "near Damascus",
     "peopleIds": [
       "abraham",
       "lot"
@@ -733,7 +700,6 @@
       "book": "genesis",
       "chapter": 14
     },
-    "place": "Salem",
     "peopleIds": [
       "abraham"
     ],
@@ -750,7 +716,6 @@
       "book": "genesis",
       "chapter": 15
     },
-    "place": "Canaan",
     "peopleIds": [
       "god",
       "abraham"
@@ -768,7 +733,6 @@
       "book": "genesis",
       "chapter": 15
     },
-    "place": "Canaan",
     "peopleIds": [
       "god",
       "abraham"
@@ -786,7 +750,6 @@
       "book": "genesis",
       "chapter": 16
     },
-    "place": "Canaan",
     "peopleIds": [
       "sarah",
       "hagar",
@@ -805,7 +768,6 @@
       "book": "genesis",
       "chapter": 16
     },
-    "place": "the wilderness",
     "peopleIds": [
       "hagar",
       "ishmael"
@@ -823,7 +785,6 @@
       "book": "genesis",
       "chapter": 17
     },
-    "place": "Canaan",
     "peopleIds": [
       "god",
       "abraham",
@@ -842,7 +803,6 @@
       "book": "genesis",
       "chapter": 17
     },
-    "place": "Canaan",
     "peopleIds": [
       "god",
       "abraham"
@@ -879,7 +839,6 @@
       "book": "genesis",
       "chapter": 18
     },
-    "place": "near Sodom",
     "peopleIds": [
       "abraham",
       "god"
@@ -897,7 +856,6 @@
       "book": "genesis",
       "chapter": 19
     },
-    "place": "Sodom",
     "peopleIds": [
       "lot"
     ],
@@ -931,7 +889,6 @@
       "book": "genesis",
       "chapter": 19
     },
-    "place": "a cave near Zoar",
     "peopleIds": [
       "lot"
     ],
@@ -948,7 +905,6 @@
       "book": "genesis",
       "chapter": 20
     },
-    "place": "Gerar",
     "peopleIds": [
       "abraham",
       "sarah"
@@ -966,7 +922,6 @@
       "book": "genesis",
       "chapter": 20
     },
-    "place": "Gerar",
     "peopleIds": [
       "god",
       "sarah"
@@ -984,7 +939,6 @@
       "book": "genesis",
       "chapter": 21
     },
-    "place": "Beersheba",
     "peopleIds": [
       "sarah",
       "abraham",
@@ -1003,7 +957,6 @@
       "book": "genesis",
       "chapter": 21
     },
-    "place": "the wilderness of Beersheba",
     "peopleIds": [
       "hagar",
       "ishmael",
@@ -1022,7 +975,6 @@
       "book": "genesis",
       "chapter": 21
     },
-    "place": "Beersheba",
     "peopleIds": [
       "abraham"
     ],
@@ -1058,7 +1010,6 @@
       "book": "genesis",
       "chapter": 22
     },
-    "place": "the land of Moriah",
     "peopleIds": [
       "god",
       "abraham",
@@ -1077,7 +1028,6 @@
       "book": "genesis",
       "chapter": 23
     },
-    "place": "Hebron",
     "peopleIds": [
       "sarah",
       "abraham"
@@ -1112,7 +1062,6 @@
       "book": "genesis",
       "chapter": 24
     },
-    "place": "Hebron",
     "peopleIds": [
       "abraham"
     ],
@@ -1129,7 +1078,6 @@
       "book": "genesis",
       "chapter": 24
     },
-    "place": "Nahor",
     "peopleIds": [
       "rebekah"
     ],
@@ -1146,7 +1094,6 @@
       "book": "genesis",
       "chapter": 24
     },
-    "place": "Nahor",
     "peopleIds": [
       "rebekah",
       "isaac"
@@ -1164,7 +1111,6 @@
       "book": "genesis",
       "chapter": 25
     },
-    "place": "Beersheba",
     "peopleIds": [
       "isaac",
       "rebekah",
@@ -1184,7 +1130,6 @@
       "book": "genesis",
       "chapter": 25
     },
-    "place": "Canaan",
     "peopleIds": [
       "esau",
       "jacob"
@@ -1202,7 +1147,6 @@
       "book": "genesis",
       "chapter": 26
     },
-    "place": "Gerar",
     "peopleIds": [
       "isaac",
       "rebekah"
@@ -1220,7 +1164,6 @@
       "book": "genesis",
       "chapter": 26
     },
-    "place": "Beersheba",
     "peopleIds": [
       "isaac"
     ],
@@ -1237,7 +1180,6 @@
       "book": "genesis",
       "chapter": 27
     },
-    "place": "Beersheba",
     "peopleIds": [
       "jacob",
       "isaac",
@@ -1256,7 +1198,6 @@
       "book": "genesis",
       "chapter": 27
     },
-    "place": "Beersheba",
     "peopleIds": [
       "esau",
       "jacob"
@@ -1274,7 +1215,6 @@
       "book": "genesis",
       "chapter": 28
     },
-    "place": "Bethel",
     "peopleIds": [
       "jacob",
       "god"
@@ -1292,7 +1232,6 @@
       "book": "genesis",
       "chapter": 28
     },
-    "place": "Bethel",
     "peopleIds": [
       "god",
       "jacob"
@@ -1328,7 +1267,6 @@
       "book": "genesis",
       "chapter": 29
     },
-    "place": "Haran",
     "peopleIds": [
       "jacob",
       "leah",
@@ -1347,7 +1285,6 @@
       "book": "genesis",
       "chapter": 30
     },
-    "place": "Haran",
     "peopleIds": [
       "jacob",
       "leah",
@@ -1368,7 +1305,6 @@
       "book": "genesis",
       "chapter": 30
     },
-    "place": "Haran",
     "peopleIds": [
       "rachel",
       "joseph",
@@ -1387,7 +1323,6 @@
       "book": "genesis",
       "chapter": 30
     },
-    "place": "Haran",
     "peopleIds": [
       "jacob",
       "laban"
@@ -1405,7 +1340,6 @@
       "book": "genesis",
       "chapter": 31
     },
-    "place": "Haran",
     "peopleIds": [
       "jacob"
     ],
@@ -1440,7 +1374,6 @@
       "book": "genesis",
       "chapter": 32
     },
-    "place": "the Jabbok river",
     "peopleIds": [
       "jacob"
     ],
@@ -1475,7 +1408,6 @@
       "book": "genesis",
       "chapter": 33
     },
-    "place": "near Seir",
     "peopleIds": [
       "esau",
       "jacob"
@@ -1510,7 +1442,6 @@
       "book": "genesis",
       "chapter": 34
     },
-    "place": "Shechem",
     "peopleIds": [
       "dinah"
     ],
@@ -1527,7 +1458,6 @@
       "book": "genesis",
       "chapter": 34
     },
-    "place": "Shechem",
     "peopleIds": [
       "simeon",
       "levi",
@@ -1564,7 +1494,6 @@
       "book": "genesis",
       "chapter": 35
     },
-    "place": "near Ephrath",
     "peopleIds": [
       "rachel",
       "benjamin"
@@ -1601,7 +1530,6 @@
       "book": "genesis",
       "chapter": 36
     },
-    "place": "the hill country of Seir",
     "peopleIds": [
       "esau"
     ],
@@ -1618,7 +1546,6 @@
       "book": "genesis",
       "chapter": 37
     },
-    "place": "Canaan",
     "peopleIds": [
       "joseph"
     ],
@@ -1635,7 +1562,7 @@
       "book": "genesis",
       "chapter": 37
     },
-    "place": "Dothan",
+    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "reuben",
@@ -1654,7 +1581,6 @@
       "book": "genesis",
       "chapter": 38
     },
-    "place": "Canaan",
     "peopleIds": [
       "tamar",
       "judah"
@@ -1672,7 +1598,6 @@
       "book": "genesis",
       "chapter": 38
     },
-    "place": "Timnah",
     "peopleIds": [
       "tamar",
       "judah"
@@ -1690,7 +1615,6 @@
       "book": "genesis",
       "chapter": 39
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "potiphar"
@@ -1708,7 +1632,6 @@
       "book": "genesis",
       "chapter": 39
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "potiphar"
@@ -1743,7 +1666,6 @@
       "book": "genesis",
       "chapter": 40
     },
-    "place": "the prison",
     "peopleIds": [
       "joseph"
     ],
@@ -1778,7 +1700,6 @@
       "book": "genesis",
       "chapter": 41
     },
-    "place": "Pharaoh's court",
     "peopleIds": [
       "joseph",
       "pharaoh"
@@ -1796,7 +1717,6 @@
       "book": "genesis",
       "chapter": 41
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
@@ -1832,7 +1752,6 @@
       "book": "genesis",
       "chapter": 42
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "simeon"
@@ -1850,7 +1769,6 @@
       "book": "genesis",
       "chapter": 43
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "benjamin",
@@ -1869,7 +1787,6 @@
       "book": "genesis",
       "chapter": 43
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
@@ -1886,7 +1803,6 @@
       "book": "genesis",
       "chapter": 44
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "benjamin"
@@ -1904,7 +1820,6 @@
       "book": "genesis",
       "chapter": 44
     },
-    "place": "Egypt",
     "peopleIds": [
       "judah",
       "benjamin"
@@ -1922,7 +1837,6 @@
       "book": "genesis",
       "chapter": 45
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
@@ -1939,7 +1853,6 @@
       "book": "genesis",
       "chapter": 45
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph",
       "jacob"
@@ -1957,7 +1870,7 @@
       "book": "genesis",
       "chapter": 46
     },
-    "place": "Beersheba",
+    "place": "Egypt",
     "peopleIds": [
       "jacob"
     ],
@@ -1992,7 +1905,6 @@
       "book": "genesis",
       "chapter": 47
     },
-    "place": "Goshen",
     "peopleIds": [
       "joseph",
       "jacob",
@@ -2011,7 +1923,6 @@
       "book": "genesis",
       "chapter": 47
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
@@ -2028,7 +1939,6 @@
       "book": "genesis",
       "chapter": 48
     },
-    "place": "Goshen",
     "peopleIds": [
       "jacob",
       "joseph"
@@ -2046,7 +1956,6 @@
       "book": "genesis",
       "chapter": 48
     },
-    "place": "Goshen",
     "peopleIds": [
       "jacob"
     ],
@@ -2063,7 +1972,6 @@
       "book": "genesis",
       "chapter": 49
     },
-    "place": "Goshen",
     "peopleIds": [
       "jacob"
     ],
@@ -2080,7 +1988,6 @@
       "book": "genesis",
       "chapter": 49
     },
-    "place": "Goshen",
     "peopleIds": [
       "jacob"
     ],
@@ -2115,7 +2022,6 @@
       "book": "genesis",
       "chapter": 50
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
@@ -2132,7 +2038,6 @@
       "book": "genesis",
       "chapter": 50
     },
-    "place": "Egypt",
     "peopleIds": [
       "joseph"
     ],
