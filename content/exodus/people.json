@@ -28,7 +28,7 @@
   {
     "id": "miriam",
     "name": "Miriam",
-    "summary": "Moses' sister, who watches over him as an infant on the Nile and arranges for their mother to nurse him in Pharaoh's household.",
+    "summary": "Moses' sister, who watches over him as an infant on the Nile and offers to fetch a Hebrew nurse, bringing their own mother to nurse him.",
     "firstAppearance": {"book": "exodus", "chapter": 2},
     "relations": [
       {"personId": "moses", "relation": "brother"},
@@ -40,7 +40,7 @@
   {
     "id": "pharaoh",
     "name": "Pharaoh",
-    "summary": "The unnamed king of Egypt who enslaves Israel and repeatedly refuses to let the people go despite ten escalating plagues.",
+    "summary": "Exodus never names Egypt's kings, and chapters 1-14 involve more than one: the king who enslaves Israel dies while Moses is in Midian, and his successor is the Pharaoh who resists Moses through the ten plagues.",
     "firstAppearance": {"book": "exodus", "chapter": 1},
     "relations": []
   },
