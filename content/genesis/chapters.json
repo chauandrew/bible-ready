@@ -11,7 +11,36 @@
       "e1-1",
       "e1-2",
       "e1-3"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "god",
+          "lord"
+        ],
+        [
+          "create",
+          "creates",
+          "created",
+          "make",
+          "made",
+          "speak",
+          "spoke"
+        ],
+        [
+          "light",
+          "sky",
+          "land",
+          "sea",
+          "animals",
+          "man",
+          "woman",
+          "image"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen2",
@@ -24,7 +53,31 @@
       "e2-0",
       "e2-1",
       "e2-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "adam",
+          "eve"
+        ],
+        [
+          "form",
+          "formed",
+          "created",
+          "made",
+          "rest",
+          "rested"
+        ],
+        [
+          "eden",
+          "garden",
+          "rib",
+          "companion"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen3",
@@ -38,7 +91,34 @@
       "e3-1",
       "e3-2",
       "e3-3"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "serpent",
+          "eve",
+          "adam"
+        ],
+        [
+          "tempt",
+          "tempts",
+          "eat",
+          "ate",
+          "sin",
+          "disobey"
+        ],
+        [
+          "fruit",
+          "forbidden",
+          "garden",
+          "eden",
+          "expel",
+          "exile"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen4",
@@ -52,7 +132,30 @@
       "e4-1",
       "e4-2",
       "e4-3"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "cain",
+          "abel"
+        ],
+        [
+          "kill",
+          "killed",
+          "murder",
+          "slay"
+        ],
+        [
+          "jealous",
+          "offering",
+          "field",
+          "curse",
+          "wander"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen5",
@@ -77,7 +180,31 @@
       "e6-0",
       "e6-1",
       "e6-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "noah",
+          "god"
+        ],
+        [
+          "build",
+          "builds",
+          "instruct",
+          "instructs",
+          "command"
+        ],
+        [
+          "ark",
+          "flood",
+          "animals",
+          "corrupt",
+          "violence"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen7",
@@ -90,7 +217,31 @@
       "e7-0",
       "e7-1",
       "e7-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "noah"
+        ],
+        [
+          "enter",
+          "entered",
+          "rain",
+          "flood",
+          "rise",
+          "destroy"
+        ],
+        [
+          "ark",
+          "animals",
+          "family",
+          "earth",
+          "water"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen8",
@@ -103,7 +254,30 @@
       "e8-0",
       "e8-1",
       "e8-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "noah"
+        ],
+        [
+          "recede",
+          "receded",
+          "send",
+          "sent",
+          "dry"
+        ],
+        [
+          "raven",
+          "dove",
+          "ark",
+          "land",
+          "water"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen9",
@@ -116,7 +290,30 @@
       "e9-0",
       "e9-1",
       "e9-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "god",
+          "noah"
+        ],
+        [
+          "covenant",
+          "promise",
+          "bless",
+          "blesses"
+        ],
+        [
+          "rainbow",
+          "sign",
+          "flood",
+          "drunk",
+          "drunkenness"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen10",
@@ -142,7 +339,31 @@
       "e11-1",
       "e11-2",
       "e11-3"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "build",
+          "builds",
+          "building"
+        ],
+        [
+          "tower",
+          "babel",
+          "city"
+        ],
+        [
+          "confuse",
+          "confused",
+          "scatter",
+          "scattered",
+          "language",
+          "languages"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen12",
@@ -155,7 +376,32 @@
       "e12-0",
       "e12-1",
       "e12-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "god",
+          "abram",
+          "abraham"
+        ],
+        [
+          "call",
+          "calls",
+          "promise",
+          "leave",
+          "leaves"
+        ],
+        [
+          "canaan",
+          "land",
+          "nation",
+          "bless",
+          "egypt"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen13",
@@ -179,7 +425,30 @@
     "eventIds": [
       "e14-0",
       "e14-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "abram",
+          "abraham",
+          "lot"
+        ],
+        [
+          "rescue",
+          "rescues",
+          "defeat",
+          "battle"
+        ],
+        [
+          "kings",
+          "melchizedek",
+          "captured",
+          "raiders"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen15",
@@ -191,7 +460,30 @@
     "eventIds": [
       "e15-0",
       "e15-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "god",
+          "abram",
+          "abraham"
+        ],
+        [
+          "covenant",
+          "promise",
+          "believe",
+          "believes"
+        ],
+        [
+          "offspring",
+          "descendants",
+          "land",
+          "stars"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen16",
@@ -203,7 +495,31 @@
     "eventIds": [
       "e16-0",
       "e16-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "hagar",
+          "sarai",
+          "sarah",
+          "abram"
+        ],
+        [
+          "conceive",
+          "conceives",
+          "flee",
+          "flees",
+          "bear"
+        ],
+        [
+          "ishmael",
+          "angel",
+          "servant"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen17",
@@ -215,7 +531,30 @@
     "eventIds": [
       "e17-0",
       "e17-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "abram",
+          "abraham",
+          "sarai",
+          "sarah"
+        ],
+        [
+          "rename",
+          "renamed",
+          "circumcision",
+          "circumcise"
+        ],
+        [
+          "covenant",
+          "isaac",
+          "sign"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen18",
@@ -227,7 +566,31 @@
     "eventIds": [
       "e18-0",
       "e18-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "abraham",
+          "sarah"
+        ],
+        [
+          "visit",
+          "visits",
+          "promise",
+          "plead",
+          "pleads",
+          "intercede"
+        ],
+        [
+          "son",
+          "sodom",
+          "visitors",
+          "angels"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen19",
@@ -240,7 +603,30 @@
       "e19-0",
       "e19-1",
       "e19-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "lot",
+          "sodom"
+        ],
+        [
+          "destroy",
+          "destroyed",
+          "rescue",
+          "flee",
+          "fled"
+        ],
+        [
+          "angels",
+          "salt",
+          "pillar",
+          "daughters"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen20",
@@ -265,7 +651,28 @@
       "e21-0",
       "e21-1",
       "e21-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "sarah",
+          "isaac"
+        ],
+        [
+          "born",
+          "bear",
+          "birth"
+        ],
+        [
+          "hagar",
+          "ishmael",
+          "wilderness",
+          "beersheba"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen22",
@@ -277,7 +684,31 @@
     "eventIds": [
       "e22-0",
       "e22-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "abraham",
+          "abram"
+        ],
+        [
+          "sacrifice",
+          "offer",
+          "offers",
+          "kill",
+          "slay",
+          "slaughter"
+        ],
+        [
+          "isaac",
+          "son",
+          "ram",
+          "angel"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen23",
@@ -314,7 +745,31 @@
     "eventIds": [
       "e25-0",
       "e25-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jacob",
+          "esau"
+        ],
+        [
+          "sell",
+          "sells",
+          "sold",
+          "buy",
+          "buys",
+          "trade"
+        ],
+        [
+          "birthright",
+          "stew",
+          "bowl",
+          "twins"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen26",
@@ -338,7 +793,31 @@
     "eventIds": [
       "e27-0",
       "e27-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jacob",
+          "isaac",
+          "rebekah"
+        ],
+        [
+          "disguise",
+          "disguises",
+          "trick",
+          "tricks",
+          "deceive",
+          "steal",
+          "steals"
+        ],
+        [
+          "blessing",
+          "esau"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen28",
@@ -350,7 +829,30 @@
     "eventIds": [
       "e28-0",
       "e28-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jacob"
+        ],
+        [
+          "dream",
+          "dreams",
+          "flee",
+          "flees"
+        ],
+        [
+          "ladder",
+          "stairway",
+          "bethel",
+          "heaven",
+          "angels",
+          "covenant"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen29",
@@ -399,7 +901,28 @@
     "eventIds": [
       "e32-0",
       "e32-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jacob"
+        ],
+        [
+          "wrestle",
+          "wrestles"
+        ],
+        [
+          "angel",
+          "man",
+          "peniel",
+          "israel",
+          "rename",
+          "renamed"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen33",
@@ -459,7 +982,30 @@
     "eventIds": [
       "e37-0",
       "e37-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "joseph",
+          "brothers"
+        ],
+        [
+          "sell",
+          "sells",
+          "sold"
+        ],
+        [
+          "slavery",
+          "slave",
+          "egypt",
+          "traders",
+          "dreams",
+          "coat"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen38",
@@ -483,7 +1029,30 @@
     "eventIds": [
       "e39-0",
       "e39-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "joseph",
+          "potiphar"
+        ],
+        [
+          "accuse",
+          "accuses",
+          "refuse",
+          "refuses",
+          "imprison",
+          "imprisoned"
+        ],
+        [
+          "wife",
+          "prison",
+          "potiphar"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen40",
@@ -508,7 +1077,31 @@
       "e41-0",
       "e41-1",
       "e41-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "joseph",
+          "pharaoh"
+        ],
+        [
+          "interpret",
+          "interprets",
+          "rule",
+          "govern",
+          "store",
+          "stores"
+        ],
+        [
+          "dreams",
+          "famine",
+          "egypt",
+          "grain"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen42",
@@ -556,7 +1149,28 @@
     "eventIds": [
       "e45-0",
       "e45-1"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "joseph",
+          "brothers"
+        ],
+        [
+          "reveal",
+          "reveals",
+          "forgive",
+          "forgives"
+        ],
+        [
+          "identity",
+          "jacob",
+          "egypt"
+        ]
+      ],
+      "minGroups": 2
+    }
   },
   {
     "id": "gen46",
@@ -617,6 +1231,29 @@
       "e50-0",
       "e50-1",
       "e50-2"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "joseph",
+          "brothers"
+        ],
+        [
+          "forgive",
+          "forgives",
+          "reassure",
+          "reassures"
+        ],
+        [
+          "jacob",
+          "burial",
+          "good",
+          "evil",
+          "egypt"
+        ]
+      ],
+      "minGroups": 2
+    }
   }
 ]

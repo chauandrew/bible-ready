@@ -55,6 +55,25 @@ export const ArcSchema = z.object({
 });
 export type Arc = z.infer<typeof ArcSchema>;
 
+/**
+ * Grading data for the free-response "what happens in this chapter" question
+ * (see QuizRunner's FreeResponseQuestion). Each entry in `keywordGroups` is one
+ * concept the answer should touch (a subject, an action, an object...); any
+ * keyword within a group counts as that concept being covered — they're
+ * synonyms/near-paraphrases of each other, not separate concepts. An answer is
+ * graded correct once it covers `minGroups` of the groups, so a paraphrase
+ * that skips a minor detail still passes. See lib/grade.ts for the matcher.
+ */
+export const ChapterGradingSchema = z.object({
+  keywordGroups: z.array(z.array(z.string().min(1)).min(1)).min(2),
+  /** How many distinct groups a free-text answer must cover to be marked
+   * correct. Must be between 1 and keywordGroups.length (checked in
+   * scripts/check-content.ts, since it's a cross-field rule zod alone won't
+   * express cleanly). */
+  minGroups: z.number().int().positive(),
+});
+export type ChapterGrading = z.infer<typeof ChapterGradingSchema>;
+
 export const ChapterSchema = z.object({
   id: z.string(),
   book: BookIdSchema,
@@ -66,6 +85,25 @@ export const ChapterSchema = z.object({
   summary: z.string(),
   arcId: z.string(),
   eventIds: z.array(z.string()),
+  /**
+   * Whether this chapter is substantive enough to generate a free-response
+   * "what happens in this chapter?" question (see lib/generate.ts's
+   * generateFreeResponseQuestions). Defaults to false — most chapters don't
+   * opt in.
+   *
+   * This is a deliberate do-over of `Event.notable` below: that flag was
+   * meant to gate which events could be asked about, but every authored event
+   * ended up `notable: true`, so it filters nothing. Rather than patch that
+   * flag's meaning after the fact, this is a new, chapter-level flag with a
+   * narrower, single job — "does this chapter deserve a free-response
+   * question" — so it can't drift the same way. `Event.notable` is left as-is
+   * (unrelated, pre-existing, out of scope for this change).
+   */
+  quizWorthy: z.boolean().default(false),
+  /** Required when quizWorthy is true (checked in scripts/check-content.ts).
+   * Absent otherwise — a chapter that isn't asked about shouldn't carry
+   * grading data nobody reads. */
+  freeResponse: ChapterGradingSchema.optional(),
 });
 export type Chapter = z.infer<typeof ChapterSchema>;
 

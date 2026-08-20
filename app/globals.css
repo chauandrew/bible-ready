@@ -23,9 +23,11 @@
   --font-voice: Georgia, "Times New Roman", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --radius: 10px;
+  color-scheme: light;
 }
 
 :root[data-theme="dark"] {
+  color-scheme: dark;
   --bg: #14120f;
   --surface: #1c1915;
   --surface-2: #24211b;
@@ -47,6 +49,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
+    color-scheme: dark;
     --bg: #14120f;
     --surface: #1c1915;
     --surface-2: #24211b;
@@ -68,6 +71,10 @@
 }
 
 * { box-sizing: border-box; }
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition-duration: 0.001ms !important; animation-duration: 0.001ms !important; }
+}
 
 /* Text for screen readers only — carries the right/wrong feedback that is
    otherwise conveyed by colour alone. */
@@ -104,10 +111,67 @@ h1, h2, h3, h4 {
 
 a { color: var(--accent-text); }
 
+/* Two container widths, chosen per page by what the page is for:
+   .container is a reading/task column — chapter prose, a person's bio, one
+   quiz question at a time, a flashcard, a printable sheet. Long lines of text
+   and a single focused question don't get better by stretching them across a
+   desktop monitor, so this stays narrow at any viewport.
+   .container-wide is for browsing pages — home, the book hub, the chapter/
+   people/arc indexes, progress — where the point is surveying many items at
+   once. This is the one that actually uses desktop width instead of padding
+   it out on both sides. */
 .container {
   max-width: 640px;
   margin: 0 auto;
   padding: 1rem 1.1rem 3rem;
+}
+
+.container-wide {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem 3.5rem;
+}
+@media (max-width: 640px) {
+  .container-wide { padding: 1rem 1.1rem 3rem; }
+}
+
+/* Responsive card grid: 1 column on a phone, as many ~260px columns as fit
+   on a desktop monitor. Used by every index/browsing page. */
+.grid-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 0.9rem;
+}
+
+/* Two side-by-side sections on a desktop-wide page (progress: sessions next
+   to category stats), stacked on anything narrower. */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.75rem;
+  align-items: start;
+}
+@media (min-width: 860px) {
+  .two-col { grid-template-columns: 1fr 1fr; }
+}
+
+.page-title {
+  font-size: clamp(1.5rem, 1.15rem + 1.4vw, 2.15rem);
+  margin: 0 0 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.page-lede {
+  font-family: var(--font-sans);
+  color: var(--text-secondary);
+  font-size: clamp(0.95rem, 0.9rem + 0.15vw, 1.05rem);
+  max-width: 62ch;
+  margin: 0 0 1.75rem;
+}
+
+.section-title {
+  font-size: 1.05rem;
+  margin: 0 0 0.6rem;
 }
 
 .card {
@@ -115,6 +179,47 @@ a { color: var(--accent-text); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem 1.1rem;
+}
+
+/* Cards rendered as links (Next's <Link className="card">) are interactive —
+   give them a hover/focus treatment so a desktop pointer gets feedback that a
+   flat card stack never needed on mobile. */
+a.card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+a.card,
+button.card {
+  transition: border-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+a.card:hover,
+button.card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+a.card:active,
+button.card:active {
+  transform: scale(0.99);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 100;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  font-family: var(--font-sans);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 1rem;
 }
 
 .eyebrow {
@@ -142,6 +247,7 @@ a { color: var(--accent-text); }
   text-decoration: none;
 }
 .btn:active { transform: scale(0.98); }
+.btn:hover { border-color: var(--accent); }
 
 .btn-primary {
   background: var(--accent);
@@ -149,17 +255,18 @@ a { color: var(--accent-text); }
   color: #fffdf8;
   font-weight: 600;
 }
+.btn-primary:hover { filter: brightness(1.06); }
 
 .progress-track {
-  height: 6px;
+  height: 8px;
   background: var(--surface-2);
-  border-radius: 3px;
+  border-radius: 4px;
   overflow: hidden;
 }
 .progress-fill {
   height: 100%;
   background: var(--accent);
-  border-radius: 3px;
+  border-radius: 4px;
   transition: width 0.2s ease;
 }
 
@@ -177,8 +284,13 @@ a { color: var(--accent-text); }
   color: var(--text);
   font-size: 0.95rem;
   cursor: pointer;
+  transition: border-color 0.12s ease, background 0.12s ease;
 }
 .option:disabled { cursor: default; }
+.option:not(:disabled):hover {
+  border-color: var(--accent);
+  background: var(--surface-2);
+}
 .option-correct {
   background: var(--success-bg);
   border-color: var(--success-border);
@@ -188,6 +300,29 @@ a { color: var(--accent-text); }
   background: var(--danger-bg);
   border-color: var(--danger-border);
   color: var(--danger-text);
+}
+
+/* Free-response text entry (used by QuizRunner's free-response question type). */
+.input {
+  font-family: var(--font-sans);
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  padding: 0.65rem 0.85rem;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.95rem;
+  resize: vertical;
+}
+.input:focus { border-color: var(--accent); }
+.input-error { border-color: var(--danger-border); }
+.field-error {
+  font-family: var(--font-sans);
+  font-size: 0.82rem;
+  color: var(--danger-text);
+  margin: 0.35rem 0 0;
 }
 
 .note {
@@ -218,17 +353,39 @@ a { color: var(--accent-text); }
   color: var(--text-secondary);
 }
 
+/* The nav bar itself spans the full width (so its border and sticky
+   background reach the edges); its content is capped to the same width as
+   .container-wide so it lines up with the widest pages. */
 nav.top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 640px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 0.9rem 1.1rem;
-  border-bottom: 1px solid var(--border);
   font-family: var(--font-sans);
 }
 nav.top a { text-decoration: none; color: var(--text); }
+
+/* The bar itself spans full width so its sticky background and border reach
+   the viewport edges; nav.top above just centers the content inside it. */
+.nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Visible only for keyboard focus, not mouse clicks — the accessibility gap
+   this app's card/option/button grid was otherwise missing entirely. */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
 
 @media print {
   nav.top, .no-print { display: none; }

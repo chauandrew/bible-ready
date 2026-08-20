@@ -4,8 +4,9 @@ import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
 import { scoreQuiz, gapReport, isCorrect, categoryOf } from "@/lib/quiz";
+import { gradeFreeResponse } from "@/lib/grade";
 import { recordSession, clearMissed } from "@/lib/progress";
-import { formatCitation } from "@/lib/content";
+import { formatCitation, chapterByNumber } from "@/lib/content";
 
 type Mode = "study" | "quiz";
 
@@ -214,6 +215,86 @@ function MatchQuestion({
   );
 }
 
+function FreeResponseQuestion({
+  item,
+  mode,
+  onAnswer,
+}: {
+  item: Extract<QuizItem, { type: "free-response" }>;
+  mode: Mode;
+  onAnswer: (a: Answer) => void;
+}) {
+  const [text, setText] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [result, setResult] = useState<ReturnType<typeof gradeFreeResponse> | null>(null);
+
+  function submit() {
+    if (!text.trim()) {
+      setError("Enter an answer before submitting.");
+      return;
+    }
+    if (mode === "quiz") {
+      onAnswer({ itemId: item.id, kind: "free-response", text });
+      return;
+    }
+    setResult(gradeFreeResponse({ keywordGroups: item.keywordGroups, minGroups: item.minGroups }, text));
+  }
+
+  const modelAnswer = chapterByNumber.get(item.chapterNumber)?.summary;
+
+  return (
+    <div>
+      <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {!result && (
+        <>
+          <textarea
+            className={error ? "input input-error" : "input"}
+            rows={3}
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+              if (error) setError(null);
+            }}
+            placeholder="Type what happens in this chapter…"
+            aria-label={item.prompt}
+            aria-invalid={!!error}
+          />
+          {error && (
+            <p className="field-error" role="alert">
+              {error}
+            </p>
+          )}
+          <div style={{ marginTop: "0.75rem" }}>
+            <button type="button" className="btn btn-primary" onClick={submit}>
+              Submit
+            </button>
+          </div>
+        </>
+      )}
+      {result && (
+        <>
+          <div className="note" style={{ borderColor: result.correct ? "var(--success-border)" : "var(--danger-border)" }}>
+            <span className="sr-only">{result.correct ? "Correct: " : "Not quite: "}</span>
+            <span aria-hidden="true">{result.correct ? "✓ " : "✗ "}</span>
+            {result.correct ? "Good — you covered the main idea. " : "Not quite — here's what happens: "}
+            {modelAnswer}
+          </div>
+          <p className="citation" style={{ marginTop: "0.5rem" }}>{formatCitation(item.citation)}</p>
+          <div style={{ marginTop: "0.75rem" }}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => onAnswer({ itemId: item.id, kind: "free-response", text })}
+            >
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 // -----------------------------------------------------------------------
 // Runner
 // -----------------------------------------------------------------------
@@ -266,7 +347,7 @@ export default function QuizRunner({
   if (done && score) {
     return (
       <main className="container">
-        <h1 style={{ fontSize: "1.4rem", margin: "1rem 0 0.25rem" }}>Score: {score.correct}/{score.total}</h1>
+        <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>Score: {score.correct}/{score.total}</h1>
         <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>{score.percent}% correct</p>
 
         {resultsExtra && report && resultsExtra(report)}
@@ -279,7 +360,13 @@ export default function QuizRunner({
                 const a = answers.find((x) => x.itemId === it.id);
                 const correct = a ? isCorrect(it, a) : false;
                 const correctText =
-                  "correctIndex" in it ? it.options[it.correctIndex] : "correctOrder" in it ? it.correctOrder.join(" → ") : it.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ");
+                  "correctIndex" in it
+                    ? it.options[it.correctIndex]
+                    : "correctOrder" in it
+                      ? it.correctOrder.join(" → ")
+                      : "correctPairs" in it
+                        ? it.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ")
+                        : (chapterByNumber.get(it.chapterNumber)?.summary ?? "");
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
@@ -306,7 +393,7 @@ export default function QuizRunner({
   if (items.length === 0) {
     return (
       <main className="container">
-        <h1 style={{ fontSize: "1.4rem", margin: "1rem 0" }}>Nothing to ask</h1>
+        <h1 className="page-title" style={{ marginTop: "1rem" }}>Nothing to ask</h1>
         <p style={{ color: "var(--text-secondary)" }}>
           There are no questions available here right now.
         </p>
@@ -339,8 +426,10 @@ export default function QuizRunner({
           <McQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         ) : item.type === "sequence" ? (
           <SequenceQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
-        ) : (
+        ) : item.type === "match" ? (
           <MatchQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+        ) : (
+          <FreeResponseQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         )}
       </div>
     </main>

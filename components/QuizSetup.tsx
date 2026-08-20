@@ -36,7 +36,7 @@ export default function QuizSetup({
 
   return (
     <main className="container">
-      <h1 style={{ fontSize: "1.4rem", margin: "1rem 0 0.25rem" }}>{moduleLabel}</h1>
+      <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>{moduleLabel}</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: "1.25rem" }}>{defaultCount} questions.</p>
 
       <div className="card" style={{ marginBottom: "1rem" }}>

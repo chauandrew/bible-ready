@@ -24,19 +24,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)" />
+        <meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
       <body>
-        <nav className="top no-print">
-          <Link href="/" style={{ fontFamily: "var(--font-voice)", fontWeight: 600 }}>
-            Bible Ready
-          </Link>
-          <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-            <Link href="/genesis" className="btn">Genesis</Link>
-            <ThemeToggle />
-          </div>
-        </nav>
-        {children}
+        <a href="#main-content" className="skip-link">Skip to content</a>
+        <div className="nav-bar no-print">
+          <nav className="top">
+            <Link href="/" style={{ fontFamily: "var(--font-voice)", fontWeight: 600, fontSize: "1.05rem" }}>
+              Bible Ready
+            </Link>
+            <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              <Link href="/genesis" className="btn">Genesis</Link>
+              <ThemeToggle />
+            </div>
+          </nav>
+        </div>
+        <div id="main-content">{children}</div>
         <Analytics />
         <SpeedInsights />
       </body>

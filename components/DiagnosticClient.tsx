@@ -13,6 +13,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   "mechanic:chapter-summary": "What a chapter is about",
   "mechanic:sequence": "Event order",
   "mechanic:match": "Matching",
+  "mechanic:free-response": "What happens in a chapter",
   "theme:theme": "Themes",
   "theme:arc": "Narrative arcs",
   "theme:covenant": "Covenants",

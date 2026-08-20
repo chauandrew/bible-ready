@@ -13,18 +13,18 @@ const modules = [
 
 export default function GenesisHome() {
   return (
-    <main className="container">
+    <main className="container-wide">
       <p className="eyebrow" style={{ marginTop: "1rem" }}>
         <Link href="/" style={{ color: "inherit" }}>Bible Ready</Link>
       </p>
-      <h1 style={{ fontSize: "1.6rem", marginBottom: "0.35rem" }}>{genesis.name}</h1>
-      <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>
+      <h1 className="page-title">{genesis.name}</h1>
+      <p className="page-lede">
         Learn the storyline of {genesis.name} — what happens, where, and to whom.
       </p>
 
-      <div style={{ display: "grid", gap: "0.75rem" }}>
+      <div className="grid-cards">
         {modules.map((m) => (
-          <Link key={m.href} href={m.href} className="card" style={{ display: "block", textDecoration: "none" }}>
+          <Link key={m.href} href={m.href} className="card">
             <div style={{ fontWeight: 600, color: "var(--text)" }}>{m.label}</div>
             <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
               {m.desc}
@@ -33,10 +33,10 @@ export default function GenesisHome() {
         ))}
       </div>
 
-      <p className="eyebrow" style={{ marginTop: "2rem" }}>Narrative arcs</p>
-      <div style={{ display: "grid", gap: "0.5rem", marginTop: "0.5rem" }}>
+      <p className="eyebrow" style={{ marginTop: "2.25rem" }}>Narrative arcs</p>
+      <div className="grid-cards" style={{ marginTop: "0.6rem", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))" }}>
         {arcs.map((a) => (
-          <Link key={a.id} href={`/study/arcs/${a.id}`} className="card" style={{ display: "flex", justifyContent: "space-between", textDecoration: "none" }}>
+          <Link key={a.id} href={`/study/arcs/${a.id}`} className="card" style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span>{a.name}</span>
             <span className="citation">{a.startChapter}–{a.endChapter}</span>
           </Link>

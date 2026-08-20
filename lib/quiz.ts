@@ -1,17 +1,21 @@
 import type { AuthoredQuestion, Citation } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
+import { gradeFreeResponse } from "./grade";
 import {
   generateAll,
   toRuntimeMC,
   toRuntimeSequence,
   toRuntimeMatch,
+  toRuntimeFreeResponse,
   type BookData,
   type GeneratedMC,
   type GeneratedSequence,
   type GeneratedMatch,
+  type GeneratedFreeResponse,
   type RuntimeMC,
   type RuntimeSequence,
   type RuntimeMatch,
+  type RuntimeFreeResponse,
 } from "./generate";
 
 /**
@@ -31,7 +35,7 @@ export interface RuntimeAuthoredMC {
   explanation?: string;
 }
 
-export type QuizItem = RuntimeAuthoredMC | RuntimeMC | RuntimeSequence | RuntimeMatch;
+export type QuizItem = RuntimeAuthoredMC | RuntimeMC | RuntimeSequence | RuntimeMatch | RuntimeFreeResponse;
 
 function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC {
   const rand = mulberry32(seed);
@@ -93,6 +97,7 @@ export function selectQuiz(
       const itemSeed = hashSeed(`${seedStr}:${g.id}`);
       if (g.type === "sequence") return toRuntimeSequence(g as GeneratedSequence, itemSeed);
       if (g.type === "match") return toRuntimeMatch(g as GeneratedMatch, itemSeed);
+      if (g.type === "free-response") return toRuntimeFreeResponse(g as GeneratedFreeResponse);
       return toRuntimeMC(g as GeneratedMC, itemSeed);
     }),
   ];
@@ -107,7 +112,8 @@ export function selectQuiz(
 export type Answer =
   | { itemId: string; kind: "mc"; selectedIndex: number }
   | { itemId: string; kind: "sequence"; order: string[] }
-  | { itemId: string; kind: "match"; pairs: { left: string; right: string }[] };
+  | { itemId: string; kind: "match"; pairs: { left: string; right: string }[] }
+  | { itemId: string; kind: "free-response"; text: string };
 
 export function isCorrect(item: QuizItem, answer: Answer): boolean {
   if (item.kind === "authored" || item.type === "chapter" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
@@ -121,6 +127,12 @@ export function isCorrect(item: QuizItem, answer: Answer): boolean {
     const correctSet = new Set(item.correctPairs.map((p) => `${p.left}::${p.right}`));
     const answerSet = new Set(answer.pairs.map((p) => `${p.left}::${p.right}`));
     return correctSet.size === answerSet.size && [...correctSet].every((p) => answerSet.has(p));
+  }
+  if (item.type === "free-response") {
+    return (
+      answer.kind === "free-response" &&
+      gradeFreeResponse({ keywordGroups: item.keywordGroups, minGroups: item.minGroups }, answer.text).correct
+    );
   }
   return false;
 }
@@ -184,6 +196,7 @@ export function quizFromIds(data: BookData, authoredQuestions: AuthoredQuestion[
     if (!generated) continue;
     if (generated.type === "sequence") items.push(toRuntimeSequence(generated as GeneratedSequence, seed));
     else if (generated.type === "match") items.push(toRuntimeMatch(generated as GeneratedMatch, seed));
+    else if (generated.type === "free-response") items.push(toRuntimeFreeResponse(generated as GeneratedFreeResponse));
     else items.push(toRuntimeMC(generated as GeneratedMC, seed));
   }
   return items;
