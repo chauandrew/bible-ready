@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { quizModuleIds, dataForModule, arcById, genesis } from "@/lib/content";
 import QuizSetup from "@/components/QuizSetup";
@@ -13,5 +14,9 @@ export default async function QuizModulePage({ params }: { params: Promise<{ mod
 
   const label = module === "all" ? `Quiz — ${genesis.name}` : `Quiz — ${arcById.get(module)?.name ?? module}`;
 
-  return <QuizSetup moduleId={module} moduleLabel={label} data={resolved.data} questions={resolved.questions} />;
+  return (
+    <Suspense>
+      <QuizSetup moduleId={module} moduleLabel={label} data={resolved.data} questions={resolved.questions} />
+    </Suspense>
+  );
 }

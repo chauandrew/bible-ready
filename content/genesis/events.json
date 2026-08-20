@@ -1,1 +1,2143 @@
-[]
+[
+  {
+    "id": "e1-0",
+    "book": "genesis",
+    "chapter": 1,
+    "name": "God creates light and separates day from night",
+    "citation": {
+      "book": "genesis",
+      "chapter": 1
+    },
+    "place": "the heavens",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 0,
+    "summary": "God speaks light into existence and separates it from darkness on the first day.",
+    "notable": true
+  },
+  {
+    "id": "e1-1",
+    "book": "genesis",
+    "chapter": 1,
+    "name": "God separates the sky from the seas",
+    "citation": {
+      "book": "genesis",
+      "chapter": 1
+    },
+    "place": "the sky and seas",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 1,
+    "summary": "God forms an expanse to separate the waters above from the waters below.",
+    "notable": true
+  },
+  {
+    "id": "e1-2",
+    "book": "genesis",
+    "chapter": 1,
+    "name": "God creates land, plants, and living creatures",
+    "citation": {
+      "book": "genesis",
+      "chapter": 1
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 2,
+    "summary": "God gathers the waters so dry land appears, then fills the earth and seas with plants and creatures.",
+    "notable": true
+  },
+  {
+    "id": "e1-3",
+    "book": "genesis",
+    "chapter": 1,
+    "name": "God creates man and woman in his image",
+    "citation": {
+      "book": "genesis",
+      "chapter": 1
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "god",
+      "adam",
+      "eve"
+    ],
+    "order": 3,
+    "summary": "God creates humanity, male and female, in his own image and blesses them to rule over creation.",
+    "notable": true
+  },
+  {
+    "id": "e2-0",
+    "book": "genesis",
+    "chapter": 2,
+    "name": "God rests on the seventh day",
+    "citation": {
+      "book": "genesis",
+      "chapter": 2
+    },
+    "place": "the heavens",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 0,
+    "summary": "Having finished his work, God rests on the seventh day and blesses it.",
+    "notable": true
+  },
+  {
+    "id": "e2-1",
+    "book": "genesis",
+    "chapter": 2,
+    "name": "God places Adam in the Garden of Eden",
+    "citation": {
+      "book": "genesis",
+      "chapter": 2
+    },
+    "place": "Eden",
+    "peopleIds": [
+      "god",
+      "adam"
+    ],
+    "order": 1,
+    "summary": "God forms the man from the dust and sets him in the garden to work and keep it.",
+    "notable": true
+  },
+  {
+    "id": "e2-2",
+    "book": "genesis",
+    "chapter": 2,
+    "name": "God creates Eve from Adam's rib",
+    "citation": {
+      "book": "genesis",
+      "chapter": 2
+    },
+    "place": "Eden",
+    "peopleIds": [
+      "god",
+      "adam",
+      "eve"
+    ],
+    "order": 2,
+    "summary": "Seeing that Adam has no fit companion, God fashions Eve from his rib while he sleeps.",
+    "notable": true
+  },
+  {
+    "id": "e3-0",
+    "book": "genesis",
+    "chapter": 3,
+    "name": "The serpent tempts Eve to eat the forbidden fruit",
+    "citation": {
+      "book": "genesis",
+      "chapter": 3
+    },
+    "place": "Eden",
+    "peopleIds": [
+      "eve"
+    ],
+    "order": 0,
+    "summary": "The serpent convinces Eve that eating the forbidden fruit will not bring death but wisdom.",
+    "notable": true
+  },
+  {
+    "id": "e3-1",
+    "book": "genesis",
+    "chapter": 3,
+    "name": "Adam and Eve eat the forbidden fruit",
+    "citation": {
+      "book": "genesis",
+      "chapter": 3
+    },
+    "place": "Eden",
+    "peopleIds": [
+      "adam",
+      "eve"
+    ],
+    "order": 1,
+    "summary": "Eve eats the fruit of the forbidden tree and gives some to Adam, who eats it too.",
+    "notable": true
+  },
+  {
+    "id": "e3-2",
+    "book": "genesis",
+    "chapter": 3,
+    "name": "God confronts Adam and Eve",
+    "citation": {
+      "book": "genesis",
+      "chapter": 3
+    },
+    "place": "Eden",
+    "peopleIds": [
+      "god",
+      "adam",
+      "eve"
+    ],
+    "order": 2,
+    "summary": "God questions the couple, hears their excuses, and pronounces judgment on the serpent, the woman, and the man.",
+    "notable": true
+  },
+  {
+    "id": "e3-3",
+    "book": "genesis",
+    "chapter": 3,
+    "name": "Adam and Eve are exiled from the garden",
+    "citation": {
+      "book": "genesis",
+      "chapter": 3
+    },
+    "place": "the garden gate",
+    "peopleIds": [
+      "god",
+      "adam",
+      "eve"
+    ],
+    "order": 3,
+    "summary": "God clothes Adam and Eve and sends them out of the garden, guarding the way to the tree of life.",
+    "notable": true
+  },
+  {
+    "id": "e4-0",
+    "book": "genesis",
+    "chapter": 4,
+    "name": "Cain and Abel bring offerings to God",
+    "citation": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "place": "east of Eden",
+    "peopleIds": [
+      "cain",
+      "abel",
+      "god"
+    ],
+    "order": 0,
+    "summary": "Cain offers produce and Abel offers the firstborn of his flock, but God favors Abel's offering.",
+    "notable": true
+  },
+  {
+    "id": "e4-1",
+    "book": "genesis",
+    "chapter": 4,
+    "name": "Cain murders Abel in the field",
+    "citation": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "place": "the field",
+    "peopleIds": [
+      "cain",
+      "abel"
+    ],
+    "order": 1,
+    "summary": "Angered by God's rejection of his offering, Cain kills his brother Abel in the field.",
+    "notable": true
+  },
+  {
+    "id": "e4-2",
+    "book": "genesis",
+    "chapter": 4,
+    "name": "Cain is cursed and settles in the land of Nod",
+    "citation": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "place": "the land of Nod",
+    "peopleIds": [
+      "god",
+      "cain"
+    ],
+    "order": 2,
+    "summary": "God confronts Cain, curses him to wander, and marks him for protection before he settles east of Eden.",
+    "notable": true
+  },
+  {
+    "id": "e4-3",
+    "book": "genesis",
+    "chapter": 4,
+    "name": "Seth is born to Adam and Eve",
+    "citation": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "place": "east of Eden",
+    "peopleIds": [
+      "adam",
+      "eve",
+      "seth"
+    ],
+    "order": 3,
+    "summary": "Adam and Eve have another son, Seth, in place of the murdered Abel.",
+    "notable": true
+  },
+  {
+    "id": "e5-0",
+    "book": "genesis",
+    "chapter": 5,
+    "name": "Enoch walks with God and is taken away",
+    "citation": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "enoch",
+      "god"
+    ],
+    "order": 0,
+    "summary": "Enoch is noted as walking faithfully with God before being taken away without dying.",
+    "notable": true
+  },
+  {
+    "id": "e5-1",
+    "book": "genesis",
+    "chapter": 5,
+    "name": "Noah is born to Lamech",
+    "citation": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "noah"
+    ],
+    "order": 1,
+    "summary": "Lamech names his son Noah, hoping he will bring relief from the toil of the cursed ground.",
+    "notable": true
+  },
+  {
+    "id": "e6-0",
+    "book": "genesis",
+    "chapter": 6,
+    "name": "God grieves human wickedness and resolves to send a flood",
+    "citation": {
+      "book": "genesis",
+      "chapter": 6
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 0,
+    "summary": "Seeing the earth filled with corruption and violence, God decides to judge it with a flood.",
+    "notable": true
+  },
+  {
+    "id": "e6-1",
+    "book": "genesis",
+    "chapter": 6,
+    "name": "Noah builds the ark according to God's instructions",
+    "citation": {
+      "book": "genesis",
+      "chapter": 6
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "noah"
+    ],
+    "order": 1,
+    "summary": "Noah follows God's detailed instructions to build a great ark for his family and the animals.",
+    "notable": true
+  },
+  {
+    "id": "e6-2",
+    "book": "genesis",
+    "chapter": 6,
+    "name": "God instructs Noah to gather his family and the animals",
+    "citation": {
+      "book": "genesis",
+      "chapter": 6
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "god",
+      "noah"
+    ],
+    "order": 2,
+    "summary": "God tells Noah to bring his family and pairs of every kind of animal into the ark.",
+    "notable": true
+  },
+  {
+    "id": "e7-0",
+    "book": "genesis",
+    "chapter": 7,
+    "name": "Noah's family and the animals board the ark",
+    "citation": {
+      "book": "genesis",
+      "chapter": 7
+    },
+    "place": "the ark",
+    "peopleIds": [
+      "noah",
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "order": 0,
+    "summary": "Noah, his wife, his sons and their wives, and the animals enter the ark just before the rain begins.",
+    "notable": true
+  },
+  {
+    "id": "e7-1",
+    "book": "genesis",
+    "chapter": 7,
+    "name": "The flood covers the whole earth",
+    "citation": {
+      "book": "genesis",
+      "chapter": 7
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "noah"
+    ],
+    "order": 1,
+    "summary": "Rain falls for forty days and rising waters cover even the highest mountains.",
+    "notable": true
+  },
+  {
+    "id": "e7-2",
+    "book": "genesis",
+    "chapter": 7,
+    "name": "All other life on land is destroyed",
+    "citation": {
+      "book": "genesis",
+      "chapter": 7
+    },
+    "place": "the earth",
+    "peopleIds": [],
+    "order": 2,
+    "summary": "Every living thing outside the ark perishes in the flood, leaving only Noah and those with him.",
+    "notable": true
+  },
+  {
+    "id": "e8-0",
+    "book": "genesis",
+    "chapter": 8,
+    "name": "Noah sends out a raven and doves",
+    "citation": {
+      "book": "genesis",
+      "chapter": 8
+    },
+    "place": "the ark",
+    "peopleIds": [
+      "noah"
+    ],
+    "order": 0,
+    "summary": "Noah releases a raven and then doves to test whether the floodwaters have receded.",
+    "notable": true
+  },
+  {
+    "id": "e8-1",
+    "book": "genesis",
+    "chapter": 8,
+    "name": "Noah and his family leave the ark",
+    "citation": {
+      "book": "genesis",
+      "chapter": 8
+    },
+    "place": "Mount Ararat",
+    "peopleIds": [
+      "noah"
+    ],
+    "order": 1,
+    "summary": "With the ground now dry, Noah, his family, and the animals finally leave the ark.",
+    "notable": true
+  },
+  {
+    "id": "e8-2",
+    "book": "genesis",
+    "chapter": 8,
+    "name": "Noah builds an altar and offers sacrifices",
+    "citation": {
+      "book": "genesis",
+      "chapter": 8
+    },
+    "place": "Mount Ararat",
+    "peopleIds": [
+      "noah",
+      "god"
+    ],
+    "order": 2,
+    "summary": "Noah builds an altar and offers sacrifices, and God resolves never again to curse the ground because of humanity.",
+    "notable": true
+  },
+  {
+    "id": "e9-0",
+    "book": "genesis",
+    "chapter": 9,
+    "name": "God blesses Noah and permits eating meat",
+    "citation": {
+      "book": "genesis",
+      "chapter": 9
+    },
+    "place": "Mount Ararat",
+    "peopleIds": [
+      "god",
+      "noah"
+    ],
+    "order": 0,
+    "summary": "God blesses Noah's family, renews the command to multiply, and now permits them to eat meat.",
+    "notable": true
+  },
+  {
+    "id": "e9-1",
+    "book": "genesis",
+    "chapter": 9,
+    "name": "God sets the rainbow as a covenant sign",
+    "citation": {
+      "book": "genesis",
+      "chapter": 9
+    },
+    "place": "the sky",
+    "peopleIds": [
+      "god",
+      "noah"
+    ],
+    "order": 1,
+    "summary": "God promises never again to destroy the earth with a flood and sets the rainbow as the sign of that covenant.",
+    "notable": true
+  },
+  {
+    "id": "e9-2",
+    "book": "genesis",
+    "chapter": 9,
+    "name": "Noah's drunkenness leads to Canaan's curse",
+    "citation": {
+      "book": "genesis",
+      "chapter": 9
+    },
+    "place": "Noah's tent",
+    "peopleIds": [
+      "noah",
+      "ham"
+    ],
+    "order": 2,
+    "summary": "After Noah becomes drunk and is seen by Ham, he pronounces a curse on Ham's son Canaan.",
+    "notable": true
+  },
+  {
+    "id": "e10-0",
+    "book": "genesis",
+    "chapter": 10,
+    "name": "The descendants of Noah's sons spread into nations",
+    "citation": {
+      "book": "genesis",
+      "chapter": 10
+    },
+    "place": "the earth",
+    "peopleIds": [
+      "shem",
+      "ham",
+      "japheth"
+    ],
+    "order": 0,
+    "summary": "The genealogy of Shem, Ham, and Japheth traces how their descendants spread out into distinct nations.",
+    "notable": true
+  },
+  {
+    "id": "e10-1",
+    "book": "genesis",
+    "chapter": 10,
+    "name": "Nimrod builds a mighty kingdom in Shinar",
+    "citation": {
+      "book": "genesis",
+      "chapter": 10
+    },
+    "place": "Shinar",
+    "peopleIds": [
+      "nimrod"
+    ],
+    "order": 1,
+    "summary": "Nimrod becomes a mighty warrior and establishes a notable kingdom in the land of Shinar.",
+    "notable": true
+  },
+  {
+    "id": "e11-0",
+    "book": "genesis",
+    "chapter": 11,
+    "name": "The people build a city and tower at Babel",
+    "citation": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "place": "Babel",
+    "peopleIds": [],
+    "order": 0,
+    "summary": "The people settle in Shinar and set out to build a city and a tower reaching to the heavens.",
+    "notable": true
+  },
+  {
+    "id": "e11-1",
+    "book": "genesis",
+    "chapter": 11,
+    "name": "God confuses their language and scatters them",
+    "citation": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "place": "Babel",
+    "peopleIds": [
+      "god"
+    ],
+    "order": 1,
+    "summary": "God confuses the builders' language so they cannot understand one another and scatters them across the earth.",
+    "notable": true
+  },
+  {
+    "id": "e11-2",
+    "book": "genesis",
+    "chapter": 11,
+    "name": "The line from Shem to Abram is traced",
+    "citation": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "place": "Ur of the Chaldeans",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 2,
+    "summary": "A genealogy traces the descendants of Shem down to Abram's family in Ur of the Chaldeans.",
+    "notable": true
+  },
+  {
+    "id": "e11-3",
+    "book": "genesis",
+    "chapter": 11,
+    "name": "Terah's family sets out from Ur and settles in Haran",
+    "citation": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 3,
+    "summary": "Abram's father Terah leads the family from Ur toward Canaan but settles instead in Haran.",
+    "notable": true
+  },
+  {
+    "id": "e12-0",
+    "book": "genesis",
+    "chapter": 12,
+    "name": "God calls Abram to leave Haran for Canaan",
+    "citation": {
+      "book": "genesis",
+      "chapter": 12
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "god",
+      "abraham"
+    ],
+    "order": 0,
+    "summary": "God calls Abram to leave his country and family for a land he will show him, promising to bless him.",
+    "notable": true
+  },
+  {
+    "id": "e12-1",
+    "book": "genesis",
+    "chapter": 12,
+    "name": "Abram builds an altar at Shechem",
+    "citation": {
+      "book": "genesis",
+      "chapter": 12
+    },
+    "place": "Shechem",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "Arriving in Canaan, Abram builds an altar to the LORD who appeared to him there.",
+    "notable": true
+  },
+  {
+    "id": "e12-2",
+    "book": "genesis",
+    "chapter": 12,
+    "name": "Abram deceives Pharaoh about Sarai in Egypt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 12
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "abraham",
+      "sarah"
+    ],
+    "order": 2,
+    "summary": "Fearing for his life during a famine, Abram tells Pharaoh that Sarai is his sister, leading to trouble in Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e13-0",
+    "book": "genesis",
+    "chapter": 13,
+    "name": "Abram and Lot separate over land disputes",
+    "citation": {
+      "book": "genesis",
+      "chapter": 13
+    },
+    "place": "Bethel",
+    "peopleIds": [
+      "abraham",
+      "lot"
+    ],
+    "order": 0,
+    "summary": "Growing herds cause strife between their herdsmen, so Abram lets Lot choose land first, and Lot picks the plain near Sodom.",
+    "notable": true
+  },
+  {
+    "id": "e13-1",
+    "book": "genesis",
+    "chapter": 13,
+    "name": "God renews his land promise to Abram",
+    "citation": {
+      "book": "genesis",
+      "chapter": 13
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "god",
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "After Lot departs, God tells Abram to look in every direction, promising all the land to his offspring.",
+    "notable": true
+  },
+  {
+    "id": "e14-0",
+    "book": "genesis",
+    "chapter": 14,
+    "name": "Abram rescues Lot from raiding kings",
+    "citation": {
+      "book": "genesis",
+      "chapter": 14
+    },
+    "place": "near Damascus",
+    "peopleIds": [
+      "abraham",
+      "lot"
+    ],
+    "order": 0,
+    "summary": "When a coalition of kings captures Lot in a raid on Sodom, Abram pursues and defeats them to rescue him.",
+    "notable": true
+  },
+  {
+    "id": "e14-1",
+    "book": "genesis",
+    "chapter": 14,
+    "name": "Melchizedek blesses Abram after the battle",
+    "citation": {
+      "book": "genesis",
+      "chapter": 14
+    },
+    "place": "Salem",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "The priest-king Melchizedek brings out bread and wine and blesses Abram, who gives him a tenth of the spoils.",
+    "notable": true
+  },
+  {
+    "id": "e15-0",
+    "book": "genesis",
+    "chapter": 15,
+    "name": "God promises Abram offspring as numerous as the stars",
+    "citation": {
+      "book": "genesis",
+      "chapter": 15
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "god",
+      "abraham"
+    ],
+    "order": 0,
+    "summary": "God assures childless Abram that his own offspring will be his heir and as numerous as the stars.",
+    "notable": true
+  },
+  {
+    "id": "e15-1",
+    "book": "genesis",
+    "chapter": 15,
+    "name": "God's covenant with Abram sealed by a smoking pot and torch",
+    "citation": {
+      "book": "genesis",
+      "chapter": 15
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "god",
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "God formally seals his covenant with Abram as a smoking pot and flaming torch pass between divided animal pieces.",
+    "notable": true
+  },
+  {
+    "id": "e16-0",
+    "book": "genesis",
+    "chapter": 16,
+    "name": "Sarai gives Hagar to Abram",
+    "citation": {
+      "book": "genesis",
+      "chapter": 16
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "sarah",
+      "hagar",
+      "abraham"
+    ],
+    "order": 0,
+    "summary": "Frustrated by years without children, Sarai gives her servant Hagar to Abram to bear a child in her place.",
+    "notable": true
+  },
+  {
+    "id": "e16-1",
+    "book": "genesis",
+    "chapter": 16,
+    "name": "An angel promises Hagar many descendants through Ishmael",
+    "citation": {
+      "book": "genesis",
+      "chapter": 16
+    },
+    "place": "the wilderness",
+    "peopleIds": [
+      "hagar",
+      "ishmael"
+    ],
+    "order": 1,
+    "summary": "Fleeing Sarai's harsh treatment, Hagar meets an angel who promises her son Ishmael will have many descendants.",
+    "notable": true
+  },
+  {
+    "id": "e17-0",
+    "book": "genesis",
+    "chapter": 17,
+    "name": "God renames Abram and Sarai as Abraham and Sarah",
+    "citation": {
+      "book": "genesis",
+      "chapter": 17
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "god",
+      "abraham",
+      "sarah"
+    ],
+    "order": 0,
+    "summary": "God changes Abram's and Sarai's names to Abraham and Sarah, marking their new role in his covenant.",
+    "notable": true
+  },
+  {
+    "id": "e17-1",
+    "book": "genesis",
+    "chapter": 17,
+    "name": "God institutes circumcision as the covenant sign",
+    "citation": {
+      "book": "genesis",
+      "chapter": 17
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "god",
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "God commands circumcision for every male in Abraham's household as the ongoing sign of the covenant.",
+    "notable": true
+  },
+  {
+    "id": "e18-0",
+    "book": "genesis",
+    "chapter": 18,
+    "name": "Three visitors announce Sarah will bear a son",
+    "citation": {
+      "book": "genesis",
+      "chapter": 18
+    },
+    "place": "Mamre",
+    "peopleIds": [
+      "abraham",
+      "sarah",
+      "god"
+    ],
+    "order": 0,
+    "summary": "Three visitors tell Abraham that Sarah will have a son within the year, and Sarah laughs in disbelief.",
+    "notable": true
+  },
+  {
+    "id": "e18-1",
+    "book": "genesis",
+    "chapter": 18,
+    "name": "Abraham intercedes for Sodom's righteous",
+    "citation": {
+      "book": "genesis",
+      "chapter": 18
+    },
+    "place": "near Sodom",
+    "peopleIds": [
+      "abraham",
+      "god"
+    ],
+    "order": 1,
+    "summary": "Abraham pleads with God to spare Sodom if even a small number of righteous people can be found there.",
+    "notable": true
+  },
+  {
+    "id": "e19-0",
+    "book": "genesis",
+    "chapter": 19,
+    "name": "Angels rescue Lot's family from Sodom",
+    "citation": {
+      "book": "genesis",
+      "chapter": 19
+    },
+    "place": "Sodom",
+    "peopleIds": [
+      "lot"
+    ],
+    "order": 0,
+    "summary": "Two angels urge Lot and his family to flee the city before it is destroyed.",
+    "notable": true
+  },
+  {
+    "id": "e19-1",
+    "book": "genesis",
+    "chapter": 19,
+    "name": "Sodom and Gomorrah are destroyed and Lot's wife becomes a pillar of salt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 19
+    },
+    "place": "Sodom",
+    "peopleIds": [
+      "lot"
+    ],
+    "order": 1,
+    "summary": "God rains destruction on Sodom and Gomorrah, and Lot's wife is turned to a pillar of salt for looking back.",
+    "notable": true
+  },
+  {
+    "id": "e19-2",
+    "book": "genesis",
+    "chapter": 19,
+    "name": "Lot's daughters bear sons through their father",
+    "citation": {
+      "book": "genesis",
+      "chapter": 19
+    },
+    "place": "a cave near Zoar",
+    "peopleIds": [
+      "lot"
+    ],
+    "order": 2,
+    "summary": "Believing no other men remain, Lot's daughters scheme to preserve their family line through their father.",
+    "notable": true
+  },
+  {
+    "id": "e20-0",
+    "book": "genesis",
+    "chapter": 20,
+    "name": "Abraham again claims Sarah is his sister before Abimelech",
+    "citation": {
+      "book": "genesis",
+      "chapter": 20
+    },
+    "place": "Gerar",
+    "peopleIds": [
+      "abraham",
+      "sarah"
+    ],
+    "order": 0,
+    "summary": "Abraham repeats his earlier deception, telling King Abimelech that Sarah is his sister rather than his wife.",
+    "notable": true
+  },
+  {
+    "id": "e20-1",
+    "book": "genesis",
+    "chapter": 20,
+    "name": "God warns Abimelech in a dream to return Sarah",
+    "citation": {
+      "book": "genesis",
+      "chapter": 20
+    },
+    "place": "Gerar",
+    "peopleIds": [
+      "god",
+      "sarah"
+    ],
+    "order": 1,
+    "summary": "God appears to Abimelech in a dream, warning him that Sarah is a married woman, and he returns her unharmed.",
+    "notable": true
+  },
+  {
+    "id": "e21-0",
+    "book": "genesis",
+    "chapter": 21,
+    "name": "Isaac is born to Sarah in her old age",
+    "citation": {
+      "book": "genesis",
+      "chapter": 21
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "sarah",
+      "abraham",
+      "isaac"
+    ],
+    "order": 0,
+    "summary": "Sarah gives birth to Isaac exactly as God had promised, bringing her laughter after years of waiting.",
+    "notable": true
+  },
+  {
+    "id": "e21-1",
+    "book": "genesis",
+    "chapter": 21,
+    "name": "Hagar and Ishmael are sent into the wilderness",
+    "citation": {
+      "book": "genesis",
+      "chapter": 21
+    },
+    "place": "the wilderness of Beersheba",
+    "peopleIds": [
+      "hagar",
+      "ishmael",
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "At Sarah's insistence, Abraham sends Hagar and Ishmael away, and God provides for them in the wilderness.",
+    "notable": true
+  },
+  {
+    "id": "e21-2",
+    "book": "genesis",
+    "chapter": 21,
+    "name": "Abraham makes a treaty with Abimelech at Beersheba",
+    "citation": {
+      "book": "genesis",
+      "chapter": 21
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 2,
+    "summary": "Abraham and Abimelech settle a dispute over a well and make a treaty of peace at Beersheba.",
+    "notable": true
+  },
+  {
+    "id": "e22-0",
+    "book": "genesis",
+    "chapter": 22,
+    "name": "God tests Abraham by commanding Isaac's sacrifice",
+    "citation": {
+      "book": "genesis",
+      "chapter": 22
+    },
+    "place": "the land of Moriah",
+    "peopleIds": [
+      "god",
+      "abraham",
+      "isaac"
+    ],
+    "order": 0,
+    "summary": "God tests Abraham's faith by commanding him to offer his son Isaac as a burnt offering on Moriah.",
+    "notable": true
+  },
+  {
+    "id": "e22-1",
+    "book": "genesis",
+    "chapter": 22,
+    "name": "An angel stops Abraham and provides a ram",
+    "citation": {
+      "book": "genesis",
+      "chapter": 22
+    },
+    "place": "the land of Moriah",
+    "peopleIds": [
+      "god",
+      "abraham",
+      "isaac"
+    ],
+    "order": 1,
+    "summary": "Just as Abraham raises the knife, an angel stops him, and a ram caught in a thicket is offered instead.",
+    "notable": true
+  },
+  {
+    "id": "e23-0",
+    "book": "genesis",
+    "chapter": 23,
+    "name": "Sarah dies in Hebron",
+    "citation": {
+      "book": "genesis",
+      "chapter": 23
+    },
+    "place": "Hebron",
+    "peopleIds": [
+      "sarah",
+      "abraham"
+    ],
+    "order": 0,
+    "summary": "Sarah dies at the age of one hundred twenty-seven, and Abraham mourns for her in Hebron.",
+    "notable": true
+  },
+  {
+    "id": "e23-1",
+    "book": "genesis",
+    "chapter": 23,
+    "name": "Abraham buys the cave of Machpelah as a burial site",
+    "citation": {
+      "book": "genesis",
+      "chapter": 23
+    },
+    "place": "Hebron",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 1,
+    "summary": "Abraham negotiates with the Hittites to buy the cave of Machpelah as a burial place for his family.",
+    "notable": true
+  },
+  {
+    "id": "e24-0",
+    "book": "genesis",
+    "chapter": 24,
+    "name": "Abraham sends his servant to find Isaac a wife",
+    "citation": {
+      "book": "genesis",
+      "chapter": 24
+    },
+    "place": "Hebron",
+    "peopleIds": [
+      "abraham"
+    ],
+    "order": 0,
+    "summary": "Abraham sends his chief servant back to his homeland to find a wife for Isaac among his own relatives.",
+    "notable": true
+  },
+  {
+    "id": "e24-1",
+    "book": "genesis",
+    "chapter": 24,
+    "name": "Rebekah offers water to the servant and his camels at the well",
+    "citation": {
+      "book": "genesis",
+      "chapter": 24
+    },
+    "place": "Nahor",
+    "peopleIds": [
+      "rebekah"
+    ],
+    "order": 1,
+    "summary": "Rebekah's generosity at the well fulfills the sign the servant had prayed for in choosing a wife for Isaac.",
+    "notable": true
+  },
+  {
+    "id": "e24-2",
+    "book": "genesis",
+    "chapter": 24,
+    "name": "Rebekah agrees to marry Isaac and journeys to Canaan",
+    "citation": {
+      "book": "genesis",
+      "chapter": 24
+    },
+    "place": "Nahor",
+    "peopleIds": [
+      "rebekah",
+      "isaac"
+    ],
+    "order": 2,
+    "summary": "Rebekah agrees to leave her family and travels to Canaan, where she becomes Isaac's wife.",
+    "notable": true
+  },
+  {
+    "id": "e25-0",
+    "book": "genesis",
+    "chapter": 25,
+    "name": "Esau and Jacob are born to Isaac and Rebekah",
+    "citation": {
+      "book": "genesis",
+      "chapter": 25
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "isaac",
+      "rebekah",
+      "esau",
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Rebekah gives birth to twin sons who struggled together in her womb, Esau the elder and Jacob the younger.",
+    "notable": true
+  },
+  {
+    "id": "e25-1",
+    "book": "genesis",
+    "chapter": 25,
+    "name": "Esau sells his birthright to Jacob for stew",
+    "citation": {
+      "book": "genesis",
+      "chapter": 25
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "esau",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Famished from hunting, Esau trades his birthright to Jacob for a simple bowl of stew.",
+    "notable": true
+  },
+  {
+    "id": "e26-0",
+    "book": "genesis",
+    "chapter": 26,
+    "name": "Isaac repeats Abraham's deception about his wife before Abimelech",
+    "citation": {
+      "book": "genesis",
+      "chapter": 26
+    },
+    "place": "Gerar",
+    "peopleIds": [
+      "isaac",
+      "rebekah"
+    ],
+    "order": 0,
+    "summary": "Like his father before him, Isaac claims Rebekah is his sister out of fear while living among the Philistines.",
+    "notable": true
+  },
+  {
+    "id": "e26-1",
+    "book": "genesis",
+    "chapter": 26,
+    "name": "Isaac makes peace with Abimelech over disputed wells",
+    "citation": {
+      "book": "genesis",
+      "chapter": 26
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "isaac"
+    ],
+    "order": 1,
+    "summary": "After conflicts over wells his father had dug, Isaac grows wealthy and eventually makes peace with Abimelech.",
+    "notable": true
+  },
+  {
+    "id": "e27-0",
+    "book": "genesis",
+    "chapter": 27,
+    "name": "Jacob disguises himself to steal Isaac's blessing",
+    "citation": {
+      "book": "genesis",
+      "chapter": 27
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "jacob",
+      "isaac",
+      "rebekah"
+    ],
+    "order": 0,
+    "summary": "With Rebekah's help, Jacob disguises himself as Esau and receives the blessing Isaac intended for his older son.",
+    "notable": true
+  },
+  {
+    "id": "e27-1",
+    "book": "genesis",
+    "chapter": 27,
+    "name": "Esau vows revenge and Jacob flees toward Haran",
+    "citation": {
+      "book": "genesis",
+      "chapter": 27
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "esau",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Furious at being deceived, Esau vows to kill Jacob once their father dies, so Jacob flees to Haran.",
+    "notable": true
+  },
+  {
+    "id": "e28-0",
+    "book": "genesis",
+    "chapter": 28,
+    "name": "Jacob dreams of a stairway to heaven at Bethel",
+    "citation": {
+      "book": "genesis",
+      "chapter": 28
+    },
+    "place": "Bethel",
+    "peopleIds": [
+      "jacob",
+      "god"
+    ],
+    "order": 0,
+    "summary": "On his journey to Haran, Jacob dreams of a stairway reaching to heaven with angels ascending and descending.",
+    "notable": true
+  },
+  {
+    "id": "e28-1",
+    "book": "genesis",
+    "chapter": 28,
+    "name": "God repeats the covenant promises to Jacob",
+    "citation": {
+      "book": "genesis",
+      "chapter": 28
+    },
+    "place": "Bethel",
+    "peopleIds": [
+      "god",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "In the dream, God repeats to Jacob the same promises of land and blessing given to Abraham and Isaac.",
+    "notable": true
+  },
+  {
+    "id": "e29-0",
+    "book": "genesis",
+    "chapter": 29,
+    "name": "Jacob meets Rachel at the well near Haran",
+    "citation": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "jacob",
+      "rachel"
+    ],
+    "order": 0,
+    "summary": "Jacob arrives in Haran, meets Rachel at a well, and falls in love with her.",
+    "notable": true
+  },
+  {
+    "id": "e29-1",
+    "book": "genesis",
+    "chapter": 29,
+    "name": "Laban tricks Jacob into marrying Leah first",
+    "citation": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "jacob",
+      "leah",
+      "laban"
+    ],
+    "order": 1,
+    "summary": "After Jacob works seven years for Rachel, Laban substitutes Leah on the wedding night instead.",
+    "notable": true
+  },
+  {
+    "id": "e30-0",
+    "book": "genesis",
+    "chapter": 30,
+    "name": "Jacob's sons are born through Leah, Rachel, and their servants",
+    "citation": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "jacob",
+      "leah",
+      "rachel",
+      "bilhah",
+      "zilpah"
+    ],
+    "order": 0,
+    "summary": "Through competition between his wives and their servants, Jacob fathers eleven sons and a daughter.",
+    "notable": true
+  },
+  {
+    "id": "e30-1",
+    "book": "genesis",
+    "chapter": 30,
+    "name": "Joseph is born to Rachel",
+    "citation": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "rachel",
+      "joseph",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "After years of barrenness, Rachel finally bears a son, Joseph.",
+    "notable": true
+  },
+  {
+    "id": "e30-2",
+    "book": "genesis",
+    "chapter": 30,
+    "name": "Jacob negotiates spotted and speckled flocks from Laban",
+    "citation": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "jacob",
+      "laban"
+    ],
+    "order": 2,
+    "summary": "Jacob strikes a deal with Laban over speckled and spotted livestock, and his own flocks grow strong.",
+    "notable": true
+  },
+  {
+    "id": "e31-0",
+    "book": "genesis",
+    "chapter": 31,
+    "name": "Jacob secretly flees from Laban with his family",
+    "citation": {
+      "book": "genesis",
+      "chapter": 31
+    },
+    "place": "Haran",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Sensing growing hostility from Laban's sons, Jacob quietly leaves Haran with his wives, children, and flocks.",
+    "notable": true
+  },
+  {
+    "id": "e31-1",
+    "book": "genesis",
+    "chapter": 31,
+    "name": "Jacob and Laban make a covenant at Gilead",
+    "citation": {
+      "book": "genesis",
+      "chapter": 31
+    },
+    "place": "Gilead",
+    "peopleIds": [
+      "jacob",
+      "laban"
+    ],
+    "order": 1,
+    "summary": "After Laban pursues and confronts Jacob over his stolen household idols, the two men make a covenant of peace.",
+    "notable": true
+  },
+  {
+    "id": "e32-0",
+    "book": "genesis",
+    "chapter": 32,
+    "name": "Jacob sends gifts ahead to appease Esau",
+    "citation": {
+      "book": "genesis",
+      "chapter": 32
+    },
+    "place": "the Jabbok river",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Fearful of meeting Esau again, Jacob sends generous gifts of livestock ahead to appease his brother.",
+    "notable": true
+  },
+  {
+    "id": "e32-1",
+    "book": "genesis",
+    "chapter": 32,
+    "name": "Jacob wrestles with a man and is renamed Israel",
+    "citation": {
+      "book": "genesis",
+      "chapter": 32
+    },
+    "place": "Peniel",
+    "peopleIds": [
+      "jacob",
+      "god"
+    ],
+    "order": 1,
+    "summary": "Jacob wrestles all night with a mysterious man who blesses him and renames him Israel.",
+    "notable": true
+  },
+  {
+    "id": "e33-0",
+    "book": "genesis",
+    "chapter": 33,
+    "name": "Esau runs to greet and reconcile with Jacob",
+    "citation": {
+      "book": "genesis",
+      "chapter": 33
+    },
+    "place": "near Seir",
+    "peopleIds": [
+      "esau",
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Rather than seeking revenge, Esau runs to meet Jacob, embraces him, and the brothers reconcile.",
+    "notable": true
+  },
+  {
+    "id": "e33-1",
+    "book": "genesis",
+    "chapter": 33,
+    "name": "Jacob settles near Shechem and buys land",
+    "citation": {
+      "book": "genesis",
+      "chapter": 33
+    },
+    "place": "Shechem",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Jacob arrives safely in Canaan, settles near the city of Shechem, and buys a plot of land there.",
+    "notable": true
+  },
+  {
+    "id": "e34-0",
+    "book": "genesis",
+    "chapter": 34,
+    "name": "Dinah is assaulted by Shechem, a local prince",
+    "citation": {
+      "book": "genesis",
+      "chapter": 34
+    },
+    "place": "Shechem",
+    "peopleIds": [
+      "dinah"
+    ],
+    "order": 0,
+    "summary": "Jacob's daughter Dinah is assaulted by Shechem, the son of the region's ruler.",
+    "notable": true
+  },
+  {
+    "id": "e34-1",
+    "book": "genesis",
+    "chapter": 34,
+    "name": "Simeon and Levi avenge Dinah by slaughtering the men of Shechem",
+    "citation": {
+      "book": "genesis",
+      "chapter": 34
+    },
+    "place": "Shechem",
+    "peopleIds": [
+      "simeon",
+      "levi",
+      "dinah"
+    ],
+    "order": 1,
+    "summary": "Simeon and Levi deceive the men of Shechem into circumcision, then attack the city to avenge their sister.",
+    "notable": true
+  },
+  {
+    "id": "e35-0",
+    "book": "genesis",
+    "chapter": 35,
+    "name": "Jacob returns to Bethel and builds an altar",
+    "citation": {
+      "book": "genesis",
+      "chapter": 35
+    },
+    "place": "Bethel",
+    "peopleIds": [
+      "jacob",
+      "god"
+    ],
+    "order": 0,
+    "summary": "Obeying God's command, Jacob leads his household back to Bethel and builds an altar there.",
+    "notable": true
+  },
+  {
+    "id": "e35-1",
+    "book": "genesis",
+    "chapter": 35,
+    "name": "Rachel dies giving birth to Benjamin",
+    "citation": {
+      "book": "genesis",
+      "chapter": 35
+    },
+    "place": "near Ephrath",
+    "peopleIds": [
+      "rachel",
+      "benjamin"
+    ],
+    "order": 1,
+    "summary": "On the way to Ephrath, Rachel dies giving birth to her second son, Benjamin.",
+    "notable": true
+  },
+  {
+    "id": "e35-2",
+    "book": "genesis",
+    "chapter": 35,
+    "name": "Isaac dies and is buried by Jacob and Esau",
+    "citation": {
+      "book": "genesis",
+      "chapter": 35
+    },
+    "place": "Hebron",
+    "peopleIds": [
+      "isaac",
+      "jacob",
+      "esau"
+    ],
+    "order": 2,
+    "summary": "Isaac dies at an old age, and his sons Jacob and Esau bury him together.",
+    "notable": true
+  },
+  {
+    "id": "e36-0",
+    "book": "genesis",
+    "chapter": 36,
+    "name": "Esau's descendants become the nation of Edom",
+    "citation": {
+      "book": "genesis",
+      "chapter": 36
+    },
+    "place": "the hill country of Seir",
+    "peopleIds": [
+      "esau"
+    ],
+    "order": 0,
+    "summary": "A genealogy records Esau's wives and descendants, who settle in the hill country of Seir and become Edom.",
+    "notable": true
+  },
+  {
+    "id": "e37-0",
+    "book": "genesis",
+    "chapter": 37,
+    "name": "Joseph's dreams of ruling provoke his brothers' hatred",
+    "citation": {
+      "book": "genesis",
+      "chapter": 37
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 0,
+    "summary": "Joseph's dreams of his family bowing to him, along with his father's favoritism, deepen his brothers' hatred of him.",
+    "notable": true
+  },
+  {
+    "id": "e37-1",
+    "book": "genesis",
+    "chapter": 37,
+    "name": "Joseph is sold into slavery and taken to Egypt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 37
+    },
+    "place": "Dothan",
+    "peopleIds": [
+      "joseph",
+      "reuben",
+      "judah"
+    ],
+    "order": 1,
+    "summary": "Joseph's brothers throw him in a pit and then sell him to traders who carry him off to Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e38-0",
+    "book": "genesis",
+    "chapter": 38,
+    "name": "Tamar is denied her promised husband by Judah",
+    "citation": {
+      "book": "genesis",
+      "chapter": 38
+    },
+    "place": "Canaan",
+    "peopleIds": [
+      "tamar",
+      "judah"
+    ],
+    "order": 0,
+    "summary": "After two of Judah's sons die, Judah withholds his third son from Tamar, leaving her without an heir.",
+    "notable": true
+  },
+  {
+    "id": "e38-1",
+    "book": "genesis",
+    "chapter": 38,
+    "name": "Tamar tricks Judah into fathering her children",
+    "citation": {
+      "book": "genesis",
+      "chapter": 38
+    },
+    "place": "Timnah",
+    "peopleIds": [
+      "tamar",
+      "judah"
+    ],
+    "order": 1,
+    "summary": "Disguised as a prostitute, Tamar tricks Judah himself into fathering the children she was denied.",
+    "notable": true
+  },
+  {
+    "id": "e39-0",
+    "book": "genesis",
+    "chapter": 39,
+    "name": "Joseph rises to oversee Potiphar's household",
+    "citation": {
+      "book": "genesis",
+      "chapter": 39
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "potiphar"
+    ],
+    "order": 0,
+    "summary": "Joseph earns Potiphar's trust and is placed in charge of his entire household in Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e39-1",
+    "book": "genesis",
+    "chapter": 39,
+    "name": "Potiphar's wife falsely accuses Joseph and he is imprisoned",
+    "citation": {
+      "book": "genesis",
+      "chapter": 39
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "potiphar"
+    ],
+    "order": 1,
+    "summary": "After Joseph refuses her advances, Potiphar's wife falsely accuses him, and he is thrown into prison.",
+    "notable": true
+  },
+  {
+    "id": "e40-0",
+    "book": "genesis",
+    "chapter": 40,
+    "name": "Joseph interprets the cupbearer and baker's dreams in prison",
+    "citation": {
+      "book": "genesis",
+      "chapter": 40
+    },
+    "place": "the prison",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 0,
+    "summary": "Joseph correctly interprets the dreams of two fellow prisoners, Pharaoh's cupbearer and baker.",
+    "notable": true
+  },
+  {
+    "id": "e40-1",
+    "book": "genesis",
+    "chapter": 40,
+    "name": "The cupbearer forgets Joseph after his release",
+    "citation": {
+      "book": "genesis",
+      "chapter": 40
+    },
+    "place": "the prison",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 1,
+    "summary": "The cupbearer is restored to his position as Joseph predicted but forgets to mention Joseph to Pharaoh.",
+    "notable": true
+  },
+  {
+    "id": "e41-0",
+    "book": "genesis",
+    "chapter": 41,
+    "name": "Joseph interprets Pharaoh's dreams of famine",
+    "citation": {
+      "book": "genesis",
+      "chapter": 41
+    },
+    "place": "Pharaoh's court",
+    "peopleIds": [
+      "joseph",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Finally remembered by the cupbearer, Joseph interprets Pharaoh's dreams as warning of coming years of famine.",
+    "notable": true
+  },
+  {
+    "id": "e41-1",
+    "book": "genesis",
+    "chapter": 41,
+    "name": "Pharaoh elevates Joseph to govern Egypt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 41
+    },
+    "place": "Pharaoh's court",
+    "peopleIds": [
+      "joseph",
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "Impressed by Joseph's wisdom, Pharaoh places him in charge of all Egypt to prepare for the famine.",
+    "notable": true
+  },
+  {
+    "id": "e41-2",
+    "book": "genesis",
+    "chapter": 41,
+    "name": "Joseph stores grain during seven years of plenty",
+    "citation": {
+      "book": "genesis",
+      "chapter": 41
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 2,
+    "summary": "During seven years of abundance, Joseph oversees the storing of massive grain reserves across Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e42-0",
+    "book": "genesis",
+    "chapter": 42,
+    "name": "Joseph's brothers come to Egypt for grain",
+    "citation": {
+      "book": "genesis",
+      "chapter": 42
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "reuben",
+      "simeon"
+    ],
+    "order": 0,
+    "summary": "Famine drives Joseph's brothers to Egypt to buy grain, where they bow before Joseph without recognizing him.",
+    "notable": true
+  },
+  {
+    "id": "e42-1",
+    "book": "genesis",
+    "chapter": 42,
+    "name": "Joseph tests his brothers and keeps Simeon hostage",
+    "citation": {
+      "book": "genesis",
+      "chapter": 42
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "simeon"
+    ],
+    "order": 1,
+    "summary": "Joseph accuses his brothers of spying and holds Simeon hostage until they bring back Benjamin.",
+    "notable": true
+  },
+  {
+    "id": "e43-0",
+    "book": "genesis",
+    "chapter": 43,
+    "name": "The brothers return to Egypt with Benjamin",
+    "citation": {
+      "book": "genesis",
+      "chapter": 43
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "benjamin",
+      "judah"
+    ],
+    "order": 0,
+    "summary": "Judah guarantees Benjamin's safety, and the brothers return to Egypt with him as Joseph required.",
+    "notable": true
+  },
+  {
+    "id": "e43-1",
+    "book": "genesis",
+    "chapter": 43,
+    "name": "Joseph hosts his brothers and seats them in birth order",
+    "citation": {
+      "book": "genesis",
+      "chapter": 43
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 1,
+    "summary": "Joseph hosts his brothers at a feast, seating them in exact birth order to their astonishment.",
+    "notable": true
+  },
+  {
+    "id": "e44-0",
+    "book": "genesis",
+    "chapter": 44,
+    "name": "Joseph plants his cup in Benjamin's sack",
+    "citation": {
+      "book": "genesis",
+      "chapter": 44
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "benjamin"
+    ],
+    "order": 0,
+    "summary": "Joseph secretly has his silver cup hidden in Benjamin's sack to test his brothers' loyalty.",
+    "notable": true
+  },
+  {
+    "id": "e44-1",
+    "book": "genesis",
+    "chapter": 44,
+    "name": "Judah offers himself in place of Benjamin",
+    "citation": {
+      "book": "genesis",
+      "chapter": 44
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "judah",
+      "benjamin"
+    ],
+    "order": 1,
+    "summary": "When Benjamin is accused, Judah pleads for their father's sake and offers to remain as a slave instead.",
+    "notable": true
+  },
+  {
+    "id": "e45-0",
+    "book": "genesis",
+    "chapter": 45,
+    "name": "Joseph reveals his identity to his brothers",
+    "citation": {
+      "book": "genesis",
+      "chapter": 45
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 0,
+    "summary": "Overcome with emotion, Joseph reveals to his stunned brothers that he is the one they sold into slavery.",
+    "notable": true
+  },
+  {
+    "id": "e45-1",
+    "book": "genesis",
+    "chapter": 45,
+    "name": "Joseph sends for his father Jacob to come to Egypt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 45
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Joseph forgives his brothers and sends them back to bring their father Jacob to live in Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e46-0",
+    "book": "genesis",
+    "chapter": 46,
+    "name": "Jacob's family travels to Egypt",
+    "citation": {
+      "book": "genesis",
+      "chapter": 46
+    },
+    "place": "Beersheba",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "With God's assurance, Jacob sets out with his entire household and possessions for Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e46-1",
+    "book": "genesis",
+    "chapter": 46,
+    "name": "Joseph reunites with his father Jacob",
+    "citation": {
+      "book": "genesis",
+      "chapter": 46
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "joseph",
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Joseph rides out to meet his father in Goshen, and the two are reunited after many years apart.",
+    "notable": true
+  },
+  {
+    "id": "e47-0",
+    "book": "genesis",
+    "chapter": 47,
+    "name": "Joseph settles his family in Goshen and presents them to Pharaoh",
+    "citation": {
+      "book": "genesis",
+      "chapter": 47
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "joseph",
+      "jacob",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Joseph settles his family in the fertile land of Goshen and presents his father to Pharaoh.",
+    "notable": true
+  },
+  {
+    "id": "e47-1",
+    "book": "genesis",
+    "chapter": 47,
+    "name": "Joseph manages Egypt's food supply during the famine",
+    "citation": {
+      "book": "genesis",
+      "chapter": 47
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 1,
+    "summary": "Joseph oversees the sale of grain across Egypt, acquiring land for Pharaoh as the famine deepens.",
+    "notable": true
+  },
+  {
+    "id": "e48-0",
+    "book": "genesis",
+    "chapter": 48,
+    "name": "Jacob adopts and blesses Joseph's two sons",
+    "citation": {
+      "book": "genesis",
+      "chapter": 48
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "jacob",
+      "joseph"
+    ],
+    "order": 0,
+    "summary": "Nearing death, Jacob adopts Joseph's sons Ephraim and Manasseh as his own and blesses them.",
+    "notable": true
+  },
+  {
+    "id": "e48-1",
+    "book": "genesis",
+    "chapter": 48,
+    "name": "Jacob crosses his hands to favor the younger son",
+    "citation": {
+      "book": "genesis",
+      "chapter": 48
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Despite Joseph's objection, Jacob deliberately crosses his hands to bless the younger son ahead of the older.",
+    "notable": true
+  },
+  {
+    "id": "e49-0",
+    "book": "genesis",
+    "chapter": 49,
+    "name": "Jacob blesses and prophesies over his twelve sons",
+    "citation": {
+      "book": "genesis",
+      "chapter": 49
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Jacob gathers his twelve sons and speaks a distinct blessing and prophecy over each of them.",
+    "notable": true
+  },
+  {
+    "id": "e49-1",
+    "book": "genesis",
+    "chapter": 49,
+    "name": "Jacob dies and is prepared for burial",
+    "citation": {
+      "book": "genesis",
+      "chapter": 49
+    },
+    "place": "Goshen",
+    "peopleIds": [
+      "jacob"
+    ],
+    "order": 1,
+    "summary": "Jacob instructs his sons to bury him in Canaan, then dies among his family in Egypt.",
+    "notable": true
+  },
+  {
+    "id": "e50-0",
+    "book": "genesis",
+    "chapter": 50,
+    "name": "Jacob is buried in the cave of Machpelah in Canaan",
+    "citation": {
+      "book": "genesis",
+      "chapter": 50
+    },
+    "place": "Hebron",
+    "peopleIds": [
+      "joseph",
+      "jacob"
+    ],
+    "order": 0,
+    "summary": "Joseph and his brothers carry Jacob's body back to Canaan and bury him in the family tomb.",
+    "notable": true
+  },
+  {
+    "id": "e50-1",
+    "book": "genesis",
+    "chapter": 50,
+    "name": "Joseph reassures his brothers that God meant their evil for good",
+    "citation": {
+      "book": "genesis",
+      "chapter": 50
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 1,
+    "summary": "Fearful after Jacob's death, the brothers ask forgiveness, and Joseph assures them God used their evil for good.",
+    "notable": true
+  },
+  {
+    "id": "e50-2",
+    "book": "genesis",
+    "chapter": 50,
+    "name": "Joseph dies in Egypt at the end of Genesis",
+    "citation": {
+      "book": "genesis",
+      "chapter": 50
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 2,
+    "summary": "Joseph lives to see his descendants before dying in Egypt, asking that his bones be carried to Canaan one day.",
+    "notable": true
+  }
+]

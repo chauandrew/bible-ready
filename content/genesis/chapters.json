@@ -1,1 +1,622 @@
-[]
+[
+  {
+    "id": "gen1",
+    "book": "genesis",
+    "number": 1,
+    "title": "Creation of the world",
+    "summary": "God speaks the world into being over six days, forming light, sky, land, sea, plants, sun, moon, animals, and finally man and woman in his own image, then rests.",
+    "arcId": "creation",
+    "eventIds": [
+      "e1-0",
+      "e1-1",
+      "e1-2",
+      "e1-3"
+    ]
+  },
+  {
+    "id": "gen2",
+    "book": "genesis",
+    "number": 2,
+    "title": "Adam, Eve, and Eden",
+    "summary": "God rests on the seventh day, forms Adam from the dust, plants the garden of Eden for him to tend, and creates Eve as his companion from Adam's rib.",
+    "arcId": "creation",
+    "eventIds": [
+      "e2-0",
+      "e2-1",
+      "e2-2"
+    ]
+  },
+  {
+    "id": "gen3",
+    "book": "genesis",
+    "number": 3,
+    "title": "The fall in Eden",
+    "summary": "The serpent tempts Eve to eat the forbidden fruit, she shares it with Adam, and God confronts the couple before expelling them from the garden of Eden.",
+    "arcId": "fall",
+    "eventIds": [
+      "e3-0",
+      "e3-1",
+      "e3-2",
+      "e3-3"
+    ]
+  },
+  {
+    "id": "gen4",
+    "book": "genesis",
+    "number": 4,
+    "title": "Cain kills Abel",
+    "summary": "Cain grows jealous when God favors Abel's offering over his own, murders his brother in the field, and is cursed to wander before Seth is born to replace Abel.",
+    "arcId": "fall",
+    "eventIds": [
+      "e4-0",
+      "e4-1",
+      "e4-2",
+      "e4-3"
+    ]
+  },
+  {
+    "id": "gen5",
+    "book": "genesis",
+    "number": 5,
+    "title": "From Adam to Noah",
+    "summary": "A genealogy traces the line from Adam through Seth down to Noah, recording long lifespans and noting that Enoch walked with God and was taken away without dying.",
+    "arcId": "fall",
+    "eventIds": [
+      "e5-0",
+      "e5-1"
+    ]
+  },
+  {
+    "id": "gen6",
+    "book": "genesis",
+    "number": 6,
+    "title": "Noah builds the ark",
+    "summary": "Seeing the earth's corruption and violence, God resolves to send a flood and instructs Noah to build an ark to save his family and pairs of every animal.",
+    "arcId": "flood",
+    "eventIds": [
+      "e6-0",
+      "e6-1",
+      "e6-2"
+    ]
+  },
+  {
+    "id": "gen7",
+    "book": "genesis",
+    "number": 7,
+    "title": "The flood begins",
+    "summary": "Noah, his family, and the animals enter the ark as instructed, and God sends rain and rising waters that cover the earth and destroy all other life.",
+    "arcId": "flood",
+    "eventIds": [
+      "e7-0",
+      "e7-1",
+      "e7-2"
+    ]
+  },
+  {
+    "id": "gen8",
+    "book": "genesis",
+    "number": 8,
+    "title": "The floodwaters recede",
+    "summary": "The floodwaters gradually recede, Noah sends out a raven and then doves to test for dry ground, and his family finally leaves the ark onto dry land.",
+    "arcId": "flood",
+    "eventIds": [
+      "e8-0",
+      "e8-1",
+      "e8-2"
+    ]
+  },
+  {
+    "id": "gen9",
+    "book": "genesis",
+    "number": 9,
+    "title": "God's covenant with Noah",
+    "summary": "God blesses Noah's family, sets the rainbow as a sign of his covenant never to flood the earth again, and Noah's sons scatter after an incident involving his drunkenness.",
+    "arcId": "flood",
+    "eventIds": [
+      "e9-0",
+      "e9-1",
+      "e9-2"
+    ]
+  },
+  {
+    "id": "gen10",
+    "book": "genesis",
+    "number": 10,
+    "title": "The table of nations",
+    "summary": "A genealogy lists the descendants of Noah's three sons spreading into the nations and languages of the earth, including the rise of the mighty warrior Nimrod.",
+    "arcId": "nations",
+    "eventIds": [
+      "e10-0",
+      "e10-1"
+    ]
+  },
+  {
+    "id": "gen11",
+    "book": "genesis",
+    "number": 11,
+    "title": "The tower of Babel",
+    "summary": "Humanity builds a city and tower to make a name for itself, God confuses their language and scatters them, and the line from Shem down to Abram is traced.",
+    "arcId": "nations",
+    "eventIds": [
+      "e11-0",
+      "e11-1",
+      "e11-2",
+      "e11-3"
+    ]
+  },
+  {
+    "id": "gen12",
+    "book": "genesis",
+    "number": 12,
+    "title": "God calls Abram",
+    "summary": "God calls Abram to leave his homeland for a land he will show him, promising to bless him and make him a great nation; Abram journeys to Canaan and later Egypt.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e12-0",
+      "e12-1",
+      "e12-2"
+    ]
+  },
+  {
+    "id": "gen13",
+    "book": "genesis",
+    "number": 13,
+    "title": "Abram and Lot separate",
+    "summary": "Abram and Lot's growing herds cause conflict, so they part ways, with Lot choosing the fertile plain near Sodom while Abram remains in Canaan and receives God's promise again.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e13-0",
+      "e13-1"
+    ]
+  },
+  {
+    "id": "gen14",
+    "book": "genesis",
+    "number": 14,
+    "title": "Abram rescues Lot",
+    "summary": "A coalition of kings raids Sodom and captures Lot, so Abram leads a rescue, defeats the raiders, and is blessed by the mysterious priest-king Melchizedek.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e14-0",
+      "e14-1"
+    ]
+  },
+  {
+    "id": "gen15",
+    "book": "genesis",
+    "number": 15,
+    "title": "God's covenant with Abram",
+    "summary": "God reaffirms his promise of offspring and land to childless Abram, who believes him, and seals the covenant through a smoking pot and flaming torch passing between animal pieces.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e15-0",
+      "e15-1"
+    ]
+  },
+  {
+    "id": "gen16",
+    "book": "genesis",
+    "number": 16,
+    "title": "Hagar and Ishmael",
+    "summary": "Sarai gives her servant Hagar to Abram to bear a child, Hagar conceives and flees after conflict with Sarai, and an angel promises her son Ishmael many descendants.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e16-0",
+      "e16-1"
+    ]
+  },
+  {
+    "id": "gen17",
+    "book": "genesis",
+    "number": 17,
+    "title": "The covenant of circumcision",
+    "summary": "God renames Abram and Sarai as Abraham and Sarah, institutes circumcision as the sign of his covenant, and promises that Sarah herself will bear a son named Isaac.",
+    "arcId": "abraham-call",
+    "eventIds": [
+      "e17-0",
+      "e17-1"
+    ]
+  },
+  {
+    "id": "gen18",
+    "book": "genesis",
+    "number": 18,
+    "title": "Three visitors and Sodom",
+    "summary": "Three visitors tell Abraham that Sarah will have a son within the year, and Abraham pleads with God to spare Sodom for the sake of any righteous people found there.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e18-0",
+      "e18-1"
+    ]
+  },
+  {
+    "id": "gen19",
+    "book": "genesis",
+    "number": 19,
+    "title": "The destruction of Sodom",
+    "summary": "Angels rescue Lot and his daughters from Sodom before God destroys the city, Lot's wife becomes a pillar of salt, and his daughters later bear sons through him.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e19-0",
+      "e19-1",
+      "e19-2"
+    ]
+  },
+  {
+    "id": "gen20",
+    "book": "genesis",
+    "number": 20,
+    "title": "Abraham and Abimelech",
+    "summary": "Abraham again claims Sarah is his sister while staying with King Abimelech, who takes her but is warned by God in a dream and returns her unharmed.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e20-0",
+      "e20-1"
+    ]
+  },
+  {
+    "id": "gen21",
+    "book": "genesis",
+    "number": 21,
+    "title": "Isaac is born",
+    "summary": "Sarah gives birth to Isaac as God promised, Hagar and Ishmael are sent away into the wilderness, and Abraham makes a treaty with Abimelech at Beersheba.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e21-0",
+      "e21-1",
+      "e21-2"
+    ]
+  },
+  {
+    "id": "gen22",
+    "book": "genesis",
+    "number": 22,
+    "title": "Abraham offers Isaac",
+    "summary": "God tests Abraham by commanding him to sacrifice Isaac, Abraham obeys until an angel stops him and provides a ram, and God renews his covenant promise.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e22-0",
+      "e22-1"
+    ]
+  },
+  {
+    "id": "gen23",
+    "book": "genesis",
+    "number": 23,
+    "title": "Sarah dies",
+    "summary": "Sarah dies in Hebron, and Abraham purchases the cave of Machpelah from the Hittites as a burial place for her and later for himself.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e23-0",
+      "e23-1"
+    ]
+  },
+  {
+    "id": "gen24",
+    "book": "genesis",
+    "number": 24,
+    "title": "A wife for Isaac",
+    "summary": "Abraham sends his servant to find a wife for Isaac among his relatives, and the servant's prayer is answered when Rebekah offers water to him and his camels.",
+    "arcId": "abraham-family",
+    "eventIds": [
+      "e24-0",
+      "e24-1",
+      "e24-2"
+    ]
+  },
+  {
+    "id": "gen25",
+    "book": "genesis",
+    "number": 25,
+    "title": "Jacob buys Esau's birthright",
+    "summary": "Rebekah gives birth to twins Esau and Jacob who struggle even in the womb, and the starving Esau later sells his birthright to Jacob for a bowl of stew.",
+    "arcId": "jacob-esau",
+    "eventIds": [
+      "e25-0",
+      "e25-1"
+    ]
+  },
+  {
+    "id": "gen26",
+    "book": "genesis",
+    "number": 26,
+    "title": "Isaac and Abimelech",
+    "summary": "Isaac repeats his father's deception about his wife while living among the Philistines, grows wealthy, and makes peace with Abimelech after disputes over wells.",
+    "arcId": "jacob-esau",
+    "eventIds": [
+      "e26-0",
+      "e26-1"
+    ]
+  },
+  {
+    "id": "gen27",
+    "book": "genesis",
+    "number": 27,
+    "title": "Jacob steals the blessing",
+    "summary": "With Rebekah's help, Jacob disguises himself as Esau to trick the aging, blind Isaac into giving him the blessing meant for his older brother.",
+    "arcId": "jacob-esau",
+    "eventIds": [
+      "e27-0",
+      "e27-1"
+    ]
+  },
+  {
+    "id": "gen28",
+    "book": "genesis",
+    "number": 28,
+    "title": "Jacob's ladder at Bethel",
+    "summary": "Fleeing his furious brother, Jacob dreams of a stairway to heaven at Bethel, where God repeats the covenant promises and Jacob vows loyalty to him.",
+    "arcId": "jacob-esau",
+    "eventIds": [
+      "e28-0",
+      "e28-1"
+    ]
+  },
+  {
+    "id": "gen29",
+    "book": "genesis",
+    "number": 29,
+    "title": "Jacob serves Laban",
+    "summary": "Jacob arrives at his uncle Laban's household, falls in love with Rachel, works seven years for her, but is tricked into marrying Leah first.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e29-0",
+      "e29-1"
+    ]
+  },
+  {
+    "id": "gen30",
+    "book": "genesis",
+    "number": 30,
+    "title": "Jacob's children are born",
+    "summary": "Through Leah, Rachel, and their servants, Jacob fathers eleven sons and a daughter, and he negotiates with Laban to build his own flocks before leaving.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e30-0",
+      "e30-1",
+      "e30-2"
+    ]
+  },
+  {
+    "id": "gen31",
+    "book": "genesis",
+    "number": 31,
+    "title": "Jacob flees from Laban",
+    "summary": "Jacob secretly leaves Laban's household with his family and flocks, Rachel steals her father's household idols, and the two men make a covenant of peace at Gilead.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e31-0",
+      "e31-1"
+    ]
+  },
+  {
+    "id": "gen32",
+    "book": "genesis",
+    "number": 32,
+    "title": "Jacob wrestles at Peniel",
+    "summary": "Preparing to meet Esau, Jacob sends gifts ahead and wrestles all night with a mysterious man who renames him Israel before dawn.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e32-0",
+      "e32-1"
+    ]
+  },
+  {
+    "id": "gen33",
+    "book": "genesis",
+    "number": 33,
+    "title": "Jacob reconciles with Esau",
+    "summary": "Jacob fearfully approaches his brother Esau, who runs to greet him warmly, and the two reconcile before Jacob settles near Shechem.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e33-0",
+      "e33-1"
+    ]
+  },
+  {
+    "id": "gen34",
+    "book": "genesis",
+    "number": 34,
+    "title": "The defilement of Dinah",
+    "summary": "Jacob's daughter Dinah is assaulted by a local prince, and her brothers Simeon and Levi avenge her by deceiving and slaughtering the men of Shechem.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e34-0",
+      "e34-1"
+    ]
+  },
+  {
+    "id": "gen35",
+    "book": "genesis",
+    "number": 35,
+    "title": "Jacob returns to Bethel",
+    "summary": "Jacob returns to Bethel to worship God, is renamed Israel again, and Rachel dies giving birth to Benjamin on the way to Ephrath.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e35-0",
+      "e35-1",
+      "e35-2"
+    ]
+  },
+  {
+    "id": "gen36",
+    "book": "genesis",
+    "number": 36,
+    "title": "Esau's descendants",
+    "summary": "A genealogy records Esau's wives, sons, and descendants who become the nation of Edom, settling in the hill country of Seir.",
+    "arcId": "jacob-family",
+    "eventIds": [
+      "e36-0"
+    ]
+  },
+  {
+    "id": "gen37",
+    "book": "genesis",
+    "number": 37,
+    "title": "Joseph is sold into slavery",
+    "summary": "Joseph's dreams of ruling over his family provoke his brothers' hatred, and they sell him to traders who take him to Egypt as a slave.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e37-0",
+      "e37-1"
+    ]
+  },
+  {
+    "id": "gen38",
+    "book": "genesis",
+    "number": 38,
+    "title": "Judah and Tamar",
+    "summary": "Judah's daughter-in-law Tamar is denied a promised husband, so she disguises herself and tricks Judah into fathering her children to preserve the family line.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e38-0",
+      "e38-1"
+    ]
+  },
+  {
+    "id": "gen39",
+    "book": "genesis",
+    "number": 39,
+    "title": "Joseph in Potiphar's house",
+    "summary": "Joseph rises to oversee Potiphar's household but is falsely accused by Potiphar's wife after refusing her advances, and is thrown into prison.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e39-0",
+      "e39-1"
+    ]
+  },
+  {
+    "id": "gen40",
+    "book": "genesis",
+    "number": 40,
+    "title": "Joseph interprets prison dreams",
+    "summary": "In prison, Joseph correctly interprets the dreams of Pharaoh's cupbearer and baker, but the cupbearer forgets Joseph once he is restored to his position.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e40-0",
+      "e40-1"
+    ]
+  },
+  {
+    "id": "gen41",
+    "book": "genesis",
+    "number": 41,
+    "title": "Joseph rises to power",
+    "summary": "Joseph interprets Pharaoh's dreams of coming famine, is elevated to govern Egypt, and stores grain during seven years of plenty to prepare for the shortage.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e41-0",
+      "e41-1",
+      "e41-2"
+    ]
+  },
+  {
+    "id": "gen42",
+    "book": "genesis",
+    "number": 42,
+    "title": "Brothers come to Egypt",
+    "summary": "Famine drives Joseph's brothers to Egypt for grain, where Joseph recognizes them but conceals his identity and tests them by keeping Simeon hostage.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e42-0",
+      "e42-1"
+    ]
+  },
+  {
+    "id": "gen43",
+    "book": "genesis",
+    "number": 43,
+    "title": "The brothers return with Benjamin",
+    "summary": "The brothers return to Egypt with Benjamin as required, and Joseph hosts them at a meal, seating them in birth order to their amazement.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e43-0",
+      "e43-1"
+    ]
+  },
+  {
+    "id": "gen44",
+    "book": "genesis",
+    "number": 44,
+    "title": "Joseph tests his brothers",
+    "summary": "Joseph plants his silver cup in Benjamin's sack and threatens to keep him as a slave, prompting Judah to offer himself in Benjamin's place.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e44-0",
+      "e44-1"
+    ]
+  },
+  {
+    "id": "gen45",
+    "book": "genesis",
+    "number": 45,
+    "title": "Joseph reveals himself",
+    "summary": "Overcome with emotion, Joseph reveals his identity to his stunned brothers, forgives them, and sends for his father Jacob to come live in Egypt.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e45-0",
+      "e45-1"
+    ]
+  },
+  {
+    "id": "gen46",
+    "book": "genesis",
+    "number": 46,
+    "title": "Jacob moves to Egypt",
+    "summary": "Jacob and his entire family travel to Egypt at Joseph's invitation, and Joseph tearfully reunites with his father after many years apart.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e46-0",
+      "e46-1"
+    ]
+  },
+  {
+    "id": "gen47",
+    "book": "genesis",
+    "number": 47,
+    "title": "Israel settles in Goshen",
+    "summary": "Joseph settles his family in the land of Goshen, presents them to Pharaoh, and manages Egypt's food supply during the ongoing famine.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e47-0",
+      "e47-1"
+    ]
+  },
+  {
+    "id": "gen48",
+    "book": "genesis",
+    "number": 48,
+    "title": "Jacob blesses Joseph's sons",
+    "summary": "Nearing death, Jacob adopts Joseph's two sons as his own and blesses them, crossing his hands to favor the younger over the older.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e48-0",
+      "e48-1"
+    ]
+  },
+  {
+    "id": "gen49",
+    "book": "genesis",
+    "number": 49,
+    "title": "Jacob blesses his twelve sons",
+    "summary": "Jacob gathers his twelve sons to pronounce blessings and prophecies over each of them before he dies and is prepared for burial.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e49-0",
+      "e49-1"
+    ]
+  },
+  {
+    "id": "gen50",
+    "book": "genesis",
+    "number": 50,
+    "title": "Joseph forgives his brothers",
+    "summary": "After Jacob's burial in Canaan, Joseph reassures his fearful brothers that God used their evil for good, and he dies in Egypt at the end of Genesis.",
+    "arcId": "joseph",
+    "eventIds": [
+      "e50-0",
+      "e50-1",
+      "e50-2"
+    ]
+  }
+]

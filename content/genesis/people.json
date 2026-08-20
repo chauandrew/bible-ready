@@ -1,1 +1,763 @@
-[]
+[
+  {
+    "id": "god",
+    "name": "God",
+    "summary": "The creator and covenant-making LORD whose commands and promises drive the entire narrative of Genesis.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "adam",
+    "name": "Adam",
+    "summary": "The first man, formed from the dust and placed in Eden, whose disobedience brings sin into the world.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 2
+    },
+    "relations": [
+      {
+        "personId": "eve",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "id": "eve",
+    "name": "Eve",
+    "summary": "The first woman, formed from Adam's rib and named 'mother of all living' after the fall.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 2
+    },
+    "relations": [
+      {
+        "personId": "adam",
+        "relation": "husband"
+      }
+    ]
+  },
+  {
+    "id": "cain",
+    "name": "Cain",
+    "summary": "The firstborn son of Adam and Eve, a farmer who murders his brother Abel out of jealousy.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "relations": [
+      {
+        "personId": "adam",
+        "relation": "father"
+      },
+      {
+        "personId": "eve",
+        "relation": "mother"
+      },
+      {
+        "personId": "abel",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "abel",
+    "name": "Abel",
+    "summary": "The second son of Adam and Eve, a shepherd whose offering pleases God and who is killed by Cain.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "relations": [
+      {
+        "personId": "adam",
+        "relation": "father"
+      },
+      {
+        "personId": "eve",
+        "relation": "mother"
+      },
+      {
+        "personId": "cain",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "seth",
+    "name": "Seth",
+    "summary": "The third son of Adam and Eve, born after Abel's death, through whom the godly line continues to Noah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 4
+    },
+    "relations": [
+      {
+        "personId": "adam",
+        "relation": "father"
+      },
+      {
+        "personId": "eve",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "enoch",
+    "name": "Enoch",
+    "summary": "A descendant of Seth noted for walking faithfully with God and being taken away without dying.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "relations": []
+  },
+  {
+    "id": "noah",
+    "name": "Noah",
+    "summary": "A righteous man who builds the ark at God's command and whose family survives the flood.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "relations": [
+      {
+        "personId": "shem",
+        "relation": "son"
+      },
+      {
+        "personId": "ham",
+        "relation": "son"
+      },
+      {
+        "personId": "japheth",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": "shem",
+    "name": "Shem",
+    "summary": "A son of Noah whose descendants include the line leading to Abraham.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "relations": [
+      {
+        "personId": "noah",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "ham",
+    "name": "Ham",
+    "summary": "A son of Noah whose son Canaan is cursed after an incident involving Noah's drunkenness.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "relations": [
+      {
+        "personId": "noah",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "japheth",
+    "name": "Japheth",
+    "summary": "A son of Noah whose descendants spread into distant nations.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 5
+    },
+    "relations": [
+      {
+        "personId": "noah",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "nimrod",
+    "name": "Nimrod",
+    "summary": "A mighty warrior and king whose kingdom rises in Shinar in the generations after the flood.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 10
+    },
+    "relations": []
+  },
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "summary": "Called by God to leave his homeland, originally named Abram, he becomes the father of the covenant nation through the promised son Isaac.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "sarah",
+        "relation": "wife"
+      },
+      {
+        "personId": "isaac",
+        "relation": "son"
+      },
+      {
+        "personId": "lot",
+        "relation": "nephew"
+      }
+    ]
+  },
+  {
+    "id": "sarah",
+    "name": "Sarah",
+    "summary": "Abraham's wife, originally named Sarai, who bears Isaac in her old age after decades of waiting.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "abraham",
+        "relation": "husband"
+      },
+      {
+        "personId": "isaac",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": "lot",
+    "name": "Lot",
+    "summary": "Abraham's nephew who settles near Sodom and is rescued before the city's destruction.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "abraham",
+        "relation": "uncle"
+      }
+    ]
+  },
+  {
+    "id": "hagar",
+    "name": "Hagar",
+    "summary": "Sarah's Egyptian servant, given to Abraham to bear a child, and mother of Ishmael.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 16
+    },
+    "relations": [
+      {
+        "personId": "ishmael",
+        "relation": "son"
+      },
+      {
+        "personId": "abraham",
+        "relation": "Ishmael's father"
+      }
+    ]
+  },
+  {
+    "id": "ishmael",
+    "name": "Ishmael",
+    "summary": "The son of Abraham and Hagar, promised many descendants though not the covenant heir.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 16
+    },
+    "relations": [
+      {
+        "personId": "abraham",
+        "relation": "father"
+      },
+      {
+        "personId": "hagar",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "isaac",
+    "name": "Isaac",
+    "summary": "The long-promised son of Abraham and Sarah, later father of Jacob and Esau.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 17
+    },
+    "relations": [
+      {
+        "personId": "abraham",
+        "relation": "father"
+      },
+      {
+        "personId": "sarah",
+        "relation": "mother"
+      },
+      {
+        "personId": "rebekah",
+        "relation": "wife"
+      },
+      {
+        "personId": "jacob",
+        "relation": "son"
+      },
+      {
+        "personId": "esau",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": "rebekah",
+    "name": "Rebekah",
+    "summary": "Isaac's wife, chosen at a well in Nahor, and mother of the twins Jacob and Esau.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 22
+    },
+    "relations": [
+      {
+        "personId": "isaac",
+        "relation": "husband"
+      },
+      {
+        "personId": "jacob",
+        "relation": "son"
+      },
+      {
+        "personId": "esau",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": "laban",
+    "name": "Laban",
+    "summary": "Rebekah's brother, Jacob's uncle and father-in-law, who employs and repeatedly outmaneuvers Jacob.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 24
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "uncle"
+      }
+    ]
+  },
+  {
+    "id": "esau",
+    "name": "Esau",
+    "summary": "Jacob's elder twin, a skilled hunter who sells his birthright and later becomes ancestor of Edom.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 25
+    },
+    "relations": [
+      {
+        "personId": "isaac",
+        "relation": "father"
+      },
+      {
+        "personId": "rebekah",
+        "relation": "mother"
+      },
+      {
+        "personId": "jacob",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "jacob",
+    "name": "Jacob",
+    "summary": "Esau's younger twin, later renamed Israel, whose twelve sons become the twelve tribes.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 25
+    },
+    "relations": [
+      {
+        "personId": "isaac",
+        "relation": "father"
+      },
+      {
+        "personId": "rebekah",
+        "relation": "mother"
+      },
+      {
+        "personId": "esau",
+        "relation": "brother"
+      },
+      {
+        "personId": "leah",
+        "relation": "wife"
+      },
+      {
+        "personId": "rachel",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "id": "leah",
+    "name": "Leah",
+    "summary": "Jacob's first wife, mother of six of his sons including Judah and Levi.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "husband"
+      },
+      {
+        "personId": "laban",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "rachel",
+    "name": "Rachel",
+    "summary": "Jacob's favored wife, who suffers years of barrenness before bearing Joseph and Benjamin.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "husband"
+      },
+      {
+        "personId": "laban",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "bilhah",
+    "name": "Bilhah",
+    "summary": "Rachel's servant, given to Jacob as a wife, and mother of Dan and Naphtali.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "husband"
+      }
+    ]
+  },
+  {
+    "id": "zilpah",
+    "name": "Zilpah",
+    "summary": "Leah's servant, given to Jacob as a wife, and mother of Gad and Asher.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "husband"
+      }
+    ]
+  },
+  {
+    "id": "reuben",
+    "name": "Reuben",
+    "summary": "Jacob's firstborn son by Leah, who later intervenes to save Joseph's life.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "simeon",
+    "name": "Simeon",
+    "summary": "Jacob's second son by Leah, who with Levi avenges Dinah at Shechem.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "levi",
+    "name": "Levi",
+    "summary": "Jacob's third son by Leah, who with Simeon avenges Dinah at Shechem.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "judah",
+    "name": "Judah",
+    "summary": "Jacob's fourth son by Leah, who later pledges himself for Benjamin and becomes ancestor of the royal line.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 29
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "dan",
+    "name": "Dan",
+    "summary": "Jacob's son by Rachel's servant Bilhah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "bilhah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "naphtali",
+    "name": "Naphtali",
+    "summary": "Jacob's son by Rachel's servant Bilhah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "bilhah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "gad",
+    "name": "Gad",
+    "summary": "Jacob's son by Leah's servant Zilpah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "zilpah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "asher",
+    "name": "Asher",
+    "summary": "Jacob's son by Leah's servant Zilpah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "zilpah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "issachar",
+    "name": "Issachar",
+    "summary": "Jacob's fifth son by Leah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "zebulun",
+    "name": "Zebulun",
+    "summary": "Jacob's sixth son by Leah.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "dinah",
+    "name": "Dinah",
+    "summary": "Jacob's daughter by Leah, assaulted at Shechem, an event that leads her brothers to violent revenge.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "leah",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "summary": "Jacob's eleventh son by Rachel, sold into slavery by his brothers, who rises to rule over Egypt.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 30
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "rachel",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "benjamin",
+    "name": "Benjamin",
+    "summary": "Jacob's twelfth and youngest son, born as Rachel dies, later a hostage in Joseph's test of his brothers.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 35
+    },
+    "relations": [
+      {
+        "personId": "jacob",
+        "relation": "father"
+      },
+      {
+        "personId": "rachel",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "potiphar",
+    "name": "Potiphar",
+    "summary": "An Egyptian official who buys Joseph as a slave and whose wife falsely accuses him.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 37
+    },
+    "relations": []
+  },
+  {
+    "id": "tamar",
+    "name": "Tamar",
+    "summary": "Judah's daughter-in-law who disguises herself to secure an heir and preserve the family line.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 38
+    },
+    "relations": [
+      {
+        "personId": "judah",
+        "relation": "father-in-law"
+      }
+    ]
+  },
+  {
+    "id": "pharaoh",
+    "name": "Pharaoh",
+    "summary": "The king of Egypt who elevates Joseph to govern the land during the famine.",
+    "firstAppearance": {
+      "book": "genesis",
+      "chapter": 41
+    },
+    "relations": []
+  }
+]
