@@ -79,10 +79,11 @@ export function eventsForArc(arcId: string): Event[] {
   return eventsByArcMap.get(arcId) ?? [];
 }
 
+/** Membership is by chapter.arcId, not the arc's startChapter/endChapter range — the
+ * range is display metadata only, so this also works for non-contiguous "selection"
+ * books (e.g. a curated set of famous psalms) where a range can't express membership. */
 export function chaptersForArc(arcId: string): Chapter[] {
-  const arc = arcById.get(arcId);
-  if (!arc) return [];
-  return chapters.filter((c) => c.number >= arc.startChapter && c.number <= arc.endChapter);
+  return chapters.filter((c) => c.arcId === arcId).sort((a, b) => a.number - b.number);
 }
 
 export function personsForEvent(event: Event): Person[] {

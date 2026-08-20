@@ -18,7 +18,15 @@ export type Citation = z.infer<typeof CitationSchema>;
 // Book / arcs / chapters
 // ---------------------------------------------------------------------------
 
-export const CoverageDepthSchema = z.enum(["narrative", "sparse", "argument"]);
+/**
+ * "narrative"/"sparse"/"argument" books are contiguous — chapters run 1..chapterCount
+ * with no gaps, and arcs are contiguous, non-overlapping ranges covering all of them.
+ * "selection" books are a curated, non-contiguous subset (e.g. "the famous psalms":
+ * 1, 23, 51, 100...) — chapterCount is the count of curated chapters, not a max chapter
+ * number, and arcs group them thematically rather than by range. check:content applies
+ * the contiguity rules only to non-"selection" books.
+ */
+export const CoverageDepthSchema = z.enum(["narrative", "sparse", "argument", "selection"]);
 
 export const BookSchema = z.object({
   id: BookIdSchema,

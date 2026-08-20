@@ -77,32 +77,43 @@ function checkBook(bookId: string) {
   checkDuplicateIds("questions", questions);
   checkDuplicateIds("decks", decks);
 
-  // --- chapter contiguity ------------------------------------------------
+  // --- chapter numbering ---------------------------------------------------
   const chapterNumbers = chapters.map((c) => c.number).sort((a, b) => a - b);
-  for (let i = 1; i <= book.chapterCount; i++) {
-    if (!chapterNumbers.includes(i)) errors.push(`chapters: missing chapter ${i}`);
+  const dupChapterNumbers = chapterNumbers.filter((n, i) => chapterNumbers.indexOf(n) !== i);
+  if (dupChapterNumbers.length) {
+    errors.push(`chapters: duplicate chapter number(s): ${[...new Set(dupChapterNumbers)].join(", ")}`);
   }
   if (chapters.length !== book.chapterCount) {
     errors.push(`chapters: expected ${book.chapterCount} chapters, found ${chapters.length}`);
   }
 
-  // --- arc ranges: contiguous, non-overlapping, cover all chapters, match arcOrder --
+  const isSelection = book.coverageDepth === "selection";
+  if (!isSelection) {
+    // Contiguous books (narrative/sparse/argument): 1..chapterCount, no gaps.
+    for (let i = 1; i <= book.chapterCount; i++) {
+      if (!chapterNumbers.includes(i)) errors.push(`chapters: missing chapter ${i}`);
+    }
+  }
+
+  // --- arc coverage: matches arcOrder; contiguous ranges only for non-"selection" books --
   const sortedArcs = book.arcOrder.map((id) => arcs.find((a) => a.id === id)).filter((a): a is NonNullable<typeof a> => !!a);
   if (sortedArcs.length !== arcs.length || sortedArcs.length !== book.arcOrder.length) {
     errors.push(`arcs: arcOrder does not exactly match the set of arcs`);
   }
-  let expectedStart = 1;
-  for (const arc of sortedArcs) {
-    if (arc.startChapter !== expectedStart) {
-      errors.push(`arcs: "${arc.id}" starts at ${arc.startChapter}, expected ${expectedStart} (gap or overlap)`);
+  if (!isSelection) {
+    let expectedStart = 1;
+    for (const arc of sortedArcs) {
+      if (arc.startChapter !== expectedStart) {
+        errors.push(`arcs: "${arc.id}" starts at ${arc.startChapter}, expected ${expectedStart} (gap or overlap)`);
+      }
+      if (arc.endChapter < arc.startChapter) {
+        errors.push(`arcs: "${arc.id}" has endChapter before startChapter`);
+      }
+      expectedStart = arc.endChapter + 1;
     }
-    if (arc.endChapter < arc.startChapter) {
-      errors.push(`arcs: "${arc.id}" has endChapter before startChapter`);
+    if (sortedArcs.length && expectedStart - 1 !== book.chapterCount) {
+      errors.push(`arcs: coverage ends at chapter ${expectedStart - 1}, expected ${book.chapterCount}`);
     }
-    expectedStart = arc.endChapter + 1;
-  }
-  if (sortedArcs.length && expectedStart - 1 !== book.chapterCount) {
-    errors.push(`arcs: coverage ends at chapter ${expectedStart - 1}, expected ${book.chapterCount}`);
   }
 
   // --- dangling references ------------------------------------------------
@@ -110,9 +121,16 @@ function checkBook(bookId: string) {
   const eventIds = new Set(events.map((e) => e.id));
   const peopleIds = new Set(people.map((p) => p.id));
   const chapterIds = new Set(chapters.map((c) => c.id));
+  const arcById = new Map(arcs.map((a) => [a.id, a]));
 
   for (const c of chapters) {
     if (!arcIds.has(c.arcId)) errors.push(`chapters: "${c.id}" references missing arc "${c.arcId}"`);
+    if (!isSelection) {
+      const arc = arcById.get(c.arcId);
+      if (arc && (c.number < arc.startChapter || c.number > arc.endChapter)) {
+        errors.push(`chapters: "${c.id}" (chapter ${c.number}) is assigned to arc "${arc.id}" but falls outside its range ${arc.startChapter}-${arc.endChapter}`);
+      }
+    }
     for (const eid of c.eventIds) {
       if (!eventIds.has(eid)) errors.push(`chapters: "${c.id}" references missing event "${eid}"`);
     }
