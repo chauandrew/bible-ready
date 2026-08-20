@@ -1,9 +1,9 @@
 import { notFound } from "next/navigation";
-import { quizModuleIdsForBook, dataForModuleInBook, arcInBook, bookMeta, wiredBookIds } from "@/lib/content";
+import { printModuleIdsForBook, dataForModuleInBook, arcInBook, bookMeta, wiredBookIds } from "@/lib/content";
 import PrintSheet from "@/components/PrintSheet";
 
 export function generateStaticParams() {
-  return wiredBookIds.flatMap((book) => quizModuleIdsForBook(book).map((module) => ({ book, module })));
+  return wiredBookIds.flatMap((book) => printModuleIdsForBook(book).map((module) => ({ book, module })));
 }
 
 export default async function PrintModulePage({ params }: { params: Promise<{ book: string; module: string }> }) {

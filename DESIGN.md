@@ -82,6 +82,22 @@ chapter number is only unambiguous inside a single-book quiz; once items from
 several books can mix in one quiz (the whole-Bible / multi-book modes), a
 number alone doesn't say which book it's asking about.
 
+**Quiz and Diagnostic are one flow, not two.** There used to be a separate
+fixed-25-question "Diagnostic" with its own pages and a fixed (non-random)
+seed, so retaking it was comparable to a prior attempt. That's gone: every
+Quiz run (`components/QuizSetup.tsx`/`MultiQuizSetup.tsx`) now picks a
+question count (5/10/15/25) and which sections (arcs) to draw from, always
+uses a fresh random seed, and always shows the diagnostic's old "where to
+focus" category breakdown (`components/CategoryBreakdown.tsx`, fed through
+`QuizRunner`'s `resultsExtra` slot) at the end. `lib/content.ts`'s
+`dataForArcsInBook` generalizes what used to be single-arc-or-all scoping
+(`dataForModuleInBook`, still used as-is by the Print worksheet feature,
+which only ever needs one arc or the whole book) to an arbitrary subset of
+arcs. Since a static-export site can't pre-generate a page per arc-subset
+combination, `/[book]/quiz` and `/quiz/bible` are single pages that build the
+seed/count/sections into the URL query string client-side, the same pattern
+the seed itself already used.
+
 ## Content authoring rules (the ones that aren't obvious from the schema)
 
 **`Event.place` is optional, and that's deliberate.** Most events aren't
@@ -172,11 +188,11 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
 - **Multi-book UI wiring**: Genesis and Exodus each have a full section
-  (`app/[book]/*` — home, chapters, people, arcs, quiz, diagnostic,
-  flashcards, print), gated by `wiredBookIds` in `lib/content.ts`. Psalms'
-  content is fully authored and feeds the whole-Bible / multi-book quiz,
-  diagnostic, and flashcard modes (`/quiz/bible`, `/diagnostic/bible`,
-  `/study/flashcards/bible`), but doesn't have its own section yet —
+  (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards, print),
+  gated by `wiredBookIds` in `lib/content.ts`. Psalms' content is fully
+  authored and feeds the whole-Bible / multi-book quiz and flashcard modes
+  (`/quiz/bible`, `/study/flashcards/bible`), but doesn't have its own
+  section yet —
   `coverageDepth: "selection"` needs page treatment a `"narrative"` book
   doesn't (thematic, non-contiguous arcs; no per-chapter "next" that means
   anything). Add it to `wiredBookIds` once that page treatment exists.
