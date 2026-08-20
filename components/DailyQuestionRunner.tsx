@@ -4,7 +4,15 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { bookRegistry, dataForBooks, formatCitation } from "@/lib/content";
 import { selectDailyQuestion, isCorrect, type Answer } from "@/lib/quiz";
-import { todayDateStr, getCachedResult, cacheResult, type QotdResult } from "@/lib/dailyQuestion";
+import {
+  todayDateStr,
+  getCachedResult,
+  cacheResult,
+  submitDailyAnswer,
+  fetchMyResult,
+  AlreadyPlayedError,
+  type QotdResult,
+} from "@/lib/dailyQuestion";
 import { getDeviceId } from "@/lib/deviceId";
 import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion } from "./QuestionTypes";
 
@@ -20,6 +28,11 @@ export default function DailyQuestionRunner() {
   const [dateStr, setDateStr] = useState<string | null>(null);
   const [cached, setCached] = useState<QotdResult | null>(null);
   const [result, setResult] = useState<QotdResult | null>(null);
+  // True while the mount-time "did I already play today" check is in
+  // flight, so we don't flash the question before a remote answer (e.g.
+  // from a second device/tab) comes back and replaces it.
+  const [checking, setChecking] = useState(true);
+  const [submitError, setSubmitError] = useState(false);
 
   useEffect(() => {
     // One-time hydration from localStorage/clock (unavailable during static-export
@@ -30,19 +43,71 @@ export default function DailyQuestionRunner() {
     deviceIdRef.current = getDeviceId();
     // eslint-disable-next-line react-hooks/set-state-in-effect
     setDateStr(d);
-    setCached(getCachedResult(d));
+
+    const localCached = getCachedResult(d);
+    if (localCached) {
+      setCached(localCached);
+      setChecking(false);
+      return;
+    }
+    // Local cache says "not played yet" — that could be a fresh device, or
+    // a second device/tab, or a partially-cleared cache. fetchMyResult is
+    // the authoritative check; if it errors (offline, no env vars) we just
+    // fall through to showing the question.
+    fetchMyResult(d, deviceIdRef.current)
+      .then((remote) => {
+        if (remote) {
+          cacheResult(d, remote);
+          setCached(remote);
+        }
+      })
+      .catch(() => {})
+      .finally(() => setChecking(false));
   }, []);
 
   const item = useMemo(() => (dateStr ? selectDailyQuestion(sources, dateStr) : null), [dateStr, sources]);
 
-  function handleAnswer(a: Answer) {
-    if (!item || !dateStr) return;
-    const r: QotdResult = { correct: isCorrect(item, a), timeMs: Date.now() - (startRef.current ?? Date.now()) };
-    cacheResult(dateStr, r);
-    setResult(r);
+  async function trySubmit(correct: boolean, timeMs: number) {
+    if (!dateStr || !item) return;
+    setSubmitError(false);
+    try {
+      const submitted = await submitDailyAnswer({
+        playDate: dateStr,
+        deviceId: deviceIdRef.current,
+        questionId: item.id,
+        correct,
+        timeMs,
+      });
+      cacheResult(dateStr, submitted);
+      setResult(submitted);
+    } catch (err) {
+      if (err instanceof AlreadyPlayedError) {
+        try {
+          const mine = await fetchMyResult(dateStr, deviceIdRef.current);
+          if (mine) {
+            cacheResult(dateStr, mine);
+            setResult(mine);
+            return;
+          }
+        } catch {
+          // fetchMyResult also failed — fall through to the retry banner below.
+        }
+      }
+      setSubmitError(true);
+    }
   }
 
-  if (!dateStr || !item) return null;
+  function handleAnswer(a: Answer) {
+    if (!item || !dateStr) return;
+    const correct = isCorrect(item, a);
+    const timeMs = Date.now() - (startRef.current ?? Date.now());
+    const local: QotdResult = { correct, timeMs };
+    cacheResult(dateStr, local);
+    setResult(local);
+    void trySubmit(correct, timeMs);
+  }
+
+  if (!dateStr || !item || checking) return null;
 
   const shown = result ?? cached;
 
@@ -56,6 +121,26 @@ export default function DailyQuestionRunner() {
         <div className="note" style={{ borderColor: shown.correct ? "var(--success-border)" : "var(--danger-border)" }}>
           Your time: {(shown.timeMs / 1000).toFixed(1)}s
         </div>
+        {shown.correct && shown.correctPlayers != null && (
+          <p style={{ color: "var(--text-secondary)", marginTop: "0.75rem" }}>
+            {shown.correctPlayers > 1
+              ? `Faster than ${shown.speedPercentile}% of today's players who got it right.`
+              : "You're the first to answer today!"}
+          </p>
+        )}
+        {!shown.correct && shown.accuracyPercent != null && (
+          <p style={{ color: "var(--text-secondary)", marginTop: "0.75rem" }}>
+            {shown.accuracyPercent}% of today&apos;s players got this right.
+          </p>
+        )}
+        {submitError && (
+          <div className="note" style={{ marginTop: "0.75rem", borderColor: "var(--danger-border)" }}>
+            Couldn&apos;t reach the server to save your answer.{" "}
+            <button type="button" className="btn btn-primary" onClick={() => void trySubmit(shown.correct, shown.timeMs)}>
+              Try again
+            </button>
+          </div>
+        )}
         <p className="citation" style={{ marginTop: "0.5rem" }}>{formatCitation(item.citation)}</p>
         <p style={{ color: "var(--text-secondary)", marginTop: "1rem" }}>
           Come back tomorrow for a new question.

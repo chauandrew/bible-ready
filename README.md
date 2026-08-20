@@ -4,8 +4,11 @@ A study and quiz app for the book of Genesis, built for youth ministry leaders a
 the high schoolers they teach. Domain knowledge over trivia: what happens, where,
 and to whom — not theological debate.
 
-Static site, no backend, no database. Content is developer-authored JSON validated
-by Zod. Progress is tracked in the browser via `localStorage`.
+Static site, no backend, no database — with one scoped exception: Question of
+the Day (`/qotd`) calls Supabase directly from the browser to record answers
+and show a shared daily percentile. Everything else stays backend-free.
+Content is developer-authored JSON validated by Zod. Progress is tracked in
+the browser via `localStorage`.
 
 ## Develop
 
@@ -13,6 +16,20 @@ by Zod. Progress is tracked in the browser via `localStorage`.
 npm install
 npm run dev
 ```
+
+Every page except `/qotd` works with no configuration. To exercise Question
+of the Day locally, create a Supabase project (see `supabase/migrations/0001_qotd.sql`
+for the schema to run), then add a `.env.local`:
+
+```
+NEXT_PUBLIC_SUPABASE_URL=...
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=...
+```
+
+Without it, `lib/supabase.ts` only throws when a QOTD submit/fetch call is
+actually made — the rest of the app is unaffected, and `/qotd` itself still
+loads and shows the question, it just can't save an answer or show a
+percentile.
 
 ## Content
 
@@ -50,9 +67,14 @@ npm run build
 
 1. Push this repo to GitHub.
 2. In Vercel, "Add New Project" and import the repo.
-3. Vercel auto-detects Next.js, runs `npm run build`, and serves the static
-   `out/` directory produced by `output: "export"`. No project settings need
-   to change and no environment variables are required.
+3. In the project's Settings → Environment Variables, add
+   `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (all
+   environments) so Question of the Day works on the deployed site. `NEXT_PUBLIC_*`
+   vars are inlined at build time, so this must be done before the first
+   build that needs them.
+4. Vercel auto-detects Next.js, runs `npm run build`, and serves the static
+   `out/` directory produced by `output: "export"`. No other project
+   settings need to change.
 
 No `vercel.json` is included on purpose: this is a plain static export with
 no functions, no redirects, and no headers that need overriding, so Vercel's

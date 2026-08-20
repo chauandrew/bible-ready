@@ -15,7 +15,9 @@ teach.
 ## Architecture at a glance
 
 - **Static export** (`output: "export"` in `next.config.ts`). No backend, no
-  database, no serverless functions. Free-tier Vercel hosting.
+  database, no serverless functions. Free-tier Vercel hosting. One scoped
+  exception: Question of the Day calls Supabase directly from the browser —
+  see the "Question of the Day" bullet under Known gaps below.
 - **Content is developer-authored JSON**, validated by Zod (`content/schema.ts`)
   and a build-time gate (`scripts/check-content.ts`, run via `npm run
   check:content`). Nothing user-generated at runtime.
@@ -198,15 +200,25 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   anything). Add it to `wiredBookIds` once that page treatment exists.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
-- **Question of the Day (`/qotd`) is Phase 1 only.** One deterministic daily
-  question (`selectDailyQuestion` in `lib/quiz.ts`, seeded off a
-  Pacific-time date string the same way `selectQuiz`/`selectQuizMulti` seed
-  off a URL param), a local timer, and a results screen — all still 100%
-  static, no backend. There's no cross-user percentile/leaderboard yet;
-  that's Phase 2, which will add a small, scoped Supabase (Postgres + RLS)
-  exception to the "no backend" architecture below — see the plan this was
-  built from for the schema. Until then, `lib/dailyQuestion.ts`'s
-  `QotdResult` percentile fields are always empty.
+- **Question of the Day (`/qotd`)** has one deterministic daily question
+  (`selectDailyQuestion` in `lib/quiz.ts`, seeded off a Pacific-time date
+  string the same way `selectQuiz`/`selectQuizMulti` seed off a URL param),
+  a local timer, and a results screen. Answering it also submits to
+  Supabase (`supabase/migrations/0001_qotd.sql`) and shows the day's shared
+  percentile — the only place in this app that calls a database. This is
+  safe with a public anon key the same way a Stripe publishable key is
+  public: the key only identifies the project, and Postgres Row Level
+  Security enforces access server-side, defaulting to zero access until a
+  policy explicitly grants it. There's deliberately no SELECT policy on the
+  raw `qotd_responses` table (a `device_id` is a stable pseudonymous
+  identifier — letting anon `SELECT *` would let anyone scrape everyone's
+  id/time/correctness for the day); the client only ever reads aggregates,
+  returned by two `SECURITY DEFINER` functions (`qotd_submit_and_score`,
+  `qotd_my_result`). The `(play_date, device_id)` unique constraint is the
+  entire anti-cheat mechanism — deliberately light, soft/best-effort since
+  there are no accounts. Clearing `localStorage` resets both the local
+  cache and the device id, so a determined user can always replay; that's
+  an accepted tradeoff, not a bug.
 
 ## Checklist: adding a new book
 
