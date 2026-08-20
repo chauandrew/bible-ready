@@ -159,7 +159,7 @@ export default function DailyQuestionRunner() {
         Today&apos;s question
       </h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: "1.25rem" }}>
-        Answer as fast as you can — one question a day.
+        One question a day. Answer as fast as you can.
       </p>
       <div className="card">
         {"options" in item ? (

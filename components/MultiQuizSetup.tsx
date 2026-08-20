@@ -84,10 +84,10 @@ export default function MultiQuizSetup() {
   return (
     <main className="container">
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>
-        Quiz — combine books
+        Quiz across books
       </h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: "1.25rem" }}>
-        Drawn from every book and section you select below.
+        Drawn from every book and section you pick below.
       </p>
 
       <div className="card" style={{ marginBottom: "1rem" }}>

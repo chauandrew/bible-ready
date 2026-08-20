@@ -169,6 +169,22 @@ a { color: var(--accent-text); }
   margin: 0 0 1.75rem;
 }
 
+/* Home page only — a bit more room and warmth than a regular page-title, since
+   this is the one headline moment on the site. */
+.hero {
+  padding: 1.5rem 0 0.25rem;
+  background: radial-gradient(ellipse 90% 100% at 15% 0%, color-mix(in srgb, var(--accent) 16%, transparent), transparent 65%);
+}
+
+.hero-title {
+  font-size: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
+  margin-bottom: 0.7rem;
+}
+
+.hero-highlight {
+  background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 30%, transparent) 60%);
+}
+
 .section-title {
   font-size: 1.05rem;
   margin: 0 0 0.6rem;
@@ -179,6 +195,14 @@ a { color: var(--accent-text); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem 1.1rem;
+}
+
+/* A grid with few items (sometimes just one) would otherwise stretch its
+   cards to fill the whole row on a wide screen. Capped only here, not on
+   .card generally, since a card used as a plain container elsewhere (the
+   active question, a picker) should still fill its column. */
+.grid-cards > .card {
+  max-width: 420px;
 }
 
 /* Cards rendered as links (Next's <Link className="card">) are interactive —

@@ -21,14 +21,14 @@ export default async function ArcPage({ params }: { params: Promise<{ book: stri
       <p className="page-lede" style={{ marginBottom: "1.25rem" }}>{arc.summary}</p>
 
       <div style={{ display: "flex", gap: "0.5rem", marginBottom: "1.75rem" }}>
-        <Link href={`/${bookId}/quiz/${arc.id}`} className="btn btn-primary">Quiz this arc</Link>
+        <Link href={`/${bookId}/quiz?arcs=${arc.id}`} className="btn btn-primary">Quiz this arc</Link>
         <Link href={`/${bookId}/print/${arc.id}`} className="btn">Print worksheet</Link>
       </div>
 
       <div className="grid-cards" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
         {chapters.map((c) => (
           <Link key={c.id} href={`/${bookId}/study/chapters/${c.number}`} className="card">
-            <div style={{ fontWeight: 600 }}>{book.name} {c.number} — {c.title}</div>
+            <div style={{ fontWeight: 600 }}>{book.name} {c.number}: {c.title}</div>
           </Link>
         ))}
       </div>

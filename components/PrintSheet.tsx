@@ -32,7 +32,7 @@ export default function PrintSheet({
       <button type="button" className="btn btn-primary no-print" style={{ margin: "1rem 0" }} onClick={() => window.print()}>
         Print
       </button>
-      <h1 className="page-title" style={{ marginBottom: "1rem" }}>{moduleLabel} — worksheet</h1>
+      <h1 className="page-title" style={{ marginBottom: "1rem" }}>{moduleLabel} worksheet</h1>
 
       <ol style={{ paddingLeft: "1.3rem", display: "grid", gap: "0.9rem" }}>
         {items.map((item) => (
