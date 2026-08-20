@@ -23,7 +23,7 @@ for the schema to run), then add a `.env.local`:
 
 ```
 NEXT_PUBLIC_SUPABASE_URL=...
-NEXT_PUBLIC_SUPABASE_ANON_KEY=...
+NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY=...
 ```
 
 Without it, `lib/supabase.ts` only throws when a QOTD submit/fetch call is
@@ -68,7 +68,7 @@ npm run build
 1. Push this repo to GitHub.
 2. In Vercel, "Add New Project" and import the repo.
 3. In the project's Settings → Environment Variables, add
-   `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_ANON_KEY` (all
+   `NEXT_PUBLIC_SUPABASE_URL` and `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (all
    environments) so Question of the Day works on the deployed site. `NEXT_PUBLIC_*`
    vars are inlined at build time, so this must be done before the first
    build that needs them.
