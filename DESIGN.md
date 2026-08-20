@@ -25,9 +25,9 @@ teach.
 ## The events backbone
 
 `events.json` is the keystone of every book. One event record —
-`{ id, chapter, name, citation, place?, peopleIds, order, summary, notable }`
-— feeds four different question templates (which chapter, where, who's
-involved, put these in order) instead of that fact being authored four
+`{ id, chapter, name, shortName?, citation, place?, peopleIds, order, summary,
+notable }` — feeds four different question templates (which chapter, where,
+who's involved, put these in order) instead of that fact being authored four
 separate times. Adding a new book means authoring events once; the generator
 does the rest.
 
@@ -40,7 +40,8 @@ does the rest.
   via each chapter's `arcId` — the authoritative membership signal — not by a
   numeric range (`arc.startChapter`/`endChapter` is display metadata only for
   a selection book, since a thematic group isn't contiguous). `check:content`
-  skips the contiguity rules for this depth.
+  skips the contiguity rules for this depth. One event per chapter, not split
+  into sub-events by section — see the authoring rule below.
 - `"sparse"` / `"argument"` — declared in the schema for books with much lower
   event density (law, genealogy) or epistles (argument-beat structure instead
   of narrated events). Not yet exercised by real content — Genesis and Exodus
@@ -75,6 +76,11 @@ distinct values for some field (place, speaker, chapter title) simply
 generates zero questions of that type for that arc, rather than getting
 padded with a fake option to hit the number. Zero questions of one type in a
 small arc is correct; a manufactured fourth option is not.
+
+**"Which chapter" options name the book** (`"Genesis 41"`, not `"41"`). A bare
+chapter number is only unambiguous inside a single-book quiz; once items from
+several books can mix in one quiz (the whole-Bible / multi-book modes), a
+number alone doesn't say which book it's asking about.
 
 ## Content authoring rules (the ones that aren't obvious from the schema)
 
@@ -124,6 +130,30 @@ secondary chapters get skipped. This is a considered do-over of `Event.notable`,
 which shipped as a boolean nobody ever set to `false` and so did nothing (see
 Known gaps).
 
+**`Event.shortName` is a flashcard headline, not a quiz fact.** A few words
+(e.g. `"The flood"` for an event named `"The flood covers the whole earth"`),
+allowed to repeat across events since several chapters can share a topic.
+Unlike `name`, it has no distinctness requirement — the generator never reads
+it, only `FlashcardDeck` display does. Falls back to `name` when absent, so
+it's fine to leave unset until a book's decks are actually authored.
+
+**For a `"selection"` book, one `Event` per chapter — not split by section.**
+A curated single-chapter unit (a psalm, say) is one poem, not a narrative
+with discrete beats; splitting it into per-section events (an "opening theme"
+event and a "closing theme" event) mismatches the model events.json is built
+for. That event's citation should omit `verses` entirely so it reads as
+`"Psalm 150"`, not `"Psalm 150:1-6"` — the citation is the whole chapter, not
+a partial range. Its `shortName` should be a key verse or part of one (e.g.
+`"The Lord is my shepherd"` for Psalm 23) rather than a paraphrase — pick the
+chapter's most recognizable line.
+
+**Distractor option casing must be consistent within a pool.** Any field that
+feeds MC options (`place`, chapter titles, etc.) must be capitalized the same
+way across a book — one lowercase-initial option sitting next to capitalized
+ones lets a test-taker spot the answer by formatting, not by knowing the
+material. These strings are only ever displayed as standalone list items
+(never embedded mid-sentence), so always capitalize the first letter.
+
 ## Theming
 
 `app/globals.css` defines the whole palette as CSS variables on `:root`
@@ -141,12 +171,15 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   of this kind of curation flag, at the chapter level. Either give `notable`
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
-- **Multi-book UI wiring is incomplete.** `lib/content.ts` loads Genesis
-  directly; Exodus and Psalms content is fully authored and passes
-  `check:content`, but isn't reachable from the running app yet (the home
-  page lists them as "Coming soon" on purpose). Generalizing `lib/content.ts`
-  to load whichever books exist and generating routes per book is the next
-  real architectural step, not a bug.
+- **Multi-book UI wiring**: Genesis and Exodus each have a full section
+  (`app/[book]/*` — home, chapters, people, arcs, quiz, diagnostic,
+  flashcards, print), gated by `wiredBookIds` in `lib/content.ts`. Psalms'
+  content is fully authored and feeds the whole-Bible / multi-book quiz,
+  diagnostic, and flashcard modes (`/quiz/bible`, `/diagnostic/bible`,
+  `/study/flashcards/bible`), but doesn't have its own section yet —
+  `coverageDepth: "selection"` needs page treatment a `"narrative"` book
+  doesn't (thematic, non-contiguous arcs; no per-chapter "next" that means
+  anything). Add it to `wiredBookIds` once that page treatment exists.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 
@@ -170,5 +203,9 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
 6. Mark `Chapter.quizWorthy` selectively if you want free-response questions
    for this book, and author `freeResponse.keywordGroups` for each one you
    mark.
-7. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
+7. If any chapters feed a flashcard deck, author `Event.shortName` for those
+   events — a key verse or short headline, not a copy of `summary`. For a
+   `"selection"` book, that means one event per chapter with no `verses` on
+   its citation (see the authoring rule above), not one event per section.
+8. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
    build` — all four, not just `check:content`.
