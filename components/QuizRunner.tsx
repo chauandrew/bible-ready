@@ -281,7 +281,7 @@ export default function QuizRunner({
           </>
         )}
 
-        <button type="button" className="btn btn-primary" onClick={() => router.push("/")}>Back home</button>
+        <button type="button" className="btn btn-primary" onClick={() => router.push("/genesis")}>Back to Genesis</button>
       </main>
     );
   }

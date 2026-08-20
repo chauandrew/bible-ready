@@ -1,43 +1,43 @@
 import Link from "next/link";
-import { genesis, arcs } from "@/lib/content";
 
-const modules = [
-  { href: "/quiz/all", label: "Quick quiz — all of Genesis", desc: "10 mixed questions, ends with your score." },
-  { href: "/diagnostic", label: "Diagnostic exam", desc: "A fixed 25-question exam, then a breakdown of where to focus." },
-  { href: "/study/chapters", label: "Study chapters", desc: "Browse all 50 chapters, grouped by narrative arc." },
-  { href: "/study/people", label: "People", desc: "Key figures and the family line." },
-  { href: "/study/flashcards", label: "Flashcards", desc: "Flip through key events, one card at a time." },
-  { href: "/progress", label: "Your progress", desc: "Scores, weak spots, and questions to practice again." },
-  { href: "/print/all", label: "Print a worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
+const available = [
+  { href: "/genesis", name: "Genesis", desc: "Creation through Joseph — 50 chapters, quizzes, flashcards, and a diagnostic exam." },
+];
+
+const comingSoon = [
+  { name: "Exodus", desc: "Oppression in Egypt through the crossing of the Red Sea." },
+  { name: "Psalms", desc: "A curated set of the most well-known psalms." },
 ];
 
 export default function Home() {
   return (
     <main className="container">
-      <p className="eyebrow" style={{ marginTop: "1rem" }}>{genesis.name}</p>
-      <h1 style={{ fontSize: "1.6rem", marginBottom: "0.35rem" }}>Bible Ready</h1>
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>Bible Ready</p>
+      <h1 style={{ fontSize: "1.6rem", marginBottom: "0.35rem" }}>Pick a book</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>
-        Learn the storyline of {genesis.name} — what happens, where, and to whom.
+        Study and quiz on the main events and storyline — what happens, where, and to whom.
       </p>
 
       <div style={{ display: "grid", gap: "0.75rem" }}>
-        {modules.map((m) => (
-          <Link key={m.href} href={m.href} className="card" style={{ display: "block", textDecoration: "none" }}>
-            <div style={{ fontWeight: 600, color: "var(--text)" }}>{m.label}</div>
+        {available.map((b) => (
+          <Link key={b.href} href={b.href} className="card" style={{ display: "block", textDecoration: "none" }}>
+            <div style={{ fontWeight: 600, color: "var(--text)" }}>{b.name}</div>
             <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
-              {m.desc}
+              {b.desc}
             </div>
           </Link>
         ))}
-      </div>
 
-      <p className="eyebrow" style={{ marginTop: "2rem" }}>Narrative arcs</p>
-      <div style={{ display: "grid", gap: "0.5rem", marginTop: "0.5rem" }}>
-        {arcs.map((a) => (
-          <Link key={a.id} href={`/study/arcs/${a.id}`} className="card" style={{ display: "flex", justifyContent: "space-between", textDecoration: "none" }}>
-            <span>{a.name}</span>
-            <span className="citation">{a.startChapter}–{a.endChapter}</span>
-          </Link>
+        {comingSoon.map((b) => (
+          <div key={b.name} className="card" style={{ opacity: 0.6 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
+              <span style={{ fontWeight: 600 }}>{b.name}</span>
+              <span className="badge">Coming soon</span>
+            </div>
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+              {b.desc}
+            </div>
+          </div>
         ))}
       </div>
     </main>

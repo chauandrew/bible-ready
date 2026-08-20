@@ -4,8 +4,8 @@ import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
-  title: "Bible Ready — Genesis study & quiz",
-  description: "Study and quiz app for the book of Genesis, built for youth ministry and Bible study groups.",
+  title: "Bible Ready",
+  description: "Study and quiz app for the Bible's main events and storyline, built for youth ministry and Bible study groups.",
 };
 
 // Set the theme before paint to avoid a light/dark flash. Reads the same
@@ -20,7 +20,7 @@ try {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />
       </head>
@@ -30,8 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             Bible Ready
           </Link>
           <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-            <Link href="/study/chapters" className="btn">Study</Link>
-            <Link href="/search" className="btn">Search</Link>
+            <Link href="/genesis" className="btn">Genesis</Link>
             <ThemeToggle />
           </div>
         </nav>

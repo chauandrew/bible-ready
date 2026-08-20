@@ -90,45 +90,6 @@ export function personsForEvent(event: Event): Person[] {
   return event.peopleIds.map((id) => personById.get(id)).filter((p): p is Person => !!p);
 }
 
-/** Flat, lowercase search index: chapters, people, arcs. Substring filter, no library needed. */
-export interface SearchEntry {
-  type: "chapter" | "person" | "arc";
-  id: string;
-  label: string;
-  haystack: string;
-  href: string;
-}
-
-export const searchIndex: SearchEntry[] = [
-  ...chapters.map((c): SearchEntry => ({
-    type: "chapter",
-    id: c.id,
-    label: `Genesis ${c.number} — ${c.title}`,
-    haystack: `${c.title} ${c.summary}`.toLowerCase(),
-    href: `/study/chapters/${c.number}`,
-  })),
-  ...people.map((p): SearchEntry => ({
-    type: "person",
-    id: p.id,
-    label: p.name,
-    haystack: `${p.name} ${p.summary}`.toLowerCase(),
-    href: `/study/people/${p.id}`,
-  })),
-  ...arcs.map((a): SearchEntry => ({
-    type: "arc",
-    id: a.id,
-    label: a.name,
-    haystack: `${a.name} ${a.summary}`.toLowerCase(),
-    href: `/study/arcs/${a.id}`,
-  })),
-];
-
-export function search(query: string): SearchEntry[] {
-  const q = query.trim().toLowerCase();
-  if (!q) return [];
-  return searchIndex.filter((entry) => entry.haystack.includes(q));
-}
-
 export function formatCitation(c: { book: string; chapter: number; verses?: string }): string {
   const bookName = c.book === "genesis" ? "Genesis" : c.book;
   return c.verses ? `${bookName} ${c.chapter}:${c.verses}` : `${bookName} ${c.chapter}`;
