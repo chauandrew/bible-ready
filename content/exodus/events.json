@@ -101,26 +101,26 @@
       "miriam"
     ],
     "order": 1,
-    "summary": "Unable to hide him any longer, Jochebed sets Moses adrift in a papyrus basket while Miriam watches from a distance.",
+    "summary": "Unable to hide him any longer, Jochebed sets Moses adrift in a papyrus basket among the reeds while Miriam watches, until Pharaoh's daughter comes down to the river and finds him.",
     "notable": true
   },
   {
     "id": "exo-e-c2-2",
     "book": "exodus",
     "chapter": 2,
-    "name": "Pharaoh's daughter rescues and adopts Moses",
+    "name": "Pharaoh's daughter adopts Moses as her son",
     "citation": {
       "book": "exodus",
       "chapter": 2
     },
-    "place": "Pharaoh's palace",
+    "place": "Pharaoh's household",
     "peopleIds": [
       "moses",
       "pharaohs-daughter",
       "jochebed"
     ],
     "order": 2,
-    "summary": "Pharaoh's daughter finds the crying baby, has Jochebed nurse him, and raises him in the Egyptian royal household.",
+    "summary": "Pharaoh's daughter has Jochebed nurse the baby, then takes him as her own son and raises him in the Egyptian royal household.",
     "notable": true
   },
   {
