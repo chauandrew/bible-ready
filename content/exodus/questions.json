@@ -3,16 +3,16 @@
     "id": "exo-q-theme-1",
     "book": "exodus",
     "category": "theme",
-    "prompt": "What repeating pattern defines Pharaoh's response to each plague?",
+    "prompt": "What reason does the LORD give again and again for what he is doing to Egypt?",
     "options": [
-      "Pharaoh agrees to let Israel go, then hardens his heart once the plague ends",
-      "Pharaoh's magicians undo every plague before Pharaoh must respond",
-      "Pharaoh grows more willing to negotiate with each plague",
-      "Pharaoh blames his officials and refuses to speak with Moses"
+      "So that Egypt and Israel alike will know that he is the LORD",
+      "So that Israel can take Egypt's throne once Pharaoh gives in",
+      "So that Pharaoh's magicians will admit Moses is the better sorcerer",
+      "So that Egypt will become a permanent ally of Israel"
     ],
     "correctIndex": 0,
-    "citation": {"book": "exodus", "chapter": 9},
-    "explanation": "Pharaoh's heart hardens again and again despite mounting devastation."
+    "citation": {"book": "exodus", "chapter": 7},
+    "explanation": "The refrain runs from the first plague to the sea: you shall know that I am the LORD (7:5, 7:17, 8:22, 10:2, 14:4)."
   },
   {
     "id": "exo-q-theme-2",
@@ -288,16 +288,16 @@
     "id": "exo-q-argument-1",
     "book": "exodus",
     "category": "argument",
-    "prompt": "What is the central movement of the story from Israel's slavery to the crossing of the sea?",
+    "prompt": "At the sea, what does the story say Israel's own part in the rescue is?",
     "options": [
-      "Israel moves from bondage under Pharaoh to freedom secured by God's direct intervention",
-      "Israel moves from freedom into voluntary slavery",
-      "Israel conquers Egypt and becomes its rulers",
-      "Israel and Egypt form a lasting peace treaty"
+      "To stand still and be silent while the LORD fights for them",
+      "To hold off Pharaoh's chariots until the water parts",
+      "To bargain with Pharaoh's officers for safe passage",
+      "To build boats and cross before the army arrives"
     ],
     "correctIndex": 0,
     "citation": {"book": "exodus", "chapter": 14},
-    "explanation": "The section's argument is deliverance from slavery by God's power alone."
+    "explanation": "Moses tells the people the LORD will fight for them and they have only to be silent (14:14)."
   },
   {
     "id": "exo-q-argument-2",
