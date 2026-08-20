@@ -300,6 +300,30 @@ function checkBook(bookId: string) {
     }
   }
 
+  // --- free-response grading data ------------------------------------------
+  // A chapter marked quizWorthy with no grading data would generate a
+  // free-response item nothing can grade — the exact "field exists but does
+  // nothing" failure mode Event.notable fell into (see the doc comment on
+  // Chapter.quizWorthy), except this one is unreachable content instead of an
+  // inert flag, so it fails the build rather than just warning.
+  for (const c of chapters) {
+    if (c.quizWorthy && !c.freeResponse) {
+      errors.push(`chapters: "${c.id}" is quizWorthy but has no freeResponse grading data`);
+      continue;
+    }
+    if (c.freeResponse) {
+      const { keywordGroups, minGroups } = c.freeResponse;
+      if (minGroups < 1 || minGroups > keywordGroups.length) {
+        errors.push(
+          `chapters: "${c.id}" freeResponse.minGroups (${minGroups}) must be between 1 and its ${keywordGroups.length} keyword group(s)`
+        );
+      }
+      if (!c.quizWorthy) {
+        warnings.push(`chapters: "${c.id}" has freeResponse grading data but is not quizWorthy, so it's never asked`);
+      }
+    }
+  }
+
   // --- citations on every citable item --------------------------------------
   for (const e of events) if (!e.citation) errors.push(`events: "${e.id}" missing citation`);
   for (const q of quotes) if (!q.citation) errors.push(`quotes: "${q.id}" missing citation`);

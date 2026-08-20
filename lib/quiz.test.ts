@@ -16,6 +16,7 @@ function fixtureData(): BookData {
       summary: "s",
       arcId: "creation",
       eventIds: [],
+      quizWorthy: false,
     })),
     people: [{ id: "adam", name: "Adam", summary: "s", firstAppearance: { book: "genesis", chapter: 1 }, relations: [] }],
     events: [1, 2, 3, 4, 5].map((n) => ({

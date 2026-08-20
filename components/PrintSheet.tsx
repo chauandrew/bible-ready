@@ -3,14 +3,15 @@
 import type { AuthoredQuestion } from "@/content/schema";
 import type { BookData } from "@/lib/generate";
 import { selectQuiz, type QuizItem } from "@/lib/quiz";
-import { formatCitation } from "@/lib/content";
+import { formatCitation, chapterByNumber } from "@/lib/content";
 
 const PRINT_SEED = "print-v1";
 
 function answerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
-  return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join("; ");
+  if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join("; ");
+  return chapterByNumber.get(item.chapterNumber)?.summary ?? "";
 }
 
 export default function PrintSheet({
@@ -31,7 +32,7 @@ export default function PrintSheet({
       <button type="button" className="btn btn-primary no-print" style={{ margin: "1rem 0" }} onClick={() => window.print()}>
         Print
       </button>
-      <h1 style={{ fontSize: "1.4rem", marginBottom: "1rem" }}>{moduleLabel} — worksheet</h1>
+      <h1 className="page-title" style={{ marginBottom: "1rem" }}>{moduleLabel} — worksheet</h1>
 
       <ol style={{ paddingLeft: "1.3rem", display: "grid", gap: "0.9rem" }}>
         {items.map((item) => (
@@ -57,6 +58,14 @@ export default function PrintSheet({
                 <ul style={{ listStyle: "none", padding: 0 }}>
                   {item.rights.map((right, i) => <li key={right}>{String.fromCharCode(65 + i)}. {right}</li>)}
                 </ul>
+              </div>
+            )}
+            {/* Free-response: no options to print, just ruled lines to write on. */}
+            {"keywordGroups" in item && (
+              <div style={{ paddingLeft: "1rem", marginTop: "0.5rem", display: "grid", gap: "0.6rem" }} aria-hidden="true">
+                <div style={{ borderBottom: "1px solid #999" }} />
+                <div style={{ borderBottom: "1px solid #999" }} />
+                <div style={{ borderBottom: "1px solid #999" }} />
               </div>
             )}
           </li>

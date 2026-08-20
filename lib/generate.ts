@@ -104,7 +104,18 @@ export type GeneratedMatch = {
   citation: { book: string; chapter: number };
 };
 
-export type GeneratedItem = GeneratedMC | GeneratedSequence | GeneratedMatch;
+export type GeneratedFreeResponse = {
+  kind: "generated";
+  id: string;
+  type: "free-response";
+  prompt: string;
+  chapterNumber: number;
+  keywordGroups: string[][];
+  minGroups: number;
+  citation: { book: string; chapter: number };
+};
+
+export type GeneratedItem = GeneratedMC | GeneratedSequence | GeneratedMatch | GeneratedFreeResponse;
 
 function personName(people: Person[], id: string): string {
   return people.find((p) => p.id === id)?.name ?? id;
@@ -273,6 +284,27 @@ export function generateChapterSummaryQuestions(data: BookData): GeneratedMC[] {
   return out;
 }
 
+/** One "what happens in this chapter?" free-response item per chapter marked
+ * `quizWorthy` with grading data — see the doc comment on Chapter.quizWorthy
+ * in content/schema.ts for why this is chapter-scoped rather than event-scoped. */
+export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResponse[] {
+  const { chapters, book } = data;
+  const out: GeneratedFreeResponse[] = [];
+  for (const c of chapters.filter((c) => c.quizWorthy && c.freeResponse && inScope(data, c.number))) {
+    out.push({
+      kind: "generated",
+      id: `gen:free-response:${c.id}`,
+      type: "free-response",
+      prompt: `In your own words, what happens in ${bookLabel(book)} ${c.number}?`,
+      chapterNumber: c.number,
+      keywordGroups: c.freeResponse!.keywordGroups,
+      minGroups: c.freeResponse!.minGroups,
+      citation: { book: book.id, chapter: c.number },
+    });
+  }
+  return out;
+}
+
 export function generateSequenceQuestions(data: BookData): GeneratedSequence[] {
   const { arcs, chapters, events, book } = data;
   const out: GeneratedSequence[] = [];
@@ -338,6 +370,7 @@ export function generateAll(data: BookData): GeneratedItem[] {
     ...generateLocationQuestions(data),
     ...generateSpeakerQuestions(data),
     ...generateChapterSummaryQuestions(data),
+    ...generateFreeResponseQuestions(data),
     ...generateSequenceQuestions(data),
     ...generateMatchQuestions(data),
   ];
@@ -548,6 +581,32 @@ export function toRuntimeMatch(item: GeneratedMatch, seed: number): RuntimeMatch
     lefts: shuffle(item.pairs.map((p) => p.left), rand),
     rights: shuffle(item.pairs.map((p) => p.right), rand),
     correctPairs: item.pairs,
+    citation: item.citation,
+  };
+}
+
+export interface RuntimeFreeResponse {
+  kind: "generated";
+  id: string;
+  type: "free-response";
+  prompt: string;
+  chapterNumber: number;
+  keywordGroups: string[][];
+  minGroups: number;
+  citation: GeneratedFreeResponse["citation"];
+}
+
+/** No shuffling to do — a free-response item has no options — but this keeps
+ * the toRuntime* dispatch pattern the same shape as the other question types. */
+export function toRuntimeFreeResponse(item: GeneratedFreeResponse): RuntimeFreeResponse {
+  return {
+    kind: "generated",
+    id: item.id,
+    type: "free-response",
+    prompt: item.prompt,
+    chapterNumber: item.chapterNumber,
+    keywordGroups: item.keywordGroups,
+    minGroups: item.minGroups,
     citation: item.citation,
   };
 }

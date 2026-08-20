@@ -11,11 +11,11 @@ function fixture(): BookData {
     book: { id: "genesis", name: "Genesis" },
     arcs: [{ id: "creation", book: "genesis", name: "Creation", startChapter: 1, endChapter: 5, summary: "s" }],
     chapters: [
-      { id: "gen-1", book: "genesis", number: 1, title: "Creation of the world", summary: "s", arcId: "creation", eventIds: [] },
-      { id: "gen-2", book: "genesis", number: 2, title: "The garden of Eden", summary: "s", arcId: "creation", eventIds: [] },
-      { id: "gen-3", book: "genesis", number: 3, title: "The fall of man", summary: "s", arcId: "creation", eventIds: [] },
-      { id: "gen-4", book: "genesis", number: 4, title: "Cain and Abel", summary: "s", arcId: "creation", eventIds: [] },
-      { id: "gen-5", book: "genesis", number: 5, title: "The line of Adam", summary: "s", arcId: "creation", eventIds: [] },
+      { id: "gen-1", book: "genesis", number: 1, title: "Creation of the world", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
+      { id: "gen-2", book: "genesis", number: 2, title: "The garden of Eden", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
+      { id: "gen-3", book: "genesis", number: 3, title: "The fall of man", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
+      { id: "gen-4", book: "genesis", number: 4, title: "Cain and Abel", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
+      { id: "gen-5", book: "genesis", number: 5, title: "The line of Adam", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
     ],
     people: [
       { id: "adam", name: "Adam", summary: "s", firstAppearance: { book: "genesis", chapter: 1 }, relations: [] },
@@ -89,8 +89,8 @@ test("a scoped module still gets four options, because distractors stay book-wid
   // A two-chapter arc: on its own it cannot supply three wrong chapters.
   data.arcs.push({ id: "later", book: "genesis", name: "Later", startChapter: 6, endChapter: 7, summary: "s" });
   data.chapters.push(
-    { id: "gen-6", book: "genesis", number: 6, title: "Noah builds the ark", summary: "s", arcId: "later", eventIds: [] },
-    { id: "gen-7", book: "genesis", number: 7, title: "The flood begins", summary: "s", arcId: "later", eventIds: [] }
+    { id: "gen-6", book: "genesis", number: 6, title: "Noah builds the ark", summary: "s", arcId: "later", eventIds: [], quizWorthy: false },
+    { id: "gen-7", book: "genesis", number: 7, title: "The flood begins", summary: "s", arcId: "later", eventIds: [], quizWorthy: false }
   );
   data.events.push(
     { id: "e6", book: "genesis", chapter: 6, name: "Noah builds the ark", citation: { book: "genesis", chapter: 6 }, peopleIds: [], order: 0, summary: "s", notable: true },
