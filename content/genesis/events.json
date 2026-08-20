@@ -4,6 +4,7 @@
     "book": "genesis",
     "chapter": 1,
     "name": "God creates light and separates day from night",
+    "shortName": "God creates light",
     "citation": {
       "book": "genesis",
       "chapter": 1
@@ -20,6 +21,7 @@
     "book": "genesis",
     "chapter": 1,
     "name": "God separates the sky from the seas",
+    "shortName": "God separates the sky",
     "citation": {
       "book": "genesis",
       "chapter": 1
@@ -36,6 +38,7 @@
     "book": "genesis",
     "chapter": 1,
     "name": "God creates land, plants, and living creatures",
+    "shortName": "God creates the land",
     "citation": {
       "book": "genesis",
       "chapter": 1
@@ -52,6 +55,7 @@
     "book": "genesis",
     "chapter": 1,
     "name": "God creates man and woman in his image",
+    "shortName": "God creates man and woman",
     "citation": {
       "book": "genesis",
       "chapter": 1
@@ -70,6 +74,7 @@
     "book": "genesis",
     "chapter": 2,
     "name": "God rests on the seventh day",
+    "shortName": "God rests",
     "citation": {
       "book": "genesis",
       "chapter": 2
@@ -86,6 +91,7 @@
     "book": "genesis",
     "chapter": 2,
     "name": "God places Adam in the Garden of Eden",
+    "shortName": "Adam in Eden",
     "citation": {
       "book": "genesis",
       "chapter": 2
@@ -103,6 +109,7 @@
     "book": "genesis",
     "chapter": 2,
     "name": "God creates Eve from Adam's rib",
+    "shortName": "God creates Eve",
     "citation": {
       "book": "genesis",
       "chapter": 2
@@ -121,6 +128,7 @@
     "book": "genesis",
     "chapter": 3,
     "name": "The serpent tempts Eve to eat the forbidden fruit",
+    "shortName": "The serpent tempts Eve",
     "citation": {
       "book": "genesis",
       "chapter": 3
@@ -137,6 +145,7 @@
     "book": "genesis",
     "chapter": 3,
     "name": "Adam and Eve eat the forbidden fruit",
+    "shortName": "Adam and Eve eat the fruit",
     "citation": {
       "book": "genesis",
       "chapter": 3
@@ -154,6 +163,7 @@
     "book": "genesis",
     "chapter": 3,
     "name": "God confronts Adam and Eve",
+    "shortName": "God confronts Adam and Eve",
     "citation": {
       "book": "genesis",
       "chapter": 3
@@ -172,6 +182,7 @@
     "book": "genesis",
     "chapter": 3,
     "name": "Adam and Eve are exiled from the garden",
+    "shortName": "Adam and Eve exiled",
     "citation": {
       "book": "genesis",
       "chapter": 3
@@ -190,6 +201,7 @@
     "book": "genesis",
     "chapter": 4,
     "name": "Cain and Abel bring offerings to God",
+    "shortName": "Cain and Abel's offerings",
     "citation": {
       "book": "genesis",
       "chapter": 4
@@ -293,6 +305,7 @@
     "book": "genesis",
     "chapter": 6,
     "name": "God grieves human wickedness and resolves to send a flood",
+    "shortName": "God resolves to send a flood",
     "citation": {
       "book": "genesis",
       "chapter": 6
@@ -309,6 +322,7 @@
     "book": "genesis",
     "chapter": 6,
     "name": "Noah builds the ark according to God's instructions",
+    "shortName": "Noah builds the ark",
     "citation": {
       "book": "genesis",
       "chapter": 6
@@ -325,6 +339,7 @@
     "book": "genesis",
     "chapter": 6,
     "name": "God instructs Noah to gather his family and the animals",
+    "shortName": "Noah gathers his family",
     "citation": {
       "book": "genesis",
       "chapter": 6
@@ -342,6 +357,7 @@
     "book": "genesis",
     "chapter": 7,
     "name": "Noah's family and the animals board the ark",
+    "shortName": "Noah boards the ark",
     "citation": {
       "book": "genesis",
       "chapter": 7
@@ -361,6 +377,7 @@
     "book": "genesis",
     "chapter": 7,
     "name": "The flood covers the whole earth",
+    "shortName": "The flood",
     "citation": {
       "book": "genesis",
       "chapter": 7
@@ -377,6 +394,7 @@
     "book": "genesis",
     "chapter": 7,
     "name": "All other life on land is destroyed",
+    "shortName": "All other life destroyed",
     "citation": {
       "book": "genesis",
       "chapter": 7
@@ -391,6 +409,7 @@
     "book": "genesis",
     "chapter": 8,
     "name": "Noah sends out a raven and doves",
+    "shortName": "Noah sends out the doves",
     "citation": {
       "book": "genesis",
       "chapter": 8
@@ -407,6 +426,7 @@
     "book": "genesis",
     "chapter": 8,
     "name": "Noah and his family leave the ark",
+    "shortName": "Noah leaves the ark",
     "citation": {
       "book": "genesis",
       "chapter": 8
@@ -423,6 +443,7 @@
     "book": "genesis",
     "chapter": 8,
     "name": "Noah builds an altar and offers sacrifices",
+    "shortName": "Noah's altar",
     "citation": {
       "book": "genesis",
       "chapter": 8
@@ -440,6 +461,7 @@
     "book": "genesis",
     "chapter": 9,
     "name": "God blesses Noah and permits eating meat",
+    "shortName": "God blesses Noah",
     "citation": {
       "book": "genesis",
       "chapter": 9
@@ -457,6 +479,7 @@
     "book": "genesis",
     "chapter": 9,
     "name": "God sets the rainbow as a covenant sign",
+    "shortName": "The rainbow covenant",
     "citation": {
       "book": "genesis",
       "chapter": 9
@@ -474,6 +497,7 @@
     "book": "genesis",
     "chapter": 9,
     "name": "Noah's drunkenness leads to Canaan's curse",
+    "shortName": "Noah's drunkenness",
     "citation": {
       "book": "genesis",
       "chapter": 9
@@ -587,6 +611,7 @@
     "book": "genesis",
     "chapter": 12,
     "name": "God calls Abram to leave Haran for Canaan",
+    "shortName": "God calls Abram",
     "citation": {
       "book": "genesis",
       "chapter": 12
@@ -604,6 +629,7 @@
     "book": "genesis",
     "chapter": 12,
     "name": "Abram builds an altar at Shechem",
+    "shortName": "Abram's altar at Shechem",
     "citation": {
       "book": "genesis",
       "chapter": 12
@@ -620,6 +646,7 @@
     "book": "genesis",
     "chapter": 12,
     "name": "Abram deceives Pharaoh about Sarai in Egypt",
+    "shortName": "Abram deceives Pharaoh",
     "citation": {
       "book": "genesis",
       "chapter": 12
@@ -637,6 +664,7 @@
     "book": "genesis",
     "chapter": 13,
     "name": "Abram and Lot separate over land disputes",
+    "shortName": "Abram and Lot separate",
     "citation": {
       "book": "genesis",
       "chapter": 13
@@ -654,6 +682,7 @@
     "book": "genesis",
     "chapter": 13,
     "name": "God renews his land promise to Abram",
+    "shortName": "God renews his promise",
     "citation": {
       "book": "genesis",
       "chapter": 13
@@ -671,6 +700,7 @@
     "book": "genesis",
     "chapter": 14,
     "name": "Abram rescues Lot from raiding kings",
+    "shortName": "Abram rescues Lot",
     "citation": {
       "book": "genesis",
       "chapter": 14
@@ -688,6 +718,7 @@
     "book": "genesis",
     "chapter": 14,
     "name": "Melchizedek blesses Abram after the battle",
+    "shortName": "Melchizedek blesses Abram",
     "citation": {
       "book": "genesis",
       "chapter": 14
@@ -704,6 +735,7 @@
     "book": "genesis",
     "chapter": 15,
     "name": "God promises Abram offspring as numerous as the stars",
+    "shortName": "God promises Abram offspring",
     "citation": {
       "book": "genesis",
       "chapter": 15
@@ -721,6 +753,7 @@
     "book": "genesis",
     "chapter": 15,
     "name": "God's covenant with Abram sealed by a smoking pot and torch",
+    "shortName": "God's covenant with Abram",
     "citation": {
       "book": "genesis",
       "chapter": 15
@@ -738,6 +771,7 @@
     "book": "genesis",
     "chapter": 16,
     "name": "Sarai gives Hagar to Abram",
+    "shortName": "Sarai gives Hagar to Abram",
     "citation": {
       "book": "genesis",
       "chapter": 16
@@ -756,6 +790,7 @@
     "book": "genesis",
     "chapter": 16,
     "name": "An angel promises Hagar many descendants through Ishmael",
+    "shortName": "An angel promises Hagar",
     "citation": {
       "book": "genesis",
       "chapter": 16
@@ -773,6 +808,7 @@
     "book": "genesis",
     "chapter": 17,
     "name": "God renames Abram and Sarai as Abraham and Sarah",
+    "shortName": "God renames Abram and Sarai",
     "citation": {
       "book": "genesis",
       "chapter": 17
@@ -791,6 +827,7 @@
     "book": "genesis",
     "chapter": 17,
     "name": "God institutes circumcision as the covenant sign",
+    "shortName": "God institutes circumcision",
     "citation": {
       "book": "genesis",
       "chapter": 17
@@ -808,6 +845,7 @@
     "book": "genesis",
     "chapter": 18,
     "name": "Three visitors announce Sarah will bear a son",
+    "shortName": "Three visitors visit Abraham",
     "citation": {
       "book": "genesis",
       "chapter": 18
@@ -1099,6 +1137,7 @@
     "book": "genesis",
     "chapter": 25,
     "name": "Esau and Jacob are born to Isaac and Rebekah",
+    "shortName": "Esau and Jacob are born",
     "citation": {
       "book": "genesis",
       "chapter": 25
@@ -1118,6 +1157,7 @@
     "book": "genesis",
     "chapter": 25,
     "name": "Esau sells his birthright to Jacob for stew",
+    "shortName": "Esau sells his birthright",
     "citation": {
       "book": "genesis",
       "chapter": 25
@@ -1135,6 +1175,7 @@
     "book": "genesis",
     "chapter": 26,
     "name": "Isaac repeats Abraham's deception about his wife before Abimelech",
+    "shortName": "Isaac deceives Abimelech",
     "citation": {
       "book": "genesis",
       "chapter": 26
@@ -1152,6 +1193,7 @@
     "book": "genesis",
     "chapter": 26,
     "name": "Isaac makes peace with Abimelech over disputed wells",
+    "shortName": "Isaac makes peace with Abimelech",
     "citation": {
       "book": "genesis",
       "chapter": 26
@@ -1168,6 +1210,7 @@
     "book": "genesis",
     "chapter": 27,
     "name": "Jacob disguises himself to steal Isaac's blessing",
+    "shortName": "Jacob steals the blessing",
     "citation": {
       "book": "genesis",
       "chapter": 27
@@ -1186,6 +1229,7 @@
     "book": "genesis",
     "chapter": 27,
     "name": "Esau vows revenge and Jacob flees toward Haran",
+    "shortName": "Jacob flees",
     "citation": {
       "book": "genesis",
       "chapter": 27
@@ -1203,6 +1247,7 @@
     "book": "genesis",
     "chapter": 28,
     "name": "Jacob dreams of a stairway to heaven at Bethel",
+    "shortName": "Jacob's ladder dream",
     "citation": {
       "book": "genesis",
       "chapter": 28
@@ -1220,6 +1265,7 @@
     "book": "genesis",
     "chapter": 28,
     "name": "God repeats the covenant promises to Jacob",
+    "shortName": "God's promise to Jacob",
     "citation": {
       "book": "genesis",
       "chapter": 28
@@ -1237,6 +1283,7 @@
     "book": "genesis",
     "chapter": 29,
     "name": "Jacob meets Rachel at the well",
+    "shortName": "Jacob meets Rachel",
     "citation": {
       "book": "genesis",
       "chapter": 29
@@ -1255,6 +1302,7 @@
     "book": "genesis",
     "chapter": 29,
     "name": "Laban tricks Jacob into marrying Leah first",
+    "shortName": "Laban tricks Jacob",
     "citation": {
       "book": "genesis",
       "chapter": 29
@@ -1273,6 +1321,7 @@
     "book": "genesis",
     "chapter": 30,
     "name": "Jacob's sons are born through Leah, Rachel, and their servants",
+    "shortName": "Jacob's sons are born",
     "citation": {
       "book": "genesis",
       "chapter": 30
@@ -1293,6 +1342,7 @@
     "book": "genesis",
     "chapter": 30,
     "name": "Joseph is born to Rachel",
+    "shortName": "Joseph is born",
     "citation": {
       "book": "genesis",
       "chapter": 30
@@ -1311,6 +1361,7 @@
     "book": "genesis",
     "chapter": 30,
     "name": "Jacob negotiates spotted and speckled flocks from Laban",
+    "shortName": "Jacob negotiates with Laban",
     "citation": {
       "book": "genesis",
       "chapter": 30
@@ -1328,6 +1379,7 @@
     "book": "genesis",
     "chapter": 31,
     "name": "Jacob secretly flees from Laban with his family",
+    "shortName": "Jacob flees from Laban",
     "citation": {
       "book": "genesis",
       "chapter": 31
@@ -1533,6 +1585,7 @@
     "book": "genesis",
     "chapter": 37,
     "name": "Joseph's dreams of ruling provoke his brothers' hatred",
+    "shortName": "Joseph's dreams",
     "citation": {
       "book": "genesis",
       "chapter": 37
@@ -1549,6 +1602,7 @@
     "book": "genesis",
     "chapter": 37,
     "name": "Joseph is sold into slavery and taken to Egypt",
+    "shortName": "Joseph sold into slavery",
     "citation": {
       "book": "genesis",
       "chapter": 37
@@ -1567,6 +1621,7 @@
     "book": "genesis",
     "chapter": 38,
     "name": "Tamar is denied her promised husband by Judah",
+    "shortName": "Tamar is denied a husband",
     "citation": {
       "book": "genesis",
       "chapter": 38
@@ -1584,6 +1639,7 @@
     "book": "genesis",
     "chapter": 38,
     "name": "Tamar tricks Judah into fathering her children",
+    "shortName": "Tamar tricks Judah",
     "citation": {
       "book": "genesis",
       "chapter": 38
@@ -1601,6 +1657,7 @@
     "book": "genesis",
     "chapter": 39,
     "name": "Joseph rises to oversee Potiphar's household",
+    "shortName": "Joseph rises in Potiphar's house",
     "citation": {
       "book": "genesis",
       "chapter": 39
@@ -1618,6 +1675,7 @@
     "book": "genesis",
     "chapter": 39,
     "name": "Potiphar's wife falsely accuses Joseph and he is imprisoned",
+    "shortName": "Joseph is falsely accused",
     "citation": {
       "book": "genesis",
       "chapter": 39
@@ -1635,6 +1693,7 @@
     "book": "genesis",
     "chapter": 40,
     "name": "Joseph interprets the cupbearer and baker's dreams",
+    "shortName": "Joseph interprets two dreams",
     "citation": {
       "book": "genesis",
       "chapter": 40
@@ -1652,6 +1711,7 @@
     "book": "genesis",
     "chapter": 40,
     "name": "The cupbearer forgets Joseph after his release",
+    "shortName": "The cupbearer forgets Joseph",
     "citation": {
       "book": "genesis",
       "chapter": 40
@@ -1668,6 +1728,7 @@
     "book": "genesis",
     "chapter": 41,
     "name": "Joseph interprets dreams of seven fat and seven thin years",
+    "shortName": "Joseph interprets Pharaoh's dream",
     "citation": {
       "book": "genesis",
       "chapter": 41
@@ -1686,6 +1747,7 @@
     "book": "genesis",
     "chapter": 41,
     "name": "Pharaoh elevates Joseph to govern Egypt",
+    "shortName": "Pharaoh elevates Joseph",
     "citation": {
       "book": "genesis",
       "chapter": 41
@@ -1703,6 +1765,7 @@
     "book": "genesis",
     "chapter": 41,
     "name": "Joseph stores grain during seven years of plenty",
+    "shortName": "Joseph stores grain",
     "citation": {
       "book": "genesis",
       "chapter": 41
@@ -1719,6 +1782,7 @@
     "book": "genesis",
     "chapter": 42,
     "name": "Joseph's brothers come to Egypt for grain",
+    "shortName": "The brothers come for grain",
     "citation": {
       "book": "genesis",
       "chapter": 42
@@ -1737,6 +1801,7 @@
     "book": "genesis",
     "chapter": 42,
     "name": "Joseph tests his brothers and keeps Simeon hostage",
+    "shortName": "Joseph tests his brothers",
     "citation": {
       "book": "genesis",
       "chapter": 42
@@ -1754,6 +1819,7 @@
     "book": "genesis",
     "chapter": 43,
     "name": "The brothers return to Egypt with Benjamin",
+    "shortName": "The brothers return with Benjamin",
     "citation": {
       "book": "genesis",
       "chapter": 43
@@ -1772,6 +1838,7 @@
     "book": "genesis",
     "chapter": 43,
     "name": "Joseph hosts his brothers and seats them in birth order",
+    "shortName": "Joseph hosts his brothers",
     "citation": {
       "book": "genesis",
       "chapter": 43

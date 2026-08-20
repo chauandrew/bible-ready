@@ -14,7 +14,7 @@ export default async function DeckPage({ params }: { params: Promise<{ deck: str
   const cards = deck.cardEventIds
     .map((id) => eventById.get(id))
     .filter((e): e is NonNullable<typeof e> => !!e)
-    .map((e) => ({ front: formatCitation(e.citation), back: `${e.name} — ${e.summary}` }));
+    .map((e) => ({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary }));
 
   return <FlashcardDeck title={deck.name} cards={cards} />;
 }

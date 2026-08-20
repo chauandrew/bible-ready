@@ -22,8 +22,9 @@ export default async function ChapterPage({ params }: { params: Promise<{ number
         {arc ? <Link href={`/study/arcs/${arc.id}`}>{arc.name}</Link> : null}
       </p>
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem)" }}>
-        Genesis {chapter.number} — {chapter.title}
+        Genesis {chapter.number}
       </h1>
+      <p className="chapter-card-title" style={{ fontSize: "1.1rem" }}>{chapter.title}</p>
       <p style={{ marginBottom: "1.25rem" }}>{chapter.summary}</p>
 
       {events.length > 0 && (

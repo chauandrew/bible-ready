@@ -36,7 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Bible Ready
             </Link>
             <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-              <Link href="/genesis" className="btn">Genesis</Link>
               <ThemeToggle />
             </div>
           </nav>

@@ -3,5 +3,5 @@ import DiagnosticClient from "@/components/DiagnosticClient";
 
 export default function DiagnosticPage() {
   const resolved = dataForModule("all")!;
-  return <DiagnosticClient data={resolved.data} questions={resolved.questions} />;
+  return <DiagnosticClient sources={[resolved]} />;
 }

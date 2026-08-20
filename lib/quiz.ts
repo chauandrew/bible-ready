@@ -8,6 +8,7 @@ import {
   toRuntimeMatch,
   toRuntimeFreeResponse,
   type BookData,
+  type GeneratedItem,
   type GeneratedMC,
   type GeneratedSequence,
   type GeneratedMatch,
@@ -71,9 +72,30 @@ export function selectQuiz(
   authoredQuestions: AuthoredQuestion[],
   opts: SelectQuizOptions
 ): QuizItem[] {
+  return selectFromPools(generateAll(data), authoredQuestions, opts);
+}
+
+/** Same selection logic as {@link selectQuiz}, but drawing from several books' pools at
+ * once — each book is still generated on its own proven-clean data (see BookData's
+ * `scopeChapters` doc), only the resulting items are merged, so combining books can't
+ * introduce the cross-book ambiguity that merging raw content would (e.g. two books both
+ * having a "chapter 3"). */
+export function selectQuizMulti(
+  sources: { data: BookData; questions: AuthoredQuestion[] }[],
+  opts: SelectQuizOptions
+): QuizItem[] {
+  const generatedPool = sources.flatMap((s) => generateAll(s.data));
+  const authoredPool = sources.flatMap((s) => s.questions);
+  return selectFromPools(generatedPool, authoredPool, opts);
+}
+
+function selectFromPools(
+  generatedPool: GeneratedItem[],
+  authoredQuestions: AuthoredQuestion[],
+  opts: SelectQuizOptions
+): QuizItem[] {
   const { seedStr, targetCount, generatedRatio = 0.6 } = opts;
 
-  const generatedPool = generateAll(data);
   const desiredGenerated = Math.round(targetCount * generatedRatio);
   const desiredAuthored = targetCount - desiredGenerated;
 

@@ -9,6 +9,12 @@ const comingSoon = [
   { name: "Psalms", desc: "A curated set of the most well-known psalms." },
 ];
 
+const combine = [
+  { href: "/quiz/bible", label: "Quiz", desc: "Pick any set of books, get a mixed quiz across all of them." },
+  { href: "/diagnostic/bible", label: "Diagnostic exam", desc: "The 25-question diagnostic, drawn from books you select." },
+  { href: "/study/flashcards/bible", label: "Flashcards", desc: "One shuffled deck built from the books you select." },
+];
+
 export default function Home() {
   return (
     <main className="container-wide">
@@ -38,6 +44,18 @@ export default function Home() {
               {b.desc}
             </div>
           </div>
+        ))}
+      </div>
+
+      <p className="eyebrow" style={{ marginTop: "2.25rem" }}>Or combine books</p>
+      <div className="grid-cards" style={{ marginTop: "0.6rem" }}>
+        {combine.map((c) => (
+          <Link key={c.href} href={c.href} className="card">
+            <div style={{ fontWeight: 600, color: "var(--text)" }}>{c.label}</div>
+            <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+              {c.desc}
+            </div>
+          </Link>
         ))}
       </div>
     </main>

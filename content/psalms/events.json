@@ -4,6 +4,7 @@
     "book": "psalms",
     "chapter": 1,
     "name": "The blessed life of delighting in God's law",
+    "shortName": "The blessed life",
     "citation": {
       "book": "psalms",
       "chapter": 1,
@@ -22,6 +23,7 @@
     "book": "psalms",
     "chapter": 1,
     "name": "The contrasting fates of the righteous and the wicked",
+    "shortName": "The two paths",
     "citation": {
       "book": "psalms",
       "chapter": 1,
@@ -39,6 +41,7 @@
     "book": "psalms",
     "chapter": 8,
     "name": "Humanity crowned with glory and honor over creation",
+    "shortName": "Humanity crowned with glory",
     "citation": {
       "book": "psalms",
       "chapter": 8,
@@ -57,6 +60,7 @@
     "book": "psalms",
     "chapter": 19,
     "name": "The heavens declaring God's glory and the perfection of his law",
+    "shortName": "The heavens declare God's glory",
     "citation": {
       "book": "psalms",
       "chapter": 19,
@@ -75,6 +79,7 @@
     "book": "psalms",
     "chapter": 22,
     "name": "David's cry of abandonment surrounded by enemies",
+    "shortName": "David's cry of abandonment",
     "citation": {
       "book": "psalms",
       "chapter": 22,
@@ -93,6 +98,7 @@
     "book": "psalms",
     "chapter": 22,
     "name": "David's turn from despair to praise among the nations",
+    "shortName": "From despair to praise",
     "citation": {
       "book": "psalms",
       "chapter": 22,
@@ -110,6 +116,7 @@
     "book": "psalms",
     "chapter": 23,
     "name": "The Lord as shepherd and provider",
+    "shortName": "The Lord my shepherd",
     "citation": {
       "book": "psalms",
       "chapter": 23,
@@ -128,6 +135,7 @@
     "book": "psalms",
     "chapter": 23,
     "name": "God's presence through the darkest valley",
+    "shortName": "The darkest valley",
     "citation": {
       "book": "psalms",
       "chapter": 23,
@@ -145,6 +153,7 @@
     "book": "psalms",
     "chapter": 24,
     "name": "The King of glory entering his gates",
+    "shortName": "The King of glory",
     "citation": {
       "book": "psalms",
       "chapter": 24,
@@ -162,6 +171,7 @@
     "book": "psalms",
     "chapter": 32,
     "name": "The relief of confessed and forgiven sin",
+    "shortName": "Forgiven sin",
     "citation": {
       "book": "psalms",
       "chapter": 32,
@@ -180,6 +190,7 @@
     "book": "psalms",
     "chapter": 46,
     "name": "God as refuge amid earth's upheaval",
+    "shortName": "God our refuge",
     "citation": {
       "book": "psalms",
       "chapter": 46,
@@ -198,6 +209,7 @@
     "book": "psalms",
     "chapter": 51,
     "name": "David's confession of his sin with Bathsheba",
+    "shortName": "David's confession",
     "citation": {
       "book": "psalms",
       "chapter": 51,
@@ -216,6 +228,7 @@
     "book": "psalms",
     "chapter": 51,
     "name": "David's plea for a clean heart and restored joy",
+    "shortName": "A clean heart",
     "citation": {
       "book": "psalms",
       "chapter": 51,
@@ -233,6 +246,7 @@
     "book": "psalms",
     "chapter": 90,
     "name": "God's eternity against humanity's fleeting years",
+    "shortName": "God's eternity",
     "citation": {
       "book": "psalms",
       "chapter": 90,
@@ -250,6 +264,7 @@
     "book": "psalms",
     "chapter": 90,
     "name": "Moses' prayer to number our days wisely",
+    "shortName": "Numbering our days",
     "citation": {
       "book": "psalms",
       "chapter": 90,
@@ -268,6 +283,7 @@
     "book": "psalms",
     "chapter": 91,
     "name": "The safety of dwelling in God's shelter",
+    "shortName": "God's shelter",
     "citation": {
       "book": "psalms",
       "chapter": 91,
@@ -286,6 +302,7 @@
     "book": "psalms",
     "chapter": 100,
     "name": "A call to enter God's gates with thanksgiving",
+    "shortName": "Thanksgiving at God's gates",
     "citation": {
       "book": "psalms",
       "chapter": 100,
@@ -304,6 +321,7 @@
     "book": "psalms",
     "chapter": 103,
     "name": "David's roll call of God's benefits",
+    "shortName": "God's benefits",
     "citation": {
       "book": "psalms",
       "chapter": 103,
@@ -322,6 +340,7 @@
     "book": "psalms",
     "chapter": 121,
     "name": "The Lord's unsleeping watch over his people",
+    "shortName": "The Lord's watch",
     "citation": {
       "book": "psalms",
       "chapter": 121,
@@ -340,6 +359,7 @@
     "book": "psalms",
     "chapter": 130,
     "name": "A cry for mercy from the depths",
+    "shortName": "A cry from the depths",
     "citation": {
       "book": "psalms",
       "chapter": 130,
@@ -358,6 +378,7 @@
     "book": "psalms",
     "chapter": 139,
     "name": "God's intimate knowledge of David's every thought",
+    "shortName": "God knows my thoughts",
     "citation": {
       "book": "psalms",
       "chapter": 139,
@@ -375,6 +396,7 @@
     "book": "psalms",
     "chapter": 139,
     "name": "David's invitation for God to search his heart",
+    "shortName": "Search my heart",
     "citation": {
       "book": "psalms",
       "chapter": 139,
@@ -392,6 +414,7 @@
     "book": "psalms",
     "chapter": 145,
     "name": "David's praise of God's greatness across generations",
+    "shortName": "God's greatness",
     "citation": {
       "book": "psalms",
       "chapter": 145,
@@ -410,6 +433,7 @@
     "book": "psalms",
     "chapter": 150,
     "name": "A call to praise God with every instrument",
+    "shortName": "Praise with instruments",
     "citation": {
       "book": "psalms",
       "chapter": 150,
@@ -428,6 +452,7 @@
     "book": "psalms",
     "chapter": 150,
     "name": "Everything that breathes praising the Lord",
+    "shortName": "Let everything praise the Lord",
     "citation": {
       "book": "psalms",
       "chapter": 150,

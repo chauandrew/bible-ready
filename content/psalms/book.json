@@ -1,6 +1,7 @@
 {
   "id": "psalms",
   "name": "Psalms",
+  "citationName": "Psalm",
   "chapterCount": 18,
   "coverageDepth": "selection",
   "arcOrder": [

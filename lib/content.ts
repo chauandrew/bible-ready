@@ -1,16 +1,33 @@
-import bookJson from "@/content/genesis/book.json";
-import arcsJson from "@/content/genesis/arcs.json";
-import chaptersJson from "@/content/genesis/chapters.json";
-import peopleJson from "@/content/genesis/people.json";
-import eventsJson from "@/content/genesis/events.json";
-import quotesJson from "@/content/genesis/quotes.json";
-import questionsJson from "@/content/genesis/questions.json";
-import decksJson from "@/content/genesis/decks.json";
+import genesisBookJson from "@/content/genesis/book.json";
+import genesisArcsJson from "@/content/genesis/arcs.json";
+import genesisChaptersJson from "@/content/genesis/chapters.json";
+import genesisPeopleJson from "@/content/genesis/people.json";
+import genesisEventsJson from "@/content/genesis/events.json";
+import genesisQuotesJson from "@/content/genesis/quotes.json";
+import genesisQuestionsJson from "@/content/genesis/questions.json";
+import genesisDecksJson from "@/content/genesis/decks.json";
+import exodusBookJson from "@/content/exodus/book.json";
+import exodusArcsJson from "@/content/exodus/arcs.json";
+import exodusChaptersJson from "@/content/exodus/chapters.json";
+import exodusPeopleJson from "@/content/exodus/people.json";
+import exodusEventsJson from "@/content/exodus/events.json";
+import exodusQuotesJson from "@/content/exodus/quotes.json";
+import exodusQuestionsJson from "@/content/exodus/questions.json";
+import exodusDecksJson from "@/content/exodus/decks.json";
+import psalmsBookJson from "@/content/psalms/book.json";
+import psalmsArcsJson from "@/content/psalms/arcs.json";
+import psalmsChaptersJson from "@/content/psalms/chapters.json";
+import psalmsPeopleJson from "@/content/psalms/people.json";
+import psalmsEventsJson from "@/content/psalms/events.json";
+import psalmsQuotesJson from "@/content/psalms/quotes.json";
+import psalmsQuestionsJson from "@/content/psalms/questions.json";
+import psalmsDecksJson from "@/content/psalms/decks.json";
 import {
   BookContentSchema,
   type Arc,
   type AuthoredQuestion,
   type Book,
+  type BookContent,
   type Chapter,
   type Deck,
   type Event,
@@ -22,16 +39,44 @@ import {
  * The only module that touches content JSON directly. Everything else reads
  * through the lookups below. If a database is ever needed, this file is the
  * one thing that changes.
+ *
+ * Genesis is the only book with full page-level UI (study chapters/people,
+ * print, per-arc quizzes) — see DESIGN.md's "Multi-book UI wiring" gap. Exodus
+ * and Psalms are loaded here too so their content can feed the whole-Bible /
+ * multi-book quiz, diagnostic, and flashcard modes below, without giving them
+ * their own book sections yet.
  */
 const raw = BookContentSchema.parse({
-  book: bookJson,
-  arcs: arcsJson,
-  chapters: chaptersJson,
-  people: peopleJson,
-  events: eventsJson,
-  quotes: quotesJson,
-  questions: questionsJson,
-  decks: decksJson,
+  book: genesisBookJson,
+  arcs: genesisArcsJson,
+  chapters: genesisChaptersJson,
+  people: genesisPeopleJson,
+  events: genesisEventsJson,
+  quotes: genesisQuotesJson,
+  questions: genesisQuestionsJson,
+  decks: genesisDecksJson,
+});
+
+const exodusContent: BookContent = BookContentSchema.parse({
+  book: exodusBookJson,
+  arcs: exodusArcsJson,
+  chapters: exodusChaptersJson,
+  people: exodusPeopleJson,
+  events: exodusEventsJson,
+  quotes: exodusQuotesJson,
+  questions: exodusQuestionsJson,
+  decks: exodusDecksJson,
+});
+
+const psalmsContent: BookContent = BookContentSchema.parse({
+  book: psalmsBookJson,
+  arcs: psalmsArcsJson,
+  chapters: psalmsChaptersJson,
+  people: psalmsPeopleJson,
+  events: psalmsEventsJson,
+  quotes: psalmsQuotesJson,
+  questions: psalmsQuestionsJson,
+  decks: psalmsDecksJson,
 });
 
 export const genesis: Book = raw.book;
@@ -42,6 +87,17 @@ export const events: Event[] = raw.events;
 export const quotes: Quote[] = raw.quotes;
 export const authoredQuestions: AuthoredQuestion[] = raw.questions;
 export const decks: Deck[] = raw.decks;
+
+/** Every loaded book's full content bundle, keyed by book id — the source for
+ * the whole-Bible / multi-book modes. `genesis` above stays the primary book. */
+const booksContent: Record<string, BookContent> = {
+  [raw.book.id]: raw,
+  [exodusContent.book.id]: exodusContent,
+  [psalmsContent.book.id]: psalmsContent,
+};
+
+/** Book metadata for every loaded book, for "which books do you want to include" pickers. */
+export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.book);
 
 // ---------------------------------------------------------------------------
 // O(1) lookups, built once at import.
@@ -92,7 +148,9 @@ export function personsForEvent(event: Event): Person[] {
 
 /** Book id -> how it reads in a citation. One entry per loaded book; `citationName`
  * exists for books whose citation form differs from their name ("Psalm 23:1"). */
-const citationNames = new Map<string, string>([[genesis.id, genesis.citationName ?? genesis.name]]);
+const citationNames = new Map<string, string>(
+  Object.values(booksContent).map((c) => [c.book.id, c.book.citationName ?? c.book.name])
+);
 
 export function formatCitation(c: { book: string; chapter: number; verses?: string }): string {
   const bookName = citationNames.get(c.book) ?? c.book;
@@ -121,4 +179,49 @@ export function dataForModule(moduleId: string): { data: BookData; questions: Au
     data: { book: genesis, arcs, chapters, people, events, quotes, scopeChapters: chapterNumbers },
     questions: authoredQuestions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
   };
+}
+
+// ---------------------------------------------------------------------------
+// Whole-Bible / multi-book modes: one BookData per selected book, not a merged
+// pool. Several person ids collide across books ("moses" is authored once for
+// Exodus and again for Psalms, with different summaries), so lookups stay
+// scoped per book rather than flattened into one global map.
+// ---------------------------------------------------------------------------
+
+/** One BookData + its authored questions per requested book id, unknown ids skipped. */
+export function dataForBooks(bookIds: string[]): { data: BookData; questions: AuthoredQuestion[] }[] {
+  return bookIds
+    .map((id) => booksContent[id])
+    .filter((c): c is BookContent => !!c)
+    .map((c) => ({
+      data: { book: c.book, arcs: c.arcs, chapters: c.chapters, people: c.people, events: c.events, quotes: c.quotes },
+      questions: c.questions,
+    }));
+}
+
+/** Every flashcard from every deck in the requested books, as one merged list — used both
+ * for "the whole book, not just one category deck" and for "multiple books at a time". */
+export interface Flashcard {
+  front: string;
+  /** A few-word headline — `Event.shortName`, falling back to `name` for events that
+   * don't have one yet. */
+  backShort: string;
+  backLong: string;
+}
+
+export function cardsForBooks(bookIds: string[]): Flashcard[] {
+  const cards: Flashcard[] = [];
+  for (const id of bookIds) {
+    const content = booksContent[id];
+    if (!content) continue;
+    const eventMap = new Map(content.events.map((e) => [e.id, e]));
+    for (const deck of content.decks) {
+      for (const eventId of deck.cardEventIds) {
+        const e = eventMap.get(eventId);
+        if (!e) continue;
+        cards.push({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary });
+      }
+    }
+  }
+  return cards;
 }

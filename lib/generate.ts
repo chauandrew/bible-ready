@@ -154,13 +154,16 @@ export function generateChapterQuestions(data: BookData): GeneratedMC[] {
             (c) => Math.abs(c - e.chapter),
             FALLBACK_POOL_SIZE
           ).map(String);
+    // Options name the book, not just the bare chapter number — a lone "51"
+    // only reads as an answer when the book is implied by context, which
+    // isn't true once items from several books are mixed into one quiz.
     out.push({
       kind: "generated",
       id: `gen:chapter:${e.id}`,
       type: "chapter",
       prompt: `In which chapter does this happen: ${e.name}?`,
-      correctAnswer: String(e.chapter),
-      distractorPool: fallbackPool,
+      correctAnswer: `${bookLabel(book)} ${e.chapter}`,
+      distractorPool: fallbackPool.map((c) => `${bookLabel(book)} ${c}`),
       citation: { book: book.id, chapter: e.chapter },
     });
   }
