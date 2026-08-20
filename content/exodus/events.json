@@ -94,7 +94,7 @@
       "book": "exodus",
       "chapter": 2
     },
-    "place": "the Nile",
+    "place": "The Nile",
     "peopleIds": [
       "moses",
       "jochebed",
@@ -673,7 +673,7 @@
       "book": "exodus",
       "chapter": 13
     },
-    "place": "the wilderness",
+    "place": "The wilderness",
     "peopleIds": [
       "moses"
     ],
@@ -709,7 +709,7 @@
       "book": "exodus",
       "chapter": 14
     },
-    "place": "the Red Sea",
+    "place": "The Red Sea",
     "peopleIds": [
       "moses"
     ],

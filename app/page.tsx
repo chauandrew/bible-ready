@@ -2,10 +2,10 @@ import Link from "next/link";
 
 const available = [
   { href: "/genesis", name: "Genesis", desc: "Creation through Joseph — 50 chapters, quizzes, flashcards, and a diagnostic exam." },
+  { href: "/exodus", name: "Exodus", desc: "Oppression in Egypt through the crossing of the Red Sea — 14 chapters." },
 ];
 
 const comingSoon = [
-  { name: "Exodus", desc: "Oppression in Egypt through the crossing of the Red Sea." },
   { name: "Psalms", desc: "A curated set of the most well-known psalms." },
 ];
 
@@ -19,11 +19,15 @@ export default function Home() {
   return (
     <main className="container-wide">
       <p className="eyebrow" style={{ marginTop: "1rem" }}>Bible Ready</p>
-      <h1 className="page-title">Pick a book</h1>
+      <h1 className="page-title">Study the Bible</h1>
       <p className="page-lede">
         Study and quiz on the main events and storyline — what happens, where, and to whom.
       </p>
 
+      <h2 className="section-title">Study one book</h2>
+      <p className="page-lede" style={{ marginBottom: "1rem" }}>
+        Chapters, people, quizzes, flashcards, and a diagnostic exam — all for one book.
+      </p>
       <div className="grid-cards">
         {available.map((b) => (
           <Link key={b.href} href={b.href} className="card">
@@ -47,8 +51,11 @@ export default function Home() {
         ))}
       </div>
 
-      <p className="eyebrow" style={{ marginTop: "2.25rem" }}>Or combine books</p>
-      <div className="grid-cards" style={{ marginTop: "0.6rem" }}>
+      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Study across books</h2>
+      <p className="page-lede" style={{ marginBottom: "1rem" }}>
+        Mix questions or flashcards from several books at once — the whole Bible, or any set you pick.
+      </p>
+      <div className="grid-cards">
         {combine.map((c) => (
           <Link key={c.href} href={c.href} className="card">
             <div style={{ fontWeight: 600, color: "var(--text)" }}>{c.label}</div>

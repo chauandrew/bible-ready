@@ -6,7 +6,7 @@
     "title": "The two ways",
     "summary": "The psalm contrasts the blessed life of the person who delights in God's law with the fate of the wicked, comparing the righteous to a fruitful, well-watered tree and the wicked to blown chaff.",
     "arcId": "wisdom-creation-presence",
-    "eventIds": ["psalms-1-e1", "psalms-1-e2"]
+    "eventIds": ["psalms-1-e1"]
   },
   {
     "id": "psalms-8",
@@ -33,7 +33,7 @@
     "title": "From forsaken to triumphant",
     "summary": "David cries out in anguish at feeling abandoned by God while surrounded by mockers and enemies, then turns from despair to confident praise, anticipating that every nation will worship God.",
     "arcId": "repentance-lament",
-    "eventIds": ["psalms-22-e1", "psalms-22-e2"]
+    "eventIds": ["psalms-22-e1"]
   },
   {
     "id": "psalms-23",
@@ -42,7 +42,7 @@
     "title": "The Lord is my shepherd",
     "summary": "David pictures the Lord as a shepherd who provides rest, guidance, and protection even through danger, and as a generous host whose goodness will follow him for the rest of his life.",
     "arcId": "trust-refuge",
-    "eventIds": ["psalms-23-e1", "psalms-23-e2"]
+    "eventIds": ["psalms-23-e1"]
   },
   {
     "id": "psalms-24",
@@ -78,7 +78,7 @@
     "title": "David's confession after Bathsheba",
     "summary": "David confesses his sin after his affair with Bathsheba, pleading for God to cleanse and restore him, and commits to teach other sinners God's ways.",
     "arcId": "repentance-lament",
-    "eventIds": ["psalms-51-e1", "psalms-51-e2"]
+    "eventIds": ["psalms-51-e1"]
   },
   {
     "id": "psalms-90",
@@ -87,7 +87,7 @@
     "title": "Teach us to number our days",
     "summary": "Moses contrasts God's eternal existence with the brief, trouble-filled span of human life, asking God to teach his people to live wisely in light of how short their days are.",
     "arcId": "wisdom-creation-presence",
-    "eventIds": ["psalms-90-e1", "psalms-90-e2"]
+    "eventIds": ["psalms-90-e1"]
   },
   {
     "id": "psalms-91",
@@ -141,7 +141,7 @@
     "title": "Fully known by God",
     "summary": "David reflects on how thoroughly God knows his thoughts and actions, marvels that God formed him in the womb, and asks God to search his heart and lead him in the right way.",
     "arcId": "wisdom-creation-presence",
-    "eventIds": ["psalms-139-e1", "psalms-139-e2"]
+    "eventIds": ["psalms-139-e1"]
   },
   {
     "id": "psalms-145",
@@ -159,6 +159,6 @@
     "title": "Let everything praise the Lord",
     "summary": "The final psalm calls for God to be praised in his sanctuary and in the heavens, listing instruments from trumpet to cymbals, and closes the Psalter with everything that breathes praising the Lord.",
     "arcId": "praise-thanksgiving",
-    "eventIds": ["psalms-150-e1", "psalms-150-e2"]
+    "eventIds": ["psalms-150-e1"]
   }
 ]

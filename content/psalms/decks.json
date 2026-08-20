@@ -5,7 +5,6 @@
     "name": "Psalms of trust and refuge",
     "cardEventIds": [
       "psalms-23-e1",
-      "psalms-23-e2",
       "psalms-46-e1",
       "psalms-91-e1",
       "psalms-121-e1"
@@ -19,8 +18,7 @@
       "psalms-100-e1",
       "psalms-103-e1",
       "psalms-145-e1",
-      "psalms-150-e1",
-      "psalms-150-e2"
+      "psalms-150-e1"
     ]
   },
   {
@@ -29,14 +27,11 @@
     "name": "Psalms of wisdom, creation, and God's presence",
     "cardEventIds": [
       "psalms-1-e1",
-      "psalms-1-e2",
       "psalms-8-e1",
       "psalms-19-e1",
       "psalms-24-e1",
       "psalms-90-e1",
-      "psalms-90-e2",
-      "psalms-139-e1",
-      "psalms-139-e2"
+      "psalms-139-e1"
     ]
   },
   {
@@ -45,10 +40,8 @@
     "name": "Psalms of repentance and lament",
     "cardEventIds": [
       "psalms-22-e1",
-      "psalms-22-e2",
       "psalms-32-e1",
       "psalms-51-e1",
-      "psalms-51-e2",
       "psalms-130-e1"
     ]
   }

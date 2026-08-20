@@ -32,21 +32,15 @@ import {
   type Deck,
   type Event,
   type Person,
-  type Quote,
 } from "@/content/schema";
+import type { BookData } from "./generate";
 
 /**
  * The only module that touches content JSON directly. Everything else reads
  * through the lookups below. If a database is ever needed, this file is the
  * one thing that changes.
- *
- * Genesis is the only book with full page-level UI (study chapters/people,
- * print, per-arc quizzes) — see DESIGN.md's "Multi-book UI wiring" gap. Exodus
- * and Psalms are loaded here too so their content can feed the whole-Bible /
- * multi-book quiz, diagnostic, and flashcard modes below, without giving them
- * their own book sections yet.
  */
-const raw = BookContentSchema.parse({
+const genesisContent: BookContent = BookContentSchema.parse({
   book: genesisBookJson,
   arcs: genesisArcsJson,
   chapters: genesisChaptersJson,
@@ -79,75 +73,91 @@ const psalmsContent: BookContent = BookContentSchema.parse({
   decks: psalmsDecksJson,
 });
 
-export const genesis: Book = raw.book;
-export const arcs: Arc[] = raw.arcs;
-export const chapters: Chapter[] = raw.chapters;
-export const people: Person[] = raw.people;
-export const events: Event[] = raw.events;
-export const quotes: Quote[] = raw.quotes;
-export const authoredQuestions: AuthoredQuestion[] = raw.questions;
-export const decks: Deck[] = raw.decks;
-
-/** Every loaded book's full content bundle, keyed by book id — the source for
- * the whole-Bible / multi-book modes. `genesis` above stays the primary book. */
+/** Every loaded book's full content bundle, keyed by book id. */
 const booksContent: Record<string, BookContent> = {
-  [raw.book.id]: raw,
+  [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,
   [psalmsContent.book.id]: psalmsContent,
 };
 
-/** Book metadata for every loaded book, for "which books do you want to include" pickers. */
+/** Book metadata for every loaded book — used by the "which books do you want to
+ * include" pickers in the whole-Bible / multi-book quiz, diagnostic, and flashcard modes. */
 export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.book);
 
+/**
+ * Books with a full section of their own (home page, chapters, people, quiz,
+ * diagnostic, flashcards, print) — see `app/[book]/*`. Psalms' content is fully
+ * authored and already feeds the whole-Bible / multi-book modes above, but as a
+ * "selection" book (a curated, non-contiguous set of psalms — see DESIGN.md) it
+ * needs page treatment a "narrative" book doesn't, so it isn't wired up as its
+ * own section yet.
+ */
+export const wiredBookIds: string[] = ["genesis", "exodus"];
+export const wiredBooks: Book[] = wiredBookIds.map((id) => booksContent[id].book);
+
+export function bookMeta(bookId: string): Book | undefined {
+  return booksContent[bookId]?.book;
+}
+
 // ---------------------------------------------------------------------------
-// O(1) lookups, built once at import.
+// Per-book lookups. Each book's ids (person, event, deck...) are only ever
+// looked up within that same book — see the note on `cardsForBooks` below for
+// why these deliberately don't get flattened into one global map.
 // ---------------------------------------------------------------------------
 
-export const chapterByNumber = new Map<number, Chapter>(chapters.map((c) => [c.number, c]));
-export const arcById = new Map<string, Arc>(arcs.map((a) => [a.id, a]));
-export const personById = new Map<string, Person>(people.map((p) => [p.id, p]));
-export const eventById = new Map<string, Event>(events.map((e) => [e.id, e]));
-export const quoteById = new Map<string, Quote>(quotes.map((q) => [q.id, q]));
-export const questionById = new Map<string, AuthoredQuestion>(authoredQuestions.map((q) => [q.id, q]));
-export const deckById = new Map<string, Deck>(decks.map((d) => [d.id, d]));
-
-const eventsByChapterMap = new Map<number, Event[]>();
-for (const e of events) {
-  const list = eventsByChapterMap.get(e.chapter) ?? [];
-  list.push(e);
-  eventsByChapterMap.set(e.chapter, list);
-}
-for (const list of eventsByChapterMap.values()) list.sort((a, b) => a.order - b.order);
-
-const eventsByArcMap = new Map<string, Event[]>();
-for (const c of chapters) {
-  const arcEvents = eventsByChapterMap.get(c.number) ?? [];
-  const list = eventsByArcMap.get(c.arcId) ?? [];
-  list.push(...arcEvents);
-  eventsByArcMap.set(c.arcId, list);
+export function arcsForBook(bookId: string): Arc[] {
+  return booksContent[bookId]?.arcs ?? [];
 }
 
-export function eventsForChapter(chapterNumber: number): Event[] {
-  return eventsByChapterMap.get(chapterNumber) ?? [];
+export function arcInBook(bookId: string, arcId: string): Arc | undefined {
+  return arcsForBook(bookId).find((a) => a.id === arcId);
 }
 
-export function eventsForArc(arcId: string): Event[] {
-  return eventsByArcMap.get(arcId) ?? [];
+export function chaptersForBook(bookId: string): Chapter[] {
+  return booksContent[bookId]?.chapters ?? [];
+}
+
+export function chapterInBook(bookId: string, number: number): Chapter | undefined {
+  return chaptersForBook(bookId).find((c) => c.number === number);
 }
 
 /** Membership is by chapter.arcId, not the arc's startChapter/endChapter range — the
  * range is display metadata only, so this also works for non-contiguous "selection"
  * books (e.g. a curated set of famous psalms) where a range can't express membership. */
-export function chaptersForArc(arcId: string): Chapter[] {
-  return chapters.filter((c) => c.arcId === arcId).sort((a, b) => a.number - b.number);
+export function chaptersForArcInBook(bookId: string, arcId: string): Chapter[] {
+  return chaptersForBook(bookId)
+    .filter((c) => c.arcId === arcId)
+    .sort((a, b) => a.number - b.number);
 }
 
-export function personsForEvent(event: Event): Person[] {
-  return event.peopleIds.map((id) => personById.get(id)).filter((p): p is Person => !!p);
+export function eventsForChapterInBook(bookId: string, chapterNumber: number): Event[] {
+  const events = booksContent[bookId]?.events ?? [];
+  return events.filter((e) => e.chapter === chapterNumber).sort((a, b) => a.order - b.order);
 }
 
-/** Book id -> how it reads in a citation. One entry per loaded book; `citationName`
- * exists for books whose citation form differs from their name ("Psalm 23:1"). */
+export function peopleForBook(bookId: string): Person[] {
+  return booksContent[bookId]?.people ?? [];
+}
+
+export function personInBook(bookId: string, personId: string): Person | undefined {
+  return peopleForBook(bookId).find((p) => p.id === personId);
+}
+
+export function personsForEventInBook(bookId: string, event: Event): Person[] {
+  const people = peopleForBook(bookId);
+  return event.peopleIds.map((id) => people.find((p) => p.id === id)).filter((p): p is Person => !!p);
+}
+
+export function decksForBook(bookId: string): Deck[] {
+  return booksContent[bookId]?.decks ?? [];
+}
+
+export function deckInBook(bookId: string, deckId: string): Deck | undefined {
+  return decksForBook(bookId).find((d) => d.id === deckId);
+}
+
+/** Book id -> how it reads in a citation. `citationName` exists for books whose
+ * citation form differs from their name ("Psalm 23:1", not "Psalms 23:1"). */
 const citationNames = new Map<string, string>(
   Object.values(booksContent).map((c) => [c.book.id, c.book.citationName ?? c.book.name])
 );
@@ -157,27 +167,46 @@ export function formatCitation(c: { book: string; chapter: number; verses?: stri
   return c.verses ? `${bookName} ${c.chapter}:${c.verses}` : `${bookName} ${c.chapter}`;
 }
 
+/** Chapter summary by (book, number) — used for the free-response model answer
+ * (QuizRunner, PrintSheet). Keyed by both, not just the number, since chapter
+ * numbers repeat across books (Genesis 3 and Exodus 3 are different chapters). */
+const chapterByBookAndNumber = new Map<string, Chapter>();
+for (const content of Object.values(booksContent)) {
+  for (const c of content.chapters) chapterByBookAndNumber.set(`${c.book}:${c.number}`, c);
+}
+export function chapterSummaryFor(book: string, number: number): string | undefined {
+  return chapterByBookAndNumber.get(`${book}:${number}`)?.summary;
+}
+
 // ---------------------------------------------------------------------------
-// Quiz module resolution: "all" or a specific arc id.
+// Quiz module resolution, scoped to one book: "all" or a specific arc id.
 // ---------------------------------------------------------------------------
 
-import type { BookData } from "./generate";
+export function quizModuleIdsForBook(bookId: string): string[] {
+  return ["all", ...arcsForBook(bookId).map((a) => a.id)];
+}
 
-export const quizModuleIds: string[] = ["all", ...arcs.map((a) => a.id)];
-
-export function dataForModule(moduleId: string): { data: BookData; questions: AuthoredQuestion[] } | null {
+export function dataForModuleInBook(
+  bookId: string,
+  moduleId: string
+): { data: BookData; questions: AuthoredQuestion[] } | null {
+  const content = booksContent[bookId];
+  if (!content) return null;
   if (moduleId === "all") {
-    return { data: { book: genesis, arcs, chapters, people, events, quotes }, questions: authoredQuestions };
+    return {
+      data: { book: content.book, arcs: content.arcs, chapters: content.chapters, people: content.people, events: content.events, quotes: content.quotes },
+      questions: content.questions,
+    };
   }
-  const arc = arcById.get(moduleId);
+  const arc = content.arcs.find((a) => a.id === moduleId);
   if (!arc) return null;
   // Pass the whole book and scope by chapter rather than handing the generator a
   // pre-filtered slice: an arc restricts what gets *asked*, but its distractors
   // still need the book-wide pools (a 2-chapter arc can't supply 3 wrong chapters).
-  const chapterNumbers = chaptersForArc(arc.id).map((c) => c.number);
+  const chapterNumbers = chaptersForArcInBook(bookId, arc.id).map((c) => c.number);
   return {
-    data: { book: genesis, arcs, chapters, people, events, quotes, scopeChapters: chapterNumbers },
-    questions: authoredQuestions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
+    data: { book: content.book, arcs: content.arcs, chapters: content.chapters, people: content.people, events: content.events, quotes: content.quotes, scopeChapters: chapterNumbers },
+    questions: content.questions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
   };
 }
 
@@ -199,8 +228,6 @@ export function dataForBooks(bookIds: string[]): { data: BookData; questions: Au
     }));
 }
 
-/** Every flashcard from every deck in the requested books, as one merged list — used both
- * for "the whole book, not just one category deck" and for "multiple books at a time". */
 export interface Flashcard {
   front: string;
   /** A few-word headline — `Event.shortName`, falling back to `name` for events that
@@ -209,19 +236,31 @@ export interface Flashcard {
   backLong: string;
 }
 
+function cardsForEventIds(bookId: string, eventIds: string[]): Flashcard[] {
+  const content = booksContent[bookId];
+  if (!content) return [];
+  const eventMap = new Map(content.events.map((e) => [e.id, e]));
+  return eventIds
+    .map((id) => eventMap.get(id))
+    .filter((e): e is NonNullable<typeof e> => !!e)
+    .map((e) => ({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary }));
+}
+
+/** One deck's cards, in the deck's authored order. */
+export function cardsForDeck(bookId: string, deckId: string): Flashcard[] {
+  const deck = deckInBook(bookId, deckId);
+  return deck ? cardsForEventIds(bookId, deck.cardEventIds) : [];
+}
+
+/** Every flashcard from every deck in the requested books, as one merged list — used
+ * both for "the whole book, not just one category deck" and for "multiple books at a
+ * time". Passing a single book id is how a book's "entire book" deck is built. */
 export function cardsForBooks(bookIds: string[]): Flashcard[] {
   const cards: Flashcard[] = [];
   for (const id of bookIds) {
     const content = booksContent[id];
     if (!content) continue;
-    const eventMap = new Map(content.events.map((e) => [e.id, e]));
-    for (const deck of content.decks) {
-      for (const eventId of deck.cardEventIds) {
-        const e = eventMap.get(eventId);
-        if (!e) continue;
-        cards.push({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary });
-      }
-    }
+    for (const deck of content.decks) cards.push(...cardsForEventIds(id, deck.cardEventIds));
   }
   return cards;
 }

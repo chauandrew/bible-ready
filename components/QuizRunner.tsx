@@ -3,10 +3,10 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect, categoryOf } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
 import { recordSession, clearMissed } from "@/lib/progress";
-import { formatCitation, chapterByNumber } from "@/lib/content";
+import { formatCitation, chapterSummaryFor } from "@/lib/content";
 
 type Mode = "study" | "quiz";
 
@@ -96,13 +96,25 @@ function SequenceQuestion({
   return (
     <div>
       <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {!checked && chosen.length > 0 && (
+        <p className="citation" style={{ marginBottom: "0.4rem" }}>Tap a placed event to undo it.</p>
+      )}
       {chosen.length > 0 && (
         <ol style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", marginBottom: "0.75rem", paddingLeft: "1.2rem" }}>
           {chosen.map((c, i) => (
-            <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : undefined}>
-              {checked && <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>}
-              {checked && <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>}
-              {c}
+            <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : { marginBottom: "0.35rem" }}>
+              {checked ? (
+                <>
+                  <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>
+                  <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>
+                  {c}
+                </>
+              ) : (
+                <button type="button" className="option" style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem" }} onClick={() => setChosen(chosen.filter((x) => x !== c))}>
+                  {c}
+                  <span className="sr-only"> — tap to remove</span>
+                </button>
+              )}
             </li>
           ))}
         </ol>
@@ -252,7 +264,7 @@ function FreeResponseQuestion({
     setResult(gradeFreeResponse({ keywordGroups: item.keywordGroups, minGroups: item.minGroups }, text));
   }
 
-  const modelAnswer = chapterByNumber.get(item.chapterNumber)?.summary;
+  const modelAnswer = chapterSummaryFor(item.citation.book, item.chapterNumber);
 
   return (
     <div>
@@ -316,17 +328,18 @@ export default function QuizRunner({
   mode,
   moduleId,
   resultsExtra,
-  backHref = "/genesis",
-  backLabel = "Back to Genesis",
+  backHref,
+  backLabel,
 }: {
   items: QuizItem[];
   mode: Mode;
   moduleId: string;
   /** Rendered above the review list on the results screen — used by the diagnostic's gap report. */
   resultsExtra?: (report: ReturnType<typeof gapReport>) => ReactNode;
-  /** Where the "back to..." buttons go — defaults to the Genesis home. */
-  backHref?: string;
-  backLabel?: string;
+  /** Where the "back to..." buttons go, and what they say — every screen this quiz
+   * can be reached from renders a different book (or none), so there's no sane default. */
+  backHref: string;
+  backLabel: string;
 }) {
   const router = useRouter();
   const [index, setIndex] = useState(0);
@@ -385,7 +398,7 @@ export default function QuizRunner({
                       ? it.correctOrder.join(" → ")
                       : "correctPairs" in it
                         ? it.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ")
-                        : (chapterByNumber.get(it.chapterNumber)?.summary ?? "");
+                        : (chapterSummaryFor(it.citation.book, it.chapterNumber) ?? "");
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
@@ -436,7 +449,7 @@ export default function QuizRunner({
           </button>
         </div>
         <div className="eyebrow">
-          {index + 1} / {items.length} · {categoryOf(item)}
+          {index + 1} / {items.length}
         </div>
       </div>
       <div

@@ -1,7 +1,17 @@
 import Link from "next/link";
-import { arcs, chaptersForArc } from "@/lib/content";
+import { notFound } from "next/navigation";
+import { arcsForBook, chaptersForArcInBook, wiredBookIds, bookMeta } from "@/lib/content";
 
-export default function ChaptersIndex() {
+export function generateStaticParams() {
+  return wiredBookIds.map((book) => ({ book }));
+}
+
+export default async function ChaptersIndex({ params }: { params: Promise<{ book: string }> }) {
+  const { book: bookId } = await params;
+  const book = bookMeta(bookId);
+  if (!book || !wiredBookIds.includes(bookId)) notFound();
+  const arcs = arcsForBook(bookId);
+
   return (
     <main className="container-wide">
       <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Chapters</h1>
@@ -14,10 +24,10 @@ export default function ChaptersIndex() {
             </span>
           </summary>
           <div className="chapter-card-grid">
-            {chaptersForArc(arc.id).map((c) => (
-              <Link key={c.id} href={`/study/chapters/${c.number}`} className="card chapter-card">
+            {chaptersForArcInBook(bookId, arc.id).map((c) => (
+              <Link key={c.id} href={`/${bookId}/study/chapters/${c.number}`} className="card chapter-card">
                 <div className="chapter-card-head">
-                  <span className="chapter-card-number">Genesis {c.number}</span>
+                  <span className="chapter-card-number">{book.name} {c.number}</span>
                   <span className="chapter-card-view">View details →</span>
                 </div>
                 <div className="chapter-card-title">{c.title}</div>

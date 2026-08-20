@@ -29,15 +29,19 @@ export default function DiagnosticClient({
   seedStr = DIAGNOSTIC_SEED,
   count = DIAGNOSTIC_COUNT,
   moduleId = "diagnostic",
-  backHref = "/genesis",
-  backLabel = "Back to Genesis",
+  backHref,
+  backLabel,
+  /** Only meaningful for a single-book diagnostic — there's no one "chapters" page
+   * spanning several books, so the multi-book diagnostic omits this. */
+  chaptersHref,
 }: {
   sources: { data: BookData; questions: AuthoredQuestion[] }[];
   seedStr?: string;
   count?: number;
   moduleId?: string;
-  backHref?: string;
-  backLabel?: string;
+  backHref: string;
+  backLabel: string;
+  chaptersHref?: string;
 }) {
   const items: QuizItem[] = selectQuizMulti(sources, { seedStr, targetCount: count });
 
@@ -63,9 +67,11 @@ export default function DiagnosticClient({
                 </div>
               ))}
           </div>
-          <Link href="/study/chapters" className="btn" style={{ marginTop: "0.75rem" }}>
-            Review chapters
-          </Link>
+          {chaptersHref && (
+            <Link href={chaptersHref} className="btn" style={{ marginTop: "0.75rem" }}>
+              Review chapters
+            </Link>
+          )}
         </div>
       )}
     />

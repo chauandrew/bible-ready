@@ -3,7 +3,7 @@
 import type { AuthoredQuestion } from "@/content/schema";
 import type { BookData } from "@/lib/generate";
 import { selectQuiz, type QuizItem } from "@/lib/quiz";
-import { formatCitation, chapterByNumber } from "@/lib/content";
+import { formatCitation, chapterSummaryFor } from "@/lib/content";
 
 const PRINT_SEED = "print-v1";
 
@@ -11,7 +11,7 @@ function answerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join("; ");
-  return chapterByNumber.get(item.chapterNumber)?.summary ?? "";
+  return chapterSummaryFor(item.citation.book, item.chapterNumber) ?? "";
 }
 
 export default function PrintSheet({
