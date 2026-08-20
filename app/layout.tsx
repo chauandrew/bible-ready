@@ -20,6 +20,13 @@ try {
 } catch (e) {}
 `;
 
+// The available books today are just Genesis, but this list is meant to grow —
+// see DESIGN.md's "Multi-book UI wiring" gap.
+const navLinks = [
+  { href: "/genesis", label: "Genesis" },
+  { href: "/", label: "Books" },
+];
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
@@ -36,7 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               Bible Ready
             </Link>
             <div style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
-              <Link href="/genesis" className="btn">Genesis</Link>
+              {navLinks.map((l) => (
+                <Link key={l.href} href={l.href} className="btn">{l.label}</Link>
+              ))}
               <ThemeToggle />
             </div>
           </nav>

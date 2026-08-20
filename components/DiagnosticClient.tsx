@@ -3,7 +3,7 @@
 import Link from "next/link";
 import type { AuthoredQuestion } from "@/content/schema";
 import type { BookData } from "@/lib/generate";
-import { selectQuiz, type QuizItem } from "@/lib/quiz";
+import { selectQuizMulti, type QuizItem } from "@/lib/quiz";
 import QuizRunner from "./QuizRunner";
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -24,14 +24,27 @@ const CATEGORY_LABELS: Record<string, string> = {
 const DIAGNOSTIC_SEED = "genesis-diagnostic-v1";
 const DIAGNOSTIC_COUNT = 25;
 
-export default function DiagnosticClient({ data, questions }: { data: BookData; questions: AuthoredQuestion[] }) {
-  const items: QuizItem[] = selectQuiz(data, questions, { seedStr: DIAGNOSTIC_SEED, targetCount: DIAGNOSTIC_COUNT });
+export default function DiagnosticClient({
+  sources,
+  seedStr = DIAGNOSTIC_SEED,
+  count = DIAGNOSTIC_COUNT,
+  moduleId = "diagnostic",
+  backHref = "/genesis",
+}: {
+  sources: { data: BookData; questions: AuthoredQuestion[] }[];
+  seedStr?: string;
+  count?: number;
+  moduleId?: string;
+  backHref?: string;
+}) {
+  const items: QuizItem[] = selectQuizMulti(sources, { seedStr, targetCount: count });
 
   return (
     <QuizRunner
       items={items}
       mode="quiz"
-      moduleId="diagnostic"
+      moduleId={moduleId}
+      backHref={backHref}
       resultsExtra={(report) => (
         <div style={{ marginBottom: "1.5rem" }}>
           <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>Where to focus</p>

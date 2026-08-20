@@ -176,6 +176,17 @@ function MatchQuestion({
           })}
         </ul>
       ) : (
+        <>
+          {pairs.length > 0 && (
+            <ul
+              aria-label="Matches made so far"
+              style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", listStyle: "none", padding: 0, marginBottom: "0.75rem", color: "var(--text-secondary)" }}
+            >
+              {pairs.map((p) => (
+                <li key={p.left}>{p.left} → {p.right}</li>
+              ))}
+            </ul>
+          )}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>
           <div>
             {item.lefts.map((l) => (
@@ -200,6 +211,7 @@ function MatchQuestion({
             ))}
           </div>
         </div>
+        </>
       )}
       {allPaired && !checked && (
         <button type="button" className="btn btn-primary" style={{ marginTop: "0.5rem" }} onClick={submit}>
@@ -304,12 +316,17 @@ export default function QuizRunner({
   mode,
   moduleId,
   resultsExtra,
+  backHref = "/genesis",
+  backLabel = "Back to Genesis",
 }: {
   items: QuizItem[];
   mode: Mode;
   moduleId: string;
   /** Rendered above the review list on the results screen — used by the diagnostic's gap report. */
   resultsExtra?: (report: ReturnType<typeof gapReport>) => ReactNode;
+  /** Where the "back to..." buttons go — defaults to the Genesis home. */
+  backHref?: string;
+  backLabel?: string;
 }) {
   const router = useRouter();
   const [index, setIndex] = useState(0);
@@ -319,7 +336,9 @@ export default function QuizRunner({
   const item = items[index];
 
   function handleAnswer(a: Answer) {
-    const next = [...answers, a];
+    // Keyed by itemId rather than appended, so answering the same question again
+    // after using Back replaces the old answer instead of duplicating it.
+    const next = [...answers.filter((x) => x.itemId !== a.itemId), a];
     setAnswers(next);
     if (index + 1 < items.length) {
       setIndex(index + 1);
@@ -383,7 +402,7 @@ export default function QuizRunner({
           </>
         )}
 
-        <button type="button" className="btn btn-primary" onClick={() => router.push("/genesis")}>Back to Genesis</button>
+        <button type="button" className="btn btn-primary" onClick={() => router.push(backHref)}>{backLabel}</button>
       </main>
     );
   }
@@ -397,8 +416,8 @@ export default function QuizRunner({
         <p style={{ color: "var(--text-secondary)" }}>
           There are no questions available here right now.
         </p>
-        <button type="button" className="btn btn-primary" style={{ marginTop: "1rem" }} onClick={() => router.push("/genesis")}>
-          Back to Genesis
+        <button type="button" className="btn btn-primary" style={{ marginTop: "1rem" }} onClick={() => router.push(backHref)}>
+          {backLabel}
         </button>
       </main>
     );
@@ -407,8 +426,13 @@ export default function QuizRunner({
 
   return (
     <main className="container">
-      <div className="eyebrow" style={{ marginTop: "1rem" }}>
-        {index + 1} / {items.length} · {categoryOf(item)}
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem" }}>
+        <button type="button" className="btn" disabled={index === 0} onClick={() => setIndex(index - 1)}>
+          ← Back
+        </button>
+        <div className="eyebrow">
+          {index + 1} / {items.length} · {categoryOf(item)}
+        </div>
       </div>
       <div
         className="progress-track"
