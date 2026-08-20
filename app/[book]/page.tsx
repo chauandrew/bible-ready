@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bookMeta, wiredBookIds } from "@/lib/content";
-import QuickQuizCard from "@/components/QuickQuizCard";
 
 export function generateStaticParams() {
   return wiredBookIds.map((book) => ({ book }));
@@ -14,13 +13,13 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
 
   const studyTools = [
     { href: `/${bookId}/study/flashcards`, label: "Flashcards", desc: "Flip through key events, one card at a time." },
-    { href: `/${bookId}/study/people`, label: "People", desc: "Key figures and the family line." },
-    { href: `/${bookId}/study/chapters`, label: "Study chapters", desc: `Browse all ${book.chapterCount} chapters, grouped by narrative arc.` },
+    { href: `/${bookId}/study/people`, label: "Key People", desc: "Key figures and the family line." },
+    { href: `/${bookId}/study/chapters`, label: `${book.name} Overview`, desc: `Browse all ${book.chapterCount} chapters, grouped by narrative arc.` },
   ];
 
   const reviewTools = [
-    { href: `/${bookId}/diagnostic`, label: "Diagnostic exam", desc: "A fixed 25-question exam, then a breakdown of where to focus." },
-    { href: `/${bookId}/print/all`, label: "Print a worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
+    { href: `/${bookId}/quiz`, label: "Quiz", desc: "Pick how many questions and which sections, then get a score and where to focus." },
+    { href: `/${bookId}/print/all`, label: "Worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
   ];
 
   return (
@@ -52,7 +51,6 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
 
       <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Review tools</h2>
       <div className="grid-cards">
-        <QuickQuizCard bookId={bookId} bookName={book.name} />
         {reviewTools.map((m) => (
           <Link key={m.href} href={m.href} className="card">
             <div style={{ fontWeight: 600, color: "var(--text)" }}>{m.label}</div>

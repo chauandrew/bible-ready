@@ -1,7 +1,7 @@
 import Link from "next/link";
 
 const available = [
-  { href: "/genesis", name: "Genesis", desc: "Creation through Joseph — 50 chapters, quizzes, flashcards, and a diagnostic exam." },
+  { href: "/genesis", name: "Genesis", desc: "Creation through Joseph — 50 chapters, quizzes, and flashcards." },
   { href: "/exodus", name: "Exodus", desc: "Oppression in Egypt through the crossing of the Red Sea — 14 chapters." },
 ];
 
@@ -10,8 +10,7 @@ const comingSoon = [
 ];
 
 const combine = [
-  { href: "/quiz/bible", label: "Quiz", desc: "Pick any set of books, get a mixed quiz across all of them." },
-  { href: "/diagnostic/bible", label: "Diagnostic exam", desc: "The 25-question diagnostic, drawn from books you select." },
+  { href: "/quiz/bible", label: "Quiz", desc: "Pick a question count and sections, get a mixed quiz across the books you select." },
   { href: "/study/flashcards/bible", label: "Flashcards", desc: "One shuffled deck built from the books you select." },
 ];
 
@@ -36,7 +35,7 @@ export default function Home() {
 
       <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Study one book</h2>
       <p className="page-lede" style={{ marginBottom: "1rem" }}>
-        Chapters, people, quizzes, flashcards, and a diagnostic exam — all for one book.
+        Chapters, people, quizzes, and flashcards — all for one book.
       </p>
       <div className="grid-cards">
         {available.map((b) => (

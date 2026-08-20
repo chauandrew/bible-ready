@@ -25,7 +25,8 @@ export default function QuizRunner({
   items: QuizItem[];
   mode: Mode;
   moduleId: string;
-  /** Rendered above the review list on the results screen — used by the diagnostic's gap report. */
+  /** Rendered above the review list on the results screen — used for the category
+   * ("where to focus") breakdown. */
   resultsExtra?: (report: ReturnType<typeof gapReport>) => ReactNode;
   /** Where the "back to..." buttons go, and what they say — every screen this quiz
    * can be reached from renders a different book (or none), so there's no sane default. */

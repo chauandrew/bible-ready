@@ -2,7 +2,7 @@
 
 import type { Book } from "@/content/schema";
 
-/** Checkbox list for choosing which books a whole-Bible / multi-book quiz, diagnostic,
+/** Checkbox list for choosing which books a whole-Bible / multi-book quiz
  * or flashcard session should draw from. Reused across all three so "just Genesis" and
  * "everything" are the same picker, not separate features. */
 export default function BookPicker({

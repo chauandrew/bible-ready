@@ -3,7 +3,7 @@
 /**
  * localStorage-backed progress: session scores, per-module best score, the
  * missed-question bank (feeds "practice your misses"), and category stats
- * (feeds the diagnostic gap report and improves as ordinary quizzes are taken).
+ * (feeds the Quiz's "where to focus" report and improves as ordinary quizzes are taken).
  *
  * A corrupt or absent value must never white-screen the app — every read
  * falls back to an empty state.

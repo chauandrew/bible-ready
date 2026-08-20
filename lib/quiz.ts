@@ -22,7 +22,7 @@ import {
 /**
  * The quiz engine: mixes the generated pool with hand-authored thematic
  * questions into one seeded, replayable quiz, and scores the result
- * (including the diagnostic's per-category gap report).
+ * (including the Quiz's per-category gap report).
  */
 
 export interface RuntimeAuthoredMC {
@@ -54,7 +54,7 @@ function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC
   };
 }
 
-/** Category bucket used for the diagnostic gap report and progress stats. */
+/** Category bucket used for the Quiz's gap report and progress stats. */
 export function categoryOf(item: QuizItem): string {
   return item.kind === "authored" ? `theme:${item.category}` : `mechanic:${item.type}`;
 }
@@ -203,7 +203,7 @@ export function scoreQuiz(items: QuizItem[], answers: Answer[]): ScoreResult {
   return { correct, total, percent: total ? Math.round((correct / total) * 100) : 0, missedIds };
 }
 
-/** Per-category right/wrong breakdown — what the diagnostic's gap report renders. */
+/** Per-category right/wrong breakdown — what the Quiz's "where to focus" report renders. */
 export function gapReport(items: QuizItem[], answers: Answer[]): Record<string, { right: number; wrong: number; percent: number }> {
   const answerById = new Map(answers.map((a) => [a.itemId, a]));
   const stats: Record<string, { right: number; wrong: number }> = {};

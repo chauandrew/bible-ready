@@ -81,12 +81,12 @@ const booksContent: Record<string, BookContent> = {
 };
 
 /** Book metadata for every loaded book — used by the "which books do you want to
- * include" pickers in the whole-Bible / multi-book quiz, diagnostic, and flashcard modes. */
+ * include" pickers in the whole-Bible / multi-book quiz and flashcard modes. */
 export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.book);
 
 /**
  * Books with a full section of their own (home page, chapters, people, quiz,
- * diagnostic, flashcards, print) — see `app/[book]/*`. Psalms' content is fully
+ * flashcards, print) — see `app/[book]/*`. Psalms' content is fully
  * authored and already feeds the whole-Bible / multi-book modes above, but as a
  * "selection" book (a curated, non-contiguous set of psalms — see DESIGN.md) it
  * needs page treatment a "narrative" book doesn't, so it isn't wired up as its
@@ -178,10 +178,12 @@ export function chapterSummaryFor(book: string, number: number): string | undefi
 }
 
 // ---------------------------------------------------------------------------
-// Quiz module resolution, scoped to one book: "all" or a specific arc id.
+// Print-worksheet module resolution, scoped to one book: "all" or a specific
+// arc id (the Quiz picker uses dataForArcsInBook below instead, since it needs
+// an arbitrary subset of arcs rather than one-arc-or-all).
 // ---------------------------------------------------------------------------
 
-export function quizModuleIdsForBook(bookId: string): string[] {
+export function printModuleIdsForBook(bookId: string): string[] {
   return ["all", ...arcsForBook(bookId).map((a) => a.id)];
 }
 
@@ -203,6 +205,30 @@ export function dataForModuleInBook(
   // pre-filtered slice: an arc restricts what gets *asked*, but its distractors
   // still need the book-wide pools (a 2-chapter arc can't supply 3 wrong chapters).
   const chapterNumbers = chaptersForArcInBook(bookId, arc.id).map((c) => c.number);
+  return {
+    data: { book: content.book, arcs: content.arcs, chapters: content.chapters, people: content.people, events: content.events, quotes: content.quotes, scopeChapters: chapterNumbers },
+    questions: content.questions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
+  };
+}
+
+/** Scope a book's data/questions to a set of arcs (by id), unioning their chapters —
+ * the multi-select generalization of dataForModuleInBook's single-arc case, for the
+ * Quiz setup's "sections to cover" picker. Passing all (or none) of the book's arc
+ * ids is unscoped, same as the whole book. */
+export function dataForArcsInBook(bookId: string, arcIds: string[]): { data: BookData; questions: AuthoredQuestion[] } | null {
+  const content = booksContent[bookId];
+  if (!content) return null;
+  const allArcIds = content.arcs.map((a) => a.id);
+  const scoped = arcIds.length > 0 && arcIds.length < allArcIds.length;
+  if (!scoped) {
+    return {
+      data: { book: content.book, arcs: content.arcs, chapters: content.chapters, people: content.people, events: content.events, quotes: content.quotes },
+      questions: content.questions,
+    };
+  }
+  const chapterNumbers = content.arcs
+    .filter((a) => arcIds.includes(a.id))
+    .flatMap((a) => chaptersForArcInBook(bookId, a.id).map((c) => c.number));
   return {
     data: { book: content.book, arcs: content.arcs, chapters: content.chapters, people: content.people, events: content.events, quotes: content.quotes, scopeChapters: chapterNumbers },
     questions: content.questions.filter((q) => chapterNumbers.includes(q.citation.chapter)),
