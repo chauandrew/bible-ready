@@ -59,29 +59,12 @@
       "People sought to make a name for themselves apart from God, prompting him to scatter them",
       "People built the tower to honor God",
       "The tower collapsed on its own before it was finished",
-      "God helped them finish the tower"
+      "People built the tower to reach safety from any future flood, and God let it stand as a reminder"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 11
-    }
-  },
-  {
-    "id": "qz-5",
-    "book": "genesis",
-    "category": "arc",
-    "prompt": "What is the central turn in the narrative when God calls Abram?",
-    "options": [
-      "The story narrows from all humanity to one family through whom blessing will come",
-      "The story shifts focus entirely to Egypt",
-      "Abram founds a new religion for all nations at once",
-      "The narrative returns to the garden of Eden"
-    ],
-    "correctIndex": 0,
-    "citation": {
-      "book": "genesis",
-      "chapter": 12
     }
   },
   {
@@ -109,7 +92,7 @@
     "options": [
       "That God delights in human sacrifice",
       "That Abraham's faith and God's provision hold together even at the hardest test",
-      "That Isaac was unworthy of the promise",
+      "That God accepts a substitute only once a father has proven himself by some other means",
       "That God changed his mind about the covenant"
     ],
     "correctIndex": 1,
@@ -126,7 +109,7 @@
     "options": [
       "Deception repeatedly complicates the fulfillment of God's promises among the patriarchs",
       "It introduces deception into Genesis for the first time",
-      "It shows Isaac finally punishing Jacob",
+      "It shows the patriarchs outgrowing deception, which does not appear again after this episode",
       "It ends the sibling rivalry theme for good"
     ],
     "correctIndex": 0,
@@ -144,7 +127,7 @@
       "The end of Jacob's relationship with God",
       "A turning point where Jacob's identity and character begin to be transformed",
       "His decision to leave Canaan permanently",
-      "His formal adoption by Laban"
+      "The moment Jacob finally surrenders the birthright he once took from his brother Esau"
     ],
     "correctIndex": 1,
     "citation": {
@@ -161,7 +144,7 @@
       "It repeats the pattern without ever resolving it",
       "It introduces conflict that will eventually move toward reconciliation rather than tragedy",
       "It shows Joseph immediately forgiving his brothers",
-      "It removes Joseph from the family permanently"
+      "It settles the rivalry at once by removing the favoured brother from the household for good"
     ],
     "correctIndex": 1,
     "citation": {
@@ -193,7 +176,7 @@
     "prompt": "What does Joseph's response to his brothers in Egypt reveal about the arc of his story?",
     "options": [
       "Joseph seeks revenge for being sold into slavery",
-      "Joseph refuses to acknowledge his brothers",
+      "Joseph forgives them on condition that they never speak of what they did to him again",
       "Joseph interprets his suffering as part of a larger purpose and offers forgiveness",
       "Joseph exiles his brothers from Egypt"
     ],
@@ -211,7 +194,7 @@
     "options": [
       "With the family still fractured and unreconciled",
       "With a family preserved and reconciled, awaiting future fulfillment of God's promises",
-      "With humanity's final destruction",
+      "With the promises fully delivered and the family settled permanently in the land of Canaan",
       "With a return to the garden of Eden"
     ],
     "correctIndex": 1,
@@ -331,7 +314,7 @@
       "Isaac becomes Israel",
       "Abram and Sarai become Abraham and Sarah",
       "Jacob becomes Abraham",
-      "Lot becomes Abram"
+      "Abram becomes Abraham while Sarai keeps her own name"
     ],
     "correctIndex": 1,
     "citation": {
@@ -416,7 +399,7 @@
       "It has no bearing on later chapters",
       "It becomes the thread that the rest of the patriarchal narratives track and repeat",
       "It is fulfilled completely within the same episode",
-      "It only concerns Abram's wealth"
+      "It concerns Abram's own lifetime alone and is fully discharged well before he dies in chapter 25"
     ],
     "correctIndex": 1,
     "citation": {
@@ -431,7 +414,7 @@
     "prompt": "What ritual accompanies God's covenant-making with Abram, and what does it signify?",
     "options": [
       "A smoking fire pot and flaming torch pass between the pieces, signifying God alone takes on the obligation",
-      "Abram sacrifices Isaac as a sign",
+      "Abram and God pass between the pieces together, signifying that the two of them take on matching obligations",
       "A rainbow appears over the animals",
       "Abram is circumcised on the spot"
     ],
@@ -484,7 +467,7 @@
       "Only Isaac",
       "Every male in Abraham's household, including servants",
       "No one but Abraham himself",
-      "Only those born in Canaan"
+      "Only males descended from Abraham by blood, since the covenant follows the family line"
     ],
     "correctIndex": 1,
     "citation": {
@@ -499,7 +482,7 @@
     "prompt": "What happens at Bethel when Jacob returns there in obedience to God?",
     "options": [
       "God renames him Israel again and reaffirms the covenant blessing",
-      "God ends the covenant with Jacob",
+      "God transfers the covenant blessing from Jacob to his firstborn son Reuben",
       "Jacob builds a permanent temple",
       "Esau joins Jacob in worship there"
     ],
@@ -518,7 +501,7 @@
       "He humbly repents and reforms his ways",
       "He complains that his punishment is too harsh while showing no remorse for Abel",
       "He immediately confesses to his parents",
-      "He asks God to punish him further"
+      "He accepts the sentence without protest and leaves quietly to settle east of Eden"
     ],
     "correctIndex": 1,
     "citation": {
@@ -535,7 +518,7 @@
       "His wealth and political power",
       "His righteousness and walk with God amid widespread corruption",
       "His skill as a warrior",
-      "His large family alone"
+      "His descent from Seth's line, which the genealogy just before this has traced down to him"
     ],
     "correctIndex": 1,
     "citation": {
@@ -686,7 +669,7 @@
     "prompt": "What motivates Joseph's brothers to resent him early in his story?",
     "options": [
       "Joseph's favored status with their father and his dreams of ruling over them",
-      "Joseph's refusal to work",
+      "Joseph's public accusation that his older brothers were mishandling their father's flocks",
       "Joseph's marriage to a foreign woman",
       "Joseph's decision to leave home on his own"
     ],
@@ -721,7 +704,7 @@
     "options": [
       "He is still willing to abandon a brother as before",
       "He has changed from the man willing to sell Joseph into one willing to sacrifice himself for family",
-      "He acts only to protect his own reputation",
+      "He has learned to bargain shrewdly and expects the offer to buy both his own freedom and that of Benjamin",
       "He refuses to speak on Benjamin's behalf"
     ],
     "correctIndex": 1,
@@ -771,7 +754,7 @@
     "prompt": "What recurring motif from Eden reappears throughout Genesis whenever people are removed from a place of blessing?",
     "options": [
       "Exile from a place of intimacy with God",
-      "A worldwide famine",
+      "A famine that drives the family to look for food elsewhere",
       "A change in language",
       "A flood"
     ],
@@ -805,7 +788,7 @@
     "prompt": "What recurring pattern involving childless women appears repeatedly among the patriarchs' wives?",
     "options": [
       "Barrenness followed eventually by God's provision of a promised child",
-      "Wives are never mentioned as barren",
+      "Barrenness is resolved each time by a servant bearing the child instead",
       "Barrenness always ends the family line",
       "Only servants ever bear children in Genesis"
     ],
@@ -823,7 +806,7 @@
     "options": [
       "Deception always goes unnoticed and unpunished",
       "Deception brings real relational fallout even when short-term goals are achieved",
-      "Deception is always immediately reversed",
+      "Deception is quietly undone by God each time, leaving the family's relationships unharmed",
       "Deception is treated as praiseworthy throughout"
     ],
     "correctIndex": 1,
@@ -857,7 +840,7 @@
     "prompt": "What theme is introduced when God promises that Abram's family will bless all the families of the earth?",
     "options": [
       "The early focus on all humanity narrows toward one family with a mission for all nations",
-      "God abandons interest in the rest of humanity",
+      "The blessing is promised to Abram's household alone, with the other nations left outside it",
       "Only Abram's immediate household matters going forward",
       "The promise excludes any nations outside Canaan"
     ],
@@ -875,7 +858,7 @@
     "options": [
       "That humans must always provide for themselves",
       "That God supplies what is needed even in situations beyond human control",
-      "That sacrifices are no longer necessary",
+      "That God tests his people by withholding what they need until they have proven themselves",
       "That Isaac provided the ram himself"
     ],
     "correctIndex": 1,
@@ -942,7 +925,7 @@
     "prompt": "What does the sweep of the opening chapters accomplish before the narrative narrows to Abram's family?",
     "options": [
       "It establishes the universal scope of creation, sin, and judgment before focusing on one family's role in addressing it",
-      "It has no connection to the rest of the book",
+      "It supplies a creation account told for its own sake, which the book leaves behind once the patriarchal narratives begin",
       "It focuses only on the nation of Israel from the start",
       "It is unrelated to the promises given later"
     ],
@@ -950,23 +933,6 @@
     "citation": {
       "book": "genesis",
       "chapter": 1
-    }
-  },
-  {
-    "id": "qz-57",
-    "book": "genesis",
-    "category": "argument",
-    "prompt": "How does the call of Abram function as a hinge point in the book's overall movement?",
-    "options": [
-      "It ends the book's storyline",
-      "It shifts the book's focus from all humanity to the family through whom blessing will reach the nations",
-      "It has no effect on later chapters",
-      "It replaces the earlier creation account"
-    ],
-    "correctIndex": 1,
-    "citation": {
-      "book": "genesis",
-      "chapter": 12
     }
   },
   {
@@ -994,7 +960,7 @@
     "options": [
       "The focus narrows from the nations broadly to one family through whom the nations will be blessed",
       "The narrative returns to the flood story",
-      "The genealogies stop entirely at this point",
+      "The book drops genealogy as a device and turns to continuous narrative for the whole of the remainder",
       "The focus shifts permanently away from any covenant themes"
     ],
     "correctIndex": 0,
@@ -1011,7 +977,7 @@
     "options": [
       "It resolves every promise completely with nothing left open",
       "It leaves Jacob's family settled in Egypt, anticipating later fulfillment of the land promise",
-      "It shows the covenant promises being abandoned",
+      "It closes the covenant storyline, the family having reached a land of its own and needing nothing more",
       "It ends with the family scattered and lost"
     ],
     "correctIndex": 1,
@@ -1028,7 +994,7 @@
     "options": [
       "It introduces a separation from God's blessing that the rest of Genesis works to address",
       "It has no lasting effect on later chapters",
-      "It ends humanity's story completely",
+      "It creates a problem that the flood resolves, after which the book turns to other concerns",
       "It immediately resolves itself within the same chapter"
     ],
     "correctIndex": 0,
@@ -1046,7 +1012,7 @@
       "It confirms Abraham's faith while God himself supplies the way forward for the promise to continue",
       "It cancels the covenant permanently",
       "It transfers the promise to Ishmael",
-      "It shows the promise was never serious"
+      "It replaces the covenant of offspring with a new covenant built on sacrifice rather than on God's earlier promise"
     ],
     "correctIndex": 0,
     "citation": {
@@ -1078,7 +1044,7 @@
     "prompt": "What does the account of Dinah and its violent aftermath contribute to the larger story of Jacob's family?",
     "options": [
       "It shows the family's ongoing struggles with conflict even after Jacob's own reconciliation with Esau",
-      "It has no bearing on the rest of the Jacob narrative",
+      "It settles the family's standing among the surrounding peoples and secures peace with the city of Shechem",
       "It resolves all future family conflict",
       "It marks the family's complete separation from Canaan"
     ],
