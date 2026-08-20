@@ -1,0 +1,711 @@
+[
+  {
+    "id": "exo-e-c1-0",
+    "book": "exodus",
+    "chapter": 1,
+    "name": "Pharaoh enslaves the Israelites with harsh labor",
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "place": "Egypt",
+    "peopleIds": [
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "A new king who does not remember Joseph fears Israel's growing numbers and forces them into hard labor.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c1-1",
+    "book": "exodus",
+    "chapter": 1,
+    "name": "Pharaoh orders Hebrew midwives to kill baby boys",
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "pharaoh",
+      "shiphrah",
+      "puah"
+    ],
+    "order": 1,
+    "summary": "Pharaoh secretly instructs the Hebrew midwives Shiphrah and Puah to kill every son born to Israelite mothers.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c1-2",
+    "book": "exodus",
+    "chapter": 1,
+    "name": "Shiphrah and Puah defy Pharaoh's order",
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "shiphrah",
+      "puah"
+    ],
+    "order": 2,
+    "summary": "The midwives fear God and let the baby boys live, then tell Pharaoh the Hebrew women give birth too quickly for them to intervene.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c1-3",
+    "book": "exodus",
+    "chapter": 1,
+    "name": "Pharaoh commands Hebrew infant boys drowned in the Nile",
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "pharaoh"
+    ],
+    "order": 3,
+    "summary": "After the midwives refuse to obey, Pharaoh orders all his people to throw every newborn Hebrew boy into the Nile.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-0",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "Moses is born and hidden by his mother",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "moses",
+      "jochebed",
+      "amram"
+    ],
+    "order": 0,
+    "summary": "A Levite couple has a son and Jochebed hides him for three months to protect him from Pharaoh's decree.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-1",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "Moses is placed in a basket on the Nile",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "place": "the Nile",
+    "peopleIds": [
+      "moses",
+      "jochebed",
+      "miriam"
+    ],
+    "order": 1,
+    "summary": "Unable to hide him any longer, Jochebed sets Moses adrift in a papyrus basket among the reeds while Miriam watches, until Pharaoh's daughter comes down to the river and finds him.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-2",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "Pharaoh's daughter adopts Moses as her son",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "place": "Pharaoh's household",
+    "peopleIds": [
+      "moses",
+      "pharaohs-daughter",
+      "jochebed"
+    ],
+    "order": 2,
+    "summary": "Pharaoh's daughter has Jochebed nurse the baby, then takes him as her own son and raises him in the Egyptian royal household.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-3",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "Moses kills an Egyptian and flees to Midian",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "place": "Midian",
+    "peopleIds": [
+      "moses"
+    ],
+    "order": 3,
+    "summary": "As an adult, Moses kills an Egyptian who was beating a Hebrew and, when it becomes known, flees to Midian to escape Pharaoh.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-4",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "Moses marries Zipporah at a well in Midian",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "moses",
+      "zipporah",
+      "jethro"
+    ],
+    "order": 4,
+    "summary": "Moses helps the daughters of the priest of Midian at a well, and their father Jethro gives Moses his daughter Zipporah in marriage.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c2-5",
+    "book": "exodus",
+    "chapter": 2,
+    "name": "The king of Egypt dies and God remembers his covenant",
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "god"
+    ],
+    "order": 5,
+    "summary": "Years pass, the king of Egypt dies, and Israel groans under slavery and cries out; God hears them and remembers his covenant with Abraham, Isaac, and Jacob.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c3-0",
+    "book": "exodus",
+    "chapter": 3,
+    "name": "God appears to Moses in the burning bush",
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 0,
+    "summary": "While shepherding Jethro's flock at Horeb, Moses sees a bush on fire that is not consumed and turns aside to look.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c3-1",
+    "book": "exodus",
+    "chapter": 3,
+    "name": "God commissions Moses to deliver Israel",
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 1,
+    "summary": "God tells Moses that he has seen Israel's suffering and sends him to Pharaoh to bring the people out of Egypt.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c3-2",
+    "book": "exodus",
+    "chapter": 3,
+    "name": "God reveals his name to Moses",
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 2,
+    "summary": "When Moses asks what name to give Israel, God answers \"I AM WHO I AM\" and identifies himself as the God of Abraham, Isaac, and Jacob.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c4-0",
+    "book": "exodus",
+    "chapter": 4,
+    "name": "God gives Moses miraculous signs to perform",
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 0,
+    "summary": "God turns Moses' staff into a snake and makes his hand leprous and clean again as proof for Israel that God sent him.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c4-1",
+    "book": "exodus",
+    "chapter": 4,
+    "name": "Moses objects that he is slow of speech",
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 1,
+    "summary": "Moses protests that he is not a skilled speaker, and God grows angry but agrees to give him Aaron as a spokesman.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c4-2",
+    "book": "exodus",
+    "chapter": 4,
+    "name": "God appoints Aaron to speak for Moses",
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 2,
+    "summary": "God tells Moses that his brother Aaron is already on his way to meet him and will speak to the people on his behalf.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c4-3",
+    "book": "exodus",
+    "chapter": 4,
+    "name": "Moses and Aaron reunite at the mountain of God",
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 3,
+    "summary": "Moses leaves Midian with his family, and Aaron meets him at the mountain of God (Horeb), where Moses tells him all that the LORD has said.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c4-4",
+    "book": "exodus",
+    "chapter": 4,
+    "name": "Moses and Aaron gather Israel's elders in Egypt",
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 4,
+    "summary": "Back in Egypt, Aaron speaks to the elders of Israel and performs the signs, and the people believe and worship.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c5-0",
+    "book": "exodus",
+    "chapter": 5,
+    "name": "Moses and Aaron demand Pharaoh release Israel",
+    "citation": {
+      "book": "exodus",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Moses and Aaron tell Pharaoh that the LORD demands he let Israel go into the wilderness to worship, and Pharaoh refuses.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c5-1",
+    "book": "exodus",
+    "chapter": 5,
+    "name": "Pharaoh increases the Israelites' labor burden",
+    "citation": {
+      "book": "exodus",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "Pharaoh punishes the request by forcing the Israelites to gather their own straw while still producing the same quota of bricks.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c6-0",
+    "book": "exodus",
+    "chapter": 6,
+    "name": "God renews his covenant promise to Moses",
+    "citation": {
+      "book": "exodus",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 0,
+    "summary": "After Moses complains that conditions have worsened, God reaffirms his covenant name and his promise to bring Israel out of slavery into the land.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c6-1",
+    "book": "exodus",
+    "chapter": 6,
+    "name": "Moses and Aaron are commissioned again to confront Pharaoh",
+    "citation": {
+      "book": "exodus",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 1,
+    "summary": "Despite Moses' discouragement, God sends him and Aaron back to Pharaoh to demand Israel's release.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c7-0",
+    "book": "exodus",
+    "chapter": 7,
+    "name": "Aaron's staff swallows the magicians' staffs",
+    "citation": {
+      "book": "exodus",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Aaron's staff becomes a serpent before Pharaoh and swallows the staffs of Egypt's magicians, yet Pharaoh's heart stays hard.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c7-1",
+    "book": "exodus",
+    "chapter": 7,
+    "name": "The Nile turns to blood",
+    "citation": {
+      "book": "exodus",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "Aaron strikes the Nile with his staff and the river and all its water turn to blood, killing the fish.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c8-0",
+    "book": "exodus",
+    "chapter": 8,
+    "name": "Frogs overrun the land of Egypt",
+    "citation": {
+      "book": "exodus",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Frogs swarm out of the Nile and fill Egyptian houses until Pharaoh begs Moses to remove them and briefly agrees to let Israel go.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c8-1",
+    "book": "exodus",
+    "chapter": 8,
+    "name": "The dust becomes gnats throughout Egypt",
+    "citation": {
+      "book": "exodus",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 1,
+    "summary": "Aaron strikes the dust and it turns to gnats on people and animals across Egypt, a plague even Pharaoh's magicians cannot copy.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c8-2",
+    "book": "exodus",
+    "chapter": 8,
+    "name": "Swarms of flies invade Egypt but spare Goshen",
+    "citation": {
+      "book": "exodus",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 2,
+    "summary": "Dense swarms of flies fill Egyptian homes while the land of Goshen, where Israel lives, is untouched.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c9-0",
+    "book": "exodus",
+    "chapter": 9,
+    "name": "A plague kills the Egyptians' livestock",
+    "citation": {
+      "book": "exodus",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 0,
+    "summary": "A severe plague kills the horses, donkeys, camels, herds, and flocks of Egypt while none of Israel's animals die.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c9-1",
+    "book": "exodus",
+    "chapter": 9,
+    "name": "Boils break out on the Egyptians",
+    "citation": {
+      "book": "exodus",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "Moses throws soot into the air and painful boils break out on the Egyptians and their animals throughout the land.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c9-2",
+    "book": "exodus",
+    "chapter": 9,
+    "name": "Hail devastates the crops and livestock of Egypt",
+    "citation": {
+      "book": "exodus",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 2,
+    "summary": "A destructive hailstorm mixed with fire strikes Egypt, flattening crops and killing people and animals left in the open.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c10-0",
+    "book": "exodus",
+    "chapter": 10,
+    "name": "Locusts strip Egypt's remaining crops",
+    "citation": {
+      "book": "exodus",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "moses",
+      "aaron",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "A vast swarm of locusts covers the land and eats every plant the hail left standing.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c10-1",
+    "book": "exodus",
+    "chapter": 10,
+    "name": "Darkness covers the land of Egypt for three days",
+    "citation": {
+      "book": "exodus",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "moses",
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "A thick darkness settles over Egypt for three days while Israel's homes remain filled with light.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c11-0",
+    "book": "exodus",
+    "chapter": 11,
+    "name": "God warns Moses of the coming death of the firstborn",
+    "citation": {
+      "book": "exodus",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "moses",
+      "pharaoh"
+    ],
+    "order": 0,
+    "summary": "Before the final plague, God tells Moses that every firstborn in Egypt will die and Pharaoh will finally drive Israel out.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c12-0",
+    "book": "exodus",
+    "chapter": 12,
+    "name": "God institutes the Passover meal and instructions",
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 0,
+    "summary": "God gives Moses and Aaron detailed instructions for the Passover meal and the blood on the doorframes that will protect Israel's homes.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c12-1",
+    "book": "exodus",
+    "chapter": 12,
+    "name": "The tenth plague strikes every firstborn in Egypt",
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "pharaoh"
+    ],
+    "order": 1,
+    "summary": "At midnight the LORD strikes down every firstborn in Egypt, from Pharaoh's household to the prisoner's, and Pharaoh finally releases Israel.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c12-2",
+    "book": "exodus",
+    "chapter": 12,
+    "name": "Israel departs Egypt from Rameses",
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "place": "Rameses",
+    "peopleIds": [
+      "moses",
+      "aaron"
+    ],
+    "order": 2,
+    "summary": "The Israelites, roughly six hundred thousand men plus women and children, leave Rameses for Succoth after four hundred thirty years in Egypt.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c13-0",
+    "book": "exodus",
+    "chapter": 13,
+    "name": "God commands the consecration of the firstborn",
+    "citation": {
+      "book": "exodus",
+      "chapter": 13
+    },
+    "place": "Succoth",
+    "peopleIds": [
+      "moses",
+      "god"
+    ],
+    "order": 0,
+    "summary": "God instructs Moses that every firstborn male among Israel's people and animals belongs to the LORD as a reminder of the exodus.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c13-1",
+    "book": "exodus",
+    "chapter": 13,
+    "name": "A pillar of cloud and fire leads Israel",
+    "citation": {
+      "book": "exodus",
+      "chapter": 13
+    },
+    "place": "the wilderness",
+    "peopleIds": [
+      "moses"
+    ],
+    "order": 1,
+    "summary": "God leads Israel away from the shorter Philistine road and guides the people with a visible pillar of cloud by day and fire by night.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c14-0",
+    "book": "exodus",
+    "chapter": 14,
+    "name": "Pharaoh pursues Israel with his army",
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "pharaoh",
+      "moses"
+    ],
+    "order": 0,
+    "summary": "Pharaoh changes his mind and chases Israel with chariots, trapping the people between his army and the sea.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c14-1",
+    "book": "exodus",
+    "chapter": 14,
+    "name": "Israel crosses the Red Sea on dry ground",
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "place": "the Red Sea",
+    "peopleIds": [
+      "moses"
+    ],
+    "order": 1,
+    "summary": "Moses stretches out his hand, the LORD drives back the sea with a strong wind, and Israel walks across on dry ground.",
+    "notable": true
+  },
+  {
+    "id": "exo-e-c14-2",
+    "book": "exodus",
+    "chapter": 14,
+    "name": "The sea closes over Pharaoh's army",
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "pharaoh"
+    ],
+    "order": 2,
+    "summary": "As the Egyptian army follows into the seabed, the waters return and drown Pharaoh's entire chariot force.",
+    "notable": true
+  }
+]

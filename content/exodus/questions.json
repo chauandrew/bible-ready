@@ -1,0 +1,398 @@
+[
+  {
+    "id": "exo-q-theme-1",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "What reason does the LORD give again and again for what he is doing to Egypt?",
+    "options": [
+      "So that Egypt and Israel alike will know that he is the LORD",
+      "So that Israel can take Egypt's throne once Pharaoh gives in",
+      "So that Pharaoh's magicians will admit Moses is the better sorcerer",
+      "So that Egypt will become a permanent ally of Israel"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 7
+    },
+    "explanation": "The refrain runs from the first plague to the sea: you shall know that I am the LORD (7:5, 7:17, 8:22, 10:2, 14:4)."
+  },
+  {
+    "id": "exo-q-theme-2",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "Why does the LORD spare Goshen, where the Israelites live, from several of the plagues?",
+    "options": [
+      "To show he is making a distinction between his people and Egypt",
+      "Because Goshen is too far from the Nile for the plagues to reach",
+      "Because Pharaoh specifically requests it",
+      "Because the plagues only strike Egyptian officials"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 8
+    },
+    "explanation": "God draws a clear line between Israel and Egypt as the plagues progress."
+  },
+  {
+    "id": "exo-q-theme-3",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "What is the significance of the blood on the doorframes at the first Passover?",
+    "options": [
+      "It marks the houses the LORD will pass over, sparing them from the plague on the firstborn",
+      "It identifies which houses owe taxes to Pharaoh",
+      "It marks the houses of Israelites who have already slipped away into the wilderness overnight",
+      "It is a sign for the Egyptian army to avoid"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "explanation": "The blood protects Israel's households from the final plague."
+  },
+  {
+    "id": "exo-q-theme-4",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "What does God's revelation of his name at the burning bush emphasize about who he is?",
+    "options": [
+      "He is the God who simply is, and the same God who made promises to Abraham, Isaac, and Jacob",
+      "He is one of several gods Israel may choose to worship",
+      "He is a new god unrelated to the God of Abraham",
+      "He refuses to identify himself at all, hoping the vagueness will discourage Israel from actually confronting Pharaoh"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "explanation": "God gives the name alongside \"the God of your fathers\" and the promise \"I will be with you\" (3:12, 3:15). \"I AM WHO I AM\" is read more than one way, from God's self-existence to his promised presence."
+  },
+  {
+    "id": "exo-q-theme-5",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "Why does God lead Israel away from the shorter road through Philistine territory?",
+    "options": [
+      "So the people will not face war and lose heart and turn back",
+      "Because the Philistines had already fortified and destroyed that road during an earlier war with Egypt's army",
+      "Because Pharaoh's army was blocking that route",
+      "Because Moses did not know the way"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 13
+    },
+    "explanation": "God chooses the harder route to protect Israel from an early, discouraging conflict."
+  },
+  {
+    "id": "exo-q-arc-1",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "What is the overall shift in Israel's circumstances across this part of the story?",
+    "options": [
+      "From growing but oppressed slaves in Egypt to a free people delivered by God",
+      "From a free and independent nation living in Canaan to a conquered people enslaved by a foreign empire",
+      "From wandering nomads to settled landowners in Egypt",
+      "From a united people to a divided and scattered one"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "explanation": "The arc moves from slavery toward deliverance."
+  },
+  {
+    "id": "exo-q-arc-2",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "What event most directly ends the standoff between Moses and Pharaoh?",
+    "options": [
+      "The death of every firstborn in Egypt",
+      "Aaron's staff turning into a snake before Pharaoh's own court, astonishing even his magicians",
+      "The plague of frogs",
+      "Pharaoh's advisors resigning"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "explanation": "The tenth plague finally breaks Pharaoh's resistance."
+  },
+  {
+    "id": "exo-q-arc-3",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "How does the story connect Moses' rescue as a baby to his later role?",
+    "options": [
+      "The Nile meant to kill him becomes his rescue",
+      "Moses is unrelated to the baby rescued earlier in the story",
+      "Moses only learns of his rescue after becoming a shepherd",
+      "The rescue has no bearing on the rest of the story"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "explanation": "Moses' rescue from the Nile places him in a position to later lead Israel out."
+  },
+  {
+    "id": "exo-q-arc-4",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "In what order do the last events in Egypt happen?",
+    "options": [
+      "Israel keeps the Passover, the firstborn die, Pharaoh releases Israel, and the people leave Rameses",
+      "Pharaoh releases Israel, the people leave Rameses, and they keep the first Passover on the road",
+      "The firstborn die, Israel keeps the Passover, and Pharaoh's army escorts the people to the border",
+      "Israel leaves Rameses immediately, waits forty years in Goshen for further instructions, and then keeps the first Passover"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "explanation": "Passover night comes first; the deaths at midnight are what finally make Pharaoh send Israel out (12:29-37)."
+  },
+  {
+    "id": "exo-q-arc-5",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "What is the final obstacle Israel faces after leaving Egypt in this part of the story?",
+    "options": [
+      "Pharaoh's army trapping them against the sea",
+      "A famine sweeping through the wilderness after their food supplies from Egypt finally ran out",
+      "An attack by the Midianites",
+      "Running out of Passover food"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "explanation": "Pharaoh's pursuit forces the crossing of the Red Sea."
+  },
+  {
+    "id": "exo-q-covenant-1",
+    "book": "exodus",
+    "category": "covenant",
+    "prompt": "How does God's earlier covenant with Abraham, Isaac, and Jacob connect to the events of this story?",
+    "options": [
+      "God explicitly remembers that covenant as the reason he acts to rescue Israel",
+      "The covenant with the patriarchs has already been formally canceled after centuries of Israel's silence in Egypt",
+      "The covenant only applies to the land of Midian",
+      "God makes an entirely new and unrelated covenant with Pharaoh"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 2
+    },
+    "explanation": "God's rescue of Israel is rooted in his earlier covenant promises."
+  },
+  {
+    "id": "exo-q-covenant-2",
+    "book": "exodus",
+    "category": "covenant",
+    "prompt": "What does God promise Israel when he renews his covenant after Pharaoh increases their labor?",
+    "options": [
+      "To bring them out from slavery and take them as his own people",
+      "To make Pharaoh their permanent ruler",
+      "To send them back to Canaan without ever actually leaving Egyptian territory or authority behind",
+      "To give them Pharaoh's throne"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 6
+    },
+    "explanation": "God restates his covenant commitment to deliver and claim Israel as his people."
+  },
+  {
+    "id": "exo-q-covenant-3",
+    "book": "exodus",
+    "category": "covenant",
+    "prompt": "Why does God require every firstborn male, human or animal, to be set apart to him?",
+    "options": [
+      "As a lasting reminder that the LORD spared Israel's firstborn during the tenth plague",
+      "As payment for Israel's time in Egypt",
+      "Because firstborns caused the plagues",
+      "As a punishment for Israel's continued disobedience and complaining throughout the wilderness journey"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 13
+    },
+    "explanation": "The consecration of the firstborn commemorates the Passover deliverance."
+  },
+  {
+    "id": "exo-q-covenant-4",
+    "book": "exodus",
+    "category": "covenant",
+    "prompt": "What sign does God give Moses to confirm that his call at the burning bush is genuine?",
+    "options": [
+      "Moses will bring Israel to worship God at that same mountain",
+      "Moses will become Pharaoh's adopted heir once again after proving himself through these miraculous signs",
+      "Moses will never return to Egypt",
+      "Moses will lose his staff permanently"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 3
+    },
+    "explanation": "God promises Moses will worship at Horeb after leading Israel out, confirming the call."
+  },
+  {
+    "id": "exo-q-character-1",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "How does Moses change from his first objections at the burning bush to his words facing the sea?",
+    "options": [
+      "He moves from reluctance and excuses to confidently telling Israel the LORD will fight for them",
+      "He becomes less willing to speak for God over time",
+      "He hands leadership entirely to Aaron",
+      "He refuses to lead Israel any further the moment Pharaoh issues his first harsh refusal to let them go"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "explanation": "Moses grows from a reluctant, objecting figure into a confident leader."
+  },
+  {
+    "id": "exo-q-character-2",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "What best characterizes Pharaoh across his repeated encounters with Moses and Aaron?",
+    "options": [
+      "He relents under pressure but hardens his heart again once relief comes",
+      "He agrees to release Israel the very first time he is asked, before any plague ever strikes Egypt",
+      "He is persuaded by his magicians to worship the LORD",
+      "He never speaks directly to Moses or Aaron"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 10
+    },
+    "explanation": "Pharaoh's pattern is short-lived concession followed by renewed defiance."
+  },
+  {
+    "id": "exo-q-character-3",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "What role do Shiphrah and Puah play early in the story?",
+    "options": [
+      "They risk their lives by refusing to kill Hebrew infant boys as Pharaoh commands",
+      "They serve as Pharaoh's chief advisors",
+      "They raise Moses in Pharaoh's household after quietly arranging for his adoption by the princess",
+      "They lead the Israelites out of Egypt"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 1
+    },
+    "explanation": "The midwives' courage protects the generation Moses is born into."
+  },
+  {
+    "id": "exo-q-character-4",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "What role does Aaron take on once he joins Moses on the way back to Egypt?",
+    "options": [
+      "He speaks to Pharaoh and the people on Moses' behalf and performs signs",
+      "He replaces Moses as Israel's leader",
+      "He works secretly for Pharaoh",
+      "He refuses to go to Egypt with Moses, insisting that Moses confront Pharaoh entirely alone"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 4
+    },
+    "explanation": "Aaron becomes Moses' spokesman after Moses' objection."
+  },
+  {
+    "id": "exo-q-character-5",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "How does Moses respond when Pharaoh increases the Israelites' workload after their first request?",
+    "options": [
+      "He returns to God discouraged and questions why God sent him",
+      "He immediately leads Israel out of Egypt anyway, ignoring Pharaoh's refusal altogether",
+      "He confronts Pharaoh's army directly",
+      "He asks Aaron to take over as leader"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 5
+    },
+    "explanation": "Moses' discouragement shows his very human doubt in the midst of the call."
+  },
+  {
+    "id": "exo-q-argument-1",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "At the sea, what does the story say Israel's own part in the rescue is?",
+    "options": [
+      "To stand still and be silent while the LORD fights for them",
+      "To hold off Pharaoh's chariots personally until the sea has fully parted before them",
+      "To bargain with Pharaoh's officers for safe passage",
+      "To build boats and cross before the army arrives"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 14
+    },
+    "explanation": "Moses tells the people the LORD will fight for them and they have only to be silent (14:14)."
+  },
+  {
+    "id": "exo-q-argument-2",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "What reason does God give for the confrontation dragging on instead of ending with the earliest plagues?",
+    "options": [
+      "So that his power and name would be displayed through a fuller demonstration of judgment",
+      "Because Pharaoh's own magicians secretly controlled the outcome of each plague from behind the scenes",
+      "Because Moses asked God to prolong the conflict",
+      "Because Aaron failed to deliver the message correctly"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 9
+    },
+    "explanation": "God ties the escalation to making his power known (9:16). Exodus describes the hardening both ways: Pharaoh hardens his own heart (8:15, 8:32, 9:34) and the LORD hardens it (9:12, 10:1, 14:4)."
+  },
+  {
+    "id": "exo-q-argument-3",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "What does the Passover meal establish for Israel going forward, beyond that single night?",
+    "options": [
+      "A recurring memorial of how the LORD delivered them from slavery in Egypt",
+      "A tax Israel must continue paying to Pharaoh's treasury each year as tribute",
+      "A treaty between Israel and the Midianites",
+      "A punishment Israel must repeat for disobedience"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 12
+    },
+    "explanation": "The Passover becomes a lasting memorial of the exodus."
+  }
+]

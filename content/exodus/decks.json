@@ -1,0 +1,33 @@
+[
+  {
+    "id": "exo-deck-mosess-call",
+    "book": "exodus",
+    "name": "Moses' Call",
+    "cardEventIds": [
+      "exo-e-c3-0", "exo-e-c3-1", "exo-e-c3-2",
+      "exo-e-c4-0", "exo-e-c4-1", "exo-e-c4-2", "exo-e-c4-3", "exo-e-c4-4"
+    ]
+  },
+  {
+    "id": "exo-deck-ten-plagues",
+    "book": "exodus",
+    "name": "The Ten Plagues",
+    "cardEventIds": [
+      "exo-e-c7-1",
+      "exo-e-c8-0", "exo-e-c8-1", "exo-e-c8-2",
+      "exo-e-c9-0", "exo-e-c9-1", "exo-e-c9-2",
+      "exo-e-c10-0", "exo-e-c10-1",
+      "exo-e-c11-0"
+    ]
+  },
+  {
+    "id": "exo-deck-exodus-and-sea",
+    "book": "exodus",
+    "name": "The Exodus and the Sea",
+    "cardEventIds": [
+      "exo-e-c12-0", "exo-e-c12-1", "exo-e-c12-2",
+      "exo-e-c13-0", "exo-e-c13-1",
+      "exo-e-c14-0", "exo-e-c14-1", "exo-e-c14-2"
+    ]
+  }
+]

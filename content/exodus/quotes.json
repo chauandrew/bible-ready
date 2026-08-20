@@ -1,0 +1,83 @@
+[
+  {
+    "id": "exo-q-1-22",
+    "book": "exodus",
+    "chapter": 1,
+    "verse": 22,
+    "speakerId": "pharaoh",
+    "text": "Every son that is born to the Hebrews you shall cast into the Nile, but you shall let every daughter live.",
+    "citation": {"book": "exodus", "chapter": 1, "verses": "22"}
+  },
+  {
+    "id": "exo-q-3-5",
+    "book": "exodus",
+    "chapter": 3,
+    "verse": 5,
+    "speakerId": "god",
+    "text": "Do not come near; take your sandals off your feet, for the place on which you are standing is holy ground.",
+    "citation": {"book": "exodus", "chapter": 3, "verses": "5"}
+  },
+  {
+    "id": "exo-q-3-14",
+    "book": "exodus",
+    "chapter": 3,
+    "verse": 14,
+    "speakerId": "god",
+    "text": "I AM WHO I AM.",
+    "citation": {"book": "exodus", "chapter": 3, "verses": "14"}
+  },
+  {
+    "id": "exo-q-4-10",
+    "book": "exodus",
+    "chapter": 4,
+    "verse": 10,
+    "speakerId": "moses",
+    "text": "Oh, my Lord, I am not eloquent, either in the past or since you have spoken to your servant, but I am slow of speech and of tongue.",
+    "citation": {"book": "exodus", "chapter": 4, "verses": "10"}
+  },
+  {
+    "id": "exo-q-5-2",
+    "book": "exodus",
+    "chapter": 5,
+    "verse": 2,
+    "speakerId": "pharaoh",
+    "text": "Who is the LORD, that I should obey his voice and let Israel go? I do not know the LORD, and moreover, I will not let Israel go.",
+    "citation": {"book": "exodus", "chapter": 5, "verses": "2"}
+  },
+  {
+    "id": "exo-q-6-6",
+    "book": "exodus",
+    "chapter": 6,
+    "verse": 6,
+    "speakerId": "god",
+    "text": "I am the LORD, and I will bring you out from under the burdens of the Egyptians, and I will deliver you from slavery to them, and I will redeem you with an outstretched arm and with great acts of judgment.",
+    "citation": {"book": "exodus", "chapter": 6, "verses": "6"}
+  },
+  {
+    "id": "exo-q-9-16",
+    "book": "exodus",
+    "chapter": 9,
+    "verse": 16,
+    "speakerId": "god",
+    "text": "But for this purpose I have raised you up, to show you my power, so that my name may be proclaimed in all the earth.",
+    "citation": {"book": "exodus", "chapter": 9, "verses": "16"}
+  },
+  {
+    "id": "exo-q-12-13",
+    "book": "exodus",
+    "chapter": 12,
+    "verse": 13,
+    "speakerId": "god",
+    "text": "The blood shall be a sign for you, on the houses where you are. And when I see the blood, I will pass over you, and no plague will befall you to destroy you, when I strike the land of Egypt.",
+    "citation": {"book": "exodus", "chapter": 12, "verses": "13"}
+  },
+  {
+    "id": "exo-q-14-14",
+    "book": "exodus",
+    "chapter": 14,
+    "verse": 14,
+    "speakerId": "moses",
+    "text": "The LORD will fight for you, and you have only to be silent.",
+    "citation": {"book": "exodus", "chapter": 14, "verses": "14"}
+  }
+]
