@@ -96,19 +96,24 @@ export function generateChapterQuestions(data: BookData): GeneratedMC[] {
   return out;
 }
 
+/** Only events with `place` set generate a "where does this happen" question —
+ * most events aren't about a place, so this is opt-in per event, not every
+ * notable event. See the comment on EventSchema.place. */
 export function generateLocationQuestions(data: BookData): GeneratedMC[] {
   const { events, chapters, book } = data;
   const out: GeneratedMC[] = [];
-  for (const e of events.filter((e) => e.notable)) {
+  for (const e of events.filter((e) => e.notable && e.place)) {
+    const place = e.place!;
     const arcId = arcOf(chapters, e.chapter);
     const sameArc = arcId ? eventsInArc(events, chapters, arcId) : events;
-    const pool = Array.from(new Set(sameArc.map((x) => x.place))).filter((p) => p !== e.place);
+    const placesInArc = sameArc.map((x) => x.place).filter((p): p is string => !!p);
+    const pool = Array.from(new Set(placesInArc)).filter((p) => p !== place);
     out.push({
       kind: "generated",
       id: `gen:location:${e.id}`,
       type: "location",
       prompt: `Where does this happen: ${e.name}?`,
-      correctAnswer: e.place,
+      correctAnswer: place,
       distractorPool: pool,
       citation: { book: book.id, chapter: e.chapter },
     });
@@ -192,13 +197,16 @@ export function generateMatchQuestions(data: BookData): GeneratedMatch[] {
   const { arcs, chapters, events, book } = data;
   const out: GeneratedMatch[] = [];
   for (const arc of arcs) {
-    const arcEvents = eventsInArc(events, chapters, arc.id).filter((e) => e.notable);
+    // Only events with a place set are eligible — matching only makes sense
+    // where the location is actually the point (see EventSchema.place).
+    const arcEvents = eventsInArc(events, chapters, arc.id).filter((e) => e.notable && e.place);
     const seenPlaces = new Set<string>();
     const pairs: { left: string; right: string }[] = [];
     for (const e of arcEvents) {
-      if (seenPlaces.has(e.place)) continue; // rights must be distinct for a well-defined match
-      seenPlaces.add(e.place);
-      pairs.push({ left: e.name, right: e.place });
+      const place = e.place!;
+      if (seenPlaces.has(place)) continue; // rights must be distinct for a well-defined match
+      seenPlaces.add(place);
+      pairs.push({ left: e.name, right: place });
       if (pairs.length === 6) break;
     }
     if (pairs.length < 4) continue;

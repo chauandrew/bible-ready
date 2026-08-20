@@ -87,7 +87,12 @@ export const EventSchema = z.object({
    * no "the moment when...", no leaked chapter references. */
   name: z.string(),
   citation: CitationSchema,
-  place: z.string(),
+  /** Optional on purpose — most events aren't "about" a place. Only set this
+   * when the location is itself part of the narrative (arriving in Egypt,
+   * crossing the Red Sea, meeting at a named site), since that's what makes
+   * "where does this happen" a question worth asking. The generator skips
+   * "where"/matching questions entirely for events with no place set. */
+  place: z.string().optional(),
   peopleIds: z.array(z.string()).default([]),
   /** Position within the chapter, used for sequence questions. */
   order: z.number().int().nonnegative(),
