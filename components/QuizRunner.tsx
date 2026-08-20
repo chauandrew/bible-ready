@@ -42,8 +42,15 @@ function McQuestion({
           if (i === item.correctIndex) cls += " option-correct";
           else if (i === selected) cls += " option-incorrect";
         }
+        // Study-mode feedback used to be carried by colour alone, which says
+        // nothing to a screen reader or to a red-green colourblind reader.
+        const marker = mode === "study" && selected !== null
+          ? i === item.correctIndex ? "Correct answer: " : i === selected ? "Your answer, incorrect: " : ""
+          : "";
         return (
           <button key={opt} type="button" className={cls} disabled={selected !== null} onClick={() => choose(i)}>
+            {marker && <span className="sr-only">{marker}</span>}
+            {marker && <span aria-hidden="true">{i === item.correctIndex ? "✓ " : "✗ "}</span>}
             {opt}
           </button>
         );
@@ -92,6 +99,8 @@ function SequenceQuestion({
         <ol style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", marginBottom: "0.75rem", paddingLeft: "1.2rem" }}>
           {chosen.map((c, i) => (
             <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : undefined}>
+              {checked && <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>}
+              {checked && <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>}
               {c}
             </li>
           ))}
@@ -154,11 +163,16 @@ function MatchQuestion({
       <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
       {checked ? (
         <ul style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", listStyle: "none", padding: 0, marginBottom: "0.75rem" }}>
-          {pairs.map((p) => (
-            <li key={p.left} style={{ color: correctSet.has(`${p.left}::${p.right}`) ? "var(--success-text)" : "var(--danger-text)" }}>
-              {p.left} → {p.right}
-            </li>
-          ))}
+          {pairs.map((p) => {
+            const ok = correctSet.has(`${p.left}::${p.right}`);
+            return (
+              <li key={p.left} style={{ color: ok ? "var(--success-text)" : "var(--danger-text)" }}>
+                <span aria-hidden="true">{ok ? "✓ " : "✗ "}</span>
+                <span className="sr-only">{ok ? "correct: " : "incorrect: "}</span>
+                {p.left} → {p.right}
+              </li>
+            );
+          })}
         </ul>
       ) : (
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>
@@ -169,6 +183,7 @@ function MatchQuestion({
                 type="button"
                 className="option"
                 disabled={pairedLefts.has(l)}
+                aria-pressed={selectedLeft === l}
                 style={selectedLeft === l ? { borderColor: "var(--accent)" } : undefined}
                 onClick={() => setSelectedLeft(l)}
               >
@@ -286,6 +301,21 @@ export default function QuizRunner({
     );
   }
 
+  // An empty quiz used to render a blank page — reachable from /practice once
+  // the saved missed-question ids no longer match any current content.
+  if (items.length === 0) {
+    return (
+      <main className="container">
+        <h1 style={{ fontSize: "1.4rem", margin: "1rem 0" }}>Nothing to ask</h1>
+        <p style={{ color: "var(--text-secondary)" }}>
+          There are no questions available here right now.
+        </p>
+        <button type="button" className="btn btn-primary" style={{ marginTop: "1rem" }} onClick={() => router.push("/genesis")}>
+          Back to Genesis
+        </button>
+      </main>
+    );
+  }
   if (!item) return null;
 
   return (
@@ -293,7 +323,15 @@ export default function QuizRunner({
       <div className="eyebrow" style={{ marginTop: "1rem" }}>
         {index + 1} / {items.length} · {categoryOf(item)}
       </div>
-      <div className="progress-track" style={{ margin: "0.5rem 0 1.25rem" }}>
+      <div
+        className="progress-track"
+        style={{ margin: "0.5rem 0 1.25rem" }}
+        role="progressbar"
+        aria-valuenow={index}
+        aria-valuemin={0}
+        aria-valuemax={items.length}
+        aria-label={`Question ${index + 1} of ${items.length}`}
+      >
         <div className="progress-fill" style={{ width: `${(index / items.length) * 100}%` }} />
       </div>
       <div className="card">
