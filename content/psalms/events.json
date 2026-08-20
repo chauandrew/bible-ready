@@ -4,9 +4,15 @@
     "book": "psalms",
     "chapter": 1,
     "name": "The blessed life of delighting in God's law",
-    "citation": { "book": "psalms", "chapter": 1, "verses": "1-2" },
-    "place": "a wisdom psalm on the two ways",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 1,
+      "verses": "1-2"
+    },
+    "place": "the opening psalm, serving as a preface to the whole Book of Psalms",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalm opens by describing the person who avoids the counsel of the wicked and instead delights in God's law.",
     "notable": true
@@ -16,9 +22,14 @@
     "book": "psalms",
     "chapter": 1,
     "name": "The contrasting fates of the righteous and the wicked",
-    "citation": { "book": "psalms", "chapter": 1, "verses": "3-6" },
-    "place": "a wisdom psalm on the two ways",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 1,
+      "verses": "3-6"
+    },
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 1,
     "summary": "The righteous are compared to a fruitful tree by streams of water while the wicked are compared to chaff the wind blows away.",
     "notable": true
@@ -28,9 +39,15 @@
     "book": "psalms",
     "chapter": 8,
     "name": "Humanity crowned with glory and honor over creation",
-    "citation": { "book": "psalms", "chapter": 8, "verses": "3-8" },
-    "place": "a creation hymn of praise",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 8,
+      "verses": "3-8"
+    },
+    "place": "echoes Genesis 1's account of humanity's dominion over creation",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David marvels that God gave humanity dominion and honor over the rest of the created world.",
     "notable": true
@@ -40,9 +57,15 @@
     "book": "psalms",
     "chapter": 19,
     "name": "The heavens declaring God's glory and the perfection of his law",
-    "citation": { "book": "psalms", "chapter": 19, "verses": "1-11" },
-    "place": "a psalm on creation and God's law",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 19,
+      "verses": "1-11"
+    },
+    "place": "praised by C.S. Lewis as the greatest poem in the Psalter",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David moves from the silent testimony of the skies to praise for the perfect, trustworthy law of the Lord.",
     "notable": true
@@ -52,9 +75,15 @@
     "book": "psalms",
     "chapter": 22,
     "name": "David's cry of abandonment surrounded by enemies",
-    "citation": { "book": "psalms", "chapter": 22, "verses": "1-18" },
-    "place": "a lament psalm of the suffering righteous one",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 22,
+      "verses": "1-18"
+    },
+    "place": "later quoted by Jesus during the crucifixion",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David describes feeling forsaken by God while mockers and enemies close in around him.",
     "notable": true
@@ -64,9 +93,14 @@
     "book": "psalms",
     "chapter": 22,
     "name": "David's turn from despair to praise among the nations",
-    "citation": { "book": "psalms", "chapter": 22, "verses": "22-31" },
-    "place": "a lament psalm of the suffering righteous one",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 22,
+      "verses": "22-31"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 1,
     "summary": "The psalm shifts from anguish to confident praise, anticipating that all the families of the nations will worship God.",
     "notable": true
@@ -76,9 +110,15 @@
     "book": "psalms",
     "chapter": 23,
     "name": "The Lord as shepherd and provider",
-    "citation": { "book": "psalms", "chapter": 23, "verses": "1-3" },
-    "place": "a psalm of pastoral trust",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 23,
+      "verses": "1-3"
+    },
+    "place": "the most widely known and memorized psalm, often read at funerals",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David declares the Lord his shepherd who provides rest, water, and guidance along right paths.",
     "notable": true
@@ -88,9 +128,14 @@
     "book": "psalms",
     "chapter": 23,
     "name": "God's presence through the darkest valley",
-    "citation": { "book": "psalms", "chapter": 23, "verses": "4-6" },
-    "place": "a psalm of pastoral trust",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 23,
+      "verses": "4-6"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 1,
     "summary": "David affirms God's presence and comfort even through the valley of the shadow of death, and pictures a hospitable feast in his enemies' sight.",
     "notable": true
@@ -100,9 +145,14 @@
     "book": "psalms",
     "chapter": 24,
     "name": "The King of glory entering his gates",
-    "citation": { "book": "psalms", "chapter": 24, "verses": "7-10" },
-    "place": "a royal psalm for temple entry",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 24,
+      "verses": "7-10"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David calls for the gates to lift up so the King of glory can enter in triumphant procession.",
     "notable": true
@@ -112,9 +162,15 @@
     "book": "psalms",
     "chapter": 32,
     "name": "The relief of confessed and forgiven sin",
-    "citation": { "book": "psalms", "chapter": 32, "verses": "1-5" },
-    "place": "a wisdom psalm on forgiven sin",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 32,
+      "verses": "1-5"
+    },
+    "place": "a companion psalm to Psalm 51's confession of sin",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David contrasts the misery of hiding his sin with the relief that came once he confessed it to God.",
     "notable": true
@@ -124,9 +180,15 @@
     "book": "psalms",
     "chapter": 46,
     "name": "God as refuge amid earth's upheaval",
-    "citation": { "book": "psalms", "chapter": 46, "verses": "1-3" },
-    "place": "a psalm of refuge in Zion",
-    "peopleIds": ["sons-of-korah"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 46,
+      "verses": "1-3"
+    },
+    "place": "the inspiration for Martin Luther's hymn \"A Mighty Fortress Is Our God\"",
+    "peopleIds": [
+      "sons-of-korah"
+    ],
     "order": 0,
     "summary": "The sons of Korah declare God a secure refuge even if the earth gives way and the mountains fall into the sea.",
     "notable": true
@@ -136,9 +198,15 @@
     "book": "psalms",
     "chapter": 51,
     "name": "David's confession of his sin with Bathsheba",
-    "citation": { "book": "psalms", "chapter": 51, "verses": "1-6" },
+    "citation": {
+      "book": "psalms",
+      "chapter": 51,
+      "verses": "1-6"
+    },
     "place": "written after Nathan confronted David over Bathsheba",
-    "peopleIds": ["david"],
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David confesses his sin and pleads for God's mercy after Nathan the prophet confronted him.",
     "notable": true
@@ -148,9 +216,14 @@
     "book": "psalms",
     "chapter": 51,
     "name": "David's plea for a clean heart and restored joy",
-    "citation": { "book": "psalms", "chapter": 51, "verses": "10-13" },
-    "place": "written after Nathan confronted David over Bathsheba",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 51,
+      "verses": "10-13"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 1,
     "summary": "David asks God to create a clean heart in him, restore his joy, and lets him teach other sinners God's ways.",
     "notable": true
@@ -160,9 +233,14 @@
     "book": "psalms",
     "chapter": 90,
     "name": "God's eternity against humanity's fleeting years",
-    "citation": { "book": "psalms", "chapter": 90, "verses": "1-6" },
-    "place": "a meditation on human frailty and God's eternity",
-    "peopleIds": ["moses"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 90,
+      "verses": "1-6"
+    },
+    "peopleIds": [
+      "moses"
+    ],
     "order": 0,
     "summary": "Moses contrasts God's everlasting existence with the brief, trouble-filled span of a human life.",
     "notable": true
@@ -172,9 +250,15 @@
     "book": "psalms",
     "chapter": 90,
     "name": "Moses' prayer to number our days wisely",
-    "citation": { "book": "psalms", "chapter": 90, "verses": "12-17" },
-    "place": "a meditation on human frailty and God's eternity",
-    "peopleIds": ["moses"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 90,
+      "verses": "12-17"
+    },
+    "place": "the only psalm in the Psalter attributed to Moses",
+    "peopleIds": [
+      "moses"
+    ],
     "order": 1,
     "summary": "Moses prays that God would teach his people to number their days and establish the work of their hands.",
     "notable": true
@@ -184,9 +268,15 @@
     "book": "psalms",
     "chapter": 91,
     "name": "The safety of dwelling in God's shelter",
-    "citation": { "book": "psalms", "chapter": 91, "verses": "1-6" },
-    "place": "a psalm of divine protection",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 91,
+      "verses": "1-6"
+    },
+    "place": "quoted by Satan when tempting Jesus in the wilderness",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalmist describes the safety of the one who dwells in the shelter of the Most High, covered from danger.",
     "notable": true
@@ -196,9 +286,15 @@
     "book": "psalms",
     "chapter": 100,
     "name": "A call to enter God's gates with thanksgiving",
-    "citation": { "book": "psalms", "chapter": 100, "verses": "1-5" },
-    "place": "a psalm of thanksgiving for worship",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 100,
+      "verses": "1-5"
+    },
+    "place": "traditionally used as a call to worship in Christian liturgy",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalmist calls all the earth to worship the Lord with joyful songs and thanksgiving.",
     "notable": true
@@ -208,9 +304,15 @@
     "book": "psalms",
     "chapter": 103,
     "name": "David's roll call of God's benefits",
-    "citation": { "book": "psalms", "chapter": 103, "verses": "1-5" },
-    "place": "a psalm of praise for God's mercy",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 103,
+      "verses": "1-5"
+    },
+    "place": "known for its imagery of sin removed \"as far as the east is from the west\"",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David calls himself to remember God's forgiveness, healing, and steady love toward him.",
     "notable": true
@@ -220,9 +322,15 @@
     "book": "psalms",
     "chapter": 121,
     "name": "The Lord's unsleeping watch over his people",
-    "citation": { "book": "psalms", "chapter": 121, "verses": "1-8" },
-    "place": "a psalm of ascent for pilgrims",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 121,
+      "verses": "1-8"
+    },
+    "place": "part of the Psalms of Ascent, sung by pilgrims traveling to Jerusalem",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalmist answers his own question about where help comes from with the Lord, who watches over his people without slumbering.",
     "notable": true
@@ -232,9 +340,15 @@
     "book": "psalms",
     "chapter": 130,
     "name": "A cry for mercy from the depths",
-    "citation": { "book": "psalms", "chapter": 130, "verses": "1-6" },
-    "place": "a penitential psalm of ascent",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 130,
+      "verses": "1-6"
+    },
+    "place": "one of the Psalms of Ascent, traditionally sung by pilgrims approaching Jerusalem",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalmist cries out to God from deep distress over sin and waits for him the way a watchman waits for morning.",
     "notable": true
@@ -244,9 +358,14 @@
     "book": "psalms",
     "chapter": 139,
     "name": "God's intimate knowledge of David's every thought",
-    "citation": { "book": "psalms", "chapter": 139, "verses": "1-6" },
-    "place": "a meditation on God's omniscience",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 139,
+      "verses": "1-6"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David reflects on how thoroughly God knows his thoughts, words, and actions before he acts on them.",
     "notable": true
@@ -256,9 +375,14 @@
     "book": "psalms",
     "chapter": 139,
     "name": "David's invitation for God to search his heart",
-    "citation": { "book": "psalms", "chapter": 139, "verses": "23-24" },
-    "place": "a meditation on God's omniscience",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 139,
+      "verses": "23-24"
+    },
+    "peopleIds": [
+      "david"
+    ],
     "order": 1,
     "summary": "David closes by inviting God to search his heart and lead him away from sin toward the way everlasting.",
     "notable": true
@@ -268,9 +392,15 @@
     "book": "psalms",
     "chapter": 145,
     "name": "David's praise of God's greatness across generations",
-    "citation": { "book": "psalms", "chapter": 145, "verses": "1-9" },
-    "place": "an acrostic psalm of praise",
-    "peopleIds": ["david"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 145,
+      "verses": "1-9"
+    },
+    "place": "an acrostic psalm - each verse begins with a successive letter of the Hebrew alphabet",
+    "peopleIds": [
+      "david"
+    ],
     "order": 0,
     "summary": "David praises God's greatness and goodness, celebrating that the Lord is gracious and near to all who call on him.",
     "notable": true
@@ -280,9 +410,15 @@
     "book": "psalms",
     "chapter": 150,
     "name": "A call to praise God with every instrument",
-    "citation": { "book": "psalms", "chapter": 150, "verses": "1-5" },
-    "place": "a closing psalm of pure praise",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 150,
+      "verses": "1-5"
+    },
+    "place": "the closing doxology of the entire Book of Psalms",
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 0,
     "summary": "The psalmist lists instruments from trumpet to cymbals as fitting ways to praise God.",
     "notable": true
@@ -292,9 +428,14 @@
     "book": "psalms",
     "chapter": 150,
     "name": "Everything that breathes praising the Lord",
-    "citation": { "book": "psalms", "chapter": 150, "verses": "6" },
-    "place": "a closing psalm of pure praise",
-    "peopleIds": ["the-psalmist"],
+    "citation": {
+      "book": "psalms",
+      "chapter": 150,
+      "verses": "6"
+    },
+    "peopleIds": [
+      "the-psalmist"
+    ],
     "order": 1,
     "summary": "The psalm and the whole Psalter close with a call for everything that has breath to praise the Lord.",
     "notable": true
