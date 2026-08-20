@@ -1,0 +1,34 @@
+[
+  {
+    "id": "wisdom-creation-presence",
+    "book": "psalms",
+    "name": "Wisdom, creation, and God's presence",
+    "startChapter": 1,
+    "endChapter": 139,
+    "summary": "Psalms that reflect on how to live wisely, marvel at God's work in creation, and consider what it means to stand in his presence."
+  },
+  {
+    "id": "trust-refuge",
+    "book": "psalms",
+    "name": "Trust and refuge",
+    "startChapter": 23,
+    "endChapter": 121,
+    "summary": "Psalms that picture God as shepherd, refuge, and protector, and call the reader to rest in his care in the face of danger."
+  },
+  {
+    "id": "repentance-lament",
+    "book": "psalms",
+    "name": "Repentance and lament",
+    "startChapter": 22,
+    "endChapter": 130,
+    "summary": "Psalms of confession and crying out from distress, tracing the movement from guilt or anguish toward confidence in God's mercy."
+  },
+  {
+    "id": "praise-thanksgiving",
+    "book": "psalms",
+    "name": "Praise and thanksgiving",
+    "startChapter": 100,
+    "endChapter": 150,
+    "summary": "Psalms of thanksgiving and exuberant praise that call God's people to worship him for his goodness and greatness."
+  }
+]

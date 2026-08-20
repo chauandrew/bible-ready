@@ -1,0 +1,164 @@
+[
+  {
+    "id": "psalms-1",
+    "book": "psalms",
+    "number": 1,
+    "title": "The two ways",
+    "summary": "The psalm contrasts the blessed life of the person who delights in God's law with the fate of the wicked, comparing the righteous to a fruitful, well-watered tree and the wicked to blown chaff.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-1-e1", "psalms-1-e2"]
+  },
+  {
+    "id": "psalms-8",
+    "book": "psalms",
+    "number": 8,
+    "title": "Humanity's place in creation",
+    "summary": "David marvels that the God who set the heavens in place also crowns human beings with glory and honor, giving them dominion over the rest of what he made.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-8-e1"]
+  },
+  {
+    "id": "psalms-19",
+    "book": "psalms",
+    "number": 19,
+    "title": "Creation and God's law",
+    "summary": "David praises how the skies silently declare God's glory, then turns to praise God's law as perfect and trustworthy, closing with a prayer that his own words and heart please God.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-19-e1"]
+  },
+  {
+    "id": "psalms-22",
+    "book": "psalms",
+    "number": 22,
+    "title": "From forsaken to triumphant",
+    "summary": "David cries out in anguish at feeling abandoned by God while surrounded by mockers and enemies, then turns from despair to confident praise, anticipating that every nation will worship God.",
+    "arcId": "repentance-lament",
+    "eventIds": ["psalms-22-e1", "psalms-22-e2"]
+  },
+  {
+    "id": "psalms-23",
+    "book": "psalms",
+    "number": 23,
+    "title": "The Lord is my shepherd",
+    "summary": "David pictures the Lord as a shepherd who provides rest, guidance, and protection even through danger, and as a generous host whose goodness will follow him for the rest of his life.",
+    "arcId": "trust-refuge",
+    "eventIds": ["psalms-23-e1", "psalms-23-e2"]
+  },
+  {
+    "id": "psalms-24",
+    "book": "psalms",
+    "number": 24,
+    "title": "The King of glory",
+    "summary": "David declares that the whole earth belongs to the Lord, asks who may approach his holy presence with clean hands and a pure heart, and welcomes the King of glory entering in.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-24-e1"]
+  },
+  {
+    "id": "psalms-32",
+    "book": "psalms",
+    "number": 32,
+    "title": "Blessed forgiveness",
+    "summary": "David describes the misery of hiding his sin and the relief of confessing it openly, then urges others to trust God's guidance rather than stubbornly resisting his correction.",
+    "arcId": "repentance-lament",
+    "eventIds": ["psalms-32-e1"]
+  },
+  {
+    "id": "psalms-46",
+    "book": "psalms",
+    "number": 46,
+    "title": "God our refuge and strength",
+    "summary": "The sons of Korah declare that God is a secure refuge even if the earth gives way, picture nations in uproar being silenced by his voice, and call people to be still.",
+    "arcId": "trust-refuge",
+    "eventIds": ["psalms-46-e1"]
+  },
+  {
+    "id": "psalms-51",
+    "book": "psalms",
+    "number": 51,
+    "title": "David's confession after Bathsheba",
+    "summary": "David confesses his sin after his affair with Bathsheba, pleading for God to cleanse and restore him, and commits to teach other sinners God's ways.",
+    "arcId": "repentance-lament",
+    "eventIds": ["psalms-51-e1", "psalms-51-e2"]
+  },
+  {
+    "id": "psalms-90",
+    "book": "psalms",
+    "number": 90,
+    "title": "Teach us to number our days",
+    "summary": "Moses contrasts God's eternal existence with the brief, trouble-filled span of human life, asking God to teach his people to live wisely in light of how short their days are.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-90-e1", "psalms-90-e2"]
+  },
+  {
+    "id": "psalms-91",
+    "book": "psalms",
+    "number": 91,
+    "title": "Safe in God's shelter",
+    "summary": "The psalmist describes the safety of the one who dwells in God's shelter, listing dangers from disease to warfare that God's protection covers, and promises rescue to those who trust him.",
+    "arcId": "trust-refuge",
+    "eventIds": ["psalms-91-e1"]
+  },
+  {
+    "id": "psalms-100",
+    "book": "psalms",
+    "number": 100,
+    "title": "A call to joyful worship",
+    "summary": "The psalmist calls all the earth to enter God's presence with joyful singing and thanksgiving, grounding that praise in the truth that the Lord is good and his faithfulness endures forever.",
+    "arcId": "praise-thanksgiving",
+    "eventIds": ["psalms-100-e1"]
+  },
+  {
+    "id": "psalms-103",
+    "book": "psalms",
+    "number": 103,
+    "title": "Bless the Lord, O my soul",
+    "summary": "David calls himself to remember all of God's benefits, listing his forgiveness, healing, and steady love, and compares God's compassion for his people to a father's compassion for his children.",
+    "arcId": "praise-thanksgiving",
+    "eventIds": ["psalms-103-e1"]
+  },
+  {
+    "id": "psalms-121",
+    "book": "psalms",
+    "number": 121,
+    "title": "My help comes from the Lord",
+    "summary": "The psalmist looks toward the hills and asks where help will come from, then answers that the Lord who made heaven and earth watches over his people day and night without slumbering.",
+    "arcId": "trust-refuge",
+    "eventIds": ["psalms-121-e1"]
+  },
+  {
+    "id": "psalms-130",
+    "book": "psalms",
+    "number": 130,
+    "title": "Out of the depths",
+    "summary": "The psalmist cries to God from a place of deep distress over sin, waits for the Lord the way a watchman waits for morning, and calls Israel to hope in God's steadfast love.",
+    "arcId": "repentance-lament",
+    "eventIds": ["psalms-130-e1"]
+  },
+  {
+    "id": "psalms-139",
+    "book": "psalms",
+    "number": 139,
+    "title": "Fully known by God",
+    "summary": "David reflects on how thoroughly God knows his thoughts and actions, marvels that God formed him in the womb, and asks God to search his heart and lead him in the right way.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-139-e1", "psalms-139-e2"]
+  },
+  {
+    "id": "psalms-145",
+    "book": "psalms",
+    "number": 145,
+    "title": "The Lord's greatness and goodness",
+    "summary": "David praises God's greatness, mighty acts, and abundant goodness across generations, celebrating that the Lord is gracious and compassionate and stays near to everyone who calls on him in truth.",
+    "arcId": "praise-thanksgiving",
+    "eventIds": ["psalms-145-e1"]
+  },
+  {
+    "id": "psalms-150",
+    "book": "psalms",
+    "number": 150,
+    "title": "Let everything praise the Lord",
+    "summary": "The final psalm calls for God to be praised in his sanctuary and in the heavens, listing instruments from trumpet to cymbals, and closes the Psalter with everything that breathes praising the Lord.",
+    "arcId": "praise-thanksgiving",
+    "eventIds": ["psalms-150-e1", "psalms-150-e2"]
+  }
+]

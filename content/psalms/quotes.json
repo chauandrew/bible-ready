@@ -1,0 +1,128 @@
+[
+  {
+    "id": "psalms-1-q1",
+    "book": "psalms",
+    "chapter": 1,
+    "verse": 1,
+    "speakerId": "the-psalmist",
+    "text": "Blessed is the man who walks not in the counsel of the wicked, nor stands in the way of sinners, nor sits in the seat of scoffers;",
+    "citation": { "book": "psalms", "chapter": 1, "verses": "1" }
+  },
+  {
+    "id": "psalms-8-q1",
+    "book": "psalms",
+    "chapter": 8,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "O LORD, our Lord, how majestic is your name in all the earth! You have set your glory above the heavens.",
+    "citation": { "book": "psalms", "chapter": 8, "verses": "1" }
+  },
+  {
+    "id": "psalms-19-q1",
+    "book": "psalms",
+    "chapter": 19,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "The heavens declare the glory of God, and the sky above proclaims his handiwork.",
+    "citation": { "book": "psalms", "chapter": 19, "verses": "1" }
+  },
+  {
+    "id": "psalms-22-q1",
+    "book": "psalms",
+    "chapter": 22,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "My God, my God, why have you forsaken me? Why are you so far from saving me, from the words of my groaning?",
+    "citation": { "book": "psalms", "chapter": 22, "verses": "1" }
+  },
+  {
+    "id": "psalms-23-q1",
+    "book": "psalms",
+    "chapter": 23,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "The LORD is my shepherd; I shall not want.",
+    "citation": { "book": "psalms", "chapter": 23, "verses": "1" }
+  },
+  {
+    "id": "psalms-32-q1",
+    "book": "psalms",
+    "chapter": 32,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "Blessed is the one whose transgression is forgiven, whose sin is covered.",
+    "citation": { "book": "psalms", "chapter": 32, "verses": "1" }
+  },
+  {
+    "id": "psalms-46-q1",
+    "book": "psalms",
+    "chapter": 46,
+    "verse": 1,
+    "speakerId": "sons-of-korah",
+    "text": "God is our refuge and strength, a very present help in trouble.",
+    "citation": { "book": "psalms", "chapter": 46, "verses": "1" }
+  },
+  {
+    "id": "psalms-51-q10",
+    "book": "psalms",
+    "chapter": 51,
+    "verse": 10,
+    "speakerId": "david",
+    "text": "Create in me a clean heart, O God, and renew a right spirit within me.",
+    "citation": { "book": "psalms", "chapter": 51, "verses": "10" }
+  },
+  {
+    "id": "psalms-90-q12",
+    "book": "psalms",
+    "chapter": 90,
+    "verse": 12,
+    "speakerId": "moses",
+    "text": "So teach us to number our days that we may get a heart of wisdom.",
+    "citation": { "book": "psalms", "chapter": 90, "verses": "12" }
+  },
+  {
+    "id": "psalms-100-q1",
+    "book": "psalms",
+    "chapter": 100,
+    "verse": 1,
+    "speakerId": "the-psalmist",
+    "text": "Make a joyful noise to the LORD, all the earth!",
+    "citation": { "book": "psalms", "chapter": 100, "verses": "1" }
+  },
+  {
+    "id": "psalms-121-q1",
+    "book": "psalms",
+    "chapter": 121,
+    "verse": 1,
+    "speakerId": "the-psalmist",
+    "text": "I lift up my eyes to the hills. From where does my help come?",
+    "citation": { "book": "psalms", "chapter": 121, "verses": "1" }
+  },
+  {
+    "id": "psalms-130-q1",
+    "book": "psalms",
+    "chapter": 130,
+    "verse": 1,
+    "speakerId": "the-psalmist",
+    "text": "Out of the depths I cry to you, O LORD!",
+    "citation": { "book": "psalms", "chapter": 130, "verses": "1" }
+  },
+  {
+    "id": "psalms-139-q1",
+    "book": "psalms",
+    "chapter": 139,
+    "verse": 1,
+    "speakerId": "david",
+    "text": "O LORD, you have searched me and known me!",
+    "citation": { "book": "psalms", "chapter": 139, "verses": "1" }
+  },
+  {
+    "id": "psalms-150-q6",
+    "book": "psalms",
+    "chapter": 150,
+    "verse": 6,
+    "speakerId": "the-psalmist",
+    "text": "Let everything that has breath praise the LORD! Praise the LORD!",
+    "citation": { "book": "psalms", "chapter": 150, "verses": "6" }
+  }
+]

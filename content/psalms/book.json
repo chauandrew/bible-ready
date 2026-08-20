@@ -1,0 +1,12 @@
+{
+  "id": "psalms",
+  "name": "Psalms",
+  "chapterCount": 18,
+  "coverageDepth": "selection",
+  "arcOrder": [
+    "wisdom-creation-presence",
+    "trust-refuge",
+    "repentance-lament",
+    "praise-thanksgiving"
+  ]
+}
