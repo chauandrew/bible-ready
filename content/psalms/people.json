@@ -1,0 +1,30 @@
+[
+  {
+    "id": "david",
+    "name": "David",
+    "summary": "Israel's second king, a shepherd turned monarch remembered as Israel's chief psalmist; tradition credits him with more psalms in this collection than any other author, written from both suffering and worship.",
+    "firstAppearance": { "book": "psalms", "chapter": 8 },
+    "relations": []
+  },
+  {
+    "id": "sons-of-korah",
+    "name": "The Sons of Korah",
+    "summary": "A guild of Levite temple musicians descended from Korah, credited with a cluster of psalms used in Israel's corporate worship.",
+    "firstAppearance": { "book": "psalms", "chapter": 46 },
+    "relations": []
+  },
+  {
+    "id": "moses",
+    "name": "Moses",
+    "summary": "Israel's exodus-era leader and lawgiver, credited with the one psalm in this collection attributed to him, a meditation on human frailty and God's eternity.",
+    "firstAppearance": { "book": "psalms", "chapter": 90 },
+    "relations": []
+  },
+  {
+    "id": "the-psalmist",
+    "name": "The Psalmist",
+    "summary": "The unnamed voice behind several psalms that carry no author's name in their heading; used here to represent those anonymous compositions.",
+    "firstAppearance": { "book": "psalms", "chapter": 1 },
+    "relations": []
+  }
+]
