@@ -18,11 +18,6 @@ export function todayDateStr(d = new Date()): string {
 export interface QotdResult {
   correct: boolean;
   timeMs: number;
-  // percentile fields are undefined in Phase 1 (no backend yet); Phase 2 will populate them
-  totalPlayers?: number;
-  correctPlayers?: number;
-  accuracyPercent?: number;
-  speedPercentile?: number | null;
 }
 
 const STORAGE_KEY = "bible-ready:qotd:v1";
