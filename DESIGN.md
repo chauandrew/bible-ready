@@ -189,7 +189,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   of this kind of curation flag, at the chapter level. Either give `notable`
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
-- **Multi-book UI wiring**: Genesis, Exodus, and Psalms each have a full
+- **Multi-book UI wiring**: Genesis, Exodus, Psalms, and John each have a full
   section (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards,
   print), gated by `wiredBookIds` in `lib/content.ts`. Psalms'
   `coverageDepth: "selection"` needed page treatment a `"narrative"` book
@@ -202,6 +202,11 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   book's chapter list by index instead of `chapter.number +/- 1`, since a
   curated chapter list (Psalm 1, 8, 19...) isn't contiguous. A future
   `"sparse"` or `"argument"` book reuses the same `coverageDepth` branch.
+  Adding a book to `wiredBookIds` alone isn't enough — `lib/content.ts` also
+  needs a static import + `BookContentSchema.parse` + `booksContent` entry
+  for it (see the block for any existing book), and `app/page.tsx`'s
+  `available` list is hand-maintained, not derived from `wiredBookIds`, so a
+  new book needs a card added there too.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 - **Question of the Day (`/qotd`)** has one deterministic daily question

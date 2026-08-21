@@ -1,0 +1,262 @@
+[
+  {
+    "id": "jn-q-1-29",
+    "book": "john",
+    "chapter": 1,
+    "verse": 29,
+    "speakerId": "john-baptist",
+    "text": "Behold, the Lamb of God, who takes away the sin of the world!",
+    "citation": {
+      "book": "john",
+      "chapter": 1,
+      "verses": "29"
+    }
+  },
+  {
+    "id": "jn-q-3-16",
+    "book": "john",
+    "chapter": 3,
+    "verse": 16,
+    "speakerId": "jesus",
+    "text": "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
+    "citation": {
+      "book": "john",
+      "chapter": 3,
+      "verses": "16"
+    }
+  },
+  {
+    "id": "jn-q-4-24",
+    "book": "john",
+    "chapter": 4,
+    "verse": 24,
+    "speakerId": "jesus",
+    "text": "God is spirit, and those who worship him must worship in spirit and truth.",
+    "citation": {
+      "book": "john",
+      "chapter": 4,
+      "verses": "24"
+    }
+  },
+  {
+    "id": "jn-q-6-35",
+    "book": "john",
+    "chapter": 6,
+    "verse": 35,
+    "speakerId": "jesus",
+    "text": "I am the bread of life; whoever comes to me shall not hunger, and whoever believes in me shall never thirst.",
+    "citation": {
+      "book": "john",
+      "chapter": 6,
+      "verses": "35"
+    }
+  },
+  {
+    "id": "jn-q-6-68",
+    "book": "john",
+    "chapter": 6,
+    "verse": 68,
+    "speakerId": "peter",
+    "text": "Lord, to whom shall we go? You have the words of eternal life.",
+    "citation": {
+      "book": "john",
+      "chapter": 6,
+      "verses": "68"
+    }
+  },
+  {
+    "id": "jn-q-8-12",
+    "book": "john",
+    "chapter": 8,
+    "verse": 12,
+    "speakerId": "jesus",
+    "text": "I am the light of the world. Whoever follows me will not walk in darkness, but will have the light of life.",
+    "citation": {
+      "book": "john",
+      "chapter": 8,
+      "verses": "12"
+    }
+  },
+  {
+    "id": "jn-q-8-32",
+    "book": "john",
+    "chapter": 8,
+    "verse": 32,
+    "speakerId": "jesus",
+    "text": "and you will know the truth, and the truth will set you free.",
+    "citation": {
+      "book": "john",
+      "chapter": 8,
+      "verses": "32"
+    }
+  },
+  {
+    "id": "jn-q-10-9",
+    "book": "john",
+    "chapter": 10,
+    "verse": 9,
+    "speakerId": "jesus",
+    "text": "I am the door. If anyone enters by me, he will be saved and will go in and out and find pasture.",
+    "citation": {
+      "book": "john",
+      "chapter": 10,
+      "verses": "9"
+    }
+  },
+  {
+    "id": "jn-q-10-11",
+    "book": "john",
+    "chapter": 10,
+    "verse": 11,
+    "speakerId": "jesus",
+    "text": "I am the good shepherd. The good shepherd lays down his life for the sheep.",
+    "citation": {
+      "book": "john",
+      "chapter": 10,
+      "verses": "11"
+    }
+  },
+  {
+    "id": "jn-q-11-25",
+    "book": "john",
+    "chapter": 11,
+    "verse": 25,
+    "speakerId": "jesus",
+    "text": "I am the resurrection and the life. Whoever believes in me, though he die, yet shall he live,",
+    "citation": {
+      "book": "john",
+      "chapter": 11,
+      "verses": "25"
+    }
+  },
+  {
+    "id": "jn-q-11-50",
+    "book": "john",
+    "chapter": 11,
+    "verse": 50,
+    "speakerId": "caiaphas",
+    "text": "Nor do you understand that it is better for you that one man should die for the people, not that the whole nation should perish.",
+    "citation": {
+      "book": "john",
+      "chapter": 11,
+      "verses": "50"
+    }
+  },
+  {
+    "id": "jn-q-13-34",
+    "book": "john",
+    "chapter": 13,
+    "verse": 34,
+    "speakerId": "jesus",
+    "text": "A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.",
+    "citation": {
+      "book": "john",
+      "chapter": 13,
+      "verses": "34"
+    }
+  },
+  {
+    "id": "jn-q-14-6",
+    "book": "john",
+    "chapter": 14,
+    "verse": 6,
+    "speakerId": "jesus",
+    "text": "I am the way, and the truth, and the life. No one comes to the Father except through me.",
+    "citation": {
+      "book": "john",
+      "chapter": 14,
+      "verses": "6"
+    }
+  },
+  {
+    "id": "jn-q-14-27",
+    "book": "john",
+    "chapter": 14,
+    "verse": 27,
+    "speakerId": "jesus",
+    "text": "Peace I leave with you; my peace I give to you. Not as the world gives do I give to you. Let not your hearts be troubled, neither let them be afraid.",
+    "citation": {
+      "book": "john",
+      "chapter": 14,
+      "verses": "27"
+    }
+  },
+  {
+    "id": "jn-q-15-1",
+    "book": "john",
+    "chapter": 15,
+    "verse": 1,
+    "speakerId": "jesus",
+    "text": "I am the true vine, and my Father is the vinedresser.",
+    "citation": {
+      "book": "john",
+      "chapter": 15,
+      "verses": "1"
+    }
+  },
+  {
+    "id": "jn-q-18-11",
+    "book": "john",
+    "chapter": 18,
+    "verse": 11,
+    "speakerId": "jesus",
+    "text": "Put your sword into its sheath; shall I not drink the cup that the Father has given me?",
+    "citation": {
+      "book": "john",
+      "chapter": 18,
+      "verses": "11"
+    }
+  },
+  {
+    "id": "jn-q-18-38",
+    "book": "john",
+    "chapter": 18,
+    "verse": 38,
+    "speakerId": "pilate",
+    "text": "What is truth?",
+    "citation": {
+      "book": "john",
+      "chapter": 18,
+      "verses": "38"
+    }
+  },
+  {
+    "id": "jn-q-19-30",
+    "book": "john",
+    "chapter": 19,
+    "verse": 30,
+    "speakerId": "jesus",
+    "text": "It is finished.",
+    "citation": {
+      "book": "john",
+      "chapter": 19,
+      "verses": "30"
+    }
+  },
+  {
+    "id": "jn-q-20-28",
+    "book": "john",
+    "chapter": 20,
+    "verse": 28,
+    "speakerId": "thomas",
+    "text": "My Lord and my God!",
+    "citation": {
+      "book": "john",
+      "chapter": 20,
+      "verses": "28"
+    }
+  },
+  {
+    "id": "jn-q-21-17",
+    "book": "john",
+    "chapter": 21,
+    "verse": 17,
+    "speakerId": "peter",
+    "text": "Lord, you know everything; you know that I love you.",
+    "citation": {
+      "book": "john",
+      "chapter": 21,
+      "verses": "17"
+    }
+  }
+]

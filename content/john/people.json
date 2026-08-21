@@ -1,0 +1,229 @@
+[
+  {
+    "id": "jesus",
+    "name": "Jesus",
+    "summary": "The eternal Word of God who becomes flesh, performs miraculous signs, and is crucified and raised to reveal God's glory.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "john-baptist",
+    "name": "John the Baptist",
+    "summary": "A prophet sent to testify about the coming light, who baptizes and points his own followers toward Jesus.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "summary": "One of John the Baptist's disciples who follows Jesus first and brings his brother Simon to meet him.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "peter",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "peter",
+    "name": "Peter",
+    "summary": "A fisherman renamed by Jesus who becomes a leading disciple, denies knowing Jesus during the trial, and is later restored.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "andrew",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "philip",
+    "name": "Philip",
+    "summary": "A disciple from Bethsaida called directly by Jesus, who brings his friend Nathanael to meet him.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "nathanael",
+    "name": "Nathanael",
+    "summary": "A skeptical man won over the moment Jesus reveals he saw him under a fig tree before they met.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "nicodemus",
+    "name": "Nicodemus",
+    "summary": "A Pharisee and ruler of the Jews who visits Jesus by night to ask about being born again, and later helps bury him.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 3
+    },
+    "relations": []
+  },
+  {
+    "id": "samaritan-woman",
+    "name": "The Samaritan Woman",
+    "summary": "A woman at Jacob's well whose conversation with Jesus about living water leads her whole town to believe in him.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 4
+    },
+    "relations": []
+  },
+  {
+    "id": "martha",
+    "name": "Martha",
+    "summary": "Lazarus's sister who confesses Jesus as the Christ and later serves a meal in Bethany after his resurrection.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "lazarus",
+        "relation": "brother"
+      },
+      {
+        "personId": "mary-bethany",
+        "relation": "sister"
+      }
+    ]
+  },
+  {
+    "id": "mary-bethany",
+    "name": "Mary of Bethany",
+    "summary": "Lazarus's sister who weeps at her brother's tomb and later anoints Jesus' feet with costly perfume.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "lazarus",
+        "relation": "brother"
+      },
+      {
+        "personId": "martha",
+        "relation": "sister"
+      }
+    ]
+  },
+  {
+    "id": "lazarus",
+    "name": "Lazarus",
+    "summary": "A close friend of Jesus in Bethany whose death and raising after four days becomes his greatest sign.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 11
+    },
+    "relations": [
+      {
+        "personId": "martha",
+        "relation": "sister"
+      },
+      {
+        "personId": "mary-bethany",
+        "relation": "sister"
+      }
+    ]
+  },
+  {
+    "id": "thomas",
+    "name": "Thomas",
+    "summary": "A disciple nicknamed the Twin who doubts the resurrection until he sees and touches Jesus' wounds himself.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 11
+    },
+    "relations": []
+  },
+  {
+    "id": "judas",
+    "name": "Judas Iscariot",
+    "summary": "The disciple who keeps the money bag, objects to Mary's costly gift, and later betrays Jesus to the authorities.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 12
+    },
+    "relations": []
+  },
+  {
+    "id": "caiaphas",
+    "name": "Caiaphas",
+    "summary": "The high priest that year who advises it is better for one man to die for the people, then presides over Jesus' trial.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 11
+    },
+    "relations": []
+  },
+  {
+    "id": "pilate",
+    "name": "Pontius Pilate",
+    "summary": "The Roman governor who interrogates Jesus, finds no guilt in him, but ultimately hands him over to be crucified.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 18
+    },
+    "relations": []
+  },
+  {
+    "id": "barabbas",
+    "name": "Barabbas",
+    "summary": "A robber the crowd chooses to have released instead of Jesus when Pilate offers to free a prisoner.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 18
+    },
+    "relations": []
+  },
+  {
+    "id": "mary-magdalene",
+    "name": "Mary Magdalene",
+    "summary": "The first person to see the risen Jesus, who discovers the empty tomb and reports the news to the disciples.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 20
+    },
+    "relations": []
+  },
+  {
+    "id": "beloved-disciple",
+    "name": "The Disciple Whom Jesus Loved",
+    "summary": "An unnamed disciple who reclines next to Jesus at the last supper and receives his mother's care from the cross.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 13
+    },
+    "relations": []
+  },
+  {
+    "id": "joseph-arimathea",
+    "name": "Joseph of Arimathea",
+    "summary": "A secret disciple and member of the council who asks Pilate for Jesus' body and provides a new tomb for burial.",
+    "firstAppearance": {
+      "book": "john",
+      "chapter": 19
+    },
+    "relations": []
+  }
+]

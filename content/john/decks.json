@@ -1,0 +1,57 @@
+[
+  {
+    "id": "jn-deck-signs",
+    "book": "john",
+    "name": "The Seven Signs",
+    "cardEventIds": [
+      "jn-e-c2-0",
+      "jn-e-c4-2",
+      "jn-e-c5-0",
+      "jn-e-c6-0",
+      "jn-e-c6-1",
+      "jn-e-c9-0",
+      "jn-e-c11-2"
+    ]
+  },
+  {
+    "id": "jn-deck-iam",
+    "book": "john",
+    "name": "The I Am Statements",
+    "cardEventIds": [
+      "jn-e-c6-2",
+      "jn-e-c8-1",
+      "jn-e-c10-0",
+      "jn-e-c10-1",
+      "jn-e-c11-0",
+      "jn-e-c14-0",
+      "jn-e-c15-0"
+    ]
+  },
+  {
+    "id": "jn-deck-passion",
+    "book": "john",
+    "name": "Characters of the Passion",
+    "cardEventIds": [
+      "jn-e-c18-0",
+      "jn-e-c18-1",
+      "jn-e-c18-2",
+      "jn-e-c18-3",
+      "jn-e-c19-0",
+      "jn-e-c19-2",
+      "jn-e-c19-3"
+    ]
+  },
+  {
+    "id": "jn-deck-resurrection",
+    "book": "john",
+    "name": "The Resurrection",
+    "cardEventIds": [
+      "jn-e-c20-0",
+      "jn-e-c20-1",
+      "jn-e-c20-2",
+      "jn-e-c20-3",
+      "jn-e-c21-0",
+      "jn-e-c21-1"
+    ]
+  }
+]

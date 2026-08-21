@@ -4,6 +4,7 @@ const available = [
   { href: "/genesis", name: "Genesis", desc: "From creation to Joseph, 50 chapters with quizzes and flashcards." },
   { href: "/exodus", name: "Exodus", desc: "From slavery in Egypt to the crossing of the Red Sea, 14 chapters." },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme." },
+  { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards." },
 ];
 
 const comingSoon: { name: string; desc: string }[] = [];

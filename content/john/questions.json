@@ -1,0 +1,427 @@
+[
+  {
+    "id": "jn-q-arc-1",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What does the opening of this gospel establish about who Jesus is?",
+    "options": [
+      "He is a wise teacher raised up from among John the Baptist's own circle of disciples",
+      "He is the eternal Word of God who existed from the beginning and became flesh",
+      "He is an angel sent to announce the coming kingdom to the shepherds",
+      "He is a reincarnation of John the Baptist returned in a new body"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    }
+  },
+  {
+    "id": "jn-q-arc-2",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What do Jesus' conversations with Nicodemus and the Samaritan woman have in common?",
+    "options": [
+      "Both show Jesus offering spiritual transformation across social and religious boundaries",
+      "Both end with the listener publicly rejecting Jesus and reporting him to the authorities",
+      "Both take place inside the Jerusalem temple during a festival crowd",
+      "Both are private conversations that Jesus later denies ever having taken place"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 3
+    }
+  },
+  {
+    "id": "jn-q-arc-3",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What pattern do Jesus' signs and teaching provoke among the religious leaders in this stretch of the gospel?",
+    "options": [
+      "Immediate and unanimous belief among every Pharisee who witnesses a sign",
+      "Growing hostility and a determination to stop him",
+      "A formal invitation for him to teach permanently inside the Jerusalem temple",
+      "No reaction at all, since the leaders never hear about the signs"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 5
+    }
+  },
+  {
+    "id": "jn-q-arc-4",
+    "book": "john",
+    "category": "arc",
+    "prompt": "How does Jesus describe his relationship to his followers using imagery of light and shepherding?",
+    "options": [
+      "As a distant ruler who never personally interacts with any of the people he governs from his throne",
+      "As one who guides and cares for those who belong to him, even at the cost of his own life",
+      "As a hired hand who abandons the sheep the moment danger comes near",
+      "As a judge who condemns wrongdoers publicly without offering any mercy"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 8
+    }
+  },
+  {
+    "id": "jn-q-arc-5",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What effect does the raising of Lazarus have on the religious leaders' plans for Jesus?",
+    "options": [
+      "It convinces the council to abandon their opposition to Jesus altogether",
+      "It has no effect at all, since word of it never reaches Jerusalem",
+      "It hardens their resolve, and Caiaphas prophesies Jesus must die for the nation",
+      "It causes them to arrest Lazarus instead of pursuing Jesus"
+    ],
+    "correctIndex": 2,
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    }
+  },
+  {
+    "id": "jn-q-arc-6",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What is the main purpose of Jesus' extended teaching to his disciples at the last supper?",
+    "options": [
+      "To comfort and prepare them for his departure and the coming of the Holy Spirit",
+      "To announce a new set of dietary laws for the disciples to follow",
+      "To rebuke the disciples harshly for their repeated lack of faith",
+      "To explain the legal and political details of the coming Roman trial"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 14
+    }
+  },
+  {
+    "id": "jn-q-arc-7",
+    "book": "john",
+    "category": "arc",
+    "prompt": "How does John's account of Jesus' arrest and trial move from the garden to the cross?",
+    "options": [
+      "Jesus is arrested, questioned by Jewish and Roman authorities, and crucified while Peter denies him",
+      "Jesus escapes the arresting soldiers and hides in Bethany until the crowds disperse",
+      "Jesus is tried only by Pilate, since no Jewish authorities are involved at all",
+      "Jesus is stoned to death by the temple crowd before Pilate can intervene"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    }
+  },
+  {
+    "id": "jn-q-arc-8",
+    "book": "john",
+    "category": "arc",
+    "prompt": "What is the climax of the resurrection accounts in the final two chapters?",
+    "options": [
+      "Jesus never appears to anyone again once the empty tomb is discovered",
+      "The disciples conclude that Jesus' body was stolen and quietly stop following him",
+      "Jesus appears alive multiple times, overcomes Thomas's doubt, and restores Peter to service",
+      "Mary Magdalene is arrested by the temple guard for spreading a false report"
+    ],
+    "correctIndex": 2,
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    }
+  },
+  {
+    "id": "jn-q-character-1",
+    "book": "john",
+    "category": "character",
+    "prompt": "What role does John the Baptist play in this gospel's opening chapters?",
+    "options": [
+      "A rival prophet who actively competes with Jesus for his own following",
+      "A witness who points others to Jesus as the Lamb of God and the greater one to come",
+      "A Roman soldier personally assigned to guard Jesus during his ministry",
+      "A member of the Sanhedrin who formally condemns Jesus as a blasphemer"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    }
+  },
+  {
+    "id": "jn-q-character-2",
+    "book": "john",
+    "category": "character",
+    "prompt": "How does Nicodemus's relationship with Jesus change across the gospel?",
+    "options": [
+      "He starts as an open, public follower of Jesus and ends up denying him under pressure",
+      "He begins as a cautious night visitor and later helps bury Jesus' body",
+      "He never appears again in the story after his conversation in chapter 3",
+      "He becomes one of the twelve apostles chosen to travel with Jesus"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    }
+  },
+  {
+    "id": "jn-q-character-3",
+    "book": "john",
+    "category": "character",
+    "prompt": "What ultimately happens to Peter after he denies Jesus three times?",
+    "options": [
+      "He is expelled from the group of disciples and never mentioned again",
+      "Jesus never speaks to him again for the rest of the gospel",
+      "The risen Jesus restores him and commissions him to feed his sheep",
+      "He replaces Judas as treasurer of the group with no further consequence"
+    ],
+    "correctIndex": 2,
+    "citation": {
+      "book": "john",
+      "chapter": 21
+    }
+  },
+  {
+    "id": "jn-q-character-4",
+    "book": "john",
+    "category": "character",
+    "prompt": "What motivates Judas Iscariot's actions in the days leading up to Jesus' arrest?",
+    "options": [
+      "He objects to Mary's costly gift and later leads soldiers to betray Jesus",
+      "He tries to quietly protect Jesus from the plotting religious authorities",
+      "He is a Roman citizen with no real connection to the Jewish leadership",
+      "He publicly confesses Jesus as the Christ shortly before betraying him"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 12
+    }
+  },
+  {
+    "id": "jn-q-character-5",
+    "book": "john",
+    "category": "character",
+    "prompt": "What does Caiaphas argue when the council debates what to do about Jesus after Lazarus is raised?",
+    "options": [
+      "That Jesus should be crowned king immediately to calm the crowds",
+      "That it is better for one man to die for the people than for the whole nation to perish",
+      "That Jesus should be exiled from Judea rather than killed",
+      "That the council has no legal authority to act against Jesus at all"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    }
+  },
+  {
+    "id": "jn-q-character-6",
+    "book": "john",
+    "category": "character",
+    "prompt": "How does Pilate respond when he examines Jesus during the trial?",
+    "options": [
+      "He immediately condemns Jesus to death without ever questioning him",
+      "He finds no guilt in Jesus but still hands him over to be crucified",
+      "He refuses outright to interrogate Jesus in any way",
+      "He releases Jesus unharmed and punishes the accusing crowd instead"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    }
+  },
+  {
+    "id": "jn-q-character-7",
+    "book": "john",
+    "category": "character",
+    "prompt": "What happens when the crowd is offered a choice between Jesus and Barabbas?",
+    "options": [
+      "They ask Pilate to release both prisoners together as a gesture of peace",
+      "They demand that Barabbas, a robber, be released instead of Jesus",
+      "They demand that Jesus be released and Barabbas be crucified in his place",
+      "They refuse to choose at all and leave the decision entirely to Pilate"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    }
+  },
+  {
+    "id": "jn-q-character-8",
+    "book": "john",
+    "category": "character",
+    "prompt": "What role does Thomas play after the resurrection?",
+    "options": [
+      "He immediately believes the other disciples' report without any hesitation",
+      "He doubts the resurrection until he sees and touches Jesus' wounds, then confesses him as Lord and God",
+      "He is the very first person to discover the empty tomb that morning",
+      "He denies to the other disciples that he ever doubted Jesus"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    }
+  },
+  {
+    "id": "jn-q-character-9",
+    "book": "john",
+    "category": "character",
+    "prompt": "What is Mary Magdalene's role in the resurrection narrative?",
+    "options": [
+      "She is the first person the risen Jesus appears to, and she reports the news to the disciples",
+      "She helps Joseph of Arimathea prepare Jesus' body and seal the tomb",
+      "She is one of the twelve disciples chosen at the very start of the gospel",
+      "She is questioned and dismissed by the guards stationed at the tomb"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    }
+  },
+  {
+    "id": "jn-q-character-10",
+    "book": "john",
+    "category": "character",
+    "prompt": "What does Joseph of Arimathea do after Jesus' death?",
+    "options": [
+      "He publicly denies knowing Jesus in order to protect his seat on the council",
+      "He asks Pilate for Jesus' body and provides a new tomb for burial",
+      "He leads the very soldiers who arrest Jesus in the garden",
+      "He is crucified alongside Jesus on a third cross"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    }
+  },
+  {
+    "id": "jn-q-theme-1",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What common thread connects the seven miraculous signs Jesus performs in this gospel?",
+    "options": [
+      "Each one is performed in secret, deliberately hidden from the surrounding crowds",
+      "Each one reveals Jesus' identity and points people toward believing in him",
+      "Each one is immediately followed by an attempt to arrest and execute him",
+      "Each one takes place outside the region of Galilee and Judea entirely"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 2
+    }
+  },
+  {
+    "id": "jn-q-theme-2",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What do the seven 'I am' statements Jesus makes have in common?",
+    "options": [
+      "Each one uses ordinary imagery to describe what Jesus provides for those who trust him",
+      "Each one is spoken only to the twelve disciples behind closed doors",
+      "Each one is immediately and universally rejected by everyone who hears it",
+      "Each one describes a distant future event rather than who Jesus is now"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 6
+    }
+  },
+  {
+    "id": "jn-q-theme-3",
+    "book": "john",
+    "category": "theme",
+    "prompt": "How does this gospel use the image of light and darkness?",
+    "options": [
+      "Light represents Roman authority and darkness represents the nation of Israel",
+      "Light represents truth and life found in Jesus, while darkness represents rejecting him",
+      "Light and darkness are used only as literal descriptions of the time of day",
+      "Light represents the Jerusalem temple and darkness represents the local synagogue"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 3
+    }
+  },
+  {
+    "id": "jn-q-theme-4",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What does 'born again' mean in Jesus' conversation with Nicodemus?",
+    "options": [
+      "A literal second physical birth from one's own mother's womb",
+      "A spiritual rebirth by the Spirit that allows a person to see the kingdom of God",
+      "A yearly ceremonial washing performed by every worshiper at the temple",
+      "Formally becoming a registered member of the Pharisees"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 3
+    }
+  },
+  {
+    "id": "jn-q-theme-5",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What does the image of the vine and branches teach about the relationship between Jesus and his disciples?",
+    "options": [
+      "Disciples can bear lasting fruit only by remaining connected to Jesus",
+      "Branches that are cut off from the vine continue to bear fruit on their own",
+      "The vinedresser only tends and prunes the vine once every year",
+      "Fruit has no real connection to a disciple's closeness to Jesus"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 15
+    }
+  },
+  {
+    "id": "jn-q-theme-6",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What does Jesus promise his disciples about the Holy Spirit in his farewell teaching?",
+    "options": [
+      "That the Spirit will fully replace Jesus, so the disciples will no longer need him at all",
+      "That the Spirit will come as a helper to guide them into truth after Jesus departs",
+      "That the Spirit will only come to the disciples after they themselves have died",
+      "That the Spirit will appear visibly just once and then depart forever"
+    ],
+    "correctIndex": 1,
+    "citation": {
+      "book": "john",
+      "chapter": 16
+    }
+  },
+  {
+    "id": "jn-q-theme-7",
+    "book": "john",
+    "category": "theme",
+    "prompt": "What is the significance of Jesus' resurrection appearances at the end of the gospel?",
+    "options": [
+      "They prove Jesus is alive and confirm the disciples' mission to continue his work",
+      "They are private visions experienced only by Mary Magdalene alone",
+      "They take place exclusively in Jerusalem and never anywhere in Galilee",
+      "They are described in the text as dreams rather than physical appearances"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "john",
+      "chapter": 21
+    }
+  }
+]

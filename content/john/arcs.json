@@ -1,0 +1,66 @@
+[
+  {
+    "id": "jn-arc-word",
+    "book": "john",
+    "name": "The Word and the First Signs",
+    "startChapter": 1,
+    "endChapter": 2,
+    "summary": "John identifies Jesus as the eternal Word made flesh, John the Baptist points to him as the Lamb of God, the first disciples follow him, and he performs his first sign at a wedding in Cana."
+  },
+  {
+    "id": "jn-arc-encounters",
+    "book": "john",
+    "name": "Nicodemus and the Samaritan Woman",
+    "startChapter": 3,
+    "endChapter": 4,
+    "summary": "Jesus explains the new birth to a Pharisee who comes by night and offers living water to a Samaritan woman at a well, showing his message reaches across every social boundary."
+  },
+  {
+    "id": "jn-arc-opposition",
+    "book": "john",
+    "name": "Signs and Growing Opposition",
+    "startChapter": 5,
+    "endChapter": 7,
+    "summary": "Jesus heals on the Sabbath, feeds a crowd of thousands, walks on the sea, and teaches at a Jerusalem feast, while religious leaders grow more determined to stop him."
+  },
+  {
+    "id": "jn-arc-light-shepherd",
+    "book": "john",
+    "name": "Light of the World and the Good Shepherd",
+    "startChapter": 8,
+    "endChapter": 10,
+    "summary": "Jesus defends a woman caught in adultery, heals a man born blind, and describes himself as the light of the world and the good shepherd who lays down his life for his sheep."
+  },
+  {
+    "id": "jn-arc-lazarus",
+    "book": "john",
+    "name": "Lazarus and the Road to Jerusalem",
+    "startChapter": 11,
+    "endChapter": 12,
+    "summary": "Jesus raises his friend Lazarus from the dead, prompting the religious leaders to plot his death, and is anointed at Bethany before riding into Jerusalem to a crowd's acclaim."
+  },
+  {
+    "id": "jn-arc-upper-room",
+    "book": "john",
+    "name": "The Upper Room and Farewell Discourse",
+    "startChapter": 13,
+    "endChapter": 17,
+    "summary": "At the last supper Jesus washes his disciples' feet, comforts them with promises about himself and the Holy Spirit, and prays for their protection and unity before his arrest."
+  },
+  {
+    "id": "jn-arc-passion",
+    "book": "john",
+    "name": "Arrest, Trial, and Crucifixion",
+    "startChapter": 18,
+    "endChapter": 19,
+    "summary": "Jesus is betrayed and arrested, denied by Peter, tried before the Jewish and Roman authorities, and crucified outside Jerusalem before being laid in a borrowed tomb."
+  },
+  {
+    "id": "jn-arc-resurrection",
+    "book": "john",
+    "name": "The Resurrection",
+    "startChapter": 20,
+    "endChapter": 21,
+    "summary": "Jesus rises from the dead, appears to Mary Magdalene and his gathered disciples, overcomes Thomas's doubt, and restores Peter beside the Sea of Tiberias."
+  }
+]
