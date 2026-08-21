@@ -17,7 +17,7 @@ import { mulberry32, shuffle } from "./rng";
  */
 
 export interface BookData {
-  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string };
+  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string; chapterLabel?: string };
   arcs: Arc[];
   chapters: Chapter[];
   people: Person[];
@@ -47,6 +47,13 @@ function nearest<T>(items: T[], distance: (x: T) => number, n: number): T[] {
 
 function bookLabel(book: BookData["book"]): string {
   return book.citationName ?? book.name;
+}
+
+/** Singular noun for one of this book's chapters in generated prompt text —
+ * "chapter" by default, "section" for a thematic module like famous-12s. See
+ * BookSchema.chapterLabel in content/schema.ts. */
+function chapterWord(book: BookData["book"]): string {
+  return book.chapterLabel ?? "chapter";
 }
 
 /** Words too generic to count as a place or a speaker naming itself. */
@@ -161,7 +168,7 @@ export function generateChapterQuestions(data: BookData): GeneratedMC[] {
       kind: "generated",
       id: `gen:chapter:${e.id}`,
       type: "chapter",
-      prompt: `In which chapter does this happen: ${e.name}?`,
+      prompt: `In which ${chapterWord(book)} does this happen: ${e.name}?`,
       correctAnswer: `${bookLabel(book)} ${e.chapter}`,
       distractorPool: fallbackPool.map((c) => `${bookLabel(book)} ${c}`),
       citation: { book: book.id, chapter: e.chapter },
