@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { AuthoredQuestion } from "@/content/schema";
 import type { BookData } from "@/lib/generate";
 import { selectQuiz, type QuizItem } from "@/lib/quiz";
@@ -19,16 +20,25 @@ export default function PrintSheet({
   data,
   questions,
   count = 20,
+  backHref,
+  backLabel,
 }: {
   moduleLabel: string;
   data: BookData;
   questions: AuthoredQuestion[];
   count?: number;
+  backHref?: string;
+  backLabel?: string;
 }) {
   const items = selectQuiz(data, questions, { seedStr: PRINT_SEED, targetCount: count });
 
   return (
     <main className="container">
+      {backHref && backLabel && (
+        <p className="eyebrow no-print" style={{ marginTop: "1rem" }}>
+          <Link href={backHref}>{backLabel}</Link>
+        </p>
+      )}
       <button type="button" className="btn btn-primary no-print" style={{ margin: "1rem 0" }} onClick={() => window.print()}>
         Print
       </button>

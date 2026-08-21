@@ -14,7 +14,10 @@ export default async function FlashcardsIndex({ params }: { params: Promise<{ bo
 
   return (
     <main className="container-wide">
-      <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Flashcards</h1>
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>
+        <Link href={`/${bookId}`} style={{ color: "inherit" }}>{book.name}</Link>
+      </p>
+      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>Flashcards</h1>
       <div className="grid-cards" style={{ marginBottom: "1.5rem" }}>
         <Link href={`/${bookId}/study/flashcards/entire-book`} className="card">
           <div style={{ fontWeight: 600, color: "var(--text)" }}>Entire book</div>

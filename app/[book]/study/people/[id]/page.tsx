@@ -8,12 +8,16 @@ export function generateStaticParams() {
 
 export default async function PersonPage({ params }: { params: Promise<{ book: string; id: string }> }) {
   const { book: bookId, id } = await params;
-  if (!bookMeta(bookId) || !wiredBookIds.includes(bookId)) notFound();
+  const book = bookMeta(bookId);
+  if (!book || !wiredBookIds.includes(bookId)) notFound();
   const person = personInBook(bookId, id);
   if (!person) notFound();
 
   return (
     <main className="container">
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>
+        <Link href={`/${bookId}`}>{book.name}</Link> / <Link href={`/${bookId}/study/people`}>People</Link>
+      </p>
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem)", marginBottom: "0.25rem" }}>{person.name}</h1>
       <p className="citation" style={{ marginBottom: "0.75rem" }}>
         First appears {formatCitation(person.firstAppearance)}

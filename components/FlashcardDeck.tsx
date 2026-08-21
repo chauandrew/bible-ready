@@ -1,13 +1,20 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 export default function FlashcardDeck({
   title,
   cards,
+  backHref,
+  backLabel,
 }: {
   title: string;
   cards: { front: string; backShort: string; backLong: string }[];
+  /** Optional "back to X" breadcrumb above the deck — omitted for the
+   * whole-Bible multi-book mode, which has no single book to link back to. */
+  backHref?: string;
+  backLabel?: string;
 }) {
   const [index, setIndex] = useState(0);
   const [flipped, setFlipped] = useState(false);
@@ -46,7 +53,12 @@ export default function FlashcardDeck({
   if (!card) {
     return (
       <main className="container">
-        <h1 className="page-title" style={{ marginTop: "1rem" }}>{title}</h1>
+        {backHref && backLabel && (
+          <p className="eyebrow" style={{ marginTop: "1rem" }}>
+            <Link href={backHref}>{backLabel}</Link>
+          </p>
+        )}
+        <h1 className="page-title" style={{ marginTop: backHref ? 0 : "1rem" }}>{title}</h1>
         <p style={{ color: "var(--text-secondary)" }}>This deck has no cards yet.</p>
       </main>
     );
@@ -54,7 +66,12 @@ export default function FlashcardDeck({
 
   return (
     <main className="container" style={{ maxWidth: "560px" }}>
-      <div className="eyebrow" style={{ marginTop: "1rem" }}>{title} · {index + 1}/{cards.length}</div>
+      {backHref && backLabel && (
+        <p className="eyebrow" style={{ marginTop: "1rem" }}>
+          <Link href={backHref}>{backLabel}</Link>
+        </p>
+      )}
+      <div className="eyebrow" style={{ marginTop: backHref ? "0.5rem" : "1rem" }}>{title} · {index + 1}/{cards.length}</div>
       {/* aria-pressed + a live region: flipping swapped the text silently, so a
           screen reader announced nothing when the card turned over. */}
       <button

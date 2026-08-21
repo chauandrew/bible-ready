@@ -14,7 +14,10 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
 
   return (
     <main className="container-wide">
-      <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Chapters</h1>
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>
+        <Link href={`/${bookId}`} style={{ color: "inherit" }}>{book.name}</Link>
+      </p>
+      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>Chapters</h1>
       {arcs.map((arc) => {
         const chapters = chaptersForArcInBook(bookId, arc.id);
         return (

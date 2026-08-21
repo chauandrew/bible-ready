@@ -17,7 +17,7 @@ export default async function ArcPage({ params }: { params: Promise<{ book: stri
   return (
     <main className="container-wide">
       <p className="eyebrow" style={{ marginTop: "1rem" }}>
-        {book.name}{" "}
+        <Link href={`/${bookId}`}>{book.name}</Link>{" "}
         {book.coverageDepth === "selection"
           ? `${chapters.length} chapter${chapters.length === 1 ? "" : "s"}`
           : `${arc.startChapter}–${arc.endChapter}`}

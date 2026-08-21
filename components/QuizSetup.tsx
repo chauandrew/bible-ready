@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Arc } from "@/content/schema";
 import { dataForArcsInBook } from "@/lib/content";
@@ -56,7 +57,10 @@ export default function QuizSetup({
 
   return (
     <main className="container">
-      <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>
+        <Link href={backHref}>{bookName}</Link>
+      </p>
+      <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)" }}>
         {bookName} quiz
       </h1>
 

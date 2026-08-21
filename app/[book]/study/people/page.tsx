@@ -8,12 +8,16 @@ export function generateStaticParams() {
 
 export default async function PeopleIndex({ params }: { params: Promise<{ book: string }> }) {
   const { book: bookId } = await params;
-  if (!bookMeta(bookId) || !wiredBookIds.includes(bookId)) notFound();
+  const book = bookMeta(bookId);
+  if (!book || !wiredBookIds.includes(bookId)) notFound();
   const people = peopleForBook(bookId);
 
   return (
     <main className="container-wide">
-      <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>People</h1>
+      <p className="eyebrow" style={{ marginTop: "1rem" }}>
+        <Link href={`/${bookId}`} style={{ color: "inherit" }}>{book.name}</Link>
+      </p>
+      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>People</h1>
       <div className="grid-cards">
         {people.map((p) => (
           <Link key={p.id} href={`/${bookId}/study/people/${p.id}`} className="card">
