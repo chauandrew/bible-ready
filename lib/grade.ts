@@ -1,14 +1,37 @@
-import type { ChapterGrading } from "../content/schema";
+import type { Chapter } from "../content/schema";
 
 /**
  * Fuzzy grader for free-response "what happens in this chapter?" answers.
- * Dependency-light on purpose (see content/schema.ts's ChapterGrading doc):
- * normalize the answer to words, check each keyword group for a hit (exact
- * word match, or a short edit-distance for typo tolerance), and call it
- * correct once `minGroups` groups are covered. No embeddings, no NLP library —
- * this is "does the answer mention the right nouns/verbs", which a small
- * synonym list handles fine for a quiz this size.
+ * Dependency-light on purpose (see content/schema.ts's Chapter doc): the
+ * terms an answer is checked against come straight from the chapter's own
+ * `title` + `summary` (stopwords stripped), plus any authored
+ * `freeResponseAliases` for a well-known nickname the prose doesn't happen to
+ * use — no separately-maintained keyword list to fall out of sync with the
+ * text it's describing. Normalize the answer to words, check each term for a
+ * hit (exact word match, or a short edit-distance for typo tolerance), and
+ * call it correct once `minTerms` distinct terms are covered. No embeddings,
+ * no NLP library — this is "does the answer mention the right nouns/verbs",
+ * which a small stopword list handles fine for a quiz this size.
  */
+
+/** Common English function words — not meaningful on their own, so they don't
+ * count as grading terms even though they show up in every summary. */
+const STOPWORDS = new Set([
+  "a", "an", "the", "and", "or", "but", "nor", "so", "yet", "for", "of", "in", "on", "at", "to",
+  "from", "by", "with", "as", "is", "are", "was", "were", "be", "been", "being", "has", "have",
+  "had", "do", "does", "did", "will", "would", "shall", "should", "may", "might", "must", "can",
+  "could", "he", "she", "it", "they", "his", "her", "its", "their", "him", "them", "who", "whom",
+  "whose", "which", "that", "this", "these", "those", "not", "no", "into", "onto", "over", "under",
+  "after", "before", "when", "while", "than", "then", "also", "just", "own", "other", "some", "all",
+  "each", "every", "any", "one", "two", "three", "s", "t",
+]);
+
+/** How many distinct terms a free-text answer must cover to be marked
+ * correct — a fixed constant rather than something authored per chapter,
+ * since the terms themselves now come straight from the chapter's own prose
+ * (see deriveGradingTerms). A chapter with fewer available terms than this
+ * just requires all of them. */
+const MIN_TERMS = 3;
 
 function normalizeWords(s: string): string[] {
   return s
@@ -34,39 +57,53 @@ function editDistance(a: string, b: string): number {
   return dp[a.length][b.length];
 }
 
-/** A typo-tolerant match between one answer word and one keyword word — exact,
- * or within edit distance 1 for keywords long enough that a 1-letter slip
+/** A typo-tolerant match between one answer word and one term word — exact,
+ * or within edit distance 1 for terms long enough that a 1-letter slip
  * still means the same word (short words like "ark" or "sin" must match exactly,
  * or "sin" could match "six"). */
-function wordMatches(word: string, keyword: string): boolean {
-  if (word === keyword) return true;
-  if (keyword.length < 5) return false;
-  if (Math.abs(word.length - keyword.length) > 1) return false;
-  return editDistance(word, keyword) <= 1;
+function wordMatches(word: string, term: string): boolean {
+  if (word === term) return true;
+  if (term.length < 5) return false;
+  if (Math.abs(word.length - term.length) > 1) return false;
+  return editDistance(word, term) <= 1;
 }
 
-/** A keyword may be a phrase ("sold into slavery") — every word in the phrase
- * must appear somewhere in the answer (order-agnostic). */
-function keywordPresent(answerWords: string[], keyword: string): boolean {
-  const keywordWords = normalizeWords(keyword);
-  return keywordWords.every((kw) => answerWords.some((w) => wordMatches(w, kw)));
+/** A term may be a phrase ("palm sunday") — every word in the phrase must
+ * appear somewhere in the answer (order-agnostic). */
+function termPresent(answerWords: string[], term: string): boolean {
+  const termWords = normalizeWords(term);
+  return termWords.every((tw) => answerWords.some((w) => wordMatches(w, tw)));
+}
+
+export interface GradingTerms {
+  terms: string[];
+  minTerms: number;
+}
+
+/** Pull the significant (non-stopword) words out of a chapter's title and
+ * summary, plus any explicitly authored aliases, and dedupe. This is the
+ * single source of truth for free-response grading — nothing to keep in
+ * sync by hand, since the terms are the chapter's own prose. */
+export function deriveGradingTerms(chapter: Pick<Chapter, "title" | "summary" | "freeResponseAliases">): GradingTerms {
+  const words = [...normalizeWords(chapter.title), ...normalizeWords(chapter.summary)].filter(
+    (w) => w.length > 2 && !STOPWORDS.has(w)
+  );
+  const terms = Array.from(new Set([...words, ...chapter.freeResponseAliases]));
+  return { terms, minTerms: Math.min(MIN_TERMS, terms.length) };
 }
 
 export interface GradeResult {
   correct: boolean;
-  matchedGroups: number;
-  totalGroups: number;
+  matchedTerms: number;
+  totalTerms: number;
 }
 
-export function gradeFreeResponse(grading: ChapterGrading, rawAnswer: string): GradeResult {
-  const totalGroups = grading.keywordGroups.length;
+export function gradeFreeResponse(grading: GradingTerms, rawAnswer: string): GradeResult {
+  const totalTerms = grading.terms.length;
   const text = rawAnswer.trim();
-  if (!text) return { correct: false, matchedGroups: 0, totalGroups };
+  if (!text) return { correct: false, matchedTerms: 0, totalTerms };
 
   const answerWords = normalizeWords(text);
-  let matchedGroups = 0;
-  for (const group of grading.keywordGroups) {
-    if (group.some((keyword) => keywordPresent(answerWords, keyword))) matchedGroups++;
-  }
-  return { correct: matchedGroups >= grading.minGroups, matchedGroups, totalGroups };
+  const matchedTerms = grading.terms.filter((term) => termPresent(answerWords, term)).length;
+  return { correct: matchedTerms >= grading.minTerms, matchedTerms, totalTerms };
 }

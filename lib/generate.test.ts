@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generateAll, findAmbiguities, toRuntimeMC, type BookData, type GeneratedMC } from "./generate";
+import { generateAll, generateChapterQuestions, findAmbiguities, toRuntimeMC, type BookData, type GeneratedMC } from "./generate";
 import { hashSeed } from "./rng";
 
 // Five chapters in one arc, distinct titles/places/names throughout, so every
@@ -11,11 +11,11 @@ function fixture(): BookData {
     book: { id: "genesis", name: "Genesis" },
     arcs: [{ id: "creation", book: "genesis", name: "Creation", startChapter: 1, endChapter: 5, summary: "s" }],
     chapters: [
-      { id: "gen-1", book: "genesis", number: 1, title: "Creation of the world", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
-      { id: "gen-2", book: "genesis", number: 2, title: "The garden of Eden", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
-      { id: "gen-3", book: "genesis", number: 3, title: "The fall of man", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
-      { id: "gen-4", book: "genesis", number: 4, title: "Cain and Abel", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
-      { id: "gen-5", book: "genesis", number: 5, title: "The line of Adam", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false },
+      { id: "gen-1", book: "genesis", number: 1, title: "Creation of the world", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+      { id: "gen-2", book: "genesis", number: 2, title: "The garden of Eden", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+      { id: "gen-3", book: "genesis", number: 3, title: "The fall of man", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+      { id: "gen-4", book: "genesis", number: 4, title: "Cain and Abel", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+      { id: "gen-5", book: "genesis", number: 5, title: "The line of Adam", summary: "s", arcId: "creation", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
     ],
     people: [
       { id: "adam", name: "Adam", summary: "s", firstAppearance: { book: "genesis", chapter: 1 }, relations: [] },
@@ -40,7 +40,7 @@ function fixture(): BookData {
 test("generateAll produces at least one item per event/quote/chapter", () => {
   const data = fixture();
   const items = generateAll(data);
-  assert.ok(items.some((i) => i.type === "chapter"));
+  assert.ok(items.some((i) => i.type === "chapter-guess"));
   assert.ok(items.some((i) => i.type === "location"));
   assert.ok(items.some((i) => i.type === "speaker"));
   assert.ok(items.some((i) => i.type === "chapter-summary"));
@@ -89,8 +89,8 @@ test("a scoped module still gets four options, because distractors stay book-wid
   // A two-chapter arc: on its own it cannot supply three wrong chapters.
   data.arcs.push({ id: "later", book: "genesis", name: "Later", startChapter: 6, endChapter: 7, summary: "s" });
   data.chapters.push(
-    { id: "gen-6", book: "genesis", number: 6, title: "Noah builds the ark", summary: "s", arcId: "later", eventIds: [], quizWorthy: false },
-    { id: "gen-7", book: "genesis", number: 7, title: "The flood begins", summary: "s", arcId: "later", eventIds: [], quizWorthy: false }
+    { id: "gen-6", book: "genesis", number: 6, title: "Noah builds the ark", summary: "s", arcId: "later", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+    { id: "gen-7", book: "genesis", number: 7, title: "The flood begins", summary: "s", arcId: "later", eventIds: [], quizWorthy: false, freeResponseAliases: [] }
   );
   data.events.push(
     { id: "e6", book: "genesis", chapter: 6, name: "Noah builds the ark", citation: { book: "genesis", chapter: 6 }, peopleIds: [], order: 0, summary: "s", notable: true },
@@ -127,4 +127,16 @@ test("questions that answer themselves are skipped, not shipped", () => {
   const problems = findAmbiguities(data);
   assert.ok(problems.every((p) => p.severity === "warn"), "self-answering content should warn, not fail");
   assert.equal(problems.filter((p) => p.severity === "warn").length, 2);
+});
+
+test("generateChapterQuestions produces a free-response chapter-guess item per notable event, no distractors needed", () => {
+  const data = fixture();
+  const items = generateChapterQuestions(data);
+  assert.equal(items.length, data.events.filter((e) => e.notable).length);
+  for (const item of items) {
+    assert.equal(item.type, "chapter-guess");
+    assert.ok(!("distractorPool" in item), "chapter-guess has no MC options to validate");
+    const event = data.events.find((e) => `gen:chapter:${e.id}` === item.id);
+    assert.equal(item.correctChapter, event?.chapter);
+  }
 });

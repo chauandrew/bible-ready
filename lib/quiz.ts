@@ -1,20 +1,23 @@
 import type { AuthoredQuestion, Citation } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
 import { gradeFreeResponse } from "./grade";
-import { chapterSummaryFor } from "./content";
+import { chapterSummaryFor, formatCitation } from "./content";
 import {
   generateAll,
   toRuntimeMC,
+  toRuntimeChapterGuess,
   toRuntimeSequence,
   toRuntimeMatch,
   toRuntimeFreeResponse,
   type BookData,
   type GeneratedItem,
   type GeneratedMC,
+  type GeneratedChapterGuess,
   type GeneratedSequence,
   type GeneratedMatch,
   type GeneratedFreeResponse,
   type RuntimeMC,
+  type RuntimeChapterGuess,
   type RuntimeSequence,
   type RuntimeMatch,
   type RuntimeFreeResponse,
@@ -37,7 +40,7 @@ export interface RuntimeAuthoredMC {
   explanation?: string;
 }
 
-export type QuizItem = RuntimeAuthoredMC | RuntimeMC | RuntimeSequence | RuntimeMatch | RuntimeFreeResponse;
+export type QuizItem = RuntimeAuthoredMC | RuntimeMC | RuntimeChapterGuess | RuntimeSequence | RuntimeMatch | RuntimeFreeResponse;
 
 function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC {
   const rand = mulberry32(seed);
@@ -104,6 +107,7 @@ export function selectDailyQuestion(
       if (g.type === "sequence") return toRuntimeSequence(g as GeneratedSequence, itemSeed);
       if (g.type === "match") return toRuntimeMatch(g as GeneratedMatch, itemSeed);
       if (g.type === "free-response") return toRuntimeFreeResponse(g as GeneratedFreeResponse);
+      if (g.type === "chapter-guess") return toRuntimeChapterGuess(g as GeneratedChapterGuess);
       return toRuntimeMC(g as GeneratedMC, itemSeed);
     }),
   ];
@@ -142,6 +146,7 @@ function selectFromPools(
       if (g.type === "sequence") return toRuntimeSequence(g as GeneratedSequence, itemSeed);
       if (g.type === "match") return toRuntimeMatch(g as GeneratedMatch, itemSeed);
       if (g.type === "free-response") return toRuntimeFreeResponse(g as GeneratedFreeResponse);
+      if (g.type === "chapter-guess") return toRuntimeChapterGuess(g as GeneratedChapterGuess);
       return toRuntimeMC(g as GeneratedMC, itemSeed);
     }),
   ];
@@ -155,13 +160,17 @@ function selectFromPools(
 
 export type Answer =
   | { itemId: string; kind: "mc"; selectedIndex: number }
+  | { itemId: string; kind: "chapter-guess"; book: string; chapter: number }
   | { itemId: string; kind: "sequence"; order: string[] }
   | { itemId: string; kind: "match"; pairs: { left: string; right: string }[] }
   | { itemId: string; kind: "free-response"; text: string };
 
 export function isCorrect(item: QuizItem, answer: Answer): boolean {
-  if (item.kind === "authored" || item.type === "chapter" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+  if (item.kind === "authored" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
     return answer.kind === "mc" && answer.selectedIndex === item.correctIndex;
+  }
+  if (item.type === "chapter-guess") {
+    return answer.kind === "chapter-guess" && answer.book === item.citation.book && answer.chapter === item.correctChapter;
   }
   if (item.type === "sequence") {
     return answer.kind === "sequence" && JSON.stringify(answer.order) === JSON.stringify(item.correctOrder);
@@ -175,25 +184,49 @@ export function isCorrect(item: QuizItem, answer: Answer): boolean {
   if (item.type === "free-response") {
     return (
       answer.kind === "free-response" &&
-      gradeFreeResponse({ keywordGroups: item.keywordGroups, minGroups: item.minGroups }, answer.text).correct
+      gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms }, answer.text).correct
     );
   }
   return false;
+}
+
+/** Fractional credit per answer: 1 for isCorrect, 0.5 for a chapter-guess
+ * that names the right book but lands exactly one chapter off (a near miss
+ * on numbering, not on knowing the material), 0 otherwise. Every other item
+ * type is worth 1 or 0, same as isCorrect. */
+export function pointsFor(item: QuizItem, answer: Answer): number {
+  if (isCorrect(item, answer)) return 1;
+  if (item.kind === "generated" && item.type === "chapter-guess" && answer.kind === "chapter-guess") {
+    if (answer.book === item.citation.book && Math.abs(answer.chapter - item.correctChapter) === 1) return 0.5;
+  }
+  return 0;
+}
+
+/** Border color for a points value (1 / 0.5 / 0) — shared by QuizRunner's
+ * review list and ChapterGuessQuestion's inline Study-mode feedback so the
+ * three-way correct/close/wrong palette can't drift between the two. */
+export function pointsColor(points: number): string {
+  return points === 1 ? "var(--success-border)" : points > 0 ? "var(--accent)" : "var(--danger-border)";
 }
 
 /** The correct answer, in display form — same derivation QuizRunner's review list
  * uses, pulled out here so other callers (the daily question) don't duplicate it. */
 export function correctAnswerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
+  if ("correctChapter" in item) return formatCitation({ book: item.citation.book, chapter: item.correctChapter });
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ");
   return chapterSummaryFor(item.citation.book, item.chapterNumber) ?? "";
 }
 
 export interface ScoreResult {
+  /** Sum of per-item points — usually a whole number, but a chapter-guess
+   * "close" answer contributes 0.5 (see pointsFor), so this can be e.g. 7.5. */
   correct: number;
   total: number;
   percent: number;
+  /** Anything short of full credit — a close chapter-guess still belongs in
+   * the missed-question bank, since it means the exact chapter wasn't known. */
   missedIds: string[];
 }
 
@@ -203,17 +236,17 @@ export function scoreQuiz(items: QuizItem[], answers: Answer[]): ScoreResult {
   const missedIds: string[] = [];
   for (const item of items) {
     const answer = answerById.get(item.id);
-    if (answer && isCorrect(item, answer)) {
-      correct++;
-    } else {
-      missedIds.push(item.id);
-    }
+    const points = answer ? pointsFor(item, answer) : 0;
+    correct += points;
+    if (points < 1) missedIds.push(item.id);
   }
   const total = items.length;
   return { correct, total, percent: total ? Math.round((correct / total) * 100) : 0, missedIds };
 }
 
-/** Per-category right/wrong breakdown — what the Quiz's "where to focus" report renders. */
+/** Per-category right/wrong breakdown — what the Quiz's "where to focus" report renders.
+ * A partial-credit chapter-guess counts as "wrong" here — this is a coaching signal
+ * ("do you know this material"), not the numeric score, so it stays binary. */
 export function gapReport(items: QuizItem[], answers: Answer[]): Record<string, { right: number; wrong: number; percent: number }> {
   const answerById = new Map(answers.map((a) => [a.itemId, a]));
   const stats: Record<string, { right: number; wrong: number }> = {};
@@ -221,7 +254,8 @@ export function gapReport(items: QuizItem[], answers: Answer[]): Record<string, 
     const cat = categoryOf(item);
     stats[cat] ??= { right: 0, wrong: 0 };
     const answer = answerById.get(item.id);
-    if (answer && isCorrect(item, answer)) stats[cat].right++;
+    const points = answer ? pointsFor(item, answer) : 0;
+    if (points >= 1) stats[cat].right++;
     else stats[cat].wrong++;
   }
   const out: Record<string, { right: number; wrong: number; percent: number }> = {};
@@ -256,6 +290,7 @@ export function quizFromIdsMulti(
     if (generated.type === "sequence") items.push(toRuntimeSequence(generated as GeneratedSequence, seed));
     else if (generated.type === "match") items.push(toRuntimeMatch(generated as GeneratedMatch, seed));
     else if (generated.type === "free-response") items.push(toRuntimeFreeResponse(generated as GeneratedFreeResponse));
+    else if (generated.type === "chapter-guess") items.push(toRuntimeChapterGuess(generated as GeneratedChapterGuess));
     else items.push(toRuntimeMC(generated as GeneratedMC, seed));
   }
   return items;

@@ -7,7 +7,7 @@ import type { gapReport } from "@/lib/quiz";
  * QuizSetup's `chapterLabel` prop). */
 function categoryLabels(chapterLabel: string): Record<string, string> {
   return {
-    "mechanic:chapter": `Which ${chapterLabel}`,
+    "mechanic:chapter-guess": `Which ${chapterLabel}`,
     "mechanic:location": "Where it happens",
     "mechanic:speaker": "Who says it",
     "mechanic:chapter-summary": `What a ${chapterLabel} is about`,

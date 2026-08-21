@@ -14,7 +14,7 @@ import {
   type QotdResult,
 } from "@/lib/dailyQuestion";
 import { getDeviceId } from "@/lib/deviceId";
-import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion } from "./QuestionTypes";
+import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion } from "./QuestionTypes";
 
 export default function DailyQuestionRunner() {
   const sources = useMemo(() => dataForBooks(bookRegistry.map((b) => b.id)), []);
@@ -189,6 +189,8 @@ export default function DailyQuestionRunner() {
           <SequenceQuestion key={item.id} item={item} mode="quiz" onAnswer={handleAnswer} />
         ) : item.type === "match" ? (
           <MatchQuestion key={item.id} item={item} mode="quiz" onAnswer={handleAnswer} />
+        ) : item.type === "chapter-guess" ? (
+          <ChapterGuessQuestion key={item.id} item={item} mode="quiz" onAnswer={handleAnswer} />
         ) : (
           <FreeResponseQuestion key={item.id} item={item} mode="quiz" onAnswer={handleAnswer} />
         )}

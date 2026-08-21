@@ -10,6 +10,7 @@ const PRINT_SEED = "print-v1";
 
 function answerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
+  if ("correctChapter" in item) return formatCitation({ book: item.citation.book, chapter: item.correctChapter });
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join("; ");
   return chapterSummaryFor(item.citation.book, item.chapterNumber) ?? "";
@@ -71,12 +72,18 @@ export default function PrintSheet({
               </div>
             )}
             {/* Free-response: no options to print, just ruled lines to write on. */}
-            {"keywordGroups" in item && (
+            {"terms" in item && (
               <div style={{ paddingLeft: "1rem", marginTop: "0.5rem", display: "grid", gap: "0.6rem" }} aria-hidden="true">
                 <div style={{ borderBottom: "1px solid #999" }} />
                 <div style={{ borderBottom: "1px solid #999" }} />
                 <div style={{ borderBottom: "1px solid #999" }} />
               </div>
+            )}
+            {/* Chapter-guess: a single short blank for "book, chapter", not a whole ruled paragraph. */}
+            {"correctChapter" in item && (
+              <p style={{ paddingLeft: "1rem", marginTop: "0.4rem" }} aria-hidden="true">
+                Book: _______________  Chapter: _______
+              </p>
             )}
           </li>
         ))}

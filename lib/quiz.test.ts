@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, type Answer } from "./quiz";
+import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, pointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -17,6 +17,7 @@ function fixtureData(): BookData {
       arcId: "creation",
       eventIds: [],
       quizWorthy: false,
+      freeResponseAliases: [],
     })),
     people: [{ id: "adam", name: "Adam", summary: "s", firstAppearance: { book: "genesis", chapter: 1 }, relations: [] }],
     events: [1, 2, 3, 4, 5].map((n) => ({
@@ -69,13 +70,14 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
   // Answer everything correctly except deliberately miss one MC item.
   let missedOne = false;
   const answers: Answer[] = items.map((item) => {
-    if (item.kind === "authored" || item.type === "chapter" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+    if (item.kind === "authored" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
       if (!missedOne) {
         missedOne = true;
         return { itemId: item.id, kind: "mc", selectedIndex: (item.correctIndex + 1) % item.options.length };
       }
       return { itemId: item.id, kind: "mc", selectedIndex: item.correctIndex };
     }
+    if (item.type === "chapter-guess") return { itemId: item.id, kind: "chapter-guess", book: item.citation.book, chapter: item.correctChapter };
     if (item.type === "sequence") return { itemId: item.id, kind: "sequence", order: item.correctOrder };
     if (item.type === "match") return { itemId: item.id, kind: "match", pairs: item.correctPairs };
     throw new Error(`unexpected item type in test fixture: ${item.id}`);
@@ -134,4 +136,33 @@ test("selectDailyQuestion always returns a valid item, never undefined via the m
     // item.id would throw on undefined if the modulo index picked an out-of-range slot.
     assert.ok(item && typeof item.id === "string" && item.id.length > 0);
   }
+});
+
+test("pointsFor gives a chapter-guess half credit for a right-book, one-chapter-off guess", () => {
+  const item: QuizItem = {
+    kind: "generated",
+    id: "gen:chapter:e1",
+    type: "chapter-guess",
+    prompt: "In which book and chapter does this happen: test event?",
+    correctChapter: 5,
+    citation: { book: "genesis", chapter: 5 },
+  };
+
+  const exact: Answer = { itemId: item.id, kind: "chapter-guess", book: "genesis", chapter: 5 };
+  const oneOver: Answer = { itemId: item.id, kind: "chapter-guess", book: "genesis", chapter: 6 };
+  const oneUnder: Answer = { itemId: item.id, kind: "chapter-guess", book: "genesis", chapter: 4 };
+  const twoOff: Answer = { itemId: item.id, kind: "chapter-guess", book: "genesis", chapter: 7 };
+  const rightChapterWrongBook: Answer = { itemId: item.id, kind: "chapter-guess", book: "exodus", chapter: 5 };
+
+  assert.equal(pointsFor(item, exact), 1);
+  assert.equal(isCorrect(item, exact), true);
+
+  assert.equal(pointsFor(item, oneOver), 0.5);
+  assert.equal(pointsFor(item, oneUnder), 0.5);
+  assert.equal(isCorrect(item, oneOver), false); // half credit isn't full credit
+
+  assert.equal(pointsFor(item, twoOff), 0);
+  // A near miss on chapter numbering only counts within the same book — being
+  // one chapter off in a different book isn't "close", it's just wrong.
+  assert.equal(pointsFor(item, rightChapterWrongBook), 0);
 });

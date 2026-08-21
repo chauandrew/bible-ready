@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import type { QuizItem, Answer } from "@/lib/quiz";
+import { pointsFor, pointsColor, correctAnswerText } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
-import { formatCitation, chapterSummaryFor, bookMeta } from "@/lib/content";
+import { formatCitation, chapterSummaryFor, bookMeta, bookRegistry } from "@/lib/content";
 
 type Mode = "study" | "quiz";
 
@@ -258,7 +259,7 @@ export function FreeResponseQuestion({
       onAnswer({ itemId: item.id, kind: "free-response", text });
       return;
     }
-    setResult(gradeFreeResponse({ keywordGroups: item.keywordGroups, minGroups: item.minGroups }, text));
+    setResult(gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms }, text));
   }
 
   const modelAnswer = chapterSummaryFor(item.citation.book, item.chapterNumber);
@@ -306,6 +307,106 @@ export function FreeResponseQuestion({
               type="button"
               className="btn btn-primary"
               onClick={() => onAnswer({ itemId: item.id, kind: "free-response", text })}
+            >
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+export function ChapterGuessQuestion({
+  item,
+  mode,
+  onAnswer,
+}: {
+  item: Extract<QuizItem, { type: "chapter-guess" }>;
+  mode: Mode;
+  onAnswer: (a: Answer) => void;
+}) {
+  const [book, setBook] = useState("");
+  const [chapterText, setChapterText] = useState("");
+  const [error, setError] = useState<string | null>(null);
+  const [points, setPoints] = useState<number | null>(null);
+
+  function submit() {
+    const chapter = Number(chapterText);
+    if (!book || !chapterText.trim() || !Number.isInteger(chapter) || chapter < 1) {
+      setError("Choose a book and enter a chapter number.");
+      return;
+    }
+    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book, chapter };
+    if (mode === "quiz") {
+      onAnswer(answer);
+      return;
+    }
+    setPoints(pointsFor(item, answer));
+  }
+
+  return (
+    <div>
+      <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {points === null && (
+        <>
+          <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
+            <select
+              className="input"
+              style={{ flex: "1 1 160px" }}
+              value={book}
+              onChange={(e) => {
+                setBook(e.target.value);
+                if (error) setError(null);
+              }}
+              aria-label="Book"
+            >
+              <option value="">Book…</option>
+              {bookRegistry.map((b) => (
+                <option key={b.id} value={b.id}>{b.name}</option>
+              ))}
+            </select>
+            <input
+              className="input"
+              style={{ flex: "1 1 120px" }}
+              type="number"
+              min={1}
+              inputMode="numeric"
+              value={chapterText}
+              onChange={(e) => {
+                setChapterText(e.target.value);
+                if (error) setError(null);
+              }}
+              placeholder="Chapter"
+              aria-label="Chapter number"
+            />
+          </div>
+          {error && (
+            <p className="field-error" role="alert">
+              {error}
+            </p>
+          )}
+          <div style={{ marginTop: "0.75rem" }}>
+            <button type="button" className="btn btn-primary" onClick={submit}>
+              Submit
+            </button>
+          </div>
+        </>
+      )}
+      {points !== null && (
+        <>
+          <div className="note" style={{ borderColor: pointsColor(points) }}>
+            <span className="sr-only">{points === 1 ? "Correct: " : points > 0 ? "Close, half credit: " : "Not quite: "}</span>
+            <span aria-hidden="true">{points === 1 ? "✓ " : points > 0 ? "≈ " : "✗ "}</span>
+            {points === 1 ? "Correct. " : points > 0 ? "Close — one chapter off, half credit. " : "Not quite. "}
+            {correctAnswerText(item)}
+          </div>
+          <p className="citation" style={{ marginTop: "0.5rem" }}>{formatCitation(item.citation)}</p>
+          <div style={{ marginTop: "0.75rem" }}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => onAnswer({ itemId: item.id, kind: "chapter-guess", book, chapter: Number(chapterText) })}
             >
               Next
             </button>
