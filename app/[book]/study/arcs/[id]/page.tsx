@@ -25,7 +25,7 @@ export default async function ArcPage({ params }: { params: Promise<{ book: stri
         <Link href={`/${bookId}/print/${arc.id}`} className="btn">Print worksheet</Link>
       </div>
 
-      <div className="grid-cards" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))" }}>
+      <div className="grid-cards">
         {chapters.map((c) => (
           <Link key={c.id} href={`/${bookId}/study/chapters/${c.number}`} className="card">
             <div style={{ fontWeight: 600 }}>{book.name} {c.number}: {c.title}</div>
