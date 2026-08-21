@@ -92,6 +92,8 @@ Two distinct authorship modes, both feeding the same quiz pool
   events/quotes/chapters at *runtime*, from a seed (`?s=` in the quiz URL, so
   a quiz is replayable and shareable). Six templates: which chapter, where,
   who says this, what's this chapter about, put these in order, match pairs.
+  "Which chapter" is free-response (a book + chapter number), not multiple
+  choice — see the partial-credit note below.
 - **Authored** (`questions.json`) — hand-written thematic questions (arc,
   covenant, character, theme, argument) that a template can't produce. A
   module falls back to generated-only when a book has no authored items yet.
@@ -111,10 +113,18 @@ generates zero questions of that type for that arc, rather than getting
 padded with a fake option to hit the number. Zero questions of one type in a
 small arc is correct; a manufactured fourth option is not.
 
-**"Which chapter" options name the book** (`"Genesis 41"`, not `"41"`). A bare
-chapter number is only unambiguous inside a single-book quiz; once items from
-several books can mix in one quiz (the whole-Bible / multi-book modes), a
-number alone doesn't say which book it's asking about.
+**"Which chapter" is free-response with partial credit, not multiple choice.**
+The player types a book and a chapter number (`components/QuestionTypes.tsx`'s
+`ChapterGuessQuestion`) rather than picking from four options — there's no
+distractor pool to build or validate, so `generateChapterQuestions` is
+considerably simpler than the other MC templates. `lib/quiz.ts`'s `pointsFor`
+scores it out of 1: full credit for an exact match, half credit for the right
+book landed exactly one chapter off (a near miss on numbering, not on knowing
+the material), zero for anything else — including the right chapter number in
+the *wrong* book, which isn't "close" at all. This is the one place
+`ScoreResult.correct` can be fractional (e.g. `7.5/10`); `gapReport`'s
+per-category breakdown stays binary (partial credit still counts as "wrong"
+there, since it's a coaching signal about mastery, not the score itself).
 
 **Quiz and Diagnostic are one flow, not two.** There used to be a separate
 fixed-25-question "Diagnostic" with its own pages and a fixed (non-random)
@@ -174,11 +184,23 @@ real verse count there before authoring quotes for it, or the budget check
 silently no-ops for that book.
 
 **`Chapter.quizWorthy` gates the free-response question type**
-("what happens in chapter N?", graded by keyword-group fuzzy matching — see
-`lib/grade.ts`). Not every chapter deserves this treatment — genealogies and
-secondary chapters get skipped. This is a considered do-over of `Event.notable`,
-which shipped as a boolean nobody ever set to `false` and so did nothing (see
-Known gaps).
+("what happens in chapter N?"). Not every chapter deserves this treatment —
+genealogies and secondary chapters get skipped. This is a considered do-over
+of `Event.notable`, which shipped as a boolean nobody ever set to `false` and
+so did nothing (see Known gaps).
+
+**Free-response grading terms come straight from the chapter's own
+`title` + `summary`, not a separately-authored keyword list.**
+`lib/grade.ts`'s `deriveGradingTerms` strips stopwords from both fields and
+matches an answer against the result (typo-tolerant fuzzy word matching, same
+as before) — there's nothing to keep in sync by hand for the common case, and
+nothing for a chapter's own headline term to silently fall out of. The only
+thing worth authoring is `Chapter.freeResponseAliases`: a short list for a
+well-known alternate name that isn't textually present in either field (e.g.
+`["palm sunday", "jerusalem"]` for a chapter titled "The Triumphal Entry",
+whose summary never uses either word). `check:content` warns if a quizWorthy
+chapter derives fewer than 3 significant terms total, since that makes
+`minTerms` degenerate toward requiring nearly all of them.
 
 **`Event.shortName` is a flashcard headline, not a quiz fact.** A few words
 (e.g. `"The flood"` for an event named `"The flood covers the whole earth"`),
@@ -294,8 +316,10 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    values (the generator's distractor floor) before moving on — this is the
    single most common thing to get wrong on a first pass.
 6. Mark `Chapter.quizWorthy` selectively if you want free-response questions
-   for this book, and author `freeResponse.keywordGroups` for each one you
-   mark.
+   for this book — grading terms derive automatically from `title` +
+   `summary`, so there's nothing else to author unless a chapter's common
+   nickname isn't textually present in either, in which case add it to
+   `freeResponseAliases`.
 7. If any chapters feed a flashcard deck, author `Event.shortName` for those
    events — a key verse or short headline, not a copy of `summary`. For a
    `"selection"` book, that means one event per chapter with no `verses` on

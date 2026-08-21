@@ -13,30 +13,7 @@
       "jn-e-c1-3",
       "jn-e-c1-4"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "word",
-          "jesus"
-        ],
-        [
-          "baptist",
-          "testify",
-          "testifies",
-          "lamb"
-        ],
-        [
-          "disciples",
-          "andrew",
-          "peter",
-          "philip",
-          "nathanael",
-          "follow"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-2",
@@ -49,29 +26,7 @@
       "jn-e-c2-0",
       "jn-e-c2-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "wine",
-          "water",
-          "wedding",
-          "sign",
-          "temple",
-          "cleanse",
-          "cleanses",
-          "drives"
-        ],
-        [
-          "cana",
-          "jerusalem"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-3",
@@ -84,29 +39,7 @@
       "jn-e-c3-0",
       "jn-e-c3-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "nicodemus",
-          "jesus"
-        ],
-        [
-          "born again",
-          "birth",
-          "spirit",
-          "kingdom"
-        ],
-        [
-          "night",
-          "pharisee",
-          "baptist",
-          "increase",
-          "decrease"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-4",
@@ -120,29 +53,7 @@
       "jn-e-c4-1",
       "jn-e-c4-2"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "samaritan",
-          "woman",
-          "well"
-        ],
-        [
-          "living water",
-          "believe",
-          "town"
-        ],
-        [
-          "official",
-          "son",
-          "heal",
-          "heals",
-          "capernaum"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-5",
@@ -155,30 +66,7 @@
       "jn-e-c5-0",
       "jn-e-c5-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "heal",
-          "heals",
-          "pool",
-          "bethesda",
-          "sabbath",
-          "walk"
-        ],
-        [
-          "blasphemy",
-          "father",
-          "equal",
-          "leaders",
-          "accuse"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-6",
@@ -193,30 +81,7 @@
       "jn-e-c6-2",
       "jn-e-c6-3"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "feed",
-          "feeds",
-          "loaves",
-          "fish",
-          "five thousand",
-          "walk",
-          "sea"
-        ],
-        [
-          "bread of life",
-          "disciples",
-          "leave",
-          "turn away"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-7",
@@ -229,30 +94,7 @@
       "jn-e-c7-0",
       "jn-e-c7-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "feast",
-          "booths",
-          "teach",
-          "teaches",
-          "temple",
-          "jerusalem"
-        ],
-        [
-          "officers",
-          "arrest",
-          "divide",
-          "divided",
-          "opinion"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-8",
@@ -266,29 +108,7 @@
       "jn-e-c8-1",
       "jn-e-c8-2"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "woman",
-          "adultery"
-        ],
-        [
-          "stone",
-          "sin",
-          "forgive",
-          "forgives",
-          "condemn"
-        ],
-        [
-          "light of the world",
-          "truth",
-          "free",
-          "jesus"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-9",
@@ -301,30 +121,7 @@
       "jn-e-c9-0",
       "jn-e-c9-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "blind",
-          "man"
-        ],
-        [
-          "heal",
-          "heals",
-          "mud",
-          "wash",
-          "sight",
-          "see"
-        ],
-        [
-          "pharisees",
-          "synagogue",
-          "expel",
-          "interrogate"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-10",
@@ -338,29 +135,7 @@
       "jn-e-c10-1",
       "jn-e-c10-2"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "shepherd",
-          "sheep",
-          "door",
-          "lay down",
-          "life"
-        ],
-        [
-          "father",
-          "one",
-          "dedication",
-          "stone",
-          "blasphemy"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-11",
@@ -375,31 +150,7 @@
       "jn-e-c11-2",
       "jn-e-c11-3"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "lazarus",
-          "jesus"
-        ],
-        [
-          "resurrection",
-          "life",
-          "raise",
-          "raises",
-          "tomb",
-          "dead"
-        ],
-        [
-          "martha",
-          "caiaphas",
-          "plot",
-          "prophesy",
-          "prophesies"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-12",
@@ -414,32 +165,11 @@
       "jn-e-c12-2"
     ],
     "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "mary",
-          "anoint",
-          "anoints",
-          "perfume",
-          "bethany"
-        ],
-        [
-          "donkey",
-          "crowd",
-          "king",
-          "palm",
-          "hail"
-        ],
-        [
-          "greeks",
-          "death",
-          "grain",
-          "wheat",
-          "jesus"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "freeResponseAliases": [
+      "jerusalem",
+      "palm sunday",
+      "entering jerusalem"
+    ]
   },
   {
     "id": "jn-ch-13",
@@ -453,31 +183,7 @@
       "jn-e-c13-1",
       "jn-e-c13-2"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "feet",
-          "wash",
-          "washes"
-        ],
-        [
-          "commandment",
-          "love",
-          "one another"
-        ],
-        [
-          "judas",
-          "betray",
-          "betrays",
-          "peter",
-          "deny",
-          "denies"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-14",
@@ -490,29 +196,7 @@
       "jn-e-c14-0",
       "jn-e-c14-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "thomas"
-        ],
-        [
-          "way",
-          "truth",
-          "life",
-          "father"
-        ],
-        [
-          "spirit",
-          "helper",
-          "teach",
-          "remind",
-          "comfort"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-15",
@@ -525,29 +209,7 @@
       "jn-e-c15-0",
       "jn-e-c15-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "vine",
-          "branches",
-          "fruit",
-          "remain",
-          "abide"
-        ],
-        [
-          "world",
-          "hate",
-          "hates",
-          "servant",
-          "master"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-16",
@@ -560,29 +222,7 @@
       "jn-e-c16-0",
       "jn-e-c16-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "spirit"
-        ],
-        [
-          "truth",
-          "helper",
-          "guide",
-          "guides"
-        ],
-        [
-          "sorrow",
-          "joy",
-          "grief",
-          "labor",
-          "pain"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-17",
@@ -595,30 +235,7 @@
       "jn-e-c17-0",
       "jn-e-c17-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "pray",
-          "prays",
-          "prayer"
-        ],
-        [
-          "glorify",
-          "father",
-          "protect",
-          "protection"
-        ],
-        [
-          "disciples",
-          "believers",
-          "unity",
-          "one"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-18",
@@ -633,31 +250,7 @@
       "jn-e-c18-2",
       "jn-e-c18-3"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "judas",
-          "betray",
-          "betrays",
-          "arrest",
-          "garden",
-          "soldiers"
-        ],
-        [
-          "peter",
-          "deny",
-          "denies",
-          "pilate",
-          "barabbas",
-          "caiaphas"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-19",
@@ -672,31 +265,7 @@
       "jn-e-c19-2",
       "jn-e-c19-3"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus"
-        ],
-        [
-          "crucify",
-          "crucified",
-          "cross",
-          "golgotha",
-          "die",
-          "dies"
-        ],
-        [
-          "pilate",
-          "mother",
-          "joseph",
-          "bury",
-          "buries",
-          "tomb"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   },
   {
     "id": "jn-ch-20",
@@ -712,30 +281,10 @@
       "jn-e-c20-3"
     ],
     "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "tomb",
-          "empty"
-        ],
-        [
-          "mary",
-          "magdalene",
-          "appear",
-          "appears",
-          "risen"
-        ],
-        [
-          "thomas",
-          "doubt",
-          "doubts",
-          "believe",
-          "believes"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "freeResponseAliases": [
+      "resurrection",
+      "risen"
+    ]
   },
   {
     "id": "jn-ch-21",
@@ -748,28 +297,6 @@
       "jn-e-c21-0",
       "jn-e-c21-1"
     ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "jesus",
-          "peter"
-        ],
-        [
-          "fish",
-          "catch",
-          "sea",
-          "tiberias"
-        ],
-        [
-          "restore",
-          "restores",
-          "love",
-          "sheep",
-          "feed"
-        ]
-      ],
-      "minGroups": 2
-    }
+    "quizWorthy": true
   }
 ]

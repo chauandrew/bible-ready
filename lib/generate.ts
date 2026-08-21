@@ -1,5 +1,6 @@
 import type { Arc, Chapter, Event, Person, Quote } from "../content/schema";
 import { mulberry32, shuffle } from "./rng";
+import { deriveGradingTerms } from "./grade";
 
 /**
  * The generator: turns the events/chapters/quotes backbone into quiz items.
@@ -86,11 +87,22 @@ function namesItsOwnSpeaker(q: Quote, people: Person[]): boolean {
 export type GeneratedMC = {
   kind: "generated";
   id: string;
-  type: "chapter" | "location" | "speaker" | "chapter-summary";
+  type: "location" | "speaker" | "chapter-summary";
   prompt: string;
   correctAnswer: string;
   distractorPool: string[]; // deduped, excludes correctAnswer
   citation: { book: string; chapter: number; verses?: string };
+};
+
+/** "In which chapter does this happen?" — free-response (book + chapter
+ * number) rather than multiple choice, see generateChapterQuestions. */
+export type GeneratedChapterGuess = {
+  kind: "generated";
+  id: string;
+  type: "chapter-guess";
+  prompt: string;
+  correctChapter: number;
+  citation: { book: string; chapter: number };
 };
 
 export type GeneratedSequence = {
@@ -117,12 +129,12 @@ export type GeneratedFreeResponse = {
   type: "free-response";
   prompt: string;
   chapterNumber: number;
-  keywordGroups: string[][];
-  minGroups: number;
+  terms: string[];
+  minTerms: number;
   citation: { book: string; chapter: number };
 };
 
-export type GeneratedItem = GeneratedMC | GeneratedSequence | GeneratedMatch | GeneratedFreeResponse;
+export type GeneratedItem = GeneratedMC | GeneratedChapterGuess | GeneratedSequence | GeneratedMatch | GeneratedFreeResponse;
 
 function personName(people: Person[], id: string): string {
   return people.find((p) => p.id === id)?.name ?? id;
@@ -141,36 +153,21 @@ function eventsInArc(events: Event[], chapters: Chapter[], arcId: string): Event
 // Templates — one generated item per underlying fact, exhaustively
 // ---------------------------------------------------------------------------
 
-export function generateChapterQuestions(data: BookData): GeneratedMC[] {
-  const { events, chapters, book } = data;
-  const out: GeneratedMC[] = [];
-  const allChapters = Array.from(new Set(events.map((x) => x.chapter)));
+/** Free-response, not multiple choice — the player types a book and a chapter
+ * number (see components/QuestionTypes.tsx's ChapterGuessQuestion). Scored
+ * with partial credit for a right-book, one-chapter-off guess (see
+ * lib/quiz.ts's pointsFor) rather than the strict right/wrong every other
+ * generated type gets, so no distractor pool to build here. */
+export function generateChapterQuestions(data: BookData): GeneratedChapterGuess[] {
+  const { events, book } = data;
+  const out: GeneratedChapterGuess[] = [];
   for (const e of events.filter((e) => e.notable && inScope(data, e.chapter))) {
-    const arcId = arcOf(chapters, e.chapter);
-    const sameArc = arcId ? eventsInArc(events, chapters, arcId) : events;
-    const pool = Array.from(new Set(sameArc.map((x) => String(x.chapter)))).filter(
-      (c) => c !== String(e.chapter)
-    );
-    // Nearest chapters, not random book-wide ones: "which chapter" is no test
-    // at all when the wrong answers are forty chapters away.
-    const fallbackPool =
-      pool.length >= 3
-        ? pool
-        : nearest(
-            allChapters.filter((c) => c !== e.chapter),
-            (c) => Math.abs(c - e.chapter),
-            FALLBACK_POOL_SIZE
-          ).map(String);
-    // Options name the book, not just the bare chapter number — a lone "51"
-    // only reads as an answer when the book is implied by context, which
-    // isn't true once items from several books are mixed into one quiz.
     out.push({
       kind: "generated",
       id: `gen:chapter:${e.id}`,
-      type: "chapter",
-      prompt: `In which ${chapterWord(book)} does this happen: ${e.name}?`,
-      correctAnswer: `${bookLabel(book)} ${e.chapter}`,
-      distractorPool: fallbackPool.map((c) => `${bookLabel(book)} ${c}`),
+      type: "chapter-guess",
+      prompt: `In which book and ${chapterWord(book)} does this happen: ${e.name}?`,
+      correctChapter: e.chapter,
       citation: { book: book.id, chapter: e.chapter },
     });
   }
@@ -295,20 +292,23 @@ export function generateChapterSummaryQuestions(data: BookData): GeneratedMC[] {
 }
 
 /** One "what happens in this chapter?" free-response item per chapter marked
- * `quizWorthy` with grading data — see the doc comment on Chapter.quizWorthy
- * in content/schema.ts for why this is chapter-scoped rather than event-scoped. */
+ * `quizWorthy` — see the doc comment on Chapter.quizWorthy in content/schema.ts
+ * for why this is chapter-scoped rather than event-scoped. Grading terms come
+ * from the chapter's own title/summary/aliases (see lib/grade.ts's
+ * deriveGradingTerms), so there's no separate grading data to require here. */
 export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResponse[] {
   const { chapters, book } = data;
   const out: GeneratedFreeResponse[] = [];
-  for (const c of chapters.filter((c) => c.quizWorthy && c.freeResponse && inScope(data, c.number))) {
+  for (const c of chapters.filter((c) => c.quizWorthy && inScope(data, c.number))) {
+    const { terms, minTerms } = deriveGradingTerms(c);
     out.push({
       kind: "generated",
       id: `gen:free-response:${c.id}`,
       type: "free-response",
       prompt: `In your own words, what happens in ${bookLabel(book)} ${c.number}?`,
       chapterNumber: c.number,
-      keywordGroups: c.freeResponse!.keywordGroups,
-      minGroups: c.freeResponse!.minGroups,
+      terms,
+      minTerms,
       citation: { book: book.id, chapter: c.number },
     });
   }
@@ -415,6 +415,27 @@ export function toRuntimeMC(item: GeneratedMC, seed: number): RuntimeMC {
   };
 }
 
+export interface RuntimeChapterGuess {
+  kind: "generated";
+  id: string;
+  type: "chapter-guess";
+  prompt: string;
+  correctChapter: number;
+  citation: GeneratedChapterGuess["citation"];
+}
+
+/** No shuffling to do — same reasoning as toRuntimeFreeResponse below. */
+export function toRuntimeChapterGuess(item: GeneratedChapterGuess): RuntimeChapterGuess {
+  return {
+    kind: "generated",
+    id: item.id,
+    type: "chapter-guess",
+    prompt: item.prompt,
+    correctChapter: item.correctChapter,
+    citation: item.citation,
+  };
+}
+
 // ---------------------------------------------------------------------------
 // Whole-corpus ambiguity validation (used by scripts/check-content.ts)
 // ---------------------------------------------------------------------------
@@ -440,7 +461,6 @@ export function findAmbiguities(data: BookData): AmbiguityProblem[] {
   const chapterRef = new RegExp(`\\b(chapter|${bookLabel(data.book)}|${data.book.name})\\s+\\d+\\b`, "i");
 
   for (const item of [
-    ...generateChapterQuestions(data),
     ...generateLocationQuestions(data),
     ...generateSpeakerQuestions(data),
     ...generateChapterSummaryQuestions(data),
@@ -448,11 +468,9 @@ export function findAmbiguities(data: BookData): AmbiguityProblem[] {
     if (item.distractorPool.length < 3) {
       problems.push({ id: item.id, reason: `only ${item.distractorPool.length} distinct distractors available (need 3)` });
     }
-    if (item.type !== "chapter") {
-      for (const d of item.distractorPool) {
-        if (chapterRef.test(d)) {
-          problems.push({ id: item.id, reason: `distractor "${d}" names a specific chapter, identifying some other item's subject` });
-        }
+    for (const d of item.distractorPool) {
+      if (chapterRef.test(d)) {
+        problems.push({ id: item.id, reason: `distractor "${d}" names a specific chapter, identifying some other item's subject` });
       }
     }
   }
@@ -595,8 +613,8 @@ export interface RuntimeFreeResponse {
   type: "free-response";
   prompt: string;
   chapterNumber: number;
-  keywordGroups: string[][];
-  minGroups: number;
+  terms: string[];
+  minTerms: number;
   citation: GeneratedFreeResponse["citation"];
 }
 
@@ -609,8 +627,8 @@ export function toRuntimeFreeResponse(item: GeneratedFreeResponse): RuntimeFreeR
     type: "free-response",
     prompt: item.prompt,
     chapterNumber: item.chapterNumber,
-    keywordGroups: item.keywordGroups,
-    minGroups: item.minGroups,
+    terms: item.terms,
+    minTerms: item.minTerms,
     citation: item.citation,
   };
 }

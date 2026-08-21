@@ -3,10 +3,10 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect, correctAnswerText } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect, pointsFor, pointsColor, correctAnswerText } from "@/lib/quiz";
 import { recordSession, clearMissed } from "@/lib/progress";
 import { formatCitation } from "@/lib/content";
-import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion } from "./QuestionTypes";
+import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion } from "./QuestionTypes";
 
 type Mode = "study" | "quiz";
 
@@ -82,13 +82,15 @@ export default function QuizRunner({
             <div style={{ display: "grid", gap: "0.6rem", margin: "0.5rem 0 1.5rem" }}>
               {items.map((it) => {
                 const a = answers.find((x) => x.itemId === it.id);
-                const correct = a ? isCorrect(it, a) : false;
+                const points = a ? pointsFor(it, a) : 0;
                 const correctText = correctAnswerText(it);
+                const borderColor = pointsColor(points);
+                const label = points === 1 ? "Correct: " : points > 0 ? "Close (half credit): " : "Answer: ";
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
-                    <div className="note" style={{ borderColor: correct ? "var(--success-border)" : "var(--danger-border)" }}>
-                      {correct ? "Correct: " : "Answer: "}
+                    <div className="note" style={{ borderColor }}>
+                      {label}
                       {correctText}
                       {"explanation" in it && it.explanation ? ` (${it.explanation})` : ""}
                     </div>
@@ -155,6 +157,8 @@ export default function QuizRunner({
           <SequenceQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         ) : item.type === "match" ? (
           <MatchQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+        ) : item.type === "chapter-guess" ? (
+          <ChapterGuessQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         ) : (
           <FreeResponseQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         )}

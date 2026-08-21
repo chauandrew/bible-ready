@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { BookContentSchema } from "../content/schema";
 import { findAmbiguities } from "../lib/generate";
+import { deriveGradingTerms } from "../lib/grade";
 
 /**
  * The one build gate for content. Fails loudly on anything that would ship a
@@ -308,25 +309,21 @@ function checkBook(bookId: string) {
   }
 
   // --- free-response grading data ------------------------------------------
-  // A chapter marked quizWorthy with no grading data would generate a
-  // free-response item nothing can grade — the exact "field exists but does
-  // nothing" failure mode Event.notable fell into (see the doc comment on
-  // Chapter.quizWorthy), except this one is unreachable content instead of an
-  // inert flag, so it fails the build rather than just warning.
+  // Grading terms derive straight from title + summary (see lib/grade.ts's
+  // deriveGradingTerms), so there's no separate data to require here. A
+  // chapter whose title/summary/aliases yield very few significant words
+  // would make minTerms degenerate to "match almost every one of them" — not
+  // broken, but worth flagging so an author knows to add an alias.
   for (const c of chapters) {
-    if (c.quizWorthy && !c.freeResponse) {
-      errors.push(`chapters: "${c.id}" is quizWorthy but has no freeResponse grading data`);
-      continue;
+    if (c.freeResponseAliases.length > 0 && !c.quizWorthy) {
+      warnings.push(`chapters: "${c.id}" has freeResponseAliases but is not quizWorthy, so it's never asked`);
     }
-    if (c.freeResponse) {
-      const { keywordGroups, minGroups } = c.freeResponse;
-      if (minGroups < 1 || minGroups > keywordGroups.length) {
-        errors.push(
-          `chapters: "${c.id}" freeResponse.minGroups (${minGroups}) must be between 1 and its ${keywordGroups.length} keyword group(s)`
+    if (c.quizWorthy) {
+      const { terms } = deriveGradingTerms(c);
+      if (terms.length < 3) {
+        warnings.push(
+          `chapters: "${c.id}" only derives ${terms.length} significant term(s) from its title/summary/aliases — free-response grading may be too strict`
         );
-      }
-      if (!c.quizWorthy) {
-        warnings.push(`chapters: "${c.id}" has freeResponse grading data but is not quizWorthy, so it's never asked`);
       }
     }
   }
