@@ -20,7 +20,6 @@
   --danger-text: #7a3222;
   --note-bg: #f4ede0;
   --note-border: #a97a3c;
-  --qotd: #3d5a80;
   --font-voice: Georgia, "Times New Roman", serif;
   --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --radius: 10px;
@@ -46,7 +45,6 @@
   --danger-text: #e2a08e;
   --note-bg: #241f16;
   --note-border: #d7a55c;
-  --qotd: #6f9bc9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -69,7 +67,6 @@
     --danger-text: #e2a08e;
     --note-bg: #241f16;
     --note-border: #d7a55c;
-    --qotd: #6f9bc9;
   }
 }
 
@@ -230,16 +227,17 @@ a.card:active {
   transform: scale(0.99);
 }
 
-/* Question of the Day is the one daily-return feature on the site, so it
-   gets its own color instead of blending into every other plain card. */
+/* Question of the Day is the one daily-return feature on the site, so it's
+   styled as a solid CTA instead of blending into every other plain card. */
 a.card.qotd-cta {
-  background: var(--qotd);
-  border-color: var(--qotd);
+  background: var(--accent);
+  border-color: var(--accent);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  text-align: center;
 }
 a.card.qotd-cta:hover {
-  border-color: var(--qotd);
-  filter: brightness(1.08);
+  border-color: var(--accent);
+  filter: brightness(1.06);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
 }
 .qotd-cta .qotd-cta-title,
