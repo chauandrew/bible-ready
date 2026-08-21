@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main className="container-wide">
       <div className="hero hero-grid">
-        <div>
+        <div className="hero-copy">
           <h1 className="page-title hero-title">Get Bible Ready</h1>
           <p className="page-lede">Study the Bible with quizzes, flashcards, and book overviews</p>
         </div>
