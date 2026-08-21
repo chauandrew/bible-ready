@@ -3,9 +3,9 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect, correctAnswerText } from "@/lib/quiz";
 import { recordSession, clearMissed } from "@/lib/progress";
-import { formatCitation, chapterSummaryFor } from "@/lib/content";
+import { formatCitation } from "@/lib/content";
 import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion } from "./QuestionTypes";
 
 type Mode = "study" | "quiz";
@@ -83,14 +83,7 @@ export default function QuizRunner({
               {items.map((it) => {
                 const a = answers.find((x) => x.itemId === it.id);
                 const correct = a ? isCorrect(it, a) : false;
-                const correctText =
-                  "correctIndex" in it
-                    ? it.options[it.correctIndex]
-                    : "correctOrder" in it
-                      ? it.correctOrder.join(" → ")
-                      : "correctPairs" in it
-                        ? it.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ")
-                        : (chapterSummaryFor(it.citation.book, it.chapterNumber) ?? "");
+                const correctText = correctAnswerText(it);
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
