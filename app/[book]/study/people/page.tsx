@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { peopleForBook, wiredBookIds, bookMeta } from "@/lib/content";
+import BookBreadcrumb from "@/components/BookBreadcrumb";
 
 export function generateStaticParams() {
   return wiredBookIds.map((book) => ({ book }));
@@ -14,9 +15,7 @@ export default async function PeopleIndex({ params }: { params: Promise<{ book: 
 
   return (
     <main className="container-wide">
-      <p className="eyebrow" style={{ marginTop: "1rem" }}>
-        <Link href={`/${bookId}`} style={{ color: "inherit" }}>{book.name}</Link>
-      </p>
+      <BookBreadcrumb bookId={bookId} bookName={book.name} />
       <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>People</h1>
       <div className="grid-cards">
         {people.map((p) => (

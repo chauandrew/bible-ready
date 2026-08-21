@@ -34,7 +34,7 @@ export default function PrintSheet({
 
   return (
     <main className="container">
-      {backHref && backLabel && (
+      {backHref && (
         <p className="eyebrow no-print" style={{ marginTop: "1rem" }}>
           <Link href={backHref}>{backLabel}</Link>
         </p>

@@ -50,14 +50,16 @@ export default function FlashcardDeck({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cards.length]);
 
+  const backLink = backHref && (
+    <p className="eyebrow" style={{ marginTop: "1rem" }}>
+      <Link href={backHref}>{backLabel}</Link>
+    </p>
+  );
+
   if (!card) {
     return (
       <main className="container">
-        {backHref && backLabel && (
-          <p className="eyebrow" style={{ marginTop: "1rem" }}>
-            <Link href={backHref}>{backLabel}</Link>
-          </p>
-        )}
+        {backLink}
         <h1 className="page-title" style={{ marginTop: backHref ? 0 : "1rem" }}>{title}</h1>
         <p style={{ color: "var(--text-secondary)" }}>This deck has no cards yet.</p>
       </main>
@@ -66,11 +68,7 @@ export default function FlashcardDeck({
 
   return (
     <main className="container" style={{ maxWidth: "560px" }}>
-      {backHref && backLabel && (
-        <p className="eyebrow" style={{ marginTop: "1rem" }}>
-          <Link href={backHref}>{backLabel}</Link>
-        </p>
-      )}
+      {backLink}
       <div className="eyebrow" style={{ marginTop: backHref ? "0.5rem" : "1rem" }}>{title} · {index + 1}/{cards.length}</div>
       {/* aria-pressed + a live region: flipping swapped the text silently, so a
           screen reader announced nothing when the card turned over. */}
