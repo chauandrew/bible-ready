@@ -1,0 +1,1083 @@
+[
+  {
+    "id": "jn-e-c1-0",
+    "book": "john",
+    "chapter": 1,
+    "name": "The eternal Word becomes flesh",
+    "shortName": "The Word made flesh",
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "John opens his gospel identifying Jesus as the eternal Word, present with God from the beginning, who becomes flesh and dwells among humanity.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c1-1",
+    "book": "john",
+    "chapter": 1,
+    "name": "John the Baptist testifies he is only a voice preparing the way",
+    "shortName": "John testifies",
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "john-baptist"
+    ],
+    "order": 1,
+    "summary": "John the Baptist denies being the Christ and declares he is only a voice preparing the way for one greater than himself.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c1-2",
+    "book": "john",
+    "chapter": 1,
+    "name": "John the Baptist identifies Jesus as the Lamb of God",
+    "shortName": "The Lamb of God",
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "john-baptist",
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "Seeing Jesus approach, John the Baptist proclaims him the Lamb of God who takes away the sin of the world.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c1-3",
+    "book": "john",
+    "chapter": 1,
+    "name": "Andrew and Peter follow Jesus",
+    "shortName": "Andrew and Peter follow",
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "andrew",
+      "peter",
+      "jesus"
+    ],
+    "order": 3,
+    "summary": "Andrew leaves John the Baptist to follow Jesus and brings his brother Simon, whom Jesus renames Peter.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c1-4",
+    "book": "john",
+    "chapter": 1,
+    "name": "Philip and Nathanael become disciples",
+    "shortName": "Philip and Nathanael",
+    "citation": {
+      "book": "john",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "philip",
+      "nathanael",
+      "jesus"
+    ],
+    "order": 4,
+    "summary": "Jesus calls Philip directly, and Philip convinces the skeptical Nathanael after Jesus reveals he saw him under a fig tree.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c2-0",
+    "book": "john",
+    "chapter": 2,
+    "name": "Jesus turns water into wine at a wedding",
+    "shortName": "Water into wine",
+    "citation": {
+      "book": "john",
+      "chapter": 2
+    },
+    "place": "Cana",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "At his mother's request, Jesus turns six stone jars of water into wine at a wedding, his first public sign.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c2-1",
+    "book": "john",
+    "chapter": 2,
+    "name": "Jesus drives merchants from the temple courts",
+    "shortName": "Cleansing the temple",
+    "citation": {
+      "book": "john",
+      "chapter": 2
+    },
+    "place": "Jerusalem",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus overturns tables and drives out money changers and merchants from the temple courts, declaring it his Father's house.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c3-0",
+    "book": "john",
+    "chapter": 3,
+    "name": "Nicodemus visits Jesus by night",
+    "shortName": "Nicodemus visits Jesus",
+    "citation": {
+      "book": "john",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "nicodemus",
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "A Pharisee named Nicodemus comes to Jesus at night and is told that no one can see the kingdom of God without being born again.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c3-1",
+    "book": "john",
+    "chapter": 3,
+    "name": "John the Baptist declares that he must decrease",
+    "shortName": "John the Baptist decreases",
+    "citation": {
+      "book": "john",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "john-baptist",
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "As Jesus' following grows, John the Baptist tells his own disciples that Jesus must increase while he himself decreases.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c4-0",
+    "book": "john",
+    "chapter": 4,
+    "name": "Jesus offers a Samaritan woman living water",
+    "shortName": "The woman at the well",
+    "citation": {
+      "book": "john",
+      "chapter": 4
+    },
+    "place": "Jacob's well in Samaria",
+    "peopleIds": [
+      "jesus",
+      "samaritan-woman"
+    ],
+    "order": 0,
+    "summary": "Jesus asks a Samaritan woman for water and offers her living water, revealing he already knows her whole life story.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c4-1",
+    "book": "john",
+    "chapter": 4,
+    "name": "The Samaritan woman brings her town to Jesus",
+    "shortName": "Samaritans believe",
+    "citation": {
+      "book": "john",
+      "chapter": 4
+    },
+    "place": "Sychar",
+    "peopleIds": [
+      "jesus",
+      "samaritan-woman"
+    ],
+    "order": 1,
+    "summary": "The woman leaves her jar and tells the town about Jesus, and many Samaritans come out to hear him and believe.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c4-2",
+    "book": "john",
+    "chapter": 4,
+    "name": "Jesus heals an official's son from a distance",
+    "shortName": "The official's son healed",
+    "citation": {
+      "book": "john",
+      "chapter": 4
+    },
+    "place": "Capernaum",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "A royal official begs Jesus to heal his dying son, and the boy is healed the moment Jesus speaks the word.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c5-0",
+    "book": "john",
+    "chapter": 5,
+    "name": "Jesus heals a man who had been sick for thirty-eight years",
+    "shortName": "Healing at Bethesda",
+    "citation": {
+      "book": "john",
+      "chapter": 5
+    },
+    "place": "the pool of Bethesda",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus heals a man who has been unable to walk for thirty-eight years, on the Sabbath, simply by telling him to rise.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c5-1",
+    "book": "john",
+    "chapter": 5,
+    "name": "Jewish leaders accuse Jesus of blasphemy",
+    "shortName": "Accused of blasphemy",
+    "citation": {
+      "book": "john",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Religious leaders seek to kill Jesus for healing on the Sabbath and for calling God his own Father, making himself equal with God.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c6-0",
+    "book": "john",
+    "chapter": 6,
+    "name": "Jesus feeds five thousand people",
+    "shortName": "Feeding the five thousand",
+    "citation": {
+      "book": "john",
+      "chapter": 6
+    },
+    "place": "the Sea of Galilee",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus multiplies five loaves and two fish to feed a crowd of five thousand, with twelve baskets of food left over.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c6-1",
+    "book": "john",
+    "chapter": 6,
+    "name": "Jesus walks on the sea to his disciples",
+    "shortName": "Walking on water",
+    "citation": {
+      "book": "john",
+      "chapter": 6
+    },
+    "place": "the Sea of Galilee",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "During a storm at night, Jesus walks across the sea to reach his disciples' boat, and immediately they arrive at the shore.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c6-2",
+    "book": "john",
+    "chapter": 6,
+    "name": "Jesus teaches that he is the bread of life",
+    "shortName": "I am the bread of life",
+    "citation": {
+      "book": "john",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "After the crowd seeks him for more food, Jesus declares himself the bread of life and says whoever comes to him will never hunger.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c6-3",
+    "book": "john",
+    "chapter": 6,
+    "name": "Many disciples turn away from Jesus",
+    "shortName": "Disciples turn away",
+    "citation": {
+      "book": "john",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "jesus",
+      "peter"
+    ],
+    "order": 3,
+    "summary": "Jesus' hard teaching about eating his flesh and drinking his blood causes many disciples to leave, but Peter affirms the Twelve will stay.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c7-0",
+    "book": "john",
+    "chapter": 7,
+    "name": "Jesus teaches openly at the Feast of Booths",
+    "shortName": "Teaching at the feast",
+    "citation": {
+      "book": "john",
+      "chapter": 7
+    },
+    "place": "the temple in Jerusalem",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus goes up to Jerusalem for the Feast of Booths and teaches openly in the temple, dividing the crowd's opinion about him.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c7-1",
+    "book": "john",
+    "chapter": 7,
+    "name": "Officers sent to arrest Jesus return empty-handed",
+    "shortName": "Officers fail to arrest Jesus",
+    "citation": {
+      "book": "john",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Temple officers sent by the Pharisees to seize Jesus return without him, astonished, saying no one ever spoke the way he does.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c8-0",
+    "book": "john",
+    "chapter": 8,
+    "name": "Jesus forgives a woman caught in adultery",
+    "shortName": "The woman caught in adultery",
+    "citation": {
+      "book": "john",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Scribes and Pharisees bring a woman caught in adultery to Jesus, who tells the one without sin to cast the first stone.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c8-1",
+    "book": "john",
+    "chapter": 8,
+    "name": "Jesus declares that he is the light of the world",
+    "shortName": "I am the light of the world",
+    "citation": {
+      "book": "john",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Teaching in the temple, Jesus declares that whoever follows him as the light of the world will never walk in darkness.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c8-2",
+    "book": "john",
+    "chapter": 8,
+    "name": "Jesus tells his hearers the truth will set them free",
+    "shortName": "The truth will set you free",
+    "citation": {
+      "book": "john",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus tells the Jews who believed him that knowing the truth will set them free, provoking a dispute over Abraham's true children.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c9-0",
+    "book": "john",
+    "chapter": 9,
+    "name": "Jesus heals a man born blind",
+    "shortName": "The man born blind healed",
+    "citation": {
+      "book": "john",
+      "chapter": 9
+    },
+    "place": "the pool of Siloam",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus heals a man blind from birth by anointing his eyes with mud and sending him to wash in a nearby pool.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c9-1",
+    "book": "john",
+    "chapter": 9,
+    "name": "Pharisees interrogate and expel the healed man",
+    "shortName": "The healed man expelled",
+    "citation": {
+      "book": "john",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Pharisees refuse to believe the miracle, interrogate the man and his parents, and expel him from the synagogue for defending Jesus.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c10-0",
+    "book": "john",
+    "chapter": 10,
+    "name": "Jesus declares that he is the door for the sheep",
+    "shortName": "I am the door",
+    "citation": {
+      "book": "john",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus tells the Pharisees that he is the door, and whoever enters through him will be saved and find pasture.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c10-1",
+    "book": "john",
+    "chapter": 10,
+    "name": "Jesus declares that he is the good shepherd",
+    "shortName": "I am the good shepherd",
+    "citation": {
+      "book": "john",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus describes himself as the good shepherd who knows his sheep by name and lays down his life for them.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c10-2",
+    "book": "john",
+    "chapter": 10,
+    "name": "Jesus claims oneness with the Father at the Feast of Dedication",
+    "shortName": "One with the Father",
+    "citation": {
+      "book": "john",
+      "chapter": 10
+    },
+    "place": "the temple in Jerusalem",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "At the Feast of Dedication, Jesus claims that he and the Father are one, and the Jews try to stone him for blasphemy.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c11-0",
+    "book": "john",
+    "chapter": 11,
+    "name": "Jesus declares that he is the resurrection and the life",
+    "shortName": "I am the resurrection and the life",
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "jesus",
+      "martha"
+    ],
+    "order": 0,
+    "summary": "Before raising Lazarus, Jesus tells the grieving Martha that he himself is the resurrection and the life for all who believe.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c11-1",
+    "book": "john",
+    "chapter": 11,
+    "name": "Martha confesses Jesus as the Christ",
+    "shortName": "Martha's confession",
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "jesus",
+      "martha"
+    ],
+    "order": 1,
+    "summary": "Martha tells Jesus she believes he is the Christ, the Son of God who was to come into the world.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c11-2",
+    "book": "john",
+    "chapter": 11,
+    "name": "Jesus raises Lazarus from the dead",
+    "shortName": "Raising Lazarus",
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    },
+    "place": "Bethany",
+    "peopleIds": [
+      "jesus",
+      "lazarus",
+      "martha",
+      "mary-bethany",
+      "thomas"
+    ],
+    "order": 2,
+    "summary": "Four days after Lazarus dies, Jesus calls him out of the tomb alive, the greatest of his signs in John's gospel.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c11-3",
+    "book": "john",
+    "chapter": 11,
+    "name": "Caiaphas prophesies that Jesus must die for the nation",
+    "shortName": "Caiaphas' prophecy",
+    "citation": {
+      "book": "john",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "caiaphas",
+      "jesus"
+    ],
+    "order": 3,
+    "summary": "Alarmed by the raising of Lazarus, the chief priests plot Jesus' death, and Caiaphas unknowingly prophesies he will die for the nation.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c12-0",
+    "book": "john",
+    "chapter": 12,
+    "name": "Mary anoints Jesus' feet with costly perfume",
+    "shortName": "Mary anoints Jesus",
+    "citation": {
+      "book": "john",
+      "chapter": 12
+    },
+    "place": "Bethany",
+    "peopleIds": [
+      "jesus",
+      "mary-bethany",
+      "judas"
+    ],
+    "order": 0,
+    "summary": "Mary anoints Jesus' feet with expensive perfume six days before Passover, and Judas Iscariot objects to the costly gift.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c12-1",
+    "book": "john",
+    "chapter": 12,
+    "name": "Jesus rides into the city on a donkey to a crowd's acclaim",
+    "shortName": "The triumphal entry",
+    "citation": {
+      "book": "john",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Crowds wave palm branches and hail Jesus as king as he rides in on a young donkey, fulfilling ancient prophecy.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c12-2",
+    "book": "john",
+    "chapter": 12,
+    "name": "Greeks seek Jesus and he predicts his death",
+    "shortName": "Greeks seek Jesus",
+    "citation": {
+      "book": "john",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "Greeks visiting the feast ask to see Jesus, prompting him to describe his coming death as a grain of wheat falling to bear fruit.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c13-0",
+    "book": "john",
+    "chapter": 13,
+    "name": "Jesus washes his disciples' feet",
+    "shortName": "Washing feet",
+    "citation": {
+      "book": "john",
+      "chapter": 13
+    },
+    "place": "the upper room",
+    "peopleIds": [
+      "jesus",
+      "peter"
+    ],
+    "order": 0,
+    "summary": "At the last supper, Jesus washes his disciples' feet as an example of humble service, despite Peter's initial objection.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c13-1",
+    "book": "john",
+    "chapter": 13,
+    "name": "Jesus gives the new commandment to love one another",
+    "shortName": "The new commandment",
+    "citation": {
+      "book": "john",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus tells his disciples that love for one another is the mark by which everyone will know they belong to him.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c13-2",
+    "book": "john",
+    "chapter": 13,
+    "name": "Jesus predicts Judas' betrayal and Peter's denial",
+    "shortName": "Betrayal and denial predicted",
+    "citation": {
+      "book": "john",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "jesus",
+      "judas",
+      "peter",
+      "beloved-disciple"
+    ],
+    "order": 2,
+    "summary": "Jesus identifies Judas as his betrayer at the table and tells Peter he will deny knowing him three times before dawn.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c14-0",
+    "book": "john",
+    "chapter": 14,
+    "name": "Jesus declares that he is the way, the truth, and the life",
+    "shortName": "I am the way, the truth, and the life",
+    "citation": {
+      "book": "john",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "jesus",
+      "thomas"
+    ],
+    "order": 0,
+    "summary": "Jesus comforts his troubled disciples, telling Thomas that he is the way, the truth, and the life, the only path to the Father.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c14-1",
+    "book": "john",
+    "chapter": 14,
+    "name": "Jesus promises the Holy Spirit as a helper",
+    "shortName": "The Spirit promised",
+    "citation": {
+      "book": "john",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus promises to send the Holy Spirit to teach his disciples and remind them of everything he has told them.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c15-0",
+    "book": "john",
+    "chapter": 15,
+    "name": "Jesus declares that he is the true vine",
+    "shortName": "I am the true vine",
+    "citation": {
+      "book": "john",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus teaches that he is the true vine and his disciples are the branches who must remain in him to bear fruit.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c15-1",
+    "book": "john",
+    "chapter": 15,
+    "name": "Jesus warns the disciples that the world will hate them",
+    "shortName": "The world's hatred",
+    "citation": {
+      "book": "john",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus warns his disciples that the world will hate them just as it hated him, since a servant is not greater than his master.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c16-0",
+    "book": "john",
+    "chapter": 16,
+    "name": "Jesus promises the Spirit will guide the disciples into truth",
+    "shortName": "The Spirit of truth",
+    "citation": {
+      "book": "john",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Jesus tells his disciples it is better for him to go so the Helper can come, who will guide them into all truth.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c16-1",
+    "book": "john",
+    "chapter": 16,
+    "name": "Jesus promises their sorrow will turn to joy",
+    "shortName": "Sorrow turned to joy",
+    "citation": {
+      "book": "john",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus compares the disciples' coming grief to a woman's labor pains, promising their sorrow will turn into lasting joy.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c17-0",
+    "book": "john",
+    "chapter": 17,
+    "name": "Jesus prays for his own glorification",
+    "shortName": "The high priestly prayer",
+    "citation": {
+      "book": "john",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 0,
+    "summary": "Before his arrest, Jesus lifts his eyes to heaven and prays that the Father will glorify him as he has glorified the Father.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c17-1",
+    "book": "john",
+    "chapter": 17,
+    "name": "Jesus prays for the unity of his disciples and future believers",
+    "shortName": "Jesus prays for unity",
+    "citation": {
+      "book": "john",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus prays for his disciples' protection from the world and for the unity of everyone who will believe through their message.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c18-0",
+    "book": "john",
+    "chapter": 18,
+    "name": "Judas betrays Jesus to arresting soldiers",
+    "shortName": "Judas betrays Jesus",
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    },
+    "place": "the garden across the Kidron Valley",
+    "peopleIds": [
+      "jesus",
+      "judas"
+    ],
+    "order": 0,
+    "summary": "Judas leads a detachment of soldiers and officers to seize Jesus, and Peter cuts off a servant's ear with his sword.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c18-1",
+    "book": "john",
+    "chapter": 18,
+    "name": "Jesus is questioned before the high priest Caiaphas",
+    "shortName": "Jesus before Caiaphas",
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "jesus",
+      "caiaphas"
+    ],
+    "order": 1,
+    "summary": "Jesus is bound and brought before Caiaphas the high priest for questioning about his teaching and his disciples.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c18-2",
+    "book": "john",
+    "chapter": 18,
+    "name": "Peter denies knowing Jesus three times",
+    "shortName": "Peter's denials",
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    },
+    "place": "the high priest's courtyard",
+    "peopleIds": [
+      "peter"
+    ],
+    "order": 2,
+    "summary": "Warming himself by a charcoal fire, Peter denies knowing Jesus three times before the rooster crows.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c18-3",
+    "book": "john",
+    "chapter": 18,
+    "name": "Pilate questions Jesus and the crowd chooses Barabbas",
+    "shortName": "Pilate and Barabbas",
+    "citation": {
+      "book": "john",
+      "chapter": 18
+    },
+    "place": "the governor's headquarters",
+    "peopleIds": [
+      "jesus",
+      "pilate",
+      "barabbas"
+    ],
+    "order": 3,
+    "summary": "Pilate finds no guilt in Jesus but offers to release a prisoner for Passover, and the crowd demands Barabbas instead.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c19-0",
+    "book": "john",
+    "chapter": 19,
+    "name": "Pilate hands Jesus over to be crucified",
+    "shortName": "Jesus condemned",
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "jesus",
+      "pilate"
+    ],
+    "order": 0,
+    "summary": "After having Jesus flogged and mocked with a crown of thorns, Pilate presents him to the crowd and hands him over to be crucified.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c19-1",
+    "book": "john",
+    "chapter": 19,
+    "name": "Jesus is crucified between two criminals",
+    "shortName": "The crucifixion",
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    },
+    "place": "Golgotha",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus is crucified outside the city at a place called Golgotha, with soldiers casting lots for his garment as prophecy foretold.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c19-2",
+    "book": "john",
+    "chapter": 19,
+    "name": "Jesus entrusts his mother to the beloved disciple",
+    "shortName": "Jesus provides for his mother",
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "jesus",
+      "beloved-disciple"
+    ],
+    "order": 2,
+    "summary": "From the cross, Jesus sees his mother and the disciple he loved standing nearby and entrusts them to care for one another.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c19-3",
+    "book": "john",
+    "chapter": 19,
+    "name": "Jesus dies and Joseph of Arimathea buries him",
+    "shortName": "Jesus is buried",
+    "citation": {
+      "book": "john",
+      "chapter": 19
+    },
+    "place": "a new tomb in a garden",
+    "peopleIds": [
+      "jesus",
+      "joseph-arimathea",
+      "nicodemus"
+    ],
+    "order": 3,
+    "summary": "After Jesus dies and a soldier pierces his side, Joseph of Arimathea and Nicodemus wrap his body and lay it in a new tomb.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c20-0",
+    "book": "john",
+    "chapter": 20,
+    "name": "Mary Magdalene discovers the stone rolled away",
+    "shortName": "The empty tomb",
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    },
+    "place": "the garden tomb",
+    "peopleIds": [
+      "mary-magdalene",
+      "peter",
+      "beloved-disciple"
+    ],
+    "order": 0,
+    "summary": "Mary Magdalene finds the stone rolled away and runs to tell Peter and the beloved disciple, who race to see the empty tomb.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c20-1",
+    "book": "john",
+    "chapter": 20,
+    "name": "The risen Jesus appears to Mary Magdalene",
+    "shortName": "Jesus appears to Mary",
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "jesus",
+      "mary-magdalene"
+    ],
+    "order": 1,
+    "summary": "Weeping outside the tomb, Mary Magdalene mistakes the risen Jesus for a gardener until he speaks her name.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c20-2",
+    "book": "john",
+    "chapter": 20,
+    "name": "Jesus appears to the disciples and breathes the Spirit on them",
+    "shortName": "Jesus appears to the disciples",
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    },
+    "place": "the locked room",
+    "peopleIds": [
+      "jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus appears among his disciples behind locked doors, shows them his wounds, and breathes on them, telling them to receive the Holy Spirit.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c20-3",
+    "book": "john",
+    "chapter": 20,
+    "name": "Thomas doubts the resurrection and then believes",
+    "shortName": "Doubting Thomas",
+    "citation": {
+      "book": "john",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "jesus",
+      "thomas"
+    ],
+    "order": 3,
+    "summary": "A week later Jesus appears again and invites the doubting Thomas to touch his wounds, prompting Thomas to confess him as Lord and God.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c21-0",
+    "book": "john",
+    "chapter": 21,
+    "name": "Jesus provides a miraculous catch of fish",
+    "shortName": "The miraculous catch",
+    "citation": {
+      "book": "john",
+      "chapter": 21
+    },
+    "place": "the Sea of Tiberias",
+    "peopleIds": [
+      "jesus",
+      "peter",
+      "thomas"
+    ],
+    "order": 0,
+    "summary": "Jesus appears by the sea and directs the disciples to a catch of fish so large their net nearly breaks.",
+    "notable": true
+  },
+  {
+    "id": "jn-e-c21-1",
+    "book": "john",
+    "chapter": 21,
+    "name": "Jesus restores Peter and tells him to feed his sheep",
+    "shortName": "Jesus restores Peter",
+    "citation": {
+      "book": "john",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "jesus",
+      "peter"
+    ],
+    "order": 1,
+    "summary": "Jesus asks Peter three times whether he loves him, restoring him after his denials and commissioning him to care for his flock.",
+    "notable": true
+  }
+]

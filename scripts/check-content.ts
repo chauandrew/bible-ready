@@ -23,6 +23,7 @@ const VERSE_COUNTS: Record<string, number> = {
   genesis: 1533,
   exodus: 1213,
   psalms: 2461,
+  john: 879,
 };
 const VERSE_BUDGET_PCT = 0.25;
 /** Crossway's ESV permission is capped in absolute verses across the whole work,

@@ -189,15 +189,14 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   of this kind of curation flag, at the chapter level. Either give `notable`
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
-- **Multi-book UI wiring**: Genesis and Exodus each have a full section
-  (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards, print),
-  gated by `wiredBookIds` in `lib/content.ts`. Psalms' content is fully
-  authored and feeds the whole-Bible / multi-book quiz and flashcard modes
-  (`/quiz/bible`, `/study/flashcards/bible`), but doesn't have its own
-  section yet —
-  `coverageDepth: "selection"` needs page treatment a `"narrative"` book
-  doesn't (thematic, non-contiguous arcs; no per-chapter "next" that means
-  anything). Add it to `wiredBookIds` once that page treatment exists.
+- **Multi-book UI wiring**: Genesis, Exodus, Psalms, and John are all in
+  `wiredBookIds` (`lib/content.ts`) and each has a full section
+  (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards, print).
+  Adding a book to `wiredBookIds` alone isn't enough — `lib/content.ts` also
+  needs a static import + `BookContentSchema.parse` + `booksContent` entry
+  for it (see the block for any existing book), and `app/page.tsx`'s
+  `available` list is hand-maintained, not derived from `wiredBookIds`, so a
+  new book needs a card added there too.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 - **Question of the Day (`/qotd`)** has one deterministic daily question

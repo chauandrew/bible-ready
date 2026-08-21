@@ -1,0 +1,16 @@
+{
+  "id": "john",
+  "name": "John",
+  "chapterCount": 21,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "jn-arc-word",
+    "jn-arc-encounters",
+    "jn-arc-opposition",
+    "jn-arc-light-shepherd",
+    "jn-arc-lazarus",
+    "jn-arc-upper-room",
+    "jn-arc-passion",
+    "jn-arc-resurrection"
+  ]
+}

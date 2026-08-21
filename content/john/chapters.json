@@ -1,0 +1,775 @@
+[
+  {
+    "id": "jn-ch-1",
+    "book": "john",
+    "number": 1,
+    "title": "The Word Made Flesh",
+    "summary": "John identifies Jesus as the eternal Word who becomes flesh, records John the Baptist's testimony about the Lamb of God, and narrates the calling of the first disciples.",
+    "arcId": "jn-arc-word",
+    "eventIds": [
+      "jn-e-c1-0",
+      "jn-e-c1-1",
+      "jn-e-c1-2",
+      "jn-e-c1-3",
+      "jn-e-c1-4"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "word",
+          "jesus"
+        ],
+        [
+          "baptist",
+          "testify",
+          "testifies",
+          "lamb"
+        ],
+        [
+          "disciples",
+          "andrew",
+          "peter",
+          "philip",
+          "nathanael",
+          "follow"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-2",
+    "book": "john",
+    "number": 2,
+    "title": "The Wedding at Cana",
+    "summary": "Jesus performs his first sign by turning water into wine at a wedding in Cana, then travels to Jerusalem and drives the money changers and merchants out of the temple.",
+    "arcId": "jn-arc-word",
+    "eventIds": [
+      "jn-e-c2-0",
+      "jn-e-c2-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "wine",
+          "water",
+          "wedding",
+          "sign",
+          "temple",
+          "cleanse",
+          "cleanses",
+          "drives"
+        ],
+        [
+          "cana",
+          "jerusalem"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-3",
+    "book": "john",
+    "number": 3,
+    "title": "Nicodemus",
+    "summary": "A Pharisee named Nicodemus visits Jesus by night to ask about the kingdom of God, and Jesus tells him he must be born again, while John the Baptist testifies that Jesus must increase.",
+    "arcId": "jn-arc-encounters",
+    "eventIds": [
+      "jn-e-c3-0",
+      "jn-e-c3-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "nicodemus",
+          "jesus"
+        ],
+        [
+          "born again",
+          "birth",
+          "spirit",
+          "kingdom"
+        ],
+        [
+          "night",
+          "pharisee",
+          "baptist",
+          "increase",
+          "decrease"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-4",
+    "book": "john",
+    "number": 4,
+    "title": "The Samaritan Woman",
+    "summary": "Jesus offers a Samaritan woman living water at a well, leading her whole town to believe in him, and then heals a royal official's dying son from a distance.",
+    "arcId": "jn-arc-encounters",
+    "eventIds": [
+      "jn-e-c4-0",
+      "jn-e-c4-1",
+      "jn-e-c4-2"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "samaritan",
+          "woman",
+          "well"
+        ],
+        [
+          "living water",
+          "believe",
+          "town"
+        ],
+        [
+          "official",
+          "son",
+          "heal",
+          "heals",
+          "capernaum"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-5",
+    "book": "john",
+    "number": 5,
+    "title": "The Pool of Bethesda",
+    "summary": "Jesus heals a man who had been unable to walk for thirty-eight years at the pool of Bethesda on the Sabbath, prompting religious leaders to accuse him of blasphemy.",
+    "arcId": "jn-arc-opposition",
+    "eventIds": [
+      "jn-e-c5-0",
+      "jn-e-c5-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "heal",
+          "heals",
+          "pool",
+          "bethesda",
+          "sabbath",
+          "walk"
+        ],
+        [
+          "blasphemy",
+          "father",
+          "equal",
+          "leaders",
+          "accuse"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-6",
+    "book": "john",
+    "number": 6,
+    "title": "Feeding the Five Thousand",
+    "summary": "Jesus feeds five thousand people with five loaves and two fish, walks on the sea to his disciples, and teaches that he is the bread of life, causing many followers to leave him.",
+    "arcId": "jn-arc-opposition",
+    "eventIds": [
+      "jn-e-c6-0",
+      "jn-e-c6-1",
+      "jn-e-c6-2",
+      "jn-e-c6-3"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "feed",
+          "feeds",
+          "loaves",
+          "fish",
+          "five thousand",
+          "walk",
+          "sea"
+        ],
+        [
+          "bread of life",
+          "disciples",
+          "leave",
+          "turn away"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-7",
+    "book": "john",
+    "number": 7,
+    "title": "The Feast of Booths",
+    "summary": "Jesus goes up to Jerusalem for the Feast of Booths and teaches openly in the temple, dividing opinion about him so sharply that officers sent to arrest him return empty-handed.",
+    "arcId": "jn-arc-opposition",
+    "eventIds": [
+      "jn-e-c7-0",
+      "jn-e-c7-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "feast",
+          "booths",
+          "teach",
+          "teaches",
+          "temple",
+          "jerusalem"
+        ],
+        [
+          "officers",
+          "arrest",
+          "divide",
+          "divided",
+          "opinion"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-8",
+    "book": "john",
+    "number": 8,
+    "title": "The Woman Caught in Adultery",
+    "summary": "Jesus forgives a woman caught in adultery, tells the crowd that whoever is without sin should cast the first stone, and declares himself the light of the world.",
+    "arcId": "jn-arc-light-shepherd",
+    "eventIds": [
+      "jn-e-c8-0",
+      "jn-e-c8-1",
+      "jn-e-c8-2"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "woman",
+          "adultery"
+        ],
+        [
+          "stone",
+          "sin",
+          "forgive",
+          "forgives",
+          "condemn"
+        ],
+        [
+          "light of the world",
+          "truth",
+          "free",
+          "jesus"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-9",
+    "book": "john",
+    "number": 9,
+    "title": "The Man Born Blind",
+    "summary": "Jesus heals a man born blind by anointing his eyes with mud and sending him to wash, and Pharisees who refuse to believe the miracle expel the man from the synagogue.",
+    "arcId": "jn-arc-light-shepherd",
+    "eventIds": [
+      "jn-e-c9-0",
+      "jn-e-c9-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "blind",
+          "man"
+        ],
+        [
+          "heal",
+          "heals",
+          "mud",
+          "wash",
+          "sight",
+          "see"
+        ],
+        [
+          "pharisees",
+          "synagogue",
+          "expel",
+          "interrogate"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-10",
+    "book": "john",
+    "number": 10,
+    "title": "The Good Shepherd",
+    "summary": "Jesus describes himself as the door for the sheep and the good shepherd who lays down his life for them, then claims oneness with the Father at the Feast of Dedication.",
+    "arcId": "jn-arc-light-shepherd",
+    "eventIds": [
+      "jn-e-c10-0",
+      "jn-e-c10-1",
+      "jn-e-c10-2"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "shepherd",
+          "sheep",
+          "door",
+          "lay down",
+          "life"
+        ],
+        [
+          "father",
+          "one",
+          "dedication",
+          "stone",
+          "blasphemy"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-11",
+    "book": "john",
+    "number": 11,
+    "title": "The Raising of Lazarus",
+    "summary": "Jesus tells the grieving Martha that he is the resurrection and the life, then calls his friend Lazarus out of the tomb four days after his death, prompting the leaders to plot his own death.",
+    "arcId": "jn-arc-lazarus",
+    "eventIds": [
+      "jn-e-c11-0",
+      "jn-e-c11-1",
+      "jn-e-c11-2",
+      "jn-e-c11-3"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "lazarus",
+          "jesus"
+        ],
+        [
+          "resurrection",
+          "life",
+          "raise",
+          "raises",
+          "tomb",
+          "dead"
+        ],
+        [
+          "martha",
+          "caiaphas",
+          "plot",
+          "prophesy",
+          "prophesies"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-12",
+    "book": "john",
+    "number": 12,
+    "title": "The Triumphal Entry",
+    "summary": "Mary anoints Jesus' feet with costly perfume at Bethany, crowds hail him as king when he rides into the city on a donkey, and Jesus predicts his coming death to visiting Greeks.",
+    "arcId": "jn-arc-lazarus",
+    "eventIds": [
+      "jn-e-c12-0",
+      "jn-e-c12-1",
+      "jn-e-c12-2"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "mary",
+          "anoint",
+          "anoints",
+          "perfume",
+          "bethany"
+        ],
+        [
+          "donkey",
+          "crowd",
+          "king",
+          "palm",
+          "hail"
+        ],
+        [
+          "greeks",
+          "death",
+          "grain",
+          "wheat",
+          "jesus"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-13",
+    "book": "john",
+    "number": 13,
+    "title": "Jesus Washes the Disciples' Feet",
+    "summary": "At the last supper Jesus washes his disciples' feet as an example of humble service, gives them a new commandment to love one another, and predicts Judas' betrayal and Peter's denial.",
+    "arcId": "jn-arc-upper-room",
+    "eventIds": [
+      "jn-e-c13-0",
+      "jn-e-c13-1",
+      "jn-e-c13-2"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "feet",
+          "wash",
+          "washes"
+        ],
+        [
+          "commandment",
+          "love",
+          "one another"
+        ],
+        [
+          "judas",
+          "betray",
+          "betrays",
+          "peter",
+          "deny",
+          "denies"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-14",
+    "book": "john",
+    "number": 14,
+    "title": "The Way, the Truth, and the Life",
+    "summary": "Jesus comforts his troubled disciples by telling Thomas that he is the way, the truth, and the life, and promises to send the Holy Spirit to teach and remind them of all he said.",
+    "arcId": "jn-arc-upper-room",
+    "eventIds": [
+      "jn-e-c14-0",
+      "jn-e-c14-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "thomas"
+        ],
+        [
+          "way",
+          "truth",
+          "life",
+          "father"
+        ],
+        [
+          "spirit",
+          "helper",
+          "teach",
+          "remind",
+          "comfort"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-15",
+    "book": "john",
+    "number": 15,
+    "title": "The True Vine",
+    "summary": "Jesus describes himself as the true vine and his disciples as the branches who must remain in him to bear fruit, then warns them that the world will hate them as it hated him.",
+    "arcId": "jn-arc-upper-room",
+    "eventIds": [
+      "jn-e-c15-0",
+      "jn-e-c15-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "vine",
+          "branches",
+          "fruit",
+          "remain",
+          "abide"
+        ],
+        [
+          "world",
+          "hate",
+          "hates",
+          "servant",
+          "master"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-16",
+    "book": "john",
+    "number": 16,
+    "title": "The Promise of the Holy Spirit",
+    "summary": "Jesus tells his disciples it is better for him to go away so the Spirit of truth can come, and promises that their present sorrow will turn into lasting joy.",
+    "arcId": "jn-arc-upper-room",
+    "eventIds": [
+      "jn-e-c16-0",
+      "jn-e-c16-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "spirit"
+        ],
+        [
+          "truth",
+          "helper",
+          "guide",
+          "guides"
+        ],
+        [
+          "sorrow",
+          "joy",
+          "grief",
+          "labor",
+          "pain"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-17",
+    "book": "john",
+    "number": 17,
+    "title": "Jesus' High Priestly Prayer",
+    "summary": "Before his arrest Jesus prays aloud, asking the Father to glorify him, to protect his disciples from the world, and to unite everyone who will believe through their message.",
+    "arcId": "jn-arc-upper-room",
+    "eventIds": [
+      "jn-e-c17-0",
+      "jn-e-c17-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "pray",
+          "prays",
+          "prayer"
+        ],
+        [
+          "glorify",
+          "father",
+          "protect",
+          "protection"
+        ],
+        [
+          "disciples",
+          "believers",
+          "unity",
+          "one"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-18",
+    "book": "john",
+    "number": 18,
+    "title": "The Arrest of Jesus",
+    "summary": "Judas leads soldiers to arrest Jesus in a garden, Jesus is questioned before the high priest Caiaphas while Peter denies him three times, and Pilate offers to release Barabbas instead of Jesus.",
+    "arcId": "jn-arc-passion",
+    "eventIds": [
+      "jn-e-c18-0",
+      "jn-e-c18-1",
+      "jn-e-c18-2",
+      "jn-e-c18-3"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "judas",
+          "betray",
+          "betrays",
+          "arrest",
+          "garden",
+          "soldiers"
+        ],
+        [
+          "peter",
+          "deny",
+          "denies",
+          "pilate",
+          "barabbas",
+          "caiaphas"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-19",
+    "book": "john",
+    "number": 19,
+    "title": "The Crucifixion",
+    "summary": "Pilate hands Jesus over to be crucified, Jesus is crucified between two criminals and entrusts his mother to the beloved disciple, and Joseph of Arimathea buries his body in a new tomb.",
+    "arcId": "jn-arc-passion",
+    "eventIds": [
+      "jn-e-c19-0",
+      "jn-e-c19-1",
+      "jn-e-c19-2",
+      "jn-e-c19-3"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus"
+        ],
+        [
+          "crucify",
+          "crucified",
+          "cross",
+          "golgotha",
+          "die",
+          "dies"
+        ],
+        [
+          "pilate",
+          "mother",
+          "joseph",
+          "bury",
+          "buries",
+          "tomb"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-20",
+    "book": "john",
+    "number": 20,
+    "title": "The Empty Tomb",
+    "summary": "Mary Magdalene finds the tomb empty and later meets the risen Jesus, who appears to the gathered disciples and then invites the doubting Thomas to touch his wounds and believe.",
+    "arcId": "jn-arc-resurrection",
+    "eventIds": [
+      "jn-e-c20-0",
+      "jn-e-c20-1",
+      "jn-e-c20-2",
+      "jn-e-c20-3"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "tomb",
+          "empty"
+        ],
+        [
+          "mary",
+          "magdalene",
+          "appear",
+          "appears",
+          "risen"
+        ],
+        [
+          "thomas",
+          "doubt",
+          "doubts",
+          "believe",
+          "believes"
+        ]
+      ],
+      "minGroups": 2
+    }
+  },
+  {
+    "id": "jn-ch-21",
+    "book": "john",
+    "number": 21,
+    "title": "Jesus Restores Peter",
+    "summary": "The risen Jesus appears to the disciples by the Sea of Tiberias, provides a miraculous catch of fish, and restores Peter with three questions about love before commissioning him to feed his sheep.",
+    "arcId": "jn-arc-resurrection",
+    "eventIds": [
+      "jn-e-c21-0",
+      "jn-e-c21-1"
+    ],
+    "quizWorthy": true,
+    "freeResponse": {
+      "keywordGroups": [
+        [
+          "jesus",
+          "peter"
+        ],
+        [
+          "fish",
+          "catch",
+          "sea",
+          "tiberias"
+        ],
+        [
+          "restore",
+          "restores",
+          "love",
+          "sheep",
+          "feed"
+        ]
+      ],
+      "minGroups": 2
+    }
+  }
+]

@@ -22,6 +22,14 @@ import psalmsEventsJson from "@/content/psalms/events.json";
 import psalmsQuotesJson from "@/content/psalms/quotes.json";
 import psalmsQuestionsJson from "@/content/psalms/questions.json";
 import psalmsDecksJson from "@/content/psalms/decks.json";
+import johnBookJson from "@/content/john/book.json";
+import johnArcsJson from "@/content/john/arcs.json";
+import johnChaptersJson from "@/content/john/chapters.json";
+import johnPeopleJson from "@/content/john/people.json";
+import johnEventsJson from "@/content/john/events.json";
+import johnQuotesJson from "@/content/john/quotes.json";
+import johnQuestionsJson from "@/content/john/questions.json";
+import johnDecksJson from "@/content/john/decks.json";
 import {
   BookContentSchema,
   type Arc,
@@ -73,11 +81,23 @@ const psalmsContent: BookContent = BookContentSchema.parse({
   decks: psalmsDecksJson,
 });
 
+const johnContent: BookContent = BookContentSchema.parse({
+  book: johnBookJson,
+  arcs: johnArcsJson,
+  chapters: johnChaptersJson,
+  people: johnPeopleJson,
+  events: johnEventsJson,
+  quotes: johnQuotesJson,
+  questions: johnQuestionsJson,
+  decks: johnDecksJson,
+});
+
 /** Every loaded book's full content bundle, keyed by book id. */
 const booksContent: Record<string, BookContent> = {
   [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,
   [psalmsContent.book.id]: psalmsContent,
+  [johnContent.book.id]: johnContent,
 };
 
 /** Book metadata for every loaded book — used by the "which books do you want to
@@ -86,13 +106,12 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
 
 /**
  * Books with a full section of their own (home page, chapters, people, quiz,
- * flashcards, print) — see `app/[book]/*`. Psalms' content is fully
- * authored and already feeds the whole-Bible / multi-book modes above, but as a
- * "selection" book (a curated, non-contiguous set of psalms — see DESIGN.md) it
- * needs page treatment a "narrative" book doesn't, so it isn't wired up as its
- * own section yet.
+ * flashcards, print) — see `app/[book]/*`. Psalms is a "selection" book (a
+ * curated, non-contiguous set of psalms — see DESIGN.md): its pages handle
+ * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
+ * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
