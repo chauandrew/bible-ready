@@ -176,18 +176,26 @@ a { color: var(--accent-text); }
 }
 
 /* Home page only — a bit more room than a regular page-title, since this is
-   the one headline moment on the site. */
+   the one headline moment on the site. The Question of the Day card sits
+   inside the hero itself (not a separate section below) so the daily-return
+   hook is visible in the same glance as the pitch. */
 .hero {
   padding: 1.5rem 0 0.25rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+@media (max-width: 720px) {
+  .hero-grid { grid-template-columns: 1fr; }
 }
 
 .hero-title {
   font-size: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
   margin-bottom: 0.7rem;
-}
-
-.hero-highlight {
-  background: linear-gradient(transparent 60%, color-mix(in srgb, var(--accent) 30%, transparent) 60%);
 }
 
 .section-title {
@@ -228,19 +236,27 @@ a.card:active {
 }
 
 /* Question of the Day is the one daily-return feature on the site, so it's
-   styled as a solid CTA instead of blending into every other plain card. */
+   styled as a solid CTA and lives inside the hero grid, not a plain card
+   in the regular card flow. */
 a.card.qotd-cta {
   background: var(--accent);
   border-color: var(--accent);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-  text-align: center;
-  padding: 0.75rem 1.4rem;
-  max-width: 340px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  padding: 1.3rem 1.4rem;
 }
 a.card.qotd-cta:hover {
   border-color: var(--accent);
   filter: brightness(1.06);
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+}
+.qotd-cta-eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fffdf8;
+  opacity: 0.85;
+  margin-bottom: 0.4rem;
 }
 .qotd-cta .qotd-cta-title,
 .qotd-cta .qotd-cta-desc {

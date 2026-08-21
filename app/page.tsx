@@ -17,17 +17,14 @@ const combine = [
 export default function Home() {
   return (
     <main className="container-wide">
-      <div className="hero">
-        <h1 className="page-title hero-title">
-          Get Bible <span className="hero-highlight">Ready</span>
-        </h1>
-        <p className="page-lede">Study the Bible with quizzes, flashcards, and book overviews</p>
-      </div>
-
-      <h2 className="section-title">Question of the Day</h2>
-      <div className="grid-cards" style={{ marginBottom: "0.5rem" }}>
+      <div className="hero hero-grid">
+        <div>
+          <h1 className="page-title hero-title">Get Bible Ready</h1>
+          <p className="page-lede">Study the Bible with quizzes, flashcards, and book overviews</p>
+        </div>
         <Link href="/qotd" className="card qotd-cta">
-          <div className="qotd-cta-title" style={{ fontWeight: 600 }}>Play today&apos;s question</div>
+          <div className="qotd-cta-eyebrow">Question of the day</div>
+          <div className="qotd-cta-title" style={{ fontWeight: 700 }}>Play today&apos;s question</div>
           <div className="qotd-cta-desc" style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", marginTop: "0.2rem" }}>
             One shared question every day. Answer fast.
           </div>
