@@ -13,5 +13,5 @@ export default async function PrintModulePage({ params }: { params: Promise<{ bo
   const resolved = dataForModuleInBook(bookId, module);
   if (!resolved) notFound();
   const label = module === "all" ? book.name : arcInBook(bookId, module)?.name ?? module;
-  return <PrintSheet moduleLabel={label} data={resolved.data} questions={resolved.questions} />;
+  return <PrintSheet moduleLabel={label} data={resolved.data} questions={resolved.questions} backHref={`/${bookId}`} backLabel={book.name} />;
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { arcsForBook, chaptersForArcInBook, wiredBookIds, bookMeta } from "@/lib/content";
+import BookBreadcrumb from "@/components/BookBreadcrumb";
 
 export function generateStaticParams() {
   return wiredBookIds.map((book) => ({ book }));
@@ -14,7 +15,8 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
 
   return (
     <main className="container-wide">
-      <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Chapters</h1>
+      <BookBreadcrumb bookId={bookId} bookName={book.name} />
+      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>Chapters</h1>
       {arcs.map((arc) => {
         const chapters = chaptersForArcInBook(bookId, arc.id);
         return (

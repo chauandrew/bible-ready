@@ -35,7 +35,8 @@ export default async function ChapterPage({ params }: { params: Promise<{ book: 
   return (
     <main className="container" style={{ maxWidth: "760px" }}>
       <p className="eyebrow" style={{ marginTop: "1rem" }}>
-        {arc ? <Link href={`/${bookId}/study/arcs/${arc.id}`}>{arc.name}</Link> : null}
+        <Link href={`/${bookId}`}>{book.name}</Link>
+        {arc && <> / <Link href={`/${bookId}/study/arcs/${arc.id}`}>{arc.name}</Link></>}
       </p>
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.85rem)" }}>
         {book.name} {chapter.number}

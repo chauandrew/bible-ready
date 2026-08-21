@@ -18,12 +18,14 @@ export default async function DeckPage({ params }: { params: Promise<{ book: str
   const book = bookMeta(bookId);
   if (!book || !wiredBookIds.includes(bookId)) notFound();
 
+  const backHref = `/${bookId}`;
+
   if (deckId === ENTIRE_BOOK_DECK_ID) {
     const cards = shuffle(cardsForBooks([bookId]), mulberry32(hashSeed(`entire-book:${bookId}`)));
-    return <FlashcardDeck title={`All of ${book.name}`} cards={cards} />;
+    return <FlashcardDeck title={`All of ${book.name}`} cards={cards} backHref={backHref} backLabel={book.name} />;
   }
 
   const deck = deckInBook(bookId, deckId);
   if (!deck) notFound();
-  return <FlashcardDeck title={deck.name} cards={cardsForDeck(bookId, deckId)} />;
+  return <FlashcardDeck title={deck.name} cards={cardsForDeck(bookId, deckId)} backHref={backHref} backLabel={book.name} />;
 }

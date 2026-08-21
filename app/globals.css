@@ -198,6 +198,13 @@ a { color: var(--accent-text); }
   flex-direction: column;
   justify-content: center;
 }
+/* .page-lede's own trailing margin (meant for spacing before whatever page
+   content follows it) gets counted as part of the flex item here, so it
+   throws off centering by padding the bottom only — the text ends up
+   flush at the top instead of centered against the qotd-cta column. */
+.hero-copy .page-lede {
+  margin-bottom: 0;
+}
 
 .hero-title {
   font-size: clamp(1.9rem, 1.4rem + 2.2vw, 3rem);
