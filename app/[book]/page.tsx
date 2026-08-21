@@ -19,8 +19,8 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
       href: `/${bookId}/study/chapters`,
       label: `${book.name} Overview`,
       desc: isSelection
-        ? `Browse ${book.chapterCount} chapters, grouped by theme.`
-        : `Browse all ${book.chapterCount} chapters, grouped by narrative arc.`,
+        ? `Browse ${book.chapterCount} ${book.chapterLabel}s, grouped by theme.`
+        : `Browse all ${book.chapterCount} ${book.chapterLabel}s, grouped by narrative arc.`,
     },
   ];
 

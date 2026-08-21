@@ -19,6 +19,7 @@ export default function QuizSetup({
   backHref,
   backLabel,
   chaptersHref,
+  chapterLabel = "chapter",
 }: {
   bookId: string;
   bookName: string;
@@ -26,6 +27,7 @@ export default function QuizSetup({
   backHref: string;
   backLabel: string;
   chaptersHref: string;
+  chapterLabel?: string;
 }) {
   const router = useRouter();
   const params = useSearchParams();
@@ -50,7 +52,7 @@ export default function QuizSetup({
         moduleId={bookId}
         backHref={backHref}
         backLabel={backLabel}
-        resultsExtra={(report) => <CategoryBreakdown report={report} chaptersHref={chaptersHref} />}
+        resultsExtra={(report) => <CategoryBreakdown report={report} chaptersHref={chaptersHref} chapterLabel={chapterLabel} />}
       />
     );
   }

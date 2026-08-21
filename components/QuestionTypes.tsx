@@ -3,7 +3,7 @@
 import { useState } from "react";
 import type { QuizItem, Answer } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
-import { formatCitation, chapterSummaryFor } from "@/lib/content";
+import { formatCitation, chapterSummaryFor, bookMeta } from "@/lib/content";
 
 type Mode = "study" | "quiz";
 
@@ -276,7 +276,7 @@ export function FreeResponseQuestion({
               setText(e.target.value);
               if (error) setError(null);
             }}
-            placeholder="Type what happens in this chapter…"
+            placeholder={`Type what happens in this ${bookMeta(item.citation.book)?.chapterLabel ?? "chapter"}…`}
             aria-label={item.prompt}
             aria-invalid={!!error}
           />

@@ -68,6 +68,21 @@ engine, the fix is a new content type that lets each item carry its own real
 citation into whatever book it's from — a bigger lift, deliberately not built
 for this first thematic module.
 
+**`Book.chapterLabel`** (defaults to `"chapter"`) is the other piece this
+required: `famous-12s`'s four numbered units aren't Bible chapters at all, so
+every UI string that says "chapter(s)" — the chapters-index heading and
+count, the arc page's count, the book-home overview blurb, the generated
+"In which chapter does this happen" / "Which chapter" / "Review chapters"
+quiz strings — reads `book.chapterLabel` instead of hardcoding the word.
+`famous-12s` sets it to `"section"`. Genesis, Exodus, John, and Psalms don't
+set it, so they're unaffected — Psalms' curated chapters *are* real Bible
+chapters, unlike `famous-12s`'s. Note this only fixes the single-book quiz
+(`/[book]/quiz`); the whole-Bible combined quiz's results breakdown
+(`CategoryBreakdown`) aggregates by mechanic type across every selected book
+at once, so it can't say "section" for one book's items and "chapter" for
+another's in the same list — it always says "chapter" there, a deliberate
+scope boundary, not an oversight.
+
 ## The question generator
 
 Two distinct authorship modes, both feeding the same quiz pool

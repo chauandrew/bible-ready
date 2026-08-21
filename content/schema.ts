@@ -39,6 +39,14 @@ export const BookSchema = z.object({
    * psalm's occasion, say), where "where does this happen" is nonsense. */
   placeAsk: z.string().default("Where does this happen"),
   placeMatchAsk: z.string().default("to where it happens"),
+  /** Singular noun for one of this book's `Chapter` entries, used everywhere the
+   * UI says "N chapter(s)" / "Chapters" / "Review chapters". Narrative and
+   * "selection" books whose chapters are real Bible chapters keep the default;
+   * a thematic module like `famous-12s`, whose numbered chapters are just
+   * internal indices with no single real citation (see DESIGN.md), sets this
+   * to "section" instead. Plurals are formed by appending "s" at each call
+   * site — keep this singular and lowercase. */
+  chapterLabel: z.string().default("chapter"),
   chapterCount: z.number().int().positive(),
   coverageDepth: CoverageDepthSchema,
   arcOrder: z.array(z.string()),

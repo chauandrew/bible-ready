@@ -16,7 +16,9 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
   return (
     <main className="container-wide">
       <BookBreadcrumb bookId={bookId} bookName={book.name} />
-      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>Chapters</h1>
+      <h1 className="page-title" style={{ margin: "0 0 1.25rem" }}>
+        {book.chapterLabel.charAt(0).toUpperCase() + book.chapterLabel.slice(1)}s
+      </h1>
       {arcs.map((arc) => {
         const chapters = chaptersForArcInBook(bookId, arc.id);
         return (
@@ -25,7 +27,7 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
             <span className="section-title" style={{ margin: 0 }}>{arc.name}</span>
             <span className="citation">
               {book.coverageDepth === "selection"
-                ? `${chapters.length} chapter${chapters.length === 1 ? "" : "s"}`
+                ? `${chapters.length} ${book.chapterLabel}${chapters.length === 1 ? "" : "s"}`
                 : `${arc.startChapter}–${arc.endChapter}`}
             </span>
           </summary>

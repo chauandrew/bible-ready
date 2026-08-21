@@ -21,6 +21,7 @@ export default async function BookQuizPage({ params }: { params: Promise<{ book:
         backHref={`/${bookId}`}
         backLabel={`Back to ${book.name}`}
         chaptersHref={`/${bookId}/study/chapters`}
+        chapterLabel={book.chapterLabel}
       />
     </Suspense>
   );
