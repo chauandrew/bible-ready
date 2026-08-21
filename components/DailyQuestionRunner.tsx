@@ -163,7 +163,7 @@ export default function DailyQuestionRunner() {
         <p style={{ color: "var(--text-secondary)", marginTop: "1rem" }}>
           Come back tomorrow for a new question.
         </p>
-        <Link href="/" className="btn btn-primary" style={{ marginTop: "1rem", display: "inline-block" }}>
+        <Link href="/" className="btn btn-primary" style={{ marginTop: "1rem" }}>
           Back to home
         </Link>
       </main>
