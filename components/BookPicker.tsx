@@ -17,7 +17,7 @@ export default function BookPicker({
   return (
     <div className="card" style={{ marginBottom: "1rem" }}>
       <p className="eyebrow" style={{ marginBottom: "0.5rem" }}>Books</p>
-      <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
         {books.map((b) => {
           const checked = selected.has(b.id);
           return (

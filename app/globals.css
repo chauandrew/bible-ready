@@ -135,17 +135,15 @@ a { color: var(--accent-text); }
   .container-wide { padding: 1rem 1.1rem 3rem; }
 }
 
-/* Responsive card row: 1 column on a phone, as many ~260px columns as fit on
-   a desktop monitor, wrapping as needed. Flexbox rather than CSS grid on
-   purpose — grid's auto-fit collapses empty tracks but still splits the row's
-   full width across whatever tracks are left, so a row with only one or two
-   cards ends up with a card centered in an oversized cell instead of sitting
-   next to its neighbor. Flex items pack from the start and leave any leftover
-   growth space at the end of the row, not between items. Used by every
+/* Responsive card row: 1 column on a phone, as many 260-420px columns as fit
+   on a desktop monitor, wrapping as needed. auto-fill (not auto-fit) keeps
+   unused trailing columns as empty tracks instead of collapsing them, so a
+   short last row doesn't stretch to fill the full row width — every card
+   stays the same size regardless of how many share its row. Used by every
    index/browsing page. */
 .grid-cards {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 420px));
   gap: 0.9rem;
 }
 
@@ -221,14 +219,6 @@ a { color: var(--accent-text); }
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 1rem 1.1rem;
-}
-
-/* Sized and capped only here, not on .card generally, since a card used as a
-   plain container elsewhere (the active question, a picker) should still
-   fill its column. */
-.grid-cards > .card {
-  flex: 1 1 260px;
-  max-width: 420px;
 }
 
 /* Cards rendered as links (Next's <Link className="card">) are interactive —

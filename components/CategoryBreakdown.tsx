@@ -2,7 +2,7 @@ import Link from "next/link";
 import type { gapReport } from "@/lib/quiz";
 
 /** `chapterLabel` defaults to "chapter" — a mixed whole-Bible quiz can't cleanly
- * say "section" for a Famous 12s item and "chapter" for a Genesis item in the
+ * say "section" for a Miscellaneous item and "chapter" for a Genesis item in the
  * same aggregated breakdown, so this only varies for a single-book quiz (see
  * QuizSetup's `chapterLabel` prop). */
 function categoryLabels(chapterLabel: string): Record<string, string> {

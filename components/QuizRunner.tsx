@@ -3,7 +3,7 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect, pointsFor, pointsColor, correctAnswerText } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect, pointsFor, pointsColor, correctAnswerText, userAnswerText } from "@/lib/quiz";
 import { recordSession, clearMissed } from "@/lib/progress";
 import { formatCitation } from "@/lib/content";
 import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion } from "./QuestionTypes";
@@ -89,6 +89,11 @@ export default function QuizRunner({
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
+                    {points < 1 && (
+                      <div className="note" style={{ borderColor: "var(--danger-border)", marginBottom: "0.35rem" }}>
+                        Your answer: {a ? userAnswerText(it, a) : "(no answer)"}
+                      </div>
+                    )}
                     <div className="note" style={{ borderColor }}>
                       {label}
                       {correctText}

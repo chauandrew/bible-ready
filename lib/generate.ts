@@ -18,7 +18,7 @@ import { deriveGradingTerms } from "./grade";
  */
 
 export interface BookData {
-  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string; chapterLabel?: string };
+  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string; chapterLabel?: string; autoGenerate?: boolean };
   arcs: Arc[];
   chapters: Chapter[];
   people: Person[];
@@ -305,7 +305,7 @@ export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResp
       kind: "generated",
       id: `gen:free-response:${c.id}`,
       type: "free-response",
-      prompt: `In your own words, what happens in ${bookLabel(book)} ${c.number}?`,
+      prompt: c.freeResponsePrompt ?? `In your own words, what happens in ${bookLabel(book)} ${c.number}?`,
       chapterNumber: c.number,
       terms,
       minTerms,
@@ -328,13 +328,13 @@ export function generateSequenceQuestions(data: BookData): GeneratedSequence[] {
     const arcEvents = eventsInArc(events, chapters, arc.id)
       .filter((e) => e.notable)
       .sort((a, b) => (a.chapter - b.chapter) || (a.order - b.order))
-      .slice(0, 6);
+      .slice(0, arc.sequenceLimit ?? 6);
     if (arcEvents.length < 4) continue;
     out.push({
       kind: "generated",
       id: `gen:sequence:${arc.id}`,
       type: "sequence",
-      prompt: `Put these events from "${arc.name}" in order.`,
+      prompt: `Put these ${arc.sequenceNoun ?? "events"} from "${arc.name}" in order.`,
       itemsInOrder: arcEvents.map((e) => e.name),
       citation: { book: book.id, chapter: arc.startChapter },
     });
@@ -375,11 +375,12 @@ export function generateMatchQuestions(data: BookData): GeneratedMatch[] {
 }
 
 export function generateAll(data: BookData): GeneratedItem[] {
+  const auto = data.book.autoGenerate ?? true;
   return [
-    ...generateChapterQuestions(data),
-    ...generateLocationQuestions(data),
-    ...generateSpeakerQuestions(data),
-    ...generateChapterSummaryQuestions(data),
+    ...(auto ? generateChapterQuestions(data) : []),
+    ...(auto ? generateLocationQuestions(data) : []),
+    ...(auto ? generateSpeakerQuestions(data) : []),
+    ...(auto ? generateChapterSummaryQuestions(data) : []),
     ...generateFreeResponseQuestions(data),
     ...generateSequenceQuestions(data),
     ...generateMatchQuestions(data),
@@ -460,10 +461,11 @@ export function findAmbiguities(data: BookData): AmbiguityProblem[] {
   // subject — e.g. an option reading "Psalm 51" offered on Psalm 51's own item.
   const chapterRef = new RegExp(`\\b(chapter|${bookLabel(data.book)}|${data.book.name})\\s+\\d+\\b`, "i");
 
+  const auto = data.book.autoGenerate ?? true;
   for (const item of [
-    ...generateLocationQuestions(data),
-    ...generateSpeakerQuestions(data),
-    ...generateChapterSummaryQuestions(data),
+    ...(auto ? generateLocationQuestions(data) : []),
+    ...(auto ? generateSpeakerQuestions(data) : []),
+    ...(auto ? generateChapterSummaryQuestions(data) : []),
   ]) {
     if (item.distractorPool.length < 3) {
       problems.push({ id: item.id, reason: `only ${item.distractorPool.length} distinct distractors available (need 3)` });

@@ -50,6 +50,7 @@ import {
   type Person,
 } from "@/content/schema";
 import type { BookData } from "./generate";
+import { normalizeWords, wordMatches } from "./grade";
 
 /**
  * The only module that touches content JSON directly. Everything else reads
@@ -135,6 +136,25 @@ export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "f
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
+}
+
+/** Resolve free-typed book text ("2 timothy", "gensis") to a book, for the
+ * chapter-guess free-response question — case-insensitive, and typo-tolerant
+ * via the same fuzzy word match free-response grading uses (see lib/grade.ts).
+ * Returns undefined for no match rather than throwing, since a guess is just
+ * as likely to be wrong as a typo. */
+export function matchBookName(input: string): Book | undefined {
+  const needle = normalizeWords(input).join(" ");
+  if (!needle) return undefined;
+  let fuzzyMatch: Book | undefined;
+  for (const book of bookRegistry) {
+    for (const name of [book.name, book.citationName].filter((n): n is string => !!n)) {
+      const haystack = normalizeWords(name).join(" ");
+      if (haystack === needle) return book;
+      if (!fuzzyMatch && wordMatches(needle, haystack)) fuzzyMatch = book;
+    }
+  }
+  return fuzzyMatch;
 }
 
 // ---------------------------------------------------------------------------

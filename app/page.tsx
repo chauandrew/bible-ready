@@ -5,7 +5,7 @@ const available = [
   { href: "/exodus", name: "Exodus", desc: "From slavery in Egypt to the crossing of the Red Sea, 14 chapters." },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme." },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards." },
-  { href: "/famous-12s", name: "Famous 12s", desc: "The twelve disciples, the twelve tribes of Israel, Romans 12, and 1 Corinthians 12." },
+  { href: "/famous-12s", name: "Miscellaneous", desc: "The twelve disciples, the twelve tribes of Israel, and putting the Old and New Testament books in order." },
 ];
 
 const comingSoon: { name: string; desc: string }[] = [];

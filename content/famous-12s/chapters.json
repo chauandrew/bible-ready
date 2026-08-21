@@ -5,7 +5,7 @@
     "number": 1,
     "title": "The Twelve Disciples",
     "summary": "Jesus chooses twelve ordinary men as his closest followers and apostles, singling out Peter, James, and John as his innermost circle, with Judas later replaced by Matthias.",
-    "arcId": "twelves",
+    "arcId": "disciples",
     "eventIds": [
       "f12-e-c1-0",
       "f12-e-c1-1",
@@ -19,7 +19,24 @@
       "f12-e-c1-9",
       "f12-e-c1-10",
       "f12-e-c1-11"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponsePrompt": "Name the twelve disciples Jesus chose.",
+    "freeResponseAliases": [
+      "peter",
+      "andrew",
+      "james",
+      "john",
+      "philip",
+      "bartholomew",
+      "thomas",
+      "matthew",
+      "alphaeus",
+      "thaddaeus",
+      "simon",
+      "judas"
+    ],
+    "freeResponseMinTerms": 9
   },
   {
     "id": "f12-ch-2",
@@ -27,7 +44,7 @@
     "number": 2,
     "title": "The Twelve Tribes of Israel",
     "summary": "Jacob gathers his twelve sons before his death and blesses each one, founding the twelve tribes of Israel, from the priestly line of Levi to the royal line of Judah.",
-    "arcId": "twelves",
+    "arcId": "tribes",
     "eventIds": [
       "f12-e-c2-0",
       "f12-e-c2-1",
@@ -41,83 +58,59 @@
       "f12-e-c2-9",
       "f12-e-c2-10",
       "f12-e-c2-11"
-    ]
+    ],
+    "quizWorthy": true,
+    "freeResponsePrompt": "Name the twelve tribes of Israel.",
+    "freeResponseAliases": [
+      "reuben",
+      "simeon",
+      "levi",
+      "judah",
+      "zebulun",
+      "issachar",
+      "dan",
+      "gad",
+      "asher",
+      "naphtali",
+      "joseph",
+      "benjamin",
+      "ephraim",
+      "manasseh"
+    ],
+    "freeResponseMinTerms": 11
   },
   {
     "id": "f12-ch-3",
     "book": "famous-12s",
     "number": 3,
-    "title": "Romans 12",
-    "summary": "Paul urges believers to offer their lives as a living sacrifice, use their different gifts to serve the church as one body, and love genuinely even toward enemies.",
-    "arcId": "twelves",
+    "title": "The Old Testament in Order",
+    "summary": "The Old Testament's thirty-nine books run from Genesis through Malachi, moving through the Law, the histories of Israel, wisdom and poetry, and the major and minor prophets.",
+    "arcId": "ot-order",
     "eventIds": [
-      "f12-e-c3-0",
-      "f12-e-c3-1",
-      "f12-e-c3-2"
-    ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "paul",
-          "believers",
-          "christians"
-        ],
-        [
-          "sacrifice",
-          "transform",
-          "renew",
-          "mind",
-          "conform"
-        ],
-        [
-          "gifts",
-          "body",
-          "love",
-          "genuine",
-          "persecute",
-          "evil",
-          "good"
-        ]
-      ],
-      "minGroups": 2
-    }
+      "f12-e-c3-0", "f12-e-c3-1", "f12-e-c3-2", "f12-e-c3-3", "f12-e-c3-4",
+      "f12-e-c3-5", "f12-e-c3-6", "f12-e-c3-7", "f12-e-c3-8", "f12-e-c3-9",
+      "f12-e-c3-10", "f12-e-c3-11", "f12-e-c3-12", "f12-e-c3-13", "f12-e-c3-14",
+      "f12-e-c3-15", "f12-e-c3-16", "f12-e-c3-17", "f12-e-c3-18", "f12-e-c3-19",
+      "f12-e-c3-20", "f12-e-c3-21", "f12-e-c3-22", "f12-e-c3-23", "f12-e-c3-24",
+      "f12-e-c3-25", "f12-e-c3-26", "f12-e-c3-27", "f12-e-c3-28", "f12-e-c3-29",
+      "f12-e-c3-30", "f12-e-c3-31", "f12-e-c3-32", "f12-e-c3-33", "f12-e-c3-34",
+      "f12-e-c3-35", "f12-e-c3-36", "f12-e-c3-37", "f12-e-c3-38"
+    ]
   },
   {
     "id": "f12-ch-4",
     "book": "famous-12s",
     "number": 4,
-    "title": "1 Corinthians 12",
-    "summary": "Paul compares the church to a human body with many different parts, teaching that every believer's spiritual gift is necessary and that no member can claim to need no one else.",
-    "arcId": "twelves",
+    "title": "The New Testament in Order",
+    "summary": "The New Testament's twenty-seven books run from Matthew through Revelation, moving through the four Gospels, Acts, Paul's letters to churches and individuals, and the general epistles.",
+    "arcId": "nt-order",
     "eventIds": [
-      "f12-e-c4-0",
-      "f12-e-c4-1",
-      "f12-e-c4-2"
-    ],
-    "quizWorthy": true,
-    "freeResponse": {
-      "keywordGroups": [
-        [
-          "paul",
-          "church",
-          "believers"
-        ],
-        [
-          "gifts",
-          "spirit",
-          "different"
-        ],
-        [
-          "body",
-          "parts",
-          "member",
-          "hand",
-          "foot",
-          "need"
-        ]
-      ],
-      "minGroups": 2
-    }
+      "f12-e-c4-0", "f12-e-c4-1", "f12-e-c4-2", "f12-e-c4-3", "f12-e-c4-4",
+      "f12-e-c4-5", "f12-e-c4-6", "f12-e-c4-7", "f12-e-c4-8", "f12-e-c4-9",
+      "f12-e-c4-10", "f12-e-c4-11", "f12-e-c4-12", "f12-e-c4-13", "f12-e-c4-14",
+      "f12-e-c4-15", "f12-e-c4-16", "f12-e-c4-17", "f12-e-c4-18", "f12-e-c4-19",
+      "f12-e-c4-20", "f12-e-c4-21", "f12-e-c4-22", "f12-e-c4-23", "f12-e-c4-24",
+      "f12-e-c4-25", "f12-e-c4-26"
+    ]
   }
 ]

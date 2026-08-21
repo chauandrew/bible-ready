@@ -4,7 +4,7 @@ import { useState } from "react";
 import type { QuizItem, Answer } from "@/lib/quiz";
 import { pointsFor, pointsColor, correctAnswerText } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
-import { formatCitation, chapterSummaryFor, bookMeta, bookRegistry } from "@/lib/content";
+import { formatCitation, chapterSummaryFor, bookMeta, matchBookName } from "@/lib/content";
 
 type Mode = "study" | "quiz";
 
@@ -153,8 +153,6 @@ export function MatchQuestion({
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
   const [pairs, setPairs] = useState<{ left: string; right: string }[]>([]);
   const [checked, setChecked] = useState(false);
-  const pairedLefts = new Set(pairs.map((p) => p.left));
-  const pairedRights = new Set(pairs.map((p) => p.right));
   const correctSet = new Set(item.correctPairs.map((p) => `${p.left}::${p.right}`));
   const allPaired = pairs.length === item.lefts.length;
 
@@ -186,42 +184,63 @@ export function MatchQuestion({
           })}
         </ul>
       ) : (
-        <>
-          {pairs.length > 0 && (
-            <ul
-              aria-label="Matches made so far"
-              style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", listStyle: "none", padding: 0, marginBottom: "0.75rem", color: "var(--text-secondary)" }}
-            >
-              {pairs.map((p) => (
-                <li key={p.left}>{p.left} → {p.right}</li>
-              ))}
-            </ul>
-          )}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "0.5rem" }}>
           <div>
-            {item.lefts.map((l) => (
-              <button
-                key={l}
-                type="button"
-                className="option"
-                disabled={pairedLefts.has(l)}
-                aria-pressed={selectedLeft === l}
-                style={selectedLeft === l ? { borderColor: "var(--accent)" } : undefined}
-                onClick={() => setSelectedLeft(l)}
-              >
-                {l}
-              </button>
-            ))}
+            {item.lefts.map((l) => {
+              const pair = pairs.find((p) => p.left === l);
+              return (
+                <button
+                  key={l}
+                  type="button"
+                  className="option"
+                  disabled={!!pair}
+                  aria-pressed={selectedLeft === l}
+                  style={
+                    pair
+                      ? { borderColor: "var(--success-border)", color: "var(--success-text)" }
+                      : selectedLeft === l
+                      ? { borderColor: "var(--accent)" }
+                      : undefined
+                  }
+                  onClick={() => setSelectedLeft(l)}
+                >
+                  {pair ? (
+                    <>
+                      <span className="sr-only">matched: </span>
+                      {l} <span aria-hidden="true">→</span> {pair.right}
+                    </>
+                  ) : (
+                    l
+                  )}
+                </button>
+              );
+            })}
           </div>
           <div>
-            {item.rights.map((r) => (
-              <button key={r} type="button" className="option" disabled={pairedRights.has(r) || !selectedLeft} onClick={() => pickRight(r)}>
-                {r}
-              </button>
-            ))}
+            {item.rights.map((r) => {
+              const pair = pairs.find((p) => p.right === r);
+              return (
+                <button
+                  key={r}
+                  type="button"
+                  className="option"
+                  disabled={!!pair || !selectedLeft}
+                  style={pair ? { borderColor: "var(--success-border)", color: "var(--success-text)" } : undefined}
+                  onClick={() => pickRight(r)}
+                >
+                  {pair ? (
+                    <>
+                      <span className="sr-only">matched: </span>
+                      {pair.left} <span aria-hidden="true">→</span> {r}
+                    </>
+                  ) : (
+                    r
+                  )}
+                </button>
+              );
+            })}
           </div>
         </div>
-        </>
       )}
       {allPaired && !checked && (
         <button type="button" className="btn btn-primary" style={{ marginTop: "0.5rem" }} onClick={submit}>
@@ -326,18 +345,24 @@ export function ChapterGuessQuestion({
   mode: Mode;
   onAnswer: (a: Answer) => void;
 }) {
-  const [book, setBook] = useState("");
+  const [bookText, setBookText] = useState("");
   const [chapterText, setChapterText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [points, setPoints] = useState<number | null>(null);
+  const [submitted, setSubmitted] = useState<Answer | null>(null);
 
   function submit() {
     const chapter = Number(chapterText);
-    if (!book || !chapterText.trim() || !Number.isInteger(chapter) || chapter < 1) {
-      setError("Choose a book and enter a chapter number.");
+    if (!bookText.trim() || !chapterText.trim() || !Number.isInteger(chapter) || chapter < 1) {
+      setError("Enter a book and a chapter number.");
       return;
     }
-    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book, chapter };
+    // A typo'd or made-up book name just fails to match — matchBookName
+    // returns undefined, which falls through to an ordinary wrong answer
+    // rather than throwing.
+    const matched = matchBookName(bookText);
+    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book: matched?.id ?? "", chapter };
+    setSubmitted(answer);
     if (mode === "quiz") {
       onAnswer(answer);
       return;
@@ -351,21 +376,18 @@ export function ChapterGuessQuestion({
       {points === null && (
         <>
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            <select
+            <input
               className="input"
               style={{ flex: "1 1 160px" }}
-              value={book}
+              type="text"
+              value={bookText}
               onChange={(e) => {
-                setBook(e.target.value);
+                setBookText(e.target.value);
                 if (error) setError(null);
               }}
+              placeholder="Book"
               aria-label="Book"
-            >
-              <option value="">Book…</option>
-              {bookRegistry.map((b) => (
-                <option key={b.id} value={b.id}>{b.name}</option>
-              ))}
-            </select>
+            />
             <input
               className="input"
               style={{ flex: "1 1 120px" }}
@@ -406,7 +428,7 @@ export function ChapterGuessQuestion({
             <button
               type="button"
               className="btn btn-primary"
-              onClick={() => onAnswer({ itemId: item.id, kind: "chapter-guess", book, chapter: Number(chapterText) })}
+              onClick={() => submitted && onAnswer(submitted)}
             >
               Next
             </button>

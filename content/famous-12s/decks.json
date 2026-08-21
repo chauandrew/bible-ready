@@ -36,18 +36,5 @@
       "f12-e-c2-10",
       "f12-e-c2-11"
     ]
-  },
-  {
-    "id": "f12-deck-body-of-christ",
-    "book": "famous-12s",
-    "name": "Paul on the Body of Christ",
-    "cardEventIds": [
-      "f12-e-c3-0",
-      "f12-e-c3-1",
-      "f12-e-c3-2",
-      "f12-e-c4-0",
-      "f12-e-c4-1",
-      "f12-e-c4-2"
-    ]
   }
 ]

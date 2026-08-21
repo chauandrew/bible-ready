@@ -1,10 +1,14 @@
 {
   "id": "famous-12s",
-  "name": "Famous 12s",
+  "name": "Miscellaneous",
   "chapterLabel": "section",
   "chapterCount": 4,
   "coverageDepth": "selection",
+  "autoGenerate": false,
   "arcOrder": [
-    "twelves"
+    "disciples",
+    "tribes",
+    "ot-order",
+    "nt-order"
   ]
 }

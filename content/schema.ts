@@ -50,6 +50,14 @@ export const BookSchema = z.object({
   chapterCount: z.number().int().positive(),
   coverageDepth: CoverageDepthSchema,
   arcOrder: z.array(z.string()),
+  /** Off for a fully hand-curated module (e.g. famous-12s/Miscellaneous)
+   * whose chapters don't represent real narrative content the generic
+   * per-event/per-chapter templates can ask sensible questions about.
+   * Suppresses generateChapterQuestions/Location/Speaker/ChapterSummary
+   * (and their ambiguity checks); free-response and sequence generation are
+   * unaffected, since those are already opt-in per chapter/arc. Defaults to
+   * on for every real book. */
+  autoGenerate: z.boolean().optional(),
 });
 export type Book = z.infer<typeof BookSchema>;
 
@@ -60,6 +68,15 @@ export const ArcSchema = z.object({
   startChapter: z.number().int().positive(),
   endChapter: z.number().int().positive(),
   summary: z.string(),
+  /** Caps how many items a generated "put these in order" question shows
+   * (see lib/generate.ts's generateSequenceQuestions). Defaults to 6 — the
+   * UI's tap-to-place list gets unwieldy past that for a normal narrative
+   * arc. Raise it only for an arc that IS the content being ordered (e.g.
+   * "the 39 books of the Old Testament"), not a shortcut around the default. */
+  sequenceLimit: z.number().int().positive().optional(),
+  /** Noun for what's being ordered in that same generated prompt —
+   * "Put these ${sequenceNoun} from ..." — defaults to "events". */
+  sequenceNoun: z.string().optional(),
 });
 export type Arc = z.infer<typeof ArcSchema>;
 
@@ -98,6 +115,15 @@ export const ChapterSchema = z.object({
    * quizWorthy chapters need none.
    */
   freeResponseAliases: z.array(z.string().min(1)).default([]),
+  /** Overrides the generated free-response prompt ("In your own words, what
+   * happens in X N?") for a chapter that isn't narrative prose — e.g. "Name
+   * the twelve disciples Jesus chose." Most quizWorthy chapters need none. */
+  freeResponsePrompt: z.string().optional(),
+  /** Overrides deriveGradingTerms's default minTerms (see lib/grade.ts) for a
+   * chapter whose grading terms are a fixed roster (the twelve disciples, the
+   * twelve tribes) rather than a handful of prose keywords — "name most of a
+   * list of N" needs a threshold near N, not the global default of 3. */
+  freeResponseMinTerms: z.number().int().positive().optional(),
 });
 export type Chapter = z.infer<typeof ChapterSchema>;
 
