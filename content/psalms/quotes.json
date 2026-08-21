@@ -81,6 +81,15 @@
     "citation": { "book": "psalms", "chapter": 90, "verses": "12" }
   },
   {
+    "id": "psalms-119-q105",
+    "book": "psalms",
+    "chapter": 119,
+    "verse": 105,
+    "speakerId": "the-psalmist",
+    "text": "Your word is a lamp to my feet and a light to my path.",
+    "citation": { "book": "psalms", "chapter": 119, "verses": "105" }
+  },
+  {
     "id": "psalms-100-q1",
     "book": "psalms",
     "chapter": 100,
