@@ -76,7 +76,7 @@
     "book": "psalms",
     "number": 51,
     "title": "David's confession after Bathsheba",
-    "summary": "David confesses his sin after his affair with Bathsheba, pleading for God to cleanse and restore him, and commits to teach other sinners God's ways.",
+    "summary": "David confesses his sin with Bathsheba, pleading for God to cleanse and restore him, and commits to teach other sinners God's ways.",
     "arcId": "repentance-lament",
     "eventIds": ["psalms-51-e1"]
   },
@@ -88,6 +88,15 @@
     "summary": "Moses contrasts God's eternal existence with the brief, trouble-filled span of human life, asking God to teach his people to live wisely in light of how short their days are.",
     "arcId": "wisdom-creation-presence",
     "eventIds": ["psalms-90-e1"]
+  },
+  {
+    "id": "psalms-119",
+    "book": "psalms",
+    "number": 119,
+    "title": "Your word is a lamp",
+    "summary": "The longest psalm meditates at length on the goodness of God's law, praising his word as a guide, a comfort, and a source of wisdom through every circumstance of life.",
+    "arcId": "wisdom-creation-presence",
+    "eventIds": ["psalms-119-e1"]
   },
   {
     "id": "psalms-91",

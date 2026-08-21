@@ -86,13 +86,12 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
 
 /**
  * Books with a full section of their own (home page, chapters, people, quiz,
- * flashcards, print) — see `app/[book]/*`. Psalms' content is fully
- * authored and already feeds the whole-Bible / multi-book modes above, but as a
- * "selection" book (a curated, non-contiguous set of psalms — see DESIGN.md) it
- * needs page treatment a "narrative" book doesn't, so it isn't wired up as its
- * own section yet.
+ * flashcards, print) — see `app/[book]/*`. Psalms is a "selection" book (a
+ * curated, non-contiguous set of psalms — see DESIGN.md): its pages handle
+ * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
+ * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "psalms"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

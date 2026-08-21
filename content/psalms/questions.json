@@ -297,7 +297,7 @@
     "id": "psalms-q18",
     "book": "psalms",
     "category": "argument",
-    "prompt": "What shift happens between the first half and second half of the psalm confessing David's sin after his affair with Bathsheba?",
+    "prompt": "What shift happens between the first half and second half of the psalm confessing David's sin with Bathsheba?",
     "options": [
       "Confession and a plea for cleansing give way to a promise to teach other sinners",
       "Despair gives way to a public call for the whole nation to repent together",
@@ -412,5 +412,22 @@
       "chapter": 90
     },
     "explanation": "It opens \"Lord, you have been our dwelling place in all generations.\""
+  },
+  {
+    "id": "psalms-q25",
+    "book": "psalms",
+    "category": "theme",
+    "prompt": "The longest chapter in the Bible spends its 176 verses meditating on what?",
+    "options": [
+      "The goodness and guidance of God's law",
+      "The long genealogy of Israel's twelve tribes and their allotted territories",
+      "The building and dedication of the temple in Jerusalem",
+      "The defeat of the Philistines at the hands of Israel's armies"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "psalms",
+      "chapter": 119
+    }
   }
 ]

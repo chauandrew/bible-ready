@@ -24,8 +24,13 @@ export default async function ChapterPage({ params }: { params: Promise<{ book: 
 
   const arc = arcInBook(bookId, chapter.arcId);
   const events = eventsForChapterInBook(bookId, chapter.number);
-  const prev = chapterInBook(bookId, chapter.number - 1);
-  const next = chapterInBook(bookId, chapter.number + 1);
+  // Index-based, not chapter.number +/- 1: a "selection" book's curated chapters
+  // (e.g. Psalm 1, 8, 19...) aren't contiguous, so number arithmetic would skip
+  // straight past most of them.
+  const allChapters = chaptersForBook(bookId).slice().sort((a, b) => a.number - b.number);
+  const chapterIndex = allChapters.findIndex((c) => c.number === chapter.number);
+  const prev = allChapters[chapterIndex - 1];
+  const next = allChapters[chapterIndex + 1];
 
   return (
     <main className="container" style={{ maxWidth: "760px" }}>

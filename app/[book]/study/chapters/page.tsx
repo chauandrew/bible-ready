@@ -15,16 +15,20 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
   return (
     <main className="container-wide">
       <h1 className="page-title" style={{ margin: "1rem 0 1.25rem" }}>Chapters</h1>
-      {arcs.map((arc) => (
+      {arcs.map((arc) => {
+        const chapters = chaptersForArcInBook(bookId, arc.id);
+        return (
         <details key={arc.id} className="arc-disclosure" open>
           <summary>
             <span className="section-title" style={{ margin: 0 }}>{arc.name}</span>
             <span className="citation">
-              {arc.startChapter}–{arc.endChapter}
+              {book.coverageDepth === "selection"
+                ? `${chapters.length} chapter${chapters.length === 1 ? "" : "s"}`
+                : `${arc.startChapter}–${arc.endChapter}`}
             </span>
           </summary>
           <div className="chapter-card-grid">
-            {chaptersForArcInBook(bookId, arc.id).map((c) => (
+            {chapters.map((c) => (
               <Link key={c.id} href={`/${bookId}/study/chapters/${c.number}`} className="card chapter-card">
                 <div className="chapter-card-head">
                   <span className="chapter-card-number">{book.name} {c.number}</span>
@@ -36,7 +40,8 @@ export default async function ChaptersIndex({ params }: { params: Promise<{ book
             ))}
           </div>
         </details>
-      ))}
+        );
+      })}
     </main>
   );
 }

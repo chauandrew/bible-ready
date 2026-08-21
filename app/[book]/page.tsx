@@ -11,10 +11,17 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
   const book = bookMeta(bookId);
   if (!book || !wiredBookIds.includes(bookId)) notFound();
 
+  const isSelection = book.coverageDepth === "selection";
   const studyTools = [
     { href: `/${bookId}/study/flashcards`, label: "Flashcards", desc: "Flip through key events, one card at a time." },
     { href: `/${bookId}/study/people`, label: "Key People", desc: "Key figures and the family line." },
-    { href: `/${bookId}/study/chapters`, label: `${book.name} Overview`, desc: `Browse all ${book.chapterCount} chapters, grouped by narrative arc.` },
+    {
+      href: `/${bookId}/study/chapters`,
+      label: `${book.name} Overview`,
+      desc: isSelection
+        ? `Browse ${book.chapterCount} chapters, grouped by theme.`
+        : `Browse all ${book.chapterCount} chapters, grouped by narrative arc.`,
+    },
   ];
 
   const reviewTools = [
@@ -34,7 +41,9 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
       </div>
       <h1 className="page-title">{book.name}</h1>
       <p className="page-lede">
-        Learn what happens in {book.name}, where, and to whom.
+        {isSelection
+          ? `Explore the people, themes, and key verses of ${book.name}.`
+          : `Learn what happens in ${book.name}, where, and to whom.`}
       </p>
 
       <h2 className="section-title">Study tools</h2>
