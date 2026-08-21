@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, type Answer } from "./quiz";
+import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, type Answer } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -92,6 +92,20 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
   const totalWrong = Object.values(report).reduce((sum, r) => sum + r.wrong, 0);
   assert.equal(totalRight, 4);
   assert.equal(totalWrong, 1);
+});
+
+test("correctAnswerText reads the right field per item type", () => {
+  const data = fixtureData();
+  const items = selectQuiz(data, authored, { seedStr: "correct-text-test", targetCount: 5 });
+  for (const item of items) {
+    const text = correctAnswerText(item);
+    assert.ok(text.length > 0, `expected non-empty correct-answer text for ${item.id}`);
+    if ("correctIndex" in item) assert.equal(text, item.options[item.correctIndex]);
+    else if ("correctOrder" in item) assert.equal(text, item.correctOrder.join(" → "));
+    else if ("correctPairs" in item) {
+      assert.equal(text, item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", "));
+    }
+  }
 });
 
 test("selectDailyQuestion with the same date produces the same item", () => {

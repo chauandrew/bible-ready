@@ -1,6 +1,7 @@
 import type { AuthoredQuestion, Citation } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
 import { gradeFreeResponse } from "./grade";
+import { chapterSummaryFor } from "./content";
 import {
   generateAll,
   toRuntimeMC,
@@ -178,6 +179,15 @@ export function isCorrect(item: QuizItem, answer: Answer): boolean {
     );
   }
   return false;
+}
+
+/** The correct answer, in display form — same derivation QuizRunner's review list
+ * uses, pulled out here so other callers (the daily question) don't duplicate it. */
+export function correctAnswerText(item: QuizItem): string {
+  if ("correctIndex" in item) return item.options[item.correctIndex];
+  if ("correctOrder" in item) return item.correctOrder.join(" → ");
+  if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ");
+  return chapterSummaryFor(item.citation.book, item.chapterNumber) ?? "";
 }
 
 export interface ScoreResult {

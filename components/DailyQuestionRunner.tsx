@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { bookRegistry, dataForBooks, formatCitation } from "@/lib/content";
-import { selectDailyQuestion, isCorrect, type Answer } from "@/lib/quiz";
+import { selectDailyQuestion, isCorrect, correctAnswerText, type Answer } from "@/lib/quiz";
 import {
   todayDateStr,
   getCachedResult,
@@ -33,6 +33,7 @@ export default function DailyQuestionRunner() {
   // from a second device/tab) comes back and replaces it.
   const [checking, setChecking] = useState(true);
   const [submitError, setSubmitError] = useState(false);
+  const [elapsedMs, setElapsedMs] = useState(0);
 
   useEffect(() => {
     // One-time hydration from localStorage/clock (unavailable during static-export
@@ -107,9 +108,20 @@ export default function DailyQuestionRunner() {
     void trySubmit(correct, timeMs);
   }
 
-  if (!dateStr || !item || checking) return null;
-
   const shown = result ?? cached;
+  const answering = !!dateStr && !!item && !checking && !shown;
+
+  // Ticks while the question is still unanswered so the player can see time
+  // passing, not just their final time after submitting.
+  useEffect(() => {
+    if (!answering) return;
+    const id = setInterval(() => {
+      setElapsedMs(Date.now() - (startRef.current ?? Date.now()));
+    }, 100);
+    return () => clearInterval(id);
+  }, [answering]);
+
+  if (!dateStr || !item || checking) return null;
 
   if (shown) {
     return (
@@ -120,6 +132,12 @@ export default function DailyQuestionRunner() {
         </h1>
         <div className="note" style={{ borderColor: shown.correct ? "var(--success-border)" : "var(--danger-border)" }}>
           Your time: {(shown.timeMs / 1000).toFixed(1)}s
+          {!shown.correct && (
+            <>
+              <br />
+              Correct answer: {correctAnswerText(item)}
+            </>
+          )}
         </div>
         {shown.correct && shown.correctPlayers != null && (
           <p style={{ color: "var(--text-secondary)", marginTop: "0.75rem" }}>
@@ -158,8 +176,11 @@ export default function DailyQuestionRunner() {
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)" }}>
         Today&apos;s question
       </h1>
-      <p style={{ color: "var(--text-secondary)", marginBottom: "1.25rem" }}>
+      <p style={{ color: "var(--text-secondary)", marginBottom: "0.5rem" }}>
         One question a day. Answer as fast as you can.
+      </p>
+      <p className="citation" style={{ marginBottom: "1rem" }}>
+        Time: {(elapsedMs / 1000).toFixed(1)}s
       </p>
       <div className="card">
         {"options" in item ? (
