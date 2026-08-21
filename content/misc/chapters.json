@@ -1,7 +1,7 @@
 [
   {
     "id": "f12-ch-1",
-    "book": "famous-12s",
+    "book": "misc",
     "number": 1,
     "title": "The Twelve Disciples",
     "summary": "Jesus chooses twelve ordinary men as his closest followers and apostles, singling out Peter, James, and John as his innermost circle, with Judas later replaced by Matthias.",
@@ -40,7 +40,7 @@
   },
   {
     "id": "f12-ch-2",
-    "book": "famous-12s",
+    "book": "misc",
     "number": 2,
     "title": "The Twelve Tribes of Israel",
     "summary": "Jacob gathers his twelve sons before his death and blesses each one, founding the twelve tribes of Israel, from the priestly line of Levi to the royal line of Judah.",
@@ -81,7 +81,7 @@
   },
   {
     "id": "f12-ch-3",
-    "book": "famous-12s",
+    "book": "misc",
     "number": 3,
     "title": "The Old Testament in Order",
     "summary": "The Old Testament's thirty-nine books run from Genesis through Malachi, moving through the Law, the histories of Israel, wisdom and poetry, and the major and minor prophets.",
@@ -99,7 +99,7 @@
   },
   {
     "id": "f12-ch-4",
-    "book": "famous-12s",
+    "book": "misc",
     "number": 4,
     "title": "The New Testament in Order",
     "summary": "The New Testament's twenty-seven books run from Matthew through Revelation, moving through the four Gospels, Acts, Paul's letters to churches and individuals, and the general epistles.",

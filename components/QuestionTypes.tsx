@@ -349,7 +349,6 @@ export function ChapterGuessQuestion({
   const [chapterText, setChapterText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [points, setPoints] = useState<number | null>(null);
-  const [submitted, setSubmitted] = useState<Answer | null>(null);
 
   function submit() {
     const chapter = Number(chapterText);
@@ -360,9 +359,7 @@ export function ChapterGuessQuestion({
     // A typo'd or made-up book name just fails to match — matchBookName
     // returns undefined, which falls through to an ordinary wrong answer
     // rather than throwing.
-    const matched = matchBookName(bookText);
-    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book: matched?.id ?? "", chapter };
-    setSubmitted(answer);
+    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book: matchBookName(bookText)?.id ?? "", chapter };
     if (mode === "quiz") {
       onAnswer(answer);
       return;
@@ -428,7 +425,14 @@ export function ChapterGuessQuestion({
             <button
               type="button"
               className="btn btn-primary"
-              onClick={() => submitted && onAnswer(submitted)}
+              onClick={() =>
+                onAnswer({
+                  itemId: item.id,
+                  kind: "chapter-guess",
+                  book: matchBookName(bookText)?.id ?? "",
+                  chapter: Number(chapterText),
+                })
+              }
             >
               Next
             </button>

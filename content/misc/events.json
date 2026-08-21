@@ -1,11 +1,11 @@
 [
   {
     "id": "f12-e-c1-0",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Peter is named among the Twelve",
     "shortName": "Peter",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["peter"],
     "order": 0,
     "summary": "Simon, whom Jesus renames Peter, is listed first among the twelve apostles Jesus chooses.",
@@ -13,11 +13,11 @@
   },
   {
     "id": "f12-e-c1-1",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Andrew is named among the Twelve",
     "shortName": "Andrew",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["andrew"],
     "order": 1,
     "summary": "Peter's brother is named among the twelve apostles.",
@@ -25,11 +25,11 @@
   },
   {
     "id": "f12-e-c1-2",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "James, son of Zebedee is named among the Twelve",
     "shortName": "James, son of Zebedee",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["james-zebedee"],
     "order": 2,
     "summary": "James, the son of Zebedee and brother of John, is named among the twelve apostles.",
@@ -37,11 +37,11 @@
   },
   {
     "id": "f12-e-c1-3",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "John, son of Zebedee is named among the Twelve",
     "shortName": "John, son of Zebedee",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["john-zebedee"],
     "order": 3,
     "summary": "John, the son of Zebedee and brother of James, is named among the twelve apostles.",
@@ -49,11 +49,11 @@
   },
   {
     "id": "f12-e-c1-4",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Philip is named among the Twelve",
     "shortName": "Philip",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["philip"],
     "order": 4,
     "summary": "Philip is named among the twelve apostles.",
@@ -61,11 +61,11 @@
   },
   {
     "id": "f12-e-c1-5",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Bartholomew is named among the Twelve",
     "shortName": "Bartholomew",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["bartholomew"],
     "order": 5,
     "summary": "Bartholomew is named among the twelve apostles.",
@@ -73,11 +73,11 @@
   },
   {
     "id": "f12-e-c1-6",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Thomas is named among the Twelve",
     "shortName": "Thomas",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["thomas"],
     "order": 6,
     "summary": "Thomas is named among the twelve apostles.",
@@ -85,11 +85,11 @@
   },
   {
     "id": "f12-e-c1-7",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Matthew is named among the Twelve",
     "shortName": "Matthew",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["matthew"],
     "order": 7,
     "summary": "Matthew the tax collector is named among the twelve apostles.",
@@ -97,11 +97,11 @@
   },
   {
     "id": "f12-e-c1-8",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "James, son of Alphaeus is named among the Twelve",
     "shortName": "James, son of Alphaeus",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["james-alphaeus"],
     "order": 8,
     "summary": "James, the son of Alphaeus, is named among the twelve apostles.",
@@ -109,11 +109,11 @@
   },
   {
     "id": "f12-e-c1-9",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Thaddaeus is named among the Twelve",
     "shortName": "Thaddaeus",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["thaddaeus"],
     "order": 9,
     "summary": "Thaddaeus is named among the twelve apostles.",
@@ -121,11 +121,11 @@
   },
   {
     "id": "f12-e-c1-10",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Simon the Zealot is named among the Twelve",
     "shortName": "Simon the Zealot",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["simon-zealot"],
     "order": 10,
     "summary": "Simon the Zealot is named among the twelve apostles.",
@@ -133,11 +133,11 @@
   },
   {
     "id": "f12-e-c1-11",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 1,
     "name": "Judas Iscariot is named among the Twelve",
     "shortName": "Judas Iscariot",
-    "citation": { "book": "famous-12s", "chapter": 1 },
+    "citation": { "book": "misc", "chapter": 1 },
     "peopleIds": ["judas-iscariot"],
     "order": 11,
     "summary": "Judas Iscariot is named last among the twelve apostles, with a note that he would betray Jesus.",
@@ -145,11 +145,11 @@
   },
   {
     "id": "f12-e-c2-0",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Reuben",
     "shortName": "Reuben",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["reuben"],
     "order": 0,
     "summary": "Jacob blesses Reuben, his firstborn, but withholds the honor of that birthright.",
@@ -157,11 +157,11 @@
   },
   {
     "id": "f12-e-c2-1",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Simeon",
     "shortName": "Simeon",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["simeon"],
     "order": 1,
     "summary": "Jacob blesses Simeon, rebuking him for violence.",
@@ -169,11 +169,11 @@
   },
   {
     "id": "f12-e-c2-2",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Levi",
     "shortName": "Levi",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["levi"],
     "order": 2,
     "summary": "Jacob blesses Levi, rebuking him for violence alongside Simeon.",
@@ -181,11 +181,11 @@
   },
   {
     "id": "f12-e-c2-3",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Judah",
     "shortName": "Judah",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["judah"],
     "order": 3,
     "summary": "Jacob blesses Judah with royal leadership over his brothers.",
@@ -193,11 +193,11 @@
   },
   {
     "id": "f12-e-c2-4",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Zebulun",
     "shortName": "Zebulun",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["zebulun"],
     "order": 4,
     "summary": "Jacob blesses Zebulun to dwell by the seashore.",
@@ -205,11 +205,11 @@
   },
   {
     "id": "f12-e-c2-5",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Issachar",
     "shortName": "Issachar",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["issachar"],
     "order": 5,
     "summary": "Jacob blesses Issachar, comparing him to a strong donkey.",
@@ -217,11 +217,11 @@
   },
   {
     "id": "f12-e-c2-6",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Dan",
     "shortName": "Dan",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["dan"],
     "order": 6,
     "summary": "Jacob blesses Dan, comparing him to a serpent in the road.",
@@ -229,11 +229,11 @@
   },
   {
     "id": "f12-e-c2-7",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Gad",
     "shortName": "Gad",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["gad"],
     "order": 7,
     "summary": "Jacob blesses Gad, comparing him to a raiding band that strikes back.",
@@ -241,11 +241,11 @@
   },
   {
     "id": "f12-e-c2-8",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Asher",
     "shortName": "Asher",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["asher"],
     "order": 8,
     "summary": "Jacob blesses Asher with rich food.",
@@ -253,11 +253,11 @@
   },
   {
     "id": "f12-e-c2-9",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Naphtali",
     "shortName": "Naphtali",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["naphtali"],
     "order": 9,
     "summary": "Jacob blesses Naphtali, comparing him to a doe set free.",
@@ -265,11 +265,11 @@
   },
   {
     "id": "f12-e-c2-10",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Joseph",
     "shortName": "Joseph",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["joseph"],
     "order": 10,
     "summary": "Jacob blesses Joseph abundantly as his favored son.",
@@ -277,344 +277,344 @@
   },
   {
     "id": "f12-e-c2-11",
-    "book": "famous-12s",
+    "book": "misc",
     "chapter": 2,
     "name": "Jacob blesses Benjamin",
     "shortName": "Benjamin",
-    "citation": { "book": "famous-12s", "chapter": 2 },
+    "citation": { "book": "misc", "chapter": 2 },
     "peopleIds": ["benjamin"],
     "order": 11,
     "summary": "Jacob blesses Benjamin, comparing him to a ravenous wolf.",
     "notable": false
   },
   {
-    "id": "f12-e-c3-0", "book": "famous-12s", "chapter": 3, "name": "Genesis",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 0,
+    "id": "f12-e-c3-0", "book": "misc", "chapter": 3, "name": "Genesis",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 0,
     "summary": "Creation, the fall, the flood, and the patriarchs from Abraham to Joseph.", "notable": true
   },
   {
-    "id": "f12-e-c3-1", "book": "famous-12s", "chapter": 3, "name": "Exodus",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 1,
+    "id": "f12-e-c3-1", "book": "misc", "chapter": 3, "name": "Exodus",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 1,
     "summary": "Israel's slavery in Egypt, the plagues, the exodus, and the giving of the law at Sinai.", "notable": true
   },
   {
-    "id": "f12-e-c3-2", "book": "famous-12s", "chapter": 3, "name": "Leviticus",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 2,
+    "id": "f12-e-c3-2", "book": "misc", "chapter": 3, "name": "Leviticus",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 2,
     "summary": "Priestly law: sacrifices, purity, and holiness for Israel.", "notable": true
   },
   {
-    "id": "f12-e-c3-3", "book": "famous-12s", "chapter": 3, "name": "Numbers",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 3,
+    "id": "f12-e-c3-3", "book": "misc", "chapter": 3, "name": "Numbers",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 3,
     "summary": "Israel's census and forty years of wandering in the wilderness.", "notable": true
   },
   {
-    "id": "f12-e-c3-4", "book": "famous-12s", "chapter": 3, "name": "Deuteronomy",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 4,
+    "id": "f12-e-c3-4", "book": "misc", "chapter": 3, "name": "Deuteronomy",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 4,
     "summary": "Moses' final addresses renewing the covenant before Israel enters Canaan.", "notable": true
   },
   {
-    "id": "f12-e-c3-5", "book": "famous-12s", "chapter": 3, "name": "Joshua",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 5,
+    "id": "f12-e-c3-5", "book": "misc", "chapter": 3, "name": "Joshua",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 5,
     "summary": "Israel conquers and divides the promised land under Joshua.", "notable": true
   },
   {
-    "id": "f12-e-c3-6", "book": "famous-12s", "chapter": 3, "name": "Judges",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 6,
+    "id": "f12-e-c3-6", "book": "misc", "chapter": 3, "name": "Judges",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 6,
     "summary": "A repeating cycle of Israel's unfaithfulness and rescue by raised-up judges.", "notable": true
   },
   {
-    "id": "f12-e-c3-7", "book": "famous-12s", "chapter": 3, "name": "Ruth",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 7,
+    "id": "f12-e-c3-7", "book": "misc", "chapter": 3, "name": "Ruth",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 7,
     "summary": "A Moabite widow's loyalty and redemption, becoming David's great-grandmother.", "notable": true
   },
   {
-    "id": "f12-e-c3-8", "book": "famous-12s", "chapter": 3, "name": "1 Samuel",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 8,
+    "id": "f12-e-c3-8", "book": "misc", "chapter": 3, "name": "1 Samuel",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 8,
     "summary": "Israel's first king Saul rises and falls as David is anointed.", "notable": true
   },
   {
-    "id": "f12-e-c3-9", "book": "famous-12s", "chapter": 3, "name": "2 Samuel",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 9,
+    "id": "f12-e-c3-9", "book": "misc", "chapter": 3, "name": "2 Samuel",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 9,
     "summary": "David's reign as king over Israel, his triumphs and his failures.", "notable": true
   },
   {
-    "id": "f12-e-c3-10", "book": "famous-12s", "chapter": 3, "name": "1 Kings",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 10,
+    "id": "f12-e-c3-10", "book": "misc", "chapter": 3, "name": "1 Kings",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 10,
     "summary": "Solomon's reign and temple, then the kingdom splits in two.", "notable": true
   },
   {
-    "id": "f12-e-c3-11", "book": "famous-12s", "chapter": 3, "name": "2 Kings",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 11,
+    "id": "f12-e-c3-11", "book": "misc", "chapter": 3, "name": "2 Kings",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 11,
     "summary": "The divided kingdoms' decline, ending in exile to Assyria and Babylon.", "notable": true
   },
   {
-    "id": "f12-e-c3-12", "book": "famous-12s", "chapter": 3, "name": "1 Chronicles",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 12,
+    "id": "f12-e-c3-12", "book": "misc", "chapter": 3, "name": "1 Chronicles",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 12,
     "summary": "Israel's genealogies and David's reign, retold for a returning exile community.", "notable": true
   },
   {
-    "id": "f12-e-c3-13", "book": "famous-12s", "chapter": 3, "name": "2 Chronicles",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 13,
+    "id": "f12-e-c3-13", "book": "misc", "chapter": 3, "name": "2 Chronicles",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 13,
     "summary": "Solomon through the exile, retold with a focus on the temple and the kings of Judah.", "notable": true
   },
   {
-    "id": "f12-e-c3-14", "book": "famous-12s", "chapter": 3, "name": "Ezra",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 14,
+    "id": "f12-e-c3-14", "book": "misc", "chapter": 3, "name": "Ezra",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 14,
     "summary": "Exiles return from Babylon and rebuild the temple in Jerusalem.", "notable": true
   },
   {
-    "id": "f12-e-c3-15", "book": "famous-12s", "chapter": 3, "name": "Nehemiah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 15,
+    "id": "f12-e-c3-15", "book": "misc", "chapter": 3, "name": "Nehemiah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 15,
     "summary": "Nehemiah leads the rebuilding of Jerusalem's walls despite opposition.", "notable": true
   },
   {
-    "id": "f12-e-c3-16", "book": "famous-12s", "chapter": 3, "name": "Esther",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 16,
+    "id": "f12-e-c3-16", "book": "misc", "chapter": 3, "name": "Esther",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 16,
     "summary": "A Jewish queen in Persia risks her life to save her people from genocide.", "notable": true
   },
   {
-    "id": "f12-e-c3-17", "book": "famous-12s", "chapter": 3, "name": "Job",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 17,
+    "id": "f12-e-c3-17", "book": "misc", "chapter": 3, "name": "Job",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 17,
     "summary": "A righteous man's suffering and his dialogue with friends and with God.", "notable": true
   },
   {
-    "id": "f12-e-c3-18", "book": "famous-12s", "chapter": 3, "name": "Psalms",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 18,
+    "id": "f12-e-c3-18", "book": "misc", "chapter": 3, "name": "Psalms",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 18,
     "summary": "Israel's collected songs and prayers of praise, lament, and trust.", "notable": true
   },
   {
-    "id": "f12-e-c3-19", "book": "famous-12s", "chapter": 3, "name": "Proverbs",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 19,
+    "id": "f12-e-c3-19", "book": "misc", "chapter": 3, "name": "Proverbs",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 19,
     "summary": "Short sayings of practical wisdom for a godly life.", "notable": true
   },
   {
-    "id": "f12-e-c3-20", "book": "famous-12s", "chapter": 3, "name": "Ecclesiastes",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 20,
+    "id": "f12-e-c3-20", "book": "misc", "chapter": 3, "name": "Ecclesiastes",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 20,
     "summary": "The Preacher's search for meaning in a life 'under the sun'.", "notable": true
   },
   {
-    "id": "f12-e-c3-21", "book": "famous-12s", "chapter": 3, "name": "Song of Solomon",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 21,
+    "id": "f12-e-c3-21", "book": "misc", "chapter": 3, "name": "Song of Solomon",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 21,
     "summary": "A love poem celebrating romance between a husband and wife.", "notable": true
   },
   {
-    "id": "f12-e-c3-22", "book": "famous-12s", "chapter": 3, "name": "Isaiah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 22,
+    "id": "f12-e-c3-22", "book": "misc", "chapter": 3, "name": "Isaiah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 22,
     "summary": "A major prophet warns Judah of judgment and promises a coming servant and Messiah.", "notable": true
   },
   {
-    "id": "f12-e-c3-23", "book": "famous-12s", "chapter": 3, "name": "Jeremiah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 23,
+    "id": "f12-e-c3-23", "book": "misc", "chapter": 3, "name": "Jeremiah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 23,
     "summary": "The weeping prophet warns Judah of coming judgment and Babylonian exile.", "notable": true
   },
   {
-    "id": "f12-e-c3-24", "book": "famous-12s", "chapter": 3, "name": "Lamentations",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 24,
+    "id": "f12-e-c3-24", "book": "misc", "chapter": 3, "name": "Lamentations",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 24,
     "summary": "Five poems mourning the destruction of Jerusalem.", "notable": true
   },
   {
-    "id": "f12-e-c3-25", "book": "famous-12s", "chapter": 3, "name": "Ezekiel",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 25,
+    "id": "f12-e-c3-25", "book": "misc", "chapter": 3, "name": "Ezekiel",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 25,
     "summary": "A prophet in exile sees visions of judgment and of Israel's future restoration.", "notable": true
   },
   {
-    "id": "f12-e-c3-26", "book": "famous-12s", "chapter": 3, "name": "Daniel",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 26,
+    "id": "f12-e-c3-26", "book": "misc", "chapter": 3, "name": "Daniel",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 26,
     "summary": "Daniel and his friends stay faithful in exile, and Daniel sees visions of future kingdoms.", "notable": true
   },
   {
-    "id": "f12-e-c3-27", "book": "famous-12s", "chapter": 3, "name": "Hosea",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 27,
+    "id": "f12-e-c3-27", "book": "misc", "chapter": 3, "name": "Hosea",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 27,
     "summary": "A prophet's unfaithful marriage pictures God's steadfast love for unfaithful Israel.", "notable": true
   },
   {
-    "id": "f12-e-c3-28", "book": "famous-12s", "chapter": 3, "name": "Joel",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 28,
+    "id": "f12-e-c3-28", "book": "misc", "chapter": 3, "name": "Joel",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 28,
     "summary": "A locust plague becomes a warning of the coming day of the Lord.", "notable": true
   },
   {
-    "id": "f12-e-c3-29", "book": "famous-12s", "chapter": 3, "name": "Amos",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 29,
+    "id": "f12-e-c3-29", "book": "misc", "chapter": 3, "name": "Amos",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 29,
     "summary": "A shepherd-prophet condemns Israel's injustice and empty religion.", "notable": true
   },
   {
-    "id": "f12-e-c3-30", "book": "famous-12s", "chapter": 3, "name": "Obadiah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 30,
+    "id": "f12-e-c3-30", "book": "misc", "chapter": 3, "name": "Obadiah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 30,
     "summary": "The shortest Old Testament book pronounces judgment on Edom.", "notable": true
   },
   {
-    "id": "f12-e-c3-31", "book": "famous-12s", "chapter": 3, "name": "Jonah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 31,
+    "id": "f12-e-c3-31", "book": "misc", "chapter": 3, "name": "Jonah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 31,
     "summary": "A reluctant prophet flees, is swallowed by a great fish, then preaches to Nineveh.", "notable": true
   },
   {
-    "id": "f12-e-c3-32", "book": "famous-12s", "chapter": 3, "name": "Micah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 32,
+    "id": "f12-e-c3-32", "book": "misc", "chapter": 3, "name": "Micah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 32,
     "summary": "A prophet condemns injustice and foretells a ruler born in Bethlehem.", "notable": true
   },
   {
-    "id": "f12-e-c3-33", "book": "famous-12s", "chapter": 3, "name": "Nahum",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 33,
+    "id": "f12-e-c3-33", "book": "misc", "chapter": 3, "name": "Nahum",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 33,
     "summary": "A prophecy of judgment against the cruelty of Nineveh.", "notable": true
   },
   {
-    "id": "f12-e-c3-34", "book": "famous-12s", "chapter": 3, "name": "Habakkuk",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 34,
+    "id": "f12-e-c3-34", "book": "misc", "chapter": 3, "name": "Habakkuk",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 34,
     "summary": "A prophet questions God about injustice and learns to trust him.", "notable": true
   },
   {
-    "id": "f12-e-c3-35", "book": "famous-12s", "chapter": 3, "name": "Zephaniah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 35,
+    "id": "f12-e-c3-35", "book": "misc", "chapter": 3, "name": "Zephaniah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 35,
     "summary": "A warning of judgment on Judah alongside a promise of future restoration.", "notable": true
   },
   {
-    "id": "f12-e-c3-36", "book": "famous-12s", "chapter": 3, "name": "Haggai",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 36,
+    "id": "f12-e-c3-36", "book": "misc", "chapter": 3, "name": "Haggai",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 36,
     "summary": "A prophet urges the returned exiles to finish rebuilding the temple.", "notable": true
   },
   {
-    "id": "f12-e-c3-37", "book": "famous-12s", "chapter": 3, "name": "Zechariah",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 37,
+    "id": "f12-e-c3-37", "book": "misc", "chapter": 3, "name": "Zechariah",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 37,
     "summary": "Visions encouraging the rebuilding of the temple and looking to a future king.", "notable": true
   },
   {
-    "id": "f12-e-c3-38", "book": "famous-12s", "chapter": 3, "name": "Malachi",
-    "citation": { "book": "famous-12s", "chapter": 3 }, "order": 38,
+    "id": "f12-e-c3-38", "book": "misc", "chapter": 3, "name": "Malachi",
+    "citation": { "book": "misc", "chapter": 3 }, "order": 38,
     "summary": "The last Old Testament prophet rebukes Israel's half-hearted worship.", "notable": true
   },
   {
-    "id": "f12-e-c4-0", "book": "famous-12s", "chapter": 4, "name": "Matthew",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 0,
+    "id": "f12-e-c4-0", "book": "misc", "chapter": 4, "name": "Matthew",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 0,
     "summary": "Jesus presented as the promised Jewish Messiah and king.", "notable": true
   },
   {
-    "id": "f12-e-c4-1", "book": "famous-12s", "chapter": 4, "name": "Mark",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 1,
+    "id": "f12-e-c4-1", "book": "misc", "chapter": 4, "name": "Mark",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 1,
     "summary": "A fast-paced account of Jesus as the suffering servant.", "notable": true
   },
   {
-    "id": "f12-e-c4-2", "book": "famous-12s", "chapter": 4, "name": "Luke",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 2,
+    "id": "f12-e-c4-2", "book": "misc", "chapter": 4, "name": "Luke",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 2,
     "summary": "A carefully researched account of Jesus, with special attention to the outcast.", "notable": true
   },
   {
-    "id": "f12-e-c4-3", "book": "famous-12s", "chapter": 4, "name": "John",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 3,
+    "id": "f12-e-c4-3", "book": "misc", "chapter": 4, "name": "John",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 3,
     "summary": "Jesus presented as the divine Word made flesh, through signs and 'I am' sayings.", "notable": true
   },
   {
-    "id": "f12-e-c4-4", "book": "famous-12s", "chapter": 4, "name": "Acts",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 4,
+    "id": "f12-e-c4-4", "book": "misc", "chapter": 4, "name": "Acts",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 4,
     "summary": "The Holy Spirit comes at Pentecost and the church spreads from Jerusalem to Rome.", "notable": true
   },
   {
-    "id": "f12-e-c4-5", "book": "famous-12s", "chapter": 4, "name": "Romans",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 5,
+    "id": "f12-e-c4-5", "book": "misc", "chapter": 4, "name": "Romans",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 5,
     "summary": "Paul's fullest letter explaining sin, faith, and salvation by grace.", "notable": true
   },
   {
-    "id": "f12-e-c4-6", "book": "famous-12s", "chapter": 4, "name": "1 Corinthians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 6,
+    "id": "f12-e-c4-6", "book": "misc", "chapter": 4, "name": "1 Corinthians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 6,
     "summary": "Paul corrects division and disorder in the church at Corinth.", "notable": true
   },
   {
-    "id": "f12-e-c4-7", "book": "famous-12s", "chapter": 4, "name": "2 Corinthians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 7,
+    "id": "f12-e-c4-7", "book": "misc", "chapter": 4, "name": "2 Corinthians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 7,
     "summary": "Paul defends his ministry and calls for reconciliation with the Corinthians.", "notable": true
   },
   {
-    "id": "f12-e-c4-8", "book": "famous-12s", "chapter": 4, "name": "Galatians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 8,
+    "id": "f12-e-c4-8", "book": "misc", "chapter": 4, "name": "Galatians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 8,
     "summary": "Paul defends salvation by faith alone against demands to follow the law.", "notable": true
   },
   {
-    "id": "f12-e-c4-9", "book": "famous-12s", "chapter": 4, "name": "Ephesians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 9,
+    "id": "f12-e-c4-9", "book": "misc", "chapter": 4, "name": "Ephesians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 9,
     "summary": "Paul describes the church as one body united in Christ.", "notable": true
   },
   {
-    "id": "f12-e-c4-10", "book": "famous-12s", "chapter": 4, "name": "Philippians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 10,
+    "id": "f12-e-c4-10", "book": "misc", "chapter": 4, "name": "Philippians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 10,
     "summary": "A joyful letter from prison encouraging humility and contentment.", "notable": true
   },
   {
-    "id": "f12-e-c4-11", "book": "famous-12s", "chapter": 4, "name": "Colossians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 11,
+    "id": "f12-e-c4-11", "book": "misc", "chapter": 4, "name": "Colossians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 11,
     "summary": "Paul exalts the supremacy of Christ over every false teaching.", "notable": true
   },
   {
-    "id": "f12-e-c4-12", "book": "famous-12s", "chapter": 4, "name": "1 Thessalonians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 12,
+    "id": "f12-e-c4-12", "book": "misc", "chapter": 4, "name": "1 Thessalonians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 12,
     "summary": "Paul encourages a young church and teaches about Christ's return.", "notable": true
   },
   {
-    "id": "f12-e-c4-13", "book": "famous-12s", "chapter": 4, "name": "2 Thessalonians",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 13,
+    "id": "f12-e-c4-13", "book": "misc", "chapter": 4, "name": "2 Thessalonians",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 13,
     "summary": "Paul corrects confusion about the day of the Lord and urges steady work.", "notable": true
   },
   {
-    "id": "f12-e-c4-14", "book": "famous-12s", "chapter": 4, "name": "1 Timothy",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 14,
+    "id": "f12-e-c4-14", "book": "misc", "chapter": 4, "name": "1 Timothy",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 14,
     "summary": "Paul instructs a young pastor on church order and sound teaching.", "notable": true
   },
   {
-    "id": "f12-e-c4-15", "book": "famous-12s", "chapter": 4, "name": "2 Timothy",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 15,
+    "id": "f12-e-c4-15", "book": "misc", "chapter": 4, "name": "2 Timothy",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 15,
     "summary": "Paul's final letter urges Timothy to guard the gospel and endure hardship.", "notable": true
   },
   {
-    "id": "f12-e-c4-16", "book": "famous-12s", "chapter": 4, "name": "Titus",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 16,
+    "id": "f12-e-c4-16", "book": "misc", "chapter": 4, "name": "Titus",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 16,
     "summary": "Paul instructs Titus on appointing elders and teaching sound doctrine on Crete.", "notable": true
   },
   {
-    "id": "f12-e-c4-17", "book": "famous-12s", "chapter": 4, "name": "Philemon",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 17,
+    "id": "f12-e-c4-17", "book": "misc", "chapter": 4, "name": "Philemon",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 17,
     "summary": "Paul appeals to Philemon to welcome back his runaway slave as a brother.", "notable": true
   },
   {
-    "id": "f12-e-c4-18", "book": "famous-12s", "chapter": 4, "name": "Hebrews",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 18,
+    "id": "f12-e-c4-18", "book": "misc", "chapter": 4, "name": "Hebrews",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 18,
     "summary": "Christ is presented as superior to the old covenant's priests and sacrifices.", "notable": true
   },
   {
-    "id": "f12-e-c4-19", "book": "famous-12s", "chapter": 4, "name": "James",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 19,
+    "id": "f12-e-c4-19", "book": "misc", "chapter": 4, "name": "James",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 19,
     "summary": "Practical instruction on living out genuine faith through works.", "notable": true
   },
   {
-    "id": "f12-e-c4-20", "book": "famous-12s", "chapter": 4, "name": "1 Peter",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 20,
+    "id": "f12-e-c4-20", "book": "misc", "chapter": 4, "name": "1 Peter",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 20,
     "summary": "Peter encourages suffering Christians to stand firm in hope.", "notable": true
   },
   {
-    "id": "f12-e-c4-21", "book": "famous-12s", "chapter": 4, "name": "2 Peter",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 21,
+    "id": "f12-e-c4-21", "book": "misc", "chapter": 4, "name": "2 Peter",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 21,
     "summary": "Peter warns against false teachers and affirms Christ's certain return.", "notable": true
   },
   {
-    "id": "f12-e-c4-22", "book": "famous-12s", "chapter": 4, "name": "1 John",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 22,
+    "id": "f12-e-c4-22", "book": "misc", "chapter": 4, "name": "1 John",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 22,
     "summary": "John assures believers of genuine faith through love, obedience, and truth.", "notable": true
   },
   {
-    "id": "f12-e-c4-23", "book": "famous-12s", "chapter": 4, "name": "2 John",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 23,
+    "id": "f12-e-c4-23", "book": "misc", "chapter": 4, "name": "2 John",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 23,
     "summary": "A short letter warning against welcoming false teachers.", "notable": true
   },
   {
-    "id": "f12-e-c4-24", "book": "famous-12s", "chapter": 4, "name": "3 John",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 24,
+    "id": "f12-e-c4-24", "book": "misc", "chapter": 4, "name": "3 John",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 24,
     "summary": "A short letter commending hospitality shown to traveling teachers.", "notable": true
   },
   {
-    "id": "f12-e-c4-25", "book": "famous-12s", "chapter": 4, "name": "Jude",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 25,
+    "id": "f12-e-c4-25", "book": "misc", "chapter": 4, "name": "Jude",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 25,
     "summary": "A short letter urging believers to contend for the faith against false teachers.", "notable": true
   },
   {
-    "id": "f12-e-c4-26", "book": "famous-12s", "chapter": 4, "name": "Revelation",
-    "citation": { "book": "famous-12s", "chapter": 4 }, "order": 26,
+    "id": "f12-e-c4-26", "book": "misc", "chapter": 4, "name": "Revelation",
+    "citation": { "book": "misc", "chapter": 4 }, "order": 26,
     "summary": "John's visions of Christ's ultimate victory and the new heaven and earth.", "notable": true
   }
 ]

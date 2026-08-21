@@ -1,7 +1,7 @@
 [
   {
     "id": "f12-deck-disciples",
-    "book": "famous-12s",
+    "book": "misc",
     "name": "The Twelve Disciples",
     "cardEventIds": [
       "f12-e-c1-0",
@@ -20,7 +20,7 @@
   },
   {
     "id": "f12-deck-tribes",
-    "book": "famous-12s",
+    "book": "misc",
     "name": "The Twelve Tribes of Israel",
     "cardEventIds": [
       "f12-e-c2-0",

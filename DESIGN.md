@@ -38,7 +38,7 @@ does the rest.
   (2–3 events/chapter). Genesis, Exodus.
 - `"selection"` — a curated, non-contiguous subset of a much longer book (e.g.
   19 famous psalms out of 150), *or* a fully hand-curated module with no
-  single underlying book at all (`famous-12s`, displayed as "Miscellaneous":
+  single underlying book at all (`misc`, displayed as "Miscellaneous":
   the twelve disciples, the twelve tribes of Israel, the Old Testament books
   in order, the New Testament books in order — see below). `chapterCount` is
   the count of curated chapters, not a chapter number ceiling. Arcs group
@@ -55,7 +55,7 @@ does the rest.
   guess at this point, not a proven taxonomy.
 
 **A `"selection"` module doesn't have to be a subset of one real book.**
-`famous-12s` proves this: every event/quote in a book's content directory
+`misc` proves this: every event/quote in a book's content directory
 must cite that book's own id (`check:content`'s "every item must belong to
 the book whose directory it lives in" rule), so its citations all read
 `"Miscellaneous 1"`, not "Matthew 10" or "Genesis 49" — none of its four
@@ -75,19 +75,19 @@ disciples." Turning it off suppresses `generateChapterQuestions`/`Location`/
 `Speaker`/`ChapterSummary` (and their ambiguity checks in `findAmbiguities`)
 for the whole book; free-response and sequence generation are unaffected,
 since those are already opt-in per chapter (`quizWorthy`) and per arc
-respectively. `famous-12s` is the only book that sets this `false` — every
+respectively. `misc` is the only book that sets this `false` — every
 question it offers is either a hand-tuned free-response roster or a
 put-in-order sequence, both described below.
 
 **`Book.chapterLabel`** (defaults to `"chapter"`) is the other piece a module
-like this needs: `famous-12s`'s four numbered units aren't Bible chapters at
+like this needs: `misc`'s four numbered units aren't Bible chapters at
 all, so every UI string that says "chapter(s)" — the chapters-index heading
 and count, the arc page's count, the book-home overview blurb, the generated
 "In which chapter does this happen" / "Which chapter" / "Review chapters"
 quiz strings — reads `book.chapterLabel` instead of hardcoding the word.
-`famous-12s` sets it to `"section"`. Genesis, Exodus, John, and Psalms don't
+`misc` sets it to `"section"`. Genesis, Exodus, John, and Psalms don't
 set it, so they're unaffected — Psalms' curated chapters *are* real Bible
-chapters, unlike `famous-12s`'s. Note this only fixes the single-book quiz
+chapters, unlike `misc`'s. Note this only fixes the single-book quiz
 (`/[book]/quiz`); the whole-Bible combined quiz's results breakdown
 (`CategoryBreakdown`) aggregates by mechanic type across every selected book
 at once, so it can't say "section" for one book's items and "chapter" for
@@ -149,12 +149,11 @@ score itself).
 (chapter, order) and slices to `arc.sequenceLimit ?? 6` — six is a UI
 judgment call (a tap-to-place list gets unwieldy past that for a normal
 narrative arc), not a hard constraint, so an arc that genuinely *is* the
-content being ordered can raise it. `famous-12s`'s Old Testament and New
+content being ordered can raise it. `misc`'s Old Testament and New
 Testament sections do exactly this (`sequenceLimit: 39` / `27`) to produce
 one "put the whole thing in order" question instead of splitting into several
-partial ones. `arc.sequenceNoun` (defaults to `"events"`) swaps the generated
-prompt's noun — "Put these **books** from..." — for an arc whose items aren't
-narrative events.
+partial ones. The generated prompt still says "Put these **events** from..."
+even for a book list — not worth a second schema field just for that noun.
 
 **Quiz and Diagnostic are one flow, not two.** There used to be a separate
 fixed-25-question "Diagnostic" with its own pages and a fixed (non-random)
@@ -245,7 +244,7 @@ answer (a name per disciple), and the global `minTerms` default (3) would
 pass someone who named three disciples and stopped. `Chapter.freeResponsePrompt`
 replaces the generated "what happens in..." prompt text, and
 `Chapter.freeResponseMinTerms` replaces the derived threshold outright.
-`famous-12s`'s disciples/tribes chapters use `freeResponseAliases` for the
+`misc`'s disciples/tribes chapters use `freeResponseAliases` for the
 whole roster (there's no prose title/summary to derive real names from) with
 a threshold a few short of the total, and lean on presence-based (not
 consuming) term matching for a deliberate leniency: listing a shared,
@@ -274,7 +273,7 @@ Its `shortName` should be a key verse or part of one (e.g. `"The Lord is my
 shepherd"` for Psalm 23) rather than a paraphrase — pick the chapter's most
 recognizable line.
 
-The exception: `famous-12s` (see below) has chapters that are themselves lists
+The exception: `misc` (see below) has chapters that are themselves lists
 of named things — the twelve disciples, the twelve tribes, the books of the
 Old and New Testaments — not a single poetic unit. Forcing those into one
 event per chapter would make each member unnamed and un-flashcardable (for
@@ -311,13 +310,13 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
 - **`Event.notable`** was a no-op for a long time (every authored event in
   every book set it `true`, so every `.filter(e => e.notable)` in the
   generator did nothing). It now has real, deliberate meaning in
-  `famous-12s`: the disciples/tribes events set it `false` specifically to
+  `misc`: the disciples/tribes events set it `false` specifically to
   keep them out of `generateSequenceQuestions`'s pool (see the enumerated-list
   exception above), while the OT/NT book events set it `true` so they *are*
   picked up. Genesis, Exodus, John, and Psalms still set it `true` on every
   event, unchanged — this remains something only a fully hand-curated module
   needs to reach for.
-- **Multi-book UI wiring**: Genesis, Exodus, Psalms, John, and famous-12s
+- **Multi-book UI wiring**: Genesis, Exodus, Psalms, John, and misc
   (displayed as "Miscellaneous") each have a full section (`app/[book]/*` —
   home, chapters, people, arcs, quiz, flashcards, print), gated by
   `wiredBookIds` in `lib/content.ts`. The homepage groups these under "Study
@@ -325,7 +324,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   book — it's four unrelated hand-curated lists (see the `coverageDepth` note
   above) — but it's wired exactly like any other book underneath. Psalms'
   `coverageDepth: "selection"` needed page treatment a `"narrative"` book
-  doesn't (and `famous-12s` reuses this same treatment, being `"selection"`
+  doesn't (and `misc` reuses this same treatment, being `"selection"`
   too): `app/[book]/study/chapters/page.tsx` and
   `app/[book]/study/arcs/[id]/page.tsx` show a chapter count instead of
   `arc.startChapter`–`endChapter` (a selection book's arcs are thematic and
@@ -384,7 +383,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    `summary`, so there's nothing else to author unless a chapter's common
    nickname isn't textually present in either, in which case add it to
    `freeResponseAliases`. A chapter whose free-response answer is a fixed
-   roster rather than prose (see `famous-12s`'s disciples/tribes chapters)
+   roster rather than prose (see `misc`'s disciples/tribes chapters)
    instead sets `freeResponsePrompt` and `freeResponseMinTerms` explicitly.
 7. If any chapters feed a flashcard deck, author `Event.shortName` for those
    events — a key verse or short headline, not a copy of `summary`. For a

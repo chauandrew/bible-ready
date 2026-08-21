@@ -30,14 +30,14 @@ import johnEventsJson from "@/content/john/events.json";
 import johnQuotesJson from "@/content/john/quotes.json";
 import johnQuestionsJson from "@/content/john/questions.json";
 import johnDecksJson from "@/content/john/decks.json";
-import famous12sBookJson from "@/content/famous-12s/book.json";
-import famous12sArcsJson from "@/content/famous-12s/arcs.json";
-import famous12sChaptersJson from "@/content/famous-12s/chapters.json";
-import famous12sPeopleJson from "@/content/famous-12s/people.json";
-import famous12sEventsJson from "@/content/famous-12s/events.json";
-import famous12sQuotesJson from "@/content/famous-12s/quotes.json";
-import famous12sQuestionsJson from "@/content/famous-12s/questions.json";
-import famous12sDecksJson from "@/content/famous-12s/decks.json";
+import miscBookJson from "@/content/misc/book.json";
+import miscArcsJson from "@/content/misc/arcs.json";
+import miscChaptersJson from "@/content/misc/chapters.json";
+import miscPeopleJson from "@/content/misc/people.json";
+import miscEventsJson from "@/content/misc/events.json";
+import miscQuotesJson from "@/content/misc/quotes.json";
+import miscQuestionsJson from "@/content/misc/questions.json";
+import miscDecksJson from "@/content/misc/decks.json";
 import {
   BookContentSchema,
   type Arc,
@@ -101,15 +101,15 @@ const johnContent: BookContent = BookContentSchema.parse({
   decks: johnDecksJson,
 });
 
-const famous12sContent: BookContent = BookContentSchema.parse({
-  book: famous12sBookJson,
-  arcs: famous12sArcsJson,
-  chapters: famous12sChaptersJson,
-  people: famous12sPeopleJson,
-  events: famous12sEventsJson,
-  quotes: famous12sQuotesJson,
-  questions: famous12sQuestionsJson,
-  decks: famous12sDecksJson,
+const miscContent: BookContent = BookContentSchema.parse({
+  book: miscBookJson,
+  arcs: miscArcsJson,
+  chapters: miscChaptersJson,
+  people: miscPeopleJson,
+  events: miscEventsJson,
+  quotes: miscQuotesJson,
+  questions: miscQuestionsJson,
+  decks: miscDecksJson,
 });
 
 /** Every loaded book's full content bundle, keyed by book id. */
@@ -118,7 +118,7 @@ const booksContent: Record<string, BookContent> = {
   [exodusContent.book.id]: exodusContent,
   [psalmsContent.book.id]: psalmsContent,
   [johnContent.book.id]: johnContent,
-  [famous12sContent.book.id]: famous12sContent,
+  [miscContent.book.id]: miscContent,
 };
 
 /** Book metadata for every loaded book — used by the "which books do you want to
@@ -132,10 +132,20 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "famous-12s"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
+}
+
+/** A name's leading number, if any — "1" for "1 timothy", null for "genesis".
+ * Numbered books always come in complete pairs (1/2 Timothy, 1/2 Peter...),
+ * and the number is the *only* thing distinguishing them, so it must match
+ * exactly: "1 timothy" and "2 timothy" are one edit apart by plain string
+ * distance, which would otherwise let wordMatches wave the digit through as
+ * a "typo" and silently credit the wrong book of the pair. */
+export function leadingNumber(s: string): string | null {
+  return s.match(/^\d+/)?.[0] ?? null;
 }
 
 /** Resolve free-typed book text ("2 timothy", "gensis") to a book, for the
@@ -151,7 +161,9 @@ export function matchBookName(input: string): Book | undefined {
     for (const name of [book.name, book.citationName].filter((n): n is string => !!n)) {
       const haystack = normalizeWords(name).join(" ");
       if (haystack === needle) return book;
-      if (!fuzzyMatch && wordMatches(needle, haystack)) fuzzyMatch = book;
+      if (!fuzzyMatch && leadingNumber(needle) === leadingNumber(haystack) && wordMatches(needle, haystack)) {
+        fuzzyMatch = book;
+      }
     }
   }
   return fuzzyMatch;

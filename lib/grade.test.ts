@@ -71,7 +71,7 @@ test("typo tolerance: a one-letter slip on a long keyword still matches", () => 
 // explicitly, since MIN_TERMS=3 (right for "any 3 keywords from a prose
 // summary") is far too lenient for "name almost all of a fixed 12-item roster".
 const miscChapters: Chapter[] = JSON.parse(
-  readFileSync(join(__dirname, "..", "content", "famous-12s", "chapters.json"), "utf-8")
+  readFileSync(join(__dirname, "..", "content", "misc", "chapters.json"), "utf-8")
 ).map((c: unknown) => ChapterSchema.parse(c));
 
 function miscGrading(number: number) {

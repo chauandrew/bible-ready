@@ -42,7 +42,7 @@ export const BookSchema = z.object({
   /** Singular noun for one of this book's `Chapter` entries, used everywhere the
    * UI says "N chapter(s)" / "Chapters" / "Review chapters". Narrative and
    * "selection" books whose chapters are real Bible chapters keep the default;
-   * a thematic module like `famous-12s`, whose numbered chapters are just
+   * a thematic module like `misc` (Miscellaneous), whose numbered chapters are just
    * internal indices with no single real citation (see DESIGN.md), sets this
    * to "section" instead. Plurals are formed by appending "s" at each call
    * site — keep this singular and lowercase. */
@@ -50,7 +50,7 @@ export const BookSchema = z.object({
   chapterCount: z.number().int().positive(),
   coverageDepth: CoverageDepthSchema,
   arcOrder: z.array(z.string()),
-  /** Off for a fully hand-curated module (e.g. famous-12s/Miscellaneous)
+  /** Off for a fully hand-curated module (e.g. Miscellaneous)
    * whose chapters don't represent real narrative content the generic
    * per-event/per-chapter templates can ask sensible questions about.
    * Suppresses generateChapterQuestions/Location/Speaker/ChapterSummary
@@ -74,9 +74,6 @@ export const ArcSchema = z.object({
    * arc. Raise it only for an arc that IS the content being ordered (e.g.
    * "the 39 books of the Old Testament"), not a shortcut around the default. */
   sequenceLimit: z.number().int().positive().optional(),
-  /** Noun for what's being ordered in that same generated prompt —
-   * "Put these ${sequenceNoun} from ..." — defaults to "events". */
-  sequenceNoun: z.string().optional(),
 });
 export type Arc = z.infer<typeof ArcSchema>;
 

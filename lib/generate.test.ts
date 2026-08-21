@@ -141,7 +141,7 @@ test("generateChapterQuestions produces a free-response chapter-guess item per n
   }
 });
 
-// A hand-curated module like Miscellaneous (Famous 12s) sets book.autoGenerate:
+// A hand-curated module like Miscellaneous sets book.autoGenerate:
 // false since its "chapters" aren't narrative prose the generic per-event/
 // per-chapter templates can ask sensible questions about.
 function orderingFixture(sequenceLimit?: number): BookData {

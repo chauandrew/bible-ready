@@ -51,7 +51,7 @@ function bookLabel(book: BookData["book"]): string {
 }
 
 /** Singular noun for one of this book's chapters in generated prompt text —
- * "chapter" by default, "section" for a thematic module like famous-12s. See
+ * "chapter" by default, "section" for a thematic module like Miscellaneous. See
  * BookSchema.chapterLabel in content/schema.ts. */
 function chapterWord(book: BookData["book"]): string {
   return book.chapterLabel ?? "chapter";
@@ -334,7 +334,7 @@ export function generateSequenceQuestions(data: BookData): GeneratedSequence[] {
       kind: "generated",
       id: `gen:sequence:${arc.id}`,
       type: "sequence",
-      prompt: `Put these ${arc.sequenceNoun ?? "events"} from "${arc.name}" in order.`,
+      prompt: `Put these events from "${arc.name}" in order.`,
       itemsInOrder: arcEvents.map((e) => e.name),
       citation: { book: book.id, chapter: arc.startChapter },
     });
