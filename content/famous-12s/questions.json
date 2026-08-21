@@ -1,0 +1,155 @@
+[
+  {
+    "id": "f12-q-character-1",
+    "book": "famous-12s",
+    "category": "character",
+    "prompt": "Which three disciples formed Jesus' innermost circle, present at moments like the Transfiguration?",
+    "options": [
+      "Peter, James, and John",
+      "Andrew, Philip, and Thomas, who traveled together most often",
+      "Matthew, Simon the Zealot, and Thaddaeus, the least prominent disciples",
+      "James the son of Alphaeus, Bartholomew, and Judas Iscariot"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    }
+  },
+  {
+    "id": "f12-q-character-2",
+    "book": "famous-12s",
+    "category": "character",
+    "prompt": "Which of these names was NOT one of the original twelve disciples Jesus named in Matthew 10?",
+    "options": [
+      "Bartholomew, one of the twelve",
+      "Thaddaeus, one of the twelve",
+      "Matthias, chosen later to replace Judas after his death",
+      "Simon the Zealot, one of the twelve"
+    ],
+    "correctIndex": 2,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    }
+  },
+  {
+    "id": "f12-q-character-3",
+    "book": "famous-12s",
+    "category": "character",
+    "prompt": "Which tribe of Israel was set apart for priestly service instead of receiving its own territory?",
+    "options": [
+      "Levi, given no land but set apart for the tabernacle",
+      "Judah, given royal leadership over the other tribes",
+      "Reuben, the firstborn who lost his birthright",
+      "Dan, later associated with idol worship"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    }
+  },
+  {
+    "id": "f12-q-character-4",
+    "book": "famous-12s",
+    "category": "character",
+    "prompt": "Jesus is a descendant of which tribe of Israel?",
+    "options": [
+      "Judah, blessed by Jacob with royal leadership",
+      "Levi, the priestly tribe",
+      "Benjamin, the tribe of Israel's first king",
+      "Ephraim, one of Joseph's two tribes"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    }
+  },
+  {
+    "id": "f12-q-theme-1",
+    "book": "famous-12s",
+    "category": "theme",
+    "prompt": "What does Paul urge believers to do with their lives in Romans 12?",
+    "options": [
+      "Offer them as a living sacrifice, holy and pleasing to God",
+      "Withdraw from the world and avoid all outsiders",
+      "Compete with each other for the most impressive spiritual gift",
+      "Give away all their possessions to the church"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3
+    }
+  },
+  {
+    "id": "f12-q-theme-2",
+    "book": "famous-12s",
+    "category": "theme",
+    "prompt": "According to Romans 12, how should believers respond to those who persecute them?",
+    "options": [
+      "Bless them and refuse to curse them in return",
+      "Report them to the governing authorities immediately",
+      "Return evil for evil so justice is served",
+      "Avoid them completely and cut off all contact"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3
+    }
+  },
+  {
+    "id": "f12-q-theme-3",
+    "book": "famous-12s",
+    "category": "theme",
+    "prompt": "What image does Paul use in 1 Corinthians 12 to describe the diversity of spiritual gifts in the church?",
+    "options": [
+      "A human body with many different, necessary parts",
+      "A field with many different crops growing side by side",
+      "A building with many different rooms and floors",
+      "A choir with many different voices singing in unison"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4
+    }
+  },
+  {
+    "id": "f12-q-theme-4",
+    "book": "famous-12s",
+    "category": "theme",
+    "prompt": "According to Paul in 1 Corinthians 12, why does the body still need its seemingly weaker or less honorable parts?",
+    "options": [
+      "Every part is necessary, and God arranged the body so none can be excluded",
+      "Weaker parts exist only until they can be replaced by stronger ones",
+      "Only the most visible parts of the body actually matter",
+      "Paul says the weaker parts should eventually be removed"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4
+    }
+  },
+  {
+    "id": "f12-q-arc-1",
+    "book": "famous-12s",
+    "category": "theme",
+    "prompt": "What do the twelve disciples, the twelve tribes of Israel, and Paul's teaching on spiritual gifts have in common?",
+    "options": [
+      "Each shows individuals with different roles united into one larger whole",
+      "Each describes a strict hierarchy where only the most gifted members matter",
+      "Each is a list of people who ultimately rejected their calling",
+      "Each has nothing to do with unity or community"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    }
+  }
+]

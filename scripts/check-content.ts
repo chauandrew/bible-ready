@@ -24,6 +24,12 @@ const VERSE_COUNTS: Record<string, number> = {
   exodus: 1213,
   psalms: 2461,
   john: 879,
+  // "famous-12s" isn't a real book — its quotes are drawn only from Romans 12
+  // (Romans has 433 verses total) and 1 Corinthians 12 (1 Corinthians has 437),
+  // the only two chapters in this module with quotes. Combined verse count of
+  // those two source chapters' books, since check-content only tracks budget
+  // per content directory, not per real source book within one.
+  "famous-12s": 870,
 };
 const VERSE_BUDGET_PCT = 0.25;
 /** Crossway's ESV permission is capped in absolute verses across the whole work,

@@ -1,0 +1,252 @@
+[
+  {
+    "id": "peter",
+    "name": "Peter",
+    "summary": "The leader among the Twelve, part of Jesus' innermost circle with James and John at moments like the Transfiguration and Gethsemane. He denies knowing Jesus three times during the trial but is later restored and becomes a leading voice in the early church.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "summary": "Peter's brother and a former disciple of John the Baptist, often remembered as the one who brings others to Jesus, including Simon himself.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "james-zebedee",
+    "name": "James, son of Zebedee",
+    "summary": "One of the 'sons of thunder' and, with Peter and John, part of Jesus' innermost circle, present at the Transfiguration and in Gethsemane. He was the first of the apostles to be martyred, put to death by Herod Agrippa I.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "john-zebedee",
+    "name": "John, son of Zebedee",
+    "summary": "The other 'son of thunder,' and with Peter and James, part of Jesus' innermost circle. He is traditionally identified as the disciple whom Jesus loved and credited as the author of the Gospel of John.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "philip",
+    "name": "Philip",
+    "summary": "A disciple from Bethsaida remembered for bringing his skeptical friend Nathanael to meet Jesus.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "bartholomew",
+    "name": "Bartholomew",
+    "summary": "Traditionally identified with Nathanael, the man Jesus called guileless before they had ever met.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "thomas",
+    "name": "Thomas",
+    "summary": "Nicknamed 'the Twin,' remembered for doubting the resurrection until he saw and touched the risen Jesus for himself.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "matthew",
+    "name": "Matthew",
+    "summary": "A tax collector called away from his tax booth to follow Jesus, traditionally credited as the author of the Gospel of Matthew.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "james-alphaeus",
+    "name": "James, son of Alphaeus",
+    "summary": "Sometimes called 'James the Less' to distinguish him from James the son of Zebedee; little else about him is recorded.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "thaddaeus",
+    "name": "Thaddaeus",
+    "summary": "Also called Judas son of James in Luke's gospel \u2014 not to be confused with Judas Iscariot.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "simon-zealot",
+    "name": "Simon the Zealot",
+    "summary": "Identified by his association with the Zealots, a movement resisting Roman rule over Israel.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "judas-iscariot",
+    "name": "Judas Iscariot",
+    "summary": "The disciple who betrays Jesus for thirty pieces of silver. After his death, the remaining apostles choose Matthias by casting lots to restore the number of the Twelve.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "relations": []
+  },
+  {
+    "id": "reuben",
+    "name": "Reuben",
+    "summary": "Jacob's firstborn son, who loses his father's blessing for defiling his father's bed. His descendants settle east of the Jordan River.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "simeon",
+    "name": "Simeon",
+    "summary": "Rebuked by Jacob alongside Levi for violence against Shechem. His tribe later receives no separate territory of its own, settling within Judah's allotment instead.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "levi",
+    "name": "Levi",
+    "summary": "Also rebuked by Jacob for violence, but his descendants become the priestly tribe, set apart for tabernacle and temple service instead of a normal share of the land.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "judah",
+    "name": "Judah",
+    "summary": "Blessed with royal leadership \u2014 'the scepter shall not depart from Judah' \u2014 he becomes the ancestor of King David and, ultimately, of Jesus, called 'the Lion of the tribe of Judah.' Judah and Benjamin form the southern kingdom after Israel later splits in two.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "zebulun",
+    "name": "Zebulun",
+    "summary": "Blessed to settle by the seashore as a haven for ships, in the northern part of the land.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "issachar",
+    "name": "Issachar",
+    "summary": "Described as a strong donkey who settles down to labor, his tribe settling in the north near Zebulun.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "dan",
+    "name": "Dan",
+    "summary": "Blessed as 'a serpent in the way,' his tribe later produces the judge Samson but also becomes associated with idol worship, one of the more troubled tribes in Israel's history.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "gad",
+    "name": "Gad",
+    "summary": "Blessed as one who will be raided but strikes back, his tribe settling east of the Jordan River alongside Reuben.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "asher",
+    "name": "Asher",
+    "summary": "Blessed with rich food fit for a king, his tribe settling along the Mediterranean coast in the north.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "naphtali",
+    "name": "Naphtali",
+    "summary": "Described as 'a doe let loose' who bears beautiful words, his tribe settling in the north, in the region later known as Galilee.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "summary": "Jacob's favored son, blessed abundantly as 'a fruitful bough.' His descendants split into two tribes, Ephraim and Manasseh, with half of Manasseh settling east of the Jordan \u2014 keeping the total at twelve tribes even though Levi receives no land of its own.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "benjamin",
+    "name": "Benjamin",
+    "summary": "Blessed as 'a ravenous wolf,' his tribe joins Judah in the southern kingdom after Israel later splits. Israel's first king, Saul, and the apostle Paul both come from Benjamin.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "relations": []
+  },
+  {
+    "id": "paul",
+    "name": "Paul",
+    "summary": "An apostle and former persecutor of the church, from the tribe of Benjamin, who writes to the Roman and Corinthian churches about living out the gospel together.",
+    "firstAppearance": {
+      "book": "famous-12s",
+      "chapter": 3
+    },
+    "relations": []
+  }
+]

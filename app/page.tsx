@@ -5,6 +5,7 @@ const available = [
   { href: "/exodus", name: "Exodus", desc: "From slavery in Egypt to the crossing of the Red Sea, 14 chapters." },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme." },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards." },
+  { href: "/famous-12s", name: "Famous 12s", desc: "The twelve disciples, the twelve tribes of Israel, Romans 12, and 1 Corinthians 12." },
 ];
 
 const comingSoon: { name: string; desc: string }[] = [];
@@ -31,10 +32,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Study one book</h2>
-      <p className="page-lede" style={{ marginBottom: "1rem" }}>
-        Chapters, people, quizzes, and flashcards for one book.
-      </p>
+      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Modules</h2>
       <div className="grid-cards">
         {available.map((b) => (
           <Link key={b.href} href={b.href} className="card">
@@ -58,10 +56,7 @@ export default function Home() {
         ))}
       </div>
 
-      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Study across books</h2>
-      <p className="page-lede" style={{ marginBottom: "1rem" }}>
-        Mix questions or flashcards from any set of books you pick.
-      </p>
+      <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Review Tools</h2>
       <div className="grid-cards">
         {combine.map((c) => (
           <Link key={c.href} href={c.href} className="card">

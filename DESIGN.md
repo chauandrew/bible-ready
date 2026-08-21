@@ -37,19 +37,36 @@ does the rest.
 - `"narrative"` — contiguous chapters 1..chapterCount, dense event coverage
   (2–3 events/chapter). Genesis, Exodus.
 - `"selection"` — a curated, non-contiguous subset of a much longer book (e.g.
-  19 famous psalms out of 150). `chapterCount` is the count of curated
-  chapters, not a chapter number ceiling. Arcs group chapters *thematically*
-  via each chapter's `arcId` — the authoritative membership signal — not by a
-  numeric range (`arc.startChapter`/`endChapter` is display metadata only for
-  a selection book, since a thematic group isn't contiguous). `check:content`
-  skips the contiguity rules for this depth. One event per chapter, not split
-  into sub-events by section — see the authoring rule below.
+  19 famous psalms out of 150), *or* a curated cross-reference collection with
+  no single underlying book at all (`famous-12s`: the twelve disciples, the
+  twelve tribes, Romans 12, 1 Corinthians 12 — see below). `chapterCount` is
+  the count of curated chapters, not a chapter number ceiling. Arcs group
+  chapters *thematically* via each chapter's `arcId` — the authoritative
+  membership signal — not by a numeric range (`arc.startChapter`/`endChapter`
+  is display metadata only for a selection book, since a thematic group isn't
+  contiguous). `check:content` skips the contiguity rules for this depth. One
+  event per chapter by default, not split into sub-events by section — see
+  the authoring rule below for the enumerated-list exception.
 - `"sparse"` / `"argument"` — declared in the schema for books with much lower
   event density (law, genealogy) or epistles (argument-beat structure instead
-  of narrated events). Not yet exercised by real content — Genesis and Exodus
-  are dense narrative, Psalms is a selection. Revisit this list once a law
-  book or an epistle actually gets authored; the categories are a guess at
-  this point, not a proven taxonomy.
+  of narrated events). Not yet exercised by real content. Revisit this list
+  once a law book or an epistle actually gets authored; the categories are a
+  guess at this point, not a proven taxonomy.
+
+**A `"selection"` module doesn't have to be a subset of one real book.**
+`famous-12s` proves this: every event/quote in a book's content directory
+must cite that book's own id (`check:content`'s "every item must belong to
+the book whose directory it lives in" rule), so `famous-12s`'s citations all
+read `"Famous 12s 3"`, not `"Romans 12"` — a deliberate, accepted tradeoff for
+the two chapters (Romans 12, 1 Corinthians 12) that *do* have one real source
+passage. The other two chapters (the twelve disciples, the twelve tribes)
+never had one canonical citation to begin with — a disciple list drawn from
+Matthew 10 and a tribal blessing from Genesis 49 aren't really "about" a
+single verse the way a Genesis event is. If citation accuracy for the
+real-passage chapters ever matters more than reusing the existing book/quiz
+engine, the fix is a new content type that lets each item carry its own real
+citation into whatever book it's from — a bigger lift, deliberately not built
+for this first thematic module.
 
 ## The question generator
 
@@ -155,15 +172,26 @@ Unlike `name`, it has no distinctness requirement — the generator never reads
 it, only `FlashcardDeck` display does. Falls back to `name` when absent, so
 it's fine to leave unset until a book's decks are actually authored.
 
-**For a `"selection"` book, one `Event` per chapter — not split by section.**
-A curated single-chapter unit (a psalm, say) is one poem, not a narrative
-with discrete beats; splitting it into per-section events (an "opening theme"
-event and a "closing theme" event) mismatches the model events.json is built
-for. That event's citation should omit `verses` entirely so it reads as
-`"Psalm 150"`, not `"Psalm 150:1-6"` — the citation is the whole chapter, not
-a partial range. Its `shortName` should be a key verse or part of one (e.g.
-`"The Lord is my shepherd"` for Psalm 23) rather than a paraphrase — pick the
-chapter's most recognizable line.
+**For a `"selection"` book, one `Event` per chapter — not split by section —
+*unless the chapter is itself an enumerated list.*** A curated single-chapter
+unit (a psalm, say) is one poem, not a narrative with discrete beats;
+splitting it into per-section events (an "opening theme" event and a "closing
+theme" event) mismatches the model events.json is built for. That event's
+citation should omit `verses` entirely so it reads as `"Psalm 150"`, not
+`"Psalm 150:1-6"` — the citation is the whole chapter, not a partial range.
+Its `shortName` should be a key verse or part of one (e.g. `"The Lord is my
+shepherd"` for Psalm 23) rather than a paraphrase — pick the chapter's most
+recognizable line.
+
+The exception: `famous-12s` (see below) has chapters that are themselves lists
+of twelve named things (the twelve disciples, the twelve tribes), not a single
+poetic unit. Forcing those into one event per chapter would make each member
+unnamed and un-flashcardable — so those two chapters break the "one event"
+rule deliberately, one event per named member, each tagged to its own
+`Person` entry for the fuller bio. Romans 12 and 1 Corinthians 12, by
+contrast, are real single chapters with real internal sub-themes, so they're
+authored the normal "narrative" way (2-3 events per chapter, like Genesis or
+John) rather than as a curated single unit.
 
 **Distractor option casing must be consistent within a pool.** Any field that
 feeds MC options (`place`, chapter titles, etc.) must be capitalized the same
@@ -189,11 +217,15 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   of this kind of curation flag, at the chapter level. Either give `notable`
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
-- **Multi-book UI wiring**: Genesis, Exodus, Psalms, and John each have a full
-  section (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards,
-  print), gated by `wiredBookIds` in `lib/content.ts`. Psalms'
-  `coverageDepth: "selection"` needed page treatment a `"narrative"` book
-  doesn't: `app/[book]/study/chapters/page.tsx` and
+- **Multi-book UI wiring**: Genesis, Exodus, Psalms, John, and Famous 12s each
+  have a full section (`app/[book]/*` — home, chapters, people, arcs, quiz,
+  flashcards, print), gated by `wiredBookIds` in `lib/content.ts`. The
+  homepage groups these under "Study one module" rather than "Study one
+  book," since Famous 12s isn't a book — it's a cross-reference collection
+  (see the `coverageDepth` note above) — but it's wired exactly like any
+  other book underneath. Psalms' `coverageDepth: "selection"` needed page
+  treatment a `"narrative"` book doesn't (and `famous-12s` reuses this same
+  treatment, being `"selection"` too): `app/[book]/study/chapters/page.tsx` and
   `app/[book]/study/arcs/[id]/page.tsx` show a chapter count instead of
   `arc.startChapter`–`endChapter` (a selection book's arcs are thematic and
   overlapping, so the range is display metadata, not a real span — see the

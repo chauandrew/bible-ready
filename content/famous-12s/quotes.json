@@ -1,0 +1,54 @@
+[
+  {
+    "id": "f12-q-3-2",
+    "book": "famous-12s",
+    "chapter": 3,
+    "verse": 2,
+    "speakerId": "paul",
+    "text": "Do not be conformed to this world, but be transformed by the renewal of your mind, that by testing you may discern what is the will of God, what is good and acceptable and perfect.",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3,
+      "verses": "2"
+    }
+  },
+  {
+    "id": "f12-q-3-21",
+    "book": "famous-12s",
+    "chapter": 3,
+    "verse": 21,
+    "speakerId": "paul",
+    "text": "Do not be overcome by evil, but overcome evil with good.",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3,
+      "verses": "21"
+    }
+  },
+  {
+    "id": "f12-q-4-12",
+    "book": "famous-12s",
+    "chapter": 4,
+    "verse": 12,
+    "speakerId": "paul",
+    "text": "For as the body is one and has many members, and all the members of the body, though many, are one body, so it is with Christ.",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4,
+      "verses": "12"
+    }
+  },
+  {
+    "id": "f12-q-4-27",
+    "book": "famous-12s",
+    "chapter": 4,
+    "verse": 27,
+    "speakerId": "paul",
+    "text": "Now you are the body of Christ and individually members of it.",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4,
+      "verses": "27"
+    }
+  }
+]
