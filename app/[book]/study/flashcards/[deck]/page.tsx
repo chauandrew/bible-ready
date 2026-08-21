@@ -20,7 +20,7 @@ export default async function DeckPage({ params }: { params: Promise<{ book: str
 
   if (deckId === ENTIRE_BOOK_DECK_ID) {
     const cards = shuffle(cardsForBooks([bookId]), mulberry32(hashSeed(`entire-book:${bookId}`)));
-    return <FlashcardDeck title={`${book.name} — entire book`} cards={cards} />;
+    return <FlashcardDeck title={`All of ${book.name}`} cards={cards} />;
   }
 
   const deck = deckInBook(bookId, deckId);

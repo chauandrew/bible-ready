@@ -22,7 +22,7 @@ export default function PracticePage() {
     return (
       <main className="container">
         <h1 className="page-title" style={{ marginTop: "1rem" }}>Practice your misses</h1>
-        <p style={{ color: "var(--text-secondary)" }}>Nothing to practice — you have no missed questions saved.</p>
+        <p style={{ color: "var(--text-secondary)" }}>Nothing to practice yet. You haven&apos;t missed any questions.</p>
       </main>
     );
   }

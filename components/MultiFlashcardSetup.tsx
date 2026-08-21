@@ -20,7 +20,7 @@ export default function MultiFlashcardSetup() {
 
   return (
     <main className="container">
-      <h1 className="page-title" style={{ marginTop: "1rem" }}>Flashcards — combine books</h1>
+      <h1 className="page-title" style={{ marginTop: "1rem" }}>Flashcards across books</h1>
       <p style={{ color: "var(--text-secondary)", marginBottom: "1.25rem" }}>
         Every card from the books you select, shuffled into one deck.
       </p>

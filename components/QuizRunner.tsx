@@ -95,7 +95,7 @@ export default function QuizRunner({
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
                     <div className="note" style={{ borderColor: correct ? "var(--success-border)" : "var(--danger-border)" }}>
-                      {correct ? "Correct — " : "Answer — "}
+                      {correct ? "Correct: " : "Answer: "}
                       {correctText}
                       {"explanation" in it && it.explanation ? ` (${it.explanation})` : ""}
                     </div>

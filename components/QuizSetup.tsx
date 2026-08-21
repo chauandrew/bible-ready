@@ -57,7 +57,7 @@ export default function QuizSetup({
   return (
     <main className="container">
       <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>
-        Quiz — {bookName}
+        {bookName} quiz
       </h1>
 
       <div className="card" style={{ marginBottom: "1rem" }}>

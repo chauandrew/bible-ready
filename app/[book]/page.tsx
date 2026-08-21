@@ -18,7 +18,7 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
   ];
 
   const reviewTools = [
-    { href: `/${bookId}/quiz`, label: "Quiz", desc: "Pick how many questions and which sections, then get a score and where to focus." },
+    { href: `/${bookId}/quiz`, label: "Quiz", desc: "Pick your questions and sections, then see your score and where to focus." },
     { href: `/${bookId}/print/all`, label: "Worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
   ];
 
@@ -34,7 +34,7 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
       </div>
       <h1 className="page-title">{book.name}</h1>
       <p className="page-lede">
-        Learn the storyline of {book.name} — what happens, where, and to whom.
+        Learn what happens in {book.name}, where, and to whom.
       </p>
 
       <h2 className="section-title">Study tools</h2>

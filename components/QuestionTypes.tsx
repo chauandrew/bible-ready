@@ -109,7 +109,7 @@ export function SequenceQuestion({
               ) : (
                 <button type="button" className="option" style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem" }} onClick={() => setChosen(chosen.filter((x) => x !== c))}>
                   {c}
-                  <span className="sr-only"> — tap to remove</span>
+                  <span className="sr-only">. Tap to remove.</span>
                 </button>
               )}
             </li>
@@ -297,7 +297,7 @@ export function FreeResponseQuestion({
           <div className="note" style={{ borderColor: result.correct ? "var(--success-border)" : "var(--danger-border)" }}>
             <span className="sr-only">{result.correct ? "Correct: " : "Not quite: "}</span>
             <span aria-hidden="true">{result.correct ? "✓ " : "✗ "}</span>
-            {result.correct ? "Good — you covered the main idea. " : "Not quite — here's what happens: "}
+            {result.correct ? "Good. You covered the main idea. " : "Not quite. Here's what happens: "}
             {modelAnswer}
           </div>
           <p className="citation" style={{ marginTop: "0.5rem" }}>{formatCitation(item.citation)}</p>
