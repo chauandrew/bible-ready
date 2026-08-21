@@ -26,9 +26,9 @@ export default function Home() {
 
       <h2 className="section-title">Question of the Day</h2>
       <div className="grid-cards" style={{ marginBottom: "0.5rem" }}>
-        <Link href="/qotd" className="card">
-          <div style={{ fontWeight: 600, color: "var(--text)" }}>Play today&apos;s question</div>
-          <div style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", color: "var(--text-secondary)", marginTop: "0.2rem" }}>
+        <Link href="/qotd" className="card qotd-cta">
+          <div className="qotd-cta-title" style={{ fontWeight: 600 }}>Play today&apos;s question</div>
+          <div className="qotd-cta-desc" style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem", marginTop: "0.2rem" }}>
             One shared question every day. Answer fast.
           </div>
         </Link>
