@@ -37,7 +37,7 @@ does the rest.
 - `"narrative"` — contiguous chapters 1..chapterCount, dense event coverage
   (2–3 events/chapter). Genesis, Exodus.
 - `"selection"` — a curated, non-contiguous subset of a much longer book (e.g.
-  18 famous psalms out of 150). `chapterCount` is the count of curated
+  19 famous psalms out of 150). `chapterCount` is the count of curated
   chapters, not a chapter number ceiling. Arcs group chapters *thematically*
   via each chapter's `arcId` — the authoritative membership signal — not by a
   numeric range (`arc.startChapter`/`endChapter` is display metadata only for

@@ -179,6 +179,24 @@
     "notable": true
   },
   {
+    "id": "psalms-119-e1",
+    "book": "psalms",
+    "chapter": 119,
+    "name": "An extended meditation on the goodness of God's law",
+    "shortName": "Your word is a lamp to my feet",
+    "citation": {
+      "book": "psalms",
+      "chapter": 119
+    },
+    "place": "the longest chapter in the Bible, an acrostic spanning all 22 letters of the Hebrew alphabet",
+    "peopleIds": [
+      "the-psalmist"
+    ],
+    "order": 0,
+    "summary": "The psalmist praises God's law at length across 176 verses, calling it a guide, a comfort, and the source of wisdom for living rightly in every circumstance.",
+    "notable": true
+  },
+  {
     "id": "psalms-91-e1",
     "book": "psalms",
     "chapter": 91,
