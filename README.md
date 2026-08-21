@@ -1,8 +1,8 @@
 # Bible Ready
 
-A study and quiz app for the book of Genesis, built for youth ministry leaders and
-the high schoolers they teach. Domain knowledge over trivia: what happens, where,
-and to whom — not theological debate.
+A Bible study and quiz app (Genesis, Exodus, Psalms), built for youth ministry
+leaders and the high schoolers they teach. Domain knowledge over trivia: what
+happens, where, and to whom — not theological debate.
 
 Static site, no backend, no database — with one scoped exception: Question of
 the Day (`/qotd`) calls Supabase directly from the browser to record answers
@@ -33,8 +33,8 @@ percentile.
 
 ## Content
 
-Genesis content lives in `content/genesis/*.json`, validated against `content/schema.ts`.
-Quiz questions come from two sources:
+Each book's content lives in `content/<book>/*.json`, validated against
+`content/schema.ts`. Quiz questions come from two sources:
 
 - **Generated** — derived at runtime from `events.json`/`quotes.json`/`chapters.json`
   by `lib/generate.ts` (which chapter, where, who says it, what a chapter is about,

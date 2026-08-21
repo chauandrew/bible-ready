@@ -189,15 +189,19 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   of this kind of curation flag, at the chapter level. Either give `notable`
   real meaning at the event level too, or remove it — don't leave a third
   copy of an unused boolean lying around.
-- **Multi-book UI wiring**: Genesis and Exodus each have a full section
-  (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards, print),
-  gated by `wiredBookIds` in `lib/content.ts`. Psalms' content is fully
-  authored and feeds the whole-Bible / multi-book quiz and flashcard modes
-  (`/quiz/bible`, `/study/flashcards/bible`), but doesn't have its own
-  section yet —
-  `coverageDepth: "selection"` needs page treatment a `"narrative"` book
-  doesn't (thematic, non-contiguous arcs; no per-chapter "next" that means
-  anything). Add it to `wiredBookIds` once that page treatment exists.
+- **Multi-book UI wiring**: Genesis, Exodus, and Psalms each have a full
+  section (`app/[book]/*` — home, chapters, people, arcs, quiz, flashcards,
+  print), gated by `wiredBookIds` in `lib/content.ts`. Psalms'
+  `coverageDepth: "selection"` needed page treatment a `"narrative"` book
+  doesn't: `app/[book]/study/chapters/page.tsx` and
+  `app/[book]/study/arcs/[id]/page.tsx` show a chapter count instead of
+  `arc.startChapter`–`endChapter` (a selection book's arcs are thematic and
+  overlapping, so the range is display metadata, not a real span — see the
+  content authoring rules above), and
+  `app/[book]/study/chapters/[number]/page.tsx`'s prev/next links walk the
+  book's chapter list by index instead of `chapter.number +/- 1`, since a
+  curated chapter list (Psalm 1, 8, 19...) isn't contiguous. A future
+  `"sparse"` or `"argument"` book reuses the same `coverageDepth` branch.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 - **Question of the Day (`/qotd`)** has one deterministic daily question
