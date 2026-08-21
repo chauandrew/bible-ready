@@ -30,6 +30,14 @@ import johnEventsJson from "@/content/john/events.json";
 import johnQuotesJson from "@/content/john/quotes.json";
 import johnQuestionsJson from "@/content/john/questions.json";
 import johnDecksJson from "@/content/john/decks.json";
+import famous12sBookJson from "@/content/famous-12s/book.json";
+import famous12sArcsJson from "@/content/famous-12s/arcs.json";
+import famous12sChaptersJson from "@/content/famous-12s/chapters.json";
+import famous12sPeopleJson from "@/content/famous-12s/people.json";
+import famous12sEventsJson from "@/content/famous-12s/events.json";
+import famous12sQuotesJson from "@/content/famous-12s/quotes.json";
+import famous12sQuestionsJson from "@/content/famous-12s/questions.json";
+import famous12sDecksJson from "@/content/famous-12s/decks.json";
 import {
   BookContentSchema,
   type Arc,
@@ -92,12 +100,24 @@ const johnContent: BookContent = BookContentSchema.parse({
   decks: johnDecksJson,
 });
 
+const famous12sContent: BookContent = BookContentSchema.parse({
+  book: famous12sBookJson,
+  arcs: famous12sArcsJson,
+  chapters: famous12sChaptersJson,
+  people: famous12sPeopleJson,
+  events: famous12sEventsJson,
+  quotes: famous12sQuotesJson,
+  questions: famous12sQuestionsJson,
+  decks: famous12sDecksJson,
+});
+
 /** Every loaded book's full content bundle, keyed by book id. */
 const booksContent: Record<string, BookContent> = {
   [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,
   [psalmsContent.book.id]: psalmsContent,
   [johnContent.book.id]: johnContent,
+  [famous12sContent.book.id]: famous12sContent,
 };
 
 /** Book metadata for every loaded book — used by the "which books do you want to
@@ -111,7 +131,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "famous-12s"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

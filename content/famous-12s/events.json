@@ -1,0 +1,512 @@
+[
+  {
+    "id": "f12-e-c1-0",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Peter is named among the Twelve",
+    "shortName": "Peter",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "peter"
+    ],
+    "order": 0,
+    "summary": "Simon, whom Jesus renames Peter, is listed first among the twelve apostles Jesus chooses.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-1",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Andrew is named among the Twelve",
+    "shortName": "Andrew",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "andrew"
+    ],
+    "order": 1,
+    "summary": "Peter's brother is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-2",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "James, son of Zebedee is named among the Twelve",
+    "shortName": "James, son of Zebedee",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "james-zebedee"
+    ],
+    "order": 2,
+    "summary": "James, the son of Zebedee and brother of John, is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-3",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "John, son of Zebedee is named among the Twelve",
+    "shortName": "John, son of Zebedee",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "john-zebedee"
+    ],
+    "order": 3,
+    "summary": "John, the son of Zebedee and brother of James, is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-4",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Philip is named among the Twelve",
+    "shortName": "Philip",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "philip"
+    ],
+    "order": 4,
+    "summary": "Philip is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-5",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Bartholomew is named among the Twelve",
+    "shortName": "Bartholomew",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "bartholomew"
+    ],
+    "order": 5,
+    "summary": "Bartholomew is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-6",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Thomas is named among the Twelve",
+    "shortName": "Thomas",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "thomas"
+    ],
+    "order": 6,
+    "summary": "Thomas is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-7",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Matthew is named among the Twelve",
+    "shortName": "Matthew",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "matthew"
+    ],
+    "order": 7,
+    "summary": "Matthew the tax collector is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-8",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "James, son of Alphaeus is named among the Twelve",
+    "shortName": "James, son of Alphaeus",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "james-alphaeus"
+    ],
+    "order": 8,
+    "summary": "James, the son of Alphaeus, is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-9",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Thaddaeus is named among the Twelve",
+    "shortName": "Thaddaeus",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "thaddaeus"
+    ],
+    "order": 9,
+    "summary": "Thaddaeus is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-10",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Simon the Zealot is named among the Twelve",
+    "shortName": "Simon the Zealot",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "simon-zealot"
+    ],
+    "order": 10,
+    "summary": "Simon the Zealot is named among the twelve apostles.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c1-11",
+    "book": "famous-12s",
+    "chapter": 1,
+    "name": "Judas Iscariot is named among the Twelve",
+    "shortName": "Judas Iscariot",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "judas-iscariot"
+    ],
+    "order": 11,
+    "summary": "Judas Iscariot is named last among the twelve apostles, with a note that he would betray Jesus.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-0",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Reuben",
+    "shortName": "Reuben",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "reuben"
+    ],
+    "order": 0,
+    "summary": "Jacob blesses Reuben, his firstborn, but withholds the honor of that birthright.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-1",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Simeon",
+    "shortName": "Simeon",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "simeon"
+    ],
+    "order": 1,
+    "summary": "Jacob blesses Simeon, rebuking him for violence.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-2",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Levi",
+    "shortName": "Levi",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "levi"
+    ],
+    "order": 2,
+    "summary": "Jacob blesses Levi, rebuking him for violence alongside Simeon.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-3",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Judah",
+    "shortName": "Judah",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "judah"
+    ],
+    "order": 3,
+    "summary": "Jacob blesses Judah with royal leadership over his brothers.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-4",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Zebulun",
+    "shortName": "Zebulun",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "zebulun"
+    ],
+    "order": 4,
+    "summary": "Jacob blesses Zebulun to dwell by the seashore.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-5",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Issachar",
+    "shortName": "Issachar",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "issachar"
+    ],
+    "order": 5,
+    "summary": "Jacob blesses Issachar, comparing him to a strong donkey.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-6",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Dan",
+    "shortName": "Dan",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "dan"
+    ],
+    "order": 6,
+    "summary": "Jacob blesses Dan, comparing him to a serpent in the road.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-7",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Gad",
+    "shortName": "Gad",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "gad"
+    ],
+    "order": 7,
+    "summary": "Jacob blesses Gad, comparing him to a raiding band that strikes back.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-8",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Asher",
+    "shortName": "Asher",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "asher"
+    ],
+    "order": 8,
+    "summary": "Jacob blesses Asher with rich food.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-9",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Naphtali",
+    "shortName": "Naphtali",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "naphtali"
+    ],
+    "order": 9,
+    "summary": "Jacob blesses Naphtali, comparing him to a doe set free.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-10",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Joseph",
+    "shortName": "Joseph",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "joseph"
+    ],
+    "order": 10,
+    "summary": "Jacob blesses Joseph abundantly as his favored son.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c2-11",
+    "book": "famous-12s",
+    "chapter": 2,
+    "name": "Jacob blesses Benjamin",
+    "shortName": "Benjamin",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "benjamin"
+    ],
+    "order": 11,
+    "summary": "Jacob blesses Benjamin, comparing him to a ravenous wolf.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c3-0",
+    "book": "famous-12s",
+    "chapter": 3,
+    "name": "Paul calls believers to offer their lives as a living sacrifice",
+    "shortName": "A living sacrifice",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 0,
+    "summary": "Paul urges believers to present their bodies as a living sacrifice and be transformed by the renewing of their minds rather than conformed to the world.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c3-1",
+    "book": "famous-12s",
+    "chapter": 3,
+    "name": "Paul describes the body of Christ with different gifts",
+    "shortName": "One body, different gifts",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 1,
+    "summary": "Paul compares believers to one body with many members, each given different gifts such as prophecy, service, teaching, and leadership.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c3-2",
+    "book": "famous-12s",
+    "chapter": 3,
+    "name": "Paul instructs believers to love genuinely and overcome evil with good",
+    "shortName": "Love in action",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 2,
+    "summary": "Paul calls believers to let love be genuine, bless those who persecute them, live at peace with everyone, and overcome evil with good.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c4-0",
+    "book": "famous-12s",
+    "chapter": 4,
+    "name": "Paul describes different spiritual gifts from the same Spirit",
+    "shortName": "Different gifts, same Spirit",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 0,
+    "summary": "Paul explains that believers receive different spiritual gifts, but the same Spirit gives all of them for the common good.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c4-1",
+    "book": "famous-12s",
+    "chapter": 4,
+    "name": "Paul compares the church to one body with many parts",
+    "shortName": "One body, many parts",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 1,
+    "summary": "Paul compares the church to a human body, where the foot, hand, eye, and ear each play a different but necessary part.",
+    "notable": true
+  },
+  {
+    "id": "f12-e-c4-2",
+    "book": "famous-12s",
+    "chapter": 4,
+    "name": "Paul teaches that every part of the body is needed and honored",
+    "shortName": "Every part is needed",
+    "citation": {
+      "book": "famous-12s",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "paul"
+    ],
+    "order": 2,
+    "summary": "Paul teaches that no part of the body can say it does not need the others, since God arranged each part exactly as he chose.",
+    "notable": true
+  }
+]
