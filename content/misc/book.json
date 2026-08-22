@@ -1,0 +1,14 @@
+{
+  "id": "misc",
+  "name": "Miscellaneous",
+  "chapterLabel": "section",
+  "chapterCount": 4,
+  "coverageDepth": "selection",
+  "autoGenerate": false,
+  "arcOrder": [
+    "disciples",
+    "tribes",
+    "ot-order",
+    "nt-order"
+  ]
+}

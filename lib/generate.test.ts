@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { generateAll, generateChapterQuestions, findAmbiguities, toRuntimeMC, type BookData, type GeneratedMC } from "./generate";
+import { generateAll, generateChapterQuestions, generateSequenceQuestions, findAmbiguities, toRuntimeMC, type BookData, type GeneratedMC } from "./generate";
 import { hashSeed } from "./rng";
 
 // Five chapters in one arc, distinct titles/places/names throughout, so every
@@ -139,4 +139,43 @@ test("generateChapterQuestions produces a free-response chapter-guess item per n
     const event = data.events.find((e) => `gen:chapter:${e.id}` === item.id);
     assert.equal(item.correctChapter, event?.chapter);
   }
+});
+
+// A hand-curated module like Miscellaneous sets book.autoGenerate:
+// false since its "chapters" aren't narrative prose the generic per-event/
+// per-chapter templates can ask sensible questions about.
+function orderingFixture(sequenceLimit?: number): BookData {
+  return {
+    book: { id: "misc", name: "Misc" },
+    arcs: [{ id: "a", book: "misc", name: "A", startChapter: 1, endChapter: 1, summary: "s", sequenceLimit }],
+    chapters: [
+      { id: "c1", book: "misc", number: 1, title: "t", summary: "s", arcId: "a", eventIds: [], quizWorthy: false, freeResponseAliases: [] },
+    ],
+    people: [],
+    events: Array.from({ length: 8 }, (_, i) => ({
+      id: `e${i}`, book: "misc", chapter: 1, name: `Book ${i}`, citation: { book: "misc", chapter: 1 },
+      peopleIds: [], order: i, summary: "s", notable: true,
+    })),
+    quotes: [],
+  };
+}
+
+test("generateSequenceQuestions defaults to a 6-item cap without arc.sequenceLimit", () => {
+  const [seq] = generateSequenceQuestions(orderingFixture());
+  assert.equal(seq.itemsInOrder.length, 6);
+});
+
+test("generateSequenceQuestions honors a higher arc.sequenceLimit", () => {
+  const [seq] = generateSequenceQuestions(orderingFixture(8));
+  assert.equal(seq.itemsInOrder.length, 8);
+});
+
+test("book.autoGenerate: false suppresses chapter-guess/location/speaker/chapter-summary, in generateAll and findAmbiguities alike", () => {
+  const data = fixture();
+  data.book = { ...data.book, autoGenerate: false };
+  const items = generateAll(data);
+  for (const type of ["chapter-guess", "location", "speaker", "chapter-summary"] as const) {
+    assert.ok(!items.some((i) => i.type === type), `${type} should be suppressed`);
+  }
+  assert.deepEqual(findAmbiguities(data), [], "no ambiguity checks for question types that are never generated");
 });

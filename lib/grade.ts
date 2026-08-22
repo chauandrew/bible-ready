@@ -27,13 +27,16 @@ const STOPWORDS = new Set([
 ]);
 
 /** How many distinct terms a free-text answer must cover to be marked
- * correct — a fixed constant rather than something authored per chapter,
- * since the terms themselves now come straight from the chapter's own prose
- * (see deriveGradingTerms). A chapter with fewer available terms than this
- * just requires all of them. */
+ * correct, for the common "describe this chapter in your own words" case —
+ * the terms come straight from the chapter's own prose (see
+ * deriveGradingTerms), so this is a fixed constant rather than something
+ * authored per chapter. A chapter with fewer available terms than this just
+ * requires all of them. A chapter whose terms are a fixed roster instead of
+ * prose keywords (e.g. "name the twelve disciples") sets its own threshold
+ * via Chapter.freeResponseMinTerms, since 3-of-many is far too lenient there. */
 const MIN_TERMS = 3;
 
-function normalizeWords(s: string): string[] {
+export function normalizeWords(s: string): string[] {
   return s
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, " ")
@@ -61,7 +64,7 @@ function editDistance(a: string, b: string): number {
  * or within edit distance 1 for terms long enough that a 1-letter slip
  * still means the same word (short words like "ark" or "sin" must match exactly,
  * or "sin" could match "six"). */
-function wordMatches(word: string, term: string): boolean {
+export function wordMatches(word: string, term: string): boolean {
   if (word === term) return true;
   if (term.length < 5) return false;
   if (Math.abs(word.length - term.length) > 1) return false;
@@ -84,12 +87,14 @@ export interface GradingTerms {
  * summary, plus any explicitly authored aliases, and dedupe. This is the
  * single source of truth for free-response grading — nothing to keep in
  * sync by hand, since the terms are the chapter's own prose. */
-export function deriveGradingTerms(chapter: Pick<Chapter, "title" | "summary" | "freeResponseAliases">): GradingTerms {
+export function deriveGradingTerms(
+  chapter: Pick<Chapter, "title" | "summary" | "freeResponseAliases" | "freeResponseMinTerms">
+): GradingTerms {
   const words = [...normalizeWords(chapter.title), ...normalizeWords(chapter.summary)].filter(
     (w) => w.length > 2 && !STOPWORDS.has(w)
   );
   const terms = Array.from(new Set([...words, ...chapter.freeResponseAliases]));
-  return { terms, minTerms: Math.min(MIN_TERMS, terms.length) };
+  return { terms, minTerms: chapter.freeResponseMinTerms ?? Math.min(MIN_TERMS, terms.length) };
 }
 
 export interface GradeResult {

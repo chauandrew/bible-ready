@@ -1,7 +1,7 @@
 import type { AuthoredQuestion, Citation } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
 import { gradeFreeResponse } from "./grade";
-import { chapterSummaryFor, formatCitation } from "./content";
+import { chapterSummaryFor, formatCitation, bookMeta } from "./content";
 import {
   generateAll,
   toRuntimeMC,
@@ -217,6 +217,21 @@ export function correctAnswerText(item: QuizItem): string {
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ");
   return chapterSummaryFor(item.citation.book, item.chapterNumber) ?? "";
+}
+
+/** What the player actually submitted, in the same human-readable shape as
+ * correctAnswerText — the post-quiz review shows both side by side for a
+ * missed question, not just the correct answer. */
+export function userAnswerText(item: QuizItem, answer: Answer): string {
+  if (answer.kind === "mc") return "options" in item ? item.options[answer.selectedIndex] : String(answer.selectedIndex);
+  if (answer.kind === "chapter-guess") {
+    return bookMeta(answer.book)
+      ? formatCitation({ book: answer.book, chapter: answer.chapter })
+      : `an unrecognized book, chapter ${answer.chapter}`;
+  }
+  if (answer.kind === "sequence") return answer.order.join(" → ");
+  if (answer.kind === "match") return answer.pairs.map((p) => `${p.left} → ${p.right}`).join(", ");
+  return answer.text;
 }
 
 export interface ScoreResult {

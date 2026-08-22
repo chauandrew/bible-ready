@@ -28,7 +28,7 @@ export default function ArcPicker({
               {g.heading}
             </p>
           )}
-          <div style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", flexDirection: "column", gap: "0.5rem" }}>
             {g.options.map((opt) => {
               const checked = selected.has(opt.key);
               return (

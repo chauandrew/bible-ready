@@ -1,0 +1,36 @@
+[
+  {
+    "id": "disciples",
+    "book": "misc",
+    "name": "The Twelve Disciples",
+    "startChapter": 1,
+    "endChapter": 1,
+    "summary": "Jesus chooses twelve ordinary men as his closest followers and apostles."
+  },
+  {
+    "id": "tribes",
+    "book": "misc",
+    "name": "The Twelve Tribes of Israel",
+    "startChapter": 2,
+    "endChapter": 2,
+    "summary": "Jacob's twelve sons found the twelve tribes of Israel."
+  },
+  {
+    "id": "ot-order",
+    "book": "misc",
+    "name": "The Old Testament",
+    "startChapter": 3,
+    "endChapter": 3,
+    "summary": "The thirty-nine books of the Old Testament in their canonical order.",
+    "sequenceLimit": 39
+  },
+  {
+    "id": "nt-order",
+    "book": "misc",
+    "name": "The New Testament",
+    "startChapter": 4,
+    "endChapter": 4,
+    "summary": "The twenty-seven books of the New Testament in their canonical order.",
+    "sequenceLimit": 27
+  }
+]

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, pointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
+import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -108,6 +108,40 @@ test("correctAnswerText reads the right field per item type", () => {
       assert.equal(text, item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", "));
     }
   }
+});
+
+test("userAnswerText reads the player's own submission per answer kind", () => {
+  const mc: QuizItem = {
+    kind: "generated", id: "gen:location:e1", type: "location",
+    prompt: "p", options: ["A", "B", "C", "D"], correctIndex: 0,
+    citation: { book: "genesis", chapter: 1 },
+  };
+  assert.equal(userAnswerText(mc, { itemId: mc.id, kind: "mc", selectedIndex: 2 }), "C");
+
+  const guess: QuizItem = {
+    kind: "generated", id: "gen:chapter:e1", type: "chapter-guess",
+    prompt: "p", correctChapter: 5, citation: { book: "genesis", chapter: 5 },
+  };
+  assert.equal(
+    userAnswerText(guess, { itemId: guess.id, kind: "chapter-guess", book: "genesis", chapter: 3 }),
+    "Genesis 3"
+  );
+  assert.match(
+    userAnswerText(guess, { itemId: guess.id, kind: "chapter-guess", book: "", chapter: 3 }),
+    /unrecognized book/
+  );
+
+  const seq: QuizItem = {
+    kind: "generated", id: "gen:sequence:a", type: "sequence",
+    prompt: "p", displayItems: ["A", "B"], correctOrder: ["A", "B"], citation: { book: "genesis", chapter: 1 },
+  };
+  assert.equal(userAnswerText(seq, { itemId: seq.id, kind: "sequence", order: ["B", "A"] }), "B → A");
+
+  const fr: QuizItem = {
+    kind: "generated", id: "gen:free-response:c1", type: "free-response",
+    prompt: "p", chapterNumber: 1, terms: ["a"], minTerms: 1, citation: { book: "genesis", chapter: 1 },
+  };
+  assert.equal(userAnswerText(fr, { itemId: fr.id, kind: "free-response", text: "my answer" }), "my answer");
 });
 
 test("selectDailyQuestion with the same date produces the same item", () => {
