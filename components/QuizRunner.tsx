@@ -45,10 +45,14 @@ export default function QuizRunner({
     // after using Back replaces the old answer instead of duplicating it.
     const next = [...answers.filter((x) => x.itemId !== a.itemId), a];
     setAnswers(next);
+    goNext(next);
+  }
+
+  function goNext(currentAnswers: Answer[]) {
     if (index + 1 < items.length) {
       setIndex(index + 1);
     } else {
-      finish(next);
+      finish(currentAnswers);
     }
   }
 
@@ -129,6 +133,14 @@ export default function QuizRunner({
   }
   if (!item) return null;
 
+  // Quiz mode commits an answer and auto-advances on a single click, with no
+  // confirmation — so revisiting an already-answered question via Previous
+  // must not present it as blank and interactive again. Without this, a
+  // stray click there silently overwrites the original answer, and the
+  // review at the end shows the new one with no sign it ever changed. Study
+  // mode is unaffected: retrying a question there is an intended feature.
+  const existingAnswer = mode === "quiz" ? answers.find((x) => x.itemId === item.id) : undefined;
+
   return (
     <main className="container">
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "1rem", flexWrap: "wrap", gap: "0.5rem" }}>
@@ -156,7 +168,17 @@ export default function QuizRunner({
         <div className="progress-fill" style={{ width: `${(index / items.length) * 100}%` }} />
       </div>
       <div className="card">
-        {"options" in item ? (
+        {existingAnswer ? (
+          <div>
+            <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+            <div className="note">Already answered: {userAnswerText(item, existingAnswer)}</div>
+            <div style={{ marginTop: "0.75rem" }}>
+              <button type="button" className="btn btn-primary" onClick={() => goNext(answers)}>
+                {index + 1 < items.length ? "Next" : "See results"}
+              </button>
+            </div>
+          </div>
+        ) : "options" in item ? (
           <McQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
         ) : item.type === "sequence" ? (
           <SequenceQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />

@@ -177,6 +177,19 @@ can't pre-generate a page per arc-subset combination, `/[book]/quiz` and
 URL query string client-side, the same pattern
 the seed itself already used.
 
+**Revisiting an already-answered question in Quiz mode is read-only.**
+`QuizRunner`'s "← Previous" button lets a player look back at any question,
+but each question component remounts fresh via `key={item.id}` when the
+index changes — it has no memory of what was picked before. In Quiz mode,
+answering commits and auto-advances on a single click with no confirmation,
+so without a guard, going back and clicking anything (even by accident)
+silently overwrote the original answer, and the post-quiz review showed the
+new one with no sign it had changed. `QuizRunner` now checks for an existing
+`Answer` by `item.id` and, in Quiz mode only, renders a locked "Already
+answered: ..." view (`lib/quiz.ts`'s `userAnswerText`) with a Next button
+instead of the live question. Study mode is deliberately exempt — retrying a
+question there to practice is the intended behavior, not a bug.
+
 ## Content authoring rules (the ones that aren't obvious from the schema)
 
 **`Event.place` is optional, and that's deliberate.** Most events aren't
