@@ -1,24 +1,24 @@
 [
   {
-    "id": "f12-ch-1",
+    "id": "misc-ch-1",
     "book": "misc",
     "number": 1,
     "title": "The Twelve Disciples",
     "summary": "Jesus chooses twelve ordinary men as his closest followers and apostles, singling out Peter, James, and John as his innermost circle, with Judas later replaced by Matthias.",
     "arcId": "disciples",
     "eventIds": [
-      "f12-e-c1-0",
-      "f12-e-c1-1",
-      "f12-e-c1-2",
-      "f12-e-c1-3",
-      "f12-e-c1-4",
-      "f12-e-c1-5",
-      "f12-e-c1-6",
-      "f12-e-c1-7",
-      "f12-e-c1-8",
-      "f12-e-c1-9",
-      "f12-e-c1-10",
-      "f12-e-c1-11"
+      "misc-e-c1-0",
+      "misc-e-c1-1",
+      "misc-e-c1-2",
+      "misc-e-c1-3",
+      "misc-e-c1-4",
+      "misc-e-c1-5",
+      "misc-e-c1-6",
+      "misc-e-c1-7",
+      "misc-e-c1-8",
+      "misc-e-c1-9",
+      "misc-e-c1-10",
+      "misc-e-c1-11"
     ],
     "quizWorthy": true,
     "freeResponsePrompt": "Name the twelve disciples Jesus chose.",
@@ -39,25 +39,25 @@
     "freeResponseMinTerms": 9
   },
   {
-    "id": "f12-ch-2",
+    "id": "misc-ch-2",
     "book": "misc",
     "number": 2,
     "title": "The Twelve Tribes of Israel",
     "summary": "Jacob gathers his twelve sons before his death and blesses each one, founding the twelve tribes of Israel, from the priestly line of Levi to the royal line of Judah.",
     "arcId": "tribes",
     "eventIds": [
-      "f12-e-c2-0",
-      "f12-e-c2-1",
-      "f12-e-c2-2",
-      "f12-e-c2-3",
-      "f12-e-c2-4",
-      "f12-e-c2-5",
-      "f12-e-c2-6",
-      "f12-e-c2-7",
-      "f12-e-c2-8",
-      "f12-e-c2-9",
-      "f12-e-c2-10",
-      "f12-e-c2-11"
+      "misc-e-c2-0",
+      "misc-e-c2-1",
+      "misc-e-c2-2",
+      "misc-e-c2-3",
+      "misc-e-c2-4",
+      "misc-e-c2-5",
+      "misc-e-c2-6",
+      "misc-e-c2-7",
+      "misc-e-c2-8",
+      "misc-e-c2-9",
+      "misc-e-c2-10",
+      "misc-e-c2-11"
     ],
     "quizWorthy": true,
     "freeResponsePrompt": "Name the twelve tribes of Israel.",
@@ -80,37 +80,37 @@
     "freeResponseMinTerms": 11
   },
   {
-    "id": "f12-ch-3",
+    "id": "misc-ch-3",
     "book": "misc",
     "number": 3,
     "title": "The Old Testament in Order",
     "summary": "The Old Testament's thirty-nine books run from Genesis through Malachi, moving through the Law, the histories of Israel, wisdom and poetry, and the major and minor prophets.",
     "arcId": "ot-order",
     "eventIds": [
-      "f12-e-c3-0", "f12-e-c3-1", "f12-e-c3-2", "f12-e-c3-3", "f12-e-c3-4",
-      "f12-e-c3-5", "f12-e-c3-6", "f12-e-c3-7", "f12-e-c3-8", "f12-e-c3-9",
-      "f12-e-c3-10", "f12-e-c3-11", "f12-e-c3-12", "f12-e-c3-13", "f12-e-c3-14",
-      "f12-e-c3-15", "f12-e-c3-16", "f12-e-c3-17", "f12-e-c3-18", "f12-e-c3-19",
-      "f12-e-c3-20", "f12-e-c3-21", "f12-e-c3-22", "f12-e-c3-23", "f12-e-c3-24",
-      "f12-e-c3-25", "f12-e-c3-26", "f12-e-c3-27", "f12-e-c3-28", "f12-e-c3-29",
-      "f12-e-c3-30", "f12-e-c3-31", "f12-e-c3-32", "f12-e-c3-33", "f12-e-c3-34",
-      "f12-e-c3-35", "f12-e-c3-36", "f12-e-c3-37", "f12-e-c3-38"
+      "misc-e-c3-0", "misc-e-c3-1", "misc-e-c3-2", "misc-e-c3-3", "misc-e-c3-4",
+      "misc-e-c3-5", "misc-e-c3-6", "misc-e-c3-7", "misc-e-c3-8", "misc-e-c3-9",
+      "misc-e-c3-10", "misc-e-c3-11", "misc-e-c3-12", "misc-e-c3-13", "misc-e-c3-14",
+      "misc-e-c3-15", "misc-e-c3-16", "misc-e-c3-17", "misc-e-c3-18", "misc-e-c3-19",
+      "misc-e-c3-20", "misc-e-c3-21", "misc-e-c3-22", "misc-e-c3-23", "misc-e-c3-24",
+      "misc-e-c3-25", "misc-e-c3-26", "misc-e-c3-27", "misc-e-c3-28", "misc-e-c3-29",
+      "misc-e-c3-30", "misc-e-c3-31", "misc-e-c3-32", "misc-e-c3-33", "misc-e-c3-34",
+      "misc-e-c3-35", "misc-e-c3-36", "misc-e-c3-37", "misc-e-c3-38"
     ]
   },
   {
-    "id": "f12-ch-4",
+    "id": "misc-ch-4",
     "book": "misc",
     "number": 4,
     "title": "The New Testament in Order",
     "summary": "The New Testament's twenty-seven books run from Matthew through Revelation, moving through the four Gospels, Acts, Paul's letters to churches and individuals, and the general epistles.",
     "arcId": "nt-order",
     "eventIds": [
-      "f12-e-c4-0", "f12-e-c4-1", "f12-e-c4-2", "f12-e-c4-3", "f12-e-c4-4",
-      "f12-e-c4-5", "f12-e-c4-6", "f12-e-c4-7", "f12-e-c4-8", "f12-e-c4-9",
-      "f12-e-c4-10", "f12-e-c4-11", "f12-e-c4-12", "f12-e-c4-13", "f12-e-c4-14",
-      "f12-e-c4-15", "f12-e-c4-16", "f12-e-c4-17", "f12-e-c4-18", "f12-e-c4-19",
-      "f12-e-c4-20", "f12-e-c4-21", "f12-e-c4-22", "f12-e-c4-23", "f12-e-c4-24",
-      "f12-e-c4-25", "f12-e-c4-26"
+      "misc-e-c4-0", "misc-e-c4-1", "misc-e-c4-2", "misc-e-c4-3", "misc-e-c4-4",
+      "misc-e-c4-5", "misc-e-c4-6", "misc-e-c4-7", "misc-e-c4-8", "misc-e-c4-9",
+      "misc-e-c4-10", "misc-e-c4-11", "misc-e-c4-12", "misc-e-c4-13", "misc-e-c4-14",
+      "misc-e-c4-15", "misc-e-c4-16", "misc-e-c4-17", "misc-e-c4-18", "misc-e-c4-19",
+      "misc-e-c4-20", "misc-e-c4-21", "misc-e-c4-22", "misc-e-c4-23", "misc-e-c4-24",
+      "misc-e-c4-25", "misc-e-c4-26"
     ]
   }
 ]

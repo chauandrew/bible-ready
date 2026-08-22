@@ -24,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        <meta name="google-site-verification" content="vo2FLVxPMKTP5n2XzLTz3DhACjwSEjehCN7TLvOP2Yw" />
         <meta name="theme-color" content="#faf6ef" media="(prefers-color-scheme: light)" />
         <meta name="theme-color" content="#14120f" media="(prefers-color-scheme: dark)" />
         <script dangerouslySetInnerHTML={{ __html: themeInitScript }} />

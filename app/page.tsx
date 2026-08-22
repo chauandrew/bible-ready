@@ -33,7 +33,13 @@ export default function Home() {
       </div>
 
       <h2 className="section-title" style={{ marginTop: "2.25rem" }}>Modules</h2>
-      <div className="grid-cards">
+      {/* Lower max-track than the shared .grid-cards default so this row settles
+          at 3 columns on a desktop-wide screen instead of 4 — auto-fill's
+          column count is driven by the max of minmax() when both bounds are
+          fixed lengths, not the min. Scoped here, not in the shared class,
+          since other .grid-cards pages (chapters, arcs, people) want more
+          columns to fit more per row. */}
+      <div className="grid-cards" style={{ gridTemplateColumns: "repeat(auto-fill, minmax(260px, 360px))" }}>
         {available.map((b) => (
           <Link key={b.href} href={b.href} className="card">
             <div style={{ fontWeight: 600, color: "var(--text)" }}>{b.name}</div>
