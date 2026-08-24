@@ -326,20 +326,40 @@ export function dataForBooks(bookIds: string[]): { data: BookData; questions: Au
 
 export interface Flashcard {
   front: string;
-  /** A few-word headline — `Event.shortName`, falling back to `name` for events that
+  /** One point per constituent event, in the chapter's `Event.order`. `short` is a
+   * few-word headline — `Event.shortName`, falling back to `name` for events that
    * don't have one yet. */
-  backShort: string;
-  backLong: string;
+  points: { short: string; long: string }[];
 }
 
+/** One card per chapter, not per event — a chapter with several notable events (or a
+ * curated deck whose cards all land in one chapter, e.g. the Twelve Disciples) collapses
+ * into a single card listing each event as its own point, instead of near-duplicate cards
+ * that all show the same citation on the front. Chapters are ordered by first appearance
+ * in `eventIds`; events within a chapter keep their authored `Event.order`. */
 function cardsForEventIds(bookId: string, eventIds: string[]): Flashcard[] {
   const content = booksContent[bookId];
   if (!content) return [];
   const eventMap = new Map(content.events.map((e) => [e.id, e]));
-  return eventIds
-    .map((id) => eventMap.get(id))
-    .filter((e): e is NonNullable<typeof e> => !!e)
-    .map((e) => ({ front: formatCitation(e.citation), backShort: e.shortName ?? e.name, backLong: e.summary }));
+  const events = eventIds.map((id) => eventMap.get(id)).filter((e): e is NonNullable<typeof e> => !!e);
+
+  const chapterOrder: number[] = [];
+  const eventsByChapter = new Map<number, Event[]>();
+  for (const e of events) {
+    if (!eventsByChapter.has(e.chapter)) {
+      chapterOrder.push(e.chapter);
+      eventsByChapter.set(e.chapter, []);
+    }
+    eventsByChapter.get(e.chapter)!.push(e);
+  }
+
+  return chapterOrder.map((chapter) => {
+    const chapterEvents = eventsByChapter.get(chapter)!.slice().sort((a, b) => a.order - b.order);
+    return {
+      front: formatCitation({ book: bookId, chapter }),
+      points: chapterEvents.map((e) => ({ short: e.shortName ?? e.name, long: e.summary })),
+    };
+  });
 }
 
 /** One deck's cards, in the deck's authored order. */

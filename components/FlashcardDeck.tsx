@@ -10,7 +10,7 @@ export default function FlashcardDeck({
   backLabel,
 }: {
   title: string;
-  cards: { front: string; backShort: string; backLong: string }[];
+  cards: { front: string; points: { short: string; long: string }[] }[];
   /** Optional "back to X" breadcrumb above the deck — omitted for the
    * whole-Bible multi-book mode, which has no single book to link back to. */
   backHref?: string;
@@ -78,16 +78,20 @@ export default function FlashcardDeck({
         onClick={() => setFlipped(!flipped)}
         aria-pressed={flipped}
         aria-label={flipped ? "Card, showing the answer. Activate to flip back." : "Card, showing the reference. Activate to flip."}
-        style={{ width: "100%", minHeight: "clamp(180px, 28vw, 260px)", display: "flex", alignItems: "center", justifyContent: "center", textAlign: "center", margin: "1rem 0", padding: "1.5rem", cursor: "pointer", transition: "border-color 0.15s ease" }}
+        style={{ width: "100%", minHeight: "clamp(180px, 28vw, 260px)", maxHeight: "70vh", overflowY: "auto", display: "flex", alignItems: flipped && card.points.length > 1 ? "stretch" : "center", justifyContent: "center", textAlign: flipped && card.points.length > 1 ? "left" : "center", margin: "1rem 0", padding: "1.5rem", cursor: "pointer", transition: "border-color 0.15s ease" }}
       >
-        <span aria-live="polite">
+        <span aria-live="polite" style={{ width: "100%" }}>
           {flipped ? (
-            <>
-              <div style={{ fontFamily: "var(--font-voice)", fontWeight: 700, fontSize: "1.3rem" }}>{card.backShort}</div>
-              <div style={{ fontFamily: "var(--font-sans)", fontWeight: 400, fontSize: "0.9rem", color: "var(--text-secondary)", marginTop: "0.6rem" }}>
-                {card.backLong}
-              </div>
-            </>
+            <ul style={{ listStyle: "none", margin: 0, padding: 0, display: "flex", flexDirection: "column", gap: "0.9rem", textAlign: card.points.length > 1 ? "left" : "center" }}>
+              {card.points.map((point, i) => (
+                <li key={i}>
+                  <div style={{ fontFamily: "var(--font-voice)", fontWeight: 700, fontSize: "1.3rem" }}>{point.short}</div>
+                  <div style={{ fontFamily: "var(--font-sans)", fontWeight: 400, fontSize: "0.9rem", color: "var(--text-secondary)", marginTop: "0.6rem" }}>
+                    {point.long}
+                  </div>
+                </li>
+              ))}
+            </ul>
           ) : (
             <div style={{ fontSize: "1.15rem" }}>{card.front}</div>
           )}
