@@ -28,10 +28,6 @@ export default function DailyQuestionRunner() {
   const [dateStr, setDateStr] = useState<string | null>(null);
   const [cached, setCached] = useState<QotdResult | null>(null);
   const [result, setResult] = useState<QotdResult | null>(null);
-  // True while the mount-time "did I already play today" check is in
-  // flight, so we don't flash the question before a remote answer (e.g.
-  // from a second device/tab) comes back and replaces it.
-  const [checking, setChecking] = useState(true);
   const [submitError, setSubmitError] = useState(false);
   const [elapsedMs, setElapsedMs] = useState(0);
 
@@ -48,13 +44,14 @@ export default function DailyQuestionRunner() {
     const localCached = getCachedResult(d);
     if (localCached) {
       setCached(localCached);
-      setChecking(false);
       return;
     }
     // Local cache says "not played yet" — that could be a fresh device, or
-    // a second device/tab, or a partially-cleared cache. fetchMyResult is
-    // the authoritative check; if it errors (offline, no env vars) we just
-    // fall through to showing the question.
+    // a second device/tab, or a partially-cleared cache. Render the question
+    // right away rather than blocking first paint on this round-trip;
+    // fetchMyResult is the authoritative check, and if it later finds a
+    // remote answer, `shown` below swaps to the result screen. If it errors
+    // (offline, no env vars) we just leave the question up.
     fetchMyResult(d, deviceIdRef.current)
       .then((remote) => {
         if (remote) {
@@ -62,8 +59,7 @@ export default function DailyQuestionRunner() {
           setCached(remote);
         }
       })
-      .catch(() => {})
-      .finally(() => setChecking(false));
+      .catch(() => {});
   }, []);
 
   const item = useMemo(() => (dateStr ? selectDailyQuestion(sources, dateStr) : null), [dateStr, sources]);
@@ -109,7 +105,7 @@ export default function DailyQuestionRunner() {
   }
 
   const shown = result ?? cached;
-  const answering = !!dateStr && !!item && !checking && !shown;
+  const answering = !!dateStr && !!item && !shown;
 
   // Ticks while the question is still unanswered so the player can see time
   // passing, not just their final time after submitting.
@@ -121,7 +117,7 @@ export default function DailyQuestionRunner() {
     return () => clearInterval(id);
   }, [answering]);
 
-  if (!dateStr || !item || checking) return null;
+  if (!dateStr || !item) return null;
 
   if (shown) {
     return (
