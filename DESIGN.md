@@ -88,11 +88,9 @@ quiz strings — reads `book.chapterLabel` instead of hardcoding the word.
 `misc` sets it to `"section"`. Genesis, Exodus, John, and Psalms don't
 set it, so they're unaffected — Psalms' curated chapters *are* real Bible
 chapters, unlike `misc`'s. Note this only fixes the single-book quiz
-(`/[book]/quiz`); the whole-Bible combined quiz's results breakdown
-(`CategoryBreakdown`) aggregates by mechanic type across every selected book
-at once, so it can't say "section" for one book's items and "chapter" for
-another's in the same list — it always says "chapter" there, a deliberate
-scope boundary, not an oversight.
+(`/[book]/quiz`); the whole-Bible combined quiz's results breakdown groups by
+book name instead (see `QuizRunner`'s `categorize` prop below), so the
+"section" vs "chapter" wording question doesn't come up there at all.
 
 ## The question generator
 
@@ -135,14 +133,43 @@ one-edit-distance typo tolerance ("gensis" still matches Genesis), by
 as free-response grading (`lib/grade.ts`'s `wordMatches`) rather than a
 second implementation; an unmatched or made-up book name just resolves to no
 book and scores as an ordinary wrong answer, not an error. `lib/quiz.ts`'s
-`pointsFor` scores the result out of 1: full credit for an exact match, half
-credit for the right book landed exactly one chapter off (a near miss on
-numbering, not on knowing the material), zero for anything else — including
-the right chapter number in the *wrong* book, which isn't "close" at all.
-This is the one place `ScoreResult.correct` can be fractional (e.g. `7.5/10`);
-`gapReport`'s per-category breakdown stays binary (partial credit still
-counts as "wrong" there, since it's a coaching signal about mastery, not the
-score itself).
+`pointsFor` scores it out of 1: full credit for an exact match, half credit
+for the right book landed exactly one chapter off (a near miss on numbering,
+not on knowing the material), zero for anything else — including the right
+chapter number in the *wrong* book, which isn't "close" at all.
+
+**Sequence and match questions score 0.5 per correct option/pair, uncapped —
+not the flat 1-or-0 every other item type gets.** A 6-item "put these in
+order" question with 3 in their right position scores 1.5; a 4-pair matching
+question with 3 correct pairs scores 1.5. `lib/quiz.ts`'s `maxPointsFor(item)`
+is 1 for every item type except these two, where it's `optionCount * 0.5` —
+so a single sequence/match item can outweigh several ordinary ones, and a
+quiz's total possible score is no longer just its item count. `pointsFor`
+compares position-by-position for sequence (`answer.order[i] ===
+item.correctOrder[i]`) and pair-by-pair for match, independent of
+`isCorrect`, which still means "every position/pair right" (used for the
+missed-question bank and QOTD, which stays strict/binary on purpose — see the
+"Question of the Day" bullet under Known gaps). This is why `ScoreResult`
+tracks both `correct` (sum of `pointsFor`) and `total` (sum of
+`maxPointsFor`) rather than assuming `total === items.length` — `scoreQuiz`'s
+"Score: X/Y" can now show e.g. `8.5/12` for a 10-question quiz that included
+one 6-item sequence question.
+
+**"Where to focus" groups by a caller-supplied categorizer, not a fixed
+mechanic/theme key.** `gapReport(items, answers, categorize)` takes a
+`(item) => string` and buckets right/wrong by whatever it returns — still
+binary (`points >= maxPointsFor(item)` counts as right, same "coaching
+signal, not the score" reasoning as before) even though `pointsFor` itself is
+fractional. `QuizRunner`'s `categorize` prop defaults to
+`categorizeByBook` (groups by book name — right for a quiz spanning several
+books, via `MultiQuizSetup`), while a single-book quiz (`QuizSetup`) passes
+an arc-based categorizer built from `lib/content.ts`'s `arcNameForChapter`,
+since "which book" is a useless distinction when there's only one in play but
+"which section of this book" (Creation, The fall, Noah and the flood...) is
+exactly the "what do I need to study more" signal the feature is for.
+`CategoryBreakdown` no longer has a label-lookup dictionary — the category
+string it's given (an arc name or a book name) is already what gets
+displayed, unlike the old `mechanic:location` / `theme:covenant` keys.
 
 **"Put these in order" caps at 6 items by default, configurable per arc.**
 `generateSequenceQuestions` sorts an arc's notable events by
@@ -154,6 +181,20 @@ Testament sections do exactly this (`sequenceLimit: 39` / `27`) to produce
 one "put the whole thing in order" question instead of splitting into several
 partial ones. The generated prompt still says "Put these **events** from..."
 even for a book list — not worth a second schema field just for that noun.
+
+**Revisiting an already-answered question via "Previous" is fully editable,
+not read-only.** Each question-type component (`components/QuestionTypes.tsx`)
+takes an `initialAnswer` prop and seeds its local state from it on (re-)mount
+— `McQuestion` highlights the prior pick without locking the other options,
+`SequenceQuestion`/`MatchQuestion` pre-fill the placed order/pairs using their
+existing tap-to-undo interaction (match gained the same undo affordance
+sequence already had, for this), `ChapterGuessQuestion`/`FreeResponseQuestion`
+pre-fill the text fields. Only the *resolved* chapter-guess book id is stored
+in `Answer`, not the raw text originally typed, so a revisit shows the book's
+canonical name rather than whatever phrasing/typo produced it — a minor,
+accepted loss of fidelity. Changing and resubmitting an answer replaces it
+and auto-advances, identical to answering for the first time; there's no
+separate "confirm the change" step, by design, to keep one consistent rule.
 
 **Quiz and Diagnostic are one flow, not two.** There used to be a separate
 fixed-25-question "Diagnostic" with its own pages and a fixed (non-random)

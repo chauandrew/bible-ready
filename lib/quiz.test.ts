@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
+import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, maxPointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -83,16 +83,20 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
     throw new Error(`unexpected item type in test fixture: ${item.id}`);
   });
 
+  // Every item except the one deliberately-wrong MC item is answered fully
+  // correctly (chapter-guess exact, sequence/match answers are the item's
+  // own correctOrder/correctPairs), so the shortfall is exactly one MC
+  // item's worth of points (1) — total itself varies with the item mix,
+  // since a sequence/match item is worth more than 1 (see maxPointsFor).
   const score = scoreQuiz(items, answers);
-  assert.equal(score.total, 5);
-  assert.equal(score.correct, 4);
-  assert.equal(score.percent, 80);
+  assert.equal(score.correct, score.total - 1);
+  assert.equal(score.percent, Math.round(((score.total - 1) / score.total) * 100));
   assert.equal(score.missedIds.length, 1);
 
-  const report = gapReport(items, answers);
+  const report = gapReport(items, answers, () => "all");
   const totalRight = Object.values(report).reduce((sum, r) => sum + r.right, 0);
   const totalWrong = Object.values(report).reduce((sum, r) => sum + r.wrong, 0);
-  assert.equal(totalRight, 4);
+  assert.equal(totalRight, items.length - 1);
   assert.equal(totalWrong, 1);
 });
 
@@ -199,4 +203,71 @@ test("pointsFor gives a chapter-guess half credit for a right-book, one-chapter-
   // A near miss on chapter numbering only counts within the same book — being
   // one chapter off in a different book isn't "close", it's just wrong.
   assert.equal(pointsFor(item, rightChapterWrongBook), 0);
+});
+
+test("pointsFor gives a sequence question 0.5 per correctly-placed position, uncapped past 1 point", () => {
+  const item: QuizItem = {
+    kind: "generated",
+    id: "gen:sequence:arc1",
+    type: "sequence",
+    prompt: "Put these in order.",
+    displayItems: ["A", "B", "C", "D", "E", "F"],
+    correctOrder: ["A", "B", "C", "D", "E", "F"],
+    citation: { book: "genesis", chapter: 1 },
+  };
+  assert.equal(maxPointsFor(item), 3); // 6 options * 0.5
+
+  const allCorrect: Answer = { itemId: item.id, kind: "sequence", order: ["A", "B", "C", "D", "E", "F"] };
+  assert.equal(pointsFor(item, allCorrect), 3);
+  assert.equal(isCorrect(item, allCorrect), true);
+
+  // 3 of 6 in their right spot (positions 0, 2, 4 -> A, C, E) -> 3 * 0.5 =
+  // 1.5, matching the "6 options, 3 correct -> 1.5 points" example.
+  const halfCorrect: Answer = { itemId: item.id, kind: "sequence", order: ["A", "D", "C", "F", "E", "B"] };
+  assert.equal(pointsFor(item, halfCorrect), 1.5);
+  assert.equal(isCorrect(item, halfCorrect), false);
+
+  const noneCorrect: Answer = { itemId: item.id, kind: "sequence", order: ["F", "E", "D", "C", "B", "A"] };
+  assert.equal(pointsFor(item, noneCorrect), 0);
+});
+
+test("pointsFor gives a match question 0.5 per correctly-matched pair, uncapped past 1 point", () => {
+  const item: QuizItem = {
+    kind: "generated",
+    id: "gen:match:arc1",
+    type: "match",
+    prompt: "Match each event to where it happens.",
+    lefts: ["A", "B", "C", "D"],
+    rights: ["W", "X", "Y", "Z"],
+    correctPairs: [
+      { left: "A", right: "W" },
+      { left: "B", right: "X" },
+      { left: "C", right: "Y" },
+      { left: "D", right: "Z" },
+    ],
+    citation: { book: "genesis", chapter: 1 },
+  };
+  assert.equal(maxPointsFor(item), 2); // 4 pairs * 0.5
+
+  const twoRight: Answer = {
+    itemId: item.id,
+    kind: "match",
+    pairs: [
+      { left: "A", right: "W" },
+      { left: "B", right: "X" },
+      { left: "C", right: "Z" }, // wrong
+      { left: "D", right: "Y" }, // wrong
+    ],
+  };
+  assert.equal(pointsFor(item, twoRight), 1);
+  assert.equal(isCorrect(item, twoRight), false);
+});
+
+test("gapReport buckets by whatever categorize returns, not a fixed mechanic/theme key", () => {
+  const data = fixtureData();
+  const items = selectQuiz(data, authored, { seedStr: "categorize-test", targetCount: 5 });
+  const answers: Answer[] = []; // everything unanswered -> every item is "wrong"
+  const report = gapReport(items, answers, () => "Everything");
+  assert.deepEqual(Object.keys(report), ["Everything"]);
+  assert.equal(report["Everything"].wrong, items.length);
 });

@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import type { Arc } from "@/content/schema";
-import { dataForArcsInBook } from "@/lib/content";
-import { selectQuizMulti } from "@/lib/quiz";
+import { dataForArcsInBook, arcNameForChapter } from "@/lib/content";
+import { selectQuizMulti, type QuizItem } from "@/lib/quiz";
 import QuizRunner from "./QuizRunner";
 import CategoryBreakdown from "./CategoryBreakdown";
 import ArcPicker from "./ArcPicker";
@@ -45,11 +45,16 @@ export default function QuizSetup({
   if (started) {
     const source = dataForArcsInBook(bookId, [...selectedArcs]);
     const items = source ? selectQuizMulti([source], { seedStr: `${bookId}:${seed}`, targetCount: count }) : [];
+    // A single-book quiz groups "where to focus" by arc/section rather than
+    // by book (there's only one book in play, so that distinction is
+    // useless here) — unlike QuizRunner's default, whole-Bible categorizer.
+    const categorizeByArc = (item: QuizItem) => arcNameForChapter(bookId, item.citation.chapter);
     return (
       <QuizRunner
         items={items}
         mode="quiz"
         moduleId={bookId}
+        categorize={categorizeByArc}
         backHref={backHref}
         backLabel={backLabel}
         resultsExtra={(report) => <CategoryBreakdown report={report} chaptersHref={chaptersHref} chapterLabel={chapterLabel} />}

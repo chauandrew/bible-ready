@@ -17,15 +17,23 @@ export function McQuestion({
   item,
   mode,
   onAnswer,
+  initialAnswer,
 }: {
   item: Extract<QuizItem, { options: string[] }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
+  /** The player's existing answer, when revisiting a question already
+   * answered this quiz — pre-fills the pick so Quiz mode shows what was
+   * chosen instead of a blank question, while remaining fully editable. */
+  initialAnswer?: Extract<Answer, { kind: "mc" }>;
 }) {
-  const [selected, setSelected] = useState<number | null>(null);
+  const [selected, setSelected] = useState<number | null>(initialAnswer?.selectedIndex ?? null);
 
   function choose(i: number) {
-    if (selected !== null) return;
+    // Study mode locks in the pick to reveal correct/incorrect color and
+    // hold it until "Next" — Quiz mode never locks, since re-picking (e.g.
+    // after Previous) should just replace the answer and re-advance.
+    if (mode === "study" && selected !== null) return;
     setSelected(i);
     if (mode === "quiz") {
       onAnswer({ itemId: item.id, kind: "mc", selectedIndex: i });
@@ -47,7 +55,15 @@ export function McQuestion({
           ? i === item.correctIndex ? "Correct answer: " : i === selected ? "Your answer, incorrect: " : ""
           : "";
         return (
-          <button key={opt} type="button" className={cls} disabled={selected !== null} onClick={() => choose(i)}>
+          <button
+            key={opt}
+            type="button"
+            className={cls}
+            disabled={mode === "study" && selected !== null}
+            aria-pressed={mode === "quiz" ? selected === i : undefined}
+            style={mode === "quiz" && selected === i ? { borderColor: "var(--accent)" } : undefined}
+            onClick={() => choose(i)}
+          >
             {marker && <span className="sr-only">{marker}</span>}
             {marker && <span aria-hidden="true">{i === item.correctIndex ? "✓ " : "✗ "}</span>}
             {opt}
@@ -76,12 +92,16 @@ export function SequenceQuestion({
   item,
   mode,
   onAnswer,
+  initialAnswer,
 }: {
   item: Extract<QuizItem, { type: "sequence" }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
+  /** Pre-fills the placed order when revisiting an already-answered
+   * question — still fully editable via the existing tap-to-undo flow. */
+  initialAnswer?: Extract<Answer, { kind: "sequence" }>;
 }) {
-  const [chosen, setChosen] = useState<string[]>([]);
+  const [chosen, setChosen] = useState<string[]>(initialAnswer?.order ?? []);
   const [checked, setChecked] = useState(false);
   const remaining = item.displayItems.filter((x) => !chosen.includes(x));
   const allPlaced = remaining.length === 0;
@@ -145,13 +165,17 @@ export function MatchQuestion({
   item,
   mode,
   onAnswer,
+  initialAnswer,
 }: {
   item: Extract<QuizItem, { type: "match" }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
+  /** Pre-fills the paired-up state when revisiting an already-answered
+   * question — still fully editable (tap a paired left to undo it). */
+  initialAnswer?: Extract<Answer, { kind: "match" }>;
 }) {
   const [selectedLeft, setSelectedLeft] = useState<string | null>(null);
-  const [pairs, setPairs] = useState<{ left: string; right: string }[]>([]);
+  const [pairs, setPairs] = useState<{ left: string; right: string }[]>(initialAnswer?.pairs ?? []);
   const [checked, setChecked] = useState(false);
   const correctSet = new Set(item.correctPairs.map((p) => `${p.left}::${p.right}`));
   const allPaired = pairs.length === item.lefts.length;
@@ -170,6 +194,9 @@ export function MatchQuestion({
   return (
     <div>
       <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {!checked && pairs.length > 0 && (
+        <p className="citation" style={{ marginBottom: "0.4rem" }}>Tap a matched left card to undo it.</p>
+      )}
       {checked ? (
         <ul style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", listStyle: "none", padding: 0, marginBottom: "0.75rem" }}>
           {pairs.map((p) => {
@@ -193,7 +220,6 @@ export function MatchQuestion({
                   key={l}
                   type="button"
                   className="option"
-                  disabled={!!pair}
                   aria-pressed={selectedLeft === l}
                   style={
                     pair
@@ -202,11 +228,11 @@ export function MatchQuestion({
                       ? { borderColor: "var(--accent)" }
                       : undefined
                   }
-                  onClick={() => setSelectedLeft(l)}
+                  onClick={() => (pair ? setPairs(pairs.filter((p) => p.left !== l)) : setSelectedLeft(l))}
                 >
                   {pair ? (
                     <>
-                      <span className="sr-only">matched: </span>
+                      <span className="sr-only">matched, tap to undo: </span>
                       {l} <span aria-hidden="true">→</span> {pair.right}
                     </>
                   ) : (
@@ -260,12 +286,15 @@ export function FreeResponseQuestion({
   item,
   mode,
   onAnswer,
+  initialAnswer,
 }: {
   item: Extract<QuizItem, { type: "free-response" }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
+  /** Pre-fills the typed answer when revisiting an already-answered question. */
+  initialAnswer?: Extract<Answer, { kind: "free-response" }>;
 }) {
-  const [text, setText] = useState("");
+  const [text, setText] = useState(initialAnswer?.text ?? "");
   const [error, setError] = useState<string | null>(null);
   const [result, setResult] = useState<ReturnType<typeof gradeFreeResponse> | null>(null);
 
@@ -340,13 +369,19 @@ export function ChapterGuessQuestion({
   item,
   mode,
   onAnswer,
+  initialAnswer,
 }: {
   item: Extract<QuizItem, { type: "chapter-guess" }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
+  /** Pre-fills book/chapter when revisiting an already-answered question.
+   * Only the resolved book id is stored (not the raw text originally typed),
+   * so this shows the book's canonical name rather than any typo/phrasing
+   * the player used the first time — still fully editable either way. */
+  initialAnswer?: Extract<Answer, { kind: "chapter-guess" }>;
 }) {
-  const [bookText, setBookText] = useState("");
-  const [chapterText, setChapterText] = useState("");
+  const [bookText, setBookText] = useState(() => (initialAnswer?.book ? bookMeta(initialAnswer.book)?.name ?? "" : ""));
+  const [chapterText, setChapterText] = useState(() => (initialAnswer ? String(initialAnswer.chapter) : ""));
   const [error, setError] = useState<string | null>(null);
   const [points, setPoints] = useState<number | null>(null);
 
