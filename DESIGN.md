@@ -273,7 +273,14 @@ since both are correct depending which enumeration you learned.
 allowed to repeat across events since several chapters can share a topic.
 Unlike `name`, it has no distinctness requirement — the generator never reads
 it, only `FlashcardDeck` display does. Falls back to `name` when absent, so
-it's fine to leave unset until a book's decks are actually authored.
+it's fine to leave unset until a book's decks are actually authored. A
+flashcard is one per *chapter*, not one per event — `lib/content.ts`'s
+`cardsForEventIds` groups a card set's events by `Event.chapter` (preserving
+`Event.order` within each group) and renders every constituent event as its
+own `shortName`/`summary` point on that chapter's single card, so a chapter
+with several notable events (or an enumerated `misc` chapter like the twelve
+disciples) shows one card with multiple points instead of several
+near-duplicate cards sharing the same citation.
 
 **For a `"selection"` book, one `Event` per chapter — not split by section —
 *unless the chapter is itself an enumerated list.*** A curated single-chapter
