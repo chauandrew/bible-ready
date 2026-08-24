@@ -3,12 +3,18 @@
 import { useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { QuizItem, Answer } from "@/lib/quiz";
-import { scoreQuiz, gapReport, isCorrect, pointsFor, pointsColor, correctAnswerText, userAnswerText } from "@/lib/quiz";
+import { scoreQuiz, gapReport, isCorrect, pointsFor, maxPointsFor, pointsColor, categorizeByBook, correctAnswerText, userAnswerText } from "@/lib/quiz";
 import { recordSession, clearMissed } from "@/lib/progress";
 import { formatCitation } from "@/lib/content";
 import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion } from "./QuestionTypes";
 
 type Mode = "study" | "quiz";
+
+/** Whole numbers display plain; fractional (partial-credit) scores get one
+ * decimal place, since points are always a multiple of 0.5 (see pointsFor). */
+function formatPoints(n: number): string {
+  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+}
 
 // -----------------------------------------------------------------------
 // Runner
@@ -18,6 +24,7 @@ export default function QuizRunner({
   items,
   mode,
   moduleId,
+  categorize = categorizeByBook,
   resultsExtra,
   backHref,
   backLabel,
@@ -25,6 +32,11 @@ export default function QuizRunner({
   items: QuizItem[];
   mode: Mode;
   moduleId: string;
+  /** Groups items for the "where to focus" report and the progress page's
+   * category stats — defaults to grouping by book (right for a quiz spanning
+   * several books). A single-book quiz passes an arc-based categorizer
+   * instead, since "which book" isn't a useful distinction within one book. */
+  categorize?: (item: QuizItem) => string;
   /** Rendered above the review list on the results screen — used for the category
    * ("where to focus") breakdown. */
   resultsExtra?: (report: ReturnType<typeof gapReport>) => ReactNode;
@@ -58,7 +70,7 @@ export default function QuizRunner({
 
   function finish(finalAnswers: Answer[]) {
     const score = scoreQuiz(items, finalAnswers);
-    const report = gapReport(items, finalAnswers);
+    const report = gapReport(items, finalAnswers, categorize);
     const categoryDelta: Record<string, { right: number; wrong: number }> = {};
     for (const [cat, r] of Object.entries(report)) categoryDelta[cat] = { right: r.right, wrong: r.wrong };
     recordSession(moduleId, score, score.missedIds, categoryDelta);
@@ -70,12 +82,14 @@ export default function QuizRunner({
   }
 
   const score = useMemo(() => (done ? scoreQuiz(items, answers) : null), [done, items, answers]);
-  const report = useMemo(() => (done ? gapReport(items, answers) : null), [done, items, answers]);
+  const report = useMemo(() => (done ? gapReport(items, answers, categorize) : null), [done, items, answers, categorize]);
 
   if (done && score) {
     return (
       <main className="container">
-        <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>Score: {score.correct}/{score.total}</h1>
+        <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>
+          Score: {formatPoints(score.correct)}/{formatPoints(score.total)}
+        </h1>
         <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>{score.percent}% correct</p>
 
         {resultsExtra && report && resultsExtra(report)}
@@ -87,13 +101,19 @@ export default function QuizRunner({
               {items.map((it) => {
                 const a = answers.find((x) => x.itemId === it.id);
                 const points = a ? pointsFor(it, a) : 0;
+                const max = maxPointsFor(it);
                 const correctText = correctAnswerText(it);
-                const borderColor = pointsColor(points);
-                const label = points === 1 ? "Correct: " : points > 0 ? "Close (half credit): " : "Answer: ";
+                const borderColor = pointsColor(points, max);
+                const label =
+                  points >= max
+                    ? "Correct: "
+                    : points > 0
+                    ? `Partial credit (${formatPoints(points)}/${formatPoints(max)}): `
+                    : "Answer: ";
                 return (
                   <div key={it.id} className="card">
                     <div style={{ fontSize: "0.95rem", marginBottom: "0.25rem" }}>{it.prompt}</div>
-                    {points < 1 && (
+                    {points < max && (
                       <div className="note" style={{ borderColor: "var(--danger-border)", marginBottom: "0.35rem" }}>
                         Your answer: {a ? userAnswerText(it, a) : "(no answer)"}
                       </div>
@@ -133,13 +153,11 @@ export default function QuizRunner({
   }
   if (!item) return null;
 
-  // Quiz mode commits an answer and auto-advances on a single click, with no
-  // confirmation — so revisiting an already-answered question via Previous
-  // must not present it as blank and interactive again. Without this, a
-  // stray click there silently overwrites the original answer, and the
-  // review at the end shows the new one with no sign it ever changed. Study
-  // mode is unaffected: retrying a question there is an intended feature.
-  const existingAnswer = mode === "quiz" ? answers.find((x) => x.itemId === item.id) : undefined;
+  // Revisiting an already-answered question via Previous pre-fills it from
+  // the recorded answer (each question type restores and stays fully
+  // editable) rather than presenting a blank question — changing it and
+  // resubmitting replaces the old answer, same as answering the first time.
+  const existingAnswer = answers.find((x) => x.itemId === item.id);
 
   return (
     <main className="container">
@@ -168,26 +186,46 @@ export default function QuizRunner({
         <div className="progress-fill" style={{ width: `${(index / items.length) * 100}%` }} />
       </div>
       <div className="card">
-        {existingAnswer ? (
-          <div>
-            <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
-            <div className="note">Already answered: {userAnswerText(item, existingAnswer)}</div>
-            <div style={{ marginTop: "0.75rem" }}>
-              <button type="button" className="btn btn-primary" onClick={() => goNext(answers)}>
-                {index + 1 < items.length ? "Next" : "See results"}
-              </button>
-            </div>
-          </div>
-        ) : "options" in item ? (
-          <McQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+        {"options" in item ? (
+          <McQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "mc" ? existingAnswer : undefined}
+          />
         ) : item.type === "sequence" ? (
-          <SequenceQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+          <SequenceQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "sequence" ? existingAnswer : undefined}
+          />
         ) : item.type === "match" ? (
-          <MatchQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+          <MatchQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "match" ? existingAnswer : undefined}
+          />
         ) : item.type === "chapter-guess" ? (
-          <ChapterGuessQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+          <ChapterGuessQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "chapter-guess" ? existingAnswer : undefined}
+          />
         ) : (
-          <FreeResponseQuestion key={item.id} item={item} mode={mode} onAnswer={handleAnswer} />
+          <FreeResponseQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "free-response" ? existingAnswer : undefined}
+          />
         )}
       </div>
     </main>

@@ -58,11 +58,6 @@ function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC
   };
 }
 
-/** Category bucket used for the Quiz's gap report and progress stats. */
-export function categoryOf(item: QuizItem): string {
-  return item.kind === "authored" ? `theme:${item.category}` : `mechanic:${item.type}`;
-}
-
 export interface SelectQuizOptions {
   /** Any string — a URL query param is the intended source. Same seedStr -> same quiz. */
   seedStr: string;
@@ -190,11 +185,44 @@ export function isCorrect(item: QuizItem, answer: Answer): boolean {
   return false;
 }
 
-/** Fractional credit per answer: 1 for isCorrect, 0.5 for a chapter-guess
- * that names the right book but lands exactly one chapter off (a near miss
- * on numbering, not on knowing the material), 0 otherwise. Every other item
- * type is worth 1 or 0, same as isCorrect. */
+/** The most points a single item can contribute — 1 for every item type
+ * except sequence and match, which are worth 0.5 per option/pair (see
+ * pointsFor) since they're made of several independently-gradable pieces
+ * rather than one right/wrong choice. Used to compute a quiz's total
+ * possible score (scoreQuiz) and each item's own "out of" denominator. */
+export function maxPointsFor(item: QuizItem): number {
+  if (item.kind === "generated" && item.type === "sequence") return item.correctOrder.length * 0.5;
+  if (item.kind === "generated" && item.type === "match") return item.correctPairs.length * 0.5;
+  return 1;
+}
+
+/** Fractional credit per answer. Sequence and match give 0.5 per correct
+ * position/pair — a 6-item sequence with 3 in their right spot scores 1.5,
+ * out of a 3.0 max (see maxPointsFor) — rather than the old all-or-nothing
+ * grading, since getting most of a long ordering/matching question right
+ * reflects real partial knowledge the same way a near-miss chapter guess
+ * does. Every other item type is worth 1 or 0, via isCorrect, with the one
+ * exception of a chapter-guess that names the right book but lands exactly
+ * one chapter off (a near miss on numbering, not on knowing the material),
+ * worth 0.5. */
 export function pointsFor(item: QuizItem, answer: Answer): number {
+  if (item.kind === "generated" && item.type === "sequence") {
+    if (answer.kind !== "sequence") return 0;
+    let correctPositions = 0;
+    for (let i = 0; i < item.correctOrder.length; i++) {
+      if (answer.order[i] === item.correctOrder[i]) correctPositions++;
+    }
+    return correctPositions * 0.5;
+  }
+  if (item.kind === "generated" && item.type === "match") {
+    if (answer.kind !== "match") return 0;
+    const correctSet = new Set(item.correctPairs.map((p) => `${p.left}::${p.right}`));
+    let correctPairs = 0;
+    for (const p of answer.pairs) {
+      if (correctSet.has(`${p.left}::${p.right}`)) correctPairs++;
+    }
+    return correctPairs * 0.5;
+  }
   if (isCorrect(item, answer)) return 1;
   if (item.kind === "generated" && item.type === "chapter-guess" && answer.kind === "chapter-guess") {
     if (answer.book === item.citation.book && Math.abs(answer.chapter - item.correctChapter) === 1) return 0.5;
@@ -202,11 +230,12 @@ export function pointsFor(item: QuizItem, answer: Answer): number {
   return 0;
 }
 
-/** Border color for a points value (1 / 0.5 / 0) — shared by QuizRunner's
- * review list and ChapterGuessQuestion's inline Study-mode feedback so the
- * three-way correct/close/wrong palette can't drift between the two. */
-export function pointsColor(points: number): string {
-  return points === 1 ? "var(--success-border)" : points > 0 ? "var(--accent)" : "var(--danger-border)";
+/** Border color for a points value against its max (default 1, the common
+ * case) — shared by QuizRunner's review list and ChapterGuessQuestion's
+ * inline Study-mode feedback so the three-way correct/close/wrong palette
+ * can't drift between the two. */
+export function pointsColor(points: number, max = 1): string {
+  return points >= max ? "var(--success-border)" : points > 0 ? "var(--accent)" : "var(--danger-border)";
 }
 
 /** The correct answer, in display form — same derivation QuizRunner's review list
@@ -235,42 +264,62 @@ export function userAnswerText(item: QuizItem, answer: Answer): string {
 }
 
 export interface ScoreResult {
-  /** Sum of per-item points — usually a whole number, but a chapter-guess
-   * "close" answer contributes 0.5 (see pointsFor), so this can be e.g. 7.5. */
+  /** Sum of per-item points — a whole number only when the quiz has no
+   * partial credit in play; a close chapter-guess or a partly-right
+   * sequence/match makes this fractional (see pointsFor). */
   correct: number;
+  /** Sum of each item's maxPointsFor — usually equal to items.length, but
+   * higher whenever a sequence/match item is worth more than 1 point. */
   total: number;
   percent: number;
-  /** Anything short of full credit — a close chapter-guess still belongs in
-   * the missed-question bank, since it means the exact chapter wasn't known. */
+  /** Anything short of full credit — a close chapter-guess or a
+   * partly-right sequence/match still belongs in the missed-question bank,
+   * since it means the material wasn't fully known. */
   missedIds: string[];
 }
 
 export function scoreQuiz(items: QuizItem[], answers: Answer[]): ScoreResult {
   const answerById = new Map(answers.map((a) => [a.itemId, a]));
   let correct = 0;
+  let total = 0;
   const missedIds: string[] = [];
   for (const item of items) {
     const answer = answerById.get(item.id);
     const points = answer ? pointsFor(item, answer) : 0;
+    const max = maxPointsFor(item);
     correct += points;
-    if (points < 1) missedIds.push(item.id);
+    total += max;
+    if (points < max) missedIds.push(item.id);
   }
-  const total = items.length;
   return { correct, total, percent: total ? Math.round((correct / total) * 100) : 0, missedIds };
 }
 
+/** Default `gapReport` categorizer for a quiz that spans several books (there's no
+ * single book's arcs to group by) — falls back to the raw id if a book somehow isn't
+ * registered, same graceful-degradation pattern as formatCitation. */
+export function categorizeByBook(item: QuizItem): string {
+  return bookMeta(item.citation.book)?.name ?? item.citation.book;
+}
+
 /** Per-category right/wrong breakdown — what the Quiz's "where to focus" report renders.
- * A partial-credit chapter-guess counts as "wrong" here — this is a coaching signal
- * ("do you know this material"), not the numeric score, so it stays binary. */
-export function gapReport(items: QuizItem[], answers: Answer[]): Record<string, { right: number; wrong: number; percent: number }> {
+ * `categorize` groups items by whatever's useful at the quiz's scope (an arc name for a
+ * single-book quiz, a book name for a whole-Bible one — see QuizRunner's `categorize`
+ * prop). Less-than-full credit counts as "wrong" here — this is a coaching signal ("do
+ * you know this material"), not the numeric score, so it stays binary even though
+ * pointsFor itself is fractional. */
+export function gapReport(
+  items: QuizItem[],
+  answers: Answer[],
+  categorize: (item: QuizItem) => string
+): Record<string, { right: number; wrong: number; percent: number }> {
   const answerById = new Map(answers.map((a) => [a.itemId, a]));
   const stats: Record<string, { right: number; wrong: number }> = {};
   for (const item of items) {
-    const cat = categoryOf(item);
+    const cat = categorize(item);
     stats[cat] ??= { right: 0, wrong: 0 };
     const answer = answerById.get(item.id);
     const points = answer ? pointsFor(item, answer) : 0;
-    if (points >= 1) stats[cat].right++;
+    if (points >= maxPointsFor(item)) stats[cat].right++;
     else stats[cat].wrong++;
   }
   const out: Record<string, { right: number; wrong: number; percent: number }> = {};

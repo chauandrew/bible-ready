@@ -200,6 +200,16 @@ export function chaptersForArcInBook(bookId: string, arcId: string): Chapter[] {
     .sort((a, b) => a.number - b.number);
 }
 
+/** The arc a chapter belongs to, by display name — used to group a single-book
+ * quiz's "where to focus" report by section instead of by book (see QuizSetup's
+ * `categorize` prop). Falls back to a plain "Chapter N" label rather than
+ * throwing if the chapter/arc somehow isn't found. */
+export function arcNameForChapter(bookId: string, chapterNumber: number): string {
+  const chapter = chapterInBook(bookId, chapterNumber);
+  if (!chapter) return `Chapter ${chapterNumber}`;
+  return arcInBook(bookId, chapter.arcId)?.name ?? chapter.arcId;
+}
+
 export function eventsForChapterInBook(bookId: string, chapterNumber: number): Event[] {
   const events = booksContent[bookId]?.events ?? [];
   return events.filter((e) => e.chapter === chapterNumber).sort((a, b) => a.order - b.order);
