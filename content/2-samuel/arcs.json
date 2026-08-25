@@ -1,0 +1,42 @@
+[
+  {
+    "id": "2sam-arc-king-judah",
+    "book": "2-samuel",
+    "name": "David Becomes King over Judah",
+    "startChapter": 1,
+    "endChapter": 4,
+    "summary": "David laments Saul and Jonathan and is made king over Judah at Hebron while Ish-bosheth is made king over Israel, and war between the two houses ends with Abner and Ish-bosheth both murdered."
+  },
+  {
+    "id": "2sam-arc-king-israel",
+    "book": "2-samuel",
+    "name": "David Becomes King over All Israel",
+    "startChapter": 5,
+    "endChapter": 8,
+    "summary": "David is anointed king over all Israel, captures Jerusalem, brings the ark of the covenant into the city, receives God's covenant promise through Nathan, and wins a string of military victories."
+  },
+  {
+    "id": "2sam-arc-bathsheba",
+    "book": "2-samuel",
+    "name": "David, Bathsheba, and Nathan",
+    "startChapter": 9,
+    "endChapter": 12,
+    "summary": "David shows kindness to Jonathan's crippled son Mephibosheth, then commits adultery with Bathsheba and has her husband Uriah killed, and Nathan confronts him before Solomon is born."
+  },
+  {
+    "id": "2sam-arc-absalom",
+    "book": "2-samuel",
+    "name": "Absalom's Rebellion",
+    "startChapter": 13,
+    "endChapter": 19,
+    "summary": "Amnon's assault on Tamar leads Absalom to kill him and flee, and after his eventual return Absalom conspires against David, drives him from Jerusalem, and dies in the rebellion that follows."
+  },
+  {
+    "id": "2sam-arc-final-years",
+    "book": "2-samuel",
+    "name": "David's Final Years",
+    "startChapter": 20,
+    "endChapter": 24,
+    "summary": "David puts down Sheba's revolt, avenges the Gibeonites, honors his mighty men, sings songs of deliverance, and brings a plague on the land by taking a census before buying Araunah's threshing floor."
+  }
+]

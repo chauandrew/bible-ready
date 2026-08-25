@@ -1,0 +1,58 @@
+[
+  {
+    "id": "2sam-deck-becoming-king",
+    "book": "2-samuel",
+    "name": "Becoming King",
+    "cardEventIds": [
+      "2sam-e-c1-1",
+      "2sam-e-c2-0",
+      "2sam-e-c3-1",
+      "2sam-e-c4-0",
+      "2sam-e-c5-0",
+      "2sam-e-c5-1",
+      "2sam-e-c6-1",
+      "2sam-e-c7-1"
+    ]
+  },
+  {
+    "id": "2sam-deck-bathsheba",
+    "book": "2-samuel",
+    "name": "David, Bathsheba, and Nathan",
+    "cardEventIds": [
+      "2sam-e-c9-1",
+      "2sam-e-c10-0",
+      "2sam-e-c11-0",
+      "2sam-e-c11-2",
+      "2sam-e-c12-0",
+      "2sam-e-c12-2"
+    ]
+  },
+  {
+    "id": "2sam-deck-absalom",
+    "book": "2-samuel",
+    "name": "Absalom's Rebellion",
+    "cardEventIds": [
+      "2sam-e-c13-0",
+      "2sam-e-c13-1",
+      "2sam-e-c15-1",
+      "2sam-e-c15-2",
+      "2sam-e-c17-1",
+      "2sam-e-c18-1",
+      "2sam-e-c18-2"
+    ]
+  },
+  {
+    "id": "2sam-deck-final-years",
+    "book": "2-samuel",
+    "name": "David's Final Years",
+    "cardEventIds": [
+      "2sam-e-c20-1",
+      "2sam-e-c21-0",
+      "2sam-e-c21-1",
+      "2sam-e-c22-0",
+      "2sam-e-c23-0",
+      "2sam-e-c23-1",
+      "2sam-e-c24-1"
+    ]
+  }
+]

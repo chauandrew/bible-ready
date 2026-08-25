@@ -1,0 +1,408 @@
+[
+  {
+    "id": "1sam-samuel",
+    "name": "Samuel",
+    "summary": "The last judge of Israel, born after his mother Hannah's prayer at Shiloh, dedicated to the LORD from childhood, and raised up as a prophet who anoints both Saul and David as king. Samuel confronts both kings' failures, leads Israel to victory at Mizpah, and delivers the LORD's verdicts throughout the book until his death near its end.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "1sam-hannah",
+        "relation": "son"
+      },
+      {
+        "personId": "1sam-elkanah",
+        "relation": "son"
+      },
+      {
+        "personId": "1sam-eli",
+        "relation": "raised by"
+      },
+      {
+        "personId": "1sam-saul",
+        "relation": "anointed"
+      },
+      {
+        "personId": "1sam-david",
+        "relation": "anointed"
+      }
+    ]
+  },
+  {
+    "id": "1sam-saul",
+    "name": "Saul",
+    "summary": "Israel's first king, a tall Benjamite chosen by lot and anointed by Samuel, whose early military success against the Ammonites gives way to impatience, disobedience, and a growing jealousy of David that consumes the rest of his reign. Rejected by the LORD after sparing Agag, tormented by an evil spirit, and hunted by his own paranoia, Saul finally dies by his own sword after being mortally wounded at Mount Gilboa.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 9
+    },
+    "relations": [
+      {
+        "personId": "1sam-jonathan",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-michal",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-samuel",
+        "relation": "anointed by"
+      },
+      {
+        "personId": "1sam-david",
+        "relation": "rival"
+      },
+      {
+        "personId": "1sam-abner",
+        "relation": "commander"
+      }
+    ]
+  },
+  {
+    "id": "1sam-david",
+    "name": "David",
+    "summary": "The youngest son of Jesse, a shepherd from Bethlehem secretly anointed by Samuel to replace Saul, who becomes famous for killing the giant Goliath and rises quickly in Saul's court before Saul's jealousy forces him into years as a fugitive. Twice sparing Saul's life in the wilderness rather than raise a hand against the LORD's anointed, David survives to become the next king of Israel after Saul's death.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 16
+    },
+    "relations": [
+      {
+        "personId": "1sam-jesse",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-jonathan",
+        "relation": "friend"
+      },
+      {
+        "personId": "1sam-michal",
+        "relation": "wife"
+      },
+      {
+        "personId": "1sam-abigail",
+        "relation": "wife"
+      },
+      {
+        "personId": "1sam-saul",
+        "relation": "rival"
+      }
+    ]
+  },
+  {
+    "id": "1sam-eli",
+    "name": "Eli",
+    "summary": "The high priest and judge at Shiloh who raises Samuel but fails to restrain his own corrupt sons, and whose family line is judged by the LORD.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "1sam-hophni",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-phinehas",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "1sam-hannah",
+    "name": "Hannah",
+    "summary": "Elkanah's beloved but childless wife whose prayer at Shiloh is answered with the birth of Samuel, whom she dedicates to the LORD's service.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "1sam-elkanah",
+        "relation": "wife"
+      },
+      {
+        "personId": "1sam-samuel",
+        "relation": "mother"
+      }
+    ]
+  },
+  {
+    "id": "1sam-elkanah",
+    "name": "Elkanah",
+    "summary": "Samuel's father, a Levite from the hill country of Ephraim who worships yearly at Shiloh with his two wives, Hannah and Peninnah.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "1sam-hannah",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "id": "1sam-jonathan",
+    "name": "Jonathan",
+    "summary": "Saul's son and heir, a bold warrior whose raid routs a Philistine garrison and who becomes David's closest friend, bound to him by a lifelong covenant.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 14
+    },
+    "relations": [
+      {
+        "personId": "1sam-saul",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-david",
+        "relation": "friend"
+      }
+    ]
+  },
+  {
+    "id": "1sam-goliath",
+    "name": "Goliath",
+    "summary": "The giant Philistine champion from Gath who challenges Israel to single combat for forty days before David kills him with a sling and stone.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 17
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-abigail",
+    "name": "Abigail",
+    "summary": "Nabal's wise wife who prevents David from taking bloody revenge on her household and later becomes David's wife after Nabal's death.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 25
+    },
+    "relations": [
+      {
+        "personId": "1sam-nabal",
+        "relation": "wife"
+      },
+      {
+        "personId": "1sam-david",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "id": "1sam-nabal",
+    "name": "Nabal",
+    "summary": "A wealthy but harsh sheep owner in Carmel who insults David's messengers and dies soon after his wife Abigail averts David's revenge.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 25
+    },
+    "relations": [
+      {
+        "personId": "1sam-abigail",
+        "relation": "husband"
+      }
+    ]
+  },
+  {
+    "id": "1sam-doeg",
+    "name": "Doeg",
+    "summary": "Saul's chief herdsman, an Edomite who reports Ahimelech's help to David and then personally kills the priests of Nob at Saul's command.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 21
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-ahimelech",
+    "name": "Ahimelech",
+    "summary": "The priest at Nob who gives David consecrated bread and Goliath's sword, an act of kindness for which Saul later has him and his fellow priests killed.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 21
+    },
+    "relations": [
+      {
+        "personId": "1sam-abiathar",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "1sam-achish",
+    "name": "Achish",
+    "summary": "The Philistine king of Gath who twice hosts David, first fooled by his feigned madness and later giving him the town of Ziklag to live in.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 21
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-michal",
+    "name": "Michal",
+    "summary": "Saul's younger daughter, given to David as a wife, who saves his life by helping him escape through a window before Saul later gives her to another man.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 18
+    },
+    "relations": [
+      {
+        "personId": "1sam-saul",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-david",
+        "relation": "husband"
+      }
+    ]
+  },
+  {
+    "id": "1sam-abner",
+    "name": "Abner",
+    "summary": "Saul's cousin and the commander of his army, who remains loyal to Saul's family and is confronted by David for failing to guard the sleeping king.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 26
+    },
+    "relations": [
+      {
+        "personId": "1sam-saul",
+        "relation": "cousin"
+      }
+    ]
+  },
+  {
+    "id": "1sam-agag",
+    "name": "Agag",
+    "summary": "The Amalekite king whom Saul spares against the LORD's command, until Samuel kills him himself.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 15
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-medium-endor",
+    "name": "The Medium of Endor",
+    "summary": "A medium living at Endor whom Saul consults in disguise the night before his final battle, and who brings up the spirit of Samuel at his request.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 28
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-hophni",
+    "name": "Hophni",
+    "summary": "One of Eli's two priestly sons, condemned along with his brother for abusing his position at the tabernacle, who dies fighting alongside the ark of the covenant.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 2
+    },
+    "relations": [
+      {
+        "personId": "1sam-eli",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-phinehas",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "1sam-phinehas",
+    "name": "Phinehas",
+    "summary": "The other of Eli's two priestly sons, condemned for the same abuses as his brother Hophni, who also dies in the battle where the ark is captured.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 2
+    },
+    "relations": [
+      {
+        "personId": "1sam-eli",
+        "relation": "father"
+      },
+      {
+        "personId": "1sam-hophni",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "1sam-nahash",
+    "name": "Nahash",
+    "summary": "The Ammonite king who besieges Jabesh-gilead and threatens to gouge out the eyes of its people before Saul defeats him.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 11
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-abiathar",
+    "name": "Abiathar",
+    "summary": "Ahimelech's son and the lone priest of Nob to escape Saul's massacre, who joins David as his priest and carries the ephod for him.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 22
+    },
+    "relations": [
+      {
+        "personId": "1sam-ahimelech",
+        "relation": "father"
+      }
+    ]
+  },
+  {
+    "id": "1sam-jesse",
+    "name": "Jesse",
+    "summary": "A Bethlehemite and the father of David and his older brothers, at whose home Samuel comes to anoint the next king of Israel.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 16
+    },
+    "relations": [
+      {
+        "personId": "1sam-david",
+        "relation": "son"
+      }
+    ]
+  },
+  {
+    "id": "1sam-abishai",
+    "name": "Abishai",
+    "summary": "One of David's loyal men who accompanies him into Saul's camp at night and urges him to kill the sleeping king.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 26
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-elders",
+    "name": "The Elders of Israel",
+    "summary": "The elders of Israel who come to Samuel at Ramah demanding that he appoint a king to rule over them like the other nations.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 8
+    },
+    "relations": []
+  },
+  {
+    "id": "1sam-god",
+    "name": "God",
+    "summary": "The LORD, the God of Israel, who raises up and removes kings, answers prayer, and speaks through Samuel and the prophets throughout the book.",
+    "firstAppearance": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "relations": []
+  }
+]

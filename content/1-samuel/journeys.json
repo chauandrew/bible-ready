@@ -1,0 +1,45 @@
+[
+  {
+    "id": "1sam-journey",
+    "book": "1-samuel",
+    "name": "Samuel, Saul, and David",
+    "summary": "Follow the last judge of Israel, its first king, and the shepherd who would become its second king as their three paths cross again and again across the hill country of Benjamin and Judah.",
+    "characters": [
+      { "id": "1sam-samuel", "color": "#6b4fa0" },
+      { "id": "1sam-saul", "color": "#a9432c" },
+      { "id": "1sam-david", "color": "#2f6f4f" }
+    ],
+    "stops": [
+      { "id": "1s-1", "order": 1, "eventId": "1sam-e-c3-1", "characterIds": ["1sam-samuel"], "place": "Shiloh", "lat": 32.0556, "lng": 35.2895 },
+      { "id": "1s-2", "order": 2, "eventId": "1sam-e-c7-2", "characterIds": ["1sam-samuel"], "place": "Mizpah", "lat": 31.8851, "lng": 35.2164, "locationNote": "Usually identified with Tell en-Nasbeh, though the identification is not entirely certain." },
+      { "id": "1s-3", "order": 3, "eventId": "1sam-e-c9-2", "characterIds": ["1sam-samuel", "1sam-saul"], "place": "Ramah", "lat": 31.8536, "lng": 35.2333, "locationNote": "Samuel's home town is usually identified with er-Ram; Nabi Samwil has also been proposed." },
+      { "id": "1s-4", "order": 4, "eventId": "1sam-e-c10-3", "characterIds": ["1sam-saul", "1sam-samuel"], "place": "Mizpah", "lat": 31.8851, "lng": 35.2164, "locationNote": "Usually identified with Tell en-Nasbeh, though the identification is not entirely certain." },
+      { "id": "1s-5", "order": 5, "eventId": "1sam-e-c11-1", "characterIds": ["1sam-saul"], "place": "Jabesh-gilead", "lat": 32.3805, "lng": 35.6217, "locationNote": "East of the Jordan; the exact site is disputed, with Tell el-Maqlub and Tell Abu Kharaz both proposed." },
+      { "id": "1s-6", "order": 6, "eventId": "1sam-e-c11-2", "characterIds": ["1sam-saul", "1sam-samuel"], "place": "Gilgal", "lat": 31.8683, "lng": 35.4636, "locationNote": "Near Jericho; several nearby tells have been proposed and none is settled." },
+      { "id": "1s-7", "order": 7, "eventId": "1sam-e-c13-1", "characterIds": ["1sam-saul"], "place": "Gilgal", "lat": 31.8683, "lng": 35.4636, "locationNote": "Near Jericho; several nearby tells have been proposed and none is settled." },
+      { "id": "1s-8", "order": 8, "eventId": "1sam-e-c16-1", "characterIds": ["1sam-david"], "place": "Bethlehem", "lat": 31.7054, "lng": 35.2024 },
+      { "id": "1s-9", "order": 9, "eventId": "1sam-e-c16-3", "characterIds": ["1sam-david", "1sam-saul"], "place": "Gibeah", "lat": 31.8234, "lng": 35.2312, "locationNote": "Saul's capital, identified with Tell el-Ful." },
+      { "id": "1s-10", "order": 10, "eventId": "1sam-e-c17-2", "characterIds": ["1sam-david", "1sam-saul"], "place": "the Valley of Elah", "lat": 31.6964, "lng": 34.9572, "locationNote": "Near Khirbet Qeiyafa, which overlooks the valley close to biblical Socoh." },
+      { "id": "1s-11", "order": 11, "eventId": "1sam-e-c18-1", "characterIds": ["1sam-david"], "place": "Gibeah", "lat": 31.8234, "lng": 35.2312, "locationNote": "Saul's capital, identified with Tell el-Ful." },
+      { "id": "1s-12", "order": 12, "eventId": "1sam-e-c18-2", "characterIds": ["1sam-david", "1sam-saul"], "place": "Gibeah", "lat": 31.8234, "lng": 35.2312, "locationNote": "Saul's capital, identified with Tell el-Ful." },
+      { "id": "1s-13", "order": 13, "eventId": "1sam-e-c19-3", "characterIds": ["1sam-david", "1sam-saul", "1sam-samuel"], "place": "Ramah", "lat": 31.8536, "lng": 35.2333, "locationNote": "Samuel's home town is usually identified with er-Ram; Nabi Samwil has also been proposed." },
+      { "id": "1s-14", "order": 14, "eventId": "1sam-e-c20-2", "characterIds": ["1sam-david"], "place": "Gibeah", "lat": 31.8234, "lng": 35.2312, "locationNote": "Saul's capital, identified with Tell el-Ful." },
+      { "id": "1s-15", "order": 15, "eventId": "1sam-e-c21-1", "characterIds": ["1sam-david"], "place": "Nob", "lat": 31.7910, "lng": 35.2385, "locationNote": "A priestly town just north of Jerusalem; the exact site is disputed, often placed near Mount Scopus." },
+      { "id": "1s-16", "order": 16, "eventId": "1sam-e-c21-2", "characterIds": ["1sam-david"], "place": "Gath", "lat": 31.7042, "lng": 34.8469, "locationNote": "Identified with Tell es-Safi." },
+      { "id": "1s-17", "order": 17, "eventId": "1sam-e-c22-1", "characterIds": ["1sam-david"], "place": "the cave of Adullam", "lat": 31.6500, "lng": 35.0025 },
+      { "id": "1s-18", "order": 18, "eventId": "1sam-e-c22-3", "characterIds": ["1sam-saul"], "place": "Nob", "lat": 31.7910, "lng": 35.2385, "locationNote": "A priestly town just north of Jerusalem; the exact site is disputed, often placed near Mount Scopus." },
+      { "id": "1s-19", "order": 19, "eventId": "1sam-e-c23-1", "characterIds": ["1sam-david"], "place": "Keilah", "lat": 31.6161, "lng": 35.0031, "locationNote": "Identified with Khirbet Qeyla." },
+      { "id": "1s-20", "order": 20, "eventId": "1sam-e-c23-2", "characterIds": ["1sam-david"], "place": "the wilderness of Ziph", "lat": 31.4658, "lng": 35.1381 },
+      { "id": "1s-21", "order": 21, "eventId": "1sam-e-c23-3", "characterIds": ["1sam-david", "1sam-saul"], "place": "the wilderness of Maon", "lat": 31.4094, "lng": 35.1339, "locationNote": "Identified with Khirbet Ma'in." },
+      { "id": "1s-22", "order": 22, "eventId": "1sam-e-c24-1", "characterIds": ["1sam-david", "1sam-saul"], "place": "En Gedi", "lat": 31.4667, "lng": 35.3939 },
+      { "id": "1s-23", "order": 23, "eventId": "1sam-e-c25-1", "characterIds": ["1sam-samuel"], "place": "Ramah", "lat": 31.8536, "lng": 35.2333, "locationNote": "Samuel's home town is usually identified with er-Ram; Nabi Samwil has also been proposed." },
+      { "id": "1s-24", "order": 24, "eventId": "1sam-e-c25-2", "characterIds": ["1sam-david"], "place": "Carmel", "lat": 31.4236, "lng": 35.1331, "locationNote": "A Judean hill-country town, identified with Khirbet al-Karmil — not Mount Carmel on the coast." },
+      { "id": "1s-25", "order": 25, "eventId": "1sam-e-c26-1", "characterIds": ["1sam-david", "1sam-saul"], "place": "the hill of Hachilah", "lat": 31.4658, "lng": 35.1381, "locationNote": "Not independently identified; approximated near the wilderness of Ziph, which 1 Samuel 26:1 places it beside." },
+      { "id": "1s-26", "order": 26, "eventId": "1sam-e-c27-1", "characterIds": ["1sam-david"], "place": "Ziklag", "lat": 31.5910, "lng": 34.8193, "locationNote": "One of over a dozen proposed sites (Khirbet er-Ra'i shown here); no candidate has a confirmed destruction layer matching this period." },
+      { "id": "1s-27", "order": 27, "eventId": "1sam-e-c28-1", "characterIds": ["1sam-saul"], "place": "Endor", "lat": 32.6561, "lng": 35.4172 },
+      { "id": "1s-28", "order": 28, "eventId": "1sam-e-c29-1", "characterIds": ["1sam-david"], "place": "Aphek", "lat": 32.1050, "lng": 34.9304, "locationNote": "Identified with Tel Afek / Antipatris near Rosh HaAyin." },
+      { "id": "1s-29", "order": 29, "eventId": "1sam-e-c30-1", "characterIds": ["1sam-david"], "place": "Ziklag", "lat": 31.5910, "lng": 34.8193, "locationNote": "One of over a dozen proposed sites (Khirbet er-Ra'i shown here); no candidate has a confirmed destruction layer matching this period." },
+      { "id": "1s-30", "order": 30, "eventId": "1sam-e-c31-2", "characterIds": ["1sam-saul"], "place": "Mount Gilboa", "lat": 32.4339, "lng": 35.4144 }
+    ]
+  }
+]

@@ -1,0 +1,1351 @@
+[
+  {
+    "id": "1sam-e-c1-1",
+    "book": "1-samuel",
+    "chapter": 1,
+    "name": "Hannah prays for a son at the tabernacle",
+    "shortName": "Hannah's prayer",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "1sam-hannah",
+      "1sam-eli",
+      "1sam-elkanah"
+    ],
+    "order": 1,
+    "summary": "At the tabernacle in Shiloh, the childless Hannah weeps and vows to give her son to the LORD if he grants her one, and the priest Eli initially mistakes her silent prayer for drunkenness.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c1-2",
+    "book": "1-samuel",
+    "chapter": 1,
+    "name": "Samuel is born and dedicated to the LORD",
+    "shortName": "Samuel's birth",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "1sam-hannah",
+      "1sam-samuel",
+      "1sam-eli",
+      "1sam-elkanah"
+    ],
+    "order": 2,
+    "summary": "Hannah conceives and bears a son she names Samuel, and after weaning him she brings him to Eli at Shiloh to serve the LORD there for as long as he lives.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c2-1",
+    "book": "1-samuel",
+    "chapter": 2,
+    "name": "Hannah sings a song of praise to the LORD",
+    "shortName": "Hannah's song",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "1sam-hannah"
+    ],
+    "order": 1,
+    "summary": "After leaving Samuel with Eli, Hannah prays a song praising God as the one who humbles the proud, raises the poor, and gives strength to his anointed king.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c2-2",
+    "book": "1-samuel",
+    "chapter": 2,
+    "name": "Eli's sons abuse their priestly duties",
+    "shortName": "Hophni and Phinehas sin",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "1sam-hophni",
+      "1sam-phinehas",
+      "1sam-eli"
+    ],
+    "order": 2,
+    "summary": "Eli's sons Hophni and Phinehas take meat by force from worshipers' sacrifices and treat the LORD's offering with contempt, despite their father's rebuke.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c2-3",
+    "book": "1-samuel",
+    "chapter": 2,
+    "name": "A man of God pronounces judgment on Eli's house",
+    "shortName": "Judgment on Eli's house",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "1sam-eli",
+      "1sam-hophni",
+      "1sam-phinehas"
+    ],
+    "order": 3,
+    "summary": "An unnamed man of God tells Eli that his sons will both die on the same day and that the priesthood will pass out of his family because he honored his sons above the LORD.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c3-1",
+    "book": "1-samuel",
+    "chapter": 3,
+    "name": "The LORD calls Samuel in the night",
+    "shortName": "The LORD calls Samuel",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-eli"
+    ],
+    "order": 1,
+    "summary": "The LORD calls out to young Samuel three times as he sleeps near the ark, and Eli finally realizes what is happening and tells Samuel how to respond.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c3-2",
+    "book": "1-samuel",
+    "chapter": 3,
+    "name": "Samuel is recognized as a prophet throughout Israel",
+    "shortName": "Samuel recognized as prophet",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "The LORD begins appearing to Samuel regularly at Shiloh, and all Israel comes to recognize him as a trustworthy prophet of the LORD.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c4-1",
+    "book": "1-samuel",
+    "chapter": 4,
+    "name": "Israel is defeated and brings the ark into camp",
+    "shortName": "The ark brought into camp",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "1sam-hophni",
+      "1sam-phinehas"
+    ],
+    "order": 1,
+    "summary": "After a defeat by the Philistines, Israel's elders send for the ark of the covenant and bring it into camp at Ebenezer, hoping it will guarantee victory in the next battle.",
+    "notable": true,
+    "place": "Ebenezer"
+  },
+  {
+    "id": "1sam-e-c4-2",
+    "book": "1-samuel",
+    "chapter": 4,
+    "name": "The Philistines capture the ark and kill Hophni and Phinehas",
+    "shortName": "The ark is captured",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "1sam-hophni",
+      "1sam-phinehas"
+    ],
+    "order": 2,
+    "summary": "Israel is routed a second time, thirty thousand soldiers die, Hophni and Phinehas are killed, and the Philistines carry off the ark of God.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c4-3",
+    "book": "1-samuel",
+    "chapter": 4,
+    "name": "Eli dies upon hearing the ark is captured",
+    "shortName": "Eli's death",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "1sam-eli"
+    ],
+    "order": 3,
+    "summary": "When a messenger reports the disaster and the loss of the ark, the aged Eli falls backward off his seat and dies, and his daughter-in-law names her newborn son Ichabod.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c5-1",
+    "book": "1-samuel",
+    "chapter": 5,
+    "name": "Dagon falls before the captured ark",
+    "shortName": "Dagon falls",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 5
+    },
+    "peopleIds": [],
+    "order": 1,
+    "summary": "The Philistines set the captured ark beside the statue of their god Dagon in his temple, and twice they find Dagon fallen on his face, the second time broken apart.",
+    "notable": true,
+    "place": "Ashdod"
+  },
+  {
+    "id": "1sam-e-c5-2",
+    "book": "1-samuel",
+    "chapter": 5,
+    "name": "The LORD afflicts the Philistines with tumors",
+    "shortName": "Tumors strike the Philistines",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 5
+    },
+    "peopleIds": [],
+    "order": 2,
+    "summary": "As the Philistines move the ark from city to city to escape its curse, the LORD strikes the people of each place, including Gath, with a plague of tumors.",
+    "notable": true,
+    "place": "Gath"
+  },
+  {
+    "id": "1sam-e-c6-1",
+    "book": "1-samuel",
+    "chapter": 6,
+    "name": "The Philistines return the ark with a guilt offering",
+    "shortName": "The ark is sent back",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 6
+    },
+    "peopleIds": [],
+    "order": 1,
+    "summary": "Philistine priests advise sending the ark back on a new cart pulled by two nursing cows, along with a guilt offering of gold tumors and mice, to see if their plague was really from the LORD.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c6-2",
+    "book": "1-samuel",
+    "chapter": 6,
+    "name": "Onlookers are struck down for looking into the ark",
+    "shortName": "Struck down at Beth-shemesh",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 6
+    },
+    "peopleIds": [],
+    "order": 2,
+    "summary": "The cart carries the ark straight to Beth-shemesh where the people rejoice, but the LORD strikes down several men there for looking inside the ark.",
+    "notable": true,
+    "place": "Beth-shemesh"
+  },
+  {
+    "id": "1sam-e-c7-1",
+    "book": "1-samuel",
+    "chapter": 7,
+    "name": "The ark is set in the house of Abinadab",
+    "shortName": "The ark at Kiriath-jearim",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 7
+    },
+    "peopleIds": [],
+    "order": 1,
+    "summary": "The men of Kiriath-jearim take the ark to the house of Abinadab on the hill and consecrate his son Eleazar to guard it there for the next twenty years.",
+    "notable": true,
+    "place": "Kiriath-jearim"
+  },
+  {
+    "id": "1sam-e-c7-2",
+    "book": "1-samuel",
+    "chapter": 7,
+    "name": "Israel gathers to fast and pray, then defeats the Philistines",
+    "shortName": "Victory at Mizpah",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "Samuel calls Israel to turn from foreign gods and gathers them at Mizpah to fast and pray, and when the Philistines attack, the LORD routs them with thunder.",
+    "notable": true,
+    "place": "Mizpah"
+  },
+  {
+    "id": "1sam-e-c7-3",
+    "book": "1-samuel",
+    "chapter": 7,
+    "name": "Samuel sets up the stone Ebenezer",
+    "shortName": "The stone Ebenezer",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 3,
+    "summary": "Samuel sets up a stone between Mizpah and Shen, naming it Ebenezer to mark that the LORD has helped Israel, and he continues judging Israel throughout his life.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c8-1",
+    "book": "1-samuel",
+    "chapter": 8,
+    "name": "The elders of Israel demand a king",
+    "shortName": "Israel demands a king",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-elders"
+    ],
+    "order": 1,
+    "summary": "With Samuel old and his sons serving as corrupt judges, the elders of Israel come to Samuel at Ramah and demand a king to lead them like all the other nations.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c8-2",
+    "book": "1-samuel",
+    "chapter": 8,
+    "name": "Samuel warns Israel what a king will take from them",
+    "shortName": "Samuel warns about a king",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-elders"
+    ],
+    "order": 2,
+    "summary": "The LORD tells Samuel to warn the people what a king will demand from them in sons, daughters, land, and crops, but the people insist on having a king anyway.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c9-1",
+    "book": "1-samuel",
+    "chapter": 9,
+    "name": "Saul searches for his father's lost donkeys",
+    "shortName": "Saul searches for donkeys",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 1,
+    "summary": "Saul, a tall and handsome young Benjamite, sets out with a servant to find his father's lost donkeys and ends up entering the town where Samuel lives.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c9-2",
+    "book": "1-samuel",
+    "chapter": 9,
+    "name": "Samuel gives Saul the place of honor at a feast",
+    "shortName": "Samuel honors Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "Samuel, already told by the LORD that this man would be Israel's coming king, invites Saul to a feast and seats him in the place of honor.",
+    "notable": true,
+    "place": "Ramah"
+  },
+  {
+    "id": "1sam-e-c10-1",
+    "book": "1-samuel",
+    "chapter": 10,
+    "name": "Samuel privately anoints Saul as king",
+    "shortName": "Saul is anointed",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 1,
+    "summary": "Samuel pours oil on Saul's head in private, anointing him as prince over Israel, and gives him several signs that will confirm the LORD has chosen him.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c10-2",
+    "book": "1-samuel",
+    "chapter": 10,
+    "name": "The Spirit of the LORD rushes on Saul",
+    "shortName": "The Spirit rushes on Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "As Saul meets a group of prophets on the road home, the Spirit of the LORD rushes upon him and he prophesies along with them, astonishing people who know him.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c10-3",
+    "book": "1-samuel",
+    "chapter": 10,
+    "name": "Saul is chosen by lot and presented as king",
+    "shortName": "Saul chosen by lot",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 3,
+    "summary": "Samuel gathers Israel at Mizpah and casts lots until Saul is chosen, though he is found hiding among the baggage, and some worthless men openly despise him as king.",
+    "notable": true,
+    "place": "Mizpah"
+  },
+  {
+    "id": "1sam-e-c11-1",
+    "book": "1-samuel",
+    "chapter": 11,
+    "name": "Saul defeats Nahash and delivers a besieged Israelite city",
+    "shortName": "Saul rescues Jabesh-gilead",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-nahash"
+    ],
+    "order": 1,
+    "summary": "When Nahash the Ammonite threatens to gouge out the right eye of everyone in Jabesh-gilead, Saul musters Israel's army by cutting oxen into pieces and routs the Ammonites to save the city.",
+    "notable": true,
+    "place": "Jabesh-gilead"
+  },
+  {
+    "id": "1sam-e-c11-2",
+    "book": "1-samuel",
+    "chapter": 11,
+    "name": "Saul's kingship is publicly renewed with sacrifices",
+    "shortName": "Kingship renewed",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "After the victory, Samuel leads Israel to renew Saul's kingship with sacrifices and celebration, while Saul insists that none of his opponents be put to death that day.",
+    "notable": true,
+    "place": "Gilgal"
+  },
+  {
+    "id": "1sam-e-c12-1",
+    "book": "1-samuel",
+    "chapter": 12,
+    "name": "Samuel reviews his integrity and Israel's history",
+    "shortName": "Samuel's farewell review",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 1,
+    "summary": "Samuel publicly declares his own honesty as judge and reminds Israel how the LORD delivered their ancestors again and again through leaders he raised up before they demanded a king.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c12-2",
+    "book": "1-samuel",
+    "chapter": 12,
+    "name": "Samuel calls down thunder to show Israel's sin",
+    "shortName": "Thunder during harvest",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "Samuel calls on the LORD to send thunder and rain during the dry wheat harvest as a sign of how seriously Israel sinned by demanding a king, and the frightened people ask him to keep praying for them.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c13-1",
+    "book": "1-samuel",
+    "chapter": 13,
+    "name": "Saul offers an unlawful sacrifice while waiting for Samuel",
+    "shortName": "Saul's unlawful sacrifice",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "1sam-saul"
+    ],
+    "order": 1,
+    "summary": "Facing a massive Philistine army and a rapidly scattering army of his own, Saul grows impatient waiting for Samuel and offers the burnt offering himself instead of waiting for the priest.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c13-2",
+    "book": "1-samuel",
+    "chapter": 13,
+    "name": "Samuel tells Saul his kingdom will not continue",
+    "shortName": "Saul's kingdom rejected",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "Samuel arrives just after the sacrifice and tells Saul that because he disobeyed the LORD's command, his kingdom will not continue and the LORD has already sought out another man.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c14-1",
+    "book": "1-samuel",
+    "chapter": 14,
+    "name": "Jonathan and his armor-bearer attack a Philistine garrison",
+    "shortName": "Jonathan's raid",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "1sam-jonathan"
+    ],
+    "order": 1,
+    "summary": "Without telling his father, Jonathan and his armor-bearer climb up to a Philistine outpost alone, trusting that the LORD can win a battle by few or by many.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c14-2",
+    "book": "1-samuel",
+    "chapter": 14,
+    "name": "Saul makes a rash oath forbidding his army to eat",
+    "shortName": "Saul's rash oath",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "As Israel's army joins the rout Jonathan's raid began, Saul rashly swears a curse on anyone who eats before evening, weakening his own exhausted troops.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c14-3",
+    "book": "1-samuel",
+    "chapter": 14,
+    "name": "The army rescues Jonathan from Saul's oath",
+    "shortName": "Jonathan is rescued",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-saul"
+    ],
+    "order": 3,
+    "summary": "Jonathan unknowingly breaks his father's oath by eating wild honey, and when Saul is ready to put him to death for it, the army intervenes and refuses to let him die.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c15-1",
+    "book": "1-samuel",
+    "chapter": 15,
+    "name": "Saul spares Agag and the best of the plunder",
+    "shortName": "Saul spares Agag",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-agag"
+    ],
+    "order": 1,
+    "summary": "Sent by Samuel to completely destroy the Amalekites, Saul defeats them but spares King Agag and keeps the best sheep and cattle instead of destroying everything as commanded.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c15-2",
+    "book": "1-samuel",
+    "chapter": 15,
+    "name": "Samuel tells Saul the kingdom is torn from him",
+    "shortName": "The kingdom torn from Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel"
+    ],
+    "order": 2,
+    "summary": "Samuel confronts Saul, who claims he obeyed the LORD, and tells him that to obey is better than sacrifice and that the LORD has torn the kingdom away from him and given it to another.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c15-3",
+    "book": "1-samuel",
+    "chapter": 15,
+    "name": "Samuel kills Agag before the LORD",
+    "shortName": "Samuel kills Agag",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-agag"
+    ],
+    "order": 3,
+    "summary": "Samuel has King Agag brought to him and kills him himself, finishing the destruction Saul had left undone, before the two men part ways for the last time.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c16-1",
+    "book": "1-samuel",
+    "chapter": 16,
+    "name": "Samuel anoints David, the youngest son of Jesse",
+    "shortName": "David is anointed",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-david",
+      "1sam-jesse"
+    ],
+    "order": 1,
+    "summary": "The LORD sends Samuel to Jesse's house in Bethlehem, where he passes over the older sons and anoints the youngest, a shepherd named David, as the Spirit of the LORD comes powerfully upon him.",
+    "notable": true,
+    "place": "Bethlehem"
+  },
+  {
+    "id": "1sam-e-c16-2",
+    "book": "1-samuel",
+    "chapter": 16,
+    "name": "An evil spirit torments Saul",
+    "shortName": "Evil spirit torments Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "After the Spirit of the LORD departs from Saul, a harmful spirit begins to torment him, and his servants suggest finding someone skilled on the harp to soothe him.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c16-3",
+    "book": "1-samuel",
+    "chapter": 16,
+    "name": "David becomes Saul's armor-bearer and harpist",
+    "shortName": "David serves Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-saul"
+    ],
+    "order": 3,
+    "summary": "David is brought to Saul's court, where his skillful harp playing brings Saul relief whenever the tormenting spirit troubles him, and Saul makes David one of his armor-bearers.",
+    "notable": true,
+    "place": "Gibeah"
+  },
+  {
+    "id": "1sam-e-c17-1",
+    "book": "1-samuel",
+    "chapter": 17,
+    "name": "Goliath challenges Israel to single combat",
+    "shortName": "Goliath's challenge",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "1sam-goliath",
+      "1sam-saul"
+    ],
+    "order": 1,
+    "summary": "The Philistine champion Goliath, over nine feet tall, comes out every day for forty days daring any Israelite to fight him while Saul's army cowers in fear.",
+    "notable": true,
+    "place": "the Valley of Elah"
+  },
+  {
+    "id": "1sam-e-c17-2",
+    "book": "1-samuel",
+    "chapter": 17,
+    "name": "David kills Goliath with a sling and stone",
+    "shortName": "David defeats Goliath",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-goliath",
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "David, sent by his father to bring food to his brothers, volunteers to face Goliath, refuses Saul's armor, and kills the giant with a single stone before cutting off his head with his own sword.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c18-1",
+    "book": "1-samuel",
+    "chapter": 18,
+    "name": "Jonathan makes a covenant of friendship with David",
+    "shortName": "Jonathan and David's covenant",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-david"
+    ],
+    "order": 1,
+    "summary": "Jonathan's soul becomes bound to David's in friendship, and he makes a covenant with him, giving David his own robe, armor, sword, and bow as a sign of loyalty.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c18-2",
+    "book": "1-samuel",
+    "chapter": 18,
+    "name": "Saul grows jealous and throws a spear at David",
+    "shortName": "Saul's jealousy",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-david"
+    ],
+    "order": 2,
+    "summary": "After the women sing that David has killed even more enemies than Saul, a jealous and fearful Saul twice hurls his spear at David while the tormenting spirit is on him.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c18-3",
+    "book": "1-samuel",
+    "chapter": 18,
+    "name": "Saul gives Michal to David as a wife",
+    "shortName": "David marries Michal",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-david",
+      "1sam-michal"
+    ],
+    "order": 3,
+    "summary": "Hoping the Philistines will kill David, Saul demands a hundred Philistine foreskins as the bride price for his daughter Michal, but David brings back two hundred and marries her.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c19-1",
+    "book": "1-samuel",
+    "chapter": 19,
+    "name": "Jonathan intercedes for David with Saul",
+    "shortName": "Jonathan defends David",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-saul",
+      "1sam-david"
+    ],
+    "order": 1,
+    "summary": "Jonathan speaks well of David to his father and persuades Saul to swear he will not kill David, restoring David to the court for a time.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c19-2",
+    "book": "1-samuel",
+    "chapter": 19,
+    "name": "Michal helps David escape through a window",
+    "shortName": "Michal helps David escape",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "1sam-michal",
+      "1sam-david",
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "When Saul sends men to kill David in his own house, Michal lowers him out through a window and places a household idol in the bed to fool the pursuers.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c19-3",
+    "book": "1-samuel",
+    "chapter": 19,
+    "name": "Saul comes seeking David and prophesies before Samuel",
+    "shortName": "Saul prophesies at Ramah",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel",
+      "1sam-david"
+    ],
+    "order": 3,
+    "summary": "David flees to Samuel, and when Saul himself comes to seize him, the Spirit of God comes on Saul too, and he strips off his clothes and lies prophesying all day and night.",
+    "notable": true,
+    "place": "Ramah"
+  },
+  {
+    "id": "1sam-e-c20-1",
+    "book": "1-samuel",
+    "chapter": 20,
+    "name": "Jonathan and David devise a signal with arrows",
+    "shortName": "The arrow signal",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-david"
+    ],
+    "order": 1,
+    "summary": "David and Jonathan agree on a plan using arrows shot near a field so Jonathan can secretly warn David whether it is safe to return or he must flee for his life.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c20-2",
+    "book": "1-samuel",
+    "chapter": 20,
+    "name": "Jonathan and David renew their covenant and part in tears",
+    "shortName": "Jonathan and David part",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-david"
+    ],
+    "order": 2,
+    "summary": "Once Saul's anger at Jonathan confirms he intends to kill David, Jonathan warns him with the arrow signal, and the two friends weep together and renew their covenant before David flees.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c21-1",
+    "book": "1-samuel",
+    "chapter": 21,
+    "name": "Ahimelech gives David consecrated bread and Goliath's sword",
+    "shortName": "David at Nob",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-ahimelech",
+      "1sam-doeg"
+    ],
+    "order": 1,
+    "summary": "Fleeing alone and telling a half-truth about his mission, David asks the priest Ahimelech for food and a weapon, and receives the sacred bread and the sword he took from Goliath.",
+    "notable": true,
+    "place": "Nob"
+  },
+  {
+    "id": "1sam-e-c21-2",
+    "book": "1-samuel",
+    "chapter": 21,
+    "name": "David feigns madness before the Philistine king",
+    "shortName": "David feigns madness",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-achish"
+    ],
+    "order": 2,
+    "summary": "Recognized as the man Israel celebrated for killing tens of thousands, David escapes King Achish's court by pretending to be insane, scratching on the gate and drooling into his beard.",
+    "notable": true,
+    "place": "Gath"
+  },
+  {
+    "id": "1sam-e-c22-1",
+    "book": "1-samuel",
+    "chapter": 22,
+    "name": "David gathers a band of followers in the wilderness",
+    "shortName": "The cave of Adullam",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "1sam-david"
+    ],
+    "order": 1,
+    "summary": "About four hundred men in debt or distress or discontent gather around David at a cave, and he becomes their commander while also arranging safety for his parents in Moab.",
+    "notable": true,
+    "place": "the cave of Adullam"
+  },
+  {
+    "id": "1sam-e-c22-2",
+    "book": "1-samuel",
+    "chapter": 22,
+    "name": "Saul learns Ahimelech helped David",
+    "shortName": "Saul confronts Ahimelech",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-doeg",
+      "1sam-ahimelech"
+    ],
+    "order": 2,
+    "summary": "Doeg the Edomite reports to Saul that Ahimelech gave David bread, a sword, and guidance, so Saul summons the priest and accuses him of conspiring against him.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c22-3",
+    "book": "1-samuel",
+    "chapter": 22,
+    "name": "Doeg slaughters the priests of the LORD",
+    "shortName": "Massacre at Nob",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "1sam-doeg",
+      "1sam-ahimelech",
+      "1sam-abiathar",
+      "1sam-saul"
+    ],
+    "order": 3,
+    "summary": "When Saul's own guards refuse to kill the LORD's priests, Doeg the Edomite kills Ahimelech and eighty-five priests along with the entire town of Nob, though Ahimelech's son Abiathar escapes to David.",
+    "notable": true,
+    "place": "Nob"
+  },
+  {
+    "id": "1sam-e-c23-1",
+    "book": "1-samuel",
+    "chapter": 23,
+    "name": "David saves a town from a Philistine raid",
+    "shortName": "David rescues Keilah",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-abiathar"
+    ],
+    "order": 1,
+    "summary": "Inquiring of the LORD before acting, David and his men attack the Philistines who are raiding Keilah's threshing floors and rescue the town's livestock.",
+    "notable": true,
+    "place": "Keilah"
+  },
+  {
+    "id": "1sam-e-c23-2",
+    "book": "1-samuel",
+    "chapter": 23,
+    "name": "Jonathan visits David and strengthens his hand in God",
+    "shortName": "Jonathan encourages David",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "1sam-jonathan",
+      "1sam-david"
+    ],
+    "order": 2,
+    "summary": "Jonathan comes to David in the wilderness and encourages him not to be afraid, telling him he will surely be king and that Jonathan will be next to him.",
+    "notable": true,
+    "place": "the wilderness of Ziph"
+  },
+  {
+    "id": "1sam-e-c23-3",
+    "book": "1-samuel",
+    "chapter": 23,
+    "name": "Saul nearly captures David but is called away",
+    "shortName": "The Rock of Escape",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-david"
+    ],
+    "order": 3,
+    "summary": "Saul and his men close in on David from one side of a mountain while David's men circle the other side, until a Philistine raid forces Saul to break off the chase.",
+    "notable": true,
+    "place": "the wilderness of Maon"
+  },
+  {
+    "id": "1sam-e-c24-1",
+    "book": "1-samuel",
+    "chapter": 24,
+    "name": "David cuts off a corner of Saul's robe in a cave",
+    "shortName": "David spares Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-saul"
+    ],
+    "order": 1,
+    "summary": "Saul enters the very cave where David and his men are hiding, and David secretly cuts off a piece of Saul's robe instead of killing him as his men urge.",
+    "notable": true,
+    "place": "En Gedi"
+  },
+  {
+    "id": "1sam-e-c24-2",
+    "book": "1-samuel",
+    "chapter": 24,
+    "name": "Saul admits David will surely be king",
+    "shortName": "Saul acknowledges David",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-david"
+    ],
+    "order": 2,
+    "summary": "David shows Saul the piece of robe as proof he meant no harm, and Saul weeps, admits David is more righteous than he is, and asks him to spare his descendants.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c25-1",
+    "book": "1-samuel",
+    "chapter": 25,
+    "name": "Samuel dies and all Israel mourns him",
+    "shortName": "Samuel's death",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 25
+    },
+    "peopleIds": [
+      "1sam-samuel"
+    ],
+    "order": 1,
+    "summary": "Samuel dies, and all Israel gathers to mourn him before burying him at his home in Ramah, marking the end of an era for the nation.",
+    "notable": true,
+    "place": "Ramah"
+  },
+  {
+    "id": "1sam-e-c25-2",
+    "book": "1-samuel",
+    "chapter": 25,
+    "name": "Nabal insults David's messengers",
+    "shortName": "Nabal's insult",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 25
+    },
+    "peopleIds": [
+      "1sam-nabal",
+      "1sam-david"
+    ],
+    "order": 2,
+    "summary": "David sends men to ask for provisions from the wealthy Nabal after his men protected Nabal's flocks in the wilderness, but Nabal rudely refuses and insults David.",
+    "notable": true,
+    "place": "Carmel"
+  },
+  {
+    "id": "1sam-e-c25-3",
+    "book": "1-samuel",
+    "chapter": 25,
+    "name": "Abigail intervenes and later marries David",
+    "shortName": "Abigail's wisdom",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 25
+    },
+    "peopleIds": [
+      "1sam-abigail",
+      "1sam-david",
+      "1sam-nabal"
+    ],
+    "order": 3,
+    "summary": "Nabal's wife Abigail quickly brings gifts of food to David to stop him from taking revenge, and after Nabal dies about ten days later, David marries her.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c26-1",
+    "book": "1-samuel",
+    "chapter": 26,
+    "name": "David takes Saul's spear and water jug while he sleeps",
+    "shortName": "David sneaks into Saul's camp",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 26
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-abishai",
+      "1sam-saul"
+    ],
+    "order": 1,
+    "summary": "David and Abishai slip into Saul's camp at night while the LORD keeps everyone in a deep sleep, and David takes Saul's spear and water jug instead of killing him.",
+    "notable": true,
+    "place": "the hill of Hachilah"
+  },
+  {
+    "id": "1sam-e-c26-2",
+    "book": "1-samuel",
+    "chapter": 26,
+    "name": "David again refuses to harm the LORD's anointed",
+    "shortName": "David spares Saul again",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 26
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-saul",
+      "1sam-abner"
+    ],
+    "order": 2,
+    "summary": "Calling out from a safe distance, David rebukes Abner for failing to guard the king, then shows Saul the spear and jug as proof he could have killed him, and Saul again admits he has sinned.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c27-1",
+    "book": "1-samuel",
+    "chapter": 27,
+    "name": "David takes refuge with Achish and receives a town to live in",
+    "shortName": "David given Ziklag",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 27
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-achish"
+    ],
+    "order": 1,
+    "summary": "Believing Saul will never stop hunting him in Israel, David and his men settle among the Philistines under King Achish, who grants David the town of Ziklag to live in.",
+    "notable": true,
+    "place": "Ziklag"
+  },
+  {
+    "id": "1sam-e-c27-2",
+    "book": "1-samuel",
+    "chapter": 27,
+    "name": "David raids nearby peoples while deceiving Achish",
+    "shortName": "David's raids from Ziklag",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 27
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-achish"
+    ],
+    "order": 2,
+    "summary": "From Ziklag David raids the Geshurites, Girzites, and Amalekites, leaving no survivors to report what happened, while telling Achish he has been raiding Judah's own territory.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c28-1",
+    "book": "1-samuel",
+    "chapter": 28,
+    "name": "Saul seeks out a medium to consult Samuel's spirit",
+    "shortName": "Saul visits the medium",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 28
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-samuel",
+      "1sam-medium-endor"
+    ],
+    "order": 1,
+    "summary": "With the Philistines massing for battle and the LORD silent to his prayers, dreams, and prophets, a desperate Saul disguises himself and asks a medium at Endor to bring up Samuel.",
+    "notable": true,
+    "place": "Endor"
+  },
+  {
+    "id": "1sam-e-c28-2",
+    "book": "1-samuel",
+    "chapter": 28,
+    "name": "Samuel's spirit foretells Saul's defeat and death",
+    "shortName": "Samuel's warning to Saul",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 28
+    },
+    "peopleIds": [
+      "1sam-samuel",
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "Samuel's spirit rebukes Saul for disturbing him and tells him that the LORD has turned against him and that Saul and his sons will die in battle the next day.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c29-1",
+    "book": "1-samuel",
+    "chapter": 29,
+    "name": "Philistine commanders refuse to let David fight with them",
+    "shortName": "David rejected by the Philistines",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 29
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-achish"
+    ],
+    "order": 1,
+    "summary": "Distrustful that David might turn on them in battle, the Philistine commanders insist Achish send him away, so David and his men return to Ziklag instead of marching to war.",
+    "notable": true,
+    "place": "Aphek"
+  },
+  {
+    "id": "1sam-e-c30-1",
+    "book": "1-samuel",
+    "chapter": 30,
+    "name": "Amalekite raiders burn David's town and take captives",
+    "shortName": "Ziklag is raided",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 30
+    },
+    "peopleIds": [
+      "1sam-david"
+    ],
+    "order": 1,
+    "summary": "David and his men return from the Philistine army to find Ziklag burned and their wives and children, including David's own, carried off by Amalekite raiders.",
+    "notable": true,
+    "place": "Ziklag"
+  },
+  {
+    "id": "1sam-e-c30-2",
+    "book": "1-samuel",
+    "chapter": 30,
+    "name": "David inquires of the LORD and pursues the raiders",
+    "shortName": "David pursues the Amalekites",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 30
+    },
+    "peopleIds": [
+      "1sam-david",
+      "1sam-abiathar"
+    ],
+    "order": 2,
+    "summary": "After strengthening himself in the LORD and inquiring through the ephod, David sets out after the raiders, and a rescued Egyptian servant guides him straight to their camp.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c30-3",
+    "book": "1-samuel",
+    "chapter": 30,
+    "name": "David recovers all the captives and plunder",
+    "shortName": "David rescues the captives",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 30
+    },
+    "peopleIds": [
+      "1sam-david"
+    ],
+    "order": 3,
+    "summary": "David attacks the Amalekite camp, rescues every captive along with all the plunder, and establishes the rule that those who guarded the supplies share equally with those who fought.",
+    "notable": true
+  },
+  {
+    "id": "1sam-e-c31-1",
+    "book": "1-samuel",
+    "chapter": 31,
+    "name": "Saul's sons die in battle against the Philistines",
+    "shortName": "Jonathan dies at Gilboa",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 31
+    },
+    "peopleIds": [
+      "1sam-saul",
+      "1sam-jonathan"
+    ],
+    "order": 1,
+    "summary": "The Philistines press Israel's army hard on Mount Gilboa, killing Jonathan and Saul's other sons and leaving Saul himself badly wounded by enemy archers.",
+    "notable": true,
+    "place": "Mount Gilboa"
+  },
+  {
+    "id": "1sam-e-c31-2",
+    "book": "1-samuel",
+    "chapter": 31,
+    "name": "Saul takes his own life and is buried by Jabesh-gilead",
+    "shortName": "Saul's death",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 31
+    },
+    "peopleIds": [
+      "1sam-saul"
+    ],
+    "order": 2,
+    "summary": "Rather than be captured and mocked by the Philistines, Saul falls on his own sword, and the grateful men of Jabesh-gilead later recover his body and bury his bones.",
+    "notable": true
+  }
+]

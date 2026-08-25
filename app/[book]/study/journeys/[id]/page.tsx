@@ -43,7 +43,7 @@ export default async function JourneyPage({ params }: { params: Promise<{ book: 
 
   return (
     <JourneyExplorer
-      bookId={bookId}
+      bookName={book.name}
       journeyName={journey.name}
       journeySummary={journey.summary}
       characters={characters}

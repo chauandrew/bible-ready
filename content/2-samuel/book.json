@@ -1,0 +1,13 @@
+{
+  "id": "2-samuel",
+  "name": "2 Samuel",
+  "chapterCount": 24,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "2sam-arc-king-judah",
+    "2sam-arc-king-israel",
+    "2sam-arc-bathsheba",
+    "2sam-arc-absalom",
+    "2sam-arc-final-years"
+  ]
+}

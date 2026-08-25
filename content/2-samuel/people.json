@@ -1,0 +1,207 @@
+[
+  {
+    "id": "2sam-david",
+    "name": "David",
+    "summary": "King first of Judah and then of all Israel, David captures Jerusalem and receives God's covenant promise, but later takes Bathsheba and has her husband Uriah killed, and spends his final decades as a father devastated and divided by his own children's crimes.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 1 },
+    "relations": [
+      { "personId": "2sam-bathsheba", "relation": "wife" },
+      { "personId": "2sam-absalom", "relation": "son" },
+      { "personId": "2sam-amnon", "relation": "son" },
+      { "personId": "2sam-solomon", "relation": "son" },
+      { "personId": "2sam-tamar", "relation": "daughter" }
+    ]
+  },
+  {
+    "id": "2sam-joab",
+    "name": "Joab",
+    "summary": "David's ruthless army commander and nephew, who kills Abner and Absalom against orders and later murders Amasa to protect his own position.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 2 },
+    "relations": [{ "personId": "2sam-asahel", "relation": "brother" }]
+  },
+  {
+    "id": "2sam-abner",
+    "name": "Abner",
+    "summary": "Saul's cousin and army commander, who makes Ish-bosheth king over Israel, later defects to David, and is murdered by Joab in revenge for Asahel.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "2sam-ish-bosheth",
+    "name": "Ish-bosheth",
+    "summary": "Saul's surviving son, made king over Israel by Abner, who reigns briefly at Mahanaim before being murdered by two of his own captains.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "2sam-asahel",
+    "name": "Asahel",
+    "summary": "Joab's fast-running younger brother, killed by Abner while chasing him after the battle at the pool of Gibeon.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 2 },
+    "relations": [{ "personId": "2sam-joab", "relation": "brother" }]
+  },
+  {
+    "id": "2sam-rizpah",
+    "name": "Rizpah",
+    "summary": "Saul's concubine whose alleged mistreatment by Ish-bosheth prompts Abner's defection, and who later guards her sons' bodies from birds and beasts after their execution.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "2sam-michal",
+    "name": "Michal",
+    "summary": "Saul's daughter and David's first wife, who despises him for dancing before the ark and remains childless for the rest of her life.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 6 },
+    "relations": [{ "personId": "2sam-david", "relation": "husband" }]
+  },
+  {
+    "id": "2sam-nathan",
+    "name": "Nathan",
+    "summary": "A prophet who delivers God's covenant promise to David and later confronts him over Bathsheba and Uriah with the parable of the poor man's lamb.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 7 },
+    "relations": []
+  },
+  {
+    "id": "2sam-the-lord",
+    "name": "The LORD",
+    "summary": "The God of Israel, who makes an everlasting covenant with David's house through Nathan and later judges David's sin with famine and plague.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 7 },
+    "relations": []
+  },
+  {
+    "id": "2sam-mephibosheth",
+    "name": "Mephibosheth",
+    "summary": "Jonathan's crippled son, shown kindness by David for his father's sake, whose loyalty is later thrown into question by his servant Ziba's lie.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 9 },
+    "relations": []
+  },
+  {
+    "id": "2sam-ziba",
+    "name": "Ziba",
+    "summary": "Saul's former servant assigned to farm Mephibosheth's land, who later deceives David during Absalom's rebellion to claim Mephibosheth's property for himself.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 9 },
+    "relations": []
+  },
+  {
+    "id": "2sam-bathsheba",
+    "name": "Bathsheba",
+    "summary": "Uriah's wife, taken by David while her husband is at war, whose first child by David dies but whose second son Solomon becomes his heir.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 11 },
+    "relations": [
+      { "personId": "2sam-uriah", "relation": "former husband" },
+      { "personId": "2sam-solomon", "relation": "son" }
+    ]
+  },
+  {
+    "id": "2sam-uriah",
+    "name": "Uriah",
+    "summary": "A loyal Hittite soldier in David's army and Bathsheba's husband, killed in battle on David's orders to cover up her pregnancy.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 11 },
+    "relations": [{ "personId": "2sam-bathsheba", "relation": "wife" }]
+  },
+  {
+    "id": "2sam-amnon",
+    "name": "Amnon",
+    "summary": "David's oldest son, who rapes his half-sister Tamar and is later killed by her full brother Absalom in revenge.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 13 },
+    "relations": [
+      { "personId": "2sam-david", "relation": "father" },
+      { "personId": "2sam-tamar", "relation": "half-sister" }
+    ]
+  },
+  {
+    "id": "2sam-tamar",
+    "name": "Tamar",
+    "summary": "David's daughter, raped by her half-brother Amnon and then taken in by her full brother Absalom, who avenges her.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 13 },
+    "relations": [
+      { "personId": "2sam-david", "relation": "father" },
+      { "personId": "2sam-absalom", "relation": "brother" },
+      { "personId": "2sam-amnon", "relation": "half-brother" }
+    ]
+  },
+  {
+    "id": "2sam-absalom",
+    "name": "Absalom",
+    "summary": "David's son, who avenges his sister Tamar by killing Amnon, later leads a rebellion against his own father, and is killed by Joab despite David's order to spare him.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 13 },
+    "relations": [
+      { "personId": "2sam-david", "relation": "father" },
+      { "personId": "2sam-tamar", "relation": "sister" },
+      { "personId": "2sam-amnon", "relation": "half-brother" }
+    ]
+  },
+  {
+    "id": "2sam-ahithophel",
+    "name": "Ahithophel",
+    "summary": "David's trusted counselor, who joins Absalom's rebellion and hangs himself after Absalom rejects his military advice in favor of Hushai's.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2sam-hushai",
+    "name": "Hushai",
+    "summary": "David's loyal friend, who pretends to join Absalom's rebellion in order to feed him bad advice and secretly warn David.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2sam-ittai",
+    "name": "Ittai",
+    "summary": "A foreigner from Gath who pledges unconditional loyalty to David and stays with him when he flees Jerusalem.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2sam-shimei",
+    "name": "Shimei",
+    "summary": "A relative of Saul who curses and stones David as he flees Jerusalem, and is later spared when David returns to power.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 16 },
+    "relations": []
+  },
+  {
+    "id": "2sam-amasa",
+    "name": "Amasa",
+    "summary": "Absalom's army commander during the rebellion, later appointed by David to replace Joab, and treacherously killed by Joab in the fighting against Sheba.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 17 },
+    "relations": []
+  },
+  {
+    "id": "2sam-barzillai",
+    "name": "Barzillai",
+    "summary": "An elderly, wealthy man from Gilead who supplies David and his men during their exile at Mahanaim and is honored for it when David returns.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 19 },
+    "relations": []
+  },
+  {
+    "id": "2sam-sheba",
+    "name": "Sheba",
+    "summary": "A Benjaminite who leads Israel in a short-lived revolt against David after Absalom's rebellion, ending when the people of a besieged city kill him.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 20 },
+    "relations": []
+  },
+  {
+    "id": "2sam-gad",
+    "name": "Gad",
+    "summary": "A prophet who gives David a choice of three punishments for the census and later instructs him to build an altar on Araunah's threshing floor.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 24 },
+    "relations": []
+  },
+  {
+    "id": "2sam-araunah",
+    "name": "Araunah",
+    "summary": "A Jebusite who offers David his threshing floor and oxen for free, but David insists on paying full price to build an altar there.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 24 },
+    "relations": []
+  },
+  {
+    "id": "2sam-solomon",
+    "name": "Solomon",
+    "summary": "David and Bathsheba's second son, loved by the LORD from birth, who will go on to succeed David as king.",
+    "firstAppearance": { "book": "2-samuel", "chapter": 12 },
+    "relations": [
+      { "personId": "2sam-david", "relation": "father" },
+      { "personId": "2sam-bathsheba", "relation": "mother" }
+    ]
+  }
+]

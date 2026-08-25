@@ -372,10 +372,29 @@ an existing `Event.id` and reads its name/summary/citation from
 on), `place` (the pin label), `lat`/`lng` (real-world coordinates), and an
 optional `locationNote` for sites whose identification is disputed or
 approximate. Adding a *new* journey to an *existing* book's `journeys.json`
-needs no code change. Adding one for a *new* region (a future Samuel/Kings
-book following Saul/David, say) needs no new map asset either — the same
-bundled world coastline/river/lake data covers any region; only `bounds` in
+needs no code change. Adding one for a *new* region (1-2 Samuel's Saul/David
+story, say) needs no new map asset either — the same bundled world
+coastline/river/lake data covers any region; only `bounds` in
 `JourneyExplorer` (derived from the journey's own stops) changes.
+
+**A journey can't span two separate book bundles, because nothing else in
+this app can either.** `Journey.book` is one `BookIdSchema`, and a
+`JourneyStop.eventId` is only ever looked up within that same book's
+`events.json` (see the note on per-book lookups in `lib/content.ts`) — the
+same invariant every other id in the app already relies on. This matters the
+first time a single Bible narrative is split across two canonical books, as
+1-2 Samuel's Saul/David story is (`1-samuel`/`2-samuel`, two separate
+`BookContent` bundles — see the checklist below on why, mainly correct
+citations: `formatCitation` resolves one static book name per book id, with
+no per-chapter override, so a single merged "samuel" book couldn't display
+"1 Samuel 17" vs. "2 Samuel 5" correctly). The fix is two `Journey` records,
+one per book, that reuse the same character id naming and hex color for any
+character present in both (David in 1-2 Samuel) — `1sam-journey` and
+`2sam-journey` read as one continuous story split at the real narrative
+seam (Saul's death) even though they're two separate pages. The same split
+applies to `people.json`: a shared character needs its own `Person` entry
+authored again in the second book (ids are never shared across books
+either), even though it's "the same" David.
 
 **The map is a real MapLibre GL vector render over bundled GeoJSON, not a
 raster image — a rebuild that replaced an earlier cropped-SVG-map approach
@@ -537,8 +556,8 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   picked up. Genesis, Exodus, John, and Psalms still set it `true` on every
   event, unchanged — this remains something only a fully hand-curated module
   needs to reach for.
-- **Multi-book UI wiring**: Genesis, Exodus, Psalms, John, and misc
-  (displayed as "Miscellaneous") each have a full section (`app/[book]/*` —
+- **Multi-book UI wiring**: Genesis, Exodus, Psalms, John, 1 Samuel, 2 Samuel,
+  and misc (displayed as "Miscellaneous") each have a full section (`app/[book]/*` —
   home, chapters, people, arcs, quiz, flashcards, print), gated by
   `wiredBookIds` in `lib/content.ts`. The homepage groups these under "Study
   one module" rather than "Study one book," since Miscellaneous isn't a

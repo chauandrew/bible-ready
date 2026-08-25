@@ -23,13 +23,13 @@ export interface JourneyCharacterView {
 }
 
 export default function JourneyExplorer({
-  bookId,
+  bookName,
   journeyName,
   journeySummary,
   characters,
   stops,
 }: {
-  bookId: string;
+  bookName: string;
   journeyName: string;
   journeySummary: string;
   characters: JourneyCharacterView[];
@@ -126,7 +126,7 @@ export default function JourneyExplorer({
 
   return (
     <main className="container-wide" style={{ paddingBottom: "0.75rem" }}>
-      <p className="eyebrow" style={{ marginTop: "0.5rem", marginBottom: "0.15rem" }}>{bookId[0].toUpperCase() + bookId.slice(1)} · Story map</p>
+      <p className="eyebrow" style={{ marginTop: "0.5rem", marginBottom: "0.15rem" }}>{bookName} · Story map</p>
       <h1 className="page-title" style={{ marginTop: 0, marginBottom: "0.2rem", fontSize: "1.6rem" }}>{journeyName}</h1>
       <p className="page-lede" style={{ marginBottom: "0.75rem", fontSize: "0.85rem" }}>{journeySummary}</p>
 

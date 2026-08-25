@@ -1,0 +1,482 @@
+[
+  {
+    "id": "1sam-aq-arc-1",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What series of events leads to Samuel serving at the tabernacle in Shiloh?",
+    "options": [
+      "Hannah prays for a son, the LORD answers her, and she brings young Samuel to Eli after he is weaned",
+      "Samuel is captured from a Philistine village and given to Eli as a servant boy",
+      "Eli's sons choose Samuel from among the priests' own sons to replace their father someday when he grows old",
+      "Samuel runs away from his family as a child and Eli takes him in as an orphan"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 1 },
+    "explanation": "Hannah's vow and prayer are answered with Samuel's birth, and she keeps her promise by giving him to the LORD's service at Shiloh."
+  },
+  {
+    "id": "1sam-aq-arc-2",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What happens to the ark of the covenant after the Philistines capture it in battle?",
+    "options": [
+      "It sits untouched in a Philistine warehouse until Saul later reclaims it by force",
+      "The Philistines destroy it right away because they are afraid of its power",
+      "It causes disaster wherever it goes among the Philistines until they send it back with a guilt offering",
+      "The Philistines successfully add it to their temple worship of Dagon with no trouble at all"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "1-samuel", "chapter": 4 },
+    "explanation": "The ark brings plagues on every Philistine city that holds it, until the Philistines send it back to Israel with gifts of gold."
+  },
+  {
+    "id": "1sam-aq-arc-3",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What happens after the elders of Israel demand a king from Samuel?",
+    "options": [
+      "Samuel refuses outright and Israel goes without a king for another generation",
+      "The LORD tells Samuel to warn the people what a king will cost them, and Saul is anointed as that king",
+      "Samuel appoints his own two sons as co-kings to rule jointly over Israel",
+      "The Philistines choose a king for Israel and impose him on the people by force"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 8 },
+    "explanation": "Samuel warns Israel what a king will take from them, but the people insist, and Saul is anointed and chosen by lot as their first king."
+  },
+  {
+    "id": "1sam-aq-arc-4",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What two mistakes cost Saul the LORD's favor in this stretch of the story?",
+    "options": [
+      "He offered a sacrifice himself instead of waiting for Samuel, and he spared King Agag and the best plunder instead of destroying everything",
+      "He refused to fight the Philistines at all, and he later fled the battlefield in fear of Goliath",
+      "He married a foreign wife, and he built an altar to a foreign god at Gilgal",
+      "He disbanded his own army without permission, and he refused to pay his soldiers their wages"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 13 },
+    "explanation": "Saul's impatient sacrifice at Gilgal and his failure to fully destroy the Amalekites both lead Samuel to tell him the kingdom will not continue."
+  },
+  {
+    "id": "1sam-aq-arc-5",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What happens to David's standing in Saul's house across these chapters?",
+    "options": [
+      "He starts as Saul's trusted armor-bearer and ends up exiled from Israel entirely by royal decree",
+      "He is anointed in secret, kills Goliath, becomes Jonathan's close friend, and ends up fleeing for his life from a jealous Saul",
+      "He is rejected by Saul from the very beginning and never once enters his court",
+      "He marries Michal right away and is named Saul's official successor by a public vote"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 16 },
+    "explanation": "David rises from shepherd to giant-killer to court favorite, but Saul's growing jealousy eventually forces him to run for his life."
+  },
+  {
+    "id": "1sam-aq-arc-6",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What two different times does David have a chance to kill Saul during his years as a fugitive, and what does he do instead?",
+    "options": [
+      "He finds Saul asleep in a cave and again in his camp, and both times he only takes a small proof of the chance rather than kill him",
+      "He captures Saul in open battle twice and both times sets him free unharmed the next morning",
+      "He is offered a bounty to kill Saul by the Philistines on two occasions and refuses the bounty both times",
+      "He corners Saul at Nob and again at Keilah but is stopped both times by Jonathan's sudden intervention"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 21 },
+    "explanation": "David cuts off a piece of Saul's robe in a cave at En Gedi, and later takes his spear and water jug from his camp, refusing to harm the LORD's anointed either time."
+  },
+  {
+    "id": "1sam-aq-arc-7",
+    "book": "1-samuel",
+    "category": "arc",
+    "prompt": "What happens to Saul in the days leading up to his death?",
+    "options": [
+      "He wins one final decisive battle against the Philistines before dying peacefully of old age",
+      "He is crowned a second time by Samuel's spirit before leading Israel to a great victory",
+      "He consults a medium because the LORD will not answer him, is turned away by David's Philistine allies, and is fatally wounded before taking his own life",
+      "He abdicates the throne to David in a public ceremony and retires quietly to Gibeah"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "1-samuel", "chapter": 28 },
+    "explanation": "Saul seeks out the medium of Endor, is sent home by the Philistine commanders who distrust David, and dies by his own sword at Mount Gilboa."
+  },
+  {
+    "id": "1sam-aq-character-1",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "How does Samuel first respond when he hears his name called at night?",
+    "options": [
+      "He assumes it is Eli calling him and runs to Eli's room",
+      "He immediately recognizes the voice as the LORD's and answers right away",
+      "He wakes his mother Hannah, who is staying nearby, and asks her what to do",
+      "He ignores the voice completely, thinking he only imagined it"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 3 },
+    "explanation": "Samuel doesn't yet know the LORD's voice, so he runs to Eli three times before Eli realizes what is happening and tells him how to answer."
+  },
+  {
+    "id": "1sam-aq-character-2",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does Samuel tell Saul about obedience after Saul spares Agag and the best of the plunder?",
+    "options": [
+      "That obeying the LORD's voice matters more than offering sacrifices",
+      "That sacrifices always outweigh obedience whenever a king is at war",
+      "That Saul should have consulted the priests before deciding either way",
+      "That the LORD does not care how a king treats a defeated enemy"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 15 },
+    "explanation": "Samuel tells Saul that to obey is better than sacrifice, and that his partial obedience has cost him the kingdom."
+  },
+  {
+    "id": "1sam-aq-character-3",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "How does Saul react when Samuel is about to present him to Israel as king?",
+    "options": [
+      "He gives a confident speech accepting the role in front of the whole assembly",
+      "He is found hiding among the baggage and has to be brought out",
+      "He refuses the kingship outright and asks Samuel to choose someone else instead",
+      "He demands that the people fight him personally for the right to rule"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 10 },
+    "explanation": "When Samuel calls Saul forward at the lot-casting, he is nowhere to be found until they discover him hiding among the baggage."
+  },
+  {
+    "id": "1sam-aq-character-4",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "Why does Saul become afraid of David after his early victories?",
+    "options": [
+      "Because the people sing that David has killed even more enemies than Saul has",
+      "Because David refuses to fight in any more of Saul's battles",
+      "Because Jonathan publicly declares David the rightful king in front of the army",
+      "Because the Philistines threaten to attack unless Saul removes David from his court"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 18 },
+    "explanation": "When the women sing that Saul has killed thousands but David tens of thousands, Saul grows jealous and afraid of him."
+  },
+  {
+    "id": "1sam-aq-character-5",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What reasons does David give Saul for why he can defeat Goliath?",
+    "options": [
+      "That he has killed a lion and a bear while protecting his father's sheep, and the LORD who saved him from them will save him from Goliath too",
+      "That he has trained for years under the command of Israel's best soldiers",
+      "That an angel appeared to him and promised him victory before the battle",
+      "That Goliath is secretly afraid of him because of his family's reputation"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 17 },
+    "explanation": "David points to the LORD's past deliverance from a lion and a bear as the reason he isn't afraid to face Goliath."
+  },
+  {
+    "id": "1sam-aq-character-6",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does David do instead of killing Saul in the cave at En Gedi?",
+    "options": [
+      "He quietly cuts off a corner of Saul's robe and later shows it to him as proof he meant no harm",
+      "He takes Saul's crown and spear and sends both of them to Samuel as a sign of his own loyalty to the LORD",
+      "He wakes Saul up and challenges him to single combat right there in the cave",
+      "He orders his men to guard the cave entrance until Saul agrees to surrender"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 24 },
+    "explanation": "David's men urge him to kill Saul, but he only cuts off a piece of his robe, and even that troubles his conscience afterward."
+  },
+  {
+    "id": "1sam-aq-character-7",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does David do after learning that Ziklag has been burned and his family taken captive?",
+    "options": [
+      "He gives up on the pursuit, believing there is nothing left he can do",
+      "He strengthens himself in the LORD, inquires whether to pursue, and then chases down and defeats the raiders",
+      "He sends a messenger to Saul's army asking for their help in the pursuit",
+      "He negotiates a ransom payment with the Amalekites instead of fighting them"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 30 },
+    "explanation": "David inquires of the LORD through the ephod, is told to pursue, and recovers everyone and everything the raiders had taken."
+  },
+  {
+    "id": "1sam-aq-character-8",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does Jonathan do at the Philistine garrison before the rest of Saul's army gets involved?",
+    "options": [
+      "He and his armor-bearer climb up and attack the garrison alone, trusting the LORD to give them victory",
+      "He sends a spy ahead to count the number of Philistine soldiers stationed there",
+      "He negotiates a secret truce with the Philistine commander before any fighting starts",
+      "He waits quietly for his father's direct orders before making any move at all"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 14 },
+    "explanation": "Jonathan and his armor-bearer climb up to the garrison on their own, believing nothing can hinder the LORD from saving by few or many."
+  },
+  {
+    "id": "1sam-aq-character-9",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does Jonathan do to warn David that Saul intends to kill him?",
+    "options": [
+      "He sends a written letter hidden inside a loaf of bread carried by a trusted servant boy",
+      "He shoots arrows near a field as a signal they had already agreed on together",
+      "He rides out personally to warn David face to face in the open field",
+      "He has a servant deliver a spoken message during a public feast"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 20 },
+    "explanation": "Jonathan and David agree ahead of time on an arrow signal so Jonathan can warn David without anyone else knowing."
+  },
+  {
+    "id": "1sam-aq-character-10",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What happens to Eli when he hears that the ark of God has been captured?",
+    "options": [
+      "He falls backward off his seat and dies",
+      "He personally leads Israel's army back into battle to try to recover it",
+      "He curses his own sons publicly in front of the whole assembly",
+      "He travels to the Philistine camp himself to demand its return"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 4 },
+    "explanation": "Old and heavy, Eli falls backward off his seat when he hears the news of the ark and dies from the fall."
+  },
+  {
+    "id": "1sam-aq-character-11",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "What does Abigail do when she learns that Nabal has insulted David's messengers?",
+    "options": [
+      "She hides inside her house and waits to see what David will decide to do",
+      "She quickly gathers food and gifts and goes out to meet David before he can take revenge",
+      "She sends her own servants out to fight David's men on Nabal's behalf",
+      "She reports Nabal's insult to Saul, hoping the king will step in and intervene"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 25 },
+    "explanation": "Abigail acts quickly on her own, bringing food and a wise appeal to David before he can carry out his plan against Nabal's household."
+  },
+  {
+    "id": "1sam-aq-character-12",
+    "book": "1-samuel",
+    "category": "character",
+    "prompt": "How does Michal help David escape when Saul sends men to kill him?",
+    "options": [
+      "She disguises David as one of her own servants and walks him past the guards",
+      "She lowers him through a window and puts a household idol in the bed to fool the men sent to watch him",
+      "She hides him in a storage room and tells the men he already left the city",
+      "She convinces her father in person to call off the men sent after David"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 19 },
+    "explanation": "Michal lets David down through a window at night and disguises the household idol as David sleeping to buy him time to escape."
+  },
+  {
+    "id": "1sam-aq-theme-1",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "According to Samuel's warning, what will a king take from the people of Israel once he rules over them?",
+    "options": [
+      "Their sons for his army and chariots, their daughters for his household, and a tenth of their grain, flocks, and produce",
+      "Only a small yearly payment in silver from every family in the land",
+      "Nothing at all, since Samuel only warns them about foreign kings, not their own",
+      "Their homes and land outright, forcing every family to become tenant farmers"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 8 },
+    "explanation": "Samuel lists everything a king will take, from sons and daughters to a tenth of their flocks and fields, but the people insist anyway."
+  },
+  {
+    "id": "1sam-aq-theme-2",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What happens to the statue of Dagon after the Philistines place the captured ark in his temple?",
+    "options": [
+      "It remains standing upright the whole time with no incident at all",
+      "It is found fallen on its face before the ark, and the second time its head and hands are broken off",
+      "The Philistine priests quietly move it to a different city to keep it safe",
+      "It begins speaking prophecies to the Philistines about the coming war with Israel"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 5 },
+    "explanation": "Dagon's statue is found fallen before the ark twice, and the second time it is broken apart, showing whose power is greater."
+  },
+  {
+    "id": "1sam-aq-theme-3",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What does the LORD tell Samuel about how he chooses a king, when Samuel looks at Jesse's oldest son?",
+    "options": [
+      "That the LORD looks at the heart rather than a person's outward appearance or height",
+      "That the LORD always chooses whichever son is the firstborn in a family, regardless of character",
+      "That the LORD only chooses kings who have already proven themselves in battle",
+      "That the LORD leaves the final choice entirely up to Samuel's own judgment"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 16 },
+    "explanation": "The LORD tells Samuel not to judge by appearance or height, because he looks at the heart rather than outward stature."
+  },
+  {
+    "id": "1sam-aq-theme-4",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What happens to Saul whenever the tormenting spirit troubles him, and what calms him?",
+    "options": [
+      "He locks himself away alone in his room until the feeling eventually passes on its own",
+      "David plays the harp for him, and the spirit lifts and he feels better",
+      "His servants bring him to the tabernacle so the priests can pray over him",
+      "He goes out to fight the Philistines until he is too exhausted to feel troubled"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 16 },
+    "explanation": "David's harp playing brings Saul relief every time the harmful spirit comes upon him."
+  },
+  {
+    "id": "1sam-aq-theme-5",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What reason does David give more than once for refusing to kill Saul, even with the chance right in front of him?",
+    "options": [
+      "That Saul is the LORD's anointed and David will not raise his hand against him",
+      "That killing Saul would violate an old treaty between their two families",
+      "That Jonathan had already made David promise never to harm Saul under any circumstance",
+      "That David's own men would refuse to keep following him if he did it"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 24 },
+    "explanation": "Both in the cave at En Gedi and later in Saul's camp, David says he will not touch the LORD's anointed."
+  },
+  {
+    "id": "1sam-aq-theme-6",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "How does Saul summon Israel's army to rescue Jabesh-gilead?",
+    "options": [
+      "He sends royal messengers carrying a written proclamation to every town in Israel",
+      "He cuts a pair of oxen into pieces and sends them throughout Israel with a warning about what will happen to anyone who doesn't join him",
+      "He blows a trumpet from the top of a mountain that can be heard for miles",
+      "He asks Samuel to announce the call to arms at the next public assembly"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 11 },
+    "explanation": "Saul cuts up a yoke of oxen and sends the pieces through Israel as a vivid warning to anyone who refuses to answer the call."
+  },
+  {
+    "id": "1sam-aq-theme-7",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What does David do to escape King Achish's court at Gath?",
+    "options": [
+      "He fights his way out using a hidden weapon he had smuggled in",
+      "He pretends to be insane, scratching on the gate and letting saliva run down his beard",
+      "He bribes the palace guards with gold to let him slip away quietly",
+      "He convinces Achish that Saul has already forgiven him and welcomes him back home to Israel"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 21 },
+    "explanation": "Recognized as the man celebrated for killing tens of thousands, David acts insane so Achish's men will let him go rather than harm him."
+  },
+  {
+    "id": "1sam-aq-theme-8",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What warning does the man of God give Eli about his sons Hophni and Phinehas?",
+    "options": [
+      "That they will both die on the same day",
+      "That they will be exiled from Israel for the rest of their lives",
+      "That they will lose their priestly titles but be allowed to keep their lives",
+      "That only one of them will die, while the other repents and is spared"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 2 },
+    "explanation": "The man of God tells Eli that both his sons will die on the same day as a sign that the judgment is real."
+  },
+  {
+    "id": "1sam-aq-theme-9",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What rule does David establish about sharing plunder after rescuing the captives from the Amalekites?",
+    "options": [
+      "Only the men who actually fought in the battle get to keep any of the plunder",
+      "The plunder is divided strictly by military rank, with commanders receiving a much larger share",
+      "Those who stayed behind to guard the supplies share the plunder equally with those who fought",
+      "The plunder is given entirely to the families of the captives who were rescued"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "1-samuel", "chapter": 30 },
+    "explanation": "David rules that the share of the one who stayed with the supplies must equal the share of the one who went into battle, and this becomes a lasting practice."
+  },
+  {
+    "id": "1sam-aq-covenant-1",
+    "book": "1-samuel",
+    "category": "covenant",
+    "prompt": "What does Jonathan give David as a sign of the covenant they make with each other?",
+    "options": [
+      "His own robe, armor, sword, and bow",
+      "A parcel of land near his father's palace at Gibeah",
+      "One of his father's prized war horses",
+      "A written copy of the covenant sealed by Samuel himself"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 18 },
+    "explanation": "Jonathan strips off his own robe, armor, sword, and bow and gives them to David as part of their covenant."
+  },
+  {
+    "id": "1sam-aq-covenant-2",
+    "book": "1-samuel",
+    "category": "covenant",
+    "prompt": "What does Jonathan ask David to promise regarding his own family when he renews their covenant?",
+    "options": [
+      "That David will never take the throne of Israel for himself",
+      "That David will not remove Jonathan's descendants from his household even after Jonathan is gone",
+      "That David will marry one of Jonathan's daughters someday",
+      "That David will let Jonathan rule as co-king once he becomes king"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 20 },
+    "explanation": "Jonathan asks David to show unfailing kindness to his family in the future, and David swears to it as part of their covenant."
+  },
+  {
+    "id": "1sam-aq-covenant-3",
+    "book": "1-samuel",
+    "category": "covenant",
+    "prompt": "What does Jonathan tell David when he visits him in the wilderness of Ziph to renew their covenant?",
+    "options": [
+      "That David will surely be king and Jonathan himself will be next to him",
+      "That Saul has finally agreed to make peace with David for good",
+      "That Jonathan plans to leave Israel and join David permanently in the wilderness",
+      "That the Philistines have offered to make David their king instead of Saul"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 23 },
+    "explanation": "Jonathan strengthens David's hand in God, telling him he will surely be king and that Jonathan will be second to him."
+  },
+  {
+    "id": "1sam-aq-covenant-4",
+    "book": "1-samuel",
+    "category": "covenant",
+    "prompt": "What do David and Jonathan do right after their final meeting, once they know Saul intends to kill David?",
+    "options": [
+      "They fight one last battle together before finally going their separate ways",
+      "They weep together and part after renewing their covenant one more time",
+      "They travel together to Ramah to warn Samuel of Saul's plans",
+      "They agree never to speak to each other again to protect Jonathan from Saul's suspicion"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "1-samuel", "chapter": 20 },
+    "explanation": "David and Jonathan weep together and renew their covenant one final time before David leaves to live as a fugitive."
+  }
+]
