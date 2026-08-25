@@ -1,0 +1,25 @@
+[
+  {
+    "id": "united-kingdom-israel",
+    "name": "Kingdom of Israel",
+    "era": "united-kingdom",
+    "note": "A rough, simplified approximation for orientation only, not a scholarly reconstruction — traced through known anchor points (Dan, Carmel, Joppa, Beersheba, Kadesh-barnea, the Dead Sea, the Arnon, Ramoth-Gilead, Edrei) to exclude the Philistine coast, Ammon, Moab, and Edom while including Gilead and Bashan across the Jordan.",
+    "ring": [
+      [35.652, 33.249],
+      [35.35, 33.10],
+      [35.05, 32.73],
+      [34.85, 32.05],
+      [34.85, 31.80],
+      [34.70, 31.50],
+      [34.85, 31.30],
+      [34.42, 30.65],
+      [35.50, 31.03],
+      [35.63, 31.40],
+      [35.80, 31.85],
+      [36.02, 32.50],
+      [36.10, 32.62],
+      [35.85, 33.15],
+      [35.652, 33.249]
+    ]
+  }
+]

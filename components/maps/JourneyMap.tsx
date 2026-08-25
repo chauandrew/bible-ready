@@ -7,21 +7,29 @@ import land from "./geo/land.json";
 import rivers from "./geo/rivers.json";
 import lakes from "./geo/lakes.json";
 import places from "./geo/places.json";
+import regions from "./geo/regions.json";
 
 /**
  * No tile server, no API key, no live third-party dependency — the only
  * "map" data is the tiny bundled GeoJSON in ./geo (Natural Earth 1:50m land,
  * rivers, and lakes, clipped to this journey's region and simplified; public
- * domain) plus ./geo/places.json, a small hand-authored, book-agnostic list
- * of reference cities/seas/rivers for on-map orientation labels (see
- * `placesGeoJSON` below). MapLibre here is purely a renderer/interaction
+ * domain) plus ./geo/places.json (a small hand-authored, book-agnostic list
+ * of reference cities/seas/rivers/neighboring-region labels — see
+ * `placesGeoJSON` below) and ./geo/regions.json (a rough territory outline
+ * per era — see `regionsGeoJSON`). MapLibre here is purely a renderer/interaction
  * engine over data we ship ourselves, which is what keeps this fully static
  * and offline like the rest of the app. See DESIGN.md's Journeys section for
  * why this replaced an earlier raster-image approach.
  */
 const PALETTE = {
-  light: { water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac", label: "#6b6252", waterLabel: "#3c6e8f", regionLabel: "#a1483f" },
-  dark: { water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89", label: "#a89f8c", waterLabel: "#7fa8c2", regionLabel: "#d98f86" },
+  light: {
+    water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac", label: "#6b6252", waterLabel: "#3c6e8f",
+    regionLabel: "#a1483f", kingdomFill: "#c9a227", kingdomOutline: "#8a6d1f",
+  },
+  dark: {
+    water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89", label: "#a89f8c", waterLabel: "#7fa8c2",
+    regionLabel: "#d98f86", kingdomFill: "#d9b64f", kingdomOutline: "#e0c876",
+  },
 } as const;
 
 /**
@@ -59,6 +67,27 @@ function placesGeoJSON(kind: Place["kind"], era: string): GeoJSON.FeatureCollect
       type: "Feature",
       properties: { name: p.name },
       geometry: { type: "Point", coordinates: [p.lng, p.lat] },
+    }));
+  return { type: "FeatureCollection", features };
+}
+
+interface Region {
+  id: string;
+  name: string;
+  era: string;
+  ring: number[][];
+}
+
+/** A rough territory outline (see ./geo/regions.json) for the era's home
+ * kingdom — a single polygon per era at most, not the neighboring peoples
+ * (those stay simple point labels via `placesGeoJSON("region", era)`). */
+function regionsGeoJSON(era: string): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = (regions as Region[])
+    .filter((r) => r.era === era)
+    .map((r) => ({
+      type: "Feature",
+      properties: { name: r.name },
+      geometry: { type: "Polygon", coordinates: [r.ring] },
     }));
   return { type: "FeatureCollection", features };
 }
@@ -135,6 +164,7 @@ export default function JourneyMap({
           "places-water": { type: "geojson", data: placesGeoJSON("water", era) },
           "places-city": { type: "geojson", data: placesGeoJSON("city", era) },
           "places-region": { type: "geojson", data: placesGeoJSON("region", era) },
+          kingdom: { type: "geojson", data: regionsGeoJSON(era) },
         },
         layers: [
           { id: "bg", type: "background", paint: { "background-color": pal.water } },
@@ -143,6 +173,12 @@ export default function JourneyMap({
           { id: "rivers-line", type: "line", source: "rivers", paint: { "line-color": pal.river, "line-width": 1.2 } },
           { id: "lakes-fill", type: "fill", source: "lakes", paint: { "fill-color": pal.water } },
           { id: "lakes-outline", type: "line", source: "lakes", paint: { "line-color": pal.river, "line-width": 0.6 } },
+          // A rough territory tint for the era's home kingdom (see
+          // ./geo/regions.json's own `note` field for what this is and
+          // isn't) — a translucent fill plus a dashed outline, distinct
+          // from the water-blue palette so it doesn't read as a sea.
+          { id: "kingdom-fill", type: "fill", source: "kingdom", paint: { "fill-color": pal.kingdomFill, "fill-opacity": 0.16 } },
+          { id: "kingdom-outline", type: "line", source: "kingdom", paint: { "line-color": pal.kingdomOutline, "line-width": 1.4, "line-dasharray": [2, 2] } },
           // Background orientation labels — major cities, physical
           // geography (seas, rivers), and neighboring peoples/regions
           // relevant to this journey's era, from the shared reference list.
@@ -242,6 +278,8 @@ export default function JourneyMap({
       map.setPaintProperty("rivers-line", "line-color", pal.river);
       map.setPaintProperty("lakes-fill", "fill-color", pal.water);
       map.setPaintProperty("lakes-outline", "line-color", pal.river);
+      map.setPaintProperty("kingdom-fill", "fill-color", pal.kingdomFill);
+      map.setPaintProperty("kingdom-outline", "line-color", pal.kingdomOutline);
       map.setPaintProperty("places-region-label", "text-color", pal.regionLabel);
       map.setPaintProperty("places-region-label", "text-halo-color", pal.land);
       map.setPaintProperty("places-water-label", "text-color", pal.waterLabel);

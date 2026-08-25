@@ -6,7 +6,7 @@
   { "id": "beersheba", "name": "Beersheba", "lat": 31.2447, "lng": 34.8408, "kind": "city", "eras": ["patriarchs", "united-kingdom"] },
   { "id": "bethel", "name": "Bethel", "lat": 31.9283, "lng": 35.2383, "kind": "city", "eras": ["patriarchs", "judges"] },
   { "id": "haran", "name": "Haran", "lat": 36.8708, "lng": 39.0250, "kind": "city", "eras": ["patriarchs"] },
-  { "id": "damascus", "name": "Damascus", "lat": 33.5138, "lng": 36.2765, "kind": "city", "eras": ["patriarchs", "united-kingdom", "divided-kingdom"] },
+  { "id": "damascus", "name": "Damascus", "lat": 33.5114, "lng": 36.3064, "kind": "city", "eras": ["patriarchs", "united-kingdom", "divided-kingdom"] },
   { "id": "shiloh", "name": "Shiloh", "lat": 32.0556, "lng": 35.2895, "kind": "city", "eras": ["judges", "united-kingdom"] },
   { "id": "gibeah", "name": "Gibeah", "lat": 31.8234, "lng": 35.2312, "kind": "city", "eras": ["united-kingdom"] },
   { "id": "rabbah", "name": "Rabbah", "lat": 31.9539, "lng": 35.9349, "kind": "city", "eras": ["united-kingdom"] },

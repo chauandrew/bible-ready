@@ -16,7 +16,7 @@
       { "id": "js-2", "order": 2, "eventId": "e12-1", "characterIds": ["abraham"], "place": "Shechem", "lat": 32.2136, "lng": 35.2820 },
       { "id": "js-3", "order": 3, "eventId": "e12-2", "characterIds": ["abraham"], "place": "Egypt", "lat": 30.9769, "lng": 31.8800, "locationNote": "Traditionally identified with Zoan (Tanis), a common \"first city in Egypt\" on Bible maps of Abraham's route — Genesis names no specific city." },
       { "id": "js-4", "order": 4, "eventId": "e13-0", "characterIds": ["abraham"], "place": "Bethel", "lat": 31.9283, "lng": 35.2383 },
-      { "id": "js-5", "order": 5, "eventId": "e14-0", "characterIds": ["abraham"], "place": "Hobah, near Damascus", "lat": 33.5138, "lng": 36.2765, "locationNote": "Hobah's own site is unidentified; Genesis 14:15 places it north of Damascus, so the marker sits at Damascus itself." },
+      { "id": "js-5", "order": 5, "eventId": "e14-0", "characterIds": ["abraham"], "place": "Hobah, near Damascus", "lat": 33.5114, "lng": 36.3064, "locationNote": "Hobah's own site is unidentified; Genesis 14:15 places it north of Damascus, so the marker sits at Damascus itself." },
       { "id": "js-6", "order": 6, "eventId": "e18-0", "characterIds": ["abraham"], "place": "Mamre", "lat": 31.5565, "lng": 35.1053 },
       { "id": "js-7", "order": 7, "eventId": "e20-0", "characterIds": ["abraham"], "place": "Gerar", "lat": 31.3790, "lng": 34.6060, "locationNote": "Usually identified with Tel Haror; Tell Jemmeh has also been proposed." },
       { "id": "js-8", "order": 8, "eventId": "e22-0", "characterIds": ["abraham", "isaac"], "place": "The land of Moriah", "lat": 31.7781, "lng": 35.2358, "locationNote": "Traditional identification with the Temple Mount, not an excavated confirmation." },

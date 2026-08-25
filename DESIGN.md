@@ -558,6 +558,21 @@ the journey's own stops, which is already the right call for Genesis's
 patriarchs (Haran to Egypt is already a wide span with nothing to gain from
 overriding it).
 
+**`components/maps/geo/regions.json` draws a rough territory outline for the
+era's home kingdom — a translucent gold fill plus a dashed border, distinct
+from the water-blue palette so it never reads as a sea.** This is explicitly
+a simplification, not a scholarly reconstruction — the `note` field on each
+entry says so, and the ring is a straight-segment approximation traced
+through known anchor points (Dan, Carmel, Joppa, Beersheba, Kadesh-barnea,
+the Dead Sea, the Arnon, Ramoth-Gilead, Edrei) rather than a real historical
+border survey. It exists alongside the `"region"` point labels above, not
+instead of them — the outline shows *where the line roughly falls*, the
+point labels name *who's on the other side of it*, and together they read
+closer to a standard Bible atlas than either would alone. One polygon per
+era, keyed the same way as everything else in this file (`era` must match a
+`Journey.era` string); an era with no entry here just renders no outline, the
+same graceful fallback as `ERA_BOUNDS` and the place labels above.
+
 ## Theming
 
 `app/globals.css` defines the whole palette as CSS variables on `:root`
