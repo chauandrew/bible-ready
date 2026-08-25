@@ -172,6 +172,166 @@ ones lets a test-taker spot the answer by formatting, not by knowing the
 material. These strings are only ever displayed as standalone list items
 (never embedded mid-sentence), so always capitalize the first letter.
 
+## Journeys — event-by-event map walkthroughs
+
+A journey is a character arc that crosses several existing arcs (Abraham →
+Isaac → Jacob → Joseph spans `abraham-call` through `joseph`, five arcs) and
+walks it event by event with each stop plotted on a map. This is optional
+per book — `journeys.json` doesn't exist for a book until it has one, and
+`BookContent.journeys` defaults to `[]` so nothing else has to change.
+
+**Data-driven for extensibility, on purpose.** A `Journey`
+(`content/schema.ts`) doesn't re-author facts — each `JourneyStop` references
+an existing `Event.id` and reads its name/summary/citation from
+`events.json`; the stop only adds what's new: `characterIds` (whose path it's
+on), `place` (the pin label), `lat`/`lng` (real-world coordinates), and an
+optional `locationNote` for sites whose identification is disputed or
+approximate. Adding a *new* journey to an *existing* book's `journeys.json`
+needs no code change. Adding one for a *new* region (a future Samuel/Kings
+book following Saul/David, say) needs no new map asset either — the same
+bundled world coastline/river/lake data covers any region; only `bounds` in
+`JourneyExplorer` (derived from the journey's own stops) changes.
+
+**The map is a real MapLibre GL vector render over bundled GeoJSON, not a
+raster image — a rebuild that replaced an earlier cropped-SVG-map approach
+once coordinate accuracy became a recurring source of back-and-forth.** The
+original approach (see git history for the full story) baked marker
+positions into a pre-labeled map image and read them off pixel-by-pixel;
+every new stop or map fix meant another round trip to eyeball or
+re-derive a pixel position. The current approach inverts that: `JourneyStop`
+carries real, individually-researched latitude/longitude, and
+`components/maps/JourneyMap.tsx` renders them with MapLibre GL JS against
+three small bundled GeoJSON files in `components/maps/geo/` (land, rivers,
+lakes — Natural Earth 1:50m data, clipped to the region and simplified,
+public domain). There is no tile server, no API key, and no live third-party
+request — the GeoJSON is the entire "map," shipped as a static asset like
+everything else in this fully offline app. Pan/zoom are locked to the
+journey's own bounds (`maxBounds` in `JourneyMap.tsx`) rather than left
+free, since this is a fixed illustration of one story's geography, not a
+general-purpose map to wander. The map is theme-aware — its water/land/
+border/river colors are repainted via `setPaintProperty` on the site's
+light/dark toggle, since a vector render (unlike a baked photo) can actually
+do that. Modern political borders are deliberately absent — only coastlines,
+rivers, and lakes are drawn, since the ancient Near East had none of today's
+borders and drawing them would misrepresent the period.
+
+**Turbopack does not bundle MapLibre's web worker correctly** (a confirmed
+upstream bug, not a bug in this codebase) — without a workaround, MapLibre's
+internal worker fails to resolve its own sibling module and no vector layer
+ever renders. The fix is `public/maplibre/maplibre-gl-worker.mjs` and
+`maplibre-gl-shared.mjs`, copied verbatim from `node_modules/maplibre-gl/
+dist/` and pointed to explicitly via `setWorkerUrl()` before constructing
+the map in `JourneyMap.tsx`. If `maplibre-gl` is ever upgraded, re-copy both
+files from the new version's `dist/` — a version mismatch between the main
+bundle and the worker files is a real failure mode.
+
+**Coordinates are individually researched, not derived from the map.**
+Every `JourneyStop.lat`/`lng` in `journeys.json` was looked up per place
+(gazetteers and standard Bible-atlas identifications), not read off an
+image or interpolated between neighbors. Where a site's identification is
+genuinely disputed or only approximate (Nahor, Gerar, Peniel, Pharaoh's
+court, Goshen), `locationNote` says so explicitly rather than presenting a
+guess as settled fact — this is the field to add to when extending this
+journey or authoring a new one, not something to leave silently ambiguous.
+
+**The journey page fits one viewport on desktop, on purpose, and falls back
+to a normal scrollable stack below a 720px breakpoint.** The two-column row
+(`.journey-row` in `app/globals.css`) is a fixed `calc(100vh - 225px)`, not
+`height: auto` — a story map is meant to be scanned back and forth between
+the sidebar and the map, and having to scroll the page itself to see both
+defeats that. The detail card lives in the left column, above the stop list,
+not below the map spanning full width, so the currently-selected event's
+description doesn't cost a screen's worth of scrolling to reach. MapLibre
+needs a real pixel height for its canvas (unlike an `<img>`, it can't size
+itself from intrinsic aspect-ratio), so `.journey-map-container` is `flex: 1`
+on desktop and a fixed `height: 50vh` under the `@media (max-width: 720px)`
+mobile fallback, where the two-column row also drops to a normal stacked,
+scrollable layout. A `ResizeObserver` in `JourneyMap.tsx` calls `map.
+resize()` whenever the container's actual size settles, since the map is
+constructed before flexbox has necessarily finished laying out its final
+size.
+
+**A selected map dot always sits on top, regardless of stop order.** Each
+stop's marker is a plain DOM element (MapLibre's `Marker` takes any HTML
+element, not just a canvas draw call), so `JourneyMap.tsx` sets `el.style.
+zIndex` directly — `10` for the selected stop, `1` otherwise — instead of
+needing to control paint order the way the old SVG version did. `sorted`
+(chronological order) is still what drives the sidebar list, the
+per-character lines, and Prev/Next; only the marker's own z-index changes
+with selection. It also gets a white halo (`box-shadow`, selected stops
+only) — a same-color route line can run right through a same-color dot, and
+size/z-index alone weren't enough to make "this one's selected" obviously
+readable against that; the active line's own opacity is also capped at 0.75
+(down from a fully solid line) so the dot on top of it stays the visually
+brighter element.
+
+**Direction arrows mark travel between stops, one per segment, not evenly
+spaced along the whole line.** A single small triangle icon is registered
+once via `map.addImage(..., {sdf: true})` — a plain filled shape, not a true
+distance field, but sdf mode still lets every character's arrow layer tint
+the same icon through `icon-color` instead of needing one image per color.
+`arrowPoints()` places one icon at the midpoint of each consecutive
+stop-to-stop pair with a `bearing` property (planar approximation, cos-
+corrected for longitude, not full great-circle — plenty accurate for a
+decorative arrow at this region's scale), and each arrow layer reads
+`icon-rotate: ["get", "bearing"]` off that so it's the geometry driving the
+angle, not a fixed set of pre-rotated images. Deliberately one arrow *per
+segment* rather than MapLibre's built-in `symbol-placement: "line"` (which
+repeats an icon at a fixed pixel spacing along the whole line) — spacing
+would put arrows whether or not they land near an actual stop-to-stop
+segment, where the ask was specifically "which way between these two
+bubbles," not a general flow indicator.
+
+**`JourneyStop.place` is authored independently of `Event.place`, on
+purpose.** Most stops correspond to an event that already had `Event.place`
+set (see the content authoring rule above), but a few intentionally add a
+stop where `Event.place` was left unset — Abraham's call and his early trip
+to Canaan and Egypt (Genesis 12), Joseph's last scene with the family before
+Egypt (Genesis 37) — because a journey stop's location is a narrative fact
+about the *walk*, not a quiz-distractor concern, and the two fields don't
+need to agree. The patriarchs journey has 22 stops, still far short of one
+per chapter across Genesis 12-50 — most events in that span still carry no
+place at all, and a denser trail is a real future authoring task, not a gap
+in the current one.
+
+**One path per character, not one combined trail**, since the four
+patriarchs' stories overlap in time rather than relay cleanly — Isaac's story
+overlaps Abraham's, Jacob's overlaps Isaac's, and Joseph forks off into Egypt
+while the rest of the family stays in Canaan until Genesis 46. A stop where
+two characters' stories meet (Jacob and Joseph reuniting in Goshen) lists
+both in `characterIds` and appears on both paths.
+
+**Navigation is a single client-side page, not one page-load per stop.**
+`JourneyExplorer` (a client component) holds the selected stop in React
+state; the sidebar's character chips and stop list, the map's pins, and the
+detail card all update without a route change. Clicking a character chip
+both filters the map to their path and jumps straight to their first stop —
+that's what makes reaching Joseph one click instead of walking the whole
+family's chapters in order.
+
+**The map filters to one character's path at a time by default, following
+whichever character owns the currently selected stop, not requiring a chip
+click first.** `effectiveCharacterId` in `JourneyExplorer` is `activeCharacterId`
+(an explicit chip pin) when set, falling back to the selected stop's own
+`characterIds[0]` otherwise — so stepping through the full chronological list
+with Prev/Next or the arrow keys (which is *not* restricted to one
+character; see `navigable`, still keyed off the raw pin) auto-highlights
+each stop's own character as you go, without an extra click. A stop shared
+by two characters (Jacob and Joseph reuniting in Goshen) picks its
+first-listed `characterIds` entry as the one to auto-follow. Clicking the
+already-active chip un-pins it, returning to auto-follow rather than
+clearing the filter entirely — there's no "show everyone at once" mode,
+since that was the original default and turned out to be unreadable with
+four overlapping paths. Off-path stops are hidden outright (`opacity: 0`,
+`pointer-events: none` in `JourneyMap.tsx`), not just faded, so only the
+active character's dots and route stay visible; the selected stop's own dot
+is always shown regardless of whose path it's on. One MapLibre-specific
+gotcha here: `Marker` tracks its own `_opacity` and rewrites
+`el.style.opacity` on every map move via its internal `_updateOpacity` —
+setting the DOM style directly gets silently clobbered the next time the
+map pans or zooms, so dot visibility must go through `marker.setOpacity()`
+instead.
+
 ## Theming
 
 `app/globals.css` defines the whole palette as CSS variables on `:root`

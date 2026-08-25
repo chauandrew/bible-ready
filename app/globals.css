@@ -193,6 +193,48 @@ a { color: var(--accent-text); }
   .hero-grid { grid-template-columns: 1fr; }
 }
 
+/* Journey story-map: a fixed-height two-column layout on desktop (so the
+   whole thing fits without scrolling the page), falling back to a normal
+   stacked, scrollable layout on narrow screens where fitting a map and a
+   sidebar side by side isn't workable at all. */
+.journey-row {
+  display: flex;
+  gap: 1.5rem;
+  height: calc(100vh - 225px);
+  min-height: 420px;
+}
+.journey-sidebar {
+  flex: 1 1 300px;
+  min-width: 280px;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.journey-map-col {
+  flex: 2 1 420px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+.journey-map-container {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+@media (max-width: 720px) {
+  .journey-row { flex-wrap: wrap; height: auto; min-height: 0; }
+  .journey-sidebar, .journey-map-col { max-width: none; min-height: 0; }
+  /* MapLibre needs a real pixel height, unlike the old <img> this replaced
+     (which could size itself from intrinsic aspect-ratio) — a fixed
+     viewport-relative height is the simplest thing that works here. */
+  .journey-map-container { height: 50vh; flex: none; }
+}
+
 .hero-copy {
   display: flex;
   flex-direction: column;

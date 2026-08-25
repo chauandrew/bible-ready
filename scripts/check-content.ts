@@ -35,6 +35,13 @@ let totalVersesQuoted = 0;
 function loadBook(bookId: string) {
   const dir = join(CONTENT_ROOT, bookId);
   const read = (f: string) => JSON.parse(readFileSync(join(dir, f), "utf-8"));
+  const readOptional = (f: string) => {
+    try {
+      return read(f);
+    } catch {
+      return undefined;
+    }
+  };
   return {
     book: read("book.json"),
     arcs: read("arcs.json"),
@@ -44,6 +51,7 @@ function loadBook(bookId: string) {
     quotes: read("quotes.json"),
     questions: read("questions.json"),
     decks: read("decks.json"),
+    journeys: readOptional("journeys.json"),
   };
 }
 
@@ -84,7 +92,7 @@ function checkBook(bookId: string) {
     }
     return; // downstream checks assume valid shapes
   }
-  const { book, arcs, chapters, people, events, quotes, questions, decks } = parsed.data;
+  const { book, arcs, chapters, people, events, quotes, questions, decks, journeys } = parsed.data;
 
   // --- ids -------------------------------------------------------------
   checkDuplicateIds("arcs", arcs);
@@ -215,6 +223,30 @@ function checkBook(bookId: string) {
   for (const d of decks) {
     for (const eid of d.cardEventIds) {
       if (!eventIds.has(eid)) errors.push(`decks: "${d.id}" references missing event "${eid}"`);
+    }
+  }
+  checkDuplicateIds("journeys", journeys);
+  for (const j of journeys) {
+    if (j.book !== book.id) errors.push(`journeys: "${j.id}" declares book "${j.book}" but lives under "${book.id}"`);
+    const journeyCharacterIds = new Set(j.characters.map((c) => c.id));
+    for (const c of j.characters) {
+      if (!peopleIds.has(c.id)) errors.push(`journeys: "${j.id}" character references missing person "${c.id}"`);
+    }
+    const stopIds = new Set<string>();
+    const stopOrders = new Set<number>();
+    for (const s of j.stops) {
+      if (stopIds.has(s.id)) errors.push(`journeys: "${j.id}" has duplicate stop id "${s.id}"`);
+      stopIds.add(s.id);
+      // Sorting/prev-next navigation breaks silently on a tie, so a duplicate
+      // order is a real bug, not just untidy authoring.
+      if (stopOrders.has(s.order)) errors.push(`journeys: "${j.id}" has duplicate stop order ${s.order} (stop "${s.id}")`);
+      stopOrders.add(s.order);
+      if (!eventIds.has(s.eventId)) errors.push(`journeys: "${j.id}" stop "${s.id}" references missing event "${s.eventId}"`);
+      for (const cid of s.characterIds) {
+        if (!journeyCharacterIds.has(cid)) {
+          errors.push(`journeys: "${j.id}" stop "${s.id}" references character "${cid}" not declared in journey.characters`);
+        }
+      }
     }
   }
   void chapterIds;

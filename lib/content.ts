@@ -6,6 +6,7 @@ import genesisEventsJson from "@/content/genesis/events.json";
 import genesisQuotesJson from "@/content/genesis/quotes.json";
 import genesisQuestionsJson from "@/content/genesis/questions.json";
 import genesisDecksJson from "@/content/genesis/decks.json";
+import genesisJourneysJson from "@/content/genesis/journeys.json";
 import exodusBookJson from "@/content/exodus/book.json";
 import exodusArcsJson from "@/content/exodus/arcs.json";
 import exodusChaptersJson from "@/content/exodus/chapters.json";
@@ -39,6 +40,7 @@ import {
   type Chapter,
   type Deck,
   type Event,
+  type Journey,
   type Person,
 } from "@/content/schema";
 import type { BookData } from "./generate";
@@ -57,6 +59,7 @@ const genesisContent: BookContent = BookContentSchema.parse({
   quotes: genesisQuotesJson,
   questions: genesisQuestionsJson,
   decks: genesisDecksJson,
+  journeys: genesisJourneysJson,
 });
 
 const exodusContent: BookContent = BookContentSchema.parse({
@@ -164,6 +167,18 @@ export function personInBook(bookId: string, personId: string): Person | undefin
 export function personsForEventInBook(bookId: string, event: Event): Person[] {
   const people = peopleForBook(bookId);
   return event.peopleIds.map((id) => people.find((p) => p.id === id)).filter((p): p is Person => !!p);
+}
+
+export function journeysForBook(bookId: string): Journey[] {
+  return booksContent[bookId]?.journeys ?? [];
+}
+
+export function journeyInBook(bookId: string, journeyId: string): Journey | undefined {
+  return journeysForBook(bookId).find((j) => j.id === journeyId);
+}
+
+export function eventInBook(bookId: string, eventId: string): Event | undefined {
+  return (booksContent[bookId]?.events ?? []).find((e) => e.id === eventId);
 }
 
 export function decksForBook(bookId: string): Deck[] {

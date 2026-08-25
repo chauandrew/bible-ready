@@ -1,0 +1,38 @@
+[
+  {
+    "id": "patriarchs",
+    "book": "genesis",
+    "name": "Abraham to Joseph",
+    "summary": "Follow four generations of one family across the ancient Near East, from Abraham's call in Haran to Joseph's palace in Egypt.",
+    "characters": [
+      { "id": "abraham", "color": "#a9432c" },
+      { "id": "isaac", "color": "#3c6e8f" },
+      { "id": "jacob", "color": "#4f7a4a" },
+      { "id": "joseph", "color": "#8a5ca8" }
+    ],
+    "stops": [
+      { "id": "js-1", "order": 1, "eventId": "e12-0", "characterIds": ["abraham"], "place": "Haran", "lat": 36.8708, "lng": 39.0250 },
+      { "id": "js-2", "order": 2, "eventId": "e12-1", "characterIds": ["abraham"], "place": "Shechem", "lat": 32.2136, "lng": 35.2820 },
+      { "id": "js-3", "order": 3, "eventId": "e12-2", "characterIds": ["abraham"], "place": "Egypt", "lat": 30.9769, "lng": 31.8800, "locationNote": "Traditionally identified with Zoan (Tanis), a common \"first city in Egypt\" on Bible maps of Abraham's route — Genesis names no specific city." },
+      { "id": "js-4", "order": 4, "eventId": "e13-0", "characterIds": ["abraham"], "place": "Bethel", "lat": 31.9283, "lng": 35.2383 },
+      { "id": "js-5", "order": 5, "eventId": "e14-0", "characterIds": ["abraham"], "place": "Hobah, near Damascus", "lat": 33.5138, "lng": 36.2765, "locationNote": "Hobah's own site is unidentified; Genesis 14:15 places it north of Damascus, so the marker sits at Damascus itself." },
+      { "id": "js-6", "order": 6, "eventId": "e18-0", "characterIds": ["abraham"], "place": "Mamre", "lat": 31.5565, "lng": 35.1053 },
+      { "id": "js-7", "order": 7, "eventId": "e20-0", "characterIds": ["abraham"], "place": "Gerar", "lat": 31.3790, "lng": 34.6060, "locationNote": "Usually identified with Tel Haror; Tell Jemmeh has also been proposed." },
+      { "id": "js-8", "order": 8, "eventId": "e22-0", "characterIds": ["abraham", "isaac"], "place": "The land of Moriah", "lat": 31.7781, "lng": 35.2358, "locationNote": "Traditional identification with the Temple Mount, not an excavated confirmation." },
+      { "id": "js-9", "order": 9, "eventId": "e24-1", "characterIds": ["isaac"], "place": "The city of Nahor", "lat": 36.85, "lng": 39.10, "locationNote": "No excavated site is identified with Nahor; Mari-era texts place it in the upper Balikh valley near Haran, which is where this marker is set." },
+      { "id": "js-10", "order": 10, "eventId": "e26-0", "characterIds": ["isaac"], "place": "Gerar", "lat": 31.3790, "lng": 34.6060, "locationNote": "Usually identified with Tel Haror; Tell Jemmeh has also been proposed." },
+      { "id": "js-11", "order": 11, "eventId": "e27-1", "characterIds": ["jacob"], "place": "Beersheba", "lat": 31.2447, "lng": 34.8408 },
+      { "id": "js-12", "order": 12, "eventId": "e28-0", "characterIds": ["jacob"], "place": "Bethel", "lat": 31.9283, "lng": 35.2383 },
+      { "id": "js-13", "order": 13, "eventId": "e29-0", "characterIds": ["jacob"], "place": "Haran", "lat": 36.8708, "lng": 39.0250 },
+      { "id": "js-14", "order": 14, "eventId": "e32-1", "characterIds": ["jacob"], "place": "Peniel", "lat": 32.1856, "lng": 35.6866, "locationNote": "Traditionally Tulul adh-Dhahab; this identification has been questioned since the 1970s, with some scholars assigning only the eastern of its twin peaks to Penuel." },
+      { "id": "js-15", "order": 15, "eventId": "e33-1", "characterIds": ["jacob"], "place": "Shechem", "lat": 32.2136, "lng": 35.2820 },
+      { "id": "js-16", "order": 16, "eventId": "e35-0", "characterIds": ["jacob"], "place": "Bethel", "lat": 31.9283, "lng": 35.2383 },
+      { "id": "js-17", "order": 17, "eventId": "e35-2", "characterIds": ["isaac", "jacob"], "place": "Hebron", "lat": 31.5240, "lng": 35.1040 },
+      { "id": "js-18", "order": 18, "eventId": "e37-0", "characterIds": ["joseph", "jacob"], "place": "Hebron", "lat": 31.5240, "lng": 35.1040 },
+      { "id": "js-19", "order": 19, "eventId": "e40-0", "characterIds": ["joseph"], "place": "The prison", "lat": 29.8494, "lng": 31.2550, "locationNote": "Genesis names no city; placed at Memphis, the conventional default in Bible atlases for Pharaoh's court." },
+      { "id": "js-20", "order": 20, "eventId": "e41-0", "characterIds": ["joseph"], "place": "Pharaoh's court", "lat": 29.8494, "lng": 31.2550, "locationNote": "Genesis names no city; placed at Memphis, the conventional default in Bible atlases for Pharaoh's court." },
+      { "id": "js-21", "order": 21, "eventId": "e46-1", "characterIds": ["joseph", "jacob"], "place": "Goshen", "lat": 30.5494, "lng": 31.9636, "locationNote": "Goshen was a region (the eastern Nile delta around Wadi Tumilat), not a single site — the marker sits at the wadi's approximate center." },
+      { "id": "js-22", "order": 22, "eventId": "e50-0", "characterIds": ["joseph", "jacob"], "place": "Hebron", "lat": 31.5240, "lng": 35.1040 }
+    ]
+  }
+]

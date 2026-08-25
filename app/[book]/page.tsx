@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { bookMeta, wiredBookIds } from "@/lib/content";
+import { bookMeta, journeysForBook, wiredBookIds } from "@/lib/content";
 
 export function generateStaticParams() {
   return wiredBookIds.map((book) => ({ book }));
@@ -23,6 +23,9 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
         : `Browse all ${book.chapterCount} chapters, grouped by narrative arc.`,
     },
   ];
+  if (journeysForBook(bookId).length > 0) {
+    studyTools.push({ href: `/${bookId}/study/journeys`, label: "Story Map", desc: "Follow a character arc event by event, plotted on a map." });
+  }
 
   const reviewTools = [
     { href: `/${bookId}/quiz`, label: "Quiz", desc: "Pick your questions and sections, then see your score and where to focus." },
