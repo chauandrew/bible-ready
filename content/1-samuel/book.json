@@ -1,0 +1,15 @@
+{
+  "id": "1-samuel",
+  "name": "1 Samuel",
+  "chapterCount": 31,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "1sam-arc-birth-call",
+    "1sam-arc-ark",
+    "1sam-arc-king-demanded",
+    "1sam-arc-saul-rejected",
+    "1sam-arc-david-rises",
+    "1sam-arc-david-fugitive",
+    "1sam-arc-saul-death"
+  ]
+}

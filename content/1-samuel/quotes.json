@@ -1,0 +1,223 @@
+[
+  {
+    "id": "1sam-q-c1-v27",
+    "book": "1-samuel",
+    "chapter": 1,
+    "verse": 27,
+    "speakerId": "1sam-hannah",
+    "text": "For this child I prayed, and the LORD has granted me my petition that I made to him.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 1,
+      "verses": "27"
+    }
+  },
+  {
+    "id": "1sam-q-c2-v2",
+    "book": "1-samuel",
+    "chapter": 2,
+    "verse": 2,
+    "speakerId": "1sam-hannah",
+    "text": "There is none holy like the LORD: for there is none besides you; there is no rock like our God.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 2,
+      "verses": "2"
+    }
+  },
+  {
+    "id": "1sam-q-c3-v10",
+    "book": "1-samuel",
+    "chapter": 3,
+    "verse": 10,
+    "speakerId": "1sam-samuel",
+    "text": "Speak, for your servant hears.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 3,
+      "verses": "10"
+    }
+  },
+  {
+    "id": "1sam-q-c7-v12",
+    "book": "1-samuel",
+    "chapter": 7,
+    "verse": 12,
+    "speakerId": "1sam-samuel",
+    "text": "Till now the LORD has helped us.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 7,
+      "verses": "12"
+    }
+  },
+  {
+    "id": "1sam-q-c8-v5",
+    "book": "1-samuel",
+    "chapter": 8,
+    "verse": 5,
+    "speakerId": "1sam-elders",
+    "text": "Behold, you are old and your sons do not walk in your ways. Now appoint for us a king to judge us like all the nations.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 8,
+      "verses": "5"
+    }
+  },
+  {
+    "id": "1sam-q-c10-v24",
+    "book": "1-samuel",
+    "chapter": 10,
+    "verse": 24,
+    "speakerId": "1sam-samuel",
+    "text": "Do you see him whom the LORD has chosen? There is none like him among all the people.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 10,
+      "verses": "24"
+    }
+  },
+  {
+    "id": "1sam-q-c12-v24",
+    "book": "1-samuel",
+    "chapter": 12,
+    "verse": 24,
+    "speakerId": "1sam-samuel",
+    "text": "Only fear the LORD and serve him faithfully with all your heart. For consider what great things he has done for you.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 12,
+      "verses": "24"
+    }
+  },
+  {
+    "id": "1sam-q-c13-v14",
+    "book": "1-samuel",
+    "chapter": 13,
+    "verse": 14,
+    "speakerId": "1sam-samuel",
+    "text": "But now your kingdom shall not continue. The LORD has sought out a man after his own heart, and the LORD has commanded him to be prince over his people, because you have not kept what the LORD commanded you.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 13,
+      "verses": "14"
+    }
+  },
+  {
+    "id": "1sam-q-c15-v24",
+    "book": "1-samuel",
+    "chapter": 15,
+    "verse": 24,
+    "speakerId": "1sam-saul",
+    "text": "I have sinned, for I have transgressed the commandment of the LORD and your words, because I feared the people and obeyed their voice.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 15,
+      "verses": "24"
+    }
+  },
+  {
+    "id": "1sam-q-c16-v7",
+    "book": "1-samuel",
+    "chapter": 16,
+    "verse": 7,
+    "speakerId": "1sam-god",
+    "text": "Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 16,
+      "verses": "7"
+    }
+  },
+  {
+    "id": "1sam-q-c17-v45",
+    "book": "1-samuel",
+    "chapter": 17,
+    "verse": 45,
+    "speakerId": "1sam-david",
+    "text": "You come to me with a sword and with a spear and with a javelin, but I come to you in the name of the LORD of hosts, the God of the armies of Israel, whom you have defied.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 17,
+      "verses": "45"
+    }
+  },
+  {
+    "id": "1sam-q-c20-v42",
+    "book": "1-samuel",
+    "chapter": 20,
+    "verse": 42,
+    "speakerId": "1sam-jonathan",
+    "text": "Go in peace, because we have sworn both of us in the name of the LORD, saying, 'The LORD shall be between me and you, and between my offspring and your offspring, forever.'",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 20,
+      "verses": "42"
+    }
+  },
+  {
+    "id": "1sam-q-c24-v6",
+    "book": "1-samuel",
+    "chapter": 24,
+    "verse": 6,
+    "speakerId": "1sam-david",
+    "text": "The LORD forbid that I should do this thing to my lord, the LORD's anointed, to put out my hand against him, seeing he is the LORD's anointed.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 24,
+      "verses": "6"
+    }
+  },
+  {
+    "id": "1sam-q-c25-v24",
+    "book": "1-samuel",
+    "chapter": 25,
+    "verse": 24,
+    "speakerId": "1sam-abigail",
+    "text": "On me alone, my lord, be the guilt. Please let your servant speak in your ears, and hear the words of your servant.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 25,
+      "verses": "24"
+    }
+  },
+  {
+    "id": "1sam-q-c26-v9",
+    "book": "1-samuel",
+    "chapter": 26,
+    "verse": 9,
+    "speakerId": "1sam-david",
+    "text": "Do not destroy him, for who can put out his hand against the LORD's anointed and be guiltless?",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 26,
+      "verses": "9"
+    }
+  },
+  {
+    "id": "1sam-q-c28-v15",
+    "book": "1-samuel",
+    "chapter": 28,
+    "verse": 15,
+    "speakerId": "1sam-samuel",
+    "text": "Why have you disturbed me by bringing me up?",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 28,
+      "verses": "15"
+    }
+  },
+  {
+    "id": "1sam-q-c30-v8",
+    "book": "1-samuel",
+    "chapter": 30,
+    "verse": 8,
+    "speakerId": "1sam-god",
+    "text": "Pursue, for you shall surely overtake and shall surely rescue.",
+    "citation": {
+      "book": "1-samuel",
+      "chapter": 30,
+      "verses": "8"
+    }
+  }
+]

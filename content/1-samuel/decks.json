@@ -1,0 +1,111 @@
+[
+  {
+    "id": "1sam-deck-samuel-early",
+    "book": "1-samuel",
+    "name": "Samuel's Early Life and the Ark",
+    "cardEventIds": [
+      "1sam-e-c1-1",
+      "1sam-e-c1-2",
+      "1sam-e-c2-1",
+      "1sam-e-c2-2",
+      "1sam-e-c2-3",
+      "1sam-e-c3-1",
+      "1sam-e-c3-2",
+      "1sam-e-c4-1",
+      "1sam-e-c4-2",
+      "1sam-e-c4-3",
+      "1sam-e-c5-1",
+      "1sam-e-c5-2",
+      "1sam-e-c6-1",
+      "1sam-e-c6-2",
+      "1sam-e-c7-1",
+      "1sam-e-c7-2",
+      "1sam-e-c7-3"
+    ]
+  },
+  {
+    "id": "1sam-deck-saul-king",
+    "book": "1-samuel",
+    "name": "Saul Becomes King and Is Rejected",
+    "cardEventIds": [
+      "1sam-e-c8-1",
+      "1sam-e-c8-2",
+      "1sam-e-c9-1",
+      "1sam-e-c9-2",
+      "1sam-e-c10-1",
+      "1sam-e-c10-2",
+      "1sam-e-c10-3",
+      "1sam-e-c11-1",
+      "1sam-e-c11-2",
+      "1sam-e-c12-1",
+      "1sam-e-c12-2",
+      "1sam-e-c13-1",
+      "1sam-e-c13-2",
+      "1sam-e-c14-1",
+      "1sam-e-c14-2",
+      "1sam-e-c14-3",
+      "1sam-e-c15-1",
+      "1sam-e-c15-2",
+      "1sam-e-c15-3"
+    ]
+  },
+  {
+    "id": "1sam-deck-david-rises",
+    "book": "1-samuel",
+    "name": "David Rises in Saul's Court",
+    "cardEventIds": [
+      "1sam-e-c16-1",
+      "1sam-e-c16-2",
+      "1sam-e-c16-3",
+      "1sam-e-c17-1",
+      "1sam-e-c17-2",
+      "1sam-e-c18-1",
+      "1sam-e-c18-2",
+      "1sam-e-c18-3",
+      "1sam-e-c19-1",
+      "1sam-e-c19-2",
+      "1sam-e-c19-3",
+      "1sam-e-c20-1",
+      "1sam-e-c20-2"
+    ]
+  },
+  {
+    "id": "1sam-deck-david-fugitive",
+    "book": "1-samuel",
+    "name": "David the Fugitive",
+    "cardEventIds": [
+      "1sam-e-c21-1",
+      "1sam-e-c21-2",
+      "1sam-e-c22-1",
+      "1sam-e-c22-2",
+      "1sam-e-c22-3",
+      "1sam-e-c23-1",
+      "1sam-e-c23-2",
+      "1sam-e-c23-3",
+      "1sam-e-c24-1",
+      "1sam-e-c24-2",
+      "1sam-e-c25-1",
+      "1sam-e-c25-2",
+      "1sam-e-c25-3",
+      "1sam-e-c26-1",
+      "1sam-e-c26-2",
+      "1sam-e-c27-1",
+      "1sam-e-c27-2"
+    ]
+  },
+  {
+    "id": "1sam-deck-saul-death",
+    "book": "1-samuel",
+    "name": "The Fall of Saul",
+    "cardEventIds": [
+      "1sam-e-c28-1",
+      "1sam-e-c28-2",
+      "1sam-e-c29-1",
+      "1sam-e-c30-1",
+      "1sam-e-c30-2",
+      "1sam-e-c30-3",
+      "1sam-e-c31-1",
+      "1sam-e-c31-2"
+    ]
+  }
+]

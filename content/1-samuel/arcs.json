@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1sam-arc-birth-call",
+    "book": "1-samuel",
+    "name": "Samuel's Birth and Call",
+    "startChapter": 1,
+    "endChapter": 3,
+    "summary": "Hannah prays for a son and dedicates baby Samuel to the LORD at Shiloh, where he grows up serving under Eli the priest until the LORD calls him directly in the night."
+  },
+  {
+    "id": "1sam-arc-ark",
+    "book": "1-samuel",
+    "name": "The Ark Is Captured and Returned",
+    "startChapter": 4,
+    "endChapter": 7,
+    "summary": "Israel loses the ark of the covenant to the Philistines in battle and Eli's household falls, but the ark brings disaster on its captors until it is sent home and Samuel leads Israel to victory at Mizpah."
+  },
+  {
+    "id": "1sam-arc-king-demanded",
+    "book": "1-samuel",
+    "name": "Israel Asks for a King",
+    "startChapter": 8,
+    "endChapter": 12,
+    "summary": "The elders of Israel demand a king like the other nations, and Saul is anointed, chosen by lot, and confirmed as king before Samuel delivers a farewell warning about serving the LORD faithfully."
+  },
+  {
+    "id": "1sam-arc-saul-rejected",
+    "book": "1-samuel",
+    "name": "Saul Disobeys and Is Rejected",
+    "startChapter": 13,
+    "endChapter": 15,
+    "summary": "Saul's impatience at Gilgal, his son Jonathan's daring raid, and Saul's failure to fully destroy the Amalekites together cost Saul the LORD's favor and cost his family the throne."
+  },
+  {
+    "id": "1sam-arc-david-rises",
+    "book": "1-samuel",
+    "name": "David Rises in Saul's Court",
+    "startChapter": 16,
+    "endChapter": 20,
+    "summary": "David is anointed in secret, kills the giant Goliath, becomes Jonathan's closest friend, and rises to fame in Saul's court until Saul's jealousy turns into repeated attempts on his life."
+  },
+  {
+    "id": "1sam-arc-david-fugitive",
+    "book": "1-samuel",
+    "name": "David Flees from Saul",
+    "startChapter": 21,
+    "endChapter": 27,
+    "summary": "David spends years on the run from Saul, gathering a band of followers, sparing Saul's life twice in the wilderness, and finally taking refuge among the Philistines to escape Saul's relentless pursuit."
+  },
+  {
+    "id": "1sam-arc-saul-death",
+    "book": "1-samuel",
+    "name": "Saul's Final Days",
+    "startChapter": 28,
+    "endChapter": 31,
+    "summary": "Saul consults a medium at Endor on the eve of battle, David is turned away from the Philistine army, and Saul and his sons die at Mount Gilboa as the Philistines rout Israel."
+  }
+]
