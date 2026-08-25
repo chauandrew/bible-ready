@@ -466,35 +466,6 @@ halo (`box-shadow`, selected stops only), since size/z-index alone weren't
 enough to make "this one's selected" obviously readable against a cluster of
 same-color dots from that character's other stops.
 
-**There used to be per-character route lines and direction arrows between
-stops; both were removed as visual noise once the background place labels
-below existed to carry the "where is this, relative to what" context
-instead.** A dense, heavily-overlapping story (three characters criss-
-crossing the hill country in 1 Samuel, say) turned into a tangle of
-same-colored lines that were harder to read than the plain dots, and the
-per-segment direction arrows added detail without adding orientation. See
-git history for the removed `arrowPoints()`/`JourneyMapLine` implementation
-if a future journey turns out to need one of them back.
-
-**Background place labels give general orientation (major cities, seas,
-rivers) without cluttering the interactive stops.** `components/maps/geo/
-places.json` is a small, hand-authored, book-agnostic reference list — each
-entry a `{ id, name, lat, lng, kind: "city" | "water", eras: string[] }` —
-separate from `journeys.json`'s actual stops (which are researched
-per-event, not general reference points; see below). `Journey.era`
-(`content/schema.ts`) is a free-form string, not an enum, since new eras get
-added as new books do rather than decided up front (`"patriarchs"` for
-Genesis, `"united-kingdom"` for 1-2 Samuel so far). `JourneyMap.tsx`'s
-`placesGeoJSON()` shows a place only when its own `eras` list includes the
-journey's era, so the same shared list serves every journey without
-per-journey authoring — Jerusalem shows on the Samuel maps but not on
-Genesis's, since it isn't in `"patriarchs"`. Cities render as a small muted
-dot plus a left-anchored label; water features (seas, rivers) render as
-italic text only, no dot, since they're areas/lines rather than points. Both
-are plain MapLibre symbol layers with no click handler — purely background
-context, never competing with the interactive stop markers layered on top as
-DOM elements.
-
 **`JourneyStop.place` is authored independently of `Event.place`, on
 purpose.** Most stops correspond to an event that already had `Event.place`
 set (see the content authoring rule above), but a few intentionally add a
@@ -522,28 +493,70 @@ both filters the map to their path and jumps straight to their first stop —
 that's what makes reaching Joseph one click instead of walking the whole
 family's chapters in order.
 
-**The map filters to one character's path at a time by default, following
-whichever character owns the currently selected stop, not requiring a chip
-click first.** `effectiveCharacterId` in `JourneyExplorer` is `activeCharacterId`
-(an explicit chip pin) when set, falling back to the selected stop's own
-`characterIds[0]` otherwise — so stepping through the full chronological list
-with Prev/Next or the arrow keys (which is *not* restricted to one
-character; see `navigable`, still keyed off the raw pin) auto-highlights
-each stop's own character as you go, without an extra click. A stop shared
-by two characters (Jacob and Joseph reuniting in Goshen) picks its
-first-listed `characterIds` entry as the one to auto-follow. Clicking the
-already-active chip un-pins it, returning to auto-follow rather than
-clearing the filter entirely — there's no "show everyone at once" mode,
-since that was the original default and turned out to be unreadable with
-four overlapping paths. Off-path stops are hidden outright (`opacity: 0`,
-`pointer-events: none` in `JourneyMap.tsx`), not just faded, so only the
-active character's dots and route stay visible; the selected stop's own dot
-is always shown regardless of whose path it's on. One MapLibre-specific
-gotcha here: `Marker` tracks its own `_opacity` and rewrites
-`el.style.opacity` on every map move via its internal `_updateOpacity` —
-setting the DOM style directly gets silently clobbered the next time the
-map pans or zooms, so dot visibility must go through `marker.setOpacity()`
-instead.
+**Every stop is always visible, and only the selected one is highlighted —
+this replaced an earlier design that hid everyone but the "active"
+character's path.** That hiding made sense when the map also drew a route
+line per character (a same-color line connecting the visible dots, so
+"filtered to Jacob" read as an actual path); once the lines and direction
+arrows were removed as visual noise (see below), hiding most of the dots
+stopped being a feature and started being "why did most of the map
+disappear." `JourneyMap.tsx` now fades every non-selected stop to `0.55`
+opacity via `marker.setOpacity()` (not `el.style.opacity` directly — MapLibre's
+`Marker` tracks its own `_opacity` and rewrites the DOM style on every map
+move, silently clobbering a direct write the next time the map pans or
+zooms) and leaves the selected one fully opaque with the white halo — enough
+to make the current stop pop without hiding the rest of the story.
+`effectiveCharacterId` in `JourneyExplorer` (`activeCharacterId`, an explicit
+chip pin, falling back to the selected stop's own `characterIds[0]`) still
+exists, but now only drives the character chips' pressed state and which
+stops Prev/Next and the arrow keys step through (`navigable`) — it no longer
+touches what's drawn on the map.
+
+**There used to be per-character route lines and direction arrows between
+stops; both were removed as visual noise once the background place labels
+below existed to carry the "where is this, relative to what" context
+instead.** A dense, heavily-overlapping story (three characters criss-
+crossing the hill country in 1 Samuel) turned into a tangle of same-colored
+lines that were harder to read than the plain dots, and the per-segment
+direction arrows added detail without adding orientation. See git history
+for the removed `arrowPoints()`/`JourneyMapLine` implementation if a future
+journey turns out to need one of them back.
+
+**Background place labels give general orientation (major cities, seas,
+rivers, and neighboring peoples/regions) without cluttering the interactive
+stops.** `components/maps/geo/places.json` is a small, hand-authored,
+book-agnostic reference list — each entry a `{ id, name, lat, lng, kind:
+"city" | "water" | "region", eras: string[] }` — separate from
+`journeys.json`'s actual stops (which are researched per-event, not general
+reference points; see below). `Journey.era` (`content/schema.ts`) is a
+free-form string, not an enum, since new eras get added as new books do
+rather than decided up front (`"patriarchs"` for Genesis, `"united-kingdom"`
+for 1-2 Samuel so far). `JourneyMap.tsx`'s `placesGeoJSON()` shows a place
+only when its own `eras` list includes the journey's era, so the same shared
+list serves every journey without per-journey authoring — Jerusalem shows on
+the Samuel maps but not on Genesis's, since it isn't in `"patriarchs"`.
+Cities render as a small muted dot plus a left-anchored label; water
+features (seas, rivers) render as italic text only, no dot, since they're
+areas/lines rather than points; `"region"` (a people group's territory —
+Philistia, Ammon, Moab...) renders as larger, letter-spaced italic text with
+no dot either, since it labels an area, not a point. All three are plain
+MapLibre symbol layers with no click handler — purely background context,
+never competing with the interactive stop markers layered on top as DOM
+elements.
+
+**`ERA_BOUNDS` in `JourneyMap.tsx` overrides the default "fit to this
+journey's own stops" zoom for an era whose real story happens in a tight
+geographic cluster but whose readers need the wider regional context to
+orient themselves.** 1-2 Samuel's Saul/David years mostly play out within a
+day's walk of Jerusalem, so fitting the map to just those stops zoomed in
+far enough to lose the surrounding kingdoms (Philistia, Ammon, Moab, Edom,
+Aram) that the place and region labels exist to show. `"united-kingdom"`
+gets a fixed bounds roughly matching a standard Bible-atlas "united kingdom"
+map (Sidon/Damascus in the north to Kadesh-barnea in the south, the
+Mediterranean to Ammon); an era with no entry here just falls back to fitting
+the journey's own stops, which is already the right call for Genesis's
+patriarchs (Haran to Egypt is already a wide span with nothing to gain from
+overriding it).
 
 ## Theming
 

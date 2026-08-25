@@ -18,5 +18,11 @@
   { "id": "sea-of-galilee", "name": "the Sea of Galilee", "lat": 32.83, "lng": 35.58, "kind": "water", "eras": ["conquest", "judges", "united-kingdom", "divided-kingdom", "gospels"] },
   { "id": "jordan-river", "name": "the Jordan River", "lat": 32.1, "lng": 35.55, "kind": "water", "eras": ["patriarchs", "exodus", "conquest", "judges", "united-kingdom", "divided-kingdom", "gospels"] },
   { "id": "nile-river", "name": "the Nile", "lat": 30.05, "lng": 31.23, "kind": "water", "eras": ["patriarchs", "exodus"] },
-  { "id": "euphrates-river", "name": "the Euphrates", "lat": 36.5, "lng": 38.6, "kind": "water", "eras": ["patriarchs", "divided-kingdom", "exile"] }
+  { "id": "euphrates-river", "name": "the Euphrates", "lat": 36.5, "lng": 38.6, "kind": "water", "eras": ["patriarchs", "divided-kingdom", "exile"] },
+  { "id": "philistia", "name": "PHILISTIA", "lat": 31.62, "lng": 34.65, "kind": "region", "eras": ["patriarchs", "judges", "united-kingdom"] },
+  { "id": "ammon", "name": "AMMON", "lat": 31.95, "lng": 36.05, "kind": "region", "eras": ["united-kingdom"] },
+  { "id": "moab", "name": "MOAB", "lat": 31.15, "lng": 35.75, "kind": "region", "eras": ["united-kingdom"] },
+  { "id": "edom", "name": "EDOM", "lat": 30.55, "lng": 35.45, "kind": "region", "eras": ["united-kingdom"] },
+  { "id": "aram", "name": "ARAM", "lat": 33.35, "lng": 36.55, "kind": "region", "eras": ["united-kingdom"] },
+  { "id": "amalek", "name": "AMALEK", "lat": 30.55, "lng": 34.55, "kind": "region", "eras": ["united-kingdom"] }
 ]

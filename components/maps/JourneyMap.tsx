@@ -20,9 +20,23 @@ import places from "./geo/places.json";
  * why this replaced an earlier raster-image approach.
  */
 const PALETTE = {
-  light: { water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac", label: "#6b6252", waterLabel: "#3c6e8f" },
-  dark: { water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89", label: "#a89f8c", waterLabel: "#7fa8c2" },
+  light: { water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac", label: "#6b6252", waterLabel: "#3c6e8f", regionLabel: "#a1483f" },
+  dark: { water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89", label: "#a89f8c", waterLabel: "#7fa8c2", regionLabel: "#d98f86" },
 } as const;
+
+/**
+ * Overrides the auto-fit-to-stops default for an era whose story happens in
+ * a tight geographic cluster (1-2 Samuel's Saul/David years, mostly within
+ * a day's walk of Jerusalem) but whose readers need the wider "kingdom and
+ * its neighbors" context to orient themselves — roughly Sidon/Damascus in
+ * the north to Kadesh-barnea in the south, the Mediterranean to Ammon.
+ * Absent here, an era just falls back to fitting the journey's own stops
+ * (Genesis's patriarchs already span Haran to Egypt, so that default is
+ * already the right "zoomed out" view — no override needed).
+ */
+const ERA_BOUNDS: Record<string, LngLatBounds> = {
+  "united-kingdom": [[33.9, 30.4], [36.4, 33.7]],
+};
 
 function currentTheme(): "light" | "dark" {
   if (typeof document === "undefined") return "light";
@@ -34,11 +48,11 @@ interface Place {
   name: string;
   lat: number;
   lng: number;
-  kind: "city" | "water";
+  kind: "city" | "water" | "region";
   eras: string[];
 }
 
-function placesGeoJSON(kind: "city" | "water", era: string): GeoJSON.FeatureCollection {
+function placesGeoJSON(kind: Place["kind"], era: string): GeoJSON.FeatureCollection {
   const features: GeoJSON.Feature[] = (places as Place[])
     .filter((p) => p.kind === kind && p.eras.includes(era))
     .map((p) => ({
@@ -55,7 +69,6 @@ export interface JourneyMapStop {
   lng: number;
   color: string;
   selected: boolean;
-  dimmed: boolean;
   label: string;
 }
 
@@ -101,6 +114,7 @@ export default function JourneyMap({
     if (!containerRef.current) return;
     const markers = markersRef.current;
     const pal = PALETTE[currentTheme()];
+    const effectiveBounds = ERA_BOUNDS[era] ?? bounds;
 
     // Turbopack doesn't emit maplibre-gl's worker as a working sibling asset
     // — its bundled worker fails on its own first import and the map's
@@ -120,6 +134,7 @@ export default function JourneyMap({
           lakes: { type: "geojson", data: lakes as GeoJSON.FeatureCollection },
           "places-water": { type: "geojson", data: placesGeoJSON("water", era) },
           "places-city": { type: "geojson", data: placesGeoJSON("city", era) },
+          "places-region": { type: "geojson", data: placesGeoJSON("region", era) },
         },
         layers: [
           { id: "bg", type: "background", paint: { "background-color": pal.water } },
@@ -128,11 +143,19 @@ export default function JourneyMap({
           { id: "rivers-line", type: "line", source: "rivers", paint: { "line-color": pal.river, "line-width": 1.2 } },
           { id: "lakes-fill", type: "fill", source: "lakes", paint: { "fill-color": pal.water } },
           { id: "lakes-outline", type: "line", source: "lakes", paint: { "line-color": pal.river, "line-width": 0.6 } },
-          // Background orientation labels — major cities and physical
-          // geography (seas, rivers) relevant to this journey's era, from
-          // the shared reference list. Purely informational: no icon, no
-          // click handler, so they never compete with the interactive stop
-          // markers drawn on top as DOM elements.
+          // Background orientation labels — major cities, physical
+          // geography (seas, rivers), and neighboring peoples/regions
+          // relevant to this journey's era, from the shared reference list.
+          // Purely informational: no icon, no click handler, so they never
+          // compete with the interactive stop markers drawn on top as DOM
+          // elements.
+          {
+            id: "places-region-label",
+            type: "symbol",
+            source: "places-region",
+            layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Italic"], "text-size": 13, "text-letter-spacing": 0.05 },
+            paint: { "text-color": pal.regionLabel, "text-halo-color": pal.land, "text-halo-width": 1 },
+          },
           {
             id: "places-water-label",
             type: "symbol",
@@ -161,9 +184,9 @@ export default function JourneyMap({
           },
         ],
       },
-      bounds,
+      bounds: effectiveBounds,
       fitBoundsOptions: { padding: 24 },
-      maxBounds: padBounds(bounds, 0.6),
+      maxBounds: padBounds(effectiveBounds, 0.6),
       attributionControl: { compact: true },
     });
     map.addControl(new NavigationControl({ showCompass: false }), "top-right");
@@ -219,6 +242,8 @@ export default function JourneyMap({
       map.setPaintProperty("rivers-line", "line-color", pal.river);
       map.setPaintProperty("lakes-fill", "fill-color", pal.water);
       map.setPaintProperty("lakes-outline", "line-color", pal.river);
+      map.setPaintProperty("places-region-label", "text-color", pal.regionLabel);
+      map.setPaintProperty("places-region-label", "text-halo-color", pal.land);
       map.setPaintProperty("places-water-label", "text-color", pal.waterLabel);
       map.setPaintProperty("places-water-label", "text-halo-color", pal.water);
       map.setPaintProperty("places-city-label", "text-color", pal.label);
@@ -269,12 +294,16 @@ export default function JourneyMap({
       // hard to tell from "just a stop on the route" — a white halo ring
       // reads clearly regardless of the line or terrain color underneath.
       el.style.boxShadow = stop.selected ? "0 0 0 3px rgba(255, 248, 234, 0.9), 0 1px 4px rgba(0, 0, 0, 0.45)" : "none";
+      // Every stop stays visible and clickable all the time — with the
+      // per-character lines gone, a dense journey (three overlapping paths
+      // in 1 Samuel) reads better as "all the dots, softened" than as
+      // "most of the dots hidden." The unselected majority is just faded a
+      // little (not grayscale) so the current stop still pops.
       // Marker owns el.style.opacity itself — it rewrites it on every map
       // move via its own tracked _opacity (see setOpacity in maplibre-gl),
       // clobbering a direct el.style.opacity write the next time the map
       // pans or zooms. Going through setOpacity keeps our value authoritative.
-      marker.setOpacity(stop.dimmed ? "0" : "1");
-      el.style.pointerEvents = stop.dimmed ? "none" : "auto";
+      marker.setOpacity(stop.selected ? "1" : "0.55");
       el.style.zIndex = stop.selected ? "10" : "1";
     }
 

@@ -96,21 +96,13 @@ export default function JourneyExplorer({
   // path without an extra click — a joint stop (both characters present)
   // just picks its first-listed character as the one to highlight.
   const effectiveCharacterId = activeCharacterId ?? selected?.characterIds[0] ?? null;
-  // Only the effective character's path/dots stay visible; everyone else's
-  // dots are hidden outright, not just faded, so the current person's route
-  // reads clearly. The selected stop itself is never hidden, even if it
-  // belongs to someone else, so navigating to it never hides its own dot.
-  const stopDimmed = (stop: JourneyStopView) => {
-    if (stop.id === selected?.id) return false;
-    return effectiveCharacterId !== null && !stop.characterIds.includes(effectiveCharacterId);
-  };
+
   const mapStops: JourneyMapStop[] = sorted.map((s) => ({
     id: s.id,
     lat: s.lat,
     lng: s.lng,
     color: characterById.get(s.characterIds[0])?.color ?? "#888",
     selected: s.id === selected?.id,
-    dimmed: stopDimmed(s),
     label: `${s.order}. ${s.eventName}, ${s.place}`,
   }));
 
