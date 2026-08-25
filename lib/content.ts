@@ -31,6 +31,24 @@ import johnEventsJson from "@/content/john/events.json";
 import johnQuotesJson from "@/content/john/quotes.json";
 import johnQuestionsJson from "@/content/john/questions.json";
 import johnDecksJson from "@/content/john/decks.json";
+import samuel1BookJson from "@/content/1-samuel/book.json";
+import samuel1ArcsJson from "@/content/1-samuel/arcs.json";
+import samuel1ChaptersJson from "@/content/1-samuel/chapters.json";
+import samuel1PeopleJson from "@/content/1-samuel/people.json";
+import samuel1EventsJson from "@/content/1-samuel/events.json";
+import samuel1QuotesJson from "@/content/1-samuel/quotes.json";
+import samuel1QuestionsJson from "@/content/1-samuel/questions.json";
+import samuel1DecksJson from "@/content/1-samuel/decks.json";
+import samuel1JourneysJson from "@/content/1-samuel/journeys.json";
+import samuel2BookJson from "@/content/2-samuel/book.json";
+import samuel2ArcsJson from "@/content/2-samuel/arcs.json";
+import samuel2ChaptersJson from "@/content/2-samuel/chapters.json";
+import samuel2PeopleJson from "@/content/2-samuel/people.json";
+import samuel2EventsJson from "@/content/2-samuel/events.json";
+import samuel2QuotesJson from "@/content/2-samuel/quotes.json";
+import samuel2QuestionsJson from "@/content/2-samuel/questions.json";
+import samuel2DecksJson from "@/content/2-samuel/decks.json";
+import samuel2JourneysJson from "@/content/2-samuel/journeys.json";
 import miscBookJson from "@/content/misc/book.json";
 import miscArcsJson from "@/content/misc/arcs.json";
 import miscChaptersJson from "@/content/misc/chapters.json";
@@ -104,6 +122,30 @@ const johnContent: BookContent = BookContentSchema.parse({
   decks: johnDecksJson,
 });
 
+const samuel1Content: BookContent = BookContentSchema.parse({
+  book: samuel1BookJson,
+  arcs: samuel1ArcsJson,
+  chapters: samuel1ChaptersJson,
+  people: samuel1PeopleJson,
+  events: samuel1EventsJson,
+  quotes: samuel1QuotesJson,
+  questions: samuel1QuestionsJson,
+  decks: samuel1DecksJson,
+  journeys: samuel1JourneysJson,
+});
+
+const samuel2Content: BookContent = BookContentSchema.parse({
+  book: samuel2BookJson,
+  arcs: samuel2ArcsJson,
+  chapters: samuel2ChaptersJson,
+  people: samuel2PeopleJson,
+  events: samuel2EventsJson,
+  quotes: samuel2QuotesJson,
+  questions: samuel2QuestionsJson,
+  decks: samuel2DecksJson,
+  journeys: samuel2JourneysJson,
+});
+
 const miscContent: BookContent = BookContentSchema.parse({
   book: miscBookJson,
   arcs: miscArcsJson,
@@ -121,6 +163,8 @@ const booksContent: Record<string, BookContent> = {
   [exodusContent.book.id]: exodusContent,
   [psalmsContent.book.id]: psalmsContent,
   [johnContent.book.id]: johnContent,
+  [samuel1Content.book.id]: samuel1Content,
+  [samuel2Content.book.id]: samuel2Content,
   [miscContent.book.id]: miscContent,
 };
 
@@ -135,7 +179,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "1-samuel", "2-samuel", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
