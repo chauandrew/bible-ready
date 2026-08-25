@@ -4,6 +4,7 @@
     "book": "1-samuel",
     "name": "Samuel, Saul, and David",
     "summary": "Follow the last judge of Israel, its first king, and the shepherd who would become its second king as their three paths cross again and again across the hill country of Benjamin and Judah.",
+    "era": "united-kingdom",
     "characters": [
       { "id": "1sam-samuel", "color": "#6b4fa0" },
       { "id": "1sam-saul", "color": "#a9432c" },

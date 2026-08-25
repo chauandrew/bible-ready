@@ -1,7 +1,8 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
-import JourneyMap, { type JourneyMapLine, type JourneyMapStop, type LngLatBounds } from "@/components/maps/JourneyMap";
+import JourneyMap, { type JourneyMapStop, type LngLatBounds } from "@/components/maps/JourneyMap";
 
 export interface JourneyStopView {
   id: string;
@@ -23,13 +24,17 @@ export interface JourneyCharacterView {
 }
 
 export default function JourneyExplorer({
+  bookId,
   bookName,
+  era,
   journeyName,
   journeySummary,
   characters,
   stops,
 }: {
+  bookId: string;
   bookName: string;
+  era: string;
   journeyName: string;
   journeySummary: string;
   characters: JourneyCharacterView[];
@@ -99,8 +104,6 @@ export default function JourneyExplorer({
     if (stop.id === selected?.id) return false;
     return effectiveCharacterId !== null && !stop.characterIds.includes(effectiveCharacterId);
   };
-  const lineDimmed = (characterId: string) => effectiveCharacterId !== null && characterId !== effectiveCharacterId;
-
   const mapStops: JourneyMapStop[] = sorted.map((s) => ({
     id: s.id,
     lat: s.lat,
@@ -111,13 +114,6 @@ export default function JourneyExplorer({
     label: `${s.order}. ${s.eventName}, ${s.place}`,
   }));
 
-  const mapLines: JourneyMapLine[] = characters.map((c) => ({
-    characterId: c.id,
-    color: c.color,
-    coordinates: sorted.filter((s) => s.characterIds.includes(c.id)).map((s) => [s.lng, s.lat] as [number, number]),
-    dimmed: lineDimmed(c.id),
-  }));
-
   const bounds: LngLatBounds = useMemo(() => {
     const lats = stops.map((s) => s.lat);
     const lngs = stops.map((s) => s.lng);
@@ -126,7 +122,9 @@ export default function JourneyExplorer({
 
   return (
     <main className="container-wide" style={{ paddingBottom: "0.75rem" }}>
-      <p className="eyebrow" style={{ marginTop: "0.5rem", marginBottom: "0.15rem" }}>{bookName} · Story map</p>
+      <p className="eyebrow" style={{ marginTop: "0.5rem", marginBottom: "0.15rem" }}>
+        <Link href={`/${bookId}`} style={{ color: "inherit" }}>{bookName}</Link> · Story map
+      </p>
       <h1 className="page-title" style={{ marginTop: 0, marginBottom: "0.2rem", fontSize: "1.6rem" }}>{journeyName}</h1>
       <p className="page-lede" style={{ marginBottom: "0.75rem", fontSize: "0.85rem" }}>{journeySummary}</p>
 
@@ -211,14 +209,10 @@ export default function JourneyExplorer({
         {/* Map */}
         <div className="journey-map-col">
           <div className="journey-map-container" aria-label={`Map of ${journeyName}`}>
-            <JourneyMap stops={mapStops} lines={mapLines} bounds={bounds} onSelectStop={setSelectedId} />
+            <JourneyMap stops={mapStops} era={era} bounds={bounds} onSelectStop={setSelectedId} />
           </div>
           <p style={{ fontFamily: "var(--font-sans)", fontSize: "0.65rem", color: "var(--text-muted)", marginTop: "0.2rem", flexShrink: 0 }}>
-            Physical geography from{" "}
-            <a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>
-              Natural Earth
-            </a>
-            {" "}(public domain). Journey stops researched individually — see each stop for notes where a site&apos;s identification is uncertain.
+            Journey stops researched individually — see each stop for notes where a site&apos;s identification is uncertain.
           </p>
         </div>
       </div>

@@ -460,31 +460,40 @@ stop's marker is a plain DOM element (MapLibre's `Marker` takes any HTML
 element, not just a canvas draw call), so `JourneyMap.tsx` sets `el.style.
 zIndex` directly — `10` for the selected stop, `1` otherwise — instead of
 needing to control paint order the way the old SVG version did. `sorted`
-(chronological order) is still what drives the sidebar list, the
-per-character lines, and Prev/Next; only the marker's own z-index changes
-with selection. It also gets a white halo (`box-shadow`, selected stops
-only) — a same-color route line can run right through a same-color dot, and
-size/z-index alone weren't enough to make "this one's selected" obviously
-readable against that; the active line's own opacity is also capped at 0.75
-(down from a fully solid line) so the dot on top of it stays the visually
-brighter element.
+(chronological order) is still what drives the sidebar list and Prev/Next;
+only the marker's own z-index changes with selection. It also gets a white
+halo (`box-shadow`, selected stops only), since size/z-index alone weren't
+enough to make "this one's selected" obviously readable against a cluster of
+same-color dots from that character's other stops.
 
-**Direction arrows mark travel between stops, one per segment, not evenly
-spaced along the whole line.** A single small triangle icon is registered
-once via `map.addImage(..., {sdf: true})` — a plain filled shape, not a true
-distance field, but sdf mode still lets every character's arrow layer tint
-the same icon through `icon-color` instead of needing one image per color.
-`arrowPoints()` places one icon at the midpoint of each consecutive
-stop-to-stop pair with a `bearing` property (planar approximation, cos-
-corrected for longitude, not full great-circle — plenty accurate for a
-decorative arrow at this region's scale), and each arrow layer reads
-`icon-rotate: ["get", "bearing"]` off that so it's the geometry driving the
-angle, not a fixed set of pre-rotated images. Deliberately one arrow *per
-segment* rather than MapLibre's built-in `symbol-placement: "line"` (which
-repeats an icon at a fixed pixel spacing along the whole line) — spacing
-would put arrows whether or not they land near an actual stop-to-stop
-segment, where the ask was specifically "which way between these two
-bubbles," not a general flow indicator.
+**There used to be per-character route lines and direction arrows between
+stops; both were removed as visual noise once the background place labels
+below existed to carry the "where is this, relative to what" context
+instead.** A dense, heavily-overlapping story (three characters criss-
+crossing the hill country in 1 Samuel, say) turned into a tangle of
+same-colored lines that were harder to read than the plain dots, and the
+per-segment direction arrows added detail without adding orientation. See
+git history for the removed `arrowPoints()`/`JourneyMapLine` implementation
+if a future journey turns out to need one of them back.
+
+**Background place labels give general orientation (major cities, seas,
+rivers) without cluttering the interactive stops.** `components/maps/geo/
+places.json` is a small, hand-authored, book-agnostic reference list — each
+entry a `{ id, name, lat, lng, kind: "city" | "water", eras: string[] }` —
+separate from `journeys.json`'s actual stops (which are researched
+per-event, not general reference points; see below). `Journey.era`
+(`content/schema.ts`) is a free-form string, not an enum, since new eras get
+added as new books do rather than decided up front (`"patriarchs"` for
+Genesis, `"united-kingdom"` for 1-2 Samuel so far). `JourneyMap.tsx`'s
+`placesGeoJSON()` shows a place only when its own `eras` list includes the
+journey's era, so the same shared list serves every journey without
+per-journey authoring — Jerusalem shows on the Samuel maps but not on
+Genesis's, since it isn't in `"patriarchs"`. Cities render as a small muted
+dot plus a left-anchored label; water features (seas, rivers) render as
+italic text only, no dot, since they're areas/lines rather than points. Both
+are plain MapLibre symbol layers with no click handler — purely background
+context, never competing with the interactive stop markers layered on top as
+DOM elements.
 
 **`JourneyStop.place` is authored independently of `Event.place`, on
 purpose.** Most stops correspond to an event that already had `Event.place`

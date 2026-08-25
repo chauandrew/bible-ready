@@ -4,6 +4,7 @@
     "book": "2-samuel",
     "name": "David's Reign",
     "summary": "Follow David from the news of Saul's death through his rise to the throne of a united Israel, his worst sin, and the family rebellion that drove him from his own capital and back again.",
+    "era": "united-kingdom",
     "characters": [
       { "id": "2sam-david", "color": "#2f6f4f" }
     ],

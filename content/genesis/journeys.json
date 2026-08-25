@@ -4,6 +4,7 @@
     "book": "genesis",
     "name": "Abraham to Joseph",
     "summary": "Follow four generations of one family across the ancient Near East, from Abraham's call in Haran to Joseph's palace in Egypt.",
+    "era": "patriarchs",
     "characters": [
       { "id": "abraham", "color": "#a9432c" },
       { "id": "isaac", "color": "#3c6e8f" },
