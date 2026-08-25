@@ -223,6 +223,59 @@ export const DeckSchema = z.object({
 export type Deck = z.infer<typeof DeckSchema>;
 
 // ---------------------------------------------------------------------------
+// Journeys — an event-by-event map walkthrough of a character arc that spans
+// multiple existing arcs (e.g. Abraham → Isaac → Jacob → Joseph across
+// Genesis 12-50). Optional per book: most books have none.
+// ---------------------------------------------------------------------------
+
+export const JourneyCharacterSchema = z.object({
+  /** A Person.id from this book's people.json. */
+  id: z.string(),
+  /** Hex color for this character's marker/path on the map. Fixed (not a CSS
+   * variable) — distinct per-character colors need to stay legible and
+   * distinguishable regardless of the map's own light/dark styling. */
+  color: z.string().regex(/^#[0-9a-fA-F]{6}$/),
+});
+export type JourneyCharacter = z.infer<typeof JourneyCharacterSchema>;
+
+export const JourneyStopSchema = z.object({
+  id: z.string(),
+  /** Sequence within the journey — display and prev/next order, not the
+   * underlying Event.order (which is only unique within one chapter). */
+  order: z.number().int().nonnegative(),
+  /** An Event.id from this book's events.json — the stop's citation, summary,
+   * and people are read from there rather than re-authored here. */
+  eventId: z.string(),
+  /** Which character(s) this stop belongs to — whose path it's plotted on.
+   * A stop where paths meet (e.g. Jacob and Joseph reuniting) lists both. */
+  characterIds: z.array(z.string()).min(1),
+  /** Label shown on the map pin. Usually matches the underlying Event.place. */
+  place: z.string(),
+  /** Real-world coordinates, researched per place (Wikidata/Pleiades/academic
+   * identification of the archaeological site) — not estimated against a map
+   * image. See DESIGN.md's Journeys section for why this replaced pixel
+   * coordinates on a raster map, and where each of these numbers came from. */
+  lat: z.number().min(-90).max(90),
+  lng: z.number().min(-180).max(180),
+  /** Set when the site's identification is genuinely disputed or approximate
+   * in the scholarship (not just "I'm not 100% sure") — e.g. Nahor's city
+   * (no excavated site), Peniel (identification questioned since the 1970s),
+   * Goshen (a region, not a single site). Shown to the user, not hidden. */
+  locationNote: z.string().optional(),
+});
+export type JourneyStop = z.infer<typeof JourneyStopSchema>;
+
+export const JourneySchema = z.object({
+  id: z.string(),
+  book: BookIdSchema,
+  name: z.string(),
+  summary: z.string(),
+  characters: z.array(JourneyCharacterSchema).min(1),
+  stops: z.array(JourneyStopSchema).min(1),
+});
+export type Journey = z.infer<typeof JourneySchema>;
+
+// ---------------------------------------------------------------------------
 // Whole-book content bundle (what lib/content.ts loads per book)
 // ---------------------------------------------------------------------------
 
@@ -235,5 +288,6 @@ export const BookContentSchema = z.object({
   quotes: z.array(QuoteSchema),
   questions: z.array(AuthoredQuestionSchema),
   decks: z.array(DeckSchema),
+  journeys: z.array(JourneySchema).default([]),
 });
 export type BookContent = z.infer<typeof BookContentSchema>;
