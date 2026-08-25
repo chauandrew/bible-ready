@@ -270,6 +270,14 @@ export const JourneySchema = z.object({
   book: BookIdSchema,
   name: z.string(),
   summary: z.string(),
+  /** Which era of the wider biblical story this journey belongs to
+   * (`"patriarchs"`, `"united-kingdom"`, ...) — not an enum, since new eras
+   * get added as new books do, not decided up front. Drives which entries
+   * from `components/maps/geo/places.json`'s shared reference-geography list
+   * (major cities, seas, rivers) show as background labels on this journey's
+   * map: a place shows when this era is in its own `eras` list. See
+   * DESIGN.md's Journeys section. */
+  era: z.string(),
   characters: z.array(JourneyCharacterSchema).min(1),
   stops: z.array(JourneyStopSchema).min(1),
 });

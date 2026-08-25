@@ -478,5 +478,20 @@
     "correctIndex": 1,
     "citation": { "book": "1-samuel", "chapter": 20 },
     "explanation": "David and Jonathan weep together and renew their covenant one final time before David leaves to live as a fugitive."
+  },
+  {
+    "id": "1sam-aq-theme-10",
+    "book": "1-samuel",
+    "category": "theme",
+    "prompt": "What does the text say about how often the LORD was speaking to Israel right before he calls out to young Samuel?",
+    "options": [
+      "The word of the LORD was rare, and visions from him were infrequent",
+      "Prophets filled the land, and visions from the LORD came to Israel every day",
+      "The LORD had stopped speaking to Israel entirely since the days of Moses",
+      "Every household in Israel had its own priest who heard from the LORD directly"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-samuel", "chapter": 3 },
+    "explanation": "1 Samuel 3 opens by noting how rare the word of the LORD and visions from him had become, which makes his call to Samuel that night stand out."
   }
 ]

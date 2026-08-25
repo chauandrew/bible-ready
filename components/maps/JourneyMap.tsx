@@ -1,77 +1,94 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl, type GeoJSONSource } from "maplibre-gl";
+import { Map as MapLibreMap, Marker, NavigationControl, setWorkerUrl } from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import land from "./geo/land.json";
 import rivers from "./geo/rivers.json";
 import lakes from "./geo/lakes.json";
+import places from "./geo/places.json";
+import regions from "./geo/regions.json";
 
 /**
  * No tile server, no API key, no live third-party dependency — the only
  * "map" data is the tiny bundled GeoJSON in ./geo (Natural Earth 1:50m land,
  * rivers, and lakes, clipped to this journey's region and simplified; public
- * domain). MapLibre here is purely a renderer/interaction engine over data
- * we ship ourselves, which is what keeps this fully static and offline like
- * the rest of the app. See DESIGN.md's Journeys section for why this
- * replaced an earlier raster-image approach.
+ * domain) plus ./geo/places.json (a small hand-authored, book-agnostic list
+ * of reference cities/seas/rivers/neighboring-region labels — see
+ * `placesGeoJSON` below) and ./geo/regions.json (a rough territory outline
+ * per era — see `regionsGeoJSON`). MapLibre here is purely a renderer/interaction
+ * engine over data we ship ourselves, which is what keeps this fully static
+ * and offline like the rest of the app. See DESIGN.md's Journeys section for
+ * why this replaced an earlier raster-image approach.
  */
 const PALETTE = {
-  light: { water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac" },
-  dark: { water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89" },
+  light: {
+    water: "#a9cdd9", land: "#efe6d0", border: "#c2b28e", river: "#5f93ac", label: "#6b6252", waterLabel: "#3c6e8f",
+    regionLabel: "#a1483f", kingdomFill: "#c9a227", kingdomOutline: "#8a6d1f",
+  },
+  dark: {
+    water: "#122a3d", land: "#2a2620", border: "#463f31", river: "#3f6f89", label: "#a89f8c", waterLabel: "#7fa8c2",
+    regionLabel: "#d98f86", kingdomFill: "#d9b64f", kingdomOutline: "#e0c876",
+  },
 } as const;
+
+/**
+ * Overrides the auto-fit-to-stops default for an era whose story happens in
+ * a tight geographic cluster (1-2 Samuel's Saul/David years, mostly within
+ * a day's walk of Jerusalem) but whose readers need the wider "kingdom and
+ * its neighbors" context to orient themselves — roughly Sidon/Damascus in
+ * the north to Kadesh-barnea in the south, the Mediterranean to Ammon.
+ * Absent here, an era just falls back to fitting the journey's own stops
+ * (Genesis's patriarchs already span Haran to Egypt, so that default is
+ * already the right "zoomed out" view — no override needed).
+ */
+const ERA_BOUNDS: Record<string, LngLatBounds> = {
+  "united-kingdom": [[33.9, 30.4], [36.4, 33.7]],
+};
 
 function currentTheme(): "light" | "dark" {
   if (typeof document === "undefined") return "light";
   return document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
 }
 
-// A small filled triangle, registered once as an SDF image so each
-// character's arrow layer can tint it via icon-color instead of needing one
-// icon per color. Plain solid alpha (not a true distance field) still
-// renders as a crisp flat-color shape under sdf mode — fine at this size.
-const ARROW_ICON_ID = "journey-arrow";
-const ARROW_ICON_SIZE = 20;
-
-function buildArrowIcon(): { width: number; height: number; data: Uint8ClampedArray } {
-  const canvas = document.createElement("canvas");
-  canvas.width = ARROW_ICON_SIZE;
-  canvas.height = ARROW_ICON_SIZE;
-  const ctx = canvas.getContext("2d") as CanvasRenderingContext2D;
-  ctx.fillStyle = "#000";
-  ctx.beginPath();
-  ctx.moveTo(10, 1);
-  ctx.lineTo(18, 18);
-  ctx.lineTo(10, 13);
-  ctx.lineTo(2, 18);
-  ctx.closePath();
-  ctx.fill();
-  const { data } = ctx.getImageData(0, 0, ARROW_ICON_SIZE, ARROW_ICON_SIZE);
-  return { width: ARROW_ICON_SIZE, height: ARROW_ICON_SIZE, data };
+interface Place {
+  id: string;
+  name: string;
+  lat: number;
+  lng: number;
+  kind: "city" | "water" | "region";
+  eras: string[];
 }
 
-// One arrow at the midpoint of each consecutive stop-to-stop segment, rotated
-// to face the direction of travel — not evenly spaced along the whole line,
-// so there's exactly one per "between these two bubbles" as asked for,
-// rather than a repeating pattern that ignores where the stops actually are.
-function arrowPoints(coordinates: [number, number][]): GeoJSON.FeatureCollection {
-  const features: GeoJSON.Feature[] = [];
-  for (let i = 0; i < coordinates.length - 1; i++) {
-    const [lng1, lat1] = coordinates[i];
-    const [lng2, lat2] = coordinates[i + 1];
-    const midLat = (lat1 + lat2) / 2;
-    // Longitude degrees shrink relative to latitude degrees away from the
-    // equator — this correction keeps the bearing visually accurate instead
-    // of skewing east-west segments at this region's latitude.
-    const dx = (lng2 - lng1) * Math.cos((midLat * Math.PI) / 180);
-    const dy = lat2 - lat1;
-    const bearing = (Math.atan2(dx, dy) * 180) / Math.PI;
-    features.push({
+function placesGeoJSON(kind: Place["kind"], era: string): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = (places as Place[])
+    .filter((p) => p.kind === kind && p.eras.includes(era))
+    .map((p) => ({
       type: "Feature",
-      properties: { bearing },
-      geometry: { type: "Point", coordinates: [(lng1 + lng2) / 2, midLat] },
-    });
-  }
+      properties: { name: p.name },
+      geometry: { type: "Point", coordinates: [p.lng, p.lat] },
+    }));
+  return { type: "FeatureCollection", features };
+}
+
+interface Region {
+  id: string;
+  name: string;
+  era: string;
+  ring: number[][];
+}
+
+/** A rough territory outline (see ./geo/regions.json) for the era's home
+ * kingdom — a single polygon per era at most, not the neighboring peoples
+ * (those stay simple point labels via `placesGeoJSON("region", era)`). */
+function regionsGeoJSON(era: string): GeoJSON.FeatureCollection {
+  const features: GeoJSON.Feature[] = (regions as Region[])
+    .filter((r) => r.era === era)
+    .map((r) => ({
+      type: "Feature",
+      properties: { name: r.name },
+      geometry: { type: "Polygon", coordinates: [r.ring] },
+    }));
   return { type: "FeatureCollection", features };
 }
 
@@ -81,15 +98,7 @@ export interface JourneyMapStop {
   lng: number;
   color: string;
   selected: boolean;
-  dimmed: boolean;
   label: string;
-}
-
-export interface JourneyMapLine {
-  characterId: string;
-  color: string;
-  coordinates: [number, number][];
-  dimmed: boolean;
 }
 
 /** [[minLng, minLat], [maxLng, maxLat]] */
@@ -101,19 +110,16 @@ function padBounds([[minLng, minLat], [maxLng, maxLat]]: LngLatBounds, factor: n
   return [[minLng - padLng, minLat - padLat], [maxLng + padLng, maxLat + padLat]];
 }
 
-// A LineString with zero coordinates is invalid GeoJSON (it needs at least
-// two positions) — an empty FeatureCollection is the well-formed way to say
-// "nothing to draw yet" for a character with fewer than two stops so far.
-const EMPTY_LINE: GeoJSON.FeatureCollection = { type: "FeatureCollection", features: [] };
-
 export default function JourneyMap({
   stops,
-  lines,
+  era,
   bounds,
   onSelectStop,
 }: {
   stops: JourneyMapStop[];
-  lines: JourneyMapLine[];
+  /** Which of `components/maps/geo/places.json`'s eras to show background
+   * city/water labels for — see `Journey.era` in content/schema.ts. */
+  era: string;
   bounds: LngLatBounds;
   onSelectStop: (id: string) => void;
 }) {
@@ -137,12 +143,7 @@ export default function JourneyMap({
     if (!containerRef.current) return;
     const markers = markersRef.current;
     const pal = PALETTE[currentTheme()];
-    const lineLayers = lines.map((l) => ({
-      id: `line-${l.characterId}`,
-      type: "line" as const,
-      source: `line-${l.characterId}`,
-      paint: { "line-color": l.color, "line-width": 2, "line-opacity": 0.12 },
-    }));
+    const effectiveBounds = ERA_BOUNDS[era] ?? bounds;
 
     // Turbopack doesn't emit maplibre-gl's worker as a working sibling asset
     // — its bundled worker fails on its own first import and the map's
@@ -160,7 +161,10 @@ export default function JourneyMap({
           land: { type: "geojson", data: land as GeoJSON.FeatureCollection },
           rivers: { type: "geojson", data: rivers as GeoJSON.FeatureCollection },
           lakes: { type: "geojson", data: lakes as GeoJSON.FeatureCollection },
-          ...Object.fromEntries(lines.map((l) => [`line-${l.characterId}`, { type: "geojson" as const, data: EMPTY_LINE }])),
+          "places-water": { type: "geojson", data: placesGeoJSON("water", era) },
+          "places-city": { type: "geojson", data: placesGeoJSON("city", era) },
+          "places-region": { type: "geojson", data: placesGeoJSON("region", era) },
+          kingdom: { type: "geojson", data: regionsGeoJSON(era) },
         },
         layers: [
           { id: "bg", type: "background", paint: { "background-color": pal.water } },
@@ -169,35 +173,61 @@ export default function JourneyMap({
           { id: "rivers-line", type: "line", source: "rivers", paint: { "line-color": pal.river, "line-width": 1.2 } },
           { id: "lakes-fill", type: "fill", source: "lakes", paint: { "fill-color": pal.water } },
           { id: "lakes-outline", type: "line", source: "lakes", paint: { "line-color": pal.river, "line-width": 0.6 } },
-          ...lineLayers,
+          // A rough territory tint for the era's home kingdom (see
+          // ./geo/regions.json's own `note` field for what this is and
+          // isn't) — a translucent fill plus a dashed outline, distinct
+          // from the water-blue palette so it doesn't read as a sea.
+          { id: "kingdom-fill", type: "fill", source: "kingdom", paint: { "fill-color": pal.kingdomFill, "fill-opacity": 0.16 } },
+          { id: "kingdom-outline", type: "line", source: "kingdom", paint: { "line-color": pal.kingdomOutline, "line-width": 1.4, "line-dasharray": [2, 2] } },
+          // Background orientation labels — major cities, physical
+          // geography (seas, rivers), and neighboring peoples/regions
+          // relevant to this journey's era, from the shared reference list.
+          // Purely informational: no icon, no click handler, so they never
+          // compete with the interactive stop markers drawn on top as DOM
+          // elements.
+          {
+            id: "places-region-label",
+            type: "symbol",
+            source: "places-region",
+            layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Italic"], "text-size": 13, "text-letter-spacing": 0.05 },
+            paint: { "text-color": pal.regionLabel, "text-halo-color": pal.land, "text-halo-width": 1 },
+          },
+          {
+            id: "places-water-label",
+            type: "symbol",
+            source: "places-water",
+            layout: { "text-field": ["get", "name"], "text-font": ["Noto Sans Italic"], "text-size": 11, "text-anchor": "center" },
+            paint: { "text-color": pal.waterLabel, "text-halo-color": pal.water, "text-halo-width": 1.2 },
+          },
+          {
+            id: "places-city-label",
+            type: "symbol",
+            source: "places-city",
+            layout: {
+              "text-field": ["get", "name"],
+              "text-font": ["Noto Sans Regular"],
+              "text-size": 10.5,
+              "text-anchor": "left",
+              "text-offset": [0.5, 0],
+            },
+            paint: { "text-color": pal.label, "text-halo-color": pal.land, "text-halo-width": 1.2 },
+          },
+          {
+            id: "places-city-dot",
+            type: "circle",
+            source: "places-city",
+            paint: { "circle-radius": 2, "circle-color": pal.label },
+          },
         ],
       },
-      bounds,
+      bounds: effectiveBounds,
       fitBoundsOptions: { padding: 24 },
-      maxBounds: padBounds(bounds, 0.6),
+      maxBounds: padBounds(effectiveBounds, 0.6),
       attributionControl: { compact: true },
     });
     map.addControl(new NavigationControl({ showCompass: false }), "top-right");
     map.on("load", () => {
       readyRef.current = true;
-      map.addImage(ARROW_ICON_ID, buildArrowIcon(), { sdf: true });
-      for (const l of lines) {
-        map.addSource(`arrows-${l.characterId}`, { type: "geojson", data: arrowPoints(l.coordinates) });
-        map.addLayer({
-          id: `arrows-${l.characterId}`,
-          type: "symbol",
-          source: `arrows-${l.characterId}`,
-          layout: {
-            "icon-image": ARROW_ICON_ID,
-            "icon-rotate": ["get", "bearing"],
-            "icon-rotation-alignment": "map",
-            "icon-allow-overlap": true,
-            "icon-ignore-placement": true,
-            "icon-size": 0.5,
-          },
-          paint: { "icon-color": l.color, "icon-opacity": l.dimmed ? 0.12 : 0.75 },
-        });
-      }
       setReady(true);
     });
     map.on("error", (e) => { console.error("MAPLIBRE ERROR", e.error); });
@@ -222,9 +252,9 @@ export default function JourneyMap({
       readyRef.current = false;
       setReady(false);
     };
-    // Sources/layers are declared once from the lines list's *shape* (which
-    // characters exist) — re-running this whole effect on every dimmed/
-    // selected change would tear down and rebuild the map for no reason.
+    // Sources/layers are declared once from `era` (fixed for the life of this
+    // page) — re-running this whole effect on every dimmed/selected change
+    // would tear down and rebuild the map for no reason.
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -238,7 +268,7 @@ export default function JourneyMap({
       // localStorage), which can fire this observer before the map's style
       // has finished its own async load — calling setPaintProperty before
       // then throws "Style is not done loading", so this waits for 'load'
-      // exactly like the lines effect does.
+      // before touching any paint property.
       if (!map) return;
       if (!readyRef.current) { map.once("load", applyTheme); return; }
       const pal = PALETTE[currentTheme()];
@@ -248,6 +278,15 @@ export default function JourneyMap({
       map.setPaintProperty("rivers-line", "line-color", pal.river);
       map.setPaintProperty("lakes-fill", "fill-color", pal.water);
       map.setPaintProperty("lakes-outline", "line-color", pal.river);
+      map.setPaintProperty("kingdom-fill", "fill-color", pal.kingdomFill);
+      map.setPaintProperty("kingdom-outline", "line-color", pal.kingdomOutline);
+      map.setPaintProperty("places-region-label", "text-color", pal.regionLabel);
+      map.setPaintProperty("places-region-label", "text-halo-color", pal.land);
+      map.setPaintProperty("places-water-label", "text-color", pal.waterLabel);
+      map.setPaintProperty("places-water-label", "text-halo-color", pal.water);
+      map.setPaintProperty("places-city-label", "text-color", pal.label);
+      map.setPaintProperty("places-city-label", "text-halo-color", pal.land);
+      map.setPaintProperty("places-city-dot", "circle-color", pal.label);
       map.resize();
       map.triggerRepaint();
     };
@@ -255,35 +294,6 @@ export default function JourneyMap({
     observer.observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
     return () => observer.disconnect();
   }, []);
-
-  // Per-character line geometry and dim state.
-  useEffect(() => {
-    const map = mapRef.current;
-    if (!map) return;
-    const apply = () => {
-      for (const l of lines) {
-        const source = map.getSource(`line-${l.characterId}`) as GeoJSONSource | undefined;
-        if (!source) continue;
-        source.setData(
-          l.coordinates.length >= 2
-            ? { type: "Feature", properties: {}, geometry: { type: "LineString", coordinates: l.coordinates } }
-            : EMPTY_LINE
-        );
-        if (map.getLayer(`line-${l.characterId}`)) {
-          // Slightly more transparent than a solid line so the endpoint
-          // bubbles (drawn on top as DOM markers) read as the clearly
-          // brighter, more solid element instead of blending into the route.
-          map.setPaintProperty(`line-${l.characterId}`, "line-opacity", l.dimmed ? 0.12 : 0.75);
-          map.setPaintProperty(`line-${l.characterId}`, "line-width", l.dimmed ? 2 : 3);
-        }
-        if (map.getLayer(`arrows-${l.characterId}`)) {
-          map.setPaintProperty(`arrows-${l.characterId}`, "icon-opacity", l.dimmed ? 0.12 : 0.75);
-        }
-      }
-    };
-    if (readyRef.current) apply();
-    else map.once("load", apply);
-  }, [lines]);
 
   // Stop markers — plain DOM elements so click/keyboard/aria work exactly
   // like any other button, and z-index (not paint order) puts the selected
@@ -322,12 +332,16 @@ export default function JourneyMap({
       // hard to tell from "just a stop on the route" — a white halo ring
       // reads clearly regardless of the line or terrain color underneath.
       el.style.boxShadow = stop.selected ? "0 0 0 3px rgba(255, 248, 234, 0.9), 0 1px 4px rgba(0, 0, 0, 0.45)" : "none";
+      // Every stop stays visible and clickable all the time — with the
+      // per-character lines gone, a dense journey (three overlapping paths
+      // in 1 Samuel) reads better as "all the dots, softened" than as
+      // "most of the dots hidden." The unselected majority is just faded a
+      // little (not grayscale) so the current stop still pops.
       // Marker owns el.style.opacity itself — it rewrites it on every map
       // move via its own tracked _opacity (see setOpacity in maplibre-gl),
       // clobbering a direct el.style.opacity write the next time the map
       // pans or zooms. Going through setOpacity keeps our value authoritative.
-      marker.setOpacity(stop.dimmed ? "0" : "1");
-      el.style.pointerEvents = stop.dimmed ? "none" : "auto";
+      marker.setOpacity(stop.selected ? "1" : "0.55");
       el.style.zIndex = stop.selected ? "10" : "1";
     }
 

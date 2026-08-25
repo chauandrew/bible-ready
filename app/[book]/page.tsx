@@ -23,8 +23,9 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
         : `Browse all ${book.chapterCount} ${book.chapterLabel}s, grouped by narrative arc.`,
     },
   ];
-  if (journeysForBook(bookId).length > 0) {
-    studyTools.push({ href: `/${bookId}/study/journeys`, label: "Story Map", desc: "Follow a character arc event by event, plotted on a map." });
+  const journeys = journeysForBook(bookId);
+  if (journeys.length > 0) {
+    studyTools.push({ href: `/${bookId}/study/journeys/${journeys[0].id}`, label: "Story Map", desc: "Follow a character arc event by event, plotted on a map." });
   }
 
   const reviewTools = [
