@@ -5,6 +5,23 @@ import type { QuizItem, Answer } from "@/lib/quiz";
 import { pointsFor, pointsColor, correctAnswerText } from "@/lib/quiz";
 import { gradeFreeResponse } from "@/lib/grade";
 import { formatCitation, chapterSummaryFor, bookMeta, matchBookName } from "@/lib/content";
+import {
+  DndContext,
+  closestCenter,
+  KeyboardSensor,
+  PointerSensor,
+  useSensor,
+  useSensors,
+  type DragEndEvent,
+} from "@dnd-kit/core";
+import {
+  SortableContext,
+  arrayMove,
+  sortableKeyboardCoordinates,
+  useSortable,
+  verticalListSortingStrategy,
+} from "@dnd-kit/sortable";
+import { CSS } from "@dnd-kit/utilities";
 
 type Mode = "study" | "quiz";
 
@@ -88,6 +105,56 @@ export function McQuestion({
   );
 }
 
+/** One draggable row within `SequenceQuestion`'s ordered list. Dragging is
+ * disabled once `checked` is true, so the revealed order can't be disturbed. */
+function SortableSequenceItem({
+  id,
+  label,
+  checked,
+  isCorrect,
+}: {
+  id: string;
+  label: string;
+  checked: boolean;
+  isCorrect: boolean;
+}) {
+  const { attributes, listeners, setNodeRef, transform, transition, isDragging } = useSortable({
+    id,
+    disabled: checked,
+  });
+  let cls = "option";
+  if (checked) cls += isCorrect ? " option-correct" : " option-incorrect";
+
+  return (
+    <li
+      ref={setNodeRef}
+      className={cls}
+      style={{
+        transform: CSS.Transform.toString(transform),
+        transition,
+        touchAction: "none",
+        display: "flex",
+        alignItems: "center",
+        gap: "0.6rem",
+        opacity: isDragging ? 0.5 : 1,
+        cursor: checked ? "default" : "grab",
+      }}
+      {...(checked ? {} : attributes)}
+      {...(checked ? {} : listeners)}
+    >
+      {checked ? (
+        <>
+          <span aria-hidden="true">{isCorrect ? "✓" : "✗"}</span>
+          <span className="sr-only">{isCorrect ? "correct position: " : "wrong position: "}</span>
+        </>
+      ) : (
+        <span aria-hidden="true" style={{ color: "var(--text-muted, #888)" }}>⠿</span>
+      )}
+      {label}
+    </li>
+  );
+}
+
 export function SequenceQuestion({
   item,
   mode,
@@ -97,52 +164,44 @@ export function SequenceQuestion({
   item: Extract<QuizItem, { type: "sequence" }>;
   mode: Mode;
   onAnswer: (a: Answer) => void;
-  /** Pre-fills the placed order when revisiting an already-answered
-   * question — still fully editable via the existing tap-to-undo flow. */
+  /** Pre-fills the arranged order when revisiting an already-answered
+   * question — still fully editable via drag or arrow keys. */
   initialAnswer?: Extract<Answer, { kind: "sequence" }>;
 }) {
-  const [chosen, setChosen] = useState<string[]>(initialAnswer?.order ?? []);
+  const [order, setOrder] = useState<string[]>(initialAnswer?.order ?? item.displayItems);
   const [checked, setChecked] = useState(false);
-  const remaining = item.displayItems.filter((x) => !chosen.includes(x));
-  const allPlaced = remaining.length === 0;
+  const sensors = useSensors(
+    useSensor(PointerSensor, { activationConstraint: { distance: 4 } }),
+    useSensor(KeyboardSensor, { coordinateGetter: sortableKeyboardCoordinates })
+  );
+
+  function handleDragEnd(event: DragEndEvent) {
+    const { active, over } = event;
+    if (!over || active.id === over.id) return;
+    setOrder((current) => arrayMove(current, current.indexOf(String(active.id)), current.indexOf(String(over.id))));
+  }
 
   function submit() {
     if (mode === "study") setChecked(true);
-    else onAnswer({ itemId: item.id, kind: "sequence", order: chosen });
+    else onAnswer({ itemId: item.id, kind: "sequence", order });
   }
 
   return (
     <div>
       <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
-      {!checked && chosen.length > 0 && (
-        <p className="citation" style={{ marginBottom: "0.4rem" }}>Tap a placed event to undo it.</p>
+      {!checked && (
+        <p className="citation" style={{ marginBottom: "0.4rem" }}>Drag to reorder (or focus an item and use the arrow keys).</p>
       )}
-      {chosen.length > 0 && (
-        <ol style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem", marginBottom: "0.75rem", paddingLeft: "1.2rem" }}>
-          {chosen.map((c, i) => (
-            <li key={c} style={checked ? { color: c === item.correctOrder[i] ? "var(--success-text)" : "var(--danger-text)" } : { marginBottom: "0.35rem" }}>
-              {checked ? (
-                <>
-                  <span aria-hidden="true">{c === item.correctOrder[i] ? "✓ " : "✗ "}</span>
-                  <span className="sr-only">{c === item.correctOrder[i] ? "correct position: " : "wrong position: "}</span>
-                  {c}
-                </>
-              ) : (
-                <button type="button" className="option" style={{ fontFamily: "var(--font-sans)", fontSize: "0.9rem" }} onClick={() => setChosen(chosen.filter((x) => x !== c))}>
-                  {c}
-                  <span className="sr-only">. Tap to remove.</span>
-                </button>
-              )}
-            </li>
-          ))}
-        </ol>
-      )}
-      {!checked && remaining.map((r) => (
-        <button key={r} type="button" className="option" onClick={() => setChosen([...chosen, r])}>
-          {r}
-        </button>
-      ))}
-      {allPlaced && !checked && (
+      <DndContext sensors={sensors} collisionDetection={closestCenter} onDragEnd={handleDragEnd}>
+        <SortableContext items={order} strategy={verticalListSortingStrategy} disabled={checked}>
+          <ol style={{ listStyle: "none", padding: 0, fontFamily: "var(--font-sans)", fontSize: "0.9rem", marginBottom: "0.75rem" }}>
+            {order.map((label, i) => (
+              <SortableSequenceItem key={label} id={label} label={label} checked={checked} isCorrect={label === item.correctOrder[i]} />
+            ))}
+          </ol>
+        </SortableContext>
+      </DndContext>
+      {!checked && (
         <button type="button" className="btn btn-primary" style={{ marginTop: "0.5rem" }} onClick={submit}>
           {mode === "study" ? "Check order" : "Submit order"}
         </button>
@@ -152,7 +211,7 @@ export function SequenceQuestion({
           type="button"
           className="btn btn-primary"
           style={{ marginTop: "0.5rem" }}
-          onClick={() => onAnswer({ itemId: item.id, kind: "sequence", order: chosen })}
+          onClick={() => onAnswer({ itemId: item.id, kind: "sequence", order })}
         >
           Next
         </button>
