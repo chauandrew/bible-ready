@@ -357,6 +357,22 @@ ones lets a test-taker spot the answer by formatting, not by knowing the
 material. These strings are only ever displayed as standalone list items
 (never embedded mid-sentence), so always capitalize the first letter.
 
+**Authored question prompts describe what happens, not what it means.**
+"What does the flood narrative show about the relationship between human
+wickedness and divine judgment?" and "What theme is reflected when Jacob
+blesses the younger son ahead of the older?" ask the player to already know
+the answer to name a literary theme — this is an easy pattern to slip into
+when drafting a batch of questions, and it reads as generated rather than
+authored. Prefer the concrete, plot-level version instead: "What curse does
+God pronounce on the serpent after the fall?", "What does Jacob do when
+Joseph presents his two sons for a blessing?" This isn't a ban on the
+`category: "theme"` tag — it's about what the prompt itself asks for.
+`1-samuel`/`2-samuel` are the model to match. A `"selection"` book (Psalms)
+is a partial exception: an `"arc"`-category question grouping several psalms
+by shared theme is unavoidable, since Psalms genuinely has no plot — but even
+there, prefer asking about a specific verse, image, or occasion over naming
+an abstract theme when one is available.
+
 ## Journeys — event-by-event map walkthroughs
 
 A journey is a character arc that crosses several existing arcs (Abraham →

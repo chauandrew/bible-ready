@@ -110,7 +110,7 @@
     "id": "psalms-q7",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What central image does the psalmist use to describe God's care in the psalm that begins 'The LORD is my shepherd'?",
+    "prompt": "What does the psalmist compare the LORD to, in the psalm that begins 'The LORD is my shepherd; I shall not want'?",
     "options": [
       "A shepherd guiding and providing for his sheep",
       "A king ruling over his subjects",
@@ -144,7 +144,7 @@
     "id": "psalms-q9",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What central claim does the psalm 'God is our refuge and strength' make about safety in a crumbling world?",
+    "prompt": "What does the psalm 'God is our refuge and strength' say stays true even if the earth gives way and the mountains fall into the sea?",
     "options": [
       "God remains a secure refuge even if the earth gives way",
       "Safety comes only from living inside a heavily fortified and well-defended city",
@@ -195,7 +195,7 @@
     "id": "psalms-q12",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What is the main theme of the psalm that closes out the entire book of Psalms?",
+    "prompt": "What does the closing psalm of the whole book call on to praise the Lord?",
     "options": [
       "An all-out call for everything that breathes to praise the Lord",
       "A lament over Israel's exile",
@@ -212,7 +212,7 @@
     "id": "psalms-q13",
     "book": "psalms",
     "category": "arc",
-    "prompt": "Which shared theme connects the psalm about the Lord as shepherd, the psalm calling God 'our refuge and strength,' the psalm about dwelling in God's shelter, and the psalm about lifting eyes to the hills?",
+    "prompt": "What do the psalm about the Lord as shepherd, the psalm calling God 'our refuge and strength,' the psalm about dwelling in God's shelter, and the psalm about lifting eyes to the hills all have in common?",
     "options": [
       "Trust and refuge in God's protection",
       "Warnings against idolatry",
@@ -229,7 +229,7 @@
     "id": "psalms-q14",
     "book": "psalms",
     "category": "arc",
-    "prompt": "Which common thread connects the psalm crying 'why have you forsaken me,' the psalm about the relief of confessed sin, the psalm confessing sin after Bathsheba, and the psalm crying out 'from the depths'?",
+    "prompt": "The psalm crying 'why have you forsaken me,' the psalm about the relief of confessed sin, the psalm confessing sin after Bathsheba, and the psalm crying out 'from the depths' are grouped together for sharing what?",
     "options": [
       "Repentance and lament over sin and suffering",
       "Songs sung exclusively at Passover",
@@ -246,7 +246,7 @@
     "id": "psalms-q15",
     "book": "psalms",
     "category": "arc",
-    "prompt": "Which thematic group includes the call to enter God's gates with thanksgiving, the psalm 'Bless the LORD, O my soul,' the psalm praising God's greatness across generations, and the closing call for everything that breathes to praise the Lord?",
+    "prompt": "What connects the call to enter God's gates with thanksgiving, the psalm 'Bless the LORD, O my soul,' the psalm praising God's greatness across generations, and the closing call for everything that breathes to praise the Lord?",
     "options": [
       "Praise and thanksgiving",
       "Imprecatory prayers against enemies",
@@ -263,7 +263,7 @@
     "id": "psalms-q16",
     "book": "psalms",
     "category": "arc",
-    "prompt": "Which shared focus connects the psalm about the two ways, the psalm on humanity's place in creation, the psalm about the heavens declaring God's glory, the psalm welcoming the King of glory, and the psalm reflecting on numbering our days?",
+    "prompt": "The psalm about the two ways, the psalm on humanity's place in creation, the psalm about the heavens declaring God's glory, the psalm welcoming the King of glory, and the psalm reflecting on numbering our days are grouped together around what?",
     "options": [
       "Wisdom, creation, and God's presence",
       "The exodus from Egypt",
