@@ -3,12 +3,12 @@
     "id": "qz-1",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the seven-day creation account primarily establish about the world's order?",
+    "prompt": "What does God create on the sixth day, completing his work of creation?",
     "options": [
-      "That God structured creation with intentional order and purpose",
-      "That the world came about through cosmic conflict between gods",
-      "That humanity created itself gradually over time",
-      "That the earth is eternal and uncreated"
+      "Land animals and humankind, in his own image",
+      "The sun, moon, and stars",
+      "The birds and sea creatures",
+      "The dry land and the seas"
     ],
     "correctIndex": 0,
     "citation": {
@@ -20,14 +20,14 @@
     "id": "qz-2",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What shifts in the human condition immediately after Adam and Eve eat the forbidden fruit?",
+    "prompt": "What do Adam and Eve do immediately after eating the forbidden fruit?",
     "options": [
-      "They gain new political power over animals",
+      "They realize they are naked and sew fig leaves together to cover themselves",
       "They immediately die a physical death",
-      "Shame, blame, and separation from God enter human relationships",
-      "They lose the ability to speak"
+      "They ask God to curse the serpent immediately, before he ever speaks a word to either of them",
+      "They build an altar to atone for their sin"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 3
@@ -37,14 +37,14 @@
     "id": "qz-3",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the flood narrative show about the relationship between human wickedness and divine judgment?",
+    "prompt": "Why does God decide to send a flood over the earth?",
     "options": [
-      "God is indifferent to human behavior",
-      "Judgment came without any prior explanation",
-      "Widespread evil provokes judgment, yet God preserves a remnant",
-      "Only Noah was ever wicked"
+      "Because human wickedness and violence on the earth have become great and continual",
+      "Because Cain murdered Abel, and the shed blood cries out from the ground for judgment",
+      "Because a tower was being built to reach the heavens",
+      "Because Pharaoh refused to release Israel"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 6
@@ -54,12 +54,12 @@
     "id": "qz-4",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the tower of Babel episode reveal about humanity's ambition?",
+    "prompt": "What does God do after the people build a tower at Babel to make a name for themselves?",
     "options": [
-      "People sought to make a name for themselves apart from God, prompting him to scatter them",
-      "People built the tower to honor God",
-      "The tower collapsed on its own before it was finished",
-      "People built the tower to reach safety from any future flood, and God let it stand as a reminder"
+      "He confuses their language and scatters them across the earth",
+      "He destroys the tower with fire sent down from heaven before anyone can finish building it",
+      "He turns the builders into pillars of salt",
+      "He sends a flood to stop construction"
     ],
     "correctIndex": 0,
     "citation": {
@@ -71,14 +71,14 @@
     "id": "qz-6",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does God's covenant ceremony with Abram emphasize about the promise?",
+    "prompt": "What does Abram ask God for, just before the covenant ceremony with the smoking pot and torch?",
     "options": [
-      "That the promise depends entirely on Abram's own strength",
-      "That God alone binds himself to fulfill the promise",
-      "That the promise was only symbolic and non-binding",
-      "That the covenant excluded Abram's descendants"
+      "Reassurance that he will actually possess the land he has been promised",
+      "A son through his wife Sarai",
+      "Protection from four invading kings",
+      "A written copy of the covenant terms, signed and witnessed by the elders of his household"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 15
@@ -88,14 +88,14 @@
     "id": "qz-7",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the near-sacrifice of Isaac ultimately demonstrate?",
+    "prompt": "What does God provide as a substitute after Abraham binds Isaac on the altar?",
     "options": [
-      "That God delights in human sacrifice",
-      "That Abraham's faith and God's provision hold together even at the hardest test",
-      "That God accepts a substitute only once a father has proven himself by some other means",
-      "That God changed his mind about the covenant"
+      "A ram caught by its horns in a thicket",
+      "A lamb from Abraham's own flock",
+      "Nothing; Isaac is spared with no substitute offered",
+      "A dove Abraham brought from home"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 22
@@ -105,12 +105,12 @@
     "id": "qz-8",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What pattern does Jacob's deception of Isaac continue from earlier in Genesis?",
+    "prompt": "How does Jacob trick his father Isaac into giving him Esau's blessing?",
     "options": [
-      "Deception repeatedly complicates the fulfillment of God's promises among the patriarchs",
-      "It introduces deception into Genesis for the first time",
-      "It shows the patriarchs outgrowing deception, which does not appear again after this episode",
-      "It ends the sibling rivalry theme for good"
+      "He wears goatskins on his arms and neck and brings in a meal, pretending to be Esau",
+      "He forges a written blessing while Isaac sleeps",
+      "He bribes Esau to give up the blessing voluntarily",
+      "He waits until Isaac leaves on a long journey and has Rebekah pronounce the blessing in secret"
     ],
     "correctIndex": 0,
     "citation": {
@@ -122,14 +122,14 @@
     "id": "qz-9",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Jacob's renaming at Peniel mark in his story?",
+    "prompt": "What does the man Jacob wrestles with all night do just before letting him go at daybreak?",
     "options": [
-      "The end of Jacob's relationship with God",
-      "A turning point where Jacob's identity and character begin to be transformed",
-      "His decision to leave Canaan permanently",
-      "The moment Jacob finally surrenders the birthright he once took from his brother Esau"
+      "He touches Jacob's hip and renames him Israel",
+      "He blesses Jacob's flocks and servants",
+      "He tells Jacob to return to Laban",
+      "He gives Jacob a new set of laws"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 32
@@ -139,14 +139,14 @@
     "id": "qz-10",
     "book": "genesis",
     "category": "arc",
-    "prompt": "How does the Joseph narrative begin to resolve the sibling conflict pattern running through Genesis?",
+    "prompt": "What do Joseph's brothers do to him after he arrives to check on them wearing his colorful robe?",
     "options": [
-      "It repeats the pattern without ever resolving it",
-      "It introduces conflict that will eventually move toward reconciliation rather than tragedy",
-      "It shows Joseph immediately forgiving his brothers",
-      "It settles the rivalry at once by removing the favoured brother from the household for good"
+      "They strip him, throw him into a pit, and sell him to traders heading to Egypt",
+      "They kill him on the spot and tell their father a wild animal must have devoured him",
+      "They send him home to their father in disgrace",
+      "They make him a servant in their own tents"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 37
@@ -156,14 +156,14 @@
     "id": "qz-11",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Joseph's rise to power in Egypt show about God's providence?",
+    "prompt": "What does Joseph do that leads Pharaoh to put him in charge of Egypt?",
     "options": [
-      "God is absent from Joseph's circumstances",
-      "Joseph succeeds only through his own cleverness",
-      "God works through Joseph's hardships to prepare deliverance for many",
-      "Joseph's success has no connection to earlier events"
+      "He interprets Pharaoh's dreams and proposes storing grain for the coming famine",
+      "He defeats Egypt's enemies in battle",
+      "He marries into Pharaoh's family",
+      "He builds monuments and temples as tribute to Pharaoh's household and its many gods"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 41
@@ -173,14 +173,14 @@
     "id": "qz-12",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Joseph's response to his brothers in Egypt reveal about the arc of his story?",
+    "prompt": "What does Joseph do when he finally reveals his identity to his brothers?",
     "options": [
-      "Joseph seeks revenge for being sold into slavery",
-      "Joseph forgives them on condition that they never speak of what they did to him again",
-      "Joseph interprets his suffering as part of a larger purpose and offers forgiveness",
-      "Joseph exiles his brothers from Egypt"
+      "He weeps aloud, tells them he is Joseph, and sends for their father",
+      "He has them arrested for their earlier crime",
+      "He demands they return the money they paid for grain",
+      "He refuses to speak to them and sends them away"
     ],
-    "correctIndex": 2,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 45
@@ -190,14 +190,14 @@
     "id": "qz-13",
     "book": "genesis",
     "category": "arc",
-    "prompt": "How does Genesis conclude the long story that began with the fall in Eden?",
+    "prompt": "How does the book of Genesis end?",
     "options": [
-      "With the family still fractured and unreconciled",
-      "With a family preserved and reconciled, awaiting future fulfillment of God's promises",
-      "With the promises fully delivered and the family settled permanently in the land of Canaan",
-      "With a return to the garden of Eden"
+      "With Joseph's death in Egypt and his request that his bones be carried to the promised land one day",
+      "With Jacob's burial in Egypt and no further mention of the promise",
+      "With Joseph appointing one of his own two sons as his successor to continue ruling Egypt after him",
+      "With Joseph's brothers returning permanently to Canaan without him"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 50
@@ -207,14 +207,14 @@
     "id": "qz-14",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does God's covenant with Noah after the flood establish going forward?",
+    "prompt": "What does Noah do after planting a vineyard, setting off the incident that leads to Canaan being cursed?",
     "options": [
-      "That floods will continue periodically",
-      "That God commits to sustaining the created order despite human sin",
-      "That Noah's family is exempt from all future judgment",
-      "That animals are no longer under God's care"
+      "He drinks its wine, becomes drunk, and lies uncovered in his tent",
+      "He offers its first fruits to God at an altar",
+      "He refuses to drink from it and destroys the vineyard",
+      "He gives the entire vineyard to Shem alone"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 9
@@ -224,12 +224,12 @@
     "id": "qz-15",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the destruction of Sodom alongside Lot's rescue show about God's justice?",
+    "prompt": "What happens to Lot's wife as the family flees the destruction of Sodom?",
     "options": [
-      "God judges evil while still showing mercy to those who turn to him",
-      "God is unable to distinguish the righteous from the wicked",
-      "God destroys cities at random",
-      "Lot was rescued because of his own righteousness alone"
+      "She looks back and turns into a pillar of salt",
+      "She dies in the fire that destroys the city",
+      "She refuses to leave and stays behind",
+      "She leads her daughters safely to Zoar"
     ],
     "correctIndex": 0,
     "citation": {
@@ -377,7 +377,7 @@
     "id": "qz-24",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What does Jacob's new name, Israel, come to represent for his descendants?",
+    "prompt": "What does the name Israel, given to Jacob at Peniel, become for the people descended from him?",
     "options": [
       "A curse on his family",
       "The name of the nation that will come from him",
@@ -394,14 +394,14 @@
     "id": "qz-25",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "Why does the covenant promise given to Abram matter for the rest of the book?",
+    "prompt": "What does God promise Abram after Lot chooses to settle near Sodom and Abram stays in Canaan?",
     "options": [
-      "It has no bearing on later chapters",
-      "It becomes the thread that the rest of the patriarchal narratives track and repeat",
-      "It is fulfilled completely within the same episode",
-      "It concerns Abram's own lifetime alone and is fully discharged well before he dies in chapter 25"
+      "That all the land he can see will belong to him and offspring as numerous as the dust of the earth",
+      "That Lot's descendants will inherit the promise instead",
+      "That Abram must leave Canaan behind for good and return permanently to his family's household in Haran",
+      "That the covenant will pass only through a son not yet born"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 13
@@ -496,14 +496,14 @@
     "id": "qz-31",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Cain's response to God's judgment reveal about his character?",
+    "prompt": "What does Cain say to God after being sentenced to wander the earth for killing Abel?",
     "options": [
-      "He humbly repents and reforms his ways",
-      "He complains that his punishment is too harsh while showing no remorse for Abel",
-      "He immediately confesses to his parents",
-      "He accepts the sentence without protest and leaves quietly to settle east of Eden"
+      "\"My punishment is greater than I can bear\"",
+      "\"I am willing to accept whatever punishment you give\"",
+      "\"Please forgive me and restore Abel to life\"",
+      "He says nothing and walks away silently"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 4
@@ -513,14 +513,14 @@
     "id": "qz-32",
     "book": "genesis",
     "category": "character",
-    "prompt": "What sets Noah apart from his generation at the start of the flood account?",
+    "prompt": "What does Genesis say about Noah, in contrast to the rest of his generation, just before the flood?",
     "options": [
-      "His wealth and political power",
-      "His righteousness and walk with God amid widespread corruption",
-      "His skill as a warrior",
-      "His descent from Seth's line, which the genealogy just before this has traced down to him"
+      "That he was righteous, blameless among the people of his time, and walked with God",
+      "That he was the wealthiest man in his region, with more livestock than anyone else nearby",
+      "That he was a skilled builder chosen for his craftsmanship alone",
+      "That he was the last surviving descendant of Seth"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 6
@@ -530,14 +530,14 @@
     "id": "qz-33",
     "book": "genesis",
     "category": "character",
-    "prompt": "What best characterizes Abram's response when God calls him to leave everything familiar?",
+    "prompt": "What does Abram do when God tells him to leave his country, his people, and his father's household?",
     "options": [
-      "He refuses and stays in Haran",
-      "He obeys and sets out as God directed",
-      "He demands proof before moving",
-      "He sends a servant in his place"
+      "He sets out for Canaan as the LORD told him, taking Sarai and Lot with him",
+      "He refuses and stays behind in Haran, unwilling to leave everything familiar to his father's household",
+      "He sends Lot in his place while he remains",
+      "He first requires God to confirm the promise in writing"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 12
@@ -547,14 +547,14 @@
     "id": "qz-34",
     "book": "genesis",
     "category": "character",
-    "prompt": "How does Hagar's story in the wilderness show God's character toward the marginalized?",
+    "prompt": "What does the angel of the LORD tell Hagar to do when she flees from Sarai into the wilderness?",
     "options": [
-      "God ignores her because she is a servant",
-      "God sees and provides for her even outside the covenant line",
-      "God punishes her for fleeing",
-      "God sends her away with no promise at all"
+      "Return to Sarai and submit to her, and he promises to multiply her offspring",
+      "Continue on to Egypt where her family will take her in",
+      "Wait in the wilderness until Sarai comes looking for her",
+      "Go back at once and tell Abram everything that Sarai has done to mistreat her in his household"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 16
@@ -564,14 +564,14 @@
     "id": "qz-35",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Sarah's laughter at Isaac's birth reveal about her journey?",
+    "prompt": "What does Sarah say when she gives birth to Isaac in her old age?",
     "options": [
-      "Bitterness that never resolves",
-      "Joy that follows years of doubt about God's promise",
-      "Anger toward Abraham",
-      "Indifference to the promised child"
+      "\"God has made laughter for me; everyone who hears will laugh with me\"",
+      "\"I no longer believe God keeps his promises\"",
+      "\"This child belongs to Hagar, not to me\"",
+      "She says nothing recorded in the text"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 21
@@ -581,14 +581,14 @@
     "id": "qz-36",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Esau's willingness to trade his birthright for stew suggest about his priorities?",
+    "prompt": "What does Esau do when he comes in from the field exhausted and smells Jacob's stew?",
     "options": [
-      "He values long-term inheritance above all else",
-      "He values immediate satisfaction over his future inheritance",
-      "He is tricked without any choice of his own",
-      "He gives the birthright to his mother instead"
+      "He sells his birthright to Jacob for a bowl of stew and some bread",
+      "He refuses to trade and insists on hunting his own food instead of trading anything away",
+      "He shares the stew with Jacob without asking for anything",
+      "He orders a servant to prepare the same stew for him"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 25
@@ -598,14 +598,14 @@
     "id": "qz-37",
     "book": "genesis",
     "category": "character",
-    "prompt": "What role does Rebekah play in the deception of Isaac?",
+    "prompt": "What does Rebekah do to help Jacob receive Esau's blessing from Isaac?",
     "options": [
-      "She refuses to get involved",
-      "She devises the plan and helps Jacob carry it out",
-      "She warns Isaac about Jacob's plan",
-      "She is unaware of what Jacob does"
+      "She overhears Isaac's plan, prepares a meal like Esau's, and dresses Jacob in Esau's clothes and goatskins",
+      "She tells Isaac the truth about Esau's earlier sale of his birthright",
+      "She hides Esau's hunting gear so he cannot bring Isaac the venison",
+      "She sends Jacob away to her brother Laban's household before Isaac ever gets the chance to bless anyone"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 27
@@ -615,14 +615,14 @@
     "id": "qz-38",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Jacob's experience of being deceived by Laban parallel earlier in his own life?",
+    "prompt": "How does Laban trick Jacob on his wedding night?",
     "options": [
-      "Nothing; it is unrelated to his past",
-      "His own deception of his father Isaac",
-      "His conflict with Esau over the birthright",
-      "His time spent in Egypt"
+      "He substitutes Leah for Rachel, and Jacob doesn't realize until morning",
+      "He demands a much higher bride price than the two of them had originally agreed upon",
+      "He marries Rachel to another man first",
+      "He refuses to let Jacob marry either daughter"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 29
@@ -632,12 +632,12 @@
     "id": "qz-39",
     "book": "genesis",
     "category": "character",
-    "prompt": "What tension between Rachel and Leah runs through the account of Jacob's children?",
+    "prompt": "What do Rachel and Leah each do to gain more sons through Jacob once they stop bearing children themselves?",
     "options": [
-      "Competition for Jacob's love and for bearing him sons",
-      "A dispute over which of them should inherit Laban's land",
-      "Disagreement about which god to worship",
-      "A rivalry that never affects the family"
+      "They each give their servant to Jacob as a wife to bear children in their name",
+      "They ask their father Laban to arrange yet another marriage for Jacob to grow the family",
+      "They adopt orphaned children from nearby households",
+      "They travel to Bethel together to pray for more children"
     ],
     "correctIndex": 0,
     "citation": {
@@ -649,14 +649,14 @@
     "id": "qz-40",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Jacob's all-night wrestling match show about his character at this point in the story?",
+    "prompt": "What does Jacob do the night before he wrestles with the man at Peniel, fearing Esau's approach?",
     "options": [
-      "He is finally passive and lets events happen to him",
-      "He still strives and struggles, even with God, on the eve of facing Esau",
-      "He gives up and returns to Haran",
-      "He refuses to pray before meeting Esau"
+      "He sends his family and possessions across the Jabbok river ahead of him and remains alone",
+      "He gathers his men to prepare for battle against Esau",
+      "He returns immediately to Laban's house for safety",
+      "He sends messengers far ahead to Pharaoh's court in Egypt to plead for protection against Esau"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 32
@@ -666,12 +666,12 @@
     "id": "qz-41",
     "book": "genesis",
     "category": "character",
-    "prompt": "What motivates Joseph's brothers to resent him early in his story?",
+    "prompt": "Why do Joseph's brothers grow to hate him?",
     "options": [
-      "Joseph's favored status with their father and his dreams of ruling over them",
-      "Joseph's public accusation that his older brothers were mishandling their father's flocks",
-      "Joseph's marriage to a foreign woman",
-      "Joseph's decision to leave home on his own"
+      "Because their father favors him and because of his dreams of ruling over them",
+      "Because Joseph refuses to work in the fields alongside them and stays home with their father instead",
+      "Because Joseph reports them to Pharaoh for a crime",
+      "Because Joseph is the firstborn and inherits everything"
     ],
     "correctIndex": 0,
     "citation": {
@@ -683,14 +683,14 @@
     "id": "qz-42",
     "book": "genesis",
     "category": "character",
-    "prompt": "How does Joseph respond when tempted by Potiphar's wife?",
+    "prompt": "How does Joseph respond when Potiphar's wife tries to seduce him?",
     "options": [
-      "He gives in to avoid conflict",
       "He refuses, citing his loyalty to Potiphar and to God",
+      "He gives in to avoid conflict",
       "He reports her to Pharaoh immediately",
-      "He runs away from Egypt entirely"
+      "He flees Egypt entirely"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 39
@@ -700,14 +700,14 @@
     "id": "qz-43",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Judah's offer to remain as a slave in Benjamin's place reveal about his growth?",
+    "prompt": "What does Judah offer to do when Joseph threatens to keep Benjamin as a slave?",
     "options": [
-      "He is still willing to abandon a brother as before",
-      "He has changed from the man willing to sell Joseph into one willing to sacrifice himself for family",
-      "He has learned to bargain shrewdly and expects the offer to buy both his own freedom and that of Benjamin",
-      "He refuses to speak on Benjamin's behalf"
+      "He offers to remain as a slave himself in Benjamin's place, for the sake of their father",
+      "He offers to pay back double the money that mysteriously went missing from all of their sacks",
+      "He argues that Benjamin deserves the punishment alone",
+      "He abandons Benjamin and returns home with the others"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 44
@@ -717,14 +717,14 @@
     "id": "qz-44",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Joseph's weeping and forgiveness of his brothers show about him?",
+    "prompt": "How loudly does Joseph weep when he finally reveals himself to his brothers?",
     "options": [
-      "He has suppressed all his pain and pretends nothing happened",
-      "He holds no grudge and welcomes reconciliation despite past betrayal",
-      "He forgives them only after Jacob orders him to",
-      "He forgives only Benjamin and rejects the rest"
+      "So loudly that the Egyptians and Pharaoh's household hear it",
+      "Quietly, so that only his brothers hear",
+      "He does not weep; he only laughs",
+      "He weeps only after his brothers have left the room"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 45
@@ -751,12 +751,12 @@
     "id": "qz-46",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What recurring motif from Eden reappears throughout Genesis whenever people are removed from a place of blessing?",
+    "prompt": "What does God do to prevent Adam and Eve from returning to the garden of Eden after expelling them?",
     "options": [
-      "Exile from a place of intimacy with God",
-      "A famine that drives the family to look for food elsewhere",
-      "A change in language",
-      "A flood"
+      "He stations cherubim and a flaming sword to guard the way to the tree of life",
+      "He destroys the garden completely",
+      "He seals the garden's entrance with a stone",
+      "He turns the garden into a wilderness"
     ],
     "correctIndex": 0,
     "citation": {
@@ -768,14 +768,14 @@
     "id": "qz-47",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What pattern between siblings, first seen with Cain and Abel, recurs repeatedly in Genesis?",
+    "prompt": "Why does Cain kill his brother Abel?",
     "options": [
-      "Siblings always reconcile immediately",
-      "Rivalry and conflict between brothers",
-      "Siblings never interact again after childhood",
-      "Younger siblings are always favored by God"
+      "Cain is angry that the LORD looked with favor on Abel's offering but not his own",
+      "Abel steals Cain's inheritance",
+      "Abel insults their parents",
+      "Cain is defending himself from Abel's attack"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 4
@@ -785,12 +785,12 @@
     "id": "qz-48",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What recurring pattern involving childless women appears repeatedly among the patriarchs' wives?",
+    "prompt": "Why does Sarai give her servant Hagar to Abram as a wife?",
     "options": [
-      "Barrenness followed eventually by God's provision of a promised child",
-      "Barrenness is resolved each time by a servant bearing the child instead",
-      "Barrenness always ends the family line",
-      "Only servants ever bear children in Genesis"
+      "Because the LORD had kept her from bearing children and she wants a child through Hagar",
+      "Because Abram himself requests a second wife to help build up his household while they wait",
+      "Because Hagar volunteers to bear a child for the family",
+      "Because it is required by a covenant ritual"
     ],
     "correctIndex": 0,
     "citation": {
@@ -802,14 +802,14 @@
     "id": "qz-49",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What consequence does deception repeatedly bring in the patriarchal narratives, starting with Jacob and Isaac?",
+    "prompt": "What does Esau do when he learns Jacob has stolen his blessing?",
     "options": [
-      "Deception always goes unnoticed and unpunished",
-      "Deception brings real relational fallout even when short-term goals are achieved",
-      "Deception is quietly undone by God each time, leaving the family's relationships unharmed",
-      "Deception is treated as praiseworthy throughout"
+      "He weeps bitterly, begs Isaac for a blessing of his own, and vows to kill Jacob once their father dies",
+      "He forgives Jacob immediately, asks for nothing at all in return, and welcomes him warmly home",
+      "He demands Isaac reverse the blessing on the spot",
+      "He leaves home for good without seeking a blessing"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 27
@@ -819,12 +819,12 @@
     "id": "qz-50",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What theme does the phrase about God meaning it for good, at the close of Joseph's story, capture looking back across his hardships?",
+    "prompt": "When his brothers fear revenge after their father's death, what does Joseph say God did with their evil intentions toward him?",
     "options": [
-      "God's providence working through human wrongdoing",
-      "Random chance determining outcomes",
-      "Human effort alone securing success",
-      "Punishment for Joseph's earlier pride"
+      "God meant it for good, to bring about the saving of many lives",
+      "God punished them severely for it",
+      "God erased the memory of what happened",
+      "God gave Joseph permission to take revenge"
     ],
     "correctIndex": 0,
     "citation": {
@@ -837,12 +837,12 @@
     "id": "qz-51",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What theme is introduced when God promises that Abram's family will bless all the families of the earth?",
+    "prompt": "What does God promise will happen to \"all the families of the earth\" when he first calls Abram?",
     "options": [
-      "The early focus on all humanity narrows toward one family with a mission for all nations",
-      "The blessing is promised to Abram's household alone, with the other nations left outside it",
-      "Only Abram's immediate household matters going forward",
-      "The promise excludes any nations outside Canaan"
+      "They will be blessed through Abram",
+      "They will be scattered and confused in language",
+      "They will be destroyed by a flood",
+      "They will be enslaved to Abram's descendants"
     ],
     "correctIndex": 0,
     "citation": {
@@ -854,14 +854,14 @@
     "id": "qz-52",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What theme does Abraham's statement that God will provide introduce into the narrative?",
+    "prompt": "What does Abraham name the place where God provides the ram in place of Isaac?",
     "options": [
-      "That humans must always provide for themselves",
-      "That God supplies what is needed even in situations beyond human control",
-      "That God tests his people by withholding what they need until they have proven themselves",
-      "That Isaac provided the ram himself"
+      "\"The LORD Will Provide\"",
+      "\"The Place of Testing\"",
+      "Peniel",
+      "Bethel"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 22
@@ -871,12 +871,12 @@
     "id": "qz-53",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does the pattern of hiding and blame-shifting after the first sin establish about human relationships going forward?",
+    "prompt": "What do Adam and Eve do when God calls out to them in the garden after they eat the fruit?",
     "options": [
-      "Sin tends to fracture trust and honesty between people",
-      "Sin has no lasting relational effect",
-      "Blame always falls only on the serpent",
-      "Hiding from God becomes impossible after this point"
+      "They hide among the trees, and each then blames someone else when confronted",
+      "They confess immediately to God, without waiting to be asked anything at all",
+      "They flee the garden before God arrives",
+      "They offer a sacrifice to atone before God speaks to them"
     ],
     "correctIndex": 0,
     "citation": {
@@ -888,12 +888,12 @@
     "id": "qz-54",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What theme is reflected when Jacob blesses the younger son ahead of the older?",
+    "prompt": "What does Jacob do when Joseph presents his two sons, Manasseh and Ephraim, for a blessing?",
     "options": [
-      "A recurring reversal where God's choice does not follow expected birth order",
-      "Strict adherence to birth order in every blessing",
-      "A rejection of blessing altogether",
-      "The abolishment of blessings after Jacob"
+      "He crosses his hands to place his right hand on the younger son, Ephraim, instead of the firstborn",
+      "He refuses to bless either son",
+      "He blesses only the firstborn, Manasseh, following the usual custom of blessing the oldest son first",
+      "He adopts both sons but blesses neither"
     ],
     "correctIndex": 0,
     "citation": {
@@ -905,12 +905,12 @@
     "id": "qz-55",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What theme does the flood narrative share with the stories of Eden and the tower of Babel?",
+    "prompt": "What instructions does God give Noah about the ark he must build?",
     "options": [
-      "Human rebellion followed by divine response and a fresh start",
-      "Total absence of divine involvement",
-      "Permanent destruction with no continuation of humanity",
-      "A theme unrelated to earlier chapters"
+      "Its dimensions, the wood to use, and to bring pairs of every kind of animal aboard",
+      "Only to gather food for forty days",
+      "To build it near the Euphrates river",
+      "To build it out of solid stone blocks rather than wood, so it will never rot in the floodwaters"
     ],
     "correctIndex": 0,
     "citation": {
@@ -922,12 +922,12 @@
     "id": "qz-56",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does the sweep of the opening chapters accomplish before the narrative narrows to Abram's family?",
+    "prompt": "What does God call his completed work, at the end of the six days of creation?",
     "options": [
-      "It establishes the universal scope of creation, sin, and judgment before focusing on one family's role in addressing it",
-      "It supplies a creation account told for its own sake, which the book leaves behind once the patriarchal narratives begin",
-      "It focuses only on the nation of Israel from the start",
-      "It is unrelated to the promises given later"
+      "\"Very good\"",
+      "\"Perfect and unchanging\"",
+      "\"A temporary dwelling\"",
+      "\"Very great\""
     ],
     "correctIndex": 0,
     "citation": {
@@ -939,14 +939,14 @@
     "id": "qz-58",
     "book": "genesis",
     "category": "argument",
-    "prompt": "How does the Joseph narrative function structurally within the whole book of Genesis?",
+    "prompt": "What two dreams does Joseph tell his brothers about, provoking their hatred?",
     "options": [
-      "It is a self-contained story disconnected from the patriarchal promises",
-      "It resolves the family conflict theme and explains how Jacob's family ends up in Egypt",
-      "It contradicts the promises made to Abraham",
-      "It focuses only on Egyptian history"
+      "A dream of bundled sheaves bowing to his, and a dream of the sun, moon, and stars bowing to him",
+      "A dream of seven fat, healthy cows and seven thin, sickly cows grazing beside the river Nile",
+      "A dream of a ladder reaching to heaven",
+      "A dream about a robe torn to pieces"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 37
@@ -956,12 +956,12 @@
     "id": "qz-59",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What literary shift happens between the table of nations and the call of Abram?",
+    "prompt": "Where does Abram's father Terah settle the family on their way from Ur to Canaan?",
     "options": [
-      "The focus narrows from the nations broadly to one family through whom the nations will be blessed",
-      "The narrative returns to the flood story",
-      "The book drops genealogy as a device and turns to continuous narrative for the whole of the remainder",
-      "The focus shifts permanently away from any covenant themes"
+      "Haran",
+      "Egypt",
+      "Beersheba",
+      "Shechem"
     ],
     "correctIndex": 0,
     "citation": {
@@ -973,14 +973,14 @@
     "id": "qz-60",
     "book": "genesis",
     "category": "argument",
-    "prompt": "How does the ending of Genesis set up the rest of the Old Testament story?",
+    "prompt": "What does Joseph do for his father Jacob's body after he dies in Egypt?",
     "options": [
-      "It resolves every promise completely with nothing left open",
-      "It leaves Jacob's family settled in Egypt, anticipating later fulfillment of the land promise",
-      "It closes the covenant storyline, the family having reached a land of its own and needing nothing more",
-      "It ends with the family scattered and lost"
+      "He has Jacob embalmed and carries his body to Canaan to bury him with his fathers",
+      "He buries Jacob right there in Egypt immediately, without any journey back to Canaan at all",
+      "He builds a monument to Jacob in Goshen",
+      "He sends Jacob's body back with an Egyptian escort but does not go himself"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 50
@@ -990,12 +990,12 @@
     "id": "qz-61",
     "book": "genesis",
     "category": "argument",
-    "prompt": "How does the fall in Eden set up the tension that drives the rest of Genesis?",
+    "prompt": "What curse does God pronounce on the serpent after the fall?",
     "options": [
-      "It introduces a separation from God's blessing that the rest of Genesis works to address",
-      "It has no lasting effect on later chapters",
-      "It creates a problem that the flood resolves, after which the book turns to other concerns",
-      "It immediately resolves itself within the same chapter"
+      "It will crawl on its belly and eat dust, and be at enmity with the woman's offspring",
+      "It will lose the ability to speak",
+      "It will be struck completely blind and driven far out of the garden along with Adam and Eve",
+      "It will be cast into a fiery pit immediately"
     ],
     "correctIndex": 0,
     "citation": {
@@ -1007,12 +1007,12 @@
     "id": "qz-62",
     "book": "genesis",
     "category": "argument",
-    "prompt": "Why does Abraham's test on Moriah carry weight for the covenant promise, without collapsing the whole promise into risk?",
+    "prompt": "What does the angel of the LORD stop Abraham from doing at the last moment on Mount Moriah?",
     "options": [
-      "It confirms Abraham's faith while God himself supplies the way forward for the promise to continue",
-      "It cancels the covenant permanently",
-      "It transfers the promise to Ishmael",
-      "It replaces the covenant of offspring with a new covenant built on sacrifice rather than on God's earlier promise"
+      "Plunging the knife into Isaac",
+      "Lighting the altar fire",
+      "Leaving the mountain before finishing the sacrifice",
+      "Sacrificing the ram instead of Isaac"
     ],
     "correctIndex": 0,
     "citation": {
@@ -1024,14 +1024,14 @@
     "id": "qz-63",
     "book": "genesis",
     "category": "argument",
-    "prompt": "How do the repeated covenant scenes with Abraham, from his call through the sign of circumcision, function together in the book?",
+    "prompt": "What does God tell Abram will happen to his descendants for four hundred years?",
     "options": [
-      "They are contradictory accounts that cannot be reconciled",
-      "They progressively unpack and confirm one unfolding promise",
-      "They describe covenants with different, unrelated people",
-      "They only apply during Abraham's own lifetime"
+      "They will be sojourners and slaves in a land not their own, before coming out with great possessions",
+      "They will rule as kings over Egypt",
+      "They will multiply in Canaan and never leave the land",
+      "They will be conquered and completely destroyed by all of the neighboring nations surrounding their land"
     ],
-    "correctIndex": 1,
+    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 15
@@ -1041,12 +1041,12 @@
     "id": "qz-64",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does the account of Dinah and its violent aftermath contribute to the larger story of Jacob's family?",
+    "prompt": "What do Simeon and Levi do to the men of Shechem after their sister Dinah is assaulted?",
     "options": [
-      "It shows the family's ongoing struggles with conflict even after Jacob's own reconciliation with Esau",
-      "It settles the family's standing among the surrounding peoples and secures peace with the city of Shechem",
-      "It resolves all future family conflict",
-      "It marks the family's complete separation from Canaan"
+      "They kill all the men of the city while the men are still recovering from circumcision, in revenge",
+      "They accept a bride price and make peace",
+      "They demand Shechem's father hand over his kingdom",
+      "They report the crime to their grandfather Isaac and leave him to decide how the matter should be judged"
     ],
     "correctIndex": 0,
     "citation": {
@@ -1058,12 +1058,12 @@
     "id": "qz-65",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does Jacob's final address to his twelve sons contribute to the book's larger argument?",
+    "prompt": "What does Jacob say about his son Judah's future, in his final words to his twelve sons?",
     "options": [
-      "It looks ahead to the distinct roles and futures of the tribes that will come from them",
-      "It erases the distinctions between the sons",
-      "It focuses solely on Jacob's own achievements",
-      "It has no connection to the promises given earlier in Genesis"
+      "That the scepter and ruler's staff will not depart from Judah",
+      "That Judah will be cursed and scattered among his brothers",
+      "That Judah will lose his inheritance entirely",
+      "That Judah will become a servant to his brothers"
     ],
     "correctIndex": 0,
     "citation": {
