@@ -5,6 +5,7 @@
     "number": 1,
     "title": "David's Lament for Saul and Jonathan",
     "summary": "An Amalekite reports Saul and Jonathan's deaths at Mount Gilboa and claims to have killed Saul himself, so David has him executed and then composes a lament for both men.",
+    "blurb": "David executes the Amalekite who claims to have killed Saul, then composes a lament mourning Saul and Jonathan.",
     "arcId": "2sam-arc-king-judah",
     "eventIds": ["2sam-e-c1-0", "2sam-e-c1-1"],
     "quizWorthy": true
@@ -15,6 +16,7 @@
     "number": 2,
     "title": "David Anointed King over Judah",
     "summary": "David moves to Hebron and is anointed king over Judah, while Abner makes Saul's son Ish-bosheth king over the rest of Israel, and their two armies clash at Gibeon.",
+    "blurb": "David is anointed king over Judah in Hebron while Abner sets up Saul's son Ish-bosheth as a rival king.",
     "arcId": "2sam-arc-king-judah",
     "eventIds": ["2sam-e-c2-0", "2sam-e-c2-1"],
     "quizWorthy": true
@@ -25,6 +27,7 @@
     "number": 3,
     "title": "Abner Defects and Is Murdered",
     "summary": "War between the house of Saul and the house of David drags on until Abner quarrels with Ish-bosheth and defects, but Joab murders him in revenge for his brother Asahel.",
+    "blurb": "Abner defects from Ish-bosheth to David during the ongoing civil war, but Joab murders him in revenge for his brother.",
     "arcId": "2sam-arc-king-judah",
     "eventIds": ["2sam-e-c3-0", "2sam-e-c3-1", "2sam-e-c3-2"],
     "quizWorthy": true
@@ -35,6 +38,7 @@
     "number": 4,
     "title": "Ish-bosheth Is Murdered",
     "summary": "Two of Ish-bosheth's own captains assassinate him in his bed and bring his head to David expecting a reward, but David has the murderers executed for killing an innocent man.",
+    "blurb": "Two of Ish-bosheth's own captains assassinate him hoping for a reward, but David has them executed for the murder.",
     "arcId": "2sam-arc-king-judah",
     "eventIds": ["2sam-e-c4-0", "2sam-e-c4-1"],
     "quizWorthy": true
@@ -45,6 +49,7 @@
     "number": 5,
     "title": "David Becomes King over All Israel",
     "summary": "All the tribes of Israel anoint David king, he captures the Jebusite stronghold of Jerusalem to make it his capital, and he defeats the Philistines twice in the valley of Rephaim.",
+    "blurb": "All Israel anoints David king, he captures Jerusalem as his capital, and he defeats the Philistines twice in battle.",
     "arcId": "2sam-arc-king-israel",
     "eventIds": ["2sam-e-c5-0", "2sam-e-c5-1", "2sam-e-c5-2"],
     "quizWorthy": true
@@ -55,6 +60,7 @@
     "number": 6,
     "title": "The Ark Comes to Jerusalem",
     "summary": "Uzzah dies for touching the ark on its way to Jerusalem, but David later brings it into the city with dancing and celebration, and Michal despises him for it.",
+    "blurb": "Uzzah dies for touching the ark, but David later brings it into Jerusalem with dancing while Michal despises him for it.",
     "arcId": "2sam-arc-king-israel",
     "eventIds": ["2sam-e-c6-0", "2sam-e-c6-1", "2sam-e-c6-2"],
     "quizWorthy": true
@@ -65,6 +71,7 @@
     "number": 7,
     "title": "The Davidic Covenant",
     "summary": "David wants to build God a permanent house, but Nathan tells him that instead the LORD will build David a house, promising his throne and kingdom will last forever.",
+    "blurb": "David wants to build God a temple, but Nathan tells him God will instead build David's throne into an everlasting dynasty.",
     "arcId": "2sam-arc-king-israel",
     "eventIds": ["2sam-e-c7-0", "2sam-e-c7-1"],
     "quizWorthy": true
@@ -75,6 +82,7 @@
     "number": 8,
     "title": "David's Victories and Officials",
     "summary": "A summary passage lists David's military victories over the Philistines, Moab, Zobah, the Arameans, and Edom, and names the officials he appoints as his kingdom is firmly established.",
+    "blurb": "A summary lists David's military victories over surrounding nations and the officials who serve his now-established kingdom.",
     "arcId": "2sam-arc-king-israel",
     "eventIds": ["2sam-e-c8-0", "2sam-e-c8-1"],
     "quizWorthy": false
@@ -85,6 +93,7 @@
     "number": 9,
     "title": "David Shows Kindness to Mephibosheth",
     "summary": "For Jonathan's sake, David seeks out any survivor of Saul's house, finds his crippled son Mephibosheth living in Lo-debar, and restores his land while welcoming him to the king's table.",
+    "blurb": "For Jonathan's sake David finds Saul's crippled grandson Mephibosheth and restores his land and a place at the king's table.",
     "arcId": "2sam-arc-bathsheba",
     "eventIds": ["2sam-e-c9-0", "2sam-e-c9-1"],
     "quizWorthy": true
@@ -95,6 +104,7 @@
     "number": 10,
     "title": "War with the Ammonites",
     "summary": "Ammon's new king humiliates the envoys David sends to console him, and when the Ammonites hire Aramean mercenaries in response, Joab and Abishai defeat the combined enemy forces in battle.",
+    "blurb": "Ammon humiliates David's envoys, and when Ammon hires Aramean mercenaries, Joab and Abishai defeat the combined enemy army.",
     "arcId": "2sam-arc-bathsheba",
     "eventIds": ["2sam-e-c10-0", "2sam-e-c10-1"],
     "quizWorthy": true
@@ -105,6 +115,7 @@
     "number": 11,
     "title": "David and Bathsheba",
     "summary": "David sees Bathsheba bathing and sleeps with her while her husband Uriah is at war, and when Uriah refuses to cover the pregnancy David has him killed in battle.",
+    "blurb": "David sleeps with Bathsheba while her husband Uriah is at war, then has Uriah killed in battle to cover the pregnancy.",
     "arcId": "2sam-arc-bathsheba",
     "eventIds": ["2sam-e-c11-0", "2sam-e-c11-1", "2sam-e-c11-2"],
     "quizWorthy": true
@@ -115,6 +126,7 @@
     "number": 12,
     "title": "Nathan's Rebuke and the Birth of Solomon",
     "summary": "Nathan confronts David with a parable and tells him he is the guilty man, the child born to Bathsheba dies despite David's pleading, and Solomon is born in his place.",
+    "blurb": "Nathan confronts David with a parable exposing his sin, Bathsheba's child dies, and Solomon is born in his place.",
     "arcId": "2sam-arc-bathsheba",
     "eventIds": ["2sam-e-c12-0", "2sam-e-c12-1", "2sam-e-c12-2"],
     "quizWorthy": true,
@@ -126,6 +138,7 @@
     "number": 13,
     "title": "Amnon and Tamar",
     "summary": "David's son Amnon rapes his half-sister Tamar and then rejects her, and two years later her full brother Absalom avenges her by having Amnon killed at a feast before fleeing.",
+    "blurb": "David's son Amnon rapes his half-sister Tamar, and two years later her brother Absalom avenges her by killing Amnon.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c13-0", "2sam-e-c13-1", "2sam-e-c13-2"],
     "quizWorthy": true
@@ -136,6 +149,7 @@
     "number": 14,
     "title": "Absalom's Return",
     "summary": "Joab sends a wise woman to persuade David to allow the banished Absalom back to Jerusalem, and after two years of estrangement father and son are finally reconciled.",
+    "blurb": "Joab arranges for the banished Absalom to return to Jerusalem, and after years apart father and son are finally reconciled.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c14-0", "2sam-e-c14-1"],
     "quizWorthy": true
@@ -146,6 +160,7 @@
     "number": 15,
     "title": "Absalom's Rebellion Begins",
     "summary": "Absalom wins the loyalty of Israel over four years, has himself proclaimed king, and forces David to flee Jerusalem, though the loyal foreigner Ittai refuses to leave the king's side.",
+    "blurb": "Absalom wins Israel's loyalty over several years, has himself proclaimed king, and forces David to flee Jerusalem.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c15-0", "2sam-e-c15-1", "2sam-e-c15-2"],
     "quizWorthy": true
@@ -156,6 +171,7 @@
     "number": 16,
     "title": "Shimei's Curse and Absalom's Advance",
     "summary": "As David flees, Ziba deceives him about Mephibosheth and Shimei curses him along the road, while in Jerusalem Absalom publicly claims his father's concubines on Ahithophel's advice.",
+    "blurb": "As David flees, Shimei curses him along the road while Absalom publicly claims his father's concubines in Jerusalem.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c16-0", "2sam-e-c16-1", "2sam-e-c16-2"],
     "quizWorthy": true
@@ -166,6 +182,7 @@
     "number": 17,
     "title": "Ahithophel's Counsel Is Rejected",
     "summary": "Absalom rejects Ahithophel's advice to attack David immediately in favor of Hushai's plan to delay, and after Hushai's warning reaches David, Ahithophel goes home and hangs himself.",
+    "blurb": "Absalom rejects Ahithophel's advice to attack David at once, and after his plan fails Ahithophel goes home and hangs himself.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c17-0", "2sam-e-c17-1", "2sam-e-c17-2"],
     "quizWorthy": true
@@ -176,6 +193,7 @@
     "number": 18,
     "title": "The Death of Absalom",
     "summary": "David's army defeats Absalom's forces in the forest of Ephraim, Joab kills Absalom after his hair catches in a tree, and a grieving David weeps bitterly for his son.",
+    "blurb": "David's army defeats Absalom's forces, Joab kills Absalom after his hair catches in a tree, and David weeps for his son.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c18-0", "2sam-e-c18-1", "2sam-e-c18-2"],
     "quizWorthy": true,
@@ -187,6 +205,7 @@
     "number": 19,
     "title": "David Returns to Jerusalem",
     "summary": "Joab rebukes David for mourning instead of thanking his army, and as David returns he pardons Shimei, settles a dispute over Mephibosheth's land, and honors Barzillai for his loyalty.",
+    "blurb": "Joab rebukes David's mourning, and as David returns to Jerusalem he pardons Shimei and honors the loyal Barzillai.",
     "arcId": "2sam-arc-absalom",
     "eventIds": ["2sam-e-c19-0", "2sam-e-c19-1", "2sam-e-c19-2"],
     "quizWorthy": true
@@ -197,6 +216,7 @@
     "number": 20,
     "title": "Sheba's Revolt",
     "summary": "A troublemaker named Sheba leads Israel away from David in a new revolt, and after Joab kills the army commander Amasa, the rebellion ends when a wise woman has Sheba beheaded.",
+    "blurb": "A troublemaker named Sheba leads a new revolt against David, which ends when a wise woman has him beheaded.",
     "arcId": "2sam-arc-final-years",
     "eventIds": ["2sam-e-c20-0", "2sam-e-c20-1"],
     "quizWorthy": true
@@ -207,6 +227,7 @@
     "number": 21,
     "title": "The Gibeonites Avenged",
     "summary": "David hands over seven of Saul's descendants to end a famine caused by Saul's broken oath to the Gibeonites, and his men kill four Philistine giants in renewed fighting.",
+    "blurb": "David hands over seven of Saul's descendants to end a famine caused by Saul's broken oath to the Gibeonites.",
     "arcId": "2sam-arc-final-years",
     "eventIds": ["2sam-e-c21-0", "2sam-e-c21-1"],
     "quizWorthy": true
@@ -217,6 +238,7 @@
     "number": 22,
     "title": "David's Song of Deliverance",
     "summary": "David sings a long song of praise to the LORD, celebrating him as a rock and fortress who rescued David from Saul and from every enemy throughout his life.",
+    "blurb": "David sings a long song praising the LORD as the rock and fortress who rescued him from Saul and every enemy.",
     "arcId": "2sam-arc-final-years",
     "eventIds": ["2sam-e-c22-0"],
     "quizWorthy": false
@@ -227,6 +249,7 @@
     "number": 23,
     "title": "David's Last Words and Mighty Men",
     "summary": "David's final recorded words describe a ruler who governs justly, and a closing roster honors his mighty men and their exploits, including three who risked their lives to bring him water.",
+    "blurb": "David's final words describe a just ruler, and a closing roster honors his mighty men's exploits in battle.",
     "arcId": "2sam-arc-final-years",
     "eventIds": ["2sam-e-c23-0", "2sam-e-c23-1"],
     "quizWorthy": false
@@ -237,6 +260,7 @@
     "number": 24,
     "title": "The Census and the Threshing Floor",
     "summary": "David orders a census against Joab's advice, and after God sends a plague on Israel, David buys a threshing floor at full price and builds an altar to stop it.",
+    "blurb": "David's census brings a plague on Israel, and he buys a threshing floor and builds an altar to stop it.",
     "arcId": "2sam-arc-final-years",
     "eventIds": ["2sam-e-c24-0", "2sam-e-c24-1"],
     "quizWorthy": true

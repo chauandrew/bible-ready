@@ -356,6 +356,22 @@ function checkBook(bookId: string) {
     }
   }
 
+  // --- Chapter Order blurb coverage -----------------------------------------
+  // components/ChapterOrderBoard.tsx falls back to `summary` (a full
+  // paragraph) when a chapter has no `blurb`, so a missing one doesn't break
+  // anything, but it does mean that chapter's card doesn't match the
+  // compact-sentence style the rest of the board uses. Only checked for
+  // non-selection books: selection-depth books are excluded from the board
+  // entirely (see DESIGN.md's "Chapter Order" section), so there's nothing
+  // to author there.
+  if (!isSelection) {
+    for (const c of chapters) {
+      if (!c.blurb) {
+        warnings.push(`chapters: "${c.id}" has no blurb, so its Chapter Order card falls back to the full summary`);
+      }
+    }
+  }
+
   // --- citations on every citable item --------------------------------------
   for (const e of events) if (!e.citation) errors.push(`events: "${e.id}" missing citation`);
   for (const q of quotes) if (!q.citation) errors.push(`quotes: "${q.id}" missing citation`);

@@ -86,6 +86,14 @@ export const ChapterSchema = z.object({
    * chapter pages read consistently. Note this is *not* what the generated
    * "what is chapter N about" question offers as options — that uses `title`. */
   summary: z.string(),
+  /** A medium-length blurb: one real sentence, longer than `title` but
+   * shorter than `summary`, for a compact card that still reads as a full
+   * thought (the Chapter Order board, see DESIGN.md). Optional: only the
+   * five wired narrative books have it authored so far; a chapter without
+   * one falls back to `summary` wherever it's used. Same plot-level voice as
+   * `summary` (what happens, not what it means); see the authored-question
+   * convention below this schema doesn't enforce but content should match. */
+  blurb: z.string().optional(),
   arcId: z.string(),
   eventIds: z.array(z.string()),
   /**

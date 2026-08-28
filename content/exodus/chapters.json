@@ -5,6 +5,7 @@
     "number": 1,
     "title": "Israel Enslaved in Egypt",
     "summary": "A new king who does not remember Joseph fears Israel's rapid growth and forces the people into hard labor. When Hebrew midwives refuse to kill newborn boys, Pharaoh orders every infant son thrown into the Nile.",
+    "blurb": "A new Pharaoh forces the growing Hebrew population into slavery and orders every newborn son drowned in the Nile.",
     "arcId": "exo-arc-egypt",
     "eventIds": ["exo-e-c1-0", "exo-e-c1-1", "exo-e-c1-2", "exo-e-c1-3"]
   },
@@ -14,6 +15,7 @@
     "number": 2,
     "title": "Moses Born and Flees",
     "summary": "A Hebrew baby is hidden, set afloat on the Nile, and rescued by Pharaoh's daughter, who raises him as her own. Grown, Moses kills an Egyptian and flees to Midian, where he marries Zipporah. Egypt's king dies, and God hears Israel's groaning.",
+    "blurb": "Rescued from the Nile as a baby and raised in Pharaoh's household, Moses kills an Egyptian as an adult and flees to Midian.",
     "arcId": "exo-arc-egypt",
     "eventIds": ["exo-e-c2-0", "exo-e-c2-1", "exo-e-c2-2", "exo-e-c2-3", "exo-e-c2-4", "exo-e-c2-5"]
   },
@@ -23,6 +25,7 @@
     "number": 3,
     "title": "The Burning Bush",
     "summary": "While tending sheep near Horeb, Moses sees a bush ablaze yet unburned and God speaks to him from within it. God sends Moses to rescue Israel from slavery and, when Moses asks, reveals his covenant name.",
+    "blurb": "God speaks to Moses from a bush that burns without being consumed and sends him to free Israel from Egypt.",
     "arcId": "exo-arc-call",
     "eventIds": ["exo-e-c3-0", "exo-e-c3-1", "exo-e-c3-2"]
   },
@@ -32,6 +35,7 @@
     "number": 4,
     "title": "Moses Sent Back to Egypt",
     "summary": "God equips Moses with miraculous signs and answers his objections about speaking ability by appointing Aaron as his mouthpiece. Moses leaves Midian, reunites with Aaron, and together they convince Israel's elders to believe.",
+    "blurb": "God gives Moses miraculous signs and Aaron as a spokesman, and the two return to Egypt and win the elders' trust.",
     "arcId": "exo-arc-call",
     "eventIds": ["exo-e-c4-0", "exo-e-c4-1", "exo-e-c4-2", "exo-e-c4-3", "exo-e-c4-4"]
   },
@@ -41,6 +45,7 @@
     "number": 5,
     "title": "Pharaoh Refuses and Retaliates",
     "summary": "Moses and Aaron ask Pharaoh to let Israel go worship in the wilderness, but he refuses and accuses them of laziness. Pharaoh punishes the request by making the Israelites gather their own straw for bricks.",
+    "blurb": "Pharaoh rejects Moses and Aaron's request to let Israel worship in the wilderness and punishes the people with harsher labor.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c5-0", "exo-e-c5-1"]
   },
@@ -50,6 +55,7 @@
     "number": 6,
     "title": "God Renews His Promise",
     "summary": "Discouraged by Pharaoh's cruelty, Moses hears God reaffirm his covenant name and his promise to redeem Israel and bring the people into the promised land. God sends Moses and Aaron back to confront Pharaoh again.",
+    "blurb": "God reaffirms his covenant name and promise of deliverance to a discouraged Moses and sends him back to confront Pharaoh.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c6-0", "exo-e-c6-1"]
   },
@@ -59,6 +65,7 @@
     "number": 7,
     "title": "The Nile Turns to Blood",
     "summary": "Aaron's staff becomes a snake and swallows the Egyptian magicians' staffs, but Pharaoh's heart remains hard. Aaron then strikes the Nile with his staff, turning the entire river to blood and killing its fish.",
+    "blurb": "Aaron's staff outmatches Pharaoh's magicians as a snake, then he strikes the Nile with it, turning the river to blood.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c7-0", "exo-e-c7-1"]
   },
@@ -68,6 +75,7 @@
     "number": 8,
     "title": "Frogs, Gnats, and Flies",
     "summary": "Three plagues strike in succession: frogs overrun Egypt until Pharaoh briefly relents, dust turns to gnats that even the magicians cannot reproduce, and swarms of flies fill Egyptian homes while sparing Israel's land of Goshen.",
+    "blurb": "Three plagues strike in a row, overwhelming Egypt with frogs, gnats, and flies, while Israel's land of Goshen is spared.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c8-0", "exo-e-c8-1", "exo-e-c8-2"]
   },
@@ -77,6 +85,7 @@
     "number": 9,
     "title": "Livestock, Boils, and Hail",
     "summary": "A plague kills Egypt's livestock while Israel's animals are spared, painful boils break out on the Egyptians, and a violent hailstorm mixed with fire destroys crops and anything left exposed across the land.",
+    "blurb": "A plague kills Egypt's livestock, boils break out on its people, and a fiery hailstorm destroys crops across the land.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c9-0", "exo-e-c9-1", "exo-e-c9-2"]
   },
@@ -86,6 +95,7 @@
     "number": 10,
     "title": "Locusts and Darkness",
     "summary": "A locust swarm devours every plant the hail left standing, stripping Egypt bare. Then a thick, unnatural darkness covers the land for three days while Israel's homes remain lit, and still Pharaoh refuses to yield.",
+    "blurb": "A locust swarm strips Egypt bare and three days of unnatural darkness fall, yet Pharaoh still refuses to release Israel.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c10-0", "exo-e-c10-1"]
   },
@@ -95,6 +105,7 @@
     "number": 11,
     "title": "Warning of the Final Plague",
     "summary": "God tells Moses one more plague remains: the death of every firstborn in Egypt. This time Pharaoh himself will beg Israel to leave, and Moses warns Pharaoh directly before the plague falls that night.",
+    "blurb": "God warns Moses that the death of every Egyptian firstborn will be the plague that finally forces Pharaoh to yield.",
     "arcId": "exo-arc-plagues",
     "eventIds": ["exo-e-c11-0"]
   },
@@ -104,6 +115,7 @@
     "number": 12,
     "title": "The Passover and the Exodus",
     "summary": "God institutes the Passover meal and the protective blood on Israel's doorframes. The tenth plague kills every Egyptian firstborn, Pharaoh finally releases Israel, and the people leave Rameses after four hundred thirty years in Egypt.",
+    "blurb": "Israel keeps the first Passover as the tenth plague strikes Egypt's firstborn, and Pharaoh finally lets the people go.",
     "arcId": "exo-arc-exodus-sea",
     "eventIds": ["exo-e-c12-0", "exo-e-c12-1", "exo-e-c12-2"]
   },
@@ -113,6 +125,7 @@
     "number": 13,
     "title": "Consecration and the Pillar",
     "summary": "God commands that every firstborn male among Israel's people and animals be set apart to him as a lasting reminder of the exodus. God then leads the people by a visible pillar of cloud and fire.",
+    "blurb": "God claims Israel's firstborn as his own and leads the people out of Egypt by a pillar of cloud and fire.",
     "arcId": "exo-arc-exodus-sea",
     "eventIds": ["exo-e-c13-0", "exo-e-c13-1"]
   },
@@ -122,6 +135,7 @@
     "number": 14,
     "title": "Crossing the Red Sea",
     "summary": "Pharaoh changes his mind and pursues Israel, trapping the people against the sea. The LORD parts the water so Israel crosses on dry ground, then closes the sea again and drowns the pursuing Egyptian army.",
+    "blurb": "Pharaoh's army corners Israel at the sea, but God parts the water for Israel to cross and drowns the pursuing Egyptians.",
     "arcId": "exo-arc-exodus-sea",
     "eventIds": ["exo-e-c14-0", "exo-e-c14-1", "exo-e-c14-2"]
   }
