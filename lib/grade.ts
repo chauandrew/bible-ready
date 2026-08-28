@@ -81,6 +81,12 @@ function termPresent(answerWords: string[], term: string): boolean {
 export interface GradingTerms {
   terms: string[];
   minTerms: number;
+  /** Significant words from the title alone. A title-only chapter (e.g. "The
+   * Good Shepherd") often has fewer than minTerms of its own words, so an
+   * answer that's just the title's own phrase (an "I am" statement, a famous
+   * one-liner) can't reach minTerms without also naming details from the
+   * summary it never claimed. Restating the title is correct on its own. */
+  titleTerms: string[];
 }
 
 /** Pull the significant (non-stopword) words out of a chapter's title and
@@ -90,11 +96,21 @@ export interface GradingTerms {
 export function deriveGradingTerms(
   chapter: Pick<Chapter, "title" | "summary" | "freeResponseAliases" | "freeResponseMinTerms">
 ): GradingTerms {
-  const words = [...normalizeWords(chapter.title), ...normalizeWords(chapter.summary)].filter(
+  const titleTerms = normalizeWords(chapter.title).filter((w) => w.length > 2 && !STOPWORDS.has(w));
+  const words = [...titleTerms, ...normalizeWords(chapter.summary)].filter(
     (w) => w.length > 2 && !STOPWORDS.has(w)
   );
   const terms = Array.from(new Set([...words, ...chapter.freeResponseAliases]));
-  return { terms, minTerms: chapter.freeResponseMinTerms ?? Math.min(MIN_TERMS, terms.length) };
+  return {
+    terms,
+    minTerms: chapter.freeResponseMinTerms ?? Math.min(MIN_TERMS, terms.length),
+    // Only offered as a shortcut for the default "describe this chapter"
+    // threshold. A chapter with an authored freeResponseMinTerms (a fixed
+    // roster like "name the twelve disciples") means the title is
+    // deliberately *not* an acceptable answer on its own — the terms are the
+    // roster, not a paraphrase target.
+    titleTerms: chapter.freeResponseMinTerms === undefined ? titleTerms : [],
+  };
 }
 
 export interface GradeResult {
@@ -110,5 +126,7 @@ export function gradeFreeResponse(grading: GradingTerms, rawAnswer: string): Gra
 
   const answerWords = normalizeWords(text);
   const matchedTerms = grading.terms.filter((term) => termPresent(answerWords, term)).length;
-  return { correct: matchedTerms >= grading.minTerms, matchedTerms, totalTerms };
+  const restatesTitle =
+    grading.titleTerms.length > 0 && grading.titleTerms.every((t) => termPresent(answerWords, t));
+  return { correct: matchedTerms >= grading.minTerms || restatesTitle, matchedTerms, totalTerms };
 }

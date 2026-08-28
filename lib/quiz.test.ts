@@ -143,7 +143,7 @@ test("userAnswerText reads the player's own submission per answer kind", () => {
 
   const fr: QuizItem = {
     kind: "generated", id: "gen:free-response:c1", type: "free-response",
-    prompt: "p", chapterNumber: 1, terms: ["a"], minTerms: 1, citation: { book: "genesis", chapter: 1 },
+    prompt: "p", chapterNumber: 1, terms: ["a"], minTerms: 1, titleTerms: ["a"], citation: { book: "genesis", chapter: 1 },
   };
   assert.equal(userAnswerText(fr, { itemId: fr.id, kind: "free-response", text: "my answer" }), "my answer");
 });
