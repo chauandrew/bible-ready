@@ -32,6 +32,13 @@ export default async function BookHome({ params }: { params: Promise<{ book: str
     { href: `/${bookId}/quiz`, label: "Quiz", desc: "Pick your questions and sections, then see your score and where to focus." },
     { href: `/${bookId}/print/all`, label: "Worksheet", desc: "A paper handout with an answer key, for a room with no phones." },
   ];
+  if (!isSelection) {
+    reviewTools.push({
+      href: `/${bookId}/chapter-quiz`,
+      label: "Chapter Order",
+      desc: `Drag each ${book.chapterLabel}'s description into the ${book.chapterLabel} you think it's from.`,
+    });
+  }
 
   return (
     <main className="container-wide">

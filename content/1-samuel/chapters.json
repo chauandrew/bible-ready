@@ -5,6 +5,7 @@
     "number": 1,
     "title": "Hannah Prays for a Son",
     "summary": "Hannah, childless and mocked by Elkanah's other wife, weeps and vows at Shiloh to give a son to the LORD; she conceives, bears Samuel, and brings him to serve at the tabernacle after weaning him.",
+    "blurb": "Childless Hannah vows a son to the LORD at Shiloh, conceives Samuel, and brings him to serve at the tabernacle.",
     "arcId": "1sam-arc-birth-call",
     "eventIds": [
       "1sam-e-c1-1",
@@ -18,6 +19,7 @@
     "number": 2,
     "title": "Hannah's Song and Eli's Wicked Sons",
     "summary": "Hannah sings praise to God for answering her prayer, while Eli's sons Hophni and Phinehas abuse their priestly duties, and a man of God warns Eli that his sons will both die on the same day.",
+    "blurb": "Hannah sings praise for her answered prayer while Eli's corrupt sons abuse the priesthood and are warned they will die together.",
     "arcId": "1sam-arc-birth-call",
     "eventIds": [
       "1sam-e-c2-1",
@@ -32,6 +34,7 @@
     "number": 3,
     "title": "The LORD Calls Samuel",
     "summary": "The LORD calls young Samuel by name three times in the night; Eli realizes it is the LORD and tells him how to answer, and Samuel receives a hard message of judgment against Eli's house.",
+    "blurb": "The LORD calls young Samuel by name in the night and gives him a hard message of judgment against Eli's household.",
     "arcId": "1sam-arc-birth-call",
     "eventIds": [
       "1sam-e-c3-1",
@@ -45,6 +48,7 @@
     "number": 4,
     "title": "The Ark Is Captured",
     "summary": "Israel loses a battle to the Philistines, brings the ark of the covenant into camp for the next fight, loses again, and Eli's sons die as the ark itself is captured.",
+    "blurb": "Israel loses two battles to the Philistines, Eli's sons die, and the ark of the covenant itself is captured.",
     "arcId": "1sam-arc-ark",
     "eventIds": [
       "1sam-e-c4-1",
@@ -59,6 +63,7 @@
     "number": 5,
     "title": "The Ark Among the Philistines",
     "summary": "The Philistines set the captured ark in the temple of Dagon, whose statue falls and breaks before it, and the LORD strikes the people of each city the ark is moved to with tumors.",
+    "blurb": "The captured ark topples Dagon's statue in his own temple and brings tumors on every Philistine city it is moved to.",
     "arcId": "1sam-arc-ark",
     "eventIds": [
       "1sam-e-c5-1",
@@ -72,6 +77,7 @@
     "number": 6,
     "title": "The Ark Comes Home",
     "summary": "The Philistines load the ark onto a new cart with a guilt offering of gold and send it back toward Israel, but some men of Beth-shemesh are struck down for looking inside it.",
+    "blurb": "The Philistines send the ark back to Israel on a cart, but men of Beth-shemesh are struck down for looking inside it.",
     "arcId": "1sam-arc-ark",
     "eventIds": [
       "1sam-e-c6-1",
@@ -85,6 +91,7 @@
     "number": 7,
     "title": "Victory at Mizpah",
     "summary": "Samuel calls Israel to put away their foreign gods, leads them in fasting and prayer at Mizpah, and the LORD routs the attacking Philistines with thunder as Samuel sets up a memorial stone.",
+    "blurb": "Samuel leads Israel in repentance at Mizpah, and the LORD routs the attacking Philistines with thunder.",
     "arcId": "1sam-arc-ark",
     "eventIds": [
       "1sam-e-c7-1",
@@ -99,6 +106,7 @@
     "number": 8,
     "title": "Israel Demands a King",
     "summary": "With Samuel old and his sons corrupt, the elders of Israel demand a king like the other nations; Samuel warns them what a king will take from them, but the people insist anyway.",
+    "blurb": "Israel's elders demand a king like other nations despite Samuel's warning about what a king will take from them.",
     "arcId": "1sam-arc-king-demanded",
     "eventIds": [
       "1sam-e-c8-1",
@@ -112,6 +120,7 @@
     "number": 9,
     "title": "Saul Searches for Donkeys",
     "summary": "Saul, a tall young Benjamite, sets out looking for his father's lost donkeys and ends up meeting Samuel, who invites him to a feast and hints that Saul is the man Israel desires.",
+    "blurb": "While searching for his father's lost donkeys, Saul meets Samuel, who hints that Saul is the king Israel desires.",
     "arcId": "1sam-arc-king-demanded",
     "eventIds": [
       "1sam-e-c9-1",
@@ -125,6 +134,7 @@
     "number": 10,
     "title": "Saul Is Anointed King",
     "summary": "Samuel privately anoints Saul with oil, gives him confirming signs including the Spirit rushing on him to prophesy, and then presents Saul to Israel as king after he is chosen by lot at Mizpah.",
+    "blurb": "Samuel privately anoints Saul with oil, then presents him to Israel as king after he is chosen by lot at Mizpah.",
     "arcId": "1sam-arc-king-demanded",
     "eventIds": [
       "1sam-e-c10-1",
@@ -139,6 +149,7 @@
     "number": 11,
     "title": "Saul Rescues Jabesh-gilead",
     "summary": "When Nahash the Ammonite threatens to gouge out the eyes of Jabesh-gilead's people, Saul summons Israel's army with cut oxen, defeats the Ammonites, and has his kingship publicly confirmed at Gilgal.",
+    "blurb": "Saul rallies Israel's army to rescue Jabesh-gilead from the Ammonites, and his kingship is publicly confirmed at Gilgal.",
     "arcId": "1sam-arc-king-demanded",
     "eventIds": [
       "1sam-e-c11-1",
@@ -152,6 +163,7 @@
     "number": 12,
     "title": "Samuel's Farewell Speech",
     "summary": "Samuel reviews his own integrity and recounts the LORD's past faithfulness to Israel, then sends thunder and rain during the wheat harvest to show the people how seriously they sinned in demanding a king.",
+    "blurb": "Samuel recounts God's faithfulness to Israel and sends thunder to show the people how seriously they sinned in demanding a king.",
     "arcId": "1sam-arc-king-demanded",
     "eventIds": [
       "1sam-e-c12-1",
@@ -165,6 +177,7 @@
     "number": 13,
     "title": "Saul's Unlawful Sacrifice",
     "summary": "Facing a huge Philistine army and a scattering, fearful army of his own, Saul grows impatient waiting for Samuel and offers the burnt offering himself, so Samuel tells him his kingdom will not continue.",
+    "blurb": "Facing a huge Philistine army, an impatient Saul offers the sacrifice himself instead of waiting for Samuel, costing him his kingdom.",
     "arcId": "1sam-arc-saul-rejected",
     "eventIds": [
       "1sam-e-c13-1",
@@ -178,6 +191,7 @@
     "number": 14,
     "title": "Jonathan's Raid and Saul's Rash Oath",
     "summary": "Jonathan and his armor-bearer attack a Philistine outpost alone, trusting the LORD to save by few or many, and the resulting panic routs the Philistines, but Saul's rash oath nearly costs Jonathan his life.",
+    "blurb": "Jonathan and his armor-bearer rout a Philistine outpost alone, but Saul's rash oath nearly costs Jonathan his life.",
     "arcId": "1sam-arc-saul-rejected",
     "eventIds": [
       "1sam-e-c14-1",
@@ -192,6 +206,7 @@
     "number": 15,
     "title": "Saul Spares Agag and Is Rejected",
     "summary": "Saul is commanded to destroy the Amalekites completely but spares King Agag and the best animals, and when Samuel confronts him, Saul admits he feared the people and is told the kingdom is torn from him.",
+    "blurb": "Saul spares King Agag and the best plunder against God's command, and Samuel tells him the kingdom is torn from him.",
     "arcId": "1sam-arc-saul-rejected",
     "eventIds": [
       "1sam-e-c15-1",
@@ -206,6 +221,7 @@
     "number": 16,
     "title": "David Is Anointed",
     "summary": "The LORD sends Samuel to Bethlehem to anoint one of Jesse's sons as the next king, choosing the youngest, David, whose skill on the harp soon brings him into Saul's court to soothe his troubled spirit.",
+    "blurb": "Samuel anoints the youngest of Jesse's sons, David, as the next king, and David's harp playing soon soothes Saul's troubled spirit.",
     "arcId": "1sam-arc-david-rises",
     "eventIds": [
       "1sam-e-c16-1",
@@ -220,6 +236,7 @@
     "number": 17,
     "title": "David and Goliath",
     "summary": "The Philistine champion Goliath taunts Israel's army for forty days until young David, sent to check on his brothers, volunteers to fight him and kills the giant with a single sling stone.",
+    "blurb": "Young David volunteers to fight the Philistine champion Goliath and kills the giant with a single sling stone.",
     "arcId": "1sam-arc-david-rises",
     "eventIds": [
       "1sam-e-c17-1",
@@ -233,6 +250,7 @@
     "number": 18,
     "title": "Jonathan's Covenant and Saul's Jealousy",
     "summary": "Jonathan makes a covenant of friendship with David and gives him his own robe and armor, while Saul grows jealous of David's popularity, hurls a spear at him, and gives him Michal as a wife.",
+    "blurb": "Jonathan makes a covenant of friendship with David while a jealous Saul hurls a spear at him and gives him Michal as a wife.",
     "arcId": "1sam-arc-david-rises",
     "eventIds": [
       "1sam-e-c18-1",
@@ -247,6 +265,7 @@
     "number": 19,
     "title": "David Flees from Saul",
     "summary": "Jonathan temporarily talks Saul out of killing David, but Saul tries again to spear him, so Michal helps David escape through a window using a household idol to fool the pursuing men.",
+    "blurb": "Saul tries again to kill David with a spear, so Michal helps David escape through a window using a household idol as a decoy.",
     "arcId": "1sam-arc-david-rises",
     "eventIds": [
       "1sam-e-c19-1",
@@ -261,6 +280,7 @@
     "number": 20,
     "title": "The Covenant of Jonathan and David",
     "summary": "Jonathan and David devise a signal with arrows to test whether Saul truly intends to kill David, and once Saul's anger confirms it, the two friends renew their covenant and weep as they part.",
+    "blurb": "Jonathan and David use a signal of arrows to confirm Saul's murderous intent, then renew their covenant and weep as they part.",
     "arcId": "1sam-arc-david-rises",
     "eventIds": [
       "1sam-e-c20-1",
@@ -274,6 +294,7 @@
     "number": 21,
     "title": "David Flees to Nob and Gath",
     "summary": "David asks the priest Ahimelech for bread and receives Goliath's sword, then flees to the Philistine king Achish and escapes by pretending to be insane, scratching at gates and drooling into his beard.",
+    "blurb": "David receives Goliath's sword from the priest Ahimelech, then escapes the Philistine king Achish by feigning insanity.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c21-1",
@@ -287,6 +308,7 @@
     "number": 22,
     "title": "The Cave of Adullam and the Massacre at Nob",
     "summary": "About four hundred discontented men gather around David at a cave, and when Saul learns Ahimelech helped him, he has Doeg the Edomite slaughter the priests of Nob and the entire town.",
+    "blurb": "Discontented men gather around David at a cave while Saul has Doeg slaughter the priests of Nob for helping him.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c22-1",
@@ -301,6 +323,7 @@
     "number": 23,
     "title": "David Saves Keilah",
     "summary": "David rescues the town of Keilah from a Philistine raid, learns through the ephod that its people would hand him over to Saul, and narrowly escapes Saul's pursuit in the wilderness after Jonathan visits and encourages him.",
+    "blurb": "David rescues Keilah from a Philistine raid, then narrowly escapes Saul's pursuit after learning the town would betray him.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c23-1",
@@ -315,6 +338,7 @@
     "number": 24,
     "title": "David Spares Saul in the Cave",
     "summary": "Saul enters a cave at En Gedi where David is hiding, and David secretly cuts off a corner of Saul's robe instead of killing him, prompting Saul to weep and admit David will be king.",
+    "blurb": "David secretly cuts off a corner of Saul's robe in a cave instead of killing him, and Saul weeps and admits David will be king.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c24-1",
@@ -331,6 +355,7 @@
     "number": 25,
     "title": "Nabal and Abigail",
     "summary": "After Samuel dies, the wealthy Nabal insults David's men who had protected his flocks, but his wise wife Abigail intervenes with gifts to prevent bloodshed, and David marries her after Nabal dies.",
+    "blurb": "The wealthy Nabal insults David's men, but his wise wife Abigail averts bloodshed with gifts and later marries David.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c25-1",
@@ -345,6 +370,7 @@
     "number": 26,
     "title": "David Spares Saul Again",
     "summary": "David sneaks into Saul's camp at night and takes his spear and water jug while everyone sleeps, then calls out from a distance to show Saul he again refused to harm the LORD's anointed.",
+    "blurb": "David sneaks into Saul's camp at night and takes his spear and water jug to prove again that he will not harm the LORD's anointed.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c26-1",
@@ -358,6 +384,7 @@
     "number": 27,
     "title": "David Among the Philistines",
     "summary": "Believing Saul will never stop hunting him, David takes refuge with Achish king of Gath, who gives him the town of Ziklag, from which David raids nearby peoples while deceiving Achish about his targets.",
+    "blurb": "David takes refuge with the Philistine king Achish in Ziklag, from which he raids nearby peoples while deceiving Achish about his targets.",
     "arcId": "1sam-arc-david-fugitive",
     "eventIds": [
       "1sam-e-c27-1",
@@ -371,6 +398,7 @@
     "number": 28,
     "title": "Saul and the Medium of Endor",
     "summary": "With the Philistines massing for battle and the LORD no longer answering him, a desperate Saul disguises himself and asks a medium at Endor to bring up Samuel, who foretells Saul's defeat and death.",
+    "blurb": "A desperate Saul consults a medium at Endor, who brings up Samuel to foretell Saul's coming defeat and death.",
     "arcId": "1sam-arc-saul-death",
     "eventIds": [
       "1sam-e-c28-1",
@@ -387,6 +415,7 @@
     "number": 29,
     "title": "The Philistines Reject David",
     "summary": "As the Philistine army prepares to march against Israel, its commanders refuse to trust David alongside them in battle, so Achish reluctantly sends him back to Ziklag.",
+    "blurb": "Philistine commanders refuse to trust David in battle against Israel, so Achish reluctantly sends him back to Ziklag.",
     "arcId": "1sam-arc-saul-death",
     "eventIds": [
       "1sam-e-c29-1"
@@ -399,6 +428,7 @@
     "number": 30,
     "title": "David Rescues Ziklag",
     "summary": "David returns to find Ziklag burned and his family taken captive by Amalekite raiders, so he pursues them with the LORD's guidance, recovers everyone and everything, and shares the plunder with those who stayed behind.",
+    "blurb": "David returns to find Ziklag burned by Amalekite raiders, pursues them, and recovers his family and the plunder.",
     "arcId": "1sam-arc-saul-death",
     "eventIds": [
       "1sam-e-c30-1",
@@ -413,6 +443,7 @@
     "number": 31,
     "title": "The Death of Saul and Jonathan",
     "summary": "The Philistines defeat Israel at Mount Gilboa, killing Jonathan and Saul's other sons, and Saul takes his own life rather than be captured, until the men of Jabesh-gilead retrieve and bury his body.",
+    "blurb": "The Philistines kill Jonathan and defeat Israel at Mount Gilboa, and Saul takes his own life rather than be captured.",
     "arcId": "1sam-arc-saul-death",
     "eventIds": [
       "1sam-e-c31-1",

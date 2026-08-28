@@ -5,6 +5,7 @@
     "number": 1,
     "title": "The Word Made Flesh",
     "summary": "John identifies Jesus as the eternal Word who becomes flesh, records John the Baptist's testimony about the Lamb of God, and narrates the calling of the first disciples.",
+    "blurb": "John introduces Jesus as the eternal Word become flesh and narrates John the Baptist's testimony and the calling of the first disciples.",
     "arcId": "jn-arc-word",
     "eventIds": [
       "jn-e-c1-0",
@@ -21,6 +22,7 @@
     "number": 2,
     "title": "The Wedding at Cana",
     "summary": "Jesus performs his first sign by turning water into wine at a wedding in Cana, then travels to Jerusalem and drives the money changers and merchants out of the temple.",
+    "blurb": "Jesus turns water into wine at a wedding in Cana, his first sign, then drives the money changers out of the Jerusalem temple.",
     "arcId": "jn-arc-word",
     "eventIds": [
       "jn-e-c2-0",
@@ -34,6 +36,7 @@
     "number": 3,
     "title": "Nicodemus",
     "summary": "A Pharisee named Nicodemus visits Jesus by night to ask about the kingdom of God, and Jesus tells him he must be born again, while John the Baptist testifies that Jesus must increase.",
+    "blurb": "A Pharisee named Nicodemus questions Jesus at night and is told that he must be born again to see the kingdom of God.",
     "arcId": "jn-arc-encounters",
     "eventIds": [
       "jn-e-c3-0",
@@ -47,6 +50,7 @@
     "number": 4,
     "title": "The Samaritan Woman",
     "summary": "Jesus offers a Samaritan woman living water at a well, leading her whole town to believe in him, and then heals a royal official's dying son from a distance.",
+    "blurb": "Jesus offers a Samaritan woman living water at a well and heals a royal official's dying son from a distance.",
     "arcId": "jn-arc-encounters",
     "eventIds": [
       "jn-e-c4-0",
@@ -61,6 +65,7 @@
     "number": 5,
     "title": "The Pool of Bethesda",
     "summary": "Jesus heals a man who had been unable to walk for thirty-eight years at the pool of Bethesda on the Sabbath, prompting religious leaders to accuse him of blasphemy.",
+    "blurb": "On the Sabbath Jesus heals a man who had been unable to walk for thirty-eight years, drawing accusations of blasphemy.",
     "arcId": "jn-arc-opposition",
     "eventIds": [
       "jn-e-c5-0",
@@ -74,6 +79,7 @@
     "number": 6,
     "title": "Feeding the Five Thousand",
     "summary": "Jesus feeds five thousand people with five loaves and two fish, walks on the sea to his disciples, and teaches that he is the bread of life, causing many followers to leave him.",
+    "blurb": "Jesus feeds five thousand with five loaves and two fish, walks on the sea, and calls himself the bread of life.",
     "arcId": "jn-arc-opposition",
     "eventIds": [
       "jn-e-c6-0",
@@ -89,6 +95,7 @@
     "number": 7,
     "title": "The Feast of Booths",
     "summary": "Jesus goes up to Jerusalem for the Feast of Booths and teaches openly in the temple, dividing opinion about him so sharply that officers sent to arrest him return empty-handed.",
+    "blurb": "Jesus teaches openly in the temple during the Feast of Booths, dividing the crowd so sharply that officers fail to arrest him.",
     "arcId": "jn-arc-opposition",
     "eventIds": [
       "jn-e-c7-0",
@@ -102,6 +109,7 @@
     "number": 8,
     "title": "The Woman Caught in Adultery",
     "summary": "Jesus forgives a woman caught in adultery, tells the crowd that whoever is without sin should cast the first stone, and declares himself the light of the world.",
+    "blurb": "Jesus forgives a woman caught in adultery, challenges her accusers to cast the first stone, and calls himself the light of the world.",
     "arcId": "jn-arc-light-shepherd",
     "eventIds": [
       "jn-e-c8-0",
@@ -116,6 +124,7 @@
     "number": 9,
     "title": "The Man Born Blind",
     "summary": "Jesus heals a man born blind by anointing his eyes with mud and sending him to wash, and Pharisees who refuse to believe the miracle expel the man from the synagogue.",
+    "blurb": "Jesus heals a man born blind with mud and spit, and Pharisees who reject the miracle expel him from the synagogue.",
     "arcId": "jn-arc-light-shepherd",
     "eventIds": [
       "jn-e-c9-0",
@@ -129,6 +138,7 @@
     "number": 10,
     "title": "The Good Shepherd",
     "summary": "Jesus describes himself as the door for the sheep and the good shepherd who lays down his life for them, then claims oneness with the Father at the Feast of Dedication.",
+    "blurb": "Jesus calls himself the good shepherd who lays down his life for the sheep, then claims oneness with the Father.",
     "arcId": "jn-arc-light-shepherd",
     "eventIds": [
       "jn-e-c10-0",
@@ -143,6 +153,7 @@
     "number": 11,
     "title": "The Raising of Lazarus",
     "summary": "Jesus tells the grieving Martha that he is the resurrection and the life, then calls his friend Lazarus out of the tomb four days after his death, prompting the leaders to plot his own death.",
+    "blurb": "Jesus calls his dead friend Lazarus out of the tomb four days after his death, prompting the leaders to plot Jesus' own death.",
     "arcId": "jn-arc-lazarus",
     "eventIds": [
       "jn-e-c11-0",
@@ -158,6 +169,7 @@
     "number": 12,
     "title": "The Triumphal Entry",
     "summary": "Mary anoints Jesus' feet with costly perfume at Bethany, crowds hail him as king when he rides into the city on a donkey, and Jesus predicts his coming death to visiting Greeks.",
+    "blurb": "Mary anoints Jesus' feet at Bethany, and crowds hail him as king when he rides into Jerusalem on a donkey.",
     "arcId": "jn-arc-lazarus",
     "eventIds": [
       "jn-e-c12-0",
@@ -177,6 +189,7 @@
     "number": 13,
     "title": "Jesus Washes the Disciples' Feet",
     "summary": "At the last supper Jesus washes his disciples' feet as an example of humble service, gives them a new commandment to love one another, and predicts Judas' betrayal and Peter's denial.",
+    "blurb": "At the last supper Jesus washes his disciples' feet, gives a new command to love one another, and predicts his betrayal.",
     "arcId": "jn-arc-upper-room",
     "eventIds": [
       "jn-e-c13-0",
@@ -191,6 +204,7 @@
     "number": 14,
     "title": "The Way, the Truth, and the Life",
     "summary": "Jesus comforts his troubled disciples by telling Thomas that he is the way, the truth, and the life, and promises to send the Holy Spirit to teach and remind them of all he said.",
+    "blurb": "Jesus comforts his troubled disciples, telling Thomas he is the way, the truth, and the life, and promises the Holy Spirit.",
     "arcId": "jn-arc-upper-room",
     "eventIds": [
       "jn-e-c14-0",
@@ -204,6 +218,7 @@
     "number": 15,
     "title": "The True Vine",
     "summary": "Jesus describes himself as the true vine and his disciples as the branches who must remain in him to bear fruit, then warns them that the world will hate them as it hated him.",
+    "blurb": "Jesus calls himself the true vine and his disciples the branches who must remain in him to bear fruit.",
     "arcId": "jn-arc-upper-room",
     "eventIds": [
       "jn-e-c15-0",
@@ -217,6 +232,7 @@
     "number": 16,
     "title": "The Promise of the Holy Spirit",
     "summary": "Jesus tells his disciples it is better for him to go away so the Spirit of truth can come, and promises that their present sorrow will turn into lasting joy.",
+    "blurb": "Jesus tells his disciples it is better for him to leave so the Spirit of truth can come and comfort them.",
     "arcId": "jn-arc-upper-room",
     "eventIds": [
       "jn-e-c16-0",
@@ -230,6 +246,7 @@
     "number": 17,
     "title": "Jesus' High Priestly Prayer",
     "summary": "Before his arrest Jesus prays aloud, asking the Father to glorify him, to protect his disciples from the world, and to unite everyone who will believe through their message.",
+    "blurb": "Before his arrest Jesus prays for his own glory, for his disciples' protection, and for the unity of future believers.",
     "arcId": "jn-arc-upper-room",
     "eventIds": [
       "jn-e-c17-0",
@@ -243,6 +260,7 @@
     "number": 18,
     "title": "The Arrest of Jesus",
     "summary": "Judas leads soldiers to arrest Jesus in a garden, Jesus is questioned before the high priest Caiaphas while Peter denies him three times, and Pilate offers to release Barabbas instead of Jesus.",
+    "blurb": "Judas leads soldiers to arrest Jesus, Peter denies him three times, and Pilate offers to release Barabbas instead of Jesus.",
     "arcId": "jn-arc-passion",
     "eventIds": [
       "jn-e-c18-0",
@@ -258,6 +276,7 @@
     "number": 19,
     "title": "The Crucifixion",
     "summary": "Pilate hands Jesus over to be crucified, Jesus is crucified between two criminals and entrusts his mother to the beloved disciple, and Joseph of Arimathea buries his body in a new tomb.",
+    "blurb": "Pilate hands Jesus over to be crucified between two criminals, and Joseph of Arimathea buries his body in a new tomb.",
     "arcId": "jn-arc-passion",
     "eventIds": [
       "jn-e-c19-0",
@@ -273,6 +292,7 @@
     "number": 20,
     "title": "The Empty Tomb",
     "summary": "Mary Magdalene finds the tomb empty and later meets the risen Jesus, who appears to the gathered disciples and then invites the doubting Thomas to touch his wounds and believe.",
+    "blurb": "Mary Magdalene finds Jesus' tomb empty and meets the risen Jesus, who later invites doubting Thomas to touch his wounds.",
     "arcId": "jn-arc-resurrection",
     "eventIds": [
       "jn-e-c20-0",
@@ -292,6 +312,7 @@
     "number": 21,
     "title": "Jesus Restores Peter",
     "summary": "The risen Jesus appears to the disciples by the Sea of Tiberias, provides a miraculous catch of fish, and restores Peter with three questions about love before commissioning him to feed his sheep.",
+    "blurb": "The risen Jesus provides a miraculous catch of fish and restores Peter with three questions about love before commissioning him.",
     "arcId": "jn-arc-resurrection",
     "eventIds": [
       "jn-e-c21-0",

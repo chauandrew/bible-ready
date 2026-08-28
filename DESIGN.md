@@ -231,6 +231,51 @@ answered: ..." view (`lib/quiz.ts`'s `userAnswerText`) with a Next button
 instead of the live question. Study mode is deliberately exempt — retrying a
 question there to practice is the intended behavior, not a bug.
 
+## Chapter Order (a standalone, non-generated quiz)
+
+`/[book]/chapter-quiz` (`components/ChapterOrderBoard.tsx`) tests whether a
+player knows a book's overall shape — which chapter a given event/theme
+falls in — rather than recall of one fact. Every chapter in the book gets a
+labeled slot (by its real chapter number) and a shuffled card showing its
+title+`blurb` (never its own number; falls back to `summary` if a chapter
+has no `blurb` authored — see `Chapter.blurb`'s schema doc); the player drags
+or clicks cards into slots and submits for a percentage score and a
+per-chapter correct/incorrect review.
+
+**Deliberately standalone**, not routed through `lib/generate.ts`/
+`lib/quiz.ts`'s `QuizRunner` engine (`lib/chapterOrder.ts` has its own small
+pure scoring/placement functions instead). That engine exists to build and
+validate distractor pools for many small independently-gradable questions;
+here every chapter is both a slot and a card, 1:1 by construction, so
+there's no distractor pool and no ambiguity to check — `scripts/check-content.ts`
+needs no changes for this feature.
+
+**Uses every chapter in the book, not just `quizWorthy` ones** — that flag
+only gates the generated free-response "what happens in this chapter"
+question (`lib/generate.ts`); it has no bearing here.
+
+**Excluded for `Book.coverageDepth === "selection"` books** (Psalms, Misc):
+their chapters are a curated, non-contiguous subset or thematic sections, not
+sequential narrative, so "which slot is this from" isn't a meaningful
+question — same reasoning `generateSequenceQuestions` already uses to skip
+non-contiguous arcs. Enforced by filtering `generateStaticParams` in
+`app/[book]/chapter-quiz/page.tsx`, so the route is never built for those
+books (not just hidden from `/[book]`'s review-tools list).
+
+**Interaction: click places into the next open slot; drag targets an exact
+one.** Clicking an unplaced card is the fast path for going roughly in
+order. Dragging a card (from the pool, or one already placed) onto a
+specific slot puts it exactly there, bumping that slot's previous occupant
+(if any) back to the pool — useful for a chapter you're certain about (e.g.
+"David and Goliath is definitely chapter 17") without first filling
+everything before it. Both paths funnel through the same `place`/`unplace`
+functions in `lib/chapterOrder.ts`. No `dnd-kit` `KeyboardSensor` — it's
+built for a single reorderable list (`SortableContext`), not ~50 independent
+drop targets — so keyboard/screen-reader users get the click-to-place-next
+path via plain focusable buttons instead. Known, accepted limitation: a
+keyboard-only user can't jump straight to an arbitrary slot the way drag
+can; revisit only if that becomes a real complaint.
+
 ## Content authoring rules (the ones that aren't obvious from the schema)
 
 **`Event.place` is optional, and that's deliberate.** Most events aren't
@@ -696,5 +741,11 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    events — a key verse or short headline, not a copy of `summary`. For a
    `"selection"` book, that means one event per chapter with no `verses` on
    its citation (see the authoring rule above), not one event per section.
-8. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
+8. For a non-`"selection"` book, author `Chapter.blurb` — one real sentence
+   per chapter, longer than `title` but noticeably shorter than `summary`,
+   same plot-level voice — so the Chapter Order board (see above) has a
+   compact card. Optional in the schema, but every chapter in a narrative
+   book should have one; a missing `blurb` silently falls back to the full
+   `summary` on that board, which is the thing this step exists to avoid.
+9. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
    build` — all four, not just `check:content`.
