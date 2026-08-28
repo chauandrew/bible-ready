@@ -179,7 +179,8 @@ export function isCorrect(item: QuizItem, answer: Answer): boolean {
   if (item.type === "free-response") {
     return (
       answer.kind === "free-response" &&
-      gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms }, answer.text).correct
+      gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms, titleTerms: item.titleTerms }, answer.text)
+        .correct
     );
   }
   return false;

@@ -291,6 +291,20 @@ whose summary never uses either word). `check:content` warns if a quizWorthy
 chapter derives fewer than 3 significant terms total, since that makes
 `minTerms` degenerate toward requiring nearly all of them.
 
+**Restating the chapter's own title is always correct, even short of
+`minTerms`.** A short title like "The Good Shepherd" contributes only 2
+significant words of its own; the rest of `minTerms` has to come from the
+summary's details (the door, the sheep, oneness with the Father...). An
+answer that's exactly the chapter's famous line — "I am the good shepherd" —
+is unambiguously right and shouldn't need to also describe details it never
+claimed. `deriveGradingTerms` tracks title-derived terms separately
+(`GradingTerms.titleTerms`), and `gradeFreeResponse` accepts an answer that
+covers all of them regardless of the overall term count. This shortcut is
+disabled (`titleTerms` comes back empty) for any chapter with an authored
+`freeResponseMinTerms` — the roster chapters below set that specifically
+because the title alone ("The Twelve Disciples") is *not* a sufficient
+answer, and the shortcut would otherwise defeat that.
+
 **A chapter whose free-response question is a fixed roster, not prose,
 overrides both the prompt and the threshold.** "Name the twelve disciples"
 isn't "describe this chapter in your own words" — the terms *are* the

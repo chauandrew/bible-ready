@@ -366,7 +366,7 @@ export function FreeResponseQuestion({
       onAnswer({ itemId: item.id, kind: "free-response", text });
       return;
     }
-    setResult(gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms }, text));
+    setResult(gradeFreeResponse({ terms: item.terms, minTerms: item.minTerms, titleTerms: item.titleTerms }, text));
   }
 
   const modelAnswer = chapterSummaryFor(item.citation.book, item.chapterNumber);

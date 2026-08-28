@@ -131,6 +131,7 @@ export type GeneratedFreeResponse = {
   chapterNumber: number;
   terms: string[];
   minTerms: number;
+  titleTerms: string[];
   citation: { book: string; chapter: number };
 };
 
@@ -300,7 +301,7 @@ export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResp
   const { chapters, book } = data;
   const out: GeneratedFreeResponse[] = [];
   for (const c of chapters.filter((c) => c.quizWorthy && inScope(data, c.number))) {
-    const { terms, minTerms } = deriveGradingTerms(c);
+    const { terms, minTerms, titleTerms } = deriveGradingTerms(c);
     out.push({
       kind: "generated",
       id: `gen:free-response:${c.id}`,
@@ -309,6 +310,7 @@ export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResp
       chapterNumber: c.number,
       terms,
       minTerms,
+      titleTerms,
       citation: { book: book.id, chapter: c.number },
     });
   }
@@ -617,6 +619,7 @@ export interface RuntimeFreeResponse {
   chapterNumber: number;
   terms: string[];
   minTerms: number;
+  titleTerms: string[];
   citation: GeneratedFreeResponse["citation"];
 }
 
@@ -631,6 +634,7 @@ export function toRuntimeFreeResponse(item: GeneratedFreeResponse): RuntimeFreeR
     chapterNumber: item.chapterNumber,
     terms: item.terms,
     minTerms: item.minTerms,
+    titleTerms: item.titleTerms,
     citation: item.citation,
   };
 }

@@ -105,6 +105,14 @@ test("Name the twelve disciples: a mostly-empty answer fails", () => {
   assert.equal(gradeFreeResponse(g, "Peter and Andrew").correct, false);
 });
 
+test("Name the twelve disciples: restating the title alone does NOT count as an answer", () => {
+  // The title-restatement shortcut (see the John 10 test below) must not
+  // apply to roster chapters — freeResponseMinTerms is authored specifically
+  // because the terms ARE the answer, not prose to paraphrase.
+  const g = miscGrading(1);
+  assert.equal(gradeFreeResponse(g, "the twelve disciples").correct, false);
+});
+
 test("Name the twelve tribes: answering with Ephraim and Manasseh instead of Joseph still passes", () => {
   const g = miscGrading(2);
   const result = gradeFreeResponse(
@@ -120,6 +128,21 @@ test("Name the twelve tribes: the standard Joseph-inclusive answer also passes",
     g,
     "Reuben, Simeon, Levi, Judah, Zebulun, Issachar, Dan, Gad, Asher, Naphtali, Joseph, Benjamin"
   );
+  assert.equal(result.correct, true);
+});
+
+test("restating the title alone scores correct even when it's short on minTerms", () => {
+  // Reported case: John 10 is titled "The Good Shepherd"; the summary's other
+  // terms (door, sheep, oneness, father, feast...) describe details the exact
+  // right one-line answer never needs to mention.
+  const terms = deriveGradingTerms({
+    title: "The Good Shepherd",
+    summary:
+      "Jesus describes himself as the door for the sheep and the good shepherd who lays down his life for them, then claims oneness with the Father at the Feast of Dedication.",
+    freeResponseAliases: [],
+  });
+  const result = gradeFreeResponse(terms, "I am the good shepherd");
+  assert.equal(result.matchedTerms < terms.minTerms, true);
   assert.equal(result.correct, true);
 });
 
