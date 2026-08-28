@@ -3,7 +3,7 @@
 import { useEffect, useMemo, useState, type ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import type { Chapter } from "@/content/schema";
-import { shuffle } from "@/lib/rng";
+import { shuffle, mulberry32 } from "@/lib/rng";
 import { pointsColor } from "@/lib/quiz";
 import { scoreChapterOrder, place, unplace, nextEmptySlot, type Placements } from "@/lib/chapterOrder";
 import BookBreadcrumb from "./BookBreadcrumb";
@@ -18,34 +18,30 @@ import {
 } from "@dnd-kit/core";
 import { CSS } from "@dnd-kit/utilities";
 
-/** One chapter card — shows title+summary only, never its own number, since
+/** One chapter card: shows title+blurb only, never its own number, since
  * that's the answer. Doubles as a draggable (via dnd-kit) and a plain
  * click-to-place button (see ChapterOrderBoard's onClick). */
-function ChapterCard({ chapter, onClick, disabled }: { chapter: Chapter; onClick: () => void; disabled: boolean }) {
-  const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({
-    id: chapter.id,
-    disabled,
-  });
+function ChapterCard({ chapter, onClick }: { chapter: Chapter; onClick: () => void }) {
+  const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({ id: chapter.id });
 
   return (
     <button
       type="button"
       ref={setNodeRef}
       className="card chapter-card"
-      disabled={disabled}
       onClick={onClick}
       style={{
         width: "100%",
         textAlign: "left",
-        cursor: disabled ? "default" : "grab",
+        cursor: "grab",
         transform: CSS.Translate.toString(transform),
         opacity: isDragging ? 0.5 : 1,
         touchAction: "none",
         zIndex: isDragging ? 1 : "auto",
         position: "relative",
       }}
-      {...(disabled ? {} : attributes)}
-      {...(disabled ? {} : listeners)}
+      {...attributes}
+      {...listeners}
     >
       <div className="chapter-card-title">{chapter.title}</div>
       <p className="chapter-card-summary">{chapter.blurb ?? chapter.summary}</p>
@@ -53,29 +49,35 @@ function ChapterCard({ chapter, onClick, disabled }: { chapter: Chapter; onClick
   );
 }
 
-/** A single numbered slot — an empty dashed placeholder, or the placed
- * card's own ChapterCard (still draggable/clickable to move it elsewhere). */
+/** A single numbered slot. Filled: the placed card's own ChapterCard (still
+ * draggable/clickable to move it elsewhere). Empty: a button that "arms"
+ * this exact slot as the click target for the next pool-card click, the
+ * keyboard/no-drag path to an arbitrary slot (see onArmedClick below). */
 function Slot({
   number,
   chapterLabel,
   chapter,
+  armed,
+  onArmedClick,
   onPlacedClick,
-  disabled,
 }: {
   number: number;
   chapterLabel: string;
   chapter: Chapter | undefined;
+  armed: boolean;
+  onArmedClick: () => void;
   onPlacedClick: () => void;
-  disabled: boolean;
 }) {
   const { setNodeRef, isOver } = useDroppable({ id: `slot-${number}` });
+  const label = `${chapterLabel} ${number}`;
 
   return (
     <div
       ref={setNodeRef}
       style={{
-        border: `1px dashed ${isOver ? "var(--accent)" : "var(--border)"}`,
+        border: `1px ${isOver ? "solid" : "dashed"} ${isOver || armed ? "var(--accent)" : "var(--border)"}`,
         borderRadius: "var(--radius)",
+        background: armed ? "var(--surface-2)" : undefined,
         padding: chapter ? 0 : "0.7rem 0.85rem",
         minHeight: "3rem",
         display: "flex",
@@ -84,12 +86,19 @@ function Slot({
     >
       {chapter ? (
         <div style={{ width: "100%" }}>
-          <ChapterCard chapter={chapter} onClick={onPlacedClick} disabled={disabled} />
+          <ChapterCard chapter={chapter} onClick={onPlacedClick} />
         </div>
       ) : (
-        <span className="chapter-card-number">
-          {chapterLabel} {number}
-        </span>
+        <button
+          type="button"
+          className="chapter-card-number"
+          aria-pressed={armed}
+          aria-label={`${label}, empty. ${armed ? "Selected as target" : "Select as the target for the next chapter you pick"}.`}
+          onClick={onArmedClick}
+          style={{ background: "none", border: "none", padding: 0, cursor: "pointer", font: "inherit", color: "inherit" }}
+        >
+          {label}
+        </button>
       )}
     </div>
   );
@@ -109,20 +118,23 @@ export default function ChapterOrderBoard({
   backHref: string;
 }) {
   const router = useRouter();
-  // Starts unshuffled so the static-export server render and the client's
-  // first hydration pass match exactly (Math.random() in a useState
-  // initializer would run once per pass and produce two different orders,
-  // a React hydration-mismatch error). The real shuffle happens client-only,
-  // after mount.
+  // Starts unshuffled: the static-export build runs this component once at
+  // build time, and the browser runs it again on hydration; Date.now() at
+  // those two moments differs, so seeding the shuffle at initial-render time
+  // would make the server-rendered HTML and the client's first render
+  // disagree (a React hydration-mismatch error). Reshuffling in an effect,
+  // after both of those renders have already matched, sidesteps that: the
+  // current-time seed only ever runs once, client-side, post-mount.
   const [shuffledIds, setShuffledIds] = useState(() => chapters.map((c) => c.id));
   useEffect(() => {
-    // One-time client-only randomization, not a sync with an external
-    // system — the earlier unshuffled state is what made the server and
-    // first-hydration renders match in the first place.
+    // A genuinely time-varying reshuffle has to happen after mount no
+    // matter what; there's no way to compute it during render without
+    // reintroducing the mismatch above.
     // eslint-disable-next-line react-hooks/set-state-in-effect
-    setShuffledIds((ids) => shuffle(ids, Math.random));
+    setShuffledIds((ids) => shuffle(ids, mulberry32(Date.now())));
   }, []);
   const [placements, setPlacements] = useState<Placements>({});
+  const [armedSlot, setArmedSlot] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 4 } }));
 
@@ -131,14 +143,29 @@ export default function ChapterOrderBoard({
   const pool = shuffledIds.filter((id) => !placedIds.has(id));
   const sortedChapters = useMemo(() => [...chapters].sort((a, b) => a.number - b.number), [chapters]);
 
-  function placeInNextSlot(chapterId: string) {
-    const slot = nextEmptySlot(chapters, placements);
-    if (slot === null) return;
-    setPlacements((p) => place(p, chapterId, slot));
+  /** A pool card click either fills the armed slot (if one is selected -
+   * the keyboard/no-drag path to an arbitrary slot) or falls back to the
+   * fast "next open slot" path, matching the room-for-either behavior the
+   * click instructions describe. */
+  function handlePoolCardClick(chapterId: string) {
+    if (armedSlot !== null) {
+      setPlacements((p) => place(p, chapterId, armedSlot));
+      setArmedSlot(null);
+      return;
+    }
+    setPlacements((p) => {
+      const slot = nextEmptySlot(chapters, p);
+      return slot === null ? p : place(p, chapterId, slot);
+    });
+  }
+
+  function toggleArmed(slotNumber: number) {
+    setArmedSlot((current) => (current === slotNumber ? null : slotNumber));
   }
 
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
+    setArmedSlot(null);
     if (!over) return;
     const chapterId = String(active.id);
     if (over.id === "pool") {
@@ -198,7 +225,8 @@ export default function ChapterOrderBoard({
         Order the {chapterLabel}s
       </h1>
       <p className="citation" style={{ marginBottom: "1rem" }}>
-        Click a card to drop it in the next open slot, or drag it to a specific one.
+        Drag a card to a specific slot, or click an empty slot to target it and then click the chapter you want there.
+        Click a card with no slot targeted to drop it in the next open one.
       </p>
 
       <DndContext sensors={sensors} onDragEnd={handleDragEnd}>
@@ -206,7 +234,7 @@ export default function ChapterOrderBoard({
         <PoolArea>
           <div className="chapter-card-grid" style={{ marginBottom: "1.5rem" }}>
             {pool.map((id) => (
-              <ChapterCard key={id} chapter={chapterById.get(id)!} onClick={() => placeInNextSlot(id)} disabled={false} />
+              <ChapterCard key={id} chapter={chapterById.get(id)!} onClick={() => handlePoolCardClick(id)} />
             ))}
           </div>
         </PoolArea>
@@ -222,8 +250,9 @@ export default function ChapterOrderBoard({
                 number={c.number}
                 chapterLabel={capitalizedLabel}
                 chapter={placedChapter}
+                armed={armedSlot === c.number}
+                onArmedClick={() => toggleArmed(c.number)}
                 onPlacedClick={() => setPlacements((p) => unplace(p, placedChapter!.id))}
-                disabled={false}
               />
             );
           })}
@@ -233,7 +262,7 @@ export default function ChapterOrderBoard({
       {pool.length > 0 && (
         <p className="citation" style={{ marginBottom: "0.5rem" }}>
           {pool.length} {chapterLabel}
-          {pool.length === 1 ? "" : "s"} not yet placed — they&apos;ll be marked incorrect.
+          {pool.length === 1 ? "" : "s"} not yet placed; they&apos;ll be marked incorrect.
         </p>
       )}
       <button type="button" className="btn btn-primary" onClick={() => setSubmitted(true)}>

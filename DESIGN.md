@@ -234,11 +234,11 @@ question there to practice is the intended behavior, not a bug.
 ## Chapter Order (a standalone, non-generated quiz)
 
 `/[book]/chapter-quiz` (`components/ChapterOrderBoard.tsx`) tests whether a
-player knows a book's overall shape — which chapter a given event/theme
-falls in — rather than recall of one fact. Every chapter in the book gets a
-labeled slot (by its real chapter number) and a shuffled card showing its
+player knows a book's overall shape (which chapter a given event/theme falls
+in) rather than recall of one fact. Every chapter in the book gets a labeled
+slot (by its real chapter number) and a shuffled card showing its
 title+`blurb` (never its own number; falls back to `summary` if a chapter
-has no `blurb` authored — see `Chapter.blurb`'s schema doc); the player drags
+has no `blurb` authored, see `Chapter.blurb`'s schema doc); the player drags
 or clicks cards into slots and submits for a percentage score and a
 per-chapter correct/incorrect review.
 
@@ -247,34 +247,59 @@ per-chapter correct/incorrect review.
 pure scoring/placement functions instead). That engine exists to build and
 validate distractor pools for many small independently-gradable questions;
 here every chapter is both a slot and a card, 1:1 by construction, so
-there's no distractor pool and no ambiguity to check — `scripts/check-content.ts`
-needs no changes for this feature.
+there's no distractor pool and no ambiguity to check. `scripts/check-content.ts`
+does still warn on one thing for this feature (see the `blurb` checklist step
+below), but needs no ambiguity/distractor-pool logic the way the generated
+templates do.
 
-**Uses every chapter in the book, not just `quizWorthy` ones** — that flag
+**Not wired into `lib/progress.ts`, on purpose.** Every other quiz calls
+`recordSession`/`clearMissed` so its result feeds `/progress`'s session
+history and best-score table, and a wrong answer enters `/practice`'s
+missed-question bank. Chapter Order doesn't: that bank resolves saved ids
+against the generated/authored `QuizItem` pools (`quizFromIdsMulti`), and a
+chapter id has nothing to resolve to there, so recording one would just be a
+dead entry nothing can ever practice. A `/progress` surface dedicated to
+Chapter Order (its own best-score line, not folded into the existing bank)
+is a reasonable future addition; it doesn't exist yet.
+
+**Uses every chapter in the book, not just `quizWorthy` ones**: that flag
 only gates the generated free-response "what happens in this chapter"
 question (`lib/generate.ts`); it has no bearing here.
 
 **Excluded for `Book.coverageDepth === "selection"` books** (Psalms, Misc):
 their chapters are a curated, non-contiguous subset or thematic sections, not
 sequential narrative, so "which slot is this from" isn't a meaningful
-question — same reasoning `generateSequenceQuestions` already uses to skip
+question, the same reasoning `generateSequenceQuestions` already uses to skip
 non-contiguous arcs. Enforced by filtering `generateStaticParams` in
 `app/[book]/chapter-quiz/page.tsx`, so the route is never built for those
 books (not just hidden from `/[book]`'s review-tools list).
 
-**Interaction: click places into the next open slot; drag targets an exact
-one.** Clicking an unplaced card is the fast path for going roughly in
-order. Dragging a card (from the pool, or one already placed) onto a
-specific slot puts it exactly there, bumping that slot's previous occupant
-(if any) back to the pool — useful for a chapter you're certain about (e.g.
-"David and Goliath is definitely chapter 17") without first filling
-everything before it. Both paths funnel through the same `place`/`unplace`
-functions in `lib/chapterOrder.ts`. No `dnd-kit` `KeyboardSensor` — it's
-built for a single reorderable list (`SortableContext`), not ~50 independent
-drop targets — so keyboard/screen-reader users get the click-to-place-next
-path via plain focusable buttons instead. Known, accepted limitation: a
-keyboard-only user can't jump straight to an arbitrary slot the way drag
-can; revisit only if that becomes a real complaint.
+**Interaction: click places into a slot; drag also works.** Clicking an
+unplaced card is the fast path for going roughly in order: it drops into the
+next open slot. To target one exact slot instead (e.g. "David and Goliath is
+definitely chapter 17" before you've placed anything else), click that empty
+slot first to arm it, then click the card; the next pool-card click fills
+the armed slot instead of the next open one. Dragging a card (from the pool,
+or one already placed) onto any slot places it there directly, the same as
+an armed click, and bumps that slot's previous occupant (if any) back to the
+pool. All three paths funnel through the same `place`/`unplace` functions in
+`lib/chapterOrder.ts`. No `dnd-kit` `KeyboardSensor`: it's built for a single
+reorderable list (`SortableContext`), not ~50 independent drop targets, so
+the arm-then-place click flow (plain focusable buttons throughout) is what
+gives keyboard/screen-reader users the same exact-slot targeting drag gives
+a mouse, without needing a custom keyboard coordinate-getter for a
+non-sortable board.
+
+**The shuffle order is seeded from the current time, not the book id**, so
+replaying the same book doesn't always start with the same arrangement. That
+seed can't be read during the render that has to match the static-export
+server output (see the comment above `ChapterOrderBoard`'s `useState`/
+`useEffect` pair): the board starts unshuffled (identical on the server
+render and the client's first hydration pass) and reshuffles once, client-only,
+in a mount effect. A fixed per-book seed (`mulberry32(hashSeed(bookId))`,
+the pattern the rest of the app uses for reproducible shuffles) would avoid
+that effect entirely, at the cost of every replay looking the same; not
+chosen here since a fresh arrangement per attempt is the point.
 
 ## Content authoring rules (the ones that aren't obvious from the schema)
 
@@ -741,11 +766,10 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    events — a key verse or short headline, not a copy of `summary`. For a
    `"selection"` book, that means one event per chapter with no `verses` on
    its citation (see the authoring rule above), not one event per section.
-8. For a non-`"selection"` book, author `Chapter.blurb` — one real sentence
+8. For a non-`"selection"` book, author `Chapter.blurb`: one real sentence
    per chapter, longer than `title` but noticeably shorter than `summary`,
-   same plot-level voice — so the Chapter Order board (see above) has a
-   compact card. Optional in the schema, but every chapter in a narrative
-   book should have one; a missing `blurb` silently falls back to the full
-   `summary` on that board, which is the thing this step exists to avoid.
+   same plot-level voice, so the Chapter Order board (see above) has a
+   compact card. Optional in the schema, but `check:content` warns on any
+   quizzable chapter missing one, so treat that warning as this step.
 9. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
    build` — all four, not just `check:content`.

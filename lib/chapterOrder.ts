@@ -10,7 +10,7 @@ import type { Chapter } from "../content/schema";
 
 /** Slot number (a chapter's real `number`) -> the id of the chapter card
  * placed there, or null/absent if empty. The "unplaced pool" is never
- * stored — a chapter is unplaced iff its id appears in no slot. */
+ * stored; a chapter is unplaced iff its id appears in no slot. */
 export type Placements = Record<number, string | null>;
 
 export interface ChapterOrderResult {
@@ -27,7 +27,7 @@ export interface ChapterOrderScore {
 }
 
 /** Slot N is correct iff it holds chapter N's own card. A chapter left in
- * the unplaced pool is graded wrong, not excluded — partial submission is
+ * the unplaced pool is graded wrong, not excluded: partial submission is
  * allowed. */
 export function scoreChapterOrder(chapters: Chapter[], placements: Placements): ChapterOrderScore {
   const slotByChapterId = new Map<string, number>();
@@ -56,7 +56,7 @@ export function unplace(placements: Placements, chapterId: string): Placements {
 
 /** Clears chapterId's old slot (if any), then sets it into slotNumber.
  * Whatever card previously occupied slotNumber is implicitly bumped back to
- * the pool — its id no longer appears anywhere in the map. */
+ * the pool, since its id no longer appears anywhere in the map. */
 export function place(placements: Placements, chapterId: string, slotNumber: number): Placements {
   const cleared = unplace(placements, chapterId);
   return { ...cleared, [slotNumber]: chapterId };
