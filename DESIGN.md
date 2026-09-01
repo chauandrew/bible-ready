@@ -490,9 +490,10 @@ A genuinely *new era* is a bigger but still purely data-driven lift: Matthew's
 `"gospels"` era (Jesus's ministry, a different region and centuries later than
 1-2 Samuel's `"united-kingdom"`) needed no new base map either, but did need
 new entries in the three shared, era-keyed reference files — new cities in
-`components/maps/geo/places.json` (Nazareth, Capernaum, Bethsaida, Caesarea
-Philippi, Tyre, Sidon, Jericho, plus two new `"region"` labels, the Decapolis
-and Perea), a new territory outline in `components/maps/geo/regions.json`,
+`components/maps/geo/places.json` (Nazareth, Capernaum, Bethsaida, Cana,
+Caesarea Philippi, Tyre, Sidon, Jericho, plus two new `"region"` labels, the
+Decapolis and Perea — Cana isn't yet used by any journey stop, but is there
+for a future one), a new territory outline in `components/maps/geo/regions.json`,
 and a new `ERA_BOUNDS` entry in `JourneyMap.tsx` — the same three files
 `"united-kingdom"` added to for 1-2 Samuel, just keyed by the new era string
 instead of a new one of these files per book.

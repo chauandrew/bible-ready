@@ -12,7 +12,7 @@
   { "id": "rabbah", "name": "Rabbah", "lat": 31.9539, "lng": 35.9349, "kind": "city", "eras": ["united-kingdom"] },
   { "id": "samaria", "name": "Samaria", "lat": 32.2778, "lng": 35.1917, "kind": "city", "eras": ["divided-kingdom", "gospels"] },
   { "id": "nazareth", "name": "Nazareth", "lat": 32.7018, "lng": 35.2967, "kind": "city", "eras": ["gospels"] },
-  { "id": "capernaum", "name": "Capernaum", "lat": 32.8811, "lng": 35.5213, "kind": "city", "eras": ["gospels"] },
+  { "id": "capernaum", "name": "Capernaum", "lat": 32.8801, "lng": 35.5750, "kind": "city", "eras": ["gospels"] },
   { "id": "bethsaida", "name": "Bethsaida", "lat": 32.9083, "lng": 35.6272, "kind": "city", "eras": ["gospels"] },
   { "id": "cana", "name": "Cana", "lat": 32.7500, "lng": 35.3400, "kind": "city", "eras": ["gospels"] },
   { "id": "caesarea-philippi", "name": "Caesarea Philippi", "lat": 33.2494, "lng": 35.6928, "kind": "city", "eras": ["gospels"] },

@@ -23,7 +23,7 @@
     "id": "matt-aq-3",
     "book": "matthew",
     "category": "character",
-    "prompt": "What gifts do the magi bring to worship the infant Jesus?",
+    "prompt": "What gifts do the magi bring to worship the child Jesus?",
     "options": ["Bread, wine, and oil", "Gold, frankincense, and myrrh", "Silver, spices, and fine linen", "Wheat, wool, and grain"],
     "correctIndex": 1,
     "citation": { "book": "matthew", "chapter": 2 },
@@ -314,7 +314,7 @@
     "book": "matthew",
     "category": "character",
     "prompt": "Why does the rich young man go away sad after speaking with Jesus?",
-    "options": ["Jesus refused to answer his question", "Jesus told him to sell his possessions and give to the poor", "The disciples turned him away", "He was told to wait a full year"],
+    "options": ["Jesus refused to answer his question about eternal life", "Jesus told him to sell his possessions and give to the poor", "The disciples turned him away before he could speak with Jesus", "He was told to wait a full year before returning"],
     "correctIndex": 1,
     "citation": { "book": "matthew", "chapter": 19 },
     "explanation": "The rich young man goes away grieving when Jesus tells him to sell his possessions and give to the poor."
@@ -354,7 +354,7 @@
     "book": "matthew",
     "category": "theme",
     "prompt": "What does Jesus name as the greatest commandment?",
-    "options": ["Keeping the Sabbath holy", "Loving the Lord your God with all your heart, soul, and mind", "Honoring the temple sacrifices", "Obeying the Roman authorities"],
+    "options": ["Keeping the Sabbath holy as the fourth of the Ten Commandments", "Loving the Lord your God with all your heart, soul, and mind", "Honoring the temple sacrifices prescribed in the law of Moses", "Obeying the Roman authorities appointed to govern the land"],
     "correctIndex": 1,
     "citation": { "book": "matthew", "chapter": 22 },
     "explanation": "Jesus names loving God with all one's heart, soul, and mind as the greatest commandment."

@@ -95,7 +95,7 @@
     "chapter": 15,
     "verse": 28,
     "speakerId": "jesus",
-    "text": "O woman, great is your faith! Let it be done for you as you desire.",
+    "text": "O woman, great is your faith! Be it done for you as you desire.",
     "citation": { "book": "matthew", "chapter": 15, "verses": "28" }
   },
   {
@@ -106,6 +106,15 @@
     "speakerId": "peter",
     "text": "You are the Christ, the Son of the living God.",
     "citation": { "book": "matthew", "chapter": 16, "verses": "16" }
+  },
+  {
+    "id": "matt-q-c16-v18",
+    "book": "matthew",
+    "chapter": 16,
+    "verse": 18,
+    "speakerId": "jesus",
+    "text": "And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it.",
+    "citation": { "book": "matthew", "chapter": 16, "verses": "18" }
   },
   {
     "id": "matt-q-c17-v5",

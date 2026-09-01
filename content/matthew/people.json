@@ -29,7 +29,7 @@
   {
     "id": "centurion",
     "name": "The Centurion",
-    "summary": "A Roman officer whose servant is paralyzed and dying, and whose confidence that Jesus can heal with only a word Jesus praises as greater faith than he has found anywhere in Israel.",
+    "summary": "A Roman officer whose servant lies paralyzed at home, suffering terribly, and whose confidence that Jesus can heal with only a word Jesus praises as greater faith than he has found anywhere in Israel.",
     "firstAppearance": { "book": "matthew", "chapter": 8 },
     "relations": []
   },
@@ -56,14 +56,14 @@
   {
     "id": "magi",
     "name": "The Magi",
-    "summary": "Wise men from the east who follow a star to Jerusalem and then Bethlehem to worship the newborn king of the Jews with gifts of gold, frankincense, and myrrh, then return home by another route after being warned in a dream to avoid Herod.",
+    "summary": "Wise men from the east who follow a star to Jerusalem and then Bethlehem to worship the child born king of the Jews with gifts of gold, frankincense, and myrrh, then return home by another route after being warned in a dream to avoid Herod.",
     "firstAppearance": { "book": "matthew", "chapter": 2 },
     "relations": []
   },
   {
     "id": "herod",
     "name": "Herod the Great",
-    "summary": "The reigning king of Judea who, threatened by the magi's report of a newborn king, orders the killing of Bethlehem's infant boys in a failed attempt to kill Jesus.",
+    "summary": "The reigning king of Judea who, threatened by the magi's report of a child born king, orders the killing of Bethlehem's young boys in a failed attempt to kill Jesus.",
     "firstAppearance": { "book": "matthew", "chapter": 2 },
     "relations": []
   },

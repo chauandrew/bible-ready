@@ -51,7 +51,7 @@ const PALETTE = {
  */
 const ERA_BOUNDS: Record<string, LngLatBounds> = {
   "united-kingdom": [[33.9, 30.4], [36.4, 33.7]],
-  gospels: [[34.3, 30.9], [36.0, 33.6]],
+  gospels: [[33.0, 30.9], [36.0, 33.6]],
 };
 
 function currentTheme(): "light" | "dark" {
