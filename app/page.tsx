@@ -13,6 +13,7 @@ export const available = [
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme.", featured: true },
   { href: "/matthew", name: "Matthew", desc: "From Jesus's birth to the Great Commission, 28 chapters with a ministry map, quizzes, and flashcards.", featured: true },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards.", featured: true },
+  { href: "/galatians", name: "Galatians", desc: "Paul defends justification by faith and confronts Peter, 6 chapters.", featured: true },
   { href: "/misc", name: "Miscellaneous", desc: "The twelve disciples, the twelve tribes of Israel, and putting the Old and New Testament books in order.", featured: true },
 ];
 
