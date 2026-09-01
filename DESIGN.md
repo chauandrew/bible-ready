@@ -514,7 +514,16 @@ Decapolis and Perea — Cana isn't yet used by any journey stop, but is there
 for a future one), a new territory outline in `components/maps/geo/regions.json`,
 and a new `ERA_BOUNDS` entry in `JourneyMap.tsx` — the same three files
 `"united-kingdom"` added to for 1-2 Samuel, just keyed by the new era string
-instead of a new one of these files per book.
+instead of a new one of these files per book. Ezra's `"return"` era (two
+journeys — the first return under Zerubbabel and Ezra's own later return,
+split at the same kind of real narrative seam that splits 1-2 Samuel's
+Saul/David story into two `Journey` records — see below) needed the same
+`places.json`/`regions.json` additions for its own background labels and
+territory outline, but no `ERA_BOUNDS` override: unlike 1-2 Samuel's and
+Matthew's tight, Jerusalem-centered stories, both of Ezra's journeys already
+span Babylon to Jerusalem, wider than any override would add, so the default
+"fit to this journey's own stops" behavior is already the right zoomed-out
+view.
 
 **A journey can't span two separate book bundles, because nothing else in
 this app can either.** `Journey.book` is one `BookIdSchema`, and a

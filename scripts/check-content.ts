@@ -27,6 +27,7 @@ const VERSE_COUNTS: Record<string, number> = {
   john: 879,
   "1-samuel": 810,
   "2-samuel": 695,
+  ezra: 280,
   galatians: 149,
   matthew: 1071,
 };

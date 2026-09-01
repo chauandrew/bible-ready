@@ -1,0 +1,33 @@
+[
+  {
+    "id": "ezra-deck-return-foundation",
+    "book": "ezra",
+    "name": "Return and Foundation",
+    "cardEventIds": [
+      "ezra-e-c1-1", "ezra-e-c1-2",
+      "ezra-e-c2-1",
+      "ezra-e-c3-1", "ezra-e-c3-2"
+    ]
+  },
+  {
+    "id": "ezra-deck-opposition-completion",
+    "book": "ezra",
+    "name": "Opposition and Completion",
+    "cardEventIds": [
+      "ezra-e-c4-1",
+      "ezra-e-c5-1", "ezra-e-c5-2",
+      "ezra-e-c6-1", "ezra-e-c6-2", "ezra-e-c6-3"
+    ]
+  },
+  {
+    "id": "ezra-deck-return-reform",
+    "book": "ezra",
+    "name": "Ezra's Return and Reform",
+    "cardEventIds": [
+      "ezra-e-c7-1", "ezra-e-c7-2",
+      "ezra-e-c8-1", "ezra-e-c8-2", "ezra-e-c8-3",
+      "ezra-e-c9-1", "ezra-e-c9-2",
+      "ezra-e-c10-1", "ezra-e-c10-2"
+    ]
+  }
+]

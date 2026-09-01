@@ -1,0 +1,26 @@
+[
+  {
+    "id": "ezra-arc-return-foundation",
+    "book": "ezra",
+    "name": "Return and Foundation",
+    "startChapter": 1,
+    "endChapter": 3,
+    "summary": "Cyrus decrees that the exiles may return to Jerusalem, the returning families are numbered under Zerubbabel and Jeshua, and the altar and temple foundation are rebuilt amid mixed joy and grief."
+  },
+  {
+    "id": "ezra-arc-opposition-completion",
+    "book": "ezra",
+    "name": "Opposition and Completion",
+    "startChapter": 4,
+    "endChapter": 6,
+    "summary": "Local adversaries stall the temple's rebuilding for years until the prophets Haggai and Zechariah spur the work forward, Darius confirms Cyrus's decree, and the temple is finished and dedicated."
+  },
+  {
+    "id": "ezra-arc-return-reform",
+    "book": "ezra",
+    "name": "Ezra's Return and Reform",
+    "startChapter": 7,
+    "endChapter": 10,
+    "summary": "Decades later, Ezra leads a second return authorized by Artaxerxes, arrives safely in Jerusalem, and confronts the crisis of Israelites who have intermarried with the surrounding peoples."
+  }
+]

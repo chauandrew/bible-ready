@@ -1,0 +1,112 @@
+[
+  {
+    "id": "ezra-ch1",
+    "book": "ezra",
+    "number": 1,
+    "title": "Cyrus's Decree",
+    "summary": "Cyrus king of Persia issues a decree in his first year permitting the Jewish exiles to return to Jerusalem and rebuild the temple, and returns the temple's sacred vessels through Sheshbazzar.",
+    "blurb": "Cyrus decrees that the exiles may return and rebuild the temple, and hands back its sacred vessels.",
+    "arcId": "ezra-arc-return-foundation",
+    "eventIds": ["ezra-e-c1-1", "ezra-e-c1-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch2",
+    "book": "ezra",
+    "number": 2,
+    "title": "The List of Returning Exiles",
+    "summary": "Ezra records the roster of exiles who return to Judah and Jerusalem under Zerubbabel and Jeshua, numbering the whole assembly along with their servants, singers, and animals.",
+    "blurb": "The whole assembly of exiles who return to Judah under Zerubbabel and Jeshua is numbered at 42,360.",
+    "arcId": "ezra-arc-return-foundation",
+    "eventIds": ["ezra-e-c2-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch3",
+    "book": "ezra",
+    "number": 3,
+    "title": "The Altar and Temple Foundation Rebuilt",
+    "summary": "The returned exiles rebuild the altar and resume the prescribed sacrifices, then lay the temple's foundation, provoking joyful shouting mixed with weeping from the old who remembered the first temple.",
+    "blurb": "The altar is rebuilt and the temple's foundation laid, met with both shouts of joy and weeping for what was lost.",
+    "arcId": "ezra-arc-return-foundation",
+    "eventIds": ["ezra-e-c3-1", "ezra-e-c3-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch4",
+    "book": "ezra",
+    "number": 4,
+    "title": "Opposition Halts the Work",
+    "summary": "Local adversaries, refused a role in building the temple, hire counselors to discourage and frighten the builders, and the work stalls through the reign of Cyrus and into the reign of Darius.",
+    "blurb": "Rejected adversaries discourage the builders, and the temple's construction stalls for years.",
+    "arcId": "ezra-arc-opposition-completion",
+    "eventIds": ["ezra-e-c4-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch5",
+    "book": "ezra",
+    "number": 5,
+    "title": "The Prophets Spur the Work Onward",
+    "summary": "Encouraged by the prophets Haggai and Zechariah, Zerubbabel and Jeshua resume building the temple despite the earlier stoppage, prompting the governor Tattenai to question their authority and write to King Darius.",
+    "blurb": "Haggai and Zechariah spur the leaders to resume building, prompting the governor Tattenai to question their authority.",
+    "arcId": "ezra-arc-opposition-completion",
+    "eventIds": ["ezra-e-c5-1", "ezra-e-c5-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch6",
+    "book": "ezra",
+    "number": 6,
+    "title": "The Temple Completed and Dedicated",
+    "summary": "Darius finds Cyrus's original decree, orders full support for the temple's rebuilding, and the returned exiles complete and dedicate the temple with joy before celebrating the Passover.",
+    "blurb": "Darius confirms Cyrus's decree and funds the work, and the exiles complete, dedicate, and celebrate Passover at the temple.",
+    "arcId": "ezra-arc-opposition-completion",
+    "eventIds": ["ezra-e-c6-1", "ezra-e-c6-2", "ezra-e-c6-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch7",
+    "book": "ezra",
+    "number": 7,
+    "title": "Ezra Prepares to Return",
+    "summary": "Decades later, Ezra the priest and scribe, skilled in the Law of Moses, sets out for Jerusalem with a letter from King Artaxerxes authorizing his mission and providing him resources and support.",
+    "blurb": "Ezra, a scribe skilled in the Law of Moses, sets out for Jerusalem under Artaxerxes's authorization.",
+    "arcId": "ezra-arc-return-reform",
+    "eventIds": ["ezra-e-c7-1", "ezra-e-c7-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch8",
+    "book": "ezra",
+    "number": 8,
+    "title": "Ezra's Journey to Jerusalem",
+    "summary": "Ezra lists the family heads who return with him, proclaims a fast at the river Ahava rather than ask the king for a military escort, and arrives safely in Jerusalem with the temple's treasures intact.",
+    "blurb": "Ezra fasts at the river Ahava instead of requesting soldiers, then arrives safely in Jerusalem with the temple's treasures.",
+    "arcId": "ezra-arc-return-reform",
+    "eventIds": ["ezra-e-c8-1", "ezra-e-c8-2", "ezra-e-c8-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch9",
+    "book": "ezra",
+    "number": 9,
+    "title": "Ezra's Prayer of Confession",
+    "summary": "Ezra learns that the returned exiles, including priests and Levites, have intermarried with surrounding peoples against the Law, and falls to his knees in a prayer confessing the nation's guilt before God.",
+    "blurb": "Ezra learns of the people's intermarriage with surrounding peoples and falls to his knees to confess the nation's guilt.",
+    "arcId": "ezra-arc-return-reform",
+    "eventIds": ["ezra-e-c9-1", "ezra-e-c9-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ezra-ch10",
+    "book": "ezra",
+    "number": 10,
+    "title": "The Covenant to Put Away Foreign Wives",
+    "summary": "At Shecaniah's urging, the assembly covenants to put away their foreign wives, and Ezra records the list of priests, Levites, and other Israelites who had intermarried with the peoples around them.",
+    "blurb": "The assembly covenants to put away foreign wives, and Ezra lists everyone who had intermarried.",
+    "arcId": "ezra-arc-return-reform",
+    "eventIds": ["ezra-e-c10-1", "ezra-e-c10-2"],
+    "quizWorthy": true
+  }
+]

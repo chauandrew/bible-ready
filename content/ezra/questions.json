@@ -1,0 +1,182 @@
+[
+  {
+    "id": "ezra-aq-1",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What does Cyrus's decree permit the Jewish exiles to do?",
+    "options": ["Return to Jerusalem and rebuild the temple", "Remain in Babylon and build a temple there", "Send a delegation but not resettle", "Return only if they renounce their faith"],
+    "correctIndex": 0,
+    "citation": { "book": "ezra", "chapter": 1 },
+    "explanation": "Cyrus's decree lets any of God's people go up to Jerusalem and rebuild the LORD's house there."
+  },
+  {
+    "id": "ezra-aq-2",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What does Cyrus do with the temple's gold and silver vessels that Nebuchadnezzar had taken?",
+    "options": ["Melts them down for the royal treasury", "Keeps them stored in the Persian archives", "Returns them to be carried to Jerusalem", "Gives them to the governor of Samaria"],
+    "correctIndex": 2,
+    "citation": { "book": "ezra", "chapter": 1 },
+    "explanation": "Cyrus brings out the vessels and hands them to Sheshbazzar to take back to Jerusalem."
+  },
+  {
+    "id": "ezra-aq-3",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "Who leads the first group of exiles that returns to Judah and Jerusalem?",
+    "options": ["Ezra and Nehemiah", "Zerubbabel and Jeshua", "Sheshbazzar alone", "Haggai and Zechariah"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 2 },
+    "explanation": "Zerubbabel and Jeshua lead the first group of returning exiles, numbered at 42,360."
+  },
+  {
+    "id": "ezra-aq-4",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What do the returned exiles rebuild first, before the temple itself?",
+    "options": ["The city walls of Jerusalem", "The stone altar, to resume the sacrifices", "The royal governor's residence", "The market gate near the temple's outer wall"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 3 },
+    "explanation": "The exiles rebuild the altar first and resume offering sacrifices before the temple's foundation is laid."
+  },
+  {
+    "id": "ezra-aq-5",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What happens when the temple's foundation is laid?",
+    "options": ["A tense silence falls over the entire crowd", "The people celebrate together with no trace of sorrow", "Shouts of joy mix with weeping for what was lost", "Persian officials arrive and cancel the ceremony at once"],
+    "correctIndex": 2,
+    "citation": { "book": "ezra", "chapter": 3 },
+    "explanation": "Joyful shouting mixes with the weeping of the old who remembered the first temple, so the two sounds can't be told apart."
+  },
+  {
+    "id": "ezra-aq-6",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "Why does work on the temple stall after the returned exiles refuse the local peoples' offer to help build it?",
+    "options": ["Local peoples hire counselors to discourage them", "A famine strikes and no laborers remain", "The Persian king recalls all the exiles to Babylon", "The temple's foundation collapses in an earthquake"],
+    "correctIndex": 0,
+    "citation": { "book": "ezra", "chapter": 4 },
+    "explanation": "Refused a role in the building, the local peoples hire counselors to frustrate and frighten the builders."
+  },
+  {
+    "id": "ezra-aq-7",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "What prompts Zerubbabel and Jeshua to resume building the temple after work had stalled?",
+    "options": ["A new decree arrives unannounced from Cyrus", "The prophets Haggai and Zechariah prophesy to them", "Darius personally visits Jerusalem to inspect the site", "The local peoples change their minds and offer to help"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 5 },
+    "explanation": "Haggai and Zechariah's preaching moves Zerubbabel and Jeshua to resume the temple's construction."
+  },
+  {
+    "id": "ezra-aq-8",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "What does Tattenai do when he sees the temple being rebuilt?",
+    "options": ["He orders the construction destroyed immediately", "He questions their authority and writes to Darius", "He joins the builders and funds the work himself", "He reports it to Cyrus, unaware Cyrus had died"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 5 },
+    "explanation": "Tattenai asks who authorized the rebuilding, then writes to Darius asking him to confirm Cyrus's decree."
+  },
+  {
+    "id": "ezra-aq-9",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What does Darius find when he orders a search of the royal archives?",
+    "options": ["Cyrus's original decree authorizing the temple", "A record that no such decree ever existed", "A treaty forbidding the temple's rebuilding", "Nothing at all relevant to the Jews or the temple"],
+    "correctIndex": 0,
+    "citation": { "book": "ezra", "chapter": 6 },
+    "explanation": "The search turns up Cyrus's original decree, and Darius orders the work fully funded and protected."
+  },
+  {
+    "id": "ezra-aq-10",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What do the returned exiles celebrate right after the temple's dedication?",
+    "options": ["The Feast of Tabernacles", "The Passover", "The Day of Atonement", "The Feast of Weeks"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 6 },
+    "explanation": "The exiles keep the Passover soon after dedicating the completed temple."
+  },
+  {
+    "id": "ezra-aq-11",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "How is Ezra described when he is first introduced?",
+    "options": ["A soldier skilled in siege warfare", "A scribe skilled in the Law of Moses", "A prophet who predicts the temple's fall", "A merchant who funds the return"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 7 },
+    "explanation": "Ezra is introduced as a priest and scribe skilled in the Law of Moses."
+  },
+  {
+    "id": "ezra-aq-12",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What does Artaxerxes' letter authorize Ezra to do?",
+    "options": ["Crown himself king over all of Judah and Samaria", "Lead willing exiles back to Jerusalem and appoint judges", "Rebuild the Persian palace at Susa", "Disband the priesthood entirely"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 7 },
+    "explanation": "Artaxerxes authorizes Ezra to lead exiles back to Jerusalem, appoint judges, and teach the law."
+  },
+  {
+    "id": "ezra-aq-13",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "Why does Ezra proclaim a fast at the river Ahava instead of asking the king for soldiers?",
+    "options": ["He forgot to request an escort in time", "He had told the king God favors those who seek him", "The king had already refused his request for soldiers", "Soldiers were unavailable that year"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 8 },
+    "explanation": "Ezra is ashamed to ask for soldiers after telling the king that God's hand favors those who seek him."
+  },
+  {
+    "id": "ezra-aq-14",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What happens when Ezra's group finally arrives in Jerusalem?",
+    "options": ["The temple treasures are found to be missing", "The silver and gold are weighed out and match", "The group is turned away by the city's residents", "They discover the temple has been destroyed again"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 8 },
+    "explanation": "The treasures Ezra carried are weighed out in Jerusalem and found to match what was recorded in Babylon."
+  },
+  {
+    "id": "ezra-aq-15",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "What does Ezra learn has happened among the priests, Levites, and other returned exiles?",
+    "options": ["They have abandoned the temple entirely", "They have intermarried with the surrounding peoples", "They have rebuilt pagan altars beside the temple", "They have refused to pay their tithes"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 9 },
+    "explanation": "Officials report that the people, including priests and Levites, have intermarried with the surrounding peoples."
+  },
+  {
+    "id": "ezra-aq-16",
+    "book": "ezra",
+    "category": "character",
+    "prompt": "How does Ezra respond when he learns of the people's unfaithfulness?",
+    "options": ["He immediately punishes the offenders", "He tears his garment and falls to his knees in prayer", "He leaves Jerusalem in protest", "He writes to Artaxerxes requesting a fresh band of soldiers"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 9 },
+    "explanation": "Ezra tears his garment and cloak, falls to his knees, and prays a confession of the nation's guilt."
+  },
+  {
+    "id": "ezra-aq-17",
+    "book": "ezra",
+    "category": "covenant",
+    "prompt": "What does Shecaniah propose to Ezra and the assembly?",
+    "options": ["That the exiles return to Babylon", "That Israel make a covenant to put away the foreign wives", "That the temple be rebuilt for a third and final time", "That Ezra resign as leader"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 10 },
+    "explanation": "Shecaniah proposes a covenant to send away the foreign wives and children, and urges Ezra to act."
+  },
+  {
+    "id": "ezra-aq-18",
+    "book": "ezra",
+    "category": "arc",
+    "prompt": "After the assembly agrees to Shecaniah's proposal, what does Ezra do?",
+    "options": ["He leaves the matter entirely to the priests", "He investigates case by case and records who had intermarried", "He exiles the offenders without any investigation", "He cancels the covenant and disbands the whole assembly"],
+    "correctIndex": 1,
+    "citation": { "book": "ezra", "chapter": 10 },
+    "explanation": "Ezra and the leaders investigate case by case, and the list of those who had intermarried is recorded."
+  }
+]
