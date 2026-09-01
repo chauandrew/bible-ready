@@ -50,9 +50,27 @@ does the rest.
   the authoring rule below for the enumerated-list exception.
 - `"sparse"` / `"argument"` — declared in the schema for books with much lower
   event density (law, genealogy) or epistles (argument-beat structure instead
-  of narrated events). Not yet exercised by real content. Revisit this list
-  once a law book or an epistle actually gets authored; the categories are a
-  guess at this point, not a proven taxonomy.
+  of narrated events). `"sparse"` is still unproven — revisit once a law or
+  genealogy-heavy book is authored. `"argument"` is now exercised by
+  Galatians: no code anywhere branches on `"argument"` specifically (only
+  `"selection"` gets special-cased, in `check:content`'s contiguity rules and
+  the Chapter Order/app-page treatments below), so it behaves exactly like
+  `"narrative"` mechanically — contiguous chapters 1..chapterCount, contiguous
+  arc ranges, full Chapter Order eligibility. The only real difference is a
+  content-modeling choice: Galatians' `events.json` has one event per chapter
+  (its main argument move — Paul's defense of his apostleship, the Hagar/Isaac
+  allegory, and so on), the same "one event per chapter" convention
+  `"selection"` books use, rather than narrative's several-events-per-chapter
+  density. Its events carry no `place` (an epistle has no narrative geography
+  to ask "where does this happen" about), so `generateLocationQuestions`/
+  `generateMatchQuestions` correctly produce zero items for the book — not a
+  bug, see the distractor-pool note below. Its arcs are too short (2 chapters
+  each) to clear `generateSequenceQuestions`' 4-event floor, so it also gets
+  no generated "put these in order" question; Chapter Order (all 6 chapters,
+  every argument beat) covers that role instead. Distractors for "who says
+  this" and "what is this chapter about" still work normally, drawn from the
+  arc's/book's other people and chapter titles even though almost every quote
+  in an epistle shares one speaker.
 
 **A `"selection"` module doesn't have to be a subset of one real book.**
 `misc` proves this: every event/quote in a book's content directory
@@ -719,8 +737,10 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   content authoring rules above), and
   `app/[book]/study/chapters/[number]/page.tsx`'s prev/next links walk the
   book's chapter list by index instead of `chapter.number +/- 1`, since a
-  curated chapter list (Psalm 1, 8, 19...) isn't contiguous. A future
-  `"sparse"` or `"argument"` book reuses the same `coverageDepth` branch.
+  curated chapter list (Psalm 1, 8, 19...) isn't contiguous. `"argument"`
+  turned out *not* to reuse this branch — see the coverage-depth note near the
+  top of this file; only `"selection"` gets special-cased anywhere in the app.
+  A future `"sparse"` book is the one still untested against this assumption.
   Adding a book to `wiredBookIds` alone isn't enough — `lib/content.ts` also
   needs a static import + `BookContentSchema.parse` + `booksContent` entry
   for it (see the block for any existing book), and `app/page.tsx`'s
@@ -730,7 +750,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   Psalms, ..., John, ..., with `misc` last since it has no real position);
   insert a new book at its canonical spot in both places, not at the end.
   `available` entries also carry a `featured` flag: the home page shows only
-  the featured ones (currently 6, everything but Exodus), and `/modules`
+  the featured ones (currently 7, everything but Exodus), and `/modules`
   (`app/modules/page.tsx`) lists the full set. A new book defaults to
   `featured: true` unless there's a reason to hide it from the home page.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's

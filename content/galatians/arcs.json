@@ -1,0 +1,26 @@
+[
+  {
+    "id": "gal-arc-defense",
+    "book": "galatians",
+    "name": "Paul Defends His Gospel and Apostleship",
+    "startChapter": 1,
+    "endChapter": 2,
+    "summary": "Paul insists his gospel came directly from Jesus Christ, not from man, recounts his visit to the Jerusalem apostles, and publicly confronts Peter in Antioch for pulling away from Gentile believers."
+  },
+  {
+    "id": "gal-arc-faith-not-law",
+    "book": "galatians",
+    "name": "Justified by Faith, Not the Law",
+    "startChapter": 3,
+    "endChapter": 4,
+    "summary": "Paul argues from the Galatians' own experience and from Abraham's example that righteousness has always come by faith, that the law was a guardian until Christ came, and that believers are now Abraham's true children and heirs."
+  },
+  {
+    "id": "gal-arc-freedom-spirit",
+    "book": "galatians",
+    "name": "Freedom in the Spirit",
+    "startChapter": 5,
+    "endChapter": 6,
+    "summary": "Paul warns against turning Christian freedom into either a return to the law or an excuse for the flesh, describes the fruit the Spirit produces, and closes by urging the Galatians to bear one another's burdens and boast only in the cross."
+  }
+]

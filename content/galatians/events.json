@@ -1,0 +1,74 @@
+[
+  {
+    "id": "gal-e-c1-1",
+    "book": "galatians",
+    "chapter": 1,
+    "name": "Paul traces his gospel to a direct revelation from Jesus Christ",
+    "shortName": "Paul's gospel by revelation",
+    "citation": { "book": "galatians", "chapter": 1 },
+    "peopleIds": ["gal-paul", "gal-peter", "gal-james"],
+    "order": 1,
+    "summary": "After his violent persecution of the church and a sudden encounter with the risen Christ, Paul insists his gospel was not taught to him by any person but came to him directly by revelation, and he visited only Cephas and James in Jerusalem three years later.",
+    "notable": true
+  },
+  {
+    "id": "gal-e-c2-1",
+    "book": "galatians",
+    "chapter": 2,
+    "name": "Paul publicly opposes Peter for withdrawing from Gentile believers",
+    "shortName": "Paul opposes Peter",
+    "citation": { "book": "galatians", "chapter": 2 },
+    "peopleIds": ["gal-paul", "gal-peter", "gal-barnabas", "gal-titus", "gal-james"],
+    "order": 1,
+    "summary": "Paul travels to Jerusalem with Barnabas and Titus, where Titus is not compelled to be circumcised and the pillar apostles agree Paul and Barnabas will go to the Gentiles while they go to the circumcised, then Paul confronts Peter face to face in Antioch for drawing back from eating with Gentiles once men from James arrived, accusing him of hypocrisy.",
+    "notable": true
+  },
+  {
+    "id": "gal-e-c3-1",
+    "book": "galatians",
+    "chapter": 3,
+    "name": "Paul argues justification comes by faith, as with Abraham",
+    "shortName": "Faith like Abraham's",
+    "citation": { "book": "galatians", "chapter": 3 },
+    "peopleIds": ["gal-paul", "gal-abraham"],
+    "order": 1,
+    "summary": "Paul reminds the Galatians they received the Spirit by believing, not by keeping the law, points to Abraham's faith being counted as righteousness, and explains that the law functioned as a guardian to lead people to Christ until faith came.",
+    "notable": true
+  },
+  {
+    "id": "gal-e-c4-1",
+    "book": "galatians",
+    "chapter": 4,
+    "name": "Paul contrasts Hagar's slave son with Isaac the child of promise",
+    "shortName": "Hagar and Isaac allegory",
+    "citation": { "book": "galatians", "chapter": 4 },
+    "peopleIds": ["gal-paul", "gal-abraham", "gal-hagar", "gal-isaac"],
+    "order": 1,
+    "summary": "Paul explains that believers are no longer slaves but adopted heirs, then draws an allegory from Hagar's son born according to the flesh and Isaac, the son born through promise, to show that believers are children of the free woman, not the slave.",
+    "notable": true
+  },
+  {
+    "id": "gal-e-c5-1",
+    "book": "galatians",
+    "chapter": 5,
+    "name": "Paul contrasts the works of the flesh with the fruit of the Spirit",
+    "shortName": "Fruit of the Spirit",
+    "citation": { "book": "galatians", "chapter": 5 },
+    "peopleIds": ["gal-paul"],
+    "order": 1,
+    "summary": "Paul calls the Galatians to stand firm in the freedom Christ won for them rather than accept circumcision as a yoke of slavery, lists the works of the flesh in contrast to the fruit the Spirit produces, and calls believers to keep in step with the Spirit.",
+    "notable": true
+  },
+  {
+    "id": "gal-e-c6-1",
+    "book": "galatians",
+    "chapter": 6,
+    "name": "Paul closes by boasting only in the cross of Christ",
+    "shortName": "Boasting in the cross",
+    "citation": { "book": "galatians", "chapter": 6 },
+    "peopleIds": ["gal-paul"],
+    "order": 1,
+    "summary": "Paul urges believers to restore a brother caught in sin gently, to bear one another's burdens, and to not grow weary in doing good, then takes up the pen himself to close the letter by boasting only in the cross of Christ.",
+    "notable": true
+  }
+]

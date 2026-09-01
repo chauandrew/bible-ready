@@ -1,0 +1,68 @@
+[
+  {
+    "id": "gal-paul",
+    "name": "Paul",
+    "summary": "An apostle who once violently persecuted the church until Jesus Christ met him and called him directly, apart from any human teacher. He writes to the Galatian churches to defend that gospel of justification by faith and to confront both a rival teaching and Peter's own hypocrisy.",
+    "firstAppearance": { "book": "galatians", "chapter": 1 },
+    "relations": [
+      { "personId": "gal-peter", "relation": "publicly opposed" },
+      { "personId": "gal-barnabas", "relation": "traveling companion" },
+      { "personId": "gal-titus", "relation": "traveling companion" }
+    ]
+  },
+  {
+    "id": "gal-peter",
+    "name": "Peter",
+    "summary": "Also called Cephas, one of the Jerusalem apostles who first extended fellowship to Paul and Barnabas, then drew back from eating with Gentile believers in Antioch once men from James arrived, prompting Paul's public rebuke.",
+    "firstAppearance": { "book": "galatians", "chapter": 1 },
+    "relations": [
+      { "personId": "gal-paul", "relation": "rebuked by" }
+    ]
+  },
+  {
+    "id": "gal-james",
+    "name": "James",
+    "summary": "The Lord's brother and a leading figure among the Jerusalem apostles, whose men arrive in Antioch and prompt Peter and Barnabas to withdraw from eating with Gentile believers.",
+    "firstAppearance": { "book": "galatians", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "gal-barnabas",
+    "name": "Barnabas",
+    "summary": "Paul's companion on the visit to Jerusalem, present when the pillar apostles agree not to require Titus's circumcision, and later led astray along with Peter into withdrawing from Gentile believers at Antioch.",
+    "firstAppearance": { "book": "galatians", "chapter": 2 },
+    "relations": [
+      { "personId": "gal-paul", "relation": "traveling companion" }
+    ]
+  },
+  {
+    "id": "gal-titus",
+    "name": "Titus",
+    "summary": "A Greek believer who accompanies Paul and Barnabas to Jerusalem and becomes the test case for Paul's argument: even under pressure, Titus is not compelled to be circumcised.",
+    "firstAppearance": { "book": "galatians", "chapter": 2 },
+    "relations": [
+      { "personId": "gal-paul", "relation": "traveling companion" }
+    ]
+  },
+  {
+    "id": "gal-abraham",
+    "name": "Abraham",
+    "summary": "The patriarch whose faith was counted to him as righteousness, cited by Paul as proof that God has always justified people by faith rather than by keeping the law.",
+    "firstAppearance": { "book": "galatians", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "gal-hagar",
+    "name": "Hagar",
+    "summary": "Abraham's slave woman, whose son born according to the flesh becomes, in Paul's allegory, a picture of the covenant of law that bears children for slavery.",
+    "firstAppearance": { "book": "galatians", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "gal-isaac",
+    "name": "Isaac",
+    "summary": "Abraham's son born through promise, cited by Paul as the pattern for every believer: a child of promise rather than a child of the flesh.",
+    "firstAppearance": { "book": "galatians", "chapter": 4 },
+    "relations": []
+  }
+]

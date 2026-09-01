@@ -1,0 +1,11 @@
+{
+  "id": "galatians",
+  "name": "Galatians",
+  "chapterCount": 6,
+  "coverageDepth": "argument",
+  "arcOrder": [
+    "gal-arc-defense",
+    "gal-arc-faith-not-law",
+    "gal-arc-freedom-spirit"
+  ]
+}
