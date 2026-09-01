@@ -21,5 +21,20 @@
       [35.85, 33.15],
       [35.652, 33.249]
     ]
+  },
+  {
+    "id": "return-yehud",
+    "name": "Yehud",
+    "era": "return",
+    "note": "A rough approximation of the small Persian province of Yehud (post-exilic Judah) for orientation only, not a scholarly reconstruction — its precise administrative boundaries aren't fully attested. Traced through a handful of known anchor points (Bethel, the Jordan near Jericho, En Gedi, Beth-zur, Azekah, Gezer) roughly matching standard reconstructions of the province's small extent, well short of the old united kingdom's size.",
+    "ring": [
+      [35.2383, 31.9283],
+      [35.46, 31.87],
+      [35.39, 31.47],
+      [35.13, 31.58],
+      [34.93, 31.70],
+      [34.92, 31.93],
+      [35.2383, 31.9283]
+    ]
   }
 ]

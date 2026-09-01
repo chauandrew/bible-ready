@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ezra-q-c1-v2",
+    "book": "ezra",
+    "chapter": 1,
+    "verse": 2,
+    "speakerId": "ezra-cyrus",
+    "text": "Thus says Cyrus king of Persia: The LORD, the God of heaven, has given me all the kingdoms of the earth, and he has charged me to build him a house at Jerusalem, which is in Judah.",
+    "citation": { "book": "ezra", "chapter": 1, "verses": "2" }
+  },
+  {
+    "id": "ezra-q-c6-v8",
+    "book": "ezra",
+    "chapter": 6,
+    "verse": 8,
+    "speakerId": "ezra-darius",
+    "text": "Moreover, I make a decree regarding what you shall do for these elders of the Jews for the rebuilding of this house of God. The cost is to be paid to these men in full and without delay from the royal revenue, the tribute of the province from Beyond the River.",
+    "citation": { "book": "ezra", "chapter": 6, "verses": "8" }
+  },
+  {
+    "id": "ezra-q-c7-v27",
+    "book": "ezra",
+    "chapter": 7,
+    "verse": 27,
+    "speakerId": "ezra-ezra",
+    "text": "Blessed be the LORD, the God of our fathers, who put such a thing as this into the heart of the king, to beautify the house of the LORD that is in Jerusalem,",
+    "citation": { "book": "ezra", "chapter": 7, "verses": "27" }
+  },
+  {
+    "id": "ezra-q-c8-v22",
+    "book": "ezra",
+    "chapter": 8,
+    "verse": 22,
+    "speakerId": "ezra-ezra",
+    "text": "For I was ashamed to ask the king for a band of soldiers and horsemen to protect us against the enemy on our way, since we had told the king, 'The hand of our God is for good on all who seek him, and the power of his wrath is against all who forsake him.'",
+    "citation": { "book": "ezra", "chapter": 8, "verses": "22" }
+  },
+  {
+    "id": "ezra-q-c9-v6",
+    "book": "ezra",
+    "chapter": 9,
+    "verse": 6,
+    "speakerId": "ezra-ezra",
+    "text": "O my God, I am ashamed and blush to lift my face to you, my God, for our iniquities have risen higher than our heads, and our guilt has mounted up to the heavens.",
+    "citation": { "book": "ezra", "chapter": 9, "verses": "6" }
+  },
+  {
+    "id": "ezra-q-c10-v4",
+    "book": "ezra",
+    "chapter": 10,
+    "verse": 4,
+    "speakerId": "ezra-shecaniah",
+    "text": "Arise, for it is your task, and we are with you; be strong and do it.",
+    "citation": { "book": "ezra", "chapter": 10, "verses": "4" }
+  }
+]

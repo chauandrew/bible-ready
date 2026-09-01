@@ -40,7 +40,9 @@ const PALETTE = {
  * the north to Kadesh-barnea in the south, the Mediterranean to Ammon.
  * Absent here, an era just falls back to fitting the journey's own stops
  * (Genesis's patriarchs already span Haran to Egypt, so that default is
- * already the right "zoomed out" view — no override needed).
+ * already the right "zoomed out" view — no override needed; the "return"
+ * era's Babylon-to-Jerusalem journeys are wider still, so no override there
+ * either).
  */
 const ERA_BOUNDS: Record<string, LngLatBounds> = {
   "united-kingdom": [[33.9, 30.4], [36.4, 33.7]],

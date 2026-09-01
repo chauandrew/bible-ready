@@ -1,0 +1,11 @@
+{
+  "id": "ezra",
+  "name": "Ezra",
+  "chapterCount": 10,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "ezra-arc-return-foundation",
+    "ezra-arc-opposition-completion",
+    "ezra-arc-return-reform"
+  ]
+}

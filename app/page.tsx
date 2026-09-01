@@ -10,6 +10,7 @@ export const available = [
   { href: "/exodus", name: "Exodus", desc: "From slavery in Egypt to the crossing of the Red Sea, 14 chapters.", featured: false },
   { href: "/1-samuel", name: "1 Samuel", desc: "Israel's first king rises and falls, and a shepherd named David is anointed to replace him, 31 chapters.", featured: true },
   { href: "/2-samuel", name: "2 Samuel", desc: "David's rise to the throne, his worst sin, and the family rebellion that follows, 24 chapters.", featured: true },
+  { href: "/ezra", name: "Ezra", desc: "Exiles return from Babylon, rebuild the temple, and confront a crisis of unfaithfulness, 10 chapters.", featured: true },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme.", featured: true },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards.", featured: true },
   { href: "/misc", name: "Miscellaneous", desc: "The twelve disciples, the twelve tribes of Israel, and putting the Old and New Testament books in order.", featured: true },

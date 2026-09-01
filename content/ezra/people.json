@@ -1,0 +1,79 @@
+[
+  {
+    "id": "ezra-cyrus",
+    "name": "Cyrus",
+    "summary": "King of Persia whose decree in his first year permits the Jewish exiles to return to Jerusalem and rebuild the temple, and who returns the temple's sacred vessels taken by Nebuchadnezzar.",
+    "firstAppearance": { "book": "ezra", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "ezra-sheshbazzar",
+    "name": "Sheshbazzar",
+    "summary": "The prince of Judah entrusted by Cyrus with the temple's sacred vessels to carry back to Jerusalem, and named as the one who laid the temple's foundation.",
+    "firstAppearance": { "book": "ezra", "chapter": 1 },
+    "relations": [{ "personId": "ezra-cyrus", "relation": "commissioned by" }]
+  },
+  {
+    "id": "ezra-zerubbabel",
+    "name": "Zerubbabel",
+    "summary": "A leader of the first group of returning exiles who, with Jeshua, rebuilds the altar, lays the temple's foundation, and later resumes construction after the prophets Haggai and Zechariah spur him on.",
+    "firstAppearance": { "book": "ezra", "chapter": 2 },
+    "relations": [{ "personId": "ezra-jeshua", "relation": "co-leader" }]
+  },
+  {
+    "id": "ezra-jeshua",
+    "name": "Jeshua",
+    "summary": "The high priest who returns with Zerubbabel, joins him in rebuilding the altar and the temple, and leads the priests in its eventual dedication.",
+    "firstAppearance": { "book": "ezra", "chapter": 2 },
+    "relations": [{ "personId": "ezra-zerubbabel", "relation": "co-leader" }]
+  },
+  {
+    "id": "ezra-tattenai",
+    "name": "Tattenai",
+    "summary": "The Persian governor of the province beyond the Euphrates who questions the builders' authority to rebuild the temple and writes to Darius asking him to confirm Cyrus's decree.",
+    "firstAppearance": { "book": "ezra", "chapter": 5 },
+    "relations": [{ "personId": "ezra-darius", "relation": "wrote to" }]
+  },
+  {
+    "id": "ezra-haggai",
+    "name": "Haggai",
+    "summary": "One of two prophets whose preaching spurs Zerubbabel and Jeshua to resume the temple's construction after years of stalled work.",
+    "firstAppearance": { "book": "ezra", "chapter": 5 },
+    "relations": [{ "personId": "ezra-zechariah", "relation": "fellow prophet" }]
+  },
+  {
+    "id": "ezra-zechariah",
+    "name": "Zechariah",
+    "summary": "One of two prophets, alongside Haggai, whose preaching spurs Zerubbabel and Jeshua to resume the temple's construction after years of stalled work.",
+    "firstAppearance": { "book": "ezra", "chapter": 5 },
+    "relations": [{ "personId": "ezra-haggai", "relation": "fellow prophet" }]
+  },
+  {
+    "id": "ezra-darius",
+    "name": "Darius",
+    "summary": "King of Persia who, when Tattenai questions the returned exiles' authority, searches the archives, confirms Cyrus's original decree, and orders the temple's rebuilding fully funded and protected.",
+    "firstAppearance": { "book": "ezra", "chapter": 6 },
+    "relations": []
+  },
+  {
+    "id": "ezra-artaxerxes",
+    "name": "Artaxerxes",
+    "summary": "A king of Persia who authorizes and funds Ezra's mission to Jerusalem by royal letter, granting him authority to appoint judges and teach the law.",
+    "firstAppearance": { "book": "ezra", "chapter": 7 },
+    "relations": [{ "personId": "ezra-ezra", "relation": "authorized" }]
+  },
+  {
+    "id": "ezra-ezra",
+    "name": "Ezra",
+    "summary": "A priest and scribe skilled in the Law of Moses who leads a second return to Jerusalem decades after the temple's completion, confronts the crisis of intermarriage with surrounding peoples, and leads the people in a prayer of confession and a covenant of reform.",
+    "firstAppearance": { "book": "ezra", "chapter": 7 },
+    "relations": [{ "personId": "ezra-artaxerxes", "relation": "authorized by" }]
+  },
+  {
+    "id": "ezra-shecaniah",
+    "name": "Shecaniah",
+    "summary": "One of the assembly who, when Ezra weeps over the people's intermarriage with foreign peoples, proposes a covenant to put away the foreign wives and urges Ezra to take courage and act.",
+    "firstAppearance": { "book": "ezra", "chapter": 10 },
+    "relations": [{ "personId": "ezra-ezra", "relation": "addressed" }]
+  }
+]

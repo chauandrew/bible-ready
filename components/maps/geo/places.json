@@ -12,7 +12,7 @@
   { "id": "rabbah", "name": "Rabbah", "lat": 31.9539, "lng": 35.9349, "kind": "city", "eras": ["united-kingdom"] },
   { "id": "samaria", "name": "Samaria", "lat": 32.2778, "lng": 35.1917, "kind": "city", "eras": ["divided-kingdom"] },
   { "id": "nineveh", "name": "Nineveh", "lat": 36.3600, "lng": 43.1500, "kind": "city", "eras": ["divided-kingdom"] },
-  { "id": "babylon", "name": "Babylon", "lat": 32.5425, "lng": 44.4200, "kind": "city", "eras": ["divided-kingdom", "exile"] },
+  { "id": "babylon", "name": "Babylon", "lat": 32.5425, "lng": 44.4200, "kind": "city", "eras": ["divided-kingdom", "exile", "return"] },
   { "id": "mediterranean-sea", "name": "the Mediterranean Sea", "lat": 32.3, "lng": 34.15, "kind": "water", "eras": ["patriarchs", "exodus", "conquest", "judges", "united-kingdom", "divided-kingdom", "exile", "return", "gospels", "early-church"] },
   { "id": "dead-sea", "name": "the Dead Sea", "lat": 31.5, "lng": 35.47, "kind": "water", "eras": ["patriarchs", "exodus", "conquest", "judges", "united-kingdom", "divided-kingdom", "exile", "return", "gospels"] },
   { "id": "sea-of-galilee", "name": "the Sea of Galilee", "lat": 32.83, "lng": 35.58, "kind": "water", "eras": ["conquest", "judges", "united-kingdom", "divided-kingdom", "gospels"] },

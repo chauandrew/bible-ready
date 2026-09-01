@@ -1,0 +1,39 @@
+[
+  {
+    "id": "ezra-journey-first-return",
+    "book": "ezra",
+    "name": "The First Return and the Rebuilt Temple",
+    "summary": "Follow the first wave of exiles from Babylon back to Jerusalem under Zerubbabel and Jeshua, through opposition, delay, and the temple's eventual completion.",
+    "era": "return",
+    "characters": [{ "id": "ezra-zerubbabel", "color": "#8a5a2b" }],
+    "stops": [
+      { "id": "ez1-1", "order": 1, "eventId": "ezra-e-c1-1", "characterIds": ["ezra-zerubbabel"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra doesn't name where Cyrus issued this decree; Babylon, the recently-conquered administrative center where the exiles lived, is shown here as the most likely setting." },
+      { "id": "ez1-2", "order": 2, "eventId": "ezra-e-c2-1", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-3", "order": 3, "eventId": "ezra-e-c3-1", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-4", "order": 4, "eventId": "ezra-e-c3-2", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-5", "order": 5, "eventId": "ezra-e-c4-1", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-6", "order": 6, "eventId": "ezra-e-c5-1", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-7", "order": 7, "eventId": "ezra-e-c6-1", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-8", "order": 8, "eventId": "ezra-e-c6-2", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez1-9", "order": 9, "eventId": "ezra-e-c6-3", "characterIds": ["ezra-zerubbabel"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 }
+    ]
+  },
+  {
+    "id": "ezra-journey-ezra-return",
+    "book": "ezra",
+    "name": "Ezra's Return and Reform",
+    "summary": "Follow Ezra and a second group of exiles on the journey from Babylon to Jerusalem decades later, and through the reform that followed their arrival.",
+    "era": "return",
+    "characters": [{ "id": "ezra-ezra", "color": "#3d6fa5" }],
+    "stops": [
+      { "id": "ez2-1", "order": 1, "eventId": "ezra-e-c7-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
+      { "id": "ez2-2", "order": 2, "eventId": "ezra-e-c7-2", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
+      { "id": "ez2-3", "order": 3, "eventId": "ezra-e-c8-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
+      { "id": "ez2-4", "order": 4, "eventId": "ezra-e-c8-2", "characterIds": ["ezra-ezra"], "place": "the river Ahava", "lat": 32.80, "lng": 44.00, "locationNote": "Ahava's exact site is unknown — no confirmed location exists. It was likely a canal community somewhere along the Euphrates near Babylon where Ezra's group staged before the journey west; shown here as an approximate point along that route, not a settled identification." },
+      { "id": "ez2-5", "order": 5, "eventId": "ezra-e-c8-3", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez2-6", "order": 6, "eventId": "ezra-e-c9-1", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez2-7", "order": 7, "eventId": "ezra-e-c9-2", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
+      { "id": "ez2-8", "order": 8, "eventId": "ezra-e-c10-1", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 }
+    ]
+  }
+]

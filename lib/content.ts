@@ -49,6 +49,15 @@ import samuel2QuotesJson from "@/content/2-samuel/quotes.json";
 import samuel2QuestionsJson from "@/content/2-samuel/questions.json";
 import samuel2DecksJson from "@/content/2-samuel/decks.json";
 import samuel2JourneysJson from "@/content/2-samuel/journeys.json";
+import ezraBookJson from "@/content/ezra/book.json";
+import ezraArcsJson from "@/content/ezra/arcs.json";
+import ezraChaptersJson from "@/content/ezra/chapters.json";
+import ezraPeopleJson from "@/content/ezra/people.json";
+import ezraEventsJson from "@/content/ezra/events.json";
+import ezraQuotesJson from "@/content/ezra/quotes.json";
+import ezraQuestionsJson from "@/content/ezra/questions.json";
+import ezraDecksJson from "@/content/ezra/decks.json";
+import ezraJourneysJson from "@/content/ezra/journeys.json";
 import miscBookJson from "@/content/misc/book.json";
 import miscArcsJson from "@/content/misc/arcs.json";
 import miscChaptersJson from "@/content/misc/chapters.json";
@@ -146,6 +155,18 @@ const samuel2Content: BookContent = BookContentSchema.parse({
   journeys: samuel2JourneysJson,
 });
 
+const ezraContent: BookContent = BookContentSchema.parse({
+  book: ezraBookJson,
+  arcs: ezraArcsJson,
+  chapters: ezraChaptersJson,
+  people: ezraPeopleJson,
+  events: ezraEventsJson,
+  quotes: ezraQuotesJson,
+  questions: ezraQuestionsJson,
+  decks: ezraDecksJson,
+  journeys: ezraJourneysJson,
+});
+
 const miscContent: BookContent = BookContentSchema.parse({
   book: miscBookJson,
   arcs: miscArcsJson,
@@ -167,6 +188,7 @@ const booksContent: Record<string, BookContent> = {
   [exodusContent.book.id]: exodusContent,
   [samuel1Content.book.id]: samuel1Content,
   [samuel2Content.book.id]: samuel2Content,
+  [ezraContent.book.id]: ezraContent,
   [psalmsContent.book.id]: psalmsContent,
   [johnContent.book.id]: johnContent,
   [miscContent.book.id]: miscContent,
@@ -183,7 +205,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "1-samuel", "2-samuel", "psalms", "john", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "1-samuel", "2-samuel", "ezra", "psalms", "john", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
