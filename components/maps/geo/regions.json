@@ -23,6 +23,26 @@
     ]
   },
   {
+    "id": "gospels-judea-galilee",
+    "name": "Judea, Samaria, and Galilee",
+    "era": "gospels",
+    "note": "A rough, simplified approximation for orientation only, not a scholarly reconstruction — this era's territory was actually split between Roman-governed Judea and Herod Antipas's tetrarchy of Galilee and Perea, not one unified kingdom, but a single outline traced through known anchor points (near Caesarea Philippi, the Decapolis, Perea, the Dead Sea, Beersheba, the coast near Gaza and Joppa, Mount Carmel, and Galilee's western hills) reads more clearly than two overlapping ones.",
+    "ring": [
+      [35.65, 33.25],
+      [35.85, 32.60],
+      [35.72, 31.85],
+      [35.55, 31.30],
+      [35.45, 31.00],
+      [34.79, 31.25],
+      [34.45, 31.50],
+      [34.75, 32.05],
+      [34.95, 32.83],
+      [35.15, 32.95],
+      [35.30, 33.10],
+      [35.65, 33.25]
+    ]
+  },
+  {
     "id": "return-yehud",
     "name": "Yehud",
     "era": "return",

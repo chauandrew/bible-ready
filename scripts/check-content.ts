@@ -29,6 +29,7 @@ const VERSE_COUNTS: Record<string, number> = {
   "2-samuel": 695,
   ezra: 280,
   galatians: 149,
+  matthew: 1071,
 };
 const VERSE_BUDGET_PCT = 0.25;
 /** Crossway's ESV permission is capped in absolute verses across the whole work,

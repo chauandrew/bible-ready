@@ -1,0 +1,198 @@
+[
+  {
+    "id": "jesus",
+    "name": "Jesus",
+    "summary": "The Christ, the Son of David and Son of Abraham, whose genealogy, birth, teaching, death, and resurrection Matthew narrates as the fulfillment of Israel's Scriptures and the inauguration of the kingdom of heaven.",
+    "firstAppearance": { "book": "matthew", "chapter": 1 },
+    "relations": [
+      { "personId": "joseph", "relation": "legal father" },
+      { "personId": "mary", "relation": "mother" },
+      { "personId": "peter", "relation": "called as disciple" }
+    ]
+  },
+  {
+    "id": "angel",
+    "name": "The Angel of the Lord",
+    "summary": "A messenger who appears to Joseph in dreams to explain Mary's pregnancy and warn him to flee to Egypt and later return, and who announces Jesus's resurrection to the women at the empty tomb.",
+    "firstAppearance": { "book": "matthew", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "god",
+    "name": "God",
+    "summary": "The heavenly Father whose voice twice declares Jesus his beloved Son, at his baptism in the Jordan and again at his transfiguration on the mountain.",
+    "firstAppearance": { "book": "matthew", "chapter": 3 },
+    "relations": [
+      { "personId": "jesus", "relation": "father" }
+    ]
+  },
+  {
+    "id": "centurion",
+    "name": "The Centurion",
+    "summary": "A Roman officer whose servant lies paralyzed at home, suffering terribly, and whose confidence that Jesus can heal with only a word Jesus praises as greater faith than he has found anywhere in Israel.",
+    "firstAppearance": { "book": "matthew", "chapter": 8 },
+    "relations": []
+  },
+  {
+    "id": "joseph",
+    "name": "Joseph",
+    "summary": "A descendant of David engaged to Mary, who takes her as his wife after an angel explains her pregnancy in a dream, and who protects the infant Jesus by fleeing to Egypt and later settling in Nazareth.",
+    "firstAppearance": { "book": "matthew", "chapter": 1 },
+    "relations": [
+      { "personId": "mary", "relation": "husband" },
+      { "personId": "jesus", "relation": "legal father" }
+    ]
+  },
+  {
+    "id": "mary",
+    "name": "Mary",
+    "summary": "The virgin engaged to Joseph who is found to be pregnant by the Holy Spirit and gives birth to Jesus in fulfillment of the prophet's words that a virgin shall conceive.",
+    "firstAppearance": { "book": "matthew", "chapter": 1 },
+    "relations": [
+      { "personId": "joseph", "relation": "wife" },
+      { "personId": "jesus", "relation": "mother" }
+    ]
+  },
+  {
+    "id": "magi",
+    "name": "The Magi",
+    "summary": "Wise men from the east who follow a star to Jerusalem and then Bethlehem to worship the child born king of the Jews with gifts of gold, frankincense, and myrrh, then return home by another route after being warned in a dream to avoid Herod.",
+    "firstAppearance": { "book": "matthew", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "herod",
+    "name": "Herod the Great",
+    "summary": "The reigning king of Judea who, threatened by the magi's report of a child born king, orders the killing of Bethlehem's young boys in a failed attempt to kill Jesus.",
+    "firstAppearance": { "book": "matthew", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "john-baptist",
+    "name": "John the Baptist",
+    "summary": "A wilderness preacher who calls Israel to repentance ahead of the Messiah, baptizes Jesus in the Jordan, later questions from prison whether Jesus is the one to come, and is beheaded by Herod Antipas.",
+    "firstAppearance": { "book": "matthew", "chapter": 3 },
+    "relations": [
+      { "personId": "jesus", "relation": "baptized" },
+      { "personId": "herod-antipas", "relation": "imprisoned and executed by" }
+    ]
+  },
+  {
+    "id": "satan",
+    "name": "The Devil",
+    "summary": "The tempter who confronts Jesus in the wilderness after his forty-day fast, offering bread, safety, and worldly power, and is answered each time with Scripture and finally dismissed.",
+    "firstAppearance": { "book": "matthew", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "peter",
+    "name": "Peter",
+    "summary": "A fisherman called as one of Jesus's first four disciples who becomes a leading apostle, confesses Jesus as the Christ at Caesarea Philippi, witnesses the transfiguration, and denies knowing Jesus three times the night of his arrest.",
+    "firstAppearance": { "book": "matthew", "chapter": 4 },
+    "relations": [
+      { "personId": "andrew", "relation": "brother" },
+      { "personId": "jesus", "relation": "denied" }
+    ]
+  },
+  {
+    "id": "andrew",
+    "name": "Andrew",
+    "summary": "A fisherman and Peter's brother, called together with him as one of Jesus's first disciples.",
+    "firstAppearance": { "book": "matthew", "chapter": 4 },
+    "relations": [
+      { "personId": "peter", "relation": "brother" }
+    ]
+  },
+  {
+    "id": "james",
+    "name": "James son of Zebedee",
+    "summary": "A fisherman called with his brother John to follow Jesus, one of the inner three (with Peter and John) who witness the transfiguration, whose mother asks Jesus to seat him at his right hand in the kingdom.",
+    "firstAppearance": { "book": "matthew", "chapter": 4 },
+    "relations": [
+      { "personId": "john-apostle", "relation": "brother" }
+    ]
+  },
+  {
+    "id": "john-apostle",
+    "name": "John son of Zebedee",
+    "summary": "A fisherman called with his brother James to follow Jesus, one of the inner three who witness the transfiguration, whose mother asks Jesus to seat him at his left hand in the kingdom.",
+    "firstAppearance": { "book": "matthew", "chapter": 4 },
+    "relations": [
+      { "personId": "james", "relation": "brother" }
+    ]
+  },
+  {
+    "id": "matthew-apostle",
+    "name": "Matthew",
+    "summary": "A tax collector Jesus calls to follow him while sitting at his tax booth, who then hosts Jesus for a meal with fellow tax collectors and sinners and is later named among the twelve apostles.",
+    "firstAppearance": { "book": "matthew", "chapter": 9 },
+    "relations": [
+      { "personId": "jesus", "relation": "called by" }
+    ]
+  },
+  {
+    "id": "herod-antipas",
+    "name": "Herod Antipas",
+    "summary": "The tetrarch of Galilee, son of Herod the Great, who imprisons John the Baptist for condemning his marriage to Herodias and has him beheaded after a rash oath to her dancing daughter.",
+    "firstAppearance": { "book": "matthew", "chapter": 14 },
+    "relations": [
+      { "personId": "herodias", "relation": "husband" },
+      { "personId": "john-baptist", "relation": "imprisoned and executed" }
+    ]
+  },
+  {
+    "id": "herodias",
+    "name": "Herodias",
+    "summary": "Herod Antipas's wife, whose marriage John the Baptist publicly condemns, and whose daughter's dance leads Herod to order John's execution.",
+    "firstAppearance": { "book": "matthew", "chapter": 14 },
+    "relations": [
+      { "personId": "herod-antipas", "relation": "wife" }
+    ]
+  },
+  {
+    "id": "judas",
+    "name": "Judas Iscariot",
+    "summary": "One of the twelve apostles who agrees to betray Jesus to the chief priests for thirty pieces of silver, identifies him with a kiss at Gethsemane, and hangs himself in remorse afterward.",
+    "firstAppearance": { "book": "matthew", "chapter": 10 },
+    "relations": [
+      { "personId": "jesus", "relation": "betrayed" }
+    ]
+  },
+  {
+    "id": "caiaphas",
+    "name": "Caiaphas",
+    "summary": "The high priest who presides over the Sanhedrin's trial of Jesus and condemns him for blasphemy after Jesus affirms he is the Christ, the Son of God.",
+    "firstAppearance": { "book": "matthew", "chapter": 26 },
+    "relations": [
+      { "personId": "jesus", "relation": "condemned" }
+    ]
+  },
+  {
+    "id": "pilate",
+    "name": "Pontius Pilate",
+    "summary": "The Roman governor who tries Jesus, offers to release him in place of Barabbas, and, after washing his hands of the matter, hands Jesus over to be crucified when the crowd demands it.",
+    "firstAppearance": { "book": "matthew", "chapter": 27 },
+    "relations": [
+      { "personId": "jesus", "relation": "sentenced" },
+      { "personId": "barabbas", "relation": "released instead of Jesus" }
+    ]
+  },
+  {
+    "id": "barabbas",
+    "name": "Barabbas",
+    "summary": "A notorious prisoner the crowd chooses to have released instead of Jesus when Pilate offers them the choice at the Passover festival.",
+    "firstAppearance": { "book": "matthew", "chapter": 27 },
+    "relations": [
+      { "personId": "pilate", "relation": "released by" }
+    ]
+  },
+  {
+    "id": "joseph-arimathea",
+    "name": "Joseph of Arimathea",
+    "summary": "A rich disciple of Jesus who asks Pilate for Jesus's body after the crucifixion and lays it in his own new tomb cut out of the rock.",
+    "firstAppearance": { "book": "matthew", "chapter": 27 },
+    "relations": [
+      { "personId": "jesus", "relation": "buried" }
+    ]
+  }
+]

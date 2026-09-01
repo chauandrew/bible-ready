@@ -503,16 +503,27 @@ approximate. Adding a *new* journey to an *existing* book's `journeys.json`
 needs no code change. Adding one for a *new* region (1-2 Samuel's Saul/David
 story, say) needs no new map asset either — the same bundled world
 coastline/river/lake data covers any region; only `bounds` in
-`JourneyExplorer` (derived from the journey's own stops) changes. A brand
-new *era* string is a little more work but still no new base map data:
-Ezra's `"return"` era (two journeys — the first return under Zerubbabel and
-Ezra's own later return, split at the same kind of real narrative seam that
-splits 1-2 Samuel's Saul/David story into two `Journey` records — see below)
-needed `places.json`/`regions.json` additions for its own background labels
-and territory outline, but no `ERA_BOUNDS` override: unlike 1-2 Samuel's
-tight Jerusalem-centered story, both journeys already span Babylon to
-Jerusalem, wider than any override would add, so the default "fit to this
-journey's own stops" behavior is already the right zoomed-out view.
+`JourneyExplorer` (derived from the journey's own stops) changes.
+A genuinely *new era* is a bigger but still purely data-driven lift: Matthew's
+`"gospels"` era (Jesus's ministry, a different region and centuries later than
+1-2 Samuel's `"united-kingdom"`) needed no new base map either, but did need
+new entries in the three shared, era-keyed reference files — new cities in
+`components/maps/geo/places.json` (Nazareth, Capernaum, Bethsaida, Cana,
+Caesarea Philippi, Tyre, Sidon, Jericho, plus two new `"region"` labels, the
+Decapolis and Perea — Cana isn't yet used by any journey stop, but is there
+for a future one), a new territory outline in `components/maps/geo/regions.json`,
+and a new `ERA_BOUNDS` entry in `JourneyMap.tsx` — the same three files
+`"united-kingdom"` added to for 1-2 Samuel, just keyed by the new era string
+instead of a new one of these files per book. Ezra's `"return"` era (two
+journeys — the first return under Zerubbabel and Ezra's own later return,
+split at the same kind of real narrative seam that splits 1-2 Samuel's
+Saul/David story into two `Journey` records — see below) needed the same
+`places.json`/`regions.json` additions for its own background labels and
+territory outline, but no `ERA_BOUNDS` override: unlike 1-2 Samuel's and
+Matthew's tight, Jerusalem-centered stories, both of Ezra's journeys already
+span Babylon to Jerusalem, wider than any override would add, so the default
+"fit to this journey's own stops" behavior is already the right zoomed-out
+view.
 
 **A journey can't span two separate book bundles, because nothing else in
 this app can either.** `Journey.book` is one `BookIdSchema`, and a
@@ -759,7 +770,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   Psalms, ..., John, ..., with `misc` last since it has no real position);
   insert a new book at its canonical spot in both places, not at the end.
   `available` entries also carry a `featured` flag: the home page shows only
-  the featured ones (currently 7, everything but Exodus), and `/modules`
+  the featured ones (currently everything but Exodus), and `/modules`
   (`app/modules/page.tsx`) lists the full set. A new book defaults to
   `featured: true` unless there's a reason to hide it from the home page.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's

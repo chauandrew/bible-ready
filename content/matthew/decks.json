@@ -1,0 +1,59 @@
+[
+  {
+    "id": "matt-deck-sermon",
+    "book": "matthew",
+    "name": "The Sermon on the Mount",
+    "cardEventIds": [
+      "matt-e-c5-1",
+      "matt-e-c5-2",
+      "matt-e-c6-1",
+      "matt-e-c6-2",
+      "matt-e-c7-1",
+      "matt-e-c7-2"
+    ]
+  },
+  {
+    "id": "matt-deck-parables",
+    "book": "matthew",
+    "name": "Parables of the Kingdom",
+    "cardEventIds": [
+      "matt-e-c13-1",
+      "matt-e-c13-2",
+      "matt-e-c18-1",
+      "matt-e-c20-1",
+      "matt-e-c21-2",
+      "matt-e-c22-1",
+      "matt-e-c25-1",
+      "matt-e-c25-2"
+    ]
+  },
+  {
+    "id": "matt-deck-miracles",
+    "book": "matthew",
+    "name": "Miracles of Jesus",
+    "cardEventIds": [
+      "matt-e-c8-1",
+      "matt-e-c8-2",
+      "matt-e-c9-1",
+      "matt-e-c9-2",
+      "matt-e-c14-2",
+      "matt-e-c15-2",
+      "matt-e-c17-2"
+    ]
+  },
+  {
+    "id": "matt-deck-passion",
+    "book": "matthew",
+    "name": "The Passion and Resurrection",
+    "cardEventIds": [
+      "matt-e-c26-1",
+      "matt-e-c26-2",
+      "matt-e-c26-3",
+      "matt-e-c27-1",
+      "matt-e-c27-2",
+      "matt-e-c27-3",
+      "matt-e-c28-1",
+      "matt-e-c28-2"
+    ]
+  }
+]
