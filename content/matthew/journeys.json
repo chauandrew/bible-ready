@@ -1,0 +1,43 @@
+[
+  {
+    "id": "matt-journey",
+    "book": "matthew",
+    "name": "The Ministry of Jesus",
+    "summary": "Follow Jesus from his birth in Bethlehem through his Galilean ministry, his journey toward Jerusalem, and his death and resurrection there.",
+    "era": "gospels",
+    "characters": [
+      { "id": "jesus", "color": "#1f6f8b" }
+    ],
+    "stops": [
+      { "id": "mt-1", "order": 1, "eventId": "matt-e-c1-2", "characterIds": ["jesus"], "place": "Nazareth", "lat": 32.7018, "lng": 35.2967 },
+      { "id": "mt-2", "order": 2, "eventId": "matt-e-c2-1", "characterIds": ["jesus"], "place": "Bethlehem", "lat": 31.7054, "lng": 35.2024 },
+      { "id": "mt-3", "order": 3, "eventId": "matt-e-c2-2", "characterIds": ["jesus"], "place": "Egypt", "lat": 30.80, "lng": 31.90, "locationNote": "Egypt is a region, not a single site — Matthew names no specific town, so a plausible point near the eastern Nile Delta, the traditional route for refugees from Judea, is shown here." },
+      { "id": "mt-4", "order": 4, "eventId": "matt-e-c2-3", "characterIds": ["jesus"], "place": "Nazareth", "lat": 32.7018, "lng": 35.2967 },
+      { "id": "mt-5", "order": 5, "eventId": "matt-e-c3-1", "characterIds": ["jesus"], "place": "the wilderness of Judea", "lat": 31.50, "lng": 35.35, "locationNote": "Matthew names no specific site for John's preaching; a general point in the Judean wilderness near the Jordan is shown." },
+      { "id": "mt-6", "order": 6, "eventId": "matt-e-c3-2", "characterIds": ["jesus"], "place": "the Jordan River", "lat": 31.8378, "lng": 35.5423, "locationNote": "Traditionally identified with the area near Al-Maghtas/Qasr al-Yahud, close to the Jordan's mouth at the Dead Sea, though the exact site of Jesus's baptism is not certain." },
+      { "id": "mt-7", "order": 7, "eventId": "matt-e-c4-1", "characterIds": ["jesus"], "place": "the wilderness", "lat": 31.8667, "lng": 35.4333, "locationNote": "Traditionally identified with the Mount of Temptation near Jericho, though Matthew names no specific site." },
+      { "id": "mt-8", "order": 8, "eventId": "matt-e-c4-2", "characterIds": ["jesus"], "place": "Capernaum", "lat": 32.8811, "lng": 35.5213 },
+      { "id": "mt-9", "order": 9, "eventId": "matt-e-c5-1", "characterIds": ["jesus"], "place": "the Mount of Beatitudes", "lat": 32.8756, "lng": 35.5439, "locationNote": "A traditional site above Tabgha on the Sea of Galilee's north shore, identified since the Byzantine era; Matthew names no specific mountain." },
+      { "id": "mt-10", "order": 10, "eventId": "matt-e-c8-1", "characterIds": ["jesus"], "place": "Capernaum", "lat": 32.8811, "lng": 35.5213 },
+      { "id": "mt-11", "order": 11, "eventId": "matt-e-c8-2", "characterIds": ["jesus"], "place": "the region of the Gadarenes", "lat": 32.8228, "lng": 35.6414, "locationNote": "Manuscripts vary between Gadarenes, Gerasenes, and Gergesenes; the eastern shore site is often identified with Kursi." },
+      { "id": "mt-12", "order": 12, "eventId": "matt-e-c9-2", "characterIds": ["jesus"], "place": "Capernaum", "lat": 32.8811, "lng": 35.5213 },
+      { "id": "mt-13", "order": 13, "eventId": "matt-e-c10-1", "characterIds": ["jesus"], "place": "Capernaum", "lat": 32.8811, "lng": 35.5213 },
+      { "id": "mt-14", "order": 14, "eventId": "matt-e-c13-3", "characterIds": ["jesus"], "place": "Nazareth", "lat": 32.7018, "lng": 35.2967 },
+      { "id": "mt-15", "order": 15, "eventId": "matt-e-c14-1", "characterIds": ["jesus"], "place": "Machaerus", "lat": 31.5814, "lng": 35.6172, "locationNote": "Herod Antipas's fortress east of the Dead Sea, the traditional site of John the Baptist's imprisonment and execution; not named directly in Matthew's text." },
+      { "id": "mt-16", "order": 16, "eventId": "matt-e-c14-2", "characterIds": ["jesus"], "place": "Bethsaida", "lat": 32.9083, "lng": 35.6272, "locationNote": "Luke 9:10 places the feeding of the five thousand near Bethsaida; Matthew gives no specific site." },
+      { "id": "mt-17", "order": 17, "eventId": "matt-e-c15-2", "characterIds": ["jesus"], "place": "the region of Tyre and Sidon", "lat": 33.2704, "lng": 35.2038 },
+      { "id": "mt-18", "order": 18, "eventId": "matt-e-c16-2", "characterIds": ["jesus"], "place": "Caesarea Philippi", "lat": 33.2494, "lng": 35.6928 },
+      { "id": "mt-19", "order": 19, "eventId": "matt-e-c17-1", "characterIds": ["jesus"], "place": "Mount Tabor", "lat": 32.6863, "lng": 35.3892, "locationNote": "Christian tradition identifies Mount Tabor as the site of the transfiguration, though Mount Hermon, closer to Caesarea Philippi, has also been proposed; Matthew names only \"a high mountain.\"" },
+      { "id": "mt-20", "order": 20, "eventId": "matt-e-c19-1", "characterIds": ["jesus"], "place": "the region beyond the Jordan", "lat": 31.90, "lng": 35.72, "locationNote": "Matthew 19:1 places this teaching in Perea, the region east of the Jordan; no specific town is named." },
+      { "id": "mt-21", "order": 21, "eventId": "matt-e-c20-2", "characterIds": ["jesus"], "place": "Jericho", "lat": 31.8667, "lng": 35.4442 },
+      { "id": "mt-22", "order": 22, "eventId": "matt-e-c21-1", "characterIds": ["jesus"], "place": "Jerusalem", "lat": 31.7780, "lng": 35.2354 },
+      { "id": "mt-23", "order": 23, "eventId": "matt-e-c26-1", "characterIds": ["jesus"], "place": "Jerusalem", "lat": 31.7717, "lng": 35.2296, "locationNote": "The upper room's location is not given; a traditional site (the Cenacle on Mount Zion) is shown here." },
+      { "id": "mt-24", "order": 24, "eventId": "matt-e-c26-2", "characterIds": ["jesus"], "place": "Gethsemane", "lat": 31.7788, "lng": 35.2402 },
+      { "id": "mt-25", "order": 25, "eventId": "matt-e-c26-3", "characterIds": ["jesus"], "place": "Jerusalem", "lat": 31.7699, "lng": 35.2312, "locationNote": "The high priest's house is not located precisely; a traditional site on Mount Zion (near the Church of St. Peter in Gallicantu) is shown here." },
+      { "id": "mt-26", "order": 26, "eventId": "matt-e-c27-1", "characterIds": ["jesus"], "place": "Jerusalem", "lat": 31.7784, "lng": 35.2358, "locationNote": "The Roman governor's residence (the Praetorium) is disputed between the Antonia Fortress and Herod's Palace; the Antonia Fortress site, near the Temple Mount, is shown here." },
+      { "id": "mt-27", "order": 27, "eventId": "matt-e-c27-2", "characterIds": ["jesus"], "place": "the place called the Skull", "lat": 31.7784, "lng": 35.2298, "locationNote": "Traditionally identified with the site of the Church of the Holy Sepulchre; the Garden Tomb has also been proposed, though with less scholarly support." },
+      { "id": "mt-28", "order": 28, "eventId": "matt-e-c28-1", "characterIds": ["jesus"], "place": "the place called the Skull", "lat": 31.7784, "lng": 35.2298, "locationNote": "Traditionally identified with the site of the Church of the Holy Sepulchre; the Garden Tomb has also been proposed, though with less scholarly support." },
+      { "id": "mt-29", "order": 29, "eventId": "matt-e-c28-2", "characterIds": ["jesus"], "place": "a mountain in Galilee", "lat": 32.8756, "lng": 35.5439, "locationNote": "Matthew does not name the mountain; a general location in Galilee, near his earlier ministry base, is shown here." }
+    ]
+  }
+]

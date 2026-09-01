@@ -1,0 +1,66 @@
+[
+  {
+    "id": "matt-arc-birth",
+    "book": "matthew",
+    "name": "Birth, Preparation, and the Beginning of Ministry",
+    "startChapter": 1,
+    "endChapter": 4,
+    "summary": "Matthew traces Jesus's ancestry, narrates his birth and the visit of the magi, and introduces John the Baptist, Jesus's baptism, his temptation in the wilderness, and the calling of his first disciples."
+  },
+  {
+    "id": "matt-arc-sermon",
+    "book": "matthew",
+    "name": "The Sermon on the Mount",
+    "startChapter": 5,
+    "endChapter": 7,
+    "summary": "Jesus teaches the Beatitudes and a righteousness that exceeds the scribes and Pharisees, instructs his disciples on prayer, fasting, and anxiety, and closes with the parable of the wise and foolish builders."
+  },
+  {
+    "id": "matt-arc-mission",
+    "book": "matthew",
+    "name": "Miracles, Mission, and Growing Opposition",
+    "startChapter": 8,
+    "endChapter": 12,
+    "summary": "Jesus heals the sick, calms a storm, calls Matthew, and sends out the Twelve, while John the Baptist questions him from prison and the religious leaders grow openly hostile over the Sabbath and his authority."
+  },
+  {
+    "id": "matt-arc-parables",
+    "book": "matthew",
+    "name": "Parables, Miracles, and Peter's Confession",
+    "startChapter": 13,
+    "endChapter": 17,
+    "summary": "Jesus teaches the parables of the kingdom, is rejected at Nazareth, feeds thousands and walks on water, and is confessed by Peter as the Christ at Caesarea Philippi before his transfiguration on the mountain."
+  },
+  {
+    "id": "matt-arc-kingdom-community",
+    "book": "matthew",
+    "name": "Life in the Kingdom Community",
+    "startChapter": 18,
+    "endChapter": 20,
+    "summary": "Jesus teaches his disciples about humility, forgiveness, marriage, and wealth on the road toward Jerusalem, repeatedly predicting his coming death and resurrection."
+  },
+  {
+    "id": "matt-arc-jerusalem",
+    "book": "matthew",
+    "name": "Conflict in Jerusalem and the Olivet Discourse",
+    "startChapter": 21,
+    "endChapter": 25,
+    "summary": "Jesus enters Jerusalem to acclaim, clashes with the religious leaders in the temple through a series of parables and questions, denounces the scribes and Pharisees, and describes the signs of the end and the final judgment."
+  },
+  {
+    "id": "matt-arc-passion",
+    "book": "matthew",
+    "name": "The Passion",
+    "startChapter": 26,
+    "endChapter": 27,
+    "summary": "Jesus shares the Last Supper with his disciples, prays in Gethsemane, is betrayed and arrested, denied by Peter, tried before the Sanhedrin and Pilate, and crucified outside Jerusalem."
+  },
+  {
+    "id": "matt-arc-resurrection",
+    "book": "matthew",
+    "name": "The Resurrection and the Great Commission",
+    "startChapter": 28,
+    "endChapter": 28,
+    "summary": "Jesus rises from the dead, appears to the women and his disciples, and commissions the eleven to make disciples of all nations."
+  }
+]

@@ -1,0 +1,462 @@
+[
+  {
+    "id": "matt-aq-1",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Whose genealogy does Matthew trace at the start of his gospel to introduce Jesus?",
+    "options": ["Abraham, through David, to Joseph", "Adam, through Noah, to Abraham", "Moses, through Joshua, to David", "Aaron, through the priesthood, to Zechariah"],
+    "correctIndex": 0,
+    "citation": { "book": "matthew", "chapter": 1 },
+    "explanation": "Matthew traces Jesus's ancestry from Abraham through King David down to Joseph in three sets of fourteen generations."
+  },
+  {
+    "id": "matt-aq-2",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does an angel tell Joseph in a dream about Mary's child?",
+    "options": ["That the child is from the Holy Spirit and should be named Jesus", "That Joseph should end the engagement immediately", "That the child will be named John after the prophet", "That Mary should be reported to the town elders"],
+    "correctIndex": 0,
+    "citation": { "book": "matthew", "chapter": 1 },
+    "explanation": "The angel tells Joseph the child is conceived by the Holy Spirit and that Joseph should name him Jesus, for he will save his people from their sins."
+  },
+  {
+    "id": "matt-aq-3",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What gifts do the magi bring to worship the infant Jesus?",
+    "options": ["Bread, wine, and oil", "Gold, frankincense, and myrrh", "Silver, spices, and fine linen", "Wheat, wool, and grain"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 2 },
+    "explanation": "The magi worship the child and present him with gold, frankincense, and myrrh."
+  },
+  {
+    "id": "matt-aq-4",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Why does Herod order the killing of Bethlehem's infant boys?",
+    "options": ["He was told to by the Roman emperor", "He was threatened by the magi's report of a newborn king", "He believed a plague was caused by them", "He wanted to test the loyalty of his soldiers"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 2 },
+    "explanation": "Threatened by news of a newborn king of the Jews, Herod orders the killing of Bethlehem's infant boys in a failed attempt to eliminate Jesus."
+  },
+  {
+    "id": "matt-aq-5",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does John the Baptist call the Pharisees and Sadducees who come to be baptized by him?",
+    "options": ["Faithful servants of the law", "A brood of vipers", "Sons of Abraham", "Guardians of the temple"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 3 },
+    "explanation": "John warns the Pharisees and Sadducees, calling them a brood of vipers and telling them lineage alone will not save them."
+  },
+  {
+    "id": "matt-aq-6",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What happens immediately after Jesus is baptized by John?",
+    "options": ["The crowd disperses in fear", "The Spirit descends like a dove and a voice from heaven speaks", "John immediately begins preaching against Herod", "Jesus returns at once to Nazareth"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 3 },
+    "explanation": "As Jesus comes up from the water, the Spirit descends like a dove and a voice from heaven declares him God's beloved Son."
+  },
+  {
+    "id": "matt-aq-7",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "How does Jesus answer each of the devil's three temptations in the wilderness?",
+    "options": ["By calling down fire from heaven", "By quoting Scripture", "By fasting an additional forty days", "By summoning angels to drive the devil away"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 4 },
+    "explanation": "Jesus answers each of the devil's three temptations by quoting Scripture."
+  },
+  {
+    "id": "matt-aq-8",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What were Peter and Andrew doing when Jesus called them to follow him?",
+    "options": ["Praying in the synagogue", "Casting a net into the lake", "Collecting taxes at a booth", "Tending sheep on a hillside"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 4 },
+    "explanation": "Jesus finds Peter and Andrew casting a net into the lake and calls them to follow him and become fishers of men."
+  },
+  {
+    "id": "matt-aq-9",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the Beatitudes, who does Jesus say will inherit the earth?",
+    "options": ["The wealthy", "The meek", "The powerful", "The learned"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 5 },
+    "explanation": "Jesus blesses the meek, saying they will inherit the earth."
+  },
+  {
+    "id": "matt-aq-10",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the Sermon on the Mount, what does Jesus tell his disciples to do toward their enemies?",
+    "options": ["Avoid them entirely", "Love them and pray for them", "Report them to the authorities", "Debate them publicly"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 5 },
+    "explanation": "Jesus tells his disciples to love their enemies and pray for those who persecute them."
+  },
+  {
+    "id": "matt-aq-11",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "How does Jesus tell his disciples to pray, according to the Sermon on the Mount?",
+    "options": ["Loudly in the marketplace to be seen", "In secret, using the model of the Lord's Prayer", "Only on the Sabbath", "Through a priest on their behalf"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 6 },
+    "explanation": "Jesus tells his disciples to pray in secret rather than to be seen, and gives them the Lord's Prayer as a model."
+  },
+  {
+    "id": "matt-aq-12",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "According to Jesus, why should his disciples not be anxious about food or clothing?",
+    "options": ["Because worry is against Roman law", "Because God feeds the birds and clothes the flowers, and cares even more for them", "Because the Pharisees will provide for them", "Because their possessions were already sold"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 6 },
+    "explanation": "Jesus points to the birds of the air and the flowers of the field as evidence of God's care, and says his disciples matter far more."
+  },
+  {
+    "id": "matt-aq-13",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "What does Jesus say happens to the house built on sand when the storm comes?",
+    "options": ["It stands firm", "It falls with a great crash", "It floats away intact", "It is swept clean but not destroyed"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 7 },
+    "explanation": "The house built on sand falls with a great crash when the rain, floods, and winds come, unlike the house built on rock."
+  },
+  {
+    "id": "matt-aq-14",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does Jesus say about the centurion's faith in healing his servant?",
+    "options": ["That it needed to be tested further", "That he had not found faith this great anywhere in Israel", "That it was less than the disciples' faith", "That it should have been shown publicly first"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 8 },
+    "explanation": "Jesus tells the crowd he has not found faith this great anywhere in Israel."
+  },
+  {
+    "id": "matt-aq-15",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What happens to the herd of pigs after Jesus casts demons out of two men into them?",
+    "options": ["They scatter into the countryside", "They rush down a bank into the water and drown", "They are sold by their owners", "They fall silent and lie down"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 8 },
+    "explanation": "The demons enter the herd of pigs, which rushes down a steep bank into the water and drowns."
+  },
+  {
+    "id": "matt-aq-16",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Why does Jesus first say \"your sins are forgiven\" to the paralyzed man before healing his body?",
+    "options": ["To delay the healing until the Sabbath", "To prove he has authority on earth to forgive sins", "Because the man had not asked to be healed", "Because forgiveness required a temple sacrifice first"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 9 },
+    "explanation": "When scribes object, Jesus heals the man's body too, specifically to prove he has authority on earth to forgive sins."
+  },
+  {
+    "id": "matt-aq-17",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What was Matthew doing when Jesus called him to follow?",
+    "options": ["Fishing on the lake", "Sitting at his tax booth", "Teaching in the synagogue", "Guarding the temple gate"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 9 },
+    "explanation": "Jesus calls Matthew while he is sitting at his tax booth."
+  },
+  {
+    "id": "matt-aq-18",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What authority does Jesus give the Twelve when he sends them out?",
+    "options": ["Authority to collect taxes for the temple", "Authority to drive out unclean spirits and heal every disease", "Authority to appoint new disciples", "Authority to interpret Roman law"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 10 },
+    "explanation": "Jesus gives the Twelve authority to drive out unclean spirits and heal every disease and affliction."
+  },
+  {
+    "id": "matt-aq-19",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does John the Baptist's disciples ask Jesus on John's behalf from prison?",
+    "options": ["Whether Jesus will free him from prison", "Whether Jesus is the one who is to come", "Whether Jesus will confront Herod directly", "Whether John should keep baptizing"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 11 },
+    "explanation": "From prison, John sends disciples to ask Jesus if he is the one who is to come, or if they should expect someone else."
+  },
+  {
+    "id": "matt-aq-20",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "What does Jesus invite the weary and burdened to find in him?",
+    "options": ["Wealth", "Rest", "Authority", "Safety from Rome"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 11 },
+    "explanation": "Jesus invites all who are weary and burdened to come to him, promising his yoke is easy and his burden is light."
+  },
+  {
+    "id": "matt-aq-21",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What title does Jesus claim for himself after healing a man's withered hand on the Sabbath?",
+    "options": ["Son of Abraham", "Lord of the Sabbath", "High Priest", "King of the Pharisees"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 12 },
+    "explanation": "Jesus declares that the Son of Man is lord of the Sabbath."
+  },
+  {
+    "id": "matt-aq-22",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What sign does Jesus say will be given to the evil generation that demands one?",
+    "options": ["The sign of Jonah", "A vision in the temple", "A sign written in the sky", "The healing of a leper"],
+    "correctIndex": 0,
+    "citation": { "book": "matthew", "chapter": 12 },
+    "explanation": "Jesus tells the crowd that no sign will be given to this evil generation except the sign of Jonah."
+  },
+  {
+    "id": "matt-aq-23",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the parable of the sower, what happens to the seed that falls on good soil?",
+    "options": ["It is eaten by birds", "It springs up quickly but withers in the sun", "It is choked out by thorns", "It produces a crop, some a hundredfold"],
+    "correctIndex": 3,
+    "citation": { "book": "matthew", "chapter": 13 },
+    "explanation": "The seed that falls on good soil produces a crop, some a hundredfold, some sixty, some thirty."
+  },
+  {
+    "id": "matt-aq-24",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Why does Jesus do few miracles when he returns to his hometown?",
+    "options": ["Because he was too tired from traveling", "Because of the people's unbelief", "Because Herod had forbidden it", "Because his disciples were not present"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 13 },
+    "explanation": "Jesus does few miracles in his hometown because of the people's unbelief; they take offense, knowing him only as the carpenter's son."
+  },
+  {
+    "id": "matt-aq-25",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Why does Herod Antipas have John the Baptist beheaded?",
+    "options": ["John had led a rebellion against Rome", "Herod was trapped by a rash oath to Herodias's dancing daughter", "John had refused to pay the temple tax", "Herod feared John would seize his throne"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 14 },
+    "explanation": "Herod has John beheaded after promising Herodias's dancing daughter anything she asked and being trapped by his own oath."
+  },
+  {
+    "id": "matt-aq-26",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What happens to Peter after he begins walking on the water toward Jesus?",
+    "options": ["He walks all the way across the lake", "He begins to sink in fear and Jesus catches him", "He turns back to the boat unharmed", "He falls asleep standing on the water"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 14 },
+    "explanation": "Peter begins to sink when he becomes afraid of the wind, and Jesus reaches out and catches him."
+  },
+  {
+    "id": "matt-aq-27",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "According to Jesus, what actually defiles a person?",
+    "options": ["Eating with unwashed hands", "What comes out of the heart", "Touching an unclean animal", "Working on the Sabbath"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 15 },
+    "explanation": "Jesus teaches that what defiles a person comes from the heart, not from eating with unwashed hands."
+  },
+  {
+    "id": "matt-aq-28",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does Jesus praise about the Canaanite woman who begs him to heal her daughter?",
+    "options": ["Her wealth", "Her great faith", "Her knowledge of the law", "Her connection to the Pharisees"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 15 },
+    "explanation": "Jesus praises the Canaanite woman's great faith and heals her daughter."
+  },
+  {
+    "id": "matt-aq-29",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "How does Peter answer when Jesus asks who the disciples say he is?",
+    "options": ["\"You are Elijah returned\"", "\"You are the Christ, the Son of the living God\"", "\"You are a great prophet, like John\"", "\"You are the son of Joseph\""],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 16 },
+    "explanation": "Peter confesses Jesus as the Christ, the Son of the living God."
+  },
+  {
+    "id": "matt-aq-30",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Who appears with Jesus on the mountain during the transfiguration?",
+    "options": ["Abraham and Isaac", "Moses and Elijah", "David and Solomon", "John the Baptist and Zechariah"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 17 },
+    "explanation": "Moses and Elijah appear talking with Jesus as he is transfigured before Peter, James, and John."
+  },
+  {
+    "id": "matt-aq-31",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "How many times does Jesus tell Peter to forgive someone who sins against him?",
+    "options": ["Three times", "Seven times", "Seventy-seven times", "As many times as the law allows"],
+    "correctIndex": 2,
+    "citation": { "book": "matthew", "chapter": 18 },
+    "explanation": "Jesus tells Peter to forgive not seven times but seventy-seven times."
+  },
+  {
+    "id": "matt-aq-32",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Why does the rich young man go away sad after speaking with Jesus?",
+    "options": ["Jesus refused to answer his question", "Jesus told him to sell his possessions and give to the poor", "The disciples turned him away", "He was told to wait a full year"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 19 },
+    "explanation": "The rich young man goes away grieving when Jesus tells him to sell his possessions and give to the poor."
+  },
+  {
+    "id": "matt-aq-33",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the parable of the workers in the vineyard, what surprises the workers hired first?",
+    "options": ["They are paid nothing", "They receive the same wage as those hired last", "They are dismissed before finishing their work", "They are paid in food instead of money"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 20 },
+    "explanation": "The workers hired at dawn are surprised and upset that the landowner pays those hired at the end of the day the same wage."
+  },
+  {
+    "id": "matt-aq-34",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does Jesus do immediately after riding into the city on a donkey to crowds' acclaim?",
+    "options": ["He goes to rest at Bethany", "He drives the money changers out of the temple", "He calls a meeting with the Sanhedrin", "He returns to Galilee"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 21 },
+    "explanation": "After the triumphal entry, Jesus goes to the temple and drives out the money changers and merchants."
+  },
+  {
+    "id": "matt-aq-35",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "How does Jesus answer when asked whether it is lawful to pay taxes to Caesar?",
+    "options": ["Taxes should never be paid to a foreign ruler", "Give to Caesar what is Caesar's, and to God what is God's", "Only the temple has the right to collect taxes", "He refuses to answer the question directly"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 22 },
+    "explanation": "Jesus answers that his questioners should give to Caesar what is Caesar's and to God what is God's."
+  },
+  {
+    "id": "matt-aq-36",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "What does Jesus name as the greatest commandment?",
+    "options": ["Keeping the Sabbath holy", "Loving the Lord your God with all your heart, soul, and mind", "Honoring the temple sacrifices", "Obeying the Roman authorities"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 22 },
+    "explanation": "Jesus names loving God with all one's heart, soul, and mind as the greatest commandment."
+  },
+  {
+    "id": "matt-aq-37",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What does Jesus call the scribes and Pharisees in his seven woes against them?",
+    "options": ["Faithful shepherds", "Whitewashed tombs", "True sons of Abraham", "Guardians of the poor"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 23 },
+    "explanation": "Jesus calls the scribes and Pharisees whitewashed tombs, beautiful on the outside but full of hypocrisy within."
+  },
+  {
+    "id": "matt-aq-38",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "According to Jesus in the Olivet Discourse, who knows the day and hour of his coming?",
+    "options": ["The angels of heaven", "The Father only", "The Son, but not the angels", "The disciples once they are told the signs"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 24 },
+    "explanation": "Jesus says no one knows the day or hour, not even the angels or the Son, but the Father only."
+  },
+  {
+    "id": "matt-aq-39",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the parable of the ten virgins, why are five of them shut out of the wedding feast?",
+    "options": ["They arrived too early", "They brought no extra oil for their lamps", "They fell asleep before the bridegroom arrived", "They refused to wait outside"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 25 },
+    "explanation": "The five foolish virgins are shut out because they did not bring enough oil for their lamps."
+  },
+  {
+    "id": "matt-aq-40",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "In the parable of the sheep and the goats, what determines who is welcomed into the kingdom?",
+    "options": ["Knowledge of the law", "How they treated \"the least of these\"", "Their family lineage", "The size of their offerings"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 25 },
+    "explanation": "The King welcomes those who fed, clothed, and visited \"the least of these,\" identifying such acts as done to him."
+  },
+  {
+    "id": "matt-aq-41",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "For how much silver does Judas agree to betray Jesus?",
+    "options": ["Ten pieces of silver", "Thirty pieces of silver", "Fifty pieces of silver", "A hundred pieces of silver"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 26 },
+    "explanation": "Judas agrees to betray Jesus for thirty pieces of silver."
+  },
+  {
+    "id": "matt-aq-42",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "How many times does Peter deny knowing Jesus before the rooster crows?",
+    "options": ["Once", "Twice", "Three times", "Four times"],
+    "correctIndex": 2,
+    "citation": { "book": "matthew", "chapter": 26 },
+    "explanation": "Peter denies knowing Jesus three times before the rooster crows, then weeps bitterly."
+  },
+  {
+    "id": "matt-aq-43",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "Who does the crowd choose to have released instead of Jesus?",
+    "options": ["Caiaphas", "Barabbas", "One of the Twelve", "A Roman soldier"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 27 },
+    "explanation": "Pilate offers to release either Jesus or the notorious prisoner Barabbas, and the crowd chooses Barabbas."
+  },
+  {
+    "id": "matt-aq-44",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What happens to the temple curtain the moment Jesus dies?",
+    "options": ["It is set on fire", "It tears in two, from top to bottom", "It is removed by the priests", "It remains unchanged"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 27 },
+    "explanation": "The temple curtain tears in two, from top to bottom, at the moment Jesus dies."
+  },
+  {
+    "id": "matt-aq-45",
+    "book": "matthew",
+    "category": "character",
+    "prompt": "What do the guards claim happened to Jesus's body after they are bribed by the chief priests?",
+    "options": ["That an earthquake destroyed the tomb", "That the disciples stole the body while they slept", "That the body was never placed in the tomb", "That Pilate secretly removed it"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 28 },
+    "explanation": "The chief priests bribe the guards to say the disciples stole Jesus's body while they were asleep."
+  },
+  {
+    "id": "matt-aq-46",
+    "book": "matthew",
+    "category": "theme",
+    "prompt": "What does Jesus command his eleven disciples to do in the Great Commission?",
+    "options": ["Remain in Jerusalem until further notice", "Make disciples of all nations, baptizing and teaching them", "Return to their former trades", "Wait for a new sign before acting"],
+    "correctIndex": 1,
+    "citation": { "book": "matthew", "chapter": 28 },
+    "explanation": "Jesus commissions the eleven to make disciples of all nations, baptizing and teaching them, and promises to be with them always."
+  }
+]

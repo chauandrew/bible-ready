@@ -1,0 +1,200 @@
+[
+  {
+    "id": "matt-q-c1-v21",
+    "book": "matthew",
+    "chapter": 1,
+    "verse": 21,
+    "speakerId": "angel",
+    "text": "She will bear a son, and you shall call his name Jesus, for he will save his people from their sins.",
+    "citation": { "book": "matthew", "chapter": 1, "verses": "21" }
+  },
+  {
+    "id": "matt-q-c3-v17",
+    "book": "matthew",
+    "chapter": 3,
+    "verse": 17,
+    "speakerId": "god",
+    "text": "This is my beloved Son, with whom I am well pleased.",
+    "citation": { "book": "matthew", "chapter": 3, "verses": "17" }
+  },
+  {
+    "id": "matt-q-c5-v16",
+    "book": "matthew",
+    "chapter": 5,
+    "verse": 16,
+    "speakerId": "jesus",
+    "text": "In the same way, let your light shine before others, so that they may see your good works and give glory to your Father who is in heaven.",
+    "citation": { "book": "matthew", "chapter": 5, "verses": "16" }
+  },
+  {
+    "id": "matt-q-c6-v33",
+    "book": "matthew",
+    "chapter": 6,
+    "verse": 33,
+    "speakerId": "jesus",
+    "text": "But seek first the kingdom of God and his righteousness, and all these things will be added to you.",
+    "citation": { "book": "matthew", "chapter": 6, "verses": "33" }
+  },
+  {
+    "id": "matt-q-c7-v7",
+    "book": "matthew",
+    "chapter": 7,
+    "verse": 7,
+    "speakerId": "jesus",
+    "text": "Ask, and it will be given to you; seek, and you will find; knock, and it will be opened to you.",
+    "citation": { "book": "matthew", "chapter": 7, "verses": "7" }
+  },
+  {
+    "id": "matt-q-c8-v8",
+    "book": "matthew",
+    "chapter": 8,
+    "verse": 8,
+    "speakerId": "centurion",
+    "text": "Lord, I am not worthy to have you come under my roof, but only say the word, and my servant will be healed.",
+    "citation": { "book": "matthew", "chapter": 8, "verses": "8" }
+  },
+  {
+    "id": "matt-q-c10-v39",
+    "book": "matthew",
+    "chapter": 10,
+    "verse": 39,
+    "speakerId": "jesus",
+    "text": "Whoever finds his life will lose it, and whoever loses his life for my sake will find it.",
+    "citation": { "book": "matthew", "chapter": 10, "verses": "39" }
+  },
+  {
+    "id": "matt-q-c11-v28",
+    "book": "matthew",
+    "chapter": 11,
+    "verse": 28,
+    "speakerId": "jesus",
+    "text": "Come to me, all who labor and are heavy laden, and I will give you rest.",
+    "citation": { "book": "matthew", "chapter": 11, "verses": "28" }
+  },
+  {
+    "id": "matt-q-c13-v44",
+    "book": "matthew",
+    "chapter": 13,
+    "verse": 44,
+    "speakerId": "jesus",
+    "text": "The kingdom of heaven is like treasure hidden in a field, which a man found and covered up. Then in his joy he goes and sells all that he has and buys that field.",
+    "citation": { "book": "matthew", "chapter": 13, "verses": "44" }
+  },
+  {
+    "id": "matt-q-c14-v27",
+    "book": "matthew",
+    "chapter": 14,
+    "verse": 27,
+    "speakerId": "jesus",
+    "text": "Take heart; it is I. Do not be afraid.",
+    "citation": { "book": "matthew", "chapter": 14, "verses": "27" }
+  },
+  {
+    "id": "matt-q-c15-v28",
+    "book": "matthew",
+    "chapter": 15,
+    "verse": 28,
+    "speakerId": "jesus",
+    "text": "O woman, great is your faith! Let it be done for you as you desire.",
+    "citation": { "book": "matthew", "chapter": 15, "verses": "28" }
+  },
+  {
+    "id": "matt-q-c16-v16",
+    "book": "matthew",
+    "chapter": 16,
+    "verse": 16,
+    "speakerId": "peter",
+    "text": "You are the Christ, the Son of the living God.",
+    "citation": { "book": "matthew", "chapter": 16, "verses": "16" }
+  },
+  {
+    "id": "matt-q-c17-v5",
+    "book": "matthew",
+    "chapter": 17,
+    "verse": 5,
+    "speakerId": "god",
+    "text": "This is my beloved Son, with whom I am well pleased; listen to him.",
+    "citation": { "book": "matthew", "chapter": 17, "verses": "5" }
+  },
+  {
+    "id": "matt-q-c19-v26",
+    "book": "matthew",
+    "chapter": 19,
+    "verse": 26,
+    "speakerId": "jesus",
+    "text": "With man this is impossible, but with God all things are possible.",
+    "citation": { "book": "matthew", "chapter": 19, "verses": "26" }
+  },
+  {
+    "id": "matt-q-c21-v13",
+    "book": "matthew",
+    "chapter": 21,
+    "verse": 13,
+    "speakerId": "jesus",
+    "text": "It is written, 'My house shall be called a house of prayer,' but you make it a den of robbers.",
+    "citation": { "book": "matthew", "chapter": 21, "verses": "13" }
+  },
+  {
+    "id": "matt-q-c22-v37",
+    "book": "matthew",
+    "chapter": 22,
+    "verse": 37,
+    "speakerId": "jesus",
+    "text": "You shall love the Lord your God with all your heart and with all your soul and with all your mind.",
+    "citation": { "book": "matthew", "chapter": 22, "verses": "37" }
+  },
+  {
+    "id": "matt-q-c23-v37",
+    "book": "matthew",
+    "chapter": 23,
+    "verse": 37,
+    "speakerId": "jesus",
+    "text": "O Jerusalem, Jerusalem, the city that kills the prophets and stones those who are sent to it! How often would I have gathered your children together as a hen gathers her brood under her wings, and you were not willing!",
+    "citation": { "book": "matthew", "chapter": 23, "verses": "37" }
+  },
+  {
+    "id": "matt-q-c24-v36",
+    "book": "matthew",
+    "chapter": 24,
+    "verse": 36,
+    "speakerId": "jesus",
+    "text": "But concerning that day and hour no one knows, not even the angels of heaven, nor the Son, but the Father only.",
+    "citation": { "book": "matthew", "chapter": 24, "verses": "36" }
+  },
+  {
+    "id": "matt-q-c25-v40",
+    "book": "matthew",
+    "chapter": 25,
+    "verse": 40,
+    "speakerId": "jesus",
+    "text": "Truly, I say to you, as you did it to one of the least of these my brothers, you did it to me.",
+    "citation": { "book": "matthew", "chapter": 25, "verses": "40" }
+  },
+  {
+    "id": "matt-q-c26-v26",
+    "book": "matthew",
+    "chapter": 26,
+    "verse": 26,
+    "speakerId": "jesus",
+    "text": "Take, eat; this is my body.",
+    "citation": { "book": "matthew", "chapter": 26, "verses": "26" }
+  },
+  {
+    "id": "matt-q-c27-v46",
+    "book": "matthew",
+    "chapter": 27,
+    "verse": 46,
+    "speakerId": "jesus",
+    "text": "My God, my God, why have you forsaken me?",
+    "citation": { "book": "matthew", "chapter": 27, "verses": "46" }
+  },
+  {
+    "id": "matt-q-c28-v19",
+    "book": "matthew",
+    "chapter": 28,
+    "verse": 19,
+    "speakerId": "jesus",
+    "text": "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,",
+    "citation": { "book": "matthew", "chapter": 28, "verses": "19" }
+  }
+]
