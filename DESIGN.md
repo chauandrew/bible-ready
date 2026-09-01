@@ -137,6 +137,16 @@ book and scores as an ordinary wrong answer, not an error. `lib/quiz.ts`'s
 for the right book landed exactly one chapter off (a near miss on numbering,
 not on knowing the material), zero for anything else — including the right
 chapter number in the *wrong* book, which isn't "close" at all.
+`ChapterGuessQuestion` also takes an optional `singleBookId` (threaded
+through `QuizRunner`, set by `QuizSetup` for a single-book quiz and by
+`MultiQuizSetup` when only one book ended up picked): when set, the book
+input disappears, the prompt drops its "book and" (a plain string replace,
+since `generateChapterQuestions` always emits that exact phrase), and the
+book half of the answer is filled in from `singleBookId` instead of typed
+text, since it was never in question. The item's stored `prompt` itself
+still always says "book and": it's generated per book with no way to know
+whether it'll land in a single-book or combined quiz, so the shorter wording
+is a render-time decision, not a second prompt variant.
 
 **Sequence and match questions score 0.5 per correct option/pair, uncapped —
 not the flat 1-or-0 every other item type gets.** A 6-item "put these in
@@ -715,7 +725,14 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   needs a static import + `BookContentSchema.parse` + `booksContent` entry
   for it (see the block for any existing book), and `app/page.tsx`'s
   `available` list is hand-maintained, not derived from `wiredBookIds`, so a
-  new book needs a card added there too.
+  new book needs a card added there too. Both `wiredBookIds` and `available`
+  are kept in canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ...,
+  Psalms, ..., John, ..., with `misc` last since it has no real position);
+  insert a new book at its canonical spot in both places, not at the end.
+  `available` entries also carry a `featured` flag: the home page shows only
+  the featured ones (currently 6, everything but Exodus), and `/modules`
+  (`app/modules/page.tsx`) lists the full set. A new book defaults to
+  `featured: true` unless there's a reason to hide it from the home page.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 - **Question of the Day (`/qotd`)** has one deterministic daily question

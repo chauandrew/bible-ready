@@ -58,6 +58,7 @@ export default function QuizSetup({
         backHref={backHref}
         backLabel={backLabel}
         resultsExtra={(report) => <CategoryBreakdown report={report} chaptersHref={chaptersHref} chapterLabel={chapterLabel} />}
+        singleBookId={bookId}
       />
     );
   }
