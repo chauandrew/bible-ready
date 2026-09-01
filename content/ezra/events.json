@@ -44,7 +44,7 @@
     "citation": { "book": "ezra", "chapter": 3 },
     "peopleIds": ["ezra-zerubbabel", "ezra-jeshua"],
     "order": 1,
-    "summary": "Zerubbabel and Jeshua lead the people in rebuilding the altar on its old foundations and resuming the burnt offerings and the Feast of Booths despite their fear of the surrounding peoples.",
+    "summary": "Zerubbabel and Jeshua lead the people in rebuilding the altar on its old foundations and resuming the burnt offerings and the Feast of Booths because of their fear of the surrounding peoples.",
     "notable": true
   },
   {
@@ -80,7 +80,7 @@
     "citation": { "book": "ezra", "chapter": 5 },
     "peopleIds": ["ezra-haggai", "ezra-zechariah", "ezra-zerubbabel", "ezra-jeshua"],
     "order": 1,
-    "summary": "The prophets Haggai and Zechariah prophesy to the Jews in Judah and Jerusalem, and Zerubbabel and Jeshua respond by resuming construction on the temple despite the earlier royal order to stop.",
+    "summary": "The prophets Haggai and Zechariah prophesy to the Jews in Judah and Jerusalem, and Zerubbabel and Jeshua respond by resuming construction on the temple despite the earlier intimidation that had stalled the work.",
     "notable": true
   },
   {
@@ -164,7 +164,7 @@
     "citation": { "book": "ezra", "chapter": 8 },
     "peopleIds": ["ezra-ezra"],
     "order": 1,
-    "summary": "Ezra records the family heads and the number of men who register to travel with him from Babylon to Jerusalem, discovering along the way that no Levites had yet joined the group.",
+    "summary": "Ezra records the family heads and the number of men who register to travel with him from Babylon to Jerusalem, discovering at the muster point that no Levites had joined the group and sending for some before departing.",
     "notable": true
   },
   {
@@ -188,7 +188,7 @@
     "citation": { "book": "ezra", "chapter": 8 },
     "peopleIds": ["ezra-ezra"],
     "order": 3,
-    "summary": "The group travels from the Ahava to Jerusalem, arriving safely after four months, and the silver, gold, and vessels entrusted to the priests are weighed out and found to match exactly.",
+    "summary": "Before departing, Ezra weighs out the silver, gold, and vessels into the care of twelve trustworthy leading priests; the group travels from the Ahava to Jerusalem, arriving safely after four months, and the treasure is weighed again and found to match exactly.",
     "notable": true
   },
   {

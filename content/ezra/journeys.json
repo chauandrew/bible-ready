@@ -26,9 +26,9 @@
     "era": "return",
     "characters": [{ "id": "ezra-ezra", "color": "#3d6fa5" }],
     "stops": [
-      { "id": "ez2-1", "order": 1, "eventId": "ezra-e-c7-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
-      { "id": "ez2-2", "order": 2, "eventId": "ezra-e-c7-2", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
-      { "id": "ez2-3", "order": 3, "eventId": "ezra-e-c8-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200, "locationNote": "Ezra 7:6 and 7:9 both say Ezra went up \"from Babylonia\" specifically, so his departure point is textually stated, not inferred." },
+      { "id": "ez2-1", "order": 1, "eventId": "ezra-e-c7-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200 },
+      { "id": "ez2-2", "order": 2, "eventId": "ezra-e-c7-2", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200 },
+      { "id": "ez2-3", "order": 3, "eventId": "ezra-e-c8-1", "characterIds": ["ezra-ezra"], "place": "Babylon", "lat": 32.5425, "lng": 44.4200 },
       { "id": "ez2-4", "order": 4, "eventId": "ezra-e-c8-2", "characterIds": ["ezra-ezra"], "place": "the river Ahava", "lat": 32.80, "lng": 44.00, "locationNote": "Ahava's exact site is unknown — no confirmed location exists. It was likely a canal community somewhere along the Euphrates near Babylon where Ezra's group staged before the journey west; shown here as an approximate point along that route, not a settled identification." },
       { "id": "ez2-5", "order": 5, "eventId": "ezra-e-c8-3", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
       { "id": "ez2-6", "order": 6, "eventId": "ezra-e-c9-1", "characterIds": ["ezra-ezra"], "place": "Jerusalem", "lat": 31.7736, "lng": 35.2356 },
