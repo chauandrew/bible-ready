@@ -1,0 +1,56 @@
+[
+  {
+    "id": "gal-q-c1-v12",
+    "book": "galatians",
+    "chapter": 1,
+    "verse": 12,
+    "speakerId": "gal-paul",
+    "text": "For I did not receive it from any man, nor was I taught it, but I received it through a revelation of Jesus Christ.",
+    "citation": { "book": "galatians", "chapter": 1, "verses": "12" }
+  },
+  {
+    "id": "gal-q-c2-v20",
+    "book": "galatians",
+    "chapter": 2,
+    "verse": 20,
+    "speakerId": "gal-paul",
+    "text": "I have been crucified with Christ. It is no longer I who live, but Christ who lives in me. And the life I now live in the flesh I live by faith in the Son of God, who loved me and gave himself for me.",
+    "citation": { "book": "galatians", "chapter": 2, "verses": "20" }
+  },
+  {
+    "id": "gal-q-c3-v28",
+    "book": "galatians",
+    "chapter": 3,
+    "verse": 28,
+    "speakerId": "gal-paul",
+    "text": "There is neither Jew nor Greek, there is neither slave nor free, there is no male and female, for you are all one in Christ Jesus.",
+    "citation": { "book": "galatians", "chapter": 3, "verses": "28" }
+  },
+  {
+    "id": "gal-q-c4-v6",
+    "book": "galatians",
+    "chapter": 4,
+    "verse": 6,
+    "speakerId": "gal-paul",
+    "text": "And because you are sons, God has sent the Spirit of his Son into our hearts, crying, 'Abba! Father!'",
+    "citation": { "book": "galatians", "chapter": 4, "verses": "6" }
+  },
+  {
+    "id": "gal-q-c5-v22",
+    "book": "galatians",
+    "chapter": 5,
+    "verse": 22,
+    "speakerId": "gal-paul",
+    "text": "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness,",
+    "citation": { "book": "galatians", "chapter": 5, "verses": "22" }
+  },
+  {
+    "id": "gal-q-c6-v14",
+    "book": "galatians",
+    "chapter": 6,
+    "verse": 14,
+    "speakerId": "gal-paul",
+    "text": "But far be it from me to boast except in the cross of our Lord Jesus Christ, by which the world has been crucified to me, and I to the world.",
+    "citation": { "book": "galatians", "chapter": 6, "verses": "14" }
+  }
+]

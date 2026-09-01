@@ -1,0 +1,182 @@
+[
+  {
+    "id": "gal-aq-1",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul pronounce on anyone who preaches a gospel different from the one he preached to the Galatians?",
+    "options": ["A period of probation", "A blessing", "A curse", "A formal apology"],
+    "correctIndex": 2,
+    "citation": { "book": "galatians", "chapter": 1 },
+    "explanation": "Paul twice calls down a curse on anyone, even an angel, who preaches a different gospel."
+  },
+  {
+    "id": "gal-aq-2",
+    "book": "galatians",
+    "category": "character",
+    "prompt": "Before his conversion, what was Paul doing to the church?",
+    "options": ["Debating its teachers in the synagogue", "Violently persecuting it", "Serving as one of its deacons", "Secretly funding it"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 1 },
+    "explanation": "Paul recounts how he violently persecuted the church of God before Christ met him."
+  },
+  {
+    "id": "gal-aq-3",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "Where does Paul say his gospel came from?",
+    "options": ["The teaching of the Twelve apostles in Jerusalem", "A vision given to Peter and passed to him", "Jewish rabbinic tradition he was trained in", "A direct revelation of Jesus Christ"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 1 },
+    "explanation": "Paul insists he did not receive his gospel from any man but through a revelation of Jesus Christ."
+  },
+  {
+    "id": "gal-aq-4",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul refuse to require of Titus, a Greek companion, even though some urged it?",
+    "options": ["Public confession of faith", "Circumcision", "Fasting before Passover", "Water baptism"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 2 },
+    "explanation": "Titus was not compelled to be circumcised, even though he was a Greek, proving Paul's gospel did not require it."
+  },
+  {
+    "id": "gal-aq-5",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "Why does Paul publicly oppose Peter at Antioch?",
+    "options": ["Peter refuses to preach in Gentile territory at all", "Peter demands payment for his teaching", "Peter denies that Jesus rose from the dead", "Peter draws back from eating with Gentiles when men from James arrive"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 2 },
+    "explanation": "Peter withdraws from eating with Gentile believers once men from James arrive, and Paul calls this hypocrisy."
+  },
+  {
+    "id": "gal-aq-6",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What agreement do James, Cephas, and John reach with Paul and Barnabas in Jerusalem?",
+    "options": ["Gentile believers must keep the Sabbath and dietary laws", "Paul and Barnabas would go to the Gentiles, they to the circumcised", "Barnabas alone would be recognized as a true apostle", "Paul must submit every future teaching decision to Jerusalem for prior approval"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 2 },
+    "explanation": "The Jerusalem pillars extend the right hand of fellowship, agreeing to divide the mission field between the circumcised and the Gentiles."
+  },
+  {
+    "id": "gal-aq-7",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul say Abraham's belief was counted to him as?",
+    "options": ["Wisdom", "Obedience", "Righteousness", "Sacrifice"],
+    "correctIndex": 2,
+    "citation": { "book": "galatians", "chapter": 3 },
+    "explanation": "Paul quotes that Abraham believed God, and it was counted to him as righteousness."
+  },
+  {
+    "id": "gal-aq-8",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "According to Paul, what was the law's role until Christ came?",
+    "options": ["A permanent replacement for the promise to Abraham", "A ceremony with no real moral purpose", "A guardian holding people until faith was revealed", "A punishment reserved for Gentile nations"],
+    "correctIndex": 2,
+    "citation": { "book": "galatians", "chapter": 3 },
+    "explanation": "Paul describes the law as a guardian until Christ came, so that believers could be justified by faith."
+  },
+  {
+    "id": "gal-aq-9",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul say happens to those who rely on the law to be justified?",
+    "options": ["They become priests", "They are automatically saved", "They are exempt from persecution", "They are under a curse"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 3 },
+    "explanation": "Paul warns that all who rely on works of the law are under a curse, since no one keeps the whole law perfectly."
+  },
+  {
+    "id": "gal-aq-10",
+    "book": "galatians",
+    "category": "character",
+    "prompt": "In Paul's allegory, whom does Hagar represent?",
+    "options": ["The new covenant of grace in Christ", "The covenant from Mount Sinai that bears children for slavery", "The church made up of Jew and Gentile together", "The heavenly Jerusalem"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 4 },
+    "explanation": "Paul makes Hagar, the slave woman, correspond to the covenant given at Sinai, which bears children for slavery."
+  },
+  {
+    "id": "gal-aq-11",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul say believers cry out because they are sons?",
+    "options": ["\"Holy, holy, holy!\"", "\"Hosanna in the highest!\"", "\"Maranatha!\"", "\"Abba! Father!\""],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 4 },
+    "explanation": "God sends the Spirit of his Son into believers' hearts, crying \"Abba! Father!\""
+  },
+  {
+    "id": "gal-aq-12",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul call the elemental principles the Galatians want to turn back to?",
+    "options": ["Ancient and honorable", "Required for salvation everywhere", "Weak and worthless", "Secretly beneficial"],
+    "correctIndex": 2,
+    "citation": { "book": "galatians", "chapter": 4 },
+    "explanation": "Paul is baffled that they would turn back to weak and worthless elemental principles after knowing God."
+  },
+  {
+    "id": "gal-aq-13",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul call the requirement of circumcision some want to impose again on the Galatians?",
+    "options": ["A gift of grace", "A sign of maturity", "A minor formality", "A yoke of slavery"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 5 },
+    "explanation": "Paul urges the Galatians to stand firm and not submit again to a yoke of slavery."
+  },
+  {
+    "id": "gal-aq-14",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "According to Paul, what is the whole law fulfilled in?",
+    "options": ["Observing every Sabbath", "Loving your neighbor as yourself", "Circumcising every male child", "Offering sacrifices at the temple"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 5 },
+    "explanation": "Paul says the whole law is fulfilled in one word: love your neighbor as yourself."
+  },
+  {
+    "id": "gal-aq-15",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "Which of these does Paul list as a work of the flesh, not a fruit of the Spirit?",
+    "options": ["Self-control", "Gentleness", "Patience", "Enmity"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 5 },
+    "explanation": "Enmity is one of the works of the flesh; patience, gentleness, and self-control are all fruit of the Spirit."
+  },
+  {
+    "id": "gal-aq-16",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul tell believers to do for someone caught in a sin?",
+    "options": ["Report him to the Roman authorities", "Restore him gently, watching yourself", "Ignore it since sin no longer matters", "Publicly expel him at once"],
+    "correctIndex": 1,
+    "citation": { "book": "galatians", "chapter": 6 },
+    "explanation": "Paul tells the spiritual to restore such a person in a spirit of gentleness, keeping watch on themselves."
+  },
+  {
+    "id": "gal-aq-17",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul say a person will reap if they sow to please the flesh?",
+    "options": ["Wisdom", "Eternal life", "Wealth", "Corruption"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 6 },
+    "explanation": "Paul warns that whoever sows to please the flesh will from the flesh reap corruption."
+  },
+  {
+    "id": "gal-aq-18",
+    "book": "galatians",
+    "category": "argument",
+    "prompt": "What does Paul say he boasts in?",
+    "options": ["His own suffering for the gospel", "His Jewish heritage", "The number of churches he founded", "The cross of our Lord Jesus Christ"],
+    "correctIndex": 3,
+    "citation": { "book": "galatians", "chapter": 6 },
+    "explanation": "Paul closes by saying far be it from him to boast except in the cross of Christ."
+  }
+]

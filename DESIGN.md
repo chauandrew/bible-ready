@@ -50,9 +50,27 @@ does the rest.
   the authoring rule below for the enumerated-list exception.
 - `"sparse"` / `"argument"` — declared in the schema for books with much lower
   event density (law, genealogy) or epistles (argument-beat structure instead
-  of narrated events). Not yet exercised by real content. Revisit this list
-  once a law book or an epistle actually gets authored; the categories are a
-  guess at this point, not a proven taxonomy.
+  of narrated events). `"sparse"` is still unproven — revisit once a law or
+  genealogy-heavy book is authored. `"argument"` is now exercised by
+  Galatians: no code anywhere branches on `"argument"` specifically (only
+  `"selection"` gets special-cased, in `check:content`'s contiguity rules and
+  the Chapter Order/app-page treatments below), so it behaves exactly like
+  `"narrative"` mechanically — contiguous chapters 1..chapterCount, contiguous
+  arc ranges, full Chapter Order eligibility. The only real difference is a
+  content-modeling choice: Galatians' `events.json` has one event per chapter
+  (its main argument move — Paul's defense of his apostleship, the Hagar/Isaac
+  allegory, and so on), the same "one event per chapter" convention
+  `"selection"` books use, rather than narrative's several-events-per-chapter
+  density. Its events carry no `place` (an epistle has no narrative geography
+  to ask "where does this happen" about), so `generateLocationQuestions`/
+  `generateMatchQuestions` correctly produce zero items for the book — not a
+  bug, see the distractor-pool note below. Its arcs are too short (2 chapters
+  each) to clear `generateSequenceQuestions`' 4-event floor, so it also gets
+  no generated "put these in order" question; Chapter Order (all 6 chapters,
+  every argument beat) covers that role instead. Distractors for "who says
+  this" and "what is this chapter about" still work normally, drawn from the
+  arc's/book's other people and chapter titles even though almost every quote
+  in an epistle shares one speaker.
 
 **A `"selection"` module doesn't have to be a subset of one real book.**
 `misc` proves this: every event/quote in a book's content directory
