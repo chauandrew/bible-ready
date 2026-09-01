@@ -429,6 +429,7 @@ export function ChapterGuessQuestion({
   mode,
   onAnswer,
   initialAnswer,
+  singleBookId,
 }: {
   item: Extract<QuizItem, { type: "chapter-guess" }>;
   mode: Mode;
@@ -438,6 +439,11 @@ export function ChapterGuessQuestion({
    * so this shows the book's canonical name rather than any typo/phrasing
    * the player used the first time — still fully editable either way. */
   initialAnswer?: Extract<Answer, { kind: "chapter-guess" }>;
+  /** Set when every item in this quiz is from one book (a single-book quiz,
+   * or a multi-book one where only one book ended up selected) — the book
+   * is never in question, so the book input and "book and" in the prompt
+   * are just friction. Assumed to equal item.citation.book. */
+  singleBookId?: string;
 }) {
   const [bookText, setBookText] = useState(() => (initialAnswer?.book ? bookMeta(initialAnswer.book)?.name ?? "" : ""));
   const [chapterText, setChapterText] = useState(() => (initialAnswer ? String(initialAnswer.chapter) : ""));
@@ -446,14 +452,15 @@ export function ChapterGuessQuestion({
 
   function submit() {
     const chapter = Number(chapterText);
-    if (!bookText.trim() || !chapterText.trim() || !Number.isInteger(chapter) || chapter < 1) {
-      setError("Enter a book and a chapter number.");
+    if ((!singleBookId && !bookText.trim()) || !chapterText.trim() || !Number.isInteger(chapter) || chapter < 1) {
+      setError(singleBookId ? "Enter a chapter number." : "Enter a book and a chapter number.");
       return;
     }
     // A typo'd or made-up book name just fails to match — matchBookName
     // returns undefined, which falls through to an ordinary wrong answer
     // rather than throwing.
-    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book: matchBookName(bookText)?.id ?? "", chapter };
+    const book = singleBookId ?? matchBookName(bookText)?.id ?? "";
+    const answer: Answer = { itemId: item.id, kind: "chapter-guess", book, chapter };
     if (mode === "quiz") {
       onAnswer(answer);
       return;
@@ -461,24 +468,28 @@ export function ChapterGuessQuestion({
     setPoints(pointsFor(item, answer));
   }
 
+  const prompt = singleBookId ? item.prompt.replace("book and ", "") : item.prompt;
+
   return (
     <div>
-      <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{prompt}</p>
       {points === null && (
         <>
           <div style={{ display: "flex", gap: "0.5rem", flexWrap: "wrap" }}>
-            <input
-              className="input"
-              style={{ flex: "1 1 160px" }}
-              type="text"
-              value={bookText}
-              onChange={(e) => {
-                setBookText(e.target.value);
-                if (error) setError(null);
-              }}
-              placeholder="Book"
-              aria-label="Book"
-            />
+            {!singleBookId && (
+              <input
+                className="input"
+                style={{ flex: "1 1 160px" }}
+                type="text"
+                value={bookText}
+                onChange={(e) => {
+                  setBookText(e.target.value);
+                  if (error) setError(null);
+                }}
+                placeholder="Book"
+                aria-label="Book"
+              />
+            )}
             <input
               className="input"
               style={{ flex: "1 1 120px" }}

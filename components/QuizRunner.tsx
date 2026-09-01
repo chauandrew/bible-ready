@@ -28,6 +28,7 @@ export default function QuizRunner({
   resultsExtra,
   backHref,
   backLabel,
+  singleBookId,
 }: {
   items: QuizItem[];
   mode: Mode;
@@ -44,6 +45,9 @@ export default function QuizRunner({
    * can be reached from renders a different book (or none), so there's no sane default. */
   backHref: string;
   backLabel: string;
+  /** Set when every item in this quiz is from one book — passed through to
+   * ChapterGuessQuestion so it can drop the redundant book input/prompt text. */
+  singleBookId?: string;
 }) {
   const router = useRouter();
   const [index, setIndex] = useState(0);
@@ -217,6 +221,7 @@ export default function QuizRunner({
             mode={mode}
             onAnswer={handleAnswer}
             initialAnswer={existingAnswer?.kind === "chapter-guess" ? existingAnswer : undefined}
+            singleBookId={singleBookId}
           />
         ) : (
           <FreeResponseQuestion

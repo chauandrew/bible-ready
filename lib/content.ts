@@ -158,13 +158,17 @@ const miscContent: BookContent = BookContentSchema.parse({
 });
 
 /** Every loaded book's full content bundle, keyed by book id. */
+// Canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ..., Psalms, ...,
+// John, ...), with misc last since it has no real position. Insertion order
+// here drives bookRegistry below, which drives every book picker's display
+// order — keep new books inserted in their canonical spot.
 const booksContent: Record<string, BookContent> = {
   [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,
-  [psalmsContent.book.id]: psalmsContent,
-  [johnContent.book.id]: johnContent,
   [samuel1Content.book.id]: samuel1Content,
   [samuel2Content.book.id]: samuel2Content,
+  [psalmsContent.book.id]: psalmsContent,
+  [johnContent.book.id]: johnContent,
   [miscContent.book.id]: miscContent,
 };
 
@@ -179,7 +183,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "psalms", "john", "1-samuel", "2-samuel", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "1-samuel", "2-samuel", "psalms", "john", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

@@ -36,6 +36,7 @@ export default function MultiQuizSetup() {
         backHref="/"
         backLabel="Back to all books"
         resultsExtra={(report) => <CategoryBreakdown report={report} />}
+        singleBookId={bookIds.length === 1 ? bookIds[0] : undefined}
       />
     );
   }
