@@ -1,0 +1,16 @@
+{
+  "id": "matthew",
+  "name": "Matthew",
+  "chapterCount": 28,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "matt-arc-birth",
+    "matt-arc-sermon",
+    "matt-arc-mission",
+    "matt-arc-parables",
+    "matt-arc-kingdom-community",
+    "matt-arc-jerusalem",
+    "matt-arc-passion",
+    "matt-arc-resurrection"
+  ]
+}

@@ -41,9 +41,17 @@ const PALETTE = {
  * Absent here, an era just falls back to fitting the journey's own stops
  * (Genesis's patriarchs already span Haran to Egypt, so that default is
  * already the right "zoomed out" view — no override needed).
+ *
+ * `"gospels"` gets the same treatment: Matthew's ministry stops cluster
+ * tightly around Galilee and Jerusalem, but the place/region labels (Tyre,
+ * Sidon, the Decapolis, Perea, Samaria) exist to show the wider region Jesus
+ * moves through — roughly a standard Bible-atlas "ministry of Jesus" map,
+ * Tyre and Sidon in the north to the Dead Sea in the south, the
+ * Mediterranean coast to the Decapolis and Perea across the Jordan.
  */
 const ERA_BOUNDS: Record<string, LngLatBounds> = {
   "united-kingdom": [[33.9, 30.4], [36.4, 33.7]],
+  gospels: [[33.0, 30.9], [36.0, 33.6]],
 };
 
 function currentTheme(): "light" | "dark" {

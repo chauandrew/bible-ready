@@ -10,7 +10,15 @@
   { "id": "shiloh", "name": "Shiloh", "lat": 32.0556, "lng": 35.2895, "kind": "city", "eras": ["judges", "united-kingdom"] },
   { "id": "gibeah", "name": "Gibeah", "lat": 31.8234, "lng": 35.2312, "kind": "city", "eras": ["united-kingdom"] },
   { "id": "rabbah", "name": "Rabbah", "lat": 31.9539, "lng": 35.9349, "kind": "city", "eras": ["united-kingdom"] },
-  { "id": "samaria", "name": "Samaria", "lat": 32.2778, "lng": 35.1917, "kind": "city", "eras": ["divided-kingdom"] },
+  { "id": "samaria", "name": "Samaria", "lat": 32.2778, "lng": 35.1917, "kind": "city", "eras": ["divided-kingdom", "gospels"] },
+  { "id": "nazareth", "name": "Nazareth", "lat": 32.7018, "lng": 35.2967, "kind": "city", "eras": ["gospels"] },
+  { "id": "capernaum", "name": "Capernaum", "lat": 32.8801, "lng": 35.5750, "kind": "city", "eras": ["gospels"] },
+  { "id": "bethsaida", "name": "Bethsaida", "lat": 32.9083, "lng": 35.6272, "kind": "city", "eras": ["gospels"] },
+  { "id": "cana", "name": "Cana", "lat": 32.7500, "lng": 35.3400, "kind": "city", "eras": ["gospels"] },
+  { "id": "caesarea-philippi", "name": "Caesarea Philippi", "lat": 33.2494, "lng": 35.6928, "kind": "city", "eras": ["gospels"] },
+  { "id": "tyre", "name": "Tyre", "lat": 33.2704, "lng": 35.2038, "kind": "city", "eras": ["gospels"] },
+  { "id": "sidon", "name": "Sidon", "lat": 33.5571, "lng": 35.3729, "kind": "city", "eras": ["gospels"] },
+  { "id": "jericho", "name": "Jericho", "lat": 31.8667, "lng": 35.4442, "kind": "city", "eras": ["gospels"] },
   { "id": "nineveh", "name": "Nineveh", "lat": 36.3600, "lng": 43.1500, "kind": "city", "eras": ["divided-kingdom"] },
   { "id": "babylon", "name": "Babylon", "lat": 32.5425, "lng": 44.4200, "kind": "city", "eras": ["divided-kingdom", "exile"] },
   { "id": "mediterranean-sea", "name": "the Mediterranean Sea", "lat": 32.3, "lng": 34.15, "kind": "water", "eras": ["patriarchs", "exodus", "conquest", "judges", "united-kingdom", "divided-kingdom", "exile", "return", "gospels", "early-church"] },
@@ -24,5 +32,7 @@
   { "id": "moab", "name": "MOAB", "lat": 31.15, "lng": 35.75, "kind": "region", "eras": ["united-kingdom"] },
   { "id": "edom", "name": "EDOM", "lat": 30.55, "lng": 35.45, "kind": "region", "eras": ["united-kingdom"] },
   { "id": "aram", "name": "ARAM", "lat": 33.35, "lng": 36.55, "kind": "region", "eras": ["united-kingdom"] },
-  { "id": "amalek", "name": "AMALEK", "lat": 30.55, "lng": 34.55, "kind": "region", "eras": ["united-kingdom"] }
+  { "id": "amalek", "name": "AMALEK", "lat": 30.55, "lng": 34.55, "kind": "region", "eras": ["united-kingdom"] },
+  { "id": "decapolis", "name": "DECAPOLIS", "lat": 32.55, "lng": 35.85, "kind": "region", "eras": ["gospels"] },
+  { "id": "perea", "name": "PEREA", "lat": 31.90, "lng": 35.75, "kind": "region", "eras": ["gospels"] }
 ]
