@@ -3,7 +3,7 @@ import Link from "next/link";
 // Canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ..., Psalms, ...,
 // John, ...), misc last since it has no real position. Insert new books in
 // their canonical spot, same convention as lib/content.ts's wiredBookIds.
-// `featured` picks the 6 shown on the home page; everything ships to
+// `featured` picks the ones shown on the home page; everything ships to
 // /modules regardless.
 export const available = [
   { href: "/genesis", name: "Genesis", desc: "From creation to Joseph, 50 chapters with quizzes and flashcards.", featured: true },

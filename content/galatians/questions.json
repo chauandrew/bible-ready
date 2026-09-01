@@ -14,7 +14,7 @@
     "book": "galatians",
     "category": "character",
     "prompt": "Before his conversion, what was Paul doing to the church?",
-    "options": ["Debating its teachers in the synagogue", "Violently persecuting it", "Serving as one of its deacons", "Secretly funding it"],
+    "options": ["Debating its teachers in the synagogue", "Violently persecuting it", "Studying under one of its teachers", "Secretly funding it"],
     "correctIndex": 1,
     "citation": { "book": "galatians", "chapter": 1 },
     "explanation": "Paul recounts how he violently persecuted the church of God before Christ met him."
@@ -84,7 +84,7 @@
     "book": "galatians",
     "category": "argument",
     "prompt": "What does Paul say happens to those who rely on the law to be justified?",
-    "options": ["They become priests", "They are automatically saved", "They are exempt from persecution", "They are under a curse"],
+    "options": ["They are given priestly authority", "They are automatically saved", "They are exempt from persecution", "They are under a curse"],
     "correctIndex": 3,
     "citation": { "book": "galatians", "chapter": 3 },
     "explanation": "Paul warns that all who rely on works of the law are under a curse, since no one keeps the whole law perfectly."
@@ -113,7 +113,7 @@
     "id": "gal-aq-12",
     "book": "galatians",
     "category": "argument",
-    "prompt": "What does Paul call the elemental principles the Galatians want to turn back to?",
+    "prompt": "What does Paul call the elementary principles the Galatians want to turn back to?",
     "options": ["Ancient and honorable", "Required for salvation everywhere", "Weak and worthless", "Secretly beneficial"],
     "correctIndex": 2,
     "citation": { "book": "galatians", "chapter": 4 },
