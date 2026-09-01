@@ -45,7 +45,7 @@ export default function QuizRunner({
    * can be reached from renders a different book (or none), so there's no sane default. */
   backHref: string;
   backLabel: string;
-  /** Set when every item in this quiz is from one book — passed through to
+  /** Set when every item in this quiz is from one book: passed through to
    * ChapterGuessQuestion so it can drop the redundant book input/prompt text. */
   singleBookId?: string;
 }) {

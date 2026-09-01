@@ -161,7 +161,7 @@ const miscContent: BookContent = BookContentSchema.parse({
 // Canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ..., Psalms, ...,
 // John, ...), with misc last since it has no real position. Insertion order
 // here drives bookRegistry below, which drives every book picker's display
-// order — keep new books inserted in their canonical spot.
+// order; keep new books inserted in their canonical spot.
 const booksContent: Record<string, BookContent> = {
   [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,

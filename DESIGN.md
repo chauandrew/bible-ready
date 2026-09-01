@@ -144,7 +144,7 @@ input disappears, the prompt drops its "book and" (a plain string replace,
 since `generateChapterQuestions` always emits that exact phrase), and the
 book half of the answer is filled in from `singleBookId` instead of typed
 text, since it was never in question. The item's stored `prompt` itself
-still always says "book and" — it's generated per book with no way to know
+still always says "book and": it's generated per book with no way to know
 whether it'll land in a single-book or combined quiz, so the shorter wording
 is a render-time decision, not a second prompt variant.
 
@@ -727,7 +727,7 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   `available` list is hand-maintained, not derived from `wiredBookIds`, so a
   new book needs a card added there too. Both `wiredBookIds` and `available`
   are kept in canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ...,
-  Psalms, ..., John, ..., with `misc` last since it has no real position) —
+  Psalms, ..., John, ..., with `misc` last since it has no real position);
   insert a new book at its canonical spot in both places, not at the end.
   `available` entries also carry a `featured` flag: the home page shows only
   the featured ones (currently 6, everything but Exodus), and `/modules`

@@ -440,7 +440,7 @@ export function ChapterGuessQuestion({
    * the player used the first time — still fully editable either way. */
   initialAnswer?: Extract<Answer, { kind: "chapter-guess" }>;
   /** Set when every item in this quiz is from one book (a single-book quiz,
-   * or a multi-book one where only one book ended up selected) — the book
+   * or a multi-book one where only one book ended up selected): the book
    * is never in question, so the book input and "book and" in the prompt
    * are just friction. Assumed to equal item.citation.book. */
   singleBookId?: string;
@@ -534,7 +534,7 @@ export function ChapterGuessQuestion({
                 onAnswer({
                   itemId: item.id,
                   kind: "chapter-guess",
-                  book: matchBookName(bookText)?.id ?? "",
+                  book: singleBookId ?? matchBookName(bookText)?.id ?? "",
                   chapter: Number(chapterText),
                 })
               }
