@@ -1,7 +1,7 @@
 # Bible Ready
 
-A Bible study and quiz app (Genesis, Exodus, Psalms, John, 1-2 Samuel, Ezra),
-built for youth ministry
+A Bible study and quiz app (Genesis, Exodus, 1-2 Samuel, Ezra, Psalms, John,
+Galatians), built for youth ministry
 leaders and the high schoolers they teach. Domain knowledge over trivia: what
 happens, where, and to whom — not theological debate.
 

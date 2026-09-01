@@ -1,0 +1,68 @@
+[
+  {
+    "id": "gal-ch1",
+    "book": "galatians",
+    "number": 1,
+    "title": "No Other Gospel",
+    "summary": "Paul opens with a stern warning against any gospel other than the one he preached, then recounts his violent past persecuting the church, his sudden conversion, and how his call came directly from Jesus Christ rather than from any human source.",
+    "blurb": "Paul curses any \"different gospel\" and traces his own gospel to a direct call from Jesus Christ, not from human teaching.",
+    "arcId": "gal-arc-defense",
+    "eventIds": ["gal-e-c1-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "gal-ch2",
+    "book": "galatians",
+    "number": 2,
+    "title": "Paul Confronts Peter at Antioch",
+    "summary": "Paul describes going to Jerusalem with Barnabas and Titus, where Titus is not compelled to be circumcised and the pillar apostles agree to divide the mission field, then publicly opposing Peter in Antioch for withdrawing from Gentile believers under pressure from the circumcision party.",
+    "blurb": "Paul isn't forced to circumcise Titus in Jerusalem, then publicly rebukes Peter in Antioch for hypocrisy toward Gentile believers.",
+    "arcId": "gal-arc-defense",
+    "eventIds": ["gal-e-c2-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "gal-ch3",
+    "book": "galatians",
+    "number": 3,
+    "title": "Faith, Not the Law, Justifies",
+    "summary": "Paul asks how the Galatians received the Spirit, points to Abraham as the model of justification by faith, explains that the law brought a curse Christ redeemed believers from, and calls the law a guardian until faith in Christ came.",
+    "blurb": "Paul points to Abraham's faith, not law-keeping, as the pattern for how anyone is justified before God.",
+    "arcId": "gal-arc-faith-not-law",
+    "eventIds": ["gal-e-c3-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "gal-ch4",
+    "book": "galatians",
+    "number": 4,
+    "title": "Sons and Heirs, Not Slaves",
+    "summary": "Paul describes believers as adopted sons and heirs who cry out to God as Father, voices concern that the Galatians are turning back to weak and worthless elementary principles, and contrasts Hagar's slave son with Isaac, the child of promise.",
+    "blurb": "Paul calls believers adopted heirs, not slaves, and draws an allegory from Hagar and Isaac to prove it.",
+    "arcId": "gal-arc-faith-not-law",
+    "eventIds": ["gal-e-c4-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "gal-ch5",
+    "book": "galatians",
+    "number": 5,
+    "title": "Freedom, the Flesh, and the Fruit of the Spirit",
+    "summary": "Paul urges the Galatians to stand firm in freedom rather than submit again to a yoke of slavery, warns that the whole law is fulfilled in loving one's neighbor, and contrasts the works of the flesh with the fruit of the Spirit.",
+    "blurb": "Paul contrasts life lived by the flesh with the fruit the Spirit produces and calls believers to walk by the Spirit.",
+    "arcId": "gal-arc-freedom-spirit",
+    "eventIds": ["gal-e-c5-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "gal-ch6",
+    "book": "galatians",
+    "number": 6,
+    "title": "Bear One Another's Burdens",
+    "summary": "Paul instructs believers to restore a fallen brother gently and to bear one another's burdens, warns that a person reaps what they sow, and closes in his own handwriting by boasting only in the cross of Christ.",
+    "blurb": "Paul calls believers to bear one another's burdens and closes the letter boasting only in the cross of Christ.",
+    "arcId": "gal-arc-freedom-spirit",
+    "eventIds": ["gal-e-c6-1"],
+    "quizWorthy": true
+  }
+]

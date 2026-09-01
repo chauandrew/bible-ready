@@ -3,7 +3,7 @@ import Link from "next/link";
 // Canonical Bible order (Genesis, Exodus, ..., 1/2 Samuel, ..., Psalms, ...,
 // John, ...), misc last since it has no real position. Insert new books in
 // their canonical spot, same convention as lib/content.ts's wiredBookIds.
-// `featured` picks the 6 shown on the home page; everything ships to
+// `featured` picks the ones shown on the home page; everything ships to
 // /modules regardless.
 export const available = [
   { href: "/genesis", name: "Genesis", desc: "From creation to Joseph, 50 chapters with quizzes and flashcards.", featured: true },
@@ -13,6 +13,7 @@ export const available = [
   { href: "/ezra", name: "Ezra", desc: "Exiles return from Babylon, rebuild the temple, and confront a crisis of unfaithfulness, 10 chapters.", featured: true },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme.", featured: true },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards.", featured: true },
+  { href: "/galatians", name: "Galatians", desc: "Paul defends justification by faith and confronts Peter, 6 chapters.", featured: true },
   { href: "/misc", name: "Miscellaneous", desc: "The twelve disciples, the twelve tribes of Israel, and putting the Old and New Testament books in order.", featured: true },
 ];
 

@@ -1,0 +1,15 @@
+[
+  {
+    "id": "gal-deck-overview",
+    "book": "galatians",
+    "name": "Galatians: The Argument, Chapter by Chapter",
+    "cardEventIds": [
+      "gal-e-c1-1",
+      "gal-e-c2-1",
+      "gal-e-c3-1",
+      "gal-e-c4-1",
+      "gal-e-c5-1",
+      "gal-e-c6-1"
+    ]
+  }
+]
