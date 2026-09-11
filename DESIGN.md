@@ -263,22 +263,35 @@ question there to practice is the intended behavior, not a bug.
 
 `/[book]/chapter-quiz` (`components/ChapterOrderBoard.tsx`) tests whether a
 player knows a book's overall shape (which chapter a given event/theme falls
-in) rather than recall of one fact. Every chapter in the book gets a labeled
-slot (by its real chapter number) and a shuffled card showing its
-title+`blurb` (never its own number; falls back to `summary` if a chapter
-has no `blurb` authored, see `Chapter.blurb`'s schema doc); the player drags
-or clicks cards into slots and submits for a percentage score and a
-per-chapter correct/incorrect review.
+in) rather than recall of one fact. The board is two independently
+scrolling panes of compact one-line rows: an unplaced pool on the left and
+the book's numbered slots on the right (`.order-board`/`.order-pane-scroll`
+in `app/globals.css`) — needed once a book has 30-50 chapters, since a grid
+of full title+summary cards for all of them, twice over, doesn't fit on
+screen at once. Each row currently shows just `chapter.title` (never its own
+number, since that's the answer); the player drags or clicks rows into slots
+and submits for a percentage score and a per-chapter correct/incorrect
+review.
+
+**`DragOverlay` is required, not optional.** `overflow-y: auto` on a
+scrolling pane clips its children, so a dragged row can't be translated in
+place the way a non-scrolling grid could get away with — it would visually
+vanish the moment it crossed the pane's edge. `ChapterRow`/`SlotRow` instead
+track the dragged chapter id and render a copy of that row inside dnd-kit's
+`DragOverlay`, which portals to `document.body`, outside any pane's clip;
+the source row just dims via `opacity` while `isDragging` instead of moving.
 
 **Deliberately standalone**, not routed through `lib/generate.ts`/
 `lib/quiz.ts`'s `QuizRunner` engine (`lib/chapterOrder.ts` has its own small
 pure scoring/placement functions instead). That engine exists to build and
 validate distractor pools for many small independently-gradable questions;
-here every chapter is both a slot and a card, 1:1 by construction, so
+here every chapter is both a slot and a row, 1:1 by construction, so
 there's no distractor pool and no ambiguity to check. `scripts/check-content.ts`
-does still warn on one thing for this feature (see the `blurb` checklist step
-below), but needs no ambiguity/distractor-pool logic the way the generated
-templates do.
+does still check two things for this feature (see the `blurb` checklist step
+below): a presence warning, and a per-book error if two chapters' `title`,
+`blurb`, or `summary` are the same after normalizing (lowercase, strip
+punctuation, collapse whitespace) — rows with identical text would be
+indistinguishable on the board.
 
 **Not wired into `lib/progress.ts`, on purpose.** Every other quiz calls
 `recordSession`/`clearMissed` so its result feeds `/progress`'s session

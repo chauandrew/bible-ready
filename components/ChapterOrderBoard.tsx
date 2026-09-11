@@ -9,51 +9,53 @@ import { scoreChapterOrder, place, unplace, nextEmptySlot, type Placements } fro
 import BookBreadcrumb from "./BookBreadcrumb";
 import {
   DndContext,
+  DragOverlay,
   useDraggable,
   useDroppable,
   PointerSensor,
   useSensor,
   useSensors,
+  type DragStartEvent,
   type DragEndEvent,
 } from "@dnd-kit/core";
-import { CSS } from "@dnd-kit/utilities";
 
-/** One chapter card: shows title+blurb only, never its own number, since
+/** A chapter's one-line label. PR 1 shows the title only; PR 2 will switch
+ * this to `chapter.blurb ?? chapter.title`. */
+function chapterRowLabel(chapter: Chapter): string {
+  return chapter.title;
+}
+
+/** One chapter row: a single line of text, never its own number, since
  * that's the answer. Doubles as a draggable (via dnd-kit) and a plain
- * click-to-place button (see ChapterOrderBoard's onClick). */
-function ChapterCard({ chapter, onClick }: { chapter: Chapter; onClick: () => void }) {
-  const { attributes, listeners, setNodeRef, transform, isDragging } = useDraggable({ id: chapter.id });
+ * click-to-place button (see ChapterOrderBoard's onClick). Dragging is
+ * rendered via DragOverlay instead of translating this element in place, so
+ * the row stays visible when dragged out of its pane's `overflow-y: auto`
+ * clip (see DESIGN.md's Chapter Order section). */
+function ChapterRow({ chapter, onClick }: { chapter: Chapter; onClick: () => void }) {
+  const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id: chapter.id });
+  const label = chapterRowLabel(chapter);
 
   return (
     <button
       type="button"
       ref={setNodeRef}
-      className="card chapter-card"
+      className="order-row"
+      title={label}
       onClick={onClick}
-      style={{
-        width: "100%",
-        textAlign: "left",
-        cursor: "grab",
-        transform: CSS.Translate.toString(transform),
-        opacity: isDragging ? 0.5 : 1,
-        touchAction: "none",
-        zIndex: isDragging ? 1 : "auto",
-        position: "relative",
-      }}
+      style={{ opacity: isDragging ? 0.4 : 1, touchAction: "none" }}
       {...attributes}
       {...listeners}
     >
-      <div className="chapter-card-title">{chapter.title}</div>
-      <p className="chapter-card-summary">{chapter.blurb ?? chapter.summary}</p>
+      <span className="order-row-text">{label}</span>
     </button>
   );
 }
 
-/** A single numbered slot. Filled: the placed card's own ChapterCard (still
- * draggable/clickable to move it elsewhere). Empty: a button that "arms"
- * this exact slot as the click target for the next pool-card click, the
- * keyboard/no-drag path to an arbitrary slot (see onArmedClick below). */
-function Slot({
+/** A single numbered slot row. Filled: the placed chapter's own ChapterRow
+ * (still draggable/clickable to move it elsewhere). Empty: a button that
+ * "arms" this exact slot as the click target for the next pool-row click,
+ * the keyboard/no-drag path to an arbitrary slot (see onArmedClick below). */
+function SlotRow({
   number,
   chapterLabel,
   chapter,
@@ -74,30 +76,24 @@ function Slot({
   return (
     <div
       ref={setNodeRef}
-      style={{
-        border: `1px ${isOver ? "solid" : "dashed"} ${isOver || armed ? "var(--accent)" : "var(--border)"}`,
-        borderRadius: "var(--radius)",
-        background: armed ? "var(--surface-2)" : undefined,
-        padding: chapter ? 0 : "0.7rem 0.85rem",
-        minHeight: "3rem",
-        display: "flex",
-        alignItems: "center",
-      }}
+      className={`order-row ${chapter ? "" : "order-slot-empty"} ${isOver || armed ? "order-slot-armed" : ""}`}
+      style={{ padding: chapter ? "0.4rem 0.55rem 0.4rem 0" : undefined }}
     >
+      <span className="order-slot-num">{number}</span>
       {chapter ? (
-        <div style={{ width: "100%" }}>
-          <ChapterCard chapter={chapter} onClick={onPlacedClick} />
+        <div style={{ flex: 1, minWidth: 0 }}>
+          <ChapterRow chapter={chapter} onClick={onPlacedClick} />
         </div>
       ) : (
         <button
           type="button"
-          className="chapter-card-number"
+          className="order-row-text"
           aria-pressed={armed}
           aria-label={`${label}, empty. ${armed ? "Selected as target" : "Select as the target for the next chapter you pick"}.`}
           onClick={onArmedClick}
           style={{ background: "none", border: "none", padding: 0, cursor: "pointer", font: "inherit", color: "inherit" }}
         >
-          {label}
+          empty
         </button>
       )}
     </div>
@@ -136,6 +132,7 @@ export default function ChapterOrderBoard({
   const [placements, setPlacements] = useState<Placements>({});
   const [armedSlot, setArmedSlot] = useState<number | null>(null);
   const [submitted, setSubmitted] = useState(false);
+  const [activeId, setActiveId] = useState<string | null>(null);
   const sensors = useSensors(useSensor(PointerSensor, { activationConstraint: { distance: 4 } }));
 
   const chapterById = useMemo(() => new Map(chapters.map((c) => [c.id, c])), [chapters]);
@@ -163,8 +160,13 @@ export default function ChapterOrderBoard({
     setArmedSlot((current) => (current === slotNumber ? null : slotNumber));
   }
 
+  function handleDragStart(event: DragStartEvent) {
+    setActiveId(String(event.active.id));
+  }
+
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
+    setActiveId(null);
     setArmedSlot(null);
     if (!over) return;
     const chapterId = String(active.id);
@@ -229,34 +231,42 @@ export default function ChapterOrderBoard({
         Click a card with no slot targeted to drop it in the next open one.
       </p>
 
-      <DndContext sensors={sensors} onDragEnd={handleDragEnd}>
-        <p className="eyebrow">Unplaced ({pool.length})</p>
-        <PoolArea>
-          <div className="chapter-card-grid" style={{ marginBottom: "1.5rem" }}>
-            {pool.map((id) => (
-              <ChapterCard key={id} chapter={chapterById.get(id)!} onClick={() => handlePoolCardClick(id)} />
-            ))}
+      <DndContext sensors={sensors} onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
+        <div className="order-board" style={{ marginBottom: "1.5rem" }}>
+          <div>
+            <p className="eyebrow">Unplaced ({pool.length})</p>
+            <PoolArea>
+              {pool.map((id) => (
+                <ChapterRow key={id} chapter={chapterById.get(id)!} onClick={() => handlePoolCardClick(id)} />
+              ))}
+            </PoolArea>
           </div>
-        </PoolArea>
 
-        <p className="eyebrow">{capitalizedLabel}s</p>
-        <div className="chapter-card-grid" style={{ marginBottom: "1.5rem" }}>
-          {sortedChapters.map((c) => {
-            const placedId = placements[c.number];
-            const placedChapter = placedId ? chapterById.get(placedId) : undefined;
-            return (
-              <Slot
-                key={c.number}
-                number={c.number}
-                chapterLabel={capitalizedLabel}
-                chapter={placedChapter}
-                armed={armedSlot === c.number}
-                onArmedClick={() => toggleArmed(c.number)}
-                onPlacedClick={() => setPlacements((p) => unplace(p, placedChapter!.id))}
-              />
-            );
-          })}
+          <div>
+            <p className="eyebrow">{capitalizedLabel}s</p>
+            <div className="order-pane-scroll">
+              {sortedChapters.map((c) => {
+                const placedId = placements[c.number];
+                const placedChapter = placedId ? chapterById.get(placedId) : undefined;
+                return (
+                  <SlotRow
+                    key={c.number}
+                    number={c.number}
+                    chapterLabel={capitalizedLabel}
+                    chapter={placedChapter}
+                    armed={armedSlot === c.number}
+                    onArmedClick={() => toggleArmed(c.number)}
+                    onPlacedClick={() => setPlacements((p) => unplace(p, placedChapter!.id))}
+                  />
+                );
+              })}
+            </div>
+          </div>
         </div>
+
+        <DragOverlay>
+          {activeId ? <div className="order-row"><span className="order-row-text">{chapterRowLabel(chapterById.get(activeId)!)}</span></div> : null}
+        </DragOverlay>
       </DndContext>
 
       {pool.length > 0 && (
@@ -272,9 +282,13 @@ export default function ChapterOrderBoard({
   );
 }
 
-/** A droppable wrapper around the unplaced pool, so dragging a placed card
+/** The unplaced pool's scrolling pane. Droppable so dragging a placed card
  * back out onto it unplaces that card. */
 function PoolArea({ children }: { children: ReactNode }) {
   const { setNodeRef } = useDroppable({ id: "pool" });
-  return <div ref={setNodeRef}>{children}</div>;
+  return (
+    <div ref={setNodeRef} className="order-pane-scroll">
+      {children}
+    </div>
+  );
 }
