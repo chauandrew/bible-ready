@@ -82,11 +82,7 @@ function SlotRow({
     .join(" ");
 
   return (
-    <div
-      ref={setNodeRef}
-      className={className}
-      style={{ padding: chapter ? "0.4rem 0.55rem 0.4rem 0" : undefined }}
-    >
+    <div ref={setNodeRef} className={className}>
       <span className="order-slot-num">{number}</span>
       {chapter ? (
         <div style={{ flex: 1, minWidth: 0 }}>
