@@ -19,10 +19,10 @@ import {
   type DragEndEvent,
 } from "@dnd-kit/core";
 
-/** A chapter's one-line label. PR 1 shows the title only; PR 2 will switch
- * this to `chapter.blurb ?? chapter.title`. */
+/** A chapter's one-line label: its short authored blurb, or its title for
+ * the few chapters (e.g. selection-depth books) that have none. */
 function chapterRowLabel(chapter: Chapter): string {
-  return chapter.title;
+  return chapter.blurb ?? chapter.title;
 }
 
 /** One chapter row: a single line of text, never its own number, since

@@ -268,10 +268,10 @@ scrolling panes of compact one-line rows: an unplaced pool on the left and
 the book's numbered slots on the right (`.order-board`/`.order-pane-scroll`
 in `app/globals.css`) — needed once a book has 30-50 chapters, since a grid
 of full title+summary cards for all of them, twice over, doesn't fit on
-screen at once. Each row currently shows just `chapter.title` (never its own
-number, since that's the answer); the player drags or clicks rows into slots
-and submits for a percentage score and a per-chapter correct/incorrect
-review.
+screen at once. Each row shows `chapter.blurb` (falling back to `title` for
+the selection-depth books that have none authored; never its own number,
+since that's the answer); the player drags or clicks rows into slots and
+submits for a percentage score and a per-chapter correct/incorrect review.
 
 **`DragOverlay` is required, not optional.** `overflow-y: auto` on a
 scrolling pane clips its children, so a dragged row can't be translated in
@@ -836,10 +836,20 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    events — a key verse or short headline, not a copy of `summary`. For a
    `"selection"` book, that means one event per chapter with no `verses` on
    its citation (see the authoring rule above), not one event per section.
-8. For a non-`"selection"` book, author `Chapter.blurb`: one real sentence
-   per chapter, longer than `title` but noticeably shorter than `summary`,
-   same plot-level voice, so the Chapter Order board (see above) has a
-   compact card. Optional in the schema, but `check:content` warns on any
-   quizzable chapter missing one, so treat that warning as this step.
+8. For a non-`"selection"` book, author `Chapter.blurb`: a short,
+   chapter-identifying phrase, roughly 4-10 words, since it's the *only*
+   text on that chapter's Chapter Order row (see above) — no title or
+   number alongside it. Never name the chapter number (that's the
+   answer). If the title is already distinctive, the blurb can just be it
+   or a light expansion (1 Sam 17 → `David and Goliath`, or `Goliath
+   defies Israel's armies and David defeats him`). If the title would be
+   ambiguous within the book, add the disambiguating detail: for 1 Sam 19,
+   `Saul tries to kill David` is wrong (also true of 1 Sam 18, 23, and
+   26); `Jonathan and Michal hide David from Saul` is right. Must be
+   unique within the book — `check:content` errors on a duplicate
+   `title`/`blurb`/`summary` after normalizing, and warns on any chapter
+   missing a `blurb` altogether. Read the chapter's own `title` +
+   `summary` and its book neighbors before writing one; ambiguity is only
+   visible in context.
 9. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
    build` — all four, not just `check:content`.
