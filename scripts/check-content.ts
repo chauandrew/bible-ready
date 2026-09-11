@@ -73,6 +73,10 @@ function wordCount(s: string): number {
   return s.trim().split(/\s+/).filter(Boolean).length;
 }
 
+function normalizeForDupeCheck(s: string): string {
+  return s.toLowerCase().replace(/[^\w\s]/g, "").replace(/\s+/g, " ").trim();
+}
+
 const CHAPTER_SUMMARY_MIN_WORDS = 15;
 const CHAPTER_SUMMARY_MAX_WORDS = 45;
 /** Share of a book's authored questions whose correct option may be the single
@@ -371,6 +375,23 @@ function checkBook(bookId: string) {
     for (const c of chapters) {
       if (!c.blurb) {
         warnings.push(`chapters: "${c.id}" has no blurb, so its Chapter Order card falls back to the full summary`);
+      }
+    }
+
+    // A duplicate title/blurb/summary within a book means two Chapter Order
+    // rows would show identical text, making them indistinguishable.
+    for (const field of ["title", "blurb", "summary"] as const) {
+      const seen = new Map<string, string>();
+      for (const c of chapters) {
+        const value = c[field];
+        if (!value) continue;
+        const normalized = normalizeForDupeCheck(value);
+        const dupeId = seen.get(normalized);
+        if (dupeId) {
+          errors.push(`chapters: "${c.id}" and "${dupeId}" have the same ${field} (after normalizing)`);
+        } else {
+          seen.set(normalized, c.id);
+        }
       }
     }
   }
