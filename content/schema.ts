@@ -86,13 +86,14 @@ export const ChapterSchema = z.object({
    * chapter pages read consistently. Note this is *not* what the generated
    * "what is chapter N about" question offers as options — that uses `title`. */
   summary: z.string(),
-  /** A medium-length blurb: one real sentence, longer than `title` but
-   * shorter than `summary`, for a compact card that still reads as a full
-   * thought (the Chapter Order board, see DESIGN.md). Optional: only the
-   * wired narrative/argument books have it authored so far; a chapter without
-   * one falls back to `summary` wherever it's used. Same plot-level voice as
-   * `summary` (what happens, not what it means); see the authored-question
-   * convention below this schema doesn't enforce but content should match. */
+  /** A short, chapter-identifying phrase (roughly 4-10 words): the sole
+   * label on a Chapter Order row (see DESIGN.md), so it must let a player
+   * tell this chapter apart from every other chapter in the book on its
+   * own, with no title or number alongside it. Overlap with `title` is
+   * fine and often unavoidable; what matters is that it's unique within
+   * the book and never names the chapter number (that's the answer).
+   * Optional: only non-`selection`-depth books have it authored; a chapter
+   * without one falls back to `title` wherever it's used. */
   blurb: z.string().optional(),
   arcId: z.string(),
   eventIds: z.array(z.string()),
