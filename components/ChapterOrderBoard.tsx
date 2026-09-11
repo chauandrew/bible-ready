@@ -31,7 +31,7 @@ function chapterRowLabel(chapter: Chapter): string {
  * rendered via DragOverlay instead of translating this element in place, so
  * the row stays visible when dragged out of its pane's `overflow-y: auto`
  * clip (see DESIGN.md's Chapter Order section). */
-function ChapterRow({ chapter, onClick }: { chapter: Chapter; onClick: () => void }) {
+function ChapterRow({ chapter, onClick, bare }: { chapter: Chapter; onClick: () => void; bare?: boolean }) {
   const { attributes, listeners, setNodeRef, isDragging } = useDraggable({ id: chapter.id });
   const label = chapterRowLabel(chapter);
 
@@ -39,7 +39,7 @@ function ChapterRow({ chapter, onClick }: { chapter: Chapter; onClick: () => voi
     <button
       type="button"
       ref={setNodeRef}
-      className="order-row"
+      className={bare ? "order-row order-row-bare" : "order-row"}
       title={label}
       onClick={onClick}
       style={{ opacity: isDragging ? 0.4 : 1, touchAction: "none" }}
@@ -72,17 +72,25 @@ function SlotRow({
 }) {
   const { setNodeRef, isOver } = useDroppable({ id: `slot-${number}` });
   const label = `${chapterLabel} ${number}`;
+  const className = [
+    "order-row",
+    chapter ? "" : "order-slot-empty",
+    armed ? "order-slot-armed" : "",
+    isOver ? "order-slot-over" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div
       ref={setNodeRef}
-      className={`order-row ${chapter ? "" : "order-slot-empty"} ${isOver || armed ? "order-slot-armed" : ""}`}
+      className={className}
       style={{ padding: chapter ? "0.4rem 0.55rem 0.4rem 0" : undefined }}
     >
       <span className="order-slot-num">{number}</span>
       {chapter ? (
         <div style={{ flex: 1, minWidth: 0 }}>
-          <ChapterRow chapter={chapter} onClick={onPlacedClick} />
+          <ChapterRow chapter={chapter} onClick={onPlacedClick} bare />
         </div>
       ) : (
         <button
@@ -164,6 +172,10 @@ export default function ChapterOrderBoard({
     setActiveId(String(event.active.id));
   }
 
+  function handleDragCancel() {
+    setActiveId(null);
+  }
+
   function handleDragEnd(event: DragEndEvent) {
     const { active, over } = event;
     setActiveId(null);
@@ -231,7 +243,7 @@ export default function ChapterOrderBoard({
         Click a card with no slot targeted to drop it in the next open one.
       </p>
 
-      <DndContext sensors={sensors} onDragStart={handleDragStart} onDragEnd={handleDragEnd}>
+      <DndContext sensors={sensors} onDragStart={handleDragStart} onDragEnd={handleDragEnd} onDragCancel={handleDragCancel}>
         <div className="order-board" style={{ marginBottom: "1.5rem" }}>
           <div>
             <p className="eyebrow">Unplaced ({pool.length})</p>

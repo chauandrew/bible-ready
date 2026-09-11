@@ -619,11 +619,20 @@ textarea:focus-visible {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+/* A ChapterRow nested inside a filled SlotRow: the outer slot already
+   supplies the border/background, so the inner row drops its own to avoid
+   a box-within-a-box. */
+.order-row-bare {
+  border: none;
+  background: none;
+  padding: 0.4rem 0.55rem 0.4rem 0;
+}
 .order-slot-num {
   flex: 0 0 2.25rem;
   font-size: 0.78rem;
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
+  cursor: default;
 }
 .order-slot-empty {
   border-style: dashed;
@@ -632,6 +641,10 @@ textarea:focus-visible {
 .order-slot-armed {
   border-color: var(--accent);
   background: var(--surface-2);
+}
+.order-slot-over {
+  border-style: solid;
+  border-color: var(--accent);
 }
 @media (max-width: 700px) {
   .order-board {
