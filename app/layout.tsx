@@ -5,9 +5,14 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./globals.css";
 import ThemeToggle from "@/components/ThemeToggle";
 
+const description = "Study and quiz app for the Bible's main events and storyline, built for youth ministry and Bible study groups.";
+
 export const metadata: Metadata = {
-  title: "Bible Ready",
-  description: "Study and quiz app for the Bible's main events and storyline, built for youth ministry and Bible study groups.",
+  metadataBase: new URL("https://bible-ready.vercel.app"),
+  title: { default: "Bible Ready", template: "%s | Bible Ready" },
+  description,
+  openGraph: { title: "Bible Ready", description, type: "website", siteName: "Bible Ready" },
+  twitter: { card: "summary", title: "Bible Ready", description },
 };
 
 // Set the theme before paint to avoid a light/dark flash. Reads the same
