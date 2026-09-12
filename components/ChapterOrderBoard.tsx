@@ -7,6 +7,12 @@ import { shuffle, mulberry32 } from "@/lib/rng";
 import { pointsColor } from "@/lib/quiz";
 import { scoreChapterOrder, place, unplace, nextEmptySlot, type Placements } from "@/lib/chapterOrder";
 import BookBreadcrumb from "./BookBreadcrumb";
+
+/** Whole numbers display plain; fractional (half-credit near-miss) scores get
+ * one decimal place. */
+function formatPoints(n: number): string {
+  return Number.isInteger(n) ? String(n) : n.toFixed(1);
+}
 import {
   DndContext,
   DragOverlay,
@@ -194,7 +200,7 @@ export default function ChapterOrderBoard({
       <main className="container-wide">
         <BookBreadcrumb bookId={bookId} bookName={bookName} />
         <h1 className="page-title" style={{ fontSize: "clamp(1.4rem, 1.15rem + 0.9vw, 1.75rem)", marginTop: "1rem" }}>
-          Score: {score.correctCount}/{score.total}
+          Score: {formatPoints(score.correctCount)}/{score.total}
         </h1>
         <p style={{ color: "var(--text-secondary)", marginBottom: "1.5rem" }}>{score.percent}% correct</p>
 
@@ -210,9 +216,11 @@ export default function ChapterOrderBoard({
                 </div>
                 <div className="chapter-card-title">{r.chapter.title}</div>
                 <p className="chapter-card-summary">{r.chapter.summary}</p>
-                <div className="note" style={{ borderColor: pointsColor(r.correct ? 1 : 0) }}>
+                <div className="note" style={{ borderColor: pointsColor(r.points) }}>
                   {r.correct
                     ? "✓ Correct"
+                    : r.points > 0
+                    ? `≈ Off by one — you placed it in ${chapterLabel} ${r.placedSlot}`
                     : r.placedSlot !== null
                     ? `✗ You placed it in ${chapterLabel} ${r.placedSlot}`
                     : "✗ Not placed"}

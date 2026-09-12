@@ -17,18 +17,24 @@ export interface ChapterOrderResult {
   chapter: Chapter;
   placedSlot: number | null;
   correct: boolean;
+  /** 1 for an exact match, 0.5 for a slot exactly one off (a near miss on
+   * ordering, not on knowing the chapter), 0 otherwise — same half-credit
+   * treatment as a one-off chapter guess in lib/quiz.ts's pointsFor. */
+  points: number;
 }
 
 export interface ChapterOrderScore {
   results: ChapterOrderResult[];
+  /** Sum of each result's points — fractional whenever a near miss scores
+   * 0.5, so display it with the same formatPoints style quiz scores use. */
   correctCount: number;
   total: number;
   percent: number;
 }
 
-/** Slot N is correct iff it holds chapter N's own card. A chapter left in
- * the unplaced pool is graded wrong, not excluded: partial submission is
- * allowed. */
+/** Slot N is correct iff it holds chapter N's own card. Landing exactly one
+ * slot off earns half credit. A chapter left in the unplaced pool is
+ * graded wrong, not excluded: partial submission is allowed. */
 export function scoreChapterOrder(chapters: Chapter[], placements: Placements): ChapterOrderScore {
   const slotByChapterId = new Map<string, number>();
   for (const [slot, chapterId] of Object.entries(placements)) {
@@ -37,10 +43,12 @@ export function scoreChapterOrder(chapters: Chapter[], placements: Placements): 
 
   const results: ChapterOrderResult[] = chapters.map((chapter) => {
     const placedSlot = slotByChapterId.get(chapter.id) ?? null;
-    return { chapter, placedSlot, correct: placedSlot === chapter.number };
+    const correct = placedSlot === chapter.number;
+    const points = correct ? 1 : placedSlot !== null && Math.abs(placedSlot - chapter.number) === 1 ? 0.5 : 0;
+    return { chapter, placedSlot, correct, points };
   });
 
-  const correctCount = results.filter((r) => r.correct).length;
+  const correctCount = results.reduce((sum, r) => sum + r.points, 0);
   const total = chapters.length;
   return { results, correctCount, total, percent: total ? Math.round((correctCount / total) * 100) : 0 };
 }

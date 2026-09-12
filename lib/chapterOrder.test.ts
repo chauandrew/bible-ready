@@ -26,11 +26,19 @@ test("scoreChapterOrder: every chapter in its own slot scores 100%", () => {
   assert.equal(score.percent, 100);
 });
 
-test("scoreChapterOrder: every chapter shifted one slot scores 0%", () => {
+test("scoreChapterOrder: every chapter shifted one slot scores half credit", () => {
   const placements: Placements = { 1: "c2", 2: "c3", 3: "c1" };
   const score = scoreChapterOrder(chapters, placements);
-  assert.equal(score.correctCount, 0);
-  assert.equal(score.percent, 0);
+  // c1->slot3 is off by 2, so only the two adjacent shifts (c2->slot1, c3->slot2) get half credit.
+  assert.equal(score.correctCount, 1);
+  assert.equal(score.percent, 33);
+});
+
+test("scoreChapterOrder: a slot off by more than one scores zero", () => {
+  const placements: Placements = { 1: "c3", 3: "c1" };
+  const score = scoreChapterOrder(chapters, placements);
+  const c1Result = score.results.find((r) => r.chapter.id === "c1");
+  assert.equal(c1Result?.points, 0);
 });
 
 test("scoreChapterOrder: an unplaced chapter counts wrong, not excluded", () => {
