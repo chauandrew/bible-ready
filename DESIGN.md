@@ -271,7 +271,9 @@ of full title+summary cards for all of them, twice over, doesn't fit on
 screen at once. Each row shows `chapter.blurb` (falling back to `title` for
 the selection-depth books that have none authored; never its own number,
 since that's the answer); the player drags or clicks rows into slots and
-submits for a percentage score and a per-chapter correct/incorrect review.
+submits for a percentage score and a per-chapter review. A slot exactly one
+off earns half credit (same near-miss treatment as `pointsFor`'s
+right-book-wrong-chapter guess) rather than being marked flatly wrong.
 
 **`DragOverlay` is required, not optional.** `overflow-y: auto` on a
 scrolling pane clips its children, so a dragged row can't be translated in
