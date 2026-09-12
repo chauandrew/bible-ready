@@ -23,6 +23,12 @@ teach.
   check:content`). Nothing user-generated at runtime.
 - **Progress is `localStorage`** (`lib/progress.ts`) — per-device, no accounts,
   no sync.
+- **SEO**: `app/robots.ts` and `app/sitemap.ts` are generated at build time
+  (`export const dynamic = "force-static"`, required for static export) and
+  derive their URLs from `wiredBookIds`, so a new book picks up sitemap
+  coverage automatically. The production domain is hardcoded in both files
+  and in `app/layout.tsx`'s `metadataBase` — update all three if the domain
+  changes.
 
 ## The events backbone
 

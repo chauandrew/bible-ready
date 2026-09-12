@@ -1,9 +1,20 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { bookMeta, journeysForBook, wiredBookIds } from "@/lib/content";
 
 export function generateStaticParams() {
   return wiredBookIds.map((book) => ({ book }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ book: string }> }): Promise<Metadata> {
+  const { book: bookId } = await params;
+  const book = bookMeta(bookId);
+  if (!book) return {};
+  return {
+    title: book.name,
+    description: `Study and quiz ${book.name}: flashcards, key people, and chapter-order practice for all ${book.chapterCount} ${book.chapterLabel}s.`,
+  };
 }
 
 export default async function BookHome({ params }: { params: Promise<{ book: string }> }) {
