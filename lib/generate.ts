@@ -1,4 +1,4 @@
-import type { Arc, Chapter, Event, Person, Quote } from "../content/schema";
+import type { Arc, Chapter, Event, Person, Quote, Tier } from "../content/schema";
 import { mulberry32, shuffle } from "./rng";
 import { deriveGradingTerms } from "./grade";
 
@@ -18,7 +18,7 @@ import { deriveGradingTerms } from "./grade";
  */
 
 export interface BookData {
-  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string; chapterLabel?: string; autoGenerate?: boolean };
+  book: { id: string; name: string; citationName?: string; placeAsk?: string; placeMatchAsk?: string; chapterLabel?: string; autoGenerate?: boolean; defaultTier?: Tier };
   arcs: Arc[];
   chapters: Chapter[];
   people: Person[];
@@ -87,6 +87,7 @@ function namesItsOwnSpeaker(q: Quote, people: Person[]): boolean {
 export type GeneratedMC = {
   kind: "generated";
   id: string;
+  tier: Tier;
   type: "location" | "speaker" | "chapter-summary";
   prompt: string;
   correctAnswer: string;
@@ -99,6 +100,7 @@ export type GeneratedMC = {
 export type GeneratedChapterGuess = {
   kind: "generated";
   id: string;
+  tier: Tier;
   type: "chapter-guess";
   prompt: string;
   correctChapter: number;
@@ -108,6 +110,7 @@ export type GeneratedChapterGuess = {
 export type GeneratedSequence = {
   kind: "generated";
   id: string;
+  tier: Tier;
   type: "sequence";
   prompt: string;
   itemsInOrder: string[]; // correct order, 4-6 items
@@ -117,6 +120,7 @@ export type GeneratedSequence = {
 export type GeneratedMatch = {
   kind: "generated";
   id: string;
+  tier: Tier;
   type: "match";
   prompt: string;
   pairs: { left: string; right: string }[]; // 4-6 pairs, rights all distinct
@@ -126,6 +130,7 @@ export type GeneratedMatch = {
 export type GeneratedFreeResponse = {
   kind: "generated";
   id: string;
+  tier: Tier;
   type: "free-response";
   prompt: string;
   chapterNumber: number;
@@ -139,6 +144,22 @@ export type GeneratedItem = GeneratedMC | GeneratedChapterGuess | GeneratedSeque
 
 function personName(people: Person[], id: string): string {
   return people.find((p) => p.id === id)?.name ?? id;
+}
+
+/** See TierSchema in content/schema.ts: an item's own tag, else the book's
+ * default, else "deep". */
+export function tierOf(item: { tier?: Tier }, book: BookData["book"]): Tier {
+  return item.tier ?? book.defaultTier ?? "deep";
+}
+
+/** A chapter-level item ("what is chapter N about", free response) is general
+ * if any event in the chapter is; a multi-event item (sequence, match) only
+ * if every event it shows is, since one deep event makes the whole thing
+ * unanswerable on general knowledge. */
+function tierOfEvents(events: Event[], book: BookData["book"], mode: "any" | "all"): Tier {
+  const general = events.map((e) => tierOf(e, book) === "general");
+  const hit = mode === "any" ? general.some(Boolean) : general.length > 0 && general.every(Boolean);
+  return hit ? "general" : "deep";
 }
 
 function arcOf(chapters: Chapter[], chapterNumber: number): string | undefined {
@@ -166,6 +187,7 @@ export function generateChapterQuestions(data: BookData): GeneratedChapterGuess[
     out.push({
       kind: "generated",
       id: `gen:chapter:${e.id}`,
+      tier: tierOf(e, book),
       type: "chapter-guess",
       prompt: `In which book and ${chapterWord(book)} does this happen: ${e.name}?`,
       correctChapter: e.chapter,
@@ -206,6 +228,7 @@ export function generateLocationQuestions(data: BookData): GeneratedMC[] {
     out.push({
       kind: "generated",
       id: `gen:location:${e.id}`,
+      tier: tierOf(e, book),
       type: "location",
       prompt: `${book.placeAsk ?? "Where does this happen"}: ${e.name}?`,
       correctAnswer: place,
@@ -251,6 +274,7 @@ export function generateSpeakerQuestions(data: BookData): GeneratedMC[] {
     out.push({
       kind: "generated",
       id: `gen:speaker:${q.id}`,
+      tier: tierOf(q, book),
       type: "speaker",
       prompt: `Who says this: "${q.text}" (ESV)?`,
       correctAnswer: personName(people, q.speakerId),
@@ -262,7 +286,7 @@ export function generateSpeakerQuestions(data: BookData): GeneratedMC[] {
 }
 
 export function generateChapterSummaryQuestions(data: BookData): GeneratedMC[] {
-  const { chapters, book } = data;
+  const { chapters, events, book } = data;
   const out: GeneratedMC[] = [];
   for (const c of chapters.filter((c) => inScope(data, c.number))) {
     const sameArc = chapters.filter((x) => x.arcId === c.arcId && x.id !== c.id);
@@ -282,6 +306,7 @@ export function generateChapterSummaryQuestions(data: BookData): GeneratedMC[] {
     out.push({
       kind: "generated",
       id: `gen:summary:${c.id}`,
+      tier: tierOfEvents(events.filter((e) => e.chapter === c.number), book, "any"),
       type: "chapter-summary",
       prompt: `What is ${bookLabel(book)} ${c.number} about?`,
       correctAnswer: c.title,
@@ -298,13 +323,14 @@ export function generateChapterSummaryQuestions(data: BookData): GeneratedMC[] {
  * from the chapter's own title/summary/aliases (see lib/grade.ts's
  * deriveGradingTerms), so there's no separate grading data to require here. */
 export function generateFreeResponseQuestions(data: BookData): GeneratedFreeResponse[] {
-  const { chapters, book } = data;
+  const { chapters, events, book } = data;
   const out: GeneratedFreeResponse[] = [];
   for (const c of chapters.filter((c) => c.quizWorthy && inScope(data, c.number))) {
     const { terms, minTerms, titleTerms } = deriveGradingTerms(c);
     out.push({
       kind: "generated",
       id: `gen:free-response:${c.id}`,
+      tier: tierOfEvents(events.filter((e) => e.chapter === c.number), book, "any"),
       type: "free-response",
       prompt: c.freeResponsePrompt ?? `In your own words, what happens in ${bookLabel(book)} ${c.number}?`,
       chapterNumber: c.number,
@@ -335,6 +361,7 @@ export function generateSequenceQuestions(data: BookData): GeneratedSequence[] {
     out.push({
       kind: "generated",
       id: `gen:sequence:${arc.id}`,
+      tier: tierOfEvents(arcEvents, book, "all"),
       type: "sequence",
       prompt: `Put these events from "${arc.name}" in order.`,
       itemsInOrder: arcEvents.map((e) => e.name),
@@ -356,17 +383,20 @@ export function generateMatchQuestions(data: BookData): GeneratedMatch[] {
     );
     const seenPlaces = new Set<string>();
     const pairs: { left: string; right: string }[] = [];
+    const used: Event[] = [];
     for (const e of arcEvents) {
       const place = e.place!;
       if (seenPlaces.has(place)) continue; // rights must be distinct for a well-defined match
       seenPlaces.add(place);
       pairs.push({ left: e.name, right: place });
+      used.push(e);
       if (pairs.length === 6) break;
     }
     if (pairs.length < 4) continue;
     out.push({
       kind: "generated",
       id: `gen:match:${arc.id}`,
+      tier: tierOfEvents(used, book, "all"),
       type: "match",
       prompt: `Match each event in "${arc.name}" ${book.placeMatchAsk ?? "to where it happens"}.`,
       pairs,

@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, maxPointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
+import { selectQuiz, selectQuizMulti, poolsForTier, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, maxPointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -270,4 +270,27 @@ test("gapReport buckets by whatever categorize returns, not a fixed mechanic/the
   const report = gapReport(items, answers, () => "Everything");
   assert.deepEqual(Object.keys(report), ["Everything"]);
   assert.equal(report["Everything"].wrong, items.length);
+});
+
+test("tier: General mode draws only from general items, untagged books contribute nothing", () => {
+  const untagged = fixtureData();
+  const tagged = fixtureData();
+  tagged.book = { id: "misc", name: "Misc", defaultTier: "general" };
+  for (const list of [tagged.arcs, tagged.chapters, tagged.events, tagged.quotes]) for (const x of list) x.book = "misc";
+  tagged.events[0].tier = "deep";
+
+  const sources = [
+    { data: untagged, questions: authored },
+    { data: tagged, questions: [{ ...authored[0], id: "a2", book: "misc", citation: { book: "misc", chapter: 1 } }] },
+  ];
+  const { generated, authored: authoredPool } = poolsForTier(sources, "general");
+  assert.ok(generated.length > 0);
+  assert.ok(generated.every((g) => g.tier === "general"));
+  assert.ok(!generated.some((g) => g.id === "gen:chapter:e1"), "an event tagged deep overrides the book default");
+  assert.ok(!generated.some((g) => g.citation.book === "genesis"), "untagged book is all deep");
+  assert.deepEqual(authoredPool.map((q) => q.id), ["a2"]);
+
+  const items = selectQuizMulti(sources, { seedStr: "t", targetCount: 25, tier: "general" });
+  assert.ok(items.length > 0);
+  assert.ok(items.every((i) => i.citation.book === "misc"));
 });

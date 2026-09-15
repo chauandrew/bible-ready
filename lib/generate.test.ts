@@ -179,3 +179,22 @@ test("book.autoGenerate: false suppresses chapter-guess/location/speaker/chapter
   }
   assert.deepEqual(findAmbiguities(data), [], "no ambiguity checks for question types that are never generated");
 });
+
+test("tier: chapter-level items are general if any event is; multi-event items only if all are", () => {
+  const data = fixture();
+  data.chapters[0].quizWorthy = true;
+  data.events[0].tier = "general";
+  const items = generateAll(data);
+  const byId = new Map(items.map((i) => [i.id, i.tier]));
+  assert.equal(byId.get("gen:chapter:e1"), "general");
+  assert.equal(byId.get("gen:chapter:e2"), "deep");
+  assert.equal(byId.get("gen:summary:gen-1"), "general");
+  assert.equal(byId.get("gen:free-response:gen-1"), "general");
+  assert.equal(byId.get("gen:summary:gen-2"), "deep");
+  assert.equal(byId.get("gen:sequence:creation"), "deep", "one general event out of five is not a general sequence");
+  assert.equal(byId.get("gen:match:creation"), "deep");
+  for (const e of data.events) e.tier = "general";
+  const all = new Map(generateAll(data).map((i) => [i.id, i.tier]));
+  assert.equal(all.get("gen:sequence:creation"), "general");
+  assert.equal(all.get("gen:match:creation"), "general");
+});

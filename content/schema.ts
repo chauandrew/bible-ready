@@ -28,6 +28,17 @@ export type Citation = z.infer<typeof CitationSchema>;
  */
 export const CoverageDepthSchema = z.enum(["narrative", "sparse", "argument", "selection"]);
 
+/**
+ * How broadly known a fact is. "general" is what someone who knows the famous
+ * stories would recognize (David and Goliath, the golden calf); "deep" is
+ * what only someone who has read the book closely would (how loudly Joseph
+ * wept). The whole-Bible quiz's "General knowledge" mode draws only from
+ * "general" items. Unset means the book's `defaultTier`, which itself
+ * defaults to "deep" — so an untagged corpus never leaks into General mode.
+ */
+export const TierSchema = z.enum(["general", "deep"]);
+export type Tier = z.infer<typeof TierSchema>;
+
 export const BookSchema = z.object({
   id: BookIdSchema,
   name: z.string(),
@@ -58,6 +69,11 @@ export const BookSchema = z.object({
    * unaffected, since those are already opt-in per chapter/arc. Defaults to
    * on for every real book. */
   autoGenerate: z.boolean().optional(),
+  /** Tier for any event/quote/authored question in this book that doesn't set
+   * its own. A module whose every item is famous by construction (Misc's
+   * twelve disciples and OT/NT book order) sets "general" here once instead
+   * of tagging each item. Defaults to "deep". */
+  defaultTier: TierSchema.optional(),
 });
 export type Book = z.infer<typeof BookSchema>;
 
@@ -180,6 +196,7 @@ export const EventSchema = z.object({
   order: z.number().int().nonnegative(),
   summary: z.string(),
   notable: z.boolean().default(false),
+  tier: TierSchema.optional(),
 });
 export type Event = z.infer<typeof EventSchema>;
 
@@ -199,6 +216,7 @@ export const QuoteSchema = z.object({
    * with no speaker in it doesn't belong here at all. */
   text: z.string(),
   citation: CitationSchema,
+  tier: TierSchema.optional(),
 });
 export type Quote = z.infer<typeof QuoteSchema>;
 
@@ -216,6 +234,7 @@ export const AuthoredQuestionSchema = z.object({
   citation: CitationSchema,
   /** Shown only after answering, in Study mode. Answer confirmation, not an essay. */
   explanation: z.string().optional(),
+  tier: TierSchema.optional(),
 });
 export type AuthoredQuestion = z.infer<typeof AuthoredQuestionSchema>;
 

@@ -44,6 +44,13 @@ Each book's content lives in `content/<book>/*.json`, validated against
 - **Authored** — hand-written thematic questions in `questions.json` (themes, arcs,
   covenants, characters, the book's argument) that a generator can't produce.
 
+Events, quotes, and authored questions can carry `tier: "general"` for the facts most
+churchgoers know without having read the book; the whole-Bible quiz's "General
+knowledge" mode draws only from those. Untagged items are "deep".
+
+`CONTENT_PLAN.md` is the roadmap for covering all 66 books: the per-genre conventions,
+the per-book authoring recipe, and a coverage table. Start there before authoring a book.
+
 Run the content gate before committing any content change:
 
 ```bash

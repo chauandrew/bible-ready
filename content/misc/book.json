@@ -5,6 +5,7 @@
   "chapterCount": 4,
   "coverageDepth": "selection",
   "autoGenerate": false,
+  "defaultTier": "general",
   "arcOrder": [
     "disciples",
     "tribes",
