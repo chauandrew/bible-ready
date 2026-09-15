@@ -1,4 +1,4 @@
-import type { AuthoredQuestion, Citation } from "../content/schema";
+import type { AuthoredQuestion, Citation, Tier } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
 import { gradeFreeResponse } from "./grade";
 import { chapterSummaryFor, formatCitation, bookMeta } from "./content";
@@ -9,6 +9,7 @@ import {
   toRuntimeSequence,
   toRuntimeMatch,
   toRuntimeFreeResponse,
+  tierOf,
   type BookData,
   type GeneratedItem,
   type GeneratedMC,
@@ -64,6 +65,9 @@ export interface SelectQuizOptions {
   targetCount: number;
   /** Fraction of targetCount drawn from the generated pool. Default 0.6. */
   generatedRatio?: number;
+  /** Restrict both pools to items of this tier (see TierSchema in
+   * content/schema.ts). Unset draws from everything. */
+  tier?: Tier;
 }
 
 export function selectQuiz(
@@ -83,9 +87,20 @@ export function selectQuizMulti(
   sources: { data: BookData; questions: AuthoredQuestion[] }[],
   opts: SelectQuizOptions
 ): QuizItem[] {
-  const generatedPool = sources.flatMap((s) => generateAll(s.data));
-  const authoredPool = sources.flatMap((s) => s.questions);
-  return selectFromPools(generatedPool, authoredPool, opts);
+  const { generated, authored } = poolsForTier(sources, opts.tier);
+  return selectFromPools(generated, authored, opts);
+}
+
+/** Both pools across several books, optionally restricted to one tier. Exposed so
+ * the setup screen can tell whether General mode has anything to draw from. */
+export function poolsForTier(
+  sources: { data: BookData; questions: AuthoredQuestion[] }[],
+  tier?: Tier
+): { generated: GeneratedItem[]; authored: AuthoredQuestion[] } {
+  return {
+    generated: sources.flatMap((s) => generateAll(s.data).filter((g) => !tier || g.tier === tier)),
+    authored: sources.flatMap((s) => s.questions.filter((q) => !tier || tierOf(q, s.data.book) === tier)),
+  };
 }
 
 /** Picks the single global "question of the day" — same date -> same item, deterministically seeded. */
