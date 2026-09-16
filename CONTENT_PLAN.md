@@ -127,9 +127,8 @@ Process
   list modules? Decide at the first one.
 - Book id for the Song: `song-of-solomon` (ESV title) is assumed.
 - Any other reference resources beyond The Bible Project?
-- Should the retro pass over existing books also convert eligible questions
-  (1-2 word answers, prompt stands alone) to short answer? Recommended: yes,
-  alongside the book-name prompt rewrite, since it's the same read-through.
+- (resolved 2026-09-16) The retro pass converted eligible existing questions
+  to short answer alongside the book-name rewrite.
 
 ## Conventions by genre
 
@@ -307,26 +306,28 @@ Code follow-ups, each with its trigger:
 
 ## Retro tasks (existing content)
 
-- [ ] Remove the 20 God/LORD-spoken quotes `check:content` now warns on
+- [ ] Remove the 20 God/LORD-spoken quotes `check:content` warns on
       (Genesis 10, Exodus 5, Matthew 2, 1 Samuel 2, 2 Samuel 1) and any
       `god`/`the-lord` person entry nothing else references. Frees ~20
       verses of budget.
-- [ ] Rewrite Galatians' authored distractors to full-sentence style.
+- [x] Rewrite Galatians' authored distractors to full-sentence style
+      (2026-09-16, with the short-answer pass).
 - [ ] Exodus: `quizWorthy` on chapters 1-14 (currently none), then author
       chapters 15-40 (the first Phase 1 item; both in one PR is fine).
-- [ ] Fix the three meaning-style prompts (`exo-q-theme-3`, `jn-q-theme-5`,
-      `jn-q-theme-7`) and the cross-book duplicate (`exo-q-theme-4` vs
-      `qz-22`).
+      Exodus's 22 questions are still mostly arc/theme synthesis; rewrite
+      them to plain plot-level questions in that same PR.
+- [x] Meaning-style prompts and the cross-book duplicate (2026-09-16).
 - [ ] Tag `tier` across the nine original books using the calibrated
-      rubric (labels are in; most authored questions will be general).
-- [ ] Add the book name to every existing authored prompt (277 across nine
-      books) in the "In Exodus, ..." style, one book per pass.
-- [ ] Psalms: reword prompts to name the psalm ("In Psalm 23, ..." instead of
-      "the psalm that begins ..."), now allowed for `selection` books.
-- [ ] Calibration-set rewrites: #6 (`exo-q-arc-1`) and #25 (`psalms-q25`,
-      "What is Psalm 119 about?") plainer wording; #23 (`psalms-q1`) replaced
-      with a content question about Psalm 23; #13 (`2sam-aq-theme-7`) split
-      into one plain question per wise woman.
+      rubric (most authored questions will be general).
+- [x] Book name in every existing authored prompt; eligible questions
+      converted to short answer (92 of 278, 2026-09-16); John's synthesis
+      questions replaced with plain ones; Psalms prompts name the psalm.
+- [ ] Explanations on Genesis, 2 Samuel, and John's remaining
+      multiple-choice questions (their short answers have them; the rest
+      never did).
+- [ ] Matthew still has a few weak distractor sets (matt-aq-14, -15, -16,
+      -19, -25, -32, -40, -45); rewrite when Mark/Luke are authored, since
+      the parallel-Gospel confusions become available then.
 
 ## Calibration set (label each G = general, D = deep/too specific)
 
@@ -449,4 +450,9 @@ Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
   chapter-leak rule now exempts `selection` books. Retro tasks added for
   existing prompts. Short-answer authored format added (no toggle; formats
   mix automatically), with `matt-aq-21`/`matt-aq-42` converted as exemplars.
-  Distractor believability rules written into DESIGN.md.
+  Distractor believability rules written into DESIGN.md. Then the retro
+  pass over all 278 existing questions: every prompt names its book, 92
+  converted to short answer, John and Galatians rewritten, Psalms prompts
+  name the psalm, the four calibration rewrites done. One review agent per
+  book (or pair) checked every answer, alias, distractor, and explanation
+  against the ESV afterward.
