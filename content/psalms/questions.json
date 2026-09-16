@@ -159,12 +159,16 @@
     "id": "psalms-q11",
     "book": "psalms",
     "category": "theme",
-    "prompt": "In Psalm 139, what does the psalmist ask God to do in the closing verses?",
+    "prompt": "In Psalm 139, what does the psalmist ask God to do in the final two verses?",
     "format": "short-answer",
     "answer": "search him",
     "aliases": [
+      "search",
+      "try",
+      "test",
+      "lead",
+      "know heart",
       "search me",
-      "know my heart",
       "test me",
       "lead me"
     ],
@@ -242,7 +246,7 @@
       "book": "psalms",
       "chapter": 32
     },
-    "explanation": "Psalm 32 opens with the blessing of forgiveness; the other lines open Psalms 1, 112, and 146."
+    "explanation": "Psalm 32 opens with the blessing of forgiveness; the other lines open Psalms 1 and 112, and Psalm 146:5 calls blessed the one whose help is the God of Jacob."
   },
   {
     "id": "psalms-q16",
@@ -355,7 +359,9 @@
     "aliases": [
       "the LORD",
       "LORD strong and mighty",
-      "LORD mighty in battle"
+      "LORD mighty in battle",
+      "God",
+      "Yahweh"
     ],
     "citation": {
       "book": "psalms",
@@ -387,7 +393,8 @@
     "format": "short-answer",
     "answer": "dwelling place",
     "aliases": [
-      "dwelling"
+      "dwelling",
+      "refuge"
     ],
     "citation": {
       "book": "psalms",

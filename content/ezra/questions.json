@@ -24,7 +24,7 @@
     "book": "ezra",
     "category": "character",
     "prompt": "In Ezra, who leads the first group of exiles that returns to Judah and Jerusalem?",
-    "options": ["Ezra and Nehemiah", "Zerubbabel and Jeshua", "Sheshbazzar alone", "Haggai and Zechariah"],
+    "options": ["Ezra and Nehemiah", "Zerubbabel and Jeshua", "Mithredath the treasurer and Sheshbazzar", "Haggai and Zechariah"],
     "correctIndex": 1,
     "citation": { "book": "ezra", "chapter": 2 },
     "explanation": "Zerubbabel and Jeshua lead the first group of returning exiles, numbered at 42,360."
@@ -54,10 +54,10 @@
     "book": "ezra",
     "category": "arc",
     "prompt": "In Ezra, why does work on the temple stall after the returned exiles refuse the local peoples' offer to help build it?",
-    "options": ["Local peoples hire counselors to discourage them", "A famine strikes and no laborers remain", "The Persian king recalls all the exiles to Babylon", "The temple's foundation collapses in an earthquake"],
+    "options": ["Local peoples bribe counselors to frustrate the builders", "A famine strikes and no laborers remain", "The Persian king recalls all the exiles to Babylon", "The temple's foundation collapses in an earthquake"],
     "correctIndex": 0,
     "citation": { "book": "ezra", "chapter": 4 },
-    "explanation": "Refused a role in the building, the local peoples hire counselors to frustrate and frighten the builders."
+    "explanation": "Refused a role in the building, the people of the land bribe counselors to frustrate the builders' purpose all the days of Cyrus."
   },
   {
     "id": "ezra-aq-7",
@@ -107,7 +107,7 @@
     "prompt": "In Ezra, what is Ezra's occupation when he is first introduced?",
     "format": "short-answer",
     "answer": "a scribe",
-    "aliases": ["priest"],
+    "aliases": ["priest", "teacher"],
     "citation": { "book": "ezra", "chapter": 7 },
     "explanation": "Ezra is a scribe skilled in the Law of Moses, and a priest descended from Aaron."
   },
@@ -136,10 +136,10 @@
     "book": "ezra",
     "category": "arc",
     "prompt": "In Ezra, what happens when Ezra's group finally arrives in Jerusalem?",
-    "options": ["The temple treasures are found to be missing", "The silver and gold are weighed out and match", "The group is turned away by the city's residents", "They discover the temple has been destroyed again"],
+    "options": ["The temple treasures are found to be missing", "The silver and gold are counted, weighed, and recorded", "The group is turned away by the city's residents", "They discover the temple has been destroyed again"],
     "correctIndex": 1,
     "citation": { "book": "ezra", "chapter": 8 },
-    "explanation": "The treasures Ezra carried are weighed out in Jerusalem and found to match what was recorded in Babylon."
+    "explanation": "The silver, gold, and vessels Ezra carried are counted and weighed in the temple, and the weight of everything is recorded."
   },
   {
     "id": "ezra-aq-15",
@@ -148,7 +148,7 @@
     "prompt": "In Ezra, what does Ezra learn the priests, Levites, and other returned exiles have done?",
     "format": "short-answer",
     "answer": "intermarriage",
-    "aliases": ["intermarried", "foreign wives", "foreign women", "married foreigners"],
+    "aliases": ["intermarried", "foreign wives", "foreign women", "married foreigners", "intermarry", "intermarrying", "mixed marriages"],
     "citation": { "book": "ezra", "chapter": 9 },
     "explanation": "The people, including priests and Levites, have taken wives from the surrounding peoples."
   },

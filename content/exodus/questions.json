@@ -42,9 +42,9 @@
     "prompt": "In Exodus, what does the blood on the doorframes do for the Israelite households on the night of the first Passover?",
     "options": [
       "It marks the houses the LORD will pass over, sparing them from the plague on the firstborn",
-      "It identifies which houses owe taxes to Pharaoh",
-      "It marks the houses of Israelites who have already slipped away into the wilderness overnight",
-      "It is a sign for the Egyptian army to avoid"
+      "It consecrates the household's firstborn to the LORD",
+      "It is the sign the LORD promised Moses to confirm his call at the burning bush",
+      "It marks the houses the Egyptians are to give their silver and gold to"
     ],
     "correctIndex": 0,
     "citation": {
@@ -60,16 +60,16 @@
     "prompt": "In Exodus, what name does God give when Moses asks at the burning bush what he should tell the Israelites?",
     "options": [
       "I AM WHO I AM",
-      "The Lord of Hosts",
-      "The Ancient of Days",
-      "The Alpha and the Omega"
+      "God Almighty",
+      "Jealous",
+      "The God of your fathers"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
       "chapter": 3
     },
-    "explanation": "God answers \"I AM WHO I AM,\" and tells Moses to say \"I AM has sent me to you\" and that this is the God of Abraham, Isaac, and Jacob (3:14-15)."
+    "explanation": "God answers \"I AM WHO I AM,\" and tells Moses to say \"I AM has sent me to you.\" He had appeared to the patriarchs as God Almighty (6:3), and \"Jealous\" is a name he gives later (34:14)."
   },
   {
     "id": "exo-q-theme-5",
@@ -116,7 +116,10 @@
     "answer": "the death of the firstborn",
     "aliases": [
       "tenth plague",
-      "firstborn"
+      "firstborn",
+      "first born",
+      "tenth",
+      "last plague"
     ],
     "citation": {
       "book": "exodus",
@@ -131,9 +134,9 @@
     "prompt": "In Exodus, how does the story connect Moses' rescue as a baby to his later role?",
     "options": [
       "The Nile meant to kill him becomes his rescue",
-      "Moses is unrelated to the baby rescued earlier in the story",
-      "Moses only learns of his rescue after becoming a shepherd",
-      "The rescue has no bearing on the rest of the story"
+      "Pharaoh's daughter names him for the reed basket, and he later leads Israel through the reeds of the sea",
+      "The midwives who saved him become the first to follow him out of Egypt",
+      "His Hebrew mother, hired as his nurse, is the one who later sends him to Midian"
     ],
     "correctIndex": 0,
     "citation": {
@@ -185,9 +188,9 @@
     "prompt": "In Exodus, how does God's earlier covenant with Abraham, Isaac, and Jacob connect to Israel's rescue?",
     "options": [
       "God explicitly remembers that covenant as the reason he acts to rescue Israel",
-      "The covenant with the patriarchs has already been formally canceled after centuries of Israel's silence in Egypt",
-      "The covenant only applies to the land of Midian",
-      "God makes an entirely new and unrelated covenant with Pharaoh"
+      "God says the covenant with the patriarchs will be replaced by a new one made at Sinai",
+      "God tells Moses the promise of the land passed to Ishmael's descendants in Midian",
+      "God says he will keep the covenant only if Israel first obeys him in Egypt"
     ],
     "correctIndex": 0,
     "citation": {
@@ -221,9 +224,9 @@
     "prompt": "In Exodus, why does God require every firstborn male, human or animal, to be set apart to him?",
     "options": [
       "As a lasting reminder that the LORD spared Israel's firstborn during the tenth plague",
-      "As payment for Israel's time in Egypt",
-      "Because firstborns caused the plagues",
-      "As a punishment for Israel's continued disobedience and complaining throughout the wilderness journey"
+      "As the price of the Passover lamb each household must offer yearly",
+      "Because the firstborn of Israel served as priests until the Levites replaced them",
+      "As a punishment for the golden calf, when the firstborn led the people astray"
     ],
     "correctIndex": 0,
     "citation": {
@@ -277,7 +280,7 @@
       "He relents under pressure but hardens his heart again once relief comes",
       "He agrees to release Israel the very first time he is asked, before any plague ever strikes Egypt",
       "He is persuaded by his magicians to worship the LORD",
-      "He never speaks directly to Moses or Aaron"
+      "He lets Israel go after the first plague, then pursues them when the magicians urge him to"
     ],
     "correctIndex": 0,
     "citation": {
@@ -341,7 +344,7 @@
     "category": "argument",
     "prompt": "In Exodus, what does Moses tell Israel their own part in the rescue at the sea will be?",
     "options": [
-      "To stand still and be silent while the LORD fights for them",
+      "To stand firm and be silent while the LORD fights for them",
       "To hold off Pharaoh's chariots personally until the sea has fully parted before them",
       "To bargain with Pharaoh's officers for safe passage",
       "To build boats and cross before the army arrives"
@@ -378,9 +381,9 @@
     "prompt": "In Exodus, what does the Passover meal establish for Israel going forward, beyond that single night?",
     "options": [
       "A recurring memorial of how the LORD delivered them from slavery in Egypt",
-      "A tax Israel must continue paying to Pharaoh's treasury each year as tribute",
-      "A treaty between Israel and the Midianites",
-      "A punishment Israel must repeat for disobedience"
+      "A yearly pilgrimage to Sinai to renew the covenant",
+      "A tithe of the firstborn lambs owed to the priests",
+      "A fast of seven days to mourn Egypt's firstborn"
     ],
     "correctIndex": 0,
     "citation": {
