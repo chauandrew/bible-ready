@@ -8,7 +8,8 @@
     "answer": "the sixth",
     "aliases": [
       "6",
-      "six"
+      "six",
+      "6th"
     ],
     "citation": {
       "book": "genesis",
@@ -42,7 +43,7 @@
       "Because human wickedness and violence on the earth have become great and continual",
       "Because Cain murdered Abel, and the shed blood cries out from the ground for judgment",
       "Because a tower was being built to reach the heavens",
-      "Because Pharaoh refused to release Israel"
+      "Because Lamech had boasted of killing a man, and his vengeance had spread through the whole earth"
     ],
     "correctIndex": 0,
     "citation": {
@@ -74,9 +75,9 @@
     "prompt": "In Genesis, what does Abram ask God for just before the covenant ceremony with the smoking fire pot and torch?",
     "options": [
       "Reassurance that he will actually possess the land he has been promised",
-      "A son through his wife Sarai",
+      "A blessing on Eliezer of Damascus, the servant who stood to inherit his house",
       "Protection from four invading kings",
-      "A written copy of the covenant terms, signed and witnessed by the elders of his household"
+      "That the LORD swear the promise before Melchizedek as a witness"
     ],
     "correctIndex": 0,
     "citation": {
@@ -104,7 +105,7 @@
     "prompt": "In Genesis, how does Jacob trick his father Isaac into giving him Esau's blessing?",
     "options": [
       "He wears goatskins on his arms and neck and brings in a meal, pretending to be Esau",
-      "He forges a written blessing while Isaac sleeps",
+      "He waits until Esau is away hunting and tells Isaac that Esau sold him the blessing along with the birthright",
       "He bribes Esau to give up the blessing voluntarily",
       "He waits until Isaac leaves on a long journey and has Rebekah pronounce the blessing in secret"
     ],
@@ -134,7 +135,7 @@
     "prompt": "In Genesis, what do Joseph's brothers do to him when he arrives to check on them wearing his colorful robe?",
     "options": [
       "They strip him, throw him into a pit, and sell him to traders heading to Egypt",
-      "They kill him on the spot and tell their father a wild animal must have devoured him",
+      "They hand him over to Ishmaelite traders as a hired hand and tell their father he chose to go to Egypt",
       "They send him home to their father in disgrace",
       "They make him a servant in their own tents"
     ],
@@ -267,7 +268,7 @@
     "category": "covenant",
     "prompt": "In Genesis, how does Abram respond when God promises him offspring as numerous as the stars?",
     "options": [
-      "He demands a written contract",
+      "He laughs and asks how a man a hundred years old can have a son",
       "He doubts and walks away",
       "He believes God, and it is credited to him as righteousness",
       "He asks for the promise to be given to Lot instead"
@@ -400,8 +401,8 @@
     "options": [
       "A smoking fire pot and flaming torch pass between the pieces, signifying God alone takes on the obligation",
       "Abram and God pass between the pieces together, signifying that the two of them take on matching obligations",
-      "A rainbow appears over the animals",
-      "Abram is circumcised on the spot"
+      "Abram alone walks between the pieces, signifying that he takes on the obligation to keep the covenant",
+      "A dove and a raven fly over the pieces, signifying the covenant is renewed as it was with Noah"
     ],
     "correctIndex": 0,
     "citation": {
@@ -420,7 +421,10 @@
       "book": "genesis",
       "chapter": 21
     },
-    "explanation": "Abraham complains that Abimelech's servants seized a well, and the two swear an oath at Beersheba."
+    "explanation": "Abraham complains that Abimelech's servants seized a well, and the two swear an oath at Beersheba.",
+    "aliases": [
+      "water"
+    ]
   },
   {
     "id": "qz-28",
@@ -516,7 +520,7 @@
       "He sets out for Canaan as the LORD told him, taking Sarai and Lot with him",
       "He refuses and stays behind in Haran, unwilling to leave everything familiar to his father's household",
       "He sends Lot in his place while he remains",
-      "He first requires God to confirm the promise in writing"
+      "He goes up to Bethel first to build an altar and wait for a sign before setting out"
     ],
     "correctIndex": 0,
     "citation": {
@@ -547,7 +551,7 @@
     "category": "character",
     "prompt": "In Genesis, what does Sarah say when she gives birth to Isaac in her old age?",
     "options": [
-      "\"God has made laughter for me; everyone who hears will laugh with me\"",
+      "\"God has made laughter for me; everyone who hears will laugh over me\"",
       "\"I no longer believe God keeps his promises\"",
       "\"This child belongs to Hagar, not to me\"",
       "She says nothing recorded in the text"
@@ -608,7 +612,7 @@
     "id": "qz-39",
     "book": "genesis",
     "category": "character",
-    "prompt": "In Genesis, what do Rachel and Leah each do to gain more sons through Jacob once they stop bearing children themselves?",
+    "prompt": "In Genesis, what do Rachel and Leah each do to gain more sons through Jacob when they cannot bear children themselves?",
     "options": [
       "They each give their servant to Jacob as a wife to bear children in their name",
       "They ask their father Laban to arrange yet another marriage for Jacob to grow the family",
@@ -625,12 +629,12 @@
     "id": "qz-40",
     "book": "genesis",
     "category": "character",
-    "prompt": "In Genesis, what does Jacob do the night before he wrestles with the man at Peniel, fearing Esau's approach?",
+    "prompt": "In Genesis, what does Jacob do just before he wrestles with the man at Peniel, fearing Esau's approach?",
     "options": [
       "He sends his family and possessions across the Jabbok river ahead of him and remains alone",
       "He gathers his men to prepare for battle against Esau",
       "He returns immediately to Laban's house for safety",
-      "He sends messengers far ahead to Pharaoh's court in Egypt to plead for protection against Esau"
+      "He sends Esau a message promising to return to Haran and never claim the birthright"
     ],
     "correctIndex": 0,
     "citation": {
@@ -646,7 +650,7 @@
     "options": [
       "Because their father favors him and because of his dreams of ruling over them",
       "Because Joseph refuses to work in the fields alongside them and stays home with their father instead",
-      "Because Joseph reports them to Pharaoh for a crime",
+      "Because Joseph tells their father that they have been secretly keeping Laban's household gods",
       "Because Joseph is the firstborn and inherits everything"
     ],
     "correctIndex": 0,
@@ -663,8 +667,8 @@
     "options": [
       "He refuses, citing his loyalty to Potiphar and to God",
       "He gives in to avoid conflict",
-      "He reports her to Pharaoh immediately",
-      "He flees Egypt entirely"
+      "He agrees to meet her later but flees the country before the appointed time",
+      "He asks Potiphar to transfer him to the fields, away from the house"
     ],
     "correctIndex": 0,
     "citation": {
@@ -865,7 +869,7 @@
       "He crosses his hands to place his right hand on the younger son, Ephraim, instead of the firstborn",
       "He refuses to bless either son",
       "He blesses only the firstborn, Manasseh, following the usual custom of blessing the oldest son first",
-      "He adopts both sons but blesses neither"
+      "He blesses both sons equally and gives each a double portion"
     ],
     "correctIndex": 0,
     "citation": {
@@ -945,7 +949,7 @@
       "He has Jacob embalmed and carries his body to Canaan to bury him with his fathers",
       "He buries Jacob right there in Egypt immediately, without any journey back to Canaan at all",
       "He builds a monument to Jacob in Goshen",
-      "He sends Jacob's body back with an Egyptian escort but does not go himself"
+      "He buries Jacob in Goshen among the Israelites until they can return to Canaan"
     ],
     "correctIndex": 0,
     "citation": {
@@ -974,7 +978,7 @@
     "id": "qz-62",
     "book": "genesis",
     "category": "argument",
-    "prompt": "In Genesis, what does the angel of the LORD stop Abraham from doing at the last moment on Mount Moriah?",
+    "prompt": "In Genesis, what does the angel of the LORD stop Abraham from doing at the last moment on the mountain in the land of Moriah?",
     "options": [
       "Plunging the knife into Isaac",
       "Lighting the altar fire",
