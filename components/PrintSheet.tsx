@@ -10,6 +10,7 @@ const PRINT_SEED = "print-v1";
 
 function answerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
+  if ("answer" in item) return item.answer;
   if ("correctChapter" in item) return formatCitation({ book: item.citation.book, chapter: item.correctChapter });
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join("; ");
@@ -54,6 +55,7 @@ export default function PrintSheet({
                 {item.options.map((opt) => <li key={opt}>☐ {opt}</li>)}
               </ul>
             )}
+            {"answer" in item && <p style={{ paddingLeft: "1rem", marginTop: "0.3rem" }}>Answer: ____________________</p>}
             {/* Sequence and match items used to print as a bare prompt with
                 nothing to order or match — unanswerable on paper. */}
             {"displayItems" in item && (

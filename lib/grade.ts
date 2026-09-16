@@ -130,3 +130,21 @@ export function gradeFreeResponse(grading: GradingTerms, rawAnswer: string): Gra
     grading.titleTerms.length > 0 && grading.titleTerms.every((t) => termPresent(answerWords, t));
   return { correct: matchedTerms >= grading.minTerms || restatesTitle, matchedTerms, totalTerms };
 }
+
+/** Words a player shouldn't have to type to get a short answer right. Number
+ * words stay, unlike STOPWORDS above: "three" is the whole answer to "how many
+ * times does Peter deny Jesus". */
+const SHORT_ANSWER_STOPWORDS = new Set(["a", "an", "the", "of", "in", "on", "at", "to", "and", "or"]);
+
+/** Grading terms for an authored short-answer question: one phrase term per
+ * accepted answer (the answer itself plus each alias), with articles and
+ * prepositions dropped so "Lord of the Sabbath" doesn't require "the". Grade
+ * with `{ terms, minTerms: 1, titleTerms: [] }` — any one phrase fully present
+ * in the typed text is correct. */
+export function shortAnswerTerms(answer: string, aliases: string[]): string[] {
+  return [answer, ...aliases].map((phrase) => {
+    const words = normalizeWords(phrase);
+    const kept = words.filter((w) => !SHORT_ANSWER_STOPWORDS.has(w));
+    return (kept.length ? kept : words).join(" ");
+  });
+}

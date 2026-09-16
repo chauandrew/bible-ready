@@ -404,6 +404,55 @@ distractor should be a complete, plausible-sounding wrong answer, not "he
 refuses to say" three words long next to a correct answer three sentences
 long.
 
+**Distractors must be believable to someone who has read the book once.**
+The length gate above only catches the *pattern*; each question still has
+to earn its wrong answers:
+- Same kind and shape as the correct answer: a person for a person, a place
+  for a place, a number for a number, an action for an action, in the same
+  grammatical form and roughly the same length.
+- In-world: every distractor is a real name, place, event, or phrase from the
+  same book, ideally the same arc, so nothing can be eliminated as "never
+  heard of it". Numbers come from nearby or biblically loaded values (7, 12,
+  40, 70), not arbitrary ones.
+- Built from real confusions: what happened to a *different* character, what
+  happened in the neighboring chapter, the reverse of what happened (swap who
+  does what to whom), the popular misconception (a whale swallowed Jonah,
+  three wise men, Eve's apple), or the parallel account's detail (Mark's
+  wording in a Matthew question).
+- False as stated, verified against the text. The adversarial review reads
+  every distractor for accidental truth, partial truth, or "arguably also
+  correct"; one such option makes the question unfair, not hard.
+- No comic or absurd options, no "all/none of the above", no absolutes, no
+  option the prompt's own wording rules out, no two options that differ by a
+  single word.
+- The test: cover the correct answer and ask whether a reader who
+  half-remembers the book would plausibly pick each of the others. A
+  giveaway gets replaced, not padded.
+
+**Authored questions come in two formats, and a quiz mixes them without a
+toggle.** `AuthoredQuestionSchema` (`content/schema.ts`) is a union: the
+multiple-choice form (`options` + `correctIndex`, unchanged) and a
+short-answer form (`format: "short-answer"`, `answer`, optional `aliases`)
+that the player types into a single-line input. Short answer is for a fact
+whose answer is one or two words (a name, a place, a number, a title): the
+typed text must contain every significant word of `answer` or of one alias,
+typo-tolerant, articles and prepositions dropped (`lib/grade.ts`'s
+`shortAnswerTerms`, graded through the same `gradeFreeResponse` the chapter
+free response uses, with `minTerms: 1`). `aliases` is for genuinely
+different ways to say the same thing ("3" for "three", "Cephas" for
+"Peter"), never for hedging. `check:content` errors on an answer over two
+significant words and on a prompt that only makes sense against options
+("which of these is not a fruit of the Spirit": almost anything isn't).
+Multiple choice stays the format for an answer that is a clause, or where
+recognizing the right description among plausible wrong ones is the point.
+Roughly a third of a new book's authored questions should be short answer.
+There is deliberately no "typed answers" setting: the spread of formats
+(short answer, multiple choice, the generated book-and-chapter guess, chapter
+free response, sequence, match) is the test, not a preference. The runtime
+item is `RuntimeAuthoredShortAnswer` (`kind: "authored", type:
+"short-answer"`), rendered by `ShortAnswerQuestion`, answered with the same
+`{ kind: "free-response", text }` `Answer` as the chapter free response.
+
 **ESV verses are individual and budget-tracked.** Quotes are single verses
 only (never a range), never two verses back-to-back in the same chapter (the
 Crossway grant is for individual verses, not passages), at most 25% of any

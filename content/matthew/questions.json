@@ -203,11 +203,11 @@
     "id": "matt-aq-21",
     "book": "matthew",
     "category": "character",
-    "prompt": "What title does Jesus claim for himself after healing a man's withered hand on the Sabbath?",
-    "options": ["Son of Abraham", "Lord of the Sabbath", "High Priest", "King of the Pharisees"],
-    "correctIndex": 1,
+    "prompt": "In Matthew, what title does Jesus claim for himself when the Pharisees object to his disciples plucking grain on the Sabbath?",
+    "format": "short-answer",
+    "answer": "Lord of the Sabbath",
     "citation": { "book": "matthew", "chapter": 12 },
-    "explanation": "Jesus declares that the Son of Man is lord of the Sabbath."
+    "explanation": "Jesus tells the Pharisees that the Son of Man is lord of the Sabbath."
   },
   {
     "id": "matt-aq-22",
@@ -413,9 +413,10 @@
     "id": "matt-aq-42",
     "book": "matthew",
     "category": "character",
-    "prompt": "How many times does Peter deny knowing Jesus before the rooster crows?",
-    "options": ["Once", "Twice", "Three times", "Four times"],
-    "correctIndex": 2,
+    "prompt": "In Matthew, how many times does Peter deny knowing Jesus before the rooster crows?",
+    "format": "short-answer",
+    "answer": "three",
+    "aliases": ["3"],
     "citation": { "book": "matthew", "chapter": 26 },
     "explanation": "Peter denies knowing Jesus three times before the rooster crows, then weeps bitterly."
   },

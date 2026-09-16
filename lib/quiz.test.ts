@@ -70,7 +70,7 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
   // Answer everything correctly except deliberately miss one MC item.
   let missedOne = false;
   const answers: Answer[] = items.map((item) => {
-    if (item.kind === "authored" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+    if ("correctIndex" in item) {
       if (!missedOne) {
         missedOne = true;
         return { itemId: item.id, kind: "mc", selectedIndex: (item.correctIndex + 1) % item.options.length };
@@ -293,4 +293,27 @@ test("tier: General mode draws only from general items, untagged books contribut
   const items = selectQuizMulti(sources, { seedStr: "t", targetCount: 25, tier: "general" });
   assert.ok(items.length > 0);
   assert.ok(items.every((i) => i.citation.book === "misc"));
+});
+
+test("short-answer authored items are typed, graded by contained words, and print/review their answer", () => {
+  const data = fixtureData();
+  const question: AuthoredQuestion = {
+    id: "sa1",
+    book: "genesis",
+    category: "character",
+    prompt: "In Genesis, where does Terah settle the family on the way to Canaan?",
+    format: "short-answer",
+    answer: "Haran",
+    aliases: [],
+    citation: { book: "genesis", chapter: 11 },
+  };
+  const items = selectQuiz(data, [question], { seedStr: "sa", targetCount: 3 });
+  const item = items.find((i) => i.id === "sa1");
+  assert.ok(item && "answer" in item && item.type === "short-answer");
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "free-response", text: "Haran" }), true);
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "free-response", text: "Ur of the Chaldeans" }), false);
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "mc", selectedIndex: 0 }), false);
+  assert.equal(pointsFor(item, { itemId: "sa1", kind: "free-response", text: "haran" }), 1);
+  assert.equal(correctAnswerText(item), "Haran");
+  assert.equal(userAnswerText(item, { itemId: "sa1", kind: "free-response", text: "Ur" }), "Ur");
 });

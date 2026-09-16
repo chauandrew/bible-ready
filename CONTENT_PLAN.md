@@ -86,8 +86,20 @@ Authored questions
   passages ("what do these two women have in common"), no "traditionally
   credited with" trivia. Breadth comes from asking many plain questions
   across the whole book, not from making each one clever.
-- Full-sentence, plausible distractors in the 1-2 Samuel style, not short
-  strawmen. The Galatians set gets rewritten (retro task).
+- Two formats, mixed automatically, no toggle: short answer (`format:
+  "short-answer"`, a 1-2 word `answer` plus `aliases`) for names, places,
+  numbers, titles; multiple choice for anything whose answer is a clause.
+  Roughly a third of a book's authored questions short answer. A prompt that
+  only works against options ("which of these is not...") is never short
+  answer; `check:content` errors on both misuses. Exemplars: `matt-aq-21`,
+  `matt-aq-42`.
+- "In what book and chapter does David kill Goliath?" already exists as the
+  generated chapter-guess item for every notable event; General mode
+  surfaces the famous ones once events are tagged.
+- Distractors follow DESIGN.md's "Distractors must be believable" rules:
+  same kind and shape, in-world, built from real confusions, false as
+  stated, no absurd or absolute options. The Galatians set gets rewritten
+  (retro task).
 - Explanation on every question: one sentence or a brief phrase.
 - Authorship only as the text itself claims (no "Paul wrote Hebrews"), no
   dating, no interpretive stances on Revelation or Daniel. Ask what the text
@@ -115,8 +127,9 @@ Process
   list modules? Decide at the first one.
 - Book id for the Song: `song-of-solomon` (ESV title) is assumed.
 - Any other reference resources beyond The Bible Project?
-- Typed (free-response) answers for authored questions: see the log entry
-  for 2026-09-16; decision pending.
+- Should the retro pass over existing books also convert eligible questions
+  (1-2 word answers, prompt stands alone) to short answer? Recommended: yes,
+  alongside the book-name prompt rewrite, since it's the same read-through.
 
 ## Conventions by genre
 
@@ -174,7 +187,9 @@ Author (in this order, `npm run check:content` after each file):
 5. `people.json`: only what events and quotes reference.
 6. `quotes.json`: people only, single verses, no two adjacent verses in a
    chapter, spoken words only, `tier` where famous.
-7. `questions.json`: about one per chapter, `tier` where famous.
+7. `questions.json`: about one per chapter, `tier` where famous, roughly a
+   third short answer (see the format rules above), distractors per
+   DESIGN.md's believability rules.
 8. `decks.json`: one per arc.
 9. `journeys.json` is out of scope (tracked as follow-ups).
 
@@ -231,9 +246,14 @@ the table row to `partial: chapters 1-N`, and note in the log what's left.
   length next to its neighbors.
 - Every prompt asks what happens. Every correct answer was checked against
   the ESV chapter, not memory.
-- Distractors: same grammatical shape and length band as the correct answer,
-  plausible to someone who half-remembers the book, never accidentally true.
-- No "all/none of the above", no two options that are both defensible.
+- Distractors: same kind, shape, and length band as the correct answer;
+  in-world; built from real confusions (other character, neighboring chapter,
+  reversed roles, popular misconception); never accidentally or partially
+  true. No "all/none of the above", no absurd options, no two options that
+  are both defensible. Cover the answer: would a half-remembering reader pick
+  each wrong option?
+- Short answers: 1-2 significant words, prompt stands alone without options,
+  aliases only for real alternates (numerals, alternate names).
 - ESV spellings and names; "the LORD" as written.
 - Tier, calibrated on the labeled set below (Andrew, 2026-09-16): `general`
   is any plain plot-level fact, including what a named minor character does
@@ -427,4 +447,6 @@ Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
   majority; deep is incidental detail, ritual mechanics, synthesis, trivia).
   New prompt conventions: name the book, keep it plain. `check:content`'s
   chapter-leak rule now exempts `selection` books. Retro tasks added for
-  existing prompts. Andrew asked about typed answers for authored questions.
+  existing prompts. Short-answer authored format added (no toggle; formats
+  mix automatically), with `matt-aq-21`/`matt-aq-42` converted as exemplars.
+  Distractor believability rules written into DESIGN.md.

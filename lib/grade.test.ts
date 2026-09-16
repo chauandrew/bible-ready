@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { join } from "node:path";
-import { deriveGradingTerms, gradeFreeResponse } from "./grade";
+import { deriveGradingTerms, gradeFreeResponse, shortAnswerTerms } from "./grade";
 import { ChapterSchema, type Chapter } from "../content/schema";
 
 // Exercise the grader against real authored data (Genesis 22 and 37) rather
@@ -156,4 +156,18 @@ test("deriveGradingTerms pulls in an alias not present in title or summary", () 
   const result = gradeFreeResponse(terms, "It's Palm Sunday, when Jesus enters Jerusalem");
   assert.equal(result.correct, false); // "jerusalem" alone isn't a derived term here
   assert.ok(result.matchedTerms >= 1); // but "palm sunday" and "jesus" do match
+});
+
+test("short answers: every significant word of the answer or of one alias, typo-tolerant, articles dropped", () => {
+  const grade = (answer: string, aliases: string[], typed: string) =>
+    gradeFreeResponse({ terms: shortAnswerTerms(answer, aliases), minTerms: 1, titleTerms: [] }, typed).correct;
+  assert.equal(grade("Haran", [], "haran"), true);
+  assert.equal(grade("Haran", [], "I think it was Harran"), true); // one-letter slip on a 5+ letter word
+  assert.equal(grade("Haran", [], "Ur"), false);
+  assert.equal(grade("three", ["3"], "3"), true); // number words are kept, unlike chapter grading
+  assert.equal(grade("three", ["3"], "three times"), true);
+  assert.equal(grade("three", ["3"], "twice"), false);
+  assert.equal(grade("Lord of the Sabbath", [], "lord of sabbath"), true); // "the" not required
+  assert.equal(grade("Lord of the Sabbath", [], "Lord"), false); // but every significant word is
+  assert.deepEqual(shortAnswerTerms("the", []), ["the"]); // an all-stopword answer keeps its words
 });

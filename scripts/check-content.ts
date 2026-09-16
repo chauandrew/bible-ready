@@ -3,7 +3,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { BookContentSchema } from "../content/schema";
 import { findAmbiguities } from "../lib/generate";
-import { deriveGradingTerms } from "../lib/grade";
+import { deriveGradingTerms, shortAnswerTerms } from "../lib/grade";
 
 /**
  * The one build gate for content. Fails loudly on anything that would ship a
@@ -273,7 +273,9 @@ function checkBook(bookId: string) {
   void chapterIds;
 
   // --- authored questions --------------------------------------------------
-  for (const q of questions) {
+  const mcQuestions = questions.filter((q) => "options" in q);
+  const shortAnswers = questions.filter((q) => "answer" in q);
+  for (const q of mcQuestions) {
     if (q.correctIndex < 0 || q.correctIndex >= q.options.length) {
       errors.push(`questions: "${q.id}" correctIndex out of range`);
     }
@@ -281,6 +283,27 @@ function checkBook(bookId: string) {
     if (new Set(normalizedOptions).size !== normalizedOptions.length) {
       errors.push(`questions: "${q.id}" has duplicate options`);
     }
+  }
+  // A short answer is graded by "does the typed text contain these words", so
+  // the answer must be short enough that containing it means knowing it, and
+  // the prompt must stand on its own — "which of these is not..." has no
+  // meaning without options ("banana" is not a fruit of the Spirit either).
+  for (const q of shortAnswers) {
+    const significant = shortAnswerTerms(q.answer, []).join(" ").split(" ").filter(Boolean).length;
+    if (significant > 2) {
+      errors.push(`questions: "${q.id}" short answer "${q.answer}" is ${significant} significant words; keep it to 1-2 or make it multiple choice`);
+    }
+    if (/\b(which of (these|the following)|not|except)\b/i.test(q.prompt)) {
+      errors.push(`questions: "${q.id}" short-answer prompt only makes sense against options ("${q.prompt.slice(0, 60)}")`);
+    }
+    const seen = new Set<string>();
+    for (const a of [q.answer, ...q.aliases]) {
+      const key = a.trim().toLowerCase();
+      if (seen.has(key)) errors.push(`questions: "${q.id}" repeats accepted answer "${a}"`);
+      seen.add(key);
+    }
+  }
+  for (const q of questions) {
     // Derived from the book rather than hardcoded to "genesis", so "In Psalm 23..."
     // is caught the same way "In Genesis 23..." is.
     // A "selection" book's chapters are famous *as* chapters (Psalm 23, Isaiah
@@ -333,7 +356,7 @@ function checkBook(bookId: string) {
   const answerWords = questions.map((q) => ({
     id: q.id,
     words: new Set(
-      q.options[q.correctIndex]
+      ("answer" in q ? q.answer : q.options[q.correctIndex])
         .toLowerCase()
         .replace(/[^a-z0-9 ]/g, "")
         .split(/\s+/)
@@ -360,14 +383,14 @@ function checkBook(bookId: string) {
   // longest one, a reader who knows nothing scores well by picking the longest.
   // Judged over the corpus, not per question — some answers are legitimately the
   // meatiest option; what must not hold is the *pattern*.
-  const longestIsCorrect = questions.filter((q) => {
+  const longestIsCorrect = mcQuestions.filter((q) => {
     const lengths = q.options.map((o) => o.length);
     const max = Math.max(...lengths);
     return lengths[q.correctIndex] === max && lengths.filter((l) => l === max).length === 1;
   }).length;
-  if (questions.length >= 10 && longestIsCorrect / questions.length > LENGTH_TELL_MAX) {
+  if (mcQuestions.length >= 10 && longestIsCorrect / mcQuestions.length > LENGTH_TELL_MAX) {
     errors.push(
-      `questions: the correct option is the single longest in ${longestIsCorrect}/${questions.length} questions (${((longestIsCorrect / questions.length) * 100).toFixed(0)}%) — over the ${LENGTH_TELL_MAX * 100}% ceiling, so "pick the longest" beats knowing the material`
+      `questions: the correct option is the single longest in ${longestIsCorrect}/${mcQuestions.length} questions (${((longestIsCorrect / mcQuestions.length) * 100).toFixed(0)}%) — over the ${LENGTH_TELL_MAX * 100}% ceiling, so "pick the longest" beats knowing the material`
     );
   }
 

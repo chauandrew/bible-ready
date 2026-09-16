@@ -224,19 +224,44 @@ export type Quote = z.infer<typeof QuoteSchema>;
 // Hand-authored thematic questions
 // ---------------------------------------------------------------------------
 
-export const AuthoredQuestionSchema = z.object({
+const authoredQuestionBase = {
   id: z.string(),
   book: BookIdSchema,
   category: z.enum(["theme", "arc", "covenant", "character", "argument"]),
   prompt: z.string(),
-  options: z.array(z.string()).min(2),
-  correctIndex: z.number().int().nonnegative(),
   citation: CitationSchema,
   /** Shown only after answering, in Study mode. Answer confirmation, not an essay. */
   explanation: z.string().optional(),
   tier: TierSchema.optional(),
+};
+
+export const AuthoredMcQuestionSchema = z.object({
+  ...authoredQuestionBase,
+  options: z.array(z.string()).min(2),
+  correctIndex: z.number().int().nonnegative(),
 });
+
+/**
+ * A typed answer instead of options, for a fact whose answer is one or two
+ * words (a name, a place, a number): "Where does Terah settle the family?"
+ * -> "Haran". Graded by lib/grade.ts's shortAnswerTerms: the typed text must
+ * contain every significant word of `answer` or of one alias (typo-tolerant),
+ * so `aliases` is for genuinely different ways to say the same thing ("3"
+ * for "three", "Cephas" for "Peter"), not for hedging. Not for anything that
+ * only makes sense against options ("which of these is not...") or whose
+ * answer is a clause. No `options` and no `format` means multiple choice.
+ */
+export const AuthoredShortAnswerQuestionSchema = z.object({
+  ...authoredQuestionBase,
+  format: z.literal("short-answer"),
+  answer: z.string().min(1),
+  aliases: z.array(z.string().min(1)).default([]),
+});
+
+export const AuthoredQuestionSchema = z.union([AuthoredShortAnswerQuestionSchema, AuthoredMcQuestionSchema]);
 export type AuthoredQuestion = z.infer<typeof AuthoredQuestionSchema>;
+export type AuthoredMcQuestion = z.infer<typeof AuthoredMcQuestionSchema>;
+export type AuthoredShortAnswerQuestion = z.infer<typeof AuthoredShortAnswerQuestionSchema>;
 
 // ---------------------------------------------------------------------------
 // Flashcard decks

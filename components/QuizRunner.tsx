@@ -6,7 +6,7 @@ import type { QuizItem, Answer } from "@/lib/quiz";
 import { scoreQuiz, gapReport, isCorrect, pointsFor, maxPointsFor, pointsColor, categorizeByBook, correctAnswerText, userAnswerText } from "@/lib/quiz";
 import { recordSession, clearMissed } from "@/lib/progress";
 import { formatCitation } from "@/lib/content";
-import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion } from "./QuestionTypes";
+import { McQuestion, SequenceQuestion, MatchQuestion, FreeResponseQuestion, ChapterGuessQuestion, ShortAnswerQuestion } from "./QuestionTypes";
 
 type Mode = "study" | "quiz";
 
@@ -222,6 +222,14 @@ export default function QuizRunner({
             onAnswer={handleAnswer}
             initialAnswer={existingAnswer?.kind === "chapter-guess" ? existingAnswer : undefined}
             singleBookId={singleBookId}
+          />
+        ) : item.type === "short-answer" ? (
+          <ShortAnswerQuestion
+            key={item.id}
+            item={item}
+            mode={mode}
+            onAnswer={handleAnswer}
+            initialAnswer={existingAnswer?.kind === "free-response" ? existingAnswer : undefined}
           />
         ) : (
           <FreeResponseQuestion
