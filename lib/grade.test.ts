@@ -170,4 +170,6 @@ test("short answers: every significant word of the answer or of one alias, typo-
   assert.equal(grade("Lord of the Sabbath", [], "lord of sabbath"), true); // "the" not required
   assert.equal(grade("Lord of the Sabbath", [], "Lord"), false); // but every significant word is
   assert.deepEqual(shortAnswerTerms("the", []), ["the"]); // an all-stopword answer keeps its words
+  assert.deepEqual(shortAnswerTerms("the LORD's anointed", []), ["lord anointed"]); // possessive debris dropped
+  assert.equal(grade("the LORD's anointed", [], "the Lord's anointed"), true);
 });

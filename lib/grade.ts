@@ -144,7 +144,8 @@ const SHORT_ANSWER_STOPWORDS = new Set(["a", "an", "the", "of", "in", "on", "at"
 export function shortAnswerTerms(answer: string, aliases: string[]): string[] {
   return [answer, ...aliases].map((phrase) => {
     const words = normalizeWords(phrase);
-    const kept = words.filter((w) => !SHORT_ANSWER_STOPWORDS.has(w));
+    // A lone letter is punctuation debris ("LORD's" normalizes to "lord s"), not a word to require.
+    const kept = words.filter((w) => !SHORT_ANSWER_STOPWORDS.has(w) && !/^[a-z]$/.test(w));
     return (kept.length ? kept : words).join(" ");
   });
 }
