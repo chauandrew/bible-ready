@@ -306,10 +306,10 @@ Code follow-ups, each with its trigger:
 
 ## Retro tasks (existing content)
 
-- [ ] Remove the 20 God/LORD-spoken quotes `check:content` warns on
-      (Genesis 10, Exodus 5, Matthew 2, 1 Samuel 2, 2 Samuel 1) and any
-      `god`/`the-lord` person entry nothing else references. Frees ~20
-      verses of budget.
+- [x] Remove the 20 God/LORD-spoken quotes (Genesis 10, Exodus 5, Matthew
+      2, 1 Samuel 2, 2 Samuel 1) and the one person entry nothing else
+      referenced (`1sam-god`). Corpus now quotes 115 of the 1,000-verse
+      cap; the gate is an error from here on (2026-09-16).
 - [x] Rewrite Galatians' authored distractors to full-sentence style
       (2026-09-16, with the short-answer pass).
 - [ ] Exodus: `quizWorthy` on chapters 1-14 (currently none), then author
@@ -455,4 +455,5 @@ Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
   converted to short answer, John and Galatians rewritten, Psalms prompts
   name the psalm, the four calibration rewrites done. One review agent per
   book (or pair) checked every answer, alias, distractor, and explanation
-  against the ESV afterward.
+  against the ESV afterward. The 20 God/LORD quotes were removed and that
+  gate became an error.

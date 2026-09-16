@@ -319,13 +319,12 @@ function checkBook(bookId: string) {
   // --- "who says this" is for people, not God -----------------------------
   // A quote spoken by God/the LORD makes a poor speaker question (in most
   // books it's the obvious answer) and the whole-Bible pool is meant to ask
-  // about people, Jesus included. Warned, not failed: the existing books
-  // predate the rule — see CONTENT_PLAN.md's retro tasks.
+  // about people, Jesus included. See CONTENT_PLAN.md.
   const personById = new Map(people.map((p) => [p.id, p]));
   for (const q of quotes) {
     const name = personById.get(q.speakerId)?.name ?? "";
     if (/^(god|the lord|lord)$/i.test(name.trim())) {
-      warnings.push(`quotes: "${q.id}" is spoken by ${name}; speaker questions are for people only, so this quote should go`);
+      errors.push(`quotes: "${q.id}" is spoken by ${name}; speaker questions are for people only`);
     }
   }
 

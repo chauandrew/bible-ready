@@ -463,10 +463,10 @@ no-op for a new book. `CONTENT_PLAN.md` budgets the 1,000 across books.
 
 **"Who says this" is for people only, Jesus included.** A quote spoken by God
 or the LORD is the obvious answer in most books and isn't the kind of fact the
-speaker question is for; `check:content` warns on any quote whose speaker is
-named `God`/`the LORD`. The existing books predate this rule (20 such quotes
-across Genesis, Exodus, Matthew, 1-2 Samuel); their removal is a retro task in
-`CONTENT_PLAN.md`, which is why it's a warning and not an error yet.
+speaker question is for; `check:content` fails on any quote whose speaker is
+named `God`/`the LORD`. The 20 such quotes the original books carried were
+removed in the phase-0 pass; a `Person` entry for God stays where events still
+reference it (Genesis, Exodus, Matthew, 2 Samuel), it just can't speak a quote.
 
 **`Chapter.quizWorthy` gates the free-response question type**
 ("what happens in chapter N?"). Not every chapter deserves this treatment —
