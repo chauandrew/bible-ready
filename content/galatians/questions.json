@@ -97,7 +97,7 @@
     "id": "gal-aq-10",
     "book": "galatians",
     "category": "character",
-    "prompt": "In Paul's allegory in Galatians, whom does Hagar represent?",
+    "prompt": "In Paul's allegory in Galatians, what does Hagar represent?",
     "options": ["The covenant from Mount Sinai that bears children for slavery", "The free woman who stands for the Jerusalem above, our mother", "The church made up of Jew and Gentile together, born according to the Spirit", "The promise given to Abraham before the law came"],
     "correctIndex": 0,
     "citation": { "book": "galatians", "chapter": 4 },
@@ -110,7 +110,7 @@
     "prompt": "In Galatians, what two words does Paul use for the elementary principles the Galatians want to turn back to?",
     "format": "short-answer",
     "answer": "weak and worthless",
-    "aliases": ["weak and beggarly"],
+    "aliases": ["weak and beggarly", "weak and miserable"],
     "citation": { "book": "galatians", "chapter": 4 },
     "explanation": "Paul asks how they can turn back again to the weak and worthless elementary principles of the world."
   },

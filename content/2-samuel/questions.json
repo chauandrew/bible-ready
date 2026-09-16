@@ -38,7 +38,7 @@
       "Zion",
       "Jebus"
     ],
-    "citation": { "book": "2-samuel", "chapter": 7 },
+    "citation": { "book": "2-samuel", "chapter": 5 },
     "explanation": "David takes the stronghold of Zion from the Jebusites and it becomes the city of David."
   },
   {
@@ -89,7 +89,7 @@
     "category": "arc",
     "prompt": "In 2 Samuel, what events mark the closing chapters of David's reign?",
     "options": [
-      "David conquers Egypt and divides his kingdom among his twelve sons",
+      "Absalom's rebellion flares up a second time, David marries Abishag, and Joab is executed for killing Amasa",
       "David retires from public life and Joab rules as regent for ten years",
       "The ark is lost in battle and never recovered for the rest of David's reign",
       "Sheba's revolt is crushed, the Gibeonites are avenged, David sings songs of praise, and a census brings a plague that ends at Araunah's threshing floor"
@@ -297,7 +297,7 @@
       "David's sons all die of illness one after another",
       "David's own sons commit violent crimes against each other and against him",
       "David's sons unite to defend him against every outside enemy",
-      "David's daughters take over leadership of the army"
+      "David's sons take turns commanding the army against the Ammonites and the Arameans"
     ],
     "correctIndex": 1,
     "citation": { "book": "2-samuel", "chapter": 13 }
@@ -314,7 +314,7 @@
       "To pay Araunah for the threshing floor rather than accept it as a gift"
     ],
     "correctIndex": 0,
-    "citation": { "book": "2-samuel", "chapter": 20 },
+    "citation": { "book": "2-samuel", "chapter": 14 },
     "explanation": "Joab sends the woman with a made-up story about her two sons, and David, having judged it, agrees to bring Absalom home."
   },
   {

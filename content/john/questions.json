@@ -23,7 +23,8 @@
     "format": "short-answer",
     "answer": "living water",
     "aliases": [
-      "water"
+      "water",
+      "eternal life"
     ],
     "citation": {
       "book": "john",
@@ -211,7 +212,7 @@
     "options": [
       "It is better for one man to die for the people than for the whole nation to perish",
       "Jesus should be handed to the Romans, since only they can carry out a death sentence",
-      "Lazarus should be killed as well, since so many believe because of him",
+      "Jesus should be brought before the council to answer for calling himself the Son of God",
       "Jesus should be arrested only after the Passover, to avoid a riot among the crowds"
     ],
     "correctIndex": 0,
@@ -235,7 +236,7 @@
     "correctIndex": 0,
     "citation": {
       "book": "john",
-      "chapter": 18
+      "chapter": 19
     },
     "explanation": "Three times Pilate says he finds no guilt in Jesus, then delivers him over when the crowd invokes Caesar."
   },

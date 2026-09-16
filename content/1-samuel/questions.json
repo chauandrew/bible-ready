@@ -65,7 +65,7 @@
     "category": "arc",
     "prompt": "In 1 Samuel, how does David's standing in Saul's house change between his anointing and his flight into the wilderness?",
     "options": [
-      "He starts as Saul's trusted armor-bearer and ends up exiled from Israel entirely by royal decree",
+      "He is brought to court as Saul's cupbearer and stays at Saul's side as his most trusted commander until Saul's death",
       "He is anointed in secret, kills Goliath, becomes Jonathan's close friend, and ends up fleeing for his life from a jealous Saul",
       "He is rejected by Saul from the very beginning and never once enters his court",
       "He marries Michal right away and is named Saul's official successor by a public vote"
@@ -97,12 +97,12 @@
     "options": [
       "He wins one final decisive battle against the Philistines before dying peacefully of old age",
       "He is crowned a second time by Samuel's spirit before leading Israel to a great victory",
-      "He consults a medium because the LORD will not answer him, is turned away by David's Philistine allies, and is fatally wounded before taking his own life",
+      "He consults a medium because the LORD will not answer him, hears from Samuel's spirit that he and his sons will die, and is fatally wounded before taking his own life",
       "He abdicates the throne to David in a public ceremony and retires quietly to Gibeah"
     ],
     "correctIndex": 2,
     "citation": { "book": "1-samuel", "chapter": 28 },
-    "explanation": "Saul seeks out the medium of Endor, is sent home by the Philistine commanders who distrust David, and dies by his own sword at Mount Gilboa."
+    "explanation": "Saul seeks out the medium of En-dor, hears Samuel's spirit pronounce his death, and falls on his own sword at Mount Gilboa."
   },
   {
     "id": "1sam-aq-character-1",
@@ -144,7 +144,8 @@
     "aliases": [
       "supplies",
       "luggage",
-      "equipment"
+      "equipment",
+      "stuff"
     ],
     "citation": { "book": "1-samuel", "chapter": 10 },
     "explanation": "The LORD reveals that Saul has hidden himself among the baggage, and the people run to bring him out."
@@ -239,7 +240,9 @@
     "aliases": [
       "died",
       "death",
-      "neck"
+      "neck",
+      "falls",
+      "fell"
     ],
     "citation": { "book": "1-samuel", "chapter": 4 },
     "explanation": "At the news of the ark, Eli falls backward from his seat, breaks his neck, and dies."
@@ -283,7 +286,7 @@
       "Their sons for his army and chariots, their daughters for his household, and a tenth of their grain, flocks, and produce",
       "Only a small yearly payment in silver from every family in the land",
       "Nothing at all, since Samuel only warns them about foreign kings, not their own",
-      "Their homes and land outright, forcing every family to become tenant farmers"
+      "Their firstborn sons as hostages, held at the king's court until each family pays a ransom in silver"
     ],
     "correctIndex": 0,
     "citation": { "book": "1-samuel", "chapter": 8 },
@@ -424,7 +427,7 @@
     "prompt": "In 1 Samuel, what does Jonathan ask David to promise regarding his family when he renews their covenant?",
     "options": [
       "That David will never take the throne of Israel for himself",
-      "That David will not remove Jonathan's descendants from his household even after Jonathan is gone",
+      "That David will never cut off his steadfast love from Jonathan's house, even when the LORD has cut off David's enemies",
       "That David will marry one of Jonathan's daughters someday",
       "That David will let Jonathan rule as co-king once he becomes king"
     ],
@@ -451,7 +454,7 @@
     "id": "1sam-aq-covenant-4",
     "book": "1-samuel",
     "category": "covenant",
-    "prompt": "In 1 Samuel, what do David and Jonathan do right after their final meeting, once they know Saul intends to kill David?",
+    "prompt": "In 1 Samuel, what do David and Jonathan do when they part after the arrow signal, once they know Saul intends to kill David?",
     "options": [
       "They fight one last battle together before finally going their separate ways",
       "They weep together and part after renewing their covenant one more time",
@@ -460,7 +463,7 @@
     ],
     "correctIndex": 1,
     "citation": { "book": "1-samuel", "chapter": 20 },
-    "explanation": "David and Jonathan weep together and renew their covenant one final time before David leaves to live as a fugitive."
+    "explanation": "David and Jonathan weep together and renew their covenant before David leaves to live as a fugitive."
   },
   {
     "id": "1sam-aq-theme-10",
