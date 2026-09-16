@@ -3,7 +3,7 @@
     "id": "2sam-aq-arc-1",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What does David do to the man who claims he killed the wounded Saul?",
+    "prompt": "In 2 Samuel, what does David do to the man who claims he killed the wounded Saul?",
     "options": [
       "He sends him back to the Amalekite camp with orders never to return to Israelite territory",
       "He has him executed for killing the LORD's anointed",
@@ -17,7 +17,7 @@
     "id": "2sam-aq-arc-2",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "How does the war between the house of Saul and the house of David finally end?",
+    "prompt": "In 2 Samuel, how does the war between the house of Saul and the house of David finally end?",
     "options": [
       "David personally defeats Ish-bosheth in single combat outside Mahanaim",
       "The two sides sign a lasting peace treaty and agree to divide the kingdom permanently between them, with both men ruling as co-kings",
@@ -31,21 +31,21 @@
     "id": "2sam-aq-arc-3",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What three things does David accomplish early in his reign as king over all Israel?",
-    "options": [
-      "He conquers Egypt, marries a foreign princess, and moves the capital to Hebron permanently",
-      "He captures Jerusalem, brings the ark into the city, and receives God's promise of an everlasting dynasty through Nathan",
-      "He builds the temple, appoints twelve judges, and divides the land among the tribes",
-      "He disbands his army, retires to Bethlehem, and hands the kingdom to Nathan"
+    "prompt": "In 2 Samuel, what city does David capture from the Jebusites and make his capital?",
+    "format": "short-answer",
+    "answer": "Jerusalem",
+    "aliases": [
+      "Zion",
+      "Jebus"
     ],
-    "correctIndex": 1,
-    "citation": { "book": "2-samuel", "chapter": 7 }
+    "citation": { "book": "2-samuel", "chapter": 7 },
+    "explanation": "David takes the stronghold of Zion from the Jebusites and it becomes the city of David."
   },
   {
     "id": "2sam-aq-arc-4",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What does David do for Mephibosheth, and why?",
+    "prompt": "In 2 Samuel, what does David do for Mephibosheth, and why?",
     "options": [
       "He exiles him permanently to Lo-debar to remove any possible rival claim to the throne for the rest of his natural life",
       "He puts him in charge of the army because of his father's reputation",
@@ -59,7 +59,7 @@
     "id": "2sam-aq-arc-5",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What happens after Nathan confronts David about Bathsheba and Uriah?",
+    "prompt": "In 2 Samuel, what happens after Nathan confronts David about Bathsheba and Uriah?",
     "options": [
       "David immediately abdicates the throne to Solomon out of guilt",
       "David confesses his sin, but the child born to Bathsheba still dies, though she and David later have Solomon",
@@ -73,7 +73,7 @@
     "id": "2sam-aq-arc-6",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What chain of events leads to Absalom's rebellion against his father?",
+    "prompt": "In 2 Samuel, what chain of events leads to Absalom's rebellion against his father?",
     "options": [
       "David publicly disowns Absalom in front of the entire royal court after he loses an important battle against the Philistines and their Ammonite allies",
       "Joab convinces Absalom that David plans to have him killed",
@@ -87,7 +87,7 @@
     "id": "2sam-aq-arc-7",
     "book": "2-samuel",
     "category": "arc",
-    "prompt": "What events mark the closing chapters of David's reign?",
+    "prompt": "In 2 Samuel, what events mark the closing chapters of David's reign?",
     "options": [
       "David conquers Egypt and divides his kingdom among his twelve sons",
       "David retires from public life and Joab rules as regent for ten years",
@@ -101,23 +101,22 @@
     "id": "2sam-aq-character-1",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "Why does Joab kill Abner, even after David has made peace with him?",
-    "options": [
-      "Because Abner had publicly insulted Joab and his family in front of the elders gathered at Hebron",
-      "To avenge his brother Asahel, whom Abner had killed in battle",
-      "Because David secretly ordered Joab to kill him",
-      "To prevent Abner from becoming king over Israel himself"
+    "prompt": "In 2 Samuel, whose death is Joab avenging when he kills Abner, even after David has made peace with him?",
+    "format": "short-answer",
+    "answer": "Asahel",
+    "aliases": [
+      "his brother"
     ],
-    "correctIndex": 1,
-    "citation": { "book": "2-samuel", "chapter": 3 }
+    "citation": { "book": "2-samuel", "chapter": 3 },
+    "explanation": "Abner had killed Joab's brother Asahel in battle at Gibeon; Joab stabs Abner at the gate of Hebron."
   },
   {
     "id": "2sam-aq-character-2",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "What does Michal do that gets her rebuked by David?",
+    "prompt": "In 2 Samuel, what does Michal do that gets her rebuked by David?",
     "options": [
-      "She refuses to let the ark be brought into Jerusalem at all",
+      "She refuses to let the ark be brought into Jerusalem until the priests carry it on poles as the law requires",
       "She tries to warn Saul about David's plans to seize the throne",
       "She secretly meets with Absalom during the rebellion years later",
       "She despises him in her heart and mocks him for dancing before the ark"
@@ -129,7 +128,7 @@
     "id": "2sam-aq-character-3",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "How does David react when Nathan tells him the story about the rich man and the poor man's lamb?",
+    "prompt": "In 2 Samuel, how does David react when Nathan tells him the story about the rich man and the poor man's lamb?",
     "options": [
       "He immediately recognizes the story is about himself and confesses on the spot",
       "He dismisses the story as irrelevant and sends Nathan away",
@@ -143,7 +142,7 @@
     "id": "2sam-aq-character-4",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "What does Uriah say when David tries to send him home to his wife?",
+    "prompt": "In 2 Samuel, what does Uriah say when David tries to send him home to his wife?",
     "options": [
       "He accuses David directly of taking his wife while he was away fighting and demands the matter be brought before the elders",
       "He says he no longer wants to be married to Bathsheba",
@@ -157,7 +156,7 @@
     "id": "2sam-aq-character-5",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "How does Absalom take revenge on Amnon for what he did to Tamar?",
+    "prompt": "In 2 Samuel, how does Absalom take revenge on Amnon for what he did to Tamar?",
     "options": [
       "He challenges Amnon to single combat in front of the whole court",
       "He waits two years, then has his servants kill Amnon at a feast once he is drunk",
@@ -171,7 +170,7 @@
     "id": "2sam-aq-character-6",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "Why does Ahithophel hang himself?",
+    "prompt": "In 2 Samuel, why does Ahithophel hang himself?",
     "options": [
       "Because David captures him and sentences him to death",
       "Because Absalom accuses him of plotting against him personally",
@@ -185,7 +184,7 @@
     "id": "2sam-aq-character-7",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "Why does Joab kill Absalom even though David ordered his men to spare him?",
+    "prompt": "In 2 Samuel, why does Joab kill Absalom even though David ordered his men to spare him?",
     "options": [
       "Absalom attacks Joab first and Joab kills him in self-defense",
       "Joab sees Absalom trapped and helpless in a tree and decides the rebellion must end for good",
@@ -199,7 +198,7 @@
     "id": "2sam-aq-character-8",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "What does Ittai say when David tells him he is free to stay behind instead of following him into exile?",
+    "prompt": "In 2 Samuel, what does Ittai say when David tells him he is free to stay behind instead of following him into exile?",
     "options": [
       "He asks for payment before agreeing to follow David",
       "He says he will only follow David if Absalom is defeated first and the throne is fully secured for David's line",
@@ -213,10 +212,10 @@
     "id": "2sam-aq-character-9",
     "book": "2-samuel",
     "category": "character",
-    "prompt": "What does David do when he finally has the chance to punish Shimei, who cursed him during his flight from Jerusalem?",
+    "prompt": "In 2 Samuel, what does David do when he finally has the chance to punish Shimei, who cursed him during his flight from Jerusalem?",
     "options": [
       "He has Shimei executed immediately upon returning to Jerusalem",
-      "He exiles Shimei from Israel permanently",
+      "He banishes Shimei to Bahurim for the rest of his life, forbidding him ever to enter Jerusalem again",
       "He spares Shimei's life when he begs for mercy after David returns to power",
       "He forces Shimei to become his personal servant for life"
     ],
@@ -227,7 +226,7 @@
     "id": "2sam-aq-theme-1",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What does David say when Nathan confronts him, instead of trying to hide what he did?",
+    "prompt": "In 2 Samuel, what does David say when Nathan confronts him, instead of trying to hide what he did?",
     "options": [
       "He blames Bathsheba for the whole situation",
       "He orders Nathan to be put to death for the accusation",
@@ -241,7 +240,7 @@
     "id": "2sam-aq-theme-2",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What does David do each time the Philistines attack him early in his reign?",
+    "prompt": "In 2 Samuel, what does David do each time the Philistines attack him early in his reign?",
     "options": [
       "He waits for Nathan to give him a sign",
       "He inquires of the LORD before going out to fight",
@@ -255,7 +254,7 @@
     "id": "2sam-aq-theme-3",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What does David refuse to do when Araunah offers him the threshing floor and oxen for free?",
+    "prompt": "In 2 Samuel, what does David refuse to do when Araunah offers him the threshing floor and oxen for free?",
     "options": [
       "He refuses to build an altar there at all",
       "He refuses to let Gad choose the exact location for the altar without personally inspecting the site first",
@@ -269,7 +268,7 @@
     "id": "2sam-aq-theme-4",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "How does David treat Saul's family after becoming king, based on what he does for Mephibosheth and how he handles Shimei?",
+    "prompt": "In 2 Samuel, how does David treat Saul's family after becoming king?",
     "options": [
       "He hunts down every remaining member of Saul's family to secure his throne",
       "He shows unexpected kindness and restraint toward Saul's household rather than taking revenge on them",
@@ -283,21 +282,17 @@
     "id": "2sam-aq-theme-5",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What do Nathan and Gad both do for David at different points in this book?",
-    "options": [
-      "Both anoint David as king in a public ceremony",
-      "Both lead David's armies into battle against the Ammonites",
-      "Both confront David about a sin and deliver God's judgment or a choice of consequences",
-      "Both are killed for opposing David's decisions"
-    ],
-    "correctIndex": 2,
-    "citation": { "book": "2-samuel", "chapter": 24 }
+    "prompt": "In 2 Samuel, which prophet gives David a choice of three punishments after his census of Israel?",
+    "format": "short-answer",
+    "answer": "Gad",
+    "citation": { "book": "2-samuel", "chapter": 24 },
+    "explanation": "The prophet Gad offers David three years of famine, three months of fleeing, or three days of pestilence."
   },
   {
     "id": "2sam-aq-theme-6",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What keeps happening within David's own family in the chapters after Bathsheba, starting with Amnon and Tamar?",
+    "prompt": "In 2 Samuel, what keeps happening within David's own family in the chapters after Bathsheba, starting with Amnon and Tamar?",
     "options": [
       "David's sons all die of illness one after another",
       "David's own sons commit violent crimes against each other and against him",
@@ -311,21 +306,22 @@
     "id": "2sam-aq-theme-7",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What do the wise woman of Tekoa and the wise woman of Abel Beth-maacah have in common?",
+    "prompt": "In 2 Samuel, what does the wise woman of Tekoa persuade David to do?",
     "options": [
-      "Both are prophets who predict the future for David",
-      "Both refuse to help David or his commanders",
-      "Both are distant relatives of Joab who approach him privately before ever speaking with the king himself",
-      "Both are ordinary women whose words change the outcome of a conflict involving the king"
+      "To bring Absalom back from his exile in Geshur",
+      "To spare Joab's life after he kills Abner at Hebron",
+      "To choose Solomon as his heir instead of Adonijah",
+      "To pay Araunah for the threshing floor rather than accept it as a gift"
     ],
-    "correctIndex": 3,
-    "citation": { "book": "2-samuel", "chapter": 20 }
+    "correctIndex": 0,
+    "citation": { "book": "2-samuel", "chapter": 20 },
+    "explanation": "Joab sends the woman with a made-up story about her two sons, and David, having judged it, agrees to bring Absalom home."
   },
   {
     "id": "2sam-aq-theme-8",
     "book": "2-samuel",
     "category": "theme",
-    "prompt": "What does Nathan accomplish by telling David the story about the rich man and the poor man's lamb, instead of accusing him outright?",
+    "prompt": "In 2 Samuel, what does Nathan accomplish by telling David the story about the rich man and the poor man's lamb, instead of accusing him outright?",
     "options": [
       "He teaches David a general lesson about caring for livestock",
       "He warns David about an actual dispute between two of his officials",
@@ -339,21 +335,20 @@
     "id": "2sam-aq-covenant-1",
     "book": "2-samuel",
     "category": "covenant",
-    "prompt": "What does David want to do for the LORD before Nathan tells him God has a different plan?",
-    "options": [
-      "Move the ark permanently to Hebron instead of bringing it all the way to Jerusalem as originally planned",
-      "Appoint Nathan as the new high priest",
-      "Build a second altar next to the one Moses built",
-      "Build the LORD a permanent house instead of the tent the ark had been kept in"
+    "prompt": "In 2 Samuel, what does David want to build for the LORD before Nathan tells him God has a different plan?",
+    "format": "short-answer",
+    "answer": "a house",
+    "aliases": [
+      "temple"
     ],
-    "correctIndex": 3,
-    "citation": { "book": "2-samuel", "chapter": 7 }
+    "citation": { "book": "2-samuel", "chapter": 7 },
+    "explanation": "David wants to build the LORD a house of cedar instead of the tent the ark rests in."
   },
   {
     "id": "2sam-aq-covenant-2",
     "book": "2-samuel",
     "category": "covenant",
-    "prompt": "What does God promise David through Nathan instead of letting David build him a house?",
+    "prompt": "In 2 Samuel, what does God promise David through Nathan instead of letting David build him a house?",
     "options": [
       "That David will live to see Solomon crowned king with his own eyes",
       "That the ark will never again leave Jerusalem",
@@ -367,7 +362,7 @@
     "id": "2sam-aq-covenant-3",
     "book": "2-samuel",
     "category": "covenant",
-    "prompt": "According to Nathan's message, what will happen to a future descendant of David who commits iniquity?",
+    "prompt": "In 2 Samuel, according to Nathan's message, what will happen to a future descendant of David who commits iniquity?",
     "options": [
       "He will be immediately removed from the throne and replaced",
       "God will discipline him like a father disciplines a son, but his steadfast love will not depart from him the way it departed from Saul",
@@ -381,7 +376,7 @@
     "id": "2sam-aq-covenant-4",
     "book": "2-samuel",
     "category": "covenant",
-    "prompt": "How does David respond after Nathan delivers God's covenant promise to him?",
+    "prompt": "In 2 Samuel, how does David respond after Nathan delivers God's covenant promise to him?",
     "options": [
       "He immediately begins construction on the temple despite what Nathan said",
       "He questions whether Nathan really heard from God",
@@ -390,5 +385,20 @@
     ],
     "correctIndex": 3,
     "citation": { "book": "2-samuel", "chapter": 7 }
+  },
+  {
+    "id": "2sam-aq-theme-9",
+    "book": "2-samuel",
+    "category": "theme",
+    "prompt": "In 2 Samuel, how does the wise woman of Abel of Beth-maacah end Joab's siege of her city?",
+    "options": [
+      "She has the people cut off Sheba's head and throw it over the wall to Joab",
+      "She persuades Joab to negotiate a truce with Sheba face to face",
+      "She opens the gates and surrenders the city and Sheba together",
+      "She hides Sheba in the city and swears to Joab that he slipped out at night and fled toward the Jordan"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "2-samuel", "chapter": 20 },
+    "explanation": "Joab wants only Sheba, so the woman has the city throw his head over the wall and Joab withdraws."
   }
 ]
