@@ -3,7 +3,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { BookContentSchema } from "../content/schema";
 import { findAmbiguities } from "../lib/generate";
-import { deriveGradingTerms } from "../lib/grade";
+import { deriveGradingTerms, shortAnswerTerms } from "../lib/grade";
 
 /**
  * The one build gate for content. Fails loudly on anything that would ship a
@@ -17,26 +17,37 @@ const errors: string[] = [];
  * question from, so nothing broken ships — it just isn't pulling its weight. */
 const warnings: string[] = [];
 
-// Standard ESV verse counts per book (versification matches KJV/ESV for
-// nearly all books). Only books actually present in content/ are checked;
-// this is deliberately not filled out for all 66 until they're needed.
+// Verse counts per book (standard KJV/ESV versification; the ESV differs by a
+// verse or two in a handful of books, which the 25% budget below absorbs).
+// Filled out for all 66 so a new book's percentage check can never silently
+// no-op — see CONTENT_PLAN.md.
 const VERSE_COUNTS: Record<string, number> = {
-  genesis: 1533,
-  exodus: 1213,
-  psalms: 2461,
-  john: 879,
-  "1-samuel": 810,
-  "2-samuel": 695,
-  ezra: 280,
-  galatians: 149,
-  matthew: 1071,
+  genesis: 1533, exodus: 1213, leviticus: 859, numbers: 1288, deuteronomy: 959,
+  joshua: 658, judges: 618, ruth: 85, "1-samuel": 810, "2-samuel": 695,
+  "1-kings": 816, "2-kings": 719, "1-chronicles": 942, "2-chronicles": 822,
+  ezra: 280, nehemiah: 406, esther: 167, job: 1070, psalms: 2461, proverbs: 915,
+  ecclesiastes: 222, "song-of-solomon": 117, isaiah: 1292, jeremiah: 1364,
+  lamentations: 154, ezekiel: 1273, daniel: 357, hosea: 197, joel: 73, amos: 146,
+  obadiah: 21, jonah: 48, micah: 105, nahum: 47, habakkuk: 56, zephaniah: 53,
+  haggai: 38, zechariah: 211, malachi: 55,
+  matthew: 1071, mark: 678, luke: 1151, john: 879, acts: 1007, romans: 433,
+  "1-corinthians": 437, "2-corinthians": 257, galatians: 149, ephesians: 155,
+  philippians: 104, colossians: 95, "1-thessalonians": 89, "2-thessalonians": 47,
+  "1-timothy": 113, "2-timothy": 83, titus: 46, philemon: 25, hebrews: 303,
+  james: 108, "1-peter": 105, "2-peter": 61, "1-john": 105, "2-john": 13,
+  "3-john": 14, jude: 25, revelation: 404,
 };
 const VERSE_BUDGET_PCT = 0.25;
 /** Crossway's ESV permission is capped in absolute verses across the whole work,
  * not just as a share of each book — a percentage gate alone would wave through
- * 615 verses of Psalms. Counted across every book in content/. */
-const VERSE_BUDGET_TOTAL = 500;
+ * 615 verses of Psalms. Counted across every book in content/. 1,000 is the
+ * standard ESV permission ceiling; CONTENT_PLAN.md budgets it across all 66 books. */
+const VERSE_BUDGET_TOTAL = 1000;
 let totalVersesQuoted = 0;
+/** Correct-answer word sets from every book, for the cross-book near-duplicate
+ * pass below: the parallel Gospels (and Samuel/Kings vs Chronicles) can end up
+ * asking the same question twice in one whole-Bible quiz. */
+const allAnswerWords: { id: string; words: Set<string> }[] = [];
 
 function loadBook(bookId: string) {
   const dir = join(CONTENT_ROOT, bookId);
@@ -262,7 +273,9 @@ function checkBook(bookId: string) {
   void chapterIds;
 
   // --- authored questions --------------------------------------------------
-  for (const q of questions) {
+  const mcQuestions = questions.filter((q) => "options" in q);
+  const shortAnswers = questions.filter((q) => "answer" in q);
+  for (const q of mcQuestions) {
     if (q.correctIndex < 0 || q.correctIndex >= q.options.length) {
       errors.push(`questions: "${q.id}" correctIndex out of range`);
     }
@@ -270,13 +283,69 @@ function checkBook(bookId: string) {
     if (new Set(normalizedOptions).size !== normalizedOptions.length) {
       errors.push(`questions: "${q.id}" has duplicate options`);
     }
+  }
+  // A short answer is graded by "does the typed text contain these words", so
+  // the answer must be short enough that containing it means knowing it, and
+  // the prompt must stand on its own — "which of these is not..." has no
+  // meaning without options ("banana" is not a fruit of the Spirit either).
+  for (const q of shortAnswers) {
+    const significant = shortAnswerTerms(q.answer, []).join(" ").split(" ").filter(Boolean).length;
+    if (significant > 2) {
+      errors.push(`questions: "${q.id}" short answer "${q.answer}" is ${significant} significant words; keep it to 1-2 or make it multiple choice`);
+    }
+    if (/\b(which of (these|the following)|(is|are|was|were|does|do|did) not|except)\b/i.test(q.prompt)) {
+      errors.push(`questions: "${q.id}" short-answer prompt only makes sense against options ("${q.prompt.slice(0, 60)}")`);
+    }
+    const seen = new Set<string>();
+    for (const a of [q.answer, ...q.aliases]) {
+      const key = a.trim().toLowerCase();
+      if (seen.has(key)) errors.push(`questions: "${q.id}" repeats accepted answer "${a}"`);
+      seen.add(key);
+    }
+  }
+  for (const q of questions) {
     // Derived from the book rather than hardcoded to "genesis", so "In Psalm 23..."
     // is caught the same way "In Genesis 23..." is.
+    // A "selection" book's chapters are famous *as* chapters (Psalm 23, Isaiah
+    // 53, Proverbs 31), so "What is Psalm 119 about?" names its subject, not
+    // its answer. The leak rule only applies to contiguous books.
     const names = [...new Set(["chapter", book.id, book.name, book.citationName ?? book.name])];
     const chapterLeak = new RegExp(`(${names.join("|")})\\s+0*${q.citation.chapter}\\b`, "i");
-    if (chapterLeak.test(q.prompt)) {
+    if (!isSelection && chapterLeak.test(q.prompt)) {
       errors.push(`questions: "${q.id}" prompt leaks its own chapter reference (${q.citation.chapter})`);
     }
+  }
+
+  // --- "who says this" is for people, not God -----------------------------
+  // A quote spoken by God/the LORD makes a poor speaker question (in most
+  // books it's the obvious answer) and the whole-Bible pool is meant to ask
+  // about people, Jesus included. See CONTENT_PLAN.md.
+  const personById = new Map(people.map((p) => [p.id, p]));
+  for (const q of quotes) {
+    const name = personById.get(q.speakerId)?.name ?? "";
+    if (/^(god|the lord|lord)$/i.test(name.trim())) {
+      errors.push(`quotes: "${q.id}" is spoken by ${name}; speaker questions are for people only`);
+    }
+  }
+
+  // --- authored prompts should ask what happens, not what it means --------
+  // See DESIGN.md's "Authored question prompts describe what happens" rule.
+  // A heuristic, so a warning: "What does the flood narrative show about..."
+  // is the pattern, "What does Jacob do..." is fine.
+  const meaningPrompt = /\b(what|which) (theme|does .+ (show|reveal|teach|illustrate|demonstrate|symbolize|represent)|is the significance)\b/i;
+  for (const q of questions) {
+    if (meaningPrompt.test(q.prompt)) {
+      warnings.push(`questions: "${q.id}" asks what something means rather than what happens ("${q.prompt.slice(0, 60)}...")`);
+    }
+  }
+
+  // --- authored-question density ------------------------------------------
+  // The whole-Bible quiz draws 40% of a quiz from authored items, so a book
+  // with almost none is under-represented there. Roughly one per two chapters
+  // is the floor CONTENT_PLAN.md sets; a "selection" module is exempt (its
+  // chapters are the curated highlights already).
+  if (!isSelection && (book.autoGenerate ?? true) && questions.length < Math.ceil(chapters.length / 2)) {
+    warnings.push(`questions: ${questions.length} authored for ${chapters.length} chapters — under the one-per-two-chapters floor`);
   }
 
   // --- near-duplicate authored questions --------------------------------------
@@ -286,13 +355,14 @@ function checkBook(bookId: string) {
   const answerWords = questions.map((q) => ({
     id: q.id,
     words: new Set(
-      q.options[q.correctIndex]
+      ("answer" in q ? q.answer : q.options[q.correctIndex])
         .toLowerCase()
         .replace(/[^a-z0-9 ]/g, "")
         .split(/\s+/)
         .filter((w) => w.length > 3)
     ),
   }));
+  allAnswerWords.push(...answerWords.map((a) => ({ ...a, id: `${bookId}/${a.id}` })));
   for (let i = 0; i < answerWords.length; i++) {
     for (let j = i + 1; j < answerWords.length; j++) {
       const a = answerWords[i], b = answerWords[j];
@@ -312,14 +382,14 @@ function checkBook(bookId: string) {
   // longest one, a reader who knows nothing scores well by picking the longest.
   // Judged over the corpus, not per question — some answers are legitimately the
   // meatiest option; what must not hold is the *pattern*.
-  const longestIsCorrect = questions.filter((q) => {
+  const longestIsCorrect = mcQuestions.filter((q) => {
     const lengths = q.options.map((o) => o.length);
     const max = Math.max(...lengths);
     return lengths[q.correctIndex] === max && lengths.filter((l) => l === max).length === 1;
   }).length;
-  if (questions.length >= 10 && longestIsCorrect / questions.length > LENGTH_TELL_MAX) {
+  if (mcQuestions.length >= 10 && longestIsCorrect / mcQuestions.length > LENGTH_TELL_MAX) {
     errors.push(
-      `questions: the correct option is the single longest in ${longestIsCorrect}/${questions.length} questions (${((longestIsCorrect / questions.length) * 100).toFixed(0)}%) — over the ${LENGTH_TELL_MAX * 100}% ceiling, so "pick the longest" beats knowing the material`
+      `questions: the correct option is the single longest in ${longestIsCorrect}/${mcQuestions.length} questions (${((longestIsCorrect / mcQuestions.length) * 100).toFixed(0)}%) — over the ${LENGTH_TELL_MAX * 100}% ceiling, so "pick the longest" beats knowing the material`
     );
   }
 
@@ -458,6 +528,20 @@ const books = readdirSync(CONTENT_ROOT, { withFileTypes: true })
   .map((d) => d.name);
 
 for (const bookId of books) checkBook(bookId);
+
+// Cross-book near-duplicates are a warning, not an error: two Gospels asking
+// about the same event can be legitimate. Within a book it stays an error above.
+for (let i = 0; i < allAnswerWords.length; i++) {
+  for (let j = i + 1; j < allAnswerWords.length; j++) {
+    const a = allAnswerWords[i], b = allAnswerWords[j];
+    if (a.id.split("/")[0] === b.id.split("/")[0]) continue;
+    if (a.words.size < 4 || b.words.size < 4) continue;
+    const shared = [...a.words].filter((w) => b.words.has(w)).length;
+    if (shared / Math.min(a.words.size, b.words.size) > NEAR_DUPLICATE_OVERLAP) {
+      warnings.push(`questions: "${a.id}" and "${b.id}" have near-identical correct answers across books`);
+    }
+  }
+}
 
 if (totalVersesQuoted > VERSE_BUDGET_TOTAL) {
   errors.push(

@@ -424,6 +424,97 @@ export function FreeResponseQuestion({
   );
 }
 
+/** One or two typed words, graded like the chapter free response but against
+ * the authored answer and its aliases (see AuthoredShortAnswerQuestionSchema).
+ * A single-line input rather than a textarea: the answer is a name, a place,
+ * a number, not a paragraph. */
+export function ShortAnswerQuestion({
+  item,
+  mode,
+  onAnswer,
+  initialAnswer,
+}: {
+  item: Extract<QuizItem, { type: "short-answer" }>;
+  mode: Mode;
+  onAnswer: (a: Answer) => void;
+  initialAnswer?: Extract<Answer, { kind: "free-response" }>;
+}) {
+  const [text, setText] = useState(initialAnswer?.text ?? "");
+  const [error, setError] = useState<string | null>(null);
+  const [correct, setCorrect] = useState<boolean | null>(null);
+
+  function submit() {
+    if (!text.trim()) {
+      setError("Enter an answer before submitting.");
+      return;
+    }
+    if (mode === "quiz") {
+      onAnswer({ itemId: item.id, kind: "free-response", text });
+      return;
+    }
+    setCorrect(gradeFreeResponse({ terms: item.terms, minTerms: 1, titleTerms: [] }, text).correct);
+  }
+
+  return (
+    <div>
+      <p style={{ fontSize: "1.05rem", marginBottom: "0.9rem" }}>{item.prompt}</p>
+      {correct === null && (
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            submit();
+          }}
+        >
+          <input
+            className={error ? "input input-error" : "input"}
+            type="text"
+            value={text}
+            onChange={(e) => {
+              setText(e.target.value);
+              if (error) setError(null);
+            }}
+            placeholder="A word or two…"
+            aria-label={item.prompt}
+            aria-invalid={!!error}
+            autoComplete="off"
+          />
+          {error && (
+            <p className="field-error" role="alert">
+              {error}
+            </p>
+          )}
+          <div style={{ marginTop: "0.75rem" }}>
+            <button type="submit" className="btn btn-primary">
+              Submit
+            </button>
+          </div>
+        </form>
+      )}
+      {correct !== null && (
+        <>
+          <div className="note" style={{ borderColor: correct ? "var(--success-border)" : "var(--danger-border)" }}>
+            <span className="sr-only">{correct ? "Correct: " : "Not quite: "}</span>
+            <span aria-hidden="true">{correct ? "✓ " : "✗ "}</span>
+            {correct ? "Correct: " : "Not quite. The answer is "}
+            {item.answer}
+            {item.explanation ? ` (${item.explanation})` : ""}
+          </div>
+          <p className="citation" style={{ marginTop: "0.5rem" }}>{formatCitation(item.citation)}</p>
+          <div style={{ marginTop: "0.75rem" }}>
+            <button
+              type="button"
+              className="btn btn-primary"
+              onClick={() => onAnswer({ itemId: item.id, kind: "free-response", text })}
+            >
+              Next
+            </button>
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
 export function ChapterGuessQuestion({
   item,
   mode,

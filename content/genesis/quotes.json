@@ -1,18 +1,5 @@
 [
   {
-    "id": "q-1-3",
-    "book": "genesis",
-    "chapter": 1,
-    "verse": 3,
-    "speakerId": "god",
-    "text": "Let there be light.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 1,
-      "verses": "3"
-    }
-  },
-  {
     "id": "q-2-23",
     "book": "genesis",
     "chapter": 2,
@@ -26,19 +13,6 @@
     }
   },
   {
-    "id": "q-3-9",
-    "book": "genesis",
-    "chapter": 3,
-    "verse": 9,
-    "speakerId": "god",
-    "text": "Where are you?",
-    "citation": {
-      "book": "genesis",
-      "chapter": 3,
-      "verses": "9"
-    }
-  },
-  {
     "id": "q-4-9",
     "book": "genesis",
     "chapter": 4,
@@ -49,97 +23,6 @@
       "book": "genesis",
       "chapter": 4,
       "verses": "9"
-    }
-  },
-  {
-    "id": "q-6-13",
-    "book": "genesis",
-    "chapter": 6,
-    "verse": 13,
-    "speakerId": "god",
-    "text": "I have determined to make an end of all flesh, for the earth is filled with violence through them. Behold, I will destroy them with the earth.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 6,
-      "verses": "13"
-    }
-  },
-  {
-    "id": "q-9-13",
-    "book": "genesis",
-    "chapter": 9,
-    "verse": 13,
-    "speakerId": "god",
-    "text": "I have set my bow in the cloud, and it shall be a sign of the covenant between me and the earth.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 9,
-      "verses": "13"
-    }
-  },
-  {
-    "id": "q-11-7",
-    "book": "genesis",
-    "chapter": 11,
-    "verse": 7,
-    "speakerId": "god",
-    "text": "Come, let us go down and there confuse their language, so that they may not understand one another's speech.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 11,
-      "verses": "7"
-    }
-  },
-  {
-    "id": "q-12-1",
-    "book": "genesis",
-    "chapter": 12,
-    "verse": 1,
-    "speakerId": "god",
-    "text": "Go from your country and your kindred and your father's house to the land that I will show you.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 12,
-      "verses": "1"
-    }
-  },
-  {
-    "id": "q-15-5",
-    "book": "genesis",
-    "chapter": 15,
-    "verse": 5,
-    "speakerId": "god",
-    "text": "Look toward heaven, and number the stars, if you are able to number them.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 15,
-      "verses": "5"
-    }
-  },
-  {
-    "id": "q-17-5",
-    "book": "genesis",
-    "chapter": 17,
-    "verse": 5,
-    "speakerId": "god",
-    "text": "No longer shall your name be called Abram, but your name shall be Abraham, for I have made you the father of a multitude of nations.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 17,
-      "verses": "5"
-    }
-  },
-  {
-    "id": "q-18-14",
-    "book": "genesis",
-    "chapter": 18,
-    "verse": 14,
-    "speakerId": "god",
-    "text": "Is anything too hard for the LORD? At the appointed time I will return to you, about this time next year, and Sarah shall have a son.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 18,
-      "verses": "14"
     }
   },
   {
@@ -179,19 +62,6 @@
       "book": "genesis",
       "chapter": 25,
       "verses": "32"
-    }
-  },
-  {
-    "id": "q-28-15",
-    "book": "genesis",
-    "chapter": 28,
-    "verse": 15,
-    "speakerId": "god",
-    "text": "Behold, I am with you and will keep you wherever you go, and will bring you back to this land. For I will not leave you until I have done what I have promised you.",
-    "citation": {
-      "book": "genesis",
-      "chapter": 28,
-      "verses": "15"
     }
   },
   {

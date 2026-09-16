@@ -117,19 +117,6 @@
     }
   },
   {
-    "id": "1sam-q-c16-v7",
-    "book": "1-samuel",
-    "chapter": 16,
-    "verse": 7,
-    "speakerId": "1sam-god",
-    "text": "Do not look on his appearance or on the height of his stature, because I have rejected him. For the LORD sees not as man sees: man looks on the outward appearance, but the LORD looks on the heart.",
-    "citation": {
-      "book": "1-samuel",
-      "chapter": 16,
-      "verses": "7"
-    }
-  },
-  {
     "id": "1sam-q-c17-v45",
     "book": "1-samuel",
     "chapter": 17,
@@ -205,19 +192,6 @@
       "book": "1-samuel",
       "chapter": 28,
       "verses": "15"
-    }
-  },
-  {
-    "id": "1sam-q-c30-v8",
-    "book": "1-samuel",
-    "chapter": 30,
-    "verse": 8,
-    "speakerId": "1sam-god",
-    "text": "Pursue, for you shall surely overtake and shall surely rescue.",
-    "citation": {
-      "book": "1-samuel",
-      "chapter": 30,
-      "verses": "8"
     }
   }
 ]

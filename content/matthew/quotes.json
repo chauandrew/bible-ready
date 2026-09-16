@@ -9,15 +9,6 @@
     "citation": { "book": "matthew", "chapter": 1, "verses": "21" }
   },
   {
-    "id": "matt-q-c3-v17",
-    "book": "matthew",
-    "chapter": 3,
-    "verse": 17,
-    "speakerId": "god",
-    "text": "This is my beloved Son, with whom I am well pleased.",
-    "citation": { "book": "matthew", "chapter": 3, "verses": "17" }
-  },
-  {
     "id": "matt-q-c5-v16",
     "book": "matthew",
     "chapter": 5,
@@ -115,15 +106,6 @@
     "speakerId": "jesus",
     "text": "And I tell you, you are Peter, and on this rock I will build my church, and the gates of hell shall not prevail against it.",
     "citation": { "book": "matthew", "chapter": 16, "verses": "18" }
-  },
-  {
-    "id": "matt-q-c17-v5",
-    "book": "matthew",
-    "chapter": 17,
-    "verse": 5,
-    "speakerId": "god",
-    "text": "This is my beloved Son, with whom I am well pleased; listen to him.",
-    "citation": { "book": "matthew", "chapter": 17, "verses": "5" }
   },
   {
     "id": "matt-q-c19-v26",

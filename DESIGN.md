@@ -2,7 +2,10 @@
 
 Why things are shaped the way they are. Not a changelog — `git log` already has
 that. This is the reference to read before adding a new book or a new question
-type, and to update when a decision here stops being true.
+type, and to update when a decision here stops being true. `CONTENT_PLAN.md`
+is the companion: the roadmap to all 66 books, the settled per-genre
+conventions, the per-book session recipe, and the coverage table. Read both
+before authoring content.
 
 ## Product goal
 
@@ -138,6 +141,23 @@ fails if any generated item would be ambiguous, so what ships to a player is
 always a member of an already-proven-clean set — the runtime seed only picks
 *which* clean items appear and shuffles their options, it never produces a new
 kind of item that wasn't already validated.
+
+**Tiers: `general` vs `deep`.** `Event`, `Quote`, and `AuthoredQuestion`
+carry an optional `tier` (`content/schema.ts`'s `TierSchema`); `Book.defaultTier`
+fills in for any item without one, and the fallback past that is `"deep"`, so
+an untagged corpus never leaks into the whole-Bible quiz's "General knowledge"
+mode (`MultiQuizSetup`, `?tier=general`, `lib/quiz.ts`'s `poolsForTier`).
+Generated items resolve their tier from the fact they came from
+(`lib/generate.ts`'s `tierOf`): an event's own tier for chapter-guess and
+location questions, the quote's for speaker questions. Chapter-level items
+("what is chapter N about", free response) are general if *any* event in the
+chapter is; multi-event items (sequence, match) only if *every* event shown
+is, since one deep event makes the whole thing unanswerable on general
+knowledge. The single-book quiz has no tier filter: "which section of Genesis
+do I need to study" is a depth question by nature. `misc` sets
+`defaultTier: "general"` (the twelve disciples, the books in order); every
+other existing book is untagged pending the backfill tracked in
+`CONTENT_PLAN.md`, and new books tag as they're authored.
 
 **Distractor pools need `>= 3` distinct wrong answers.** This is the load-
 bearing constraint behind several content rules below — an arc with too few
@@ -384,12 +404,69 @@ distractor should be a complete, plausible-sounding wrong answer, not "he
 refuses to say" three words long next to a correct answer three sentences
 long.
 
+**Distractors must be believable to someone who has read the book once.**
+The length gate above only catches the *pattern*; each question still has
+to earn its wrong answers:
+- Same kind and shape as the correct answer: a person for a person, a place
+  for a place, a number for a number, an action for an action, in the same
+  grammatical form and roughly the same length.
+- In-world: every distractor is a real name, place, event, or phrase from the
+  same book, ideally the same arc, so nothing can be eliminated as "never
+  heard of it". Numbers come from nearby or biblically loaded values (7, 12,
+  40, 70), not arbitrary ones.
+- Built from real confusions: what happened to a *different* character, what
+  happened in the neighboring chapter, the reverse of what happened (swap who
+  does what to whom), the popular misconception (a whale swallowed Jonah,
+  three wise men, Eve's apple), or the parallel account's detail (Mark's
+  wording in a Matthew question).
+- False as stated, verified against the text. The adversarial review reads
+  every distractor for accidental truth, partial truth, or "arguably also
+  correct"; one such option makes the question unfair, not hard.
+- No comic or absurd options, no "all/none of the above", no absolutes, no
+  option the prompt's own wording rules out, no two options that differ by a
+  single word.
+- The test: cover the correct answer and ask whether a reader who
+  half-remembers the book would plausibly pick each of the others. A
+  giveaway gets replaced, not padded.
+
+**Authored questions come in two formats, and a quiz mixes them without a
+toggle.** `AuthoredQuestionSchema` (`content/schema.ts`) is a union: the
+multiple-choice form (`options` + `correctIndex`, unchanged) and a
+short-answer form (`format: "short-answer"`, `answer`, optional `aliases`)
+that the player types into a single-line input. Short answer is for a fact
+whose answer is one or two words (a name, a place, a number, a title): the
+typed text must contain every significant word of `answer` or of one alias,
+typo-tolerant, articles and prepositions dropped (`lib/grade.ts`'s
+`shortAnswerTerms`, graded through the same `gradeFreeResponse` the chapter
+free response uses, with `minTerms: 1`). `aliases` is for genuinely
+different ways to say the same thing ("3" for "three", "Cephas" for
+"Peter"), never for hedging. `check:content` errors on an answer over two
+significant words and on a prompt that only makes sense against options
+("which of these is not a fruit of the Spirit": almost anything isn't).
+Multiple choice stays the format for an answer that is a clause, or where
+recognizing the right description among plausible wrong ones is the point.
+Roughly a third of a new book's authored questions should be short answer.
+There is deliberately no "typed answers" setting: the spread of formats
+(short answer, multiple choice, the generated book-and-chapter guess, chapter
+free response, sequence, match) is the test, not a preference. The runtime
+item is `RuntimeAuthoredShortAnswer` (`kind: "authored", type:
+"short-answer"`), rendered by `ShortAnswerQuestion`, answered with the same
+`{ kind: "free-response", text }` `Answer` as the chapter free response.
+
 **ESV verses are individual and budget-tracked.** Quotes are single verses
 only (never a range), never two verses back-to-back in the same chapter (the
-Crossway grant is for individual verses, not passages), and stay under a hard
-cap tracked in `VERSE_COUNTS` per book in `check-content.ts`. Add a book's
-real verse count there before authoring quotes for it, or the budget check
-silently no-ops for that book.
+Crossway grant is for individual verses, not passages), at most 25% of any
+book, and at most 1,000 across the whole corpus (`VERSE_BUDGET_TOTAL` in
+`check-content.ts`, the standard ESV permission ceiling). `VERSE_COUNTS` is
+pre-filled for all 66 books, so the per-book percentage check can't silently
+no-op for a new book. `CONTENT_PLAN.md` budgets the 1,000 across books.
+
+**"Who says this" is for people only, Jesus included.** A quote spoken by God
+or the LORD is the obvious answer in most books and isn't the kind of fact the
+speaker question is for; `check:content` fails on any quote whose speaker is
+named `God`/`the LORD`. The 20 such quotes the original books carried were
+removed in the phase-0 pass; a `Person` entry for God stays where events still
+reference it (Genesis, Exodus, Matthew, 2 Samuel), it just can't speak a quote.
 
 **`Chapter.quizWorthy` gates the free-response question type**
 ("what happens in chapter N?"). Not every chapter deserves this treatment —
@@ -505,6 +582,20 @@ is a partial exception: an `"arc"`-category question grouping several psalms
 by shared theme is unavoidable, since Psalms genuinely has no plot — but even
 there, prefer asking about a specific verse, image, or occasion over naming
 an abstract theme when one is available.
+
+**Authored question prompts name the book and stay plain.** The whole-Bible
+quiz mixes books, so a prompt has to say which one it's about: "In Exodus,
+what role do Shiphrah and Puah play?", not "What role do Shiphrah and Puah
+play early in the story?". The chapter number stays out of the prompt
+(`check:content`'s chapter-leak rule) *except* in a `"selection"` book, where
+the chapter is the unit's own name, so "What is Psalm 119 about?" and "In
+Psalm 23, what does the psalmist compare the LORD to?" are the right wording
+and the rule exempts `"selection"` books for it. Plain over clever: no trick
+questions, no synthesis across passages ("what do these two wise women have
+in common"), no "traditionally credited with" trivia. The general-knowledge
+tier is deliberately broad (see the tiers note above and `CONTENT_PLAN.md`'s
+calibrated rubric): a plain question about what a minor character does is
+general; how loudly Joseph wept is not.
 
 ## Journeys — event-by-event map walkthroughs
 
@@ -794,6 +885,11 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   the featured ones (currently everything but Exodus), and `/modules`
   (`app/modules/page.tsx`) lists the full set. A new book defaults to
   `featured: true` unless there's a reason to hide it from the home page.
+- **Short and one-chapter books** (Haggai, Obadiah, Philemon, 2-3 John,
+  Jude) aren't handled yet: Chapter Order would build a 1- or 2-slot board,
+  and a one-chapter book's "which chapter" question is trivial in a
+  single-book quiz. Both are small guards, deferred until the first such book
+  is authored; `CONTENT_PLAN.md` lists them as code follow-ups with triggers.
 - **No offline/PWA support.** Deliberately skipped for v1 — revisit if it's
   actually requested.
 - **Question of the Day (`/qotd`)** has one deterministic daily question
@@ -820,8 +916,9 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
 
 1. Decide `coverageDepth` first — it determines whether chapters need to be
    contiguous and whether arcs are ranges or thematic groups.
-2. Add the book's real verse count to `VERSE_COUNTS` in
-   `scripts/check-content.ts` before authoring any quotes.
+2. `VERSE_COUNTS` in `scripts/check-content.ts` already has every book;
+   nothing to add. Check `CONTENT_PLAN.md` for the book's quote budget and
+   its planned depth, and run its pre-flight questions first.
 3. Author in this order, cross-referencing ids forward: `book.json` →
    `arcs.json` → `chapters.json` → `events.json` (peopleIds must already
    exist) → `people.json` → `quotes.json` (speakerId must exist) →
@@ -859,5 +956,9 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
    missing a `blurb` altogether. Read the chapter's own `title` +
    `summary` and its book neighbors before writing one; ambiguity is only
    visible in context.
-9. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
+9. Tag `tier: "general"` on the famous events, quotes, and questions as you
+   author them (see the tiers note above and `CONTENT_PLAN.md`'s rubric);
+   leave the rest unset.
+10. `npm test`, `npx tsc --noEmit`, `npx eslint .`, `rm -rf .next && npm run
    build` — all four, not just `check:content`.
+11. Update `CONTENT_PLAN.md`'s coverage table and log in the same PR.

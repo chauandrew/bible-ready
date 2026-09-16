@@ -2,149 +2,126 @@
   {
     "id": "psalms-q1",
     "book": "psalms",
-    "category": "character",
-    "prompt": "Which king is traditionally credited with writing the psalm that begins 'The LORD is my shepherd; I shall not want'?",
-    "options": [
-      "David",
-      "Solomon",
-      "Moses",
-      "Asaph"
+    "category": "theme",
+    "prompt": "In Psalm 23, what does the psalmist say he will not fear, even walking through the valley of the shadow of death?",
+    "format": "short-answer",
+    "answer": "evil",
+    "aliases": [
+      "no evil"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 23
     },
-    "explanation": "The heading attributes it to David."
+    "explanation": "\"I will fear no evil, for you are with me; your rod and your staff, they comfort me.\""
   },
   {
     "id": "psalms-q2",
     "book": "psalms",
     "category": "character",
-    "prompt": "The psalm confessing 'Create in me a clean heart, O God' was written after a confrontation with which prophet?",
-    "options": [
-      "Nathan",
-      "Samuel the prophet and judge",
-      "Elijah",
-      "Isaiah"
-    ],
-    "correctIndex": 0,
+    "prompt": "According to the heading of Psalm 51, which prophet came to David after he had gone in to Bathsheba?",
+    "format": "short-answer",
+    "answer": "Nathan",
     "citation": {
       "book": "psalms",
       "chapter": 51
     },
-    "explanation": "Nathan confronted David over his sin with Bathsheba."
+    "explanation": "The heading: \"when Nathan the prophet went to him, after he had gone in to Bathsheba.\""
   },
   {
     "id": "psalms-q3",
     "book": "psalms",
     "category": "character",
-    "prompt": "Which Old Testament leader is credited with the psalm that reflects on human frailty and asks God to 'teach us to number our days'?",
-    "options": [
-      "Moses",
-      "Joshua",
-      "David",
-      "Solomon"
-    ],
-    "correctIndex": 0,
+    "prompt": "Psalm 90 is the only psalm whose heading attributes it to whom?",
+    "format": "short-answer",
+    "answer": "Moses",
     "citation": {
       "book": "psalms",
       "chapter": 90
     },
-    "explanation": "It is the only psalm in this collection headed as a prayer of Moses."
+    "explanation": "\"A Prayer of Moses, the man of God.\""
   },
   {
     "id": "psalms-q4",
     "book": "psalms",
     "category": "character",
-    "prompt": "The psalm 'God is our refuge and strength' is attributed to which group of temple musicians?",
-    "options": [
-      "The sons of Korah",
-      "The sons of Asaph",
-      "The Levites of Merari",
-      "The gatekeepers of the temple"
+    "prompt": "According to its heading, which group of temple musicians is Psalm 46 attributed to?",
+    "format": "short-answer",
+    "answer": "the sons of Korah",
+    "aliases": [
+      "Korah",
+      "Korahites"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 46
     },
-    "explanation": "Its heading names the sons of Korah."
+    "explanation": "The heading names the Sons of Korah, a Levitical guild of singers."
   },
   {
     "id": "psalms-q5",
     "book": "psalms",
-    "category": "character",
-    "prompt": "The psalm that opens 'Blessed is the man who walks not in the counsel of the wicked' carries no author's name in its heading. What best describes its authorship?",
-    "options": [
-      "Anonymous, untitled in the text",
-      "Written by Solomon",
-      "Written by Asaph",
-      "Written collectively by the sons of Korah, a guild of temple musicians"
-    ],
-    "correctIndex": 0,
+    "category": "theme",
+    "prompt": "In Psalm 1, what are the wicked compared to?",
+    "format": "short-answer",
+    "answer": "chaff",
     "citation": {
       "book": "psalms",
       "chapter": 1
     },
-    "explanation": "It has no superscription naming an author."
+    "explanation": "The wicked are like chaff that the wind drives away."
   },
   {
     "id": "psalms-q6",
     "book": "psalms",
-    "category": "character",
-    "prompt": "Which king is credited with the largest share of the psalms in this collection, including songs of both deep sorrow and exuberant praise?",
-    "options": [
-      "David",
-      "Solomon",
-      "Hezekiah",
-      "Josiah"
+    "category": "theme",
+    "prompt": "In Psalm 103, how far does the psalmist say God has removed our transgressions from us?",
+    "format": "short-answer",
+    "answer": "east from west",
+    "aliases": [
+      "east and west",
+      "east is from the west"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 103
-    }
+    },
+    "explanation": "\"As far as the east is from the west, so far does he remove our transgressions from us.\""
   },
   {
     "id": "psalms-q7",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What does the psalmist compare the LORD to, in the psalm that begins 'The LORD is my shepherd; I shall not want'?",
-    "options": [
-      "A shepherd guiding and providing for his sheep",
-      "A king ruling over his subjects",
-      "A father disciplining his children for their own long-term good",
-      "A potter shaping clay"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Psalm 23, what does the psalmist compare the LORD to?",
+    "format": "short-answer",
+    "answer": "a shepherd",
     "citation": {
       "book": "psalms",
       "chapter": 23
-    }
+    },
+    "explanation": "\"The LORD is my shepherd; I shall not want.\""
   },
   {
     "id": "psalms-q8",
     "book": "psalms",
     "category": "theme",
-    "prompt": "In the psalm about the two ways, what does the psalmist compare the person who delights in God's law to?",
-    "options": [
-      "A tree planted by streams of water",
-      "A mountain that cannot be moved no matter how fiercely the storms strike it",
-      "A lamp that never goes out",
-      "A fortress under siege"
+    "prompt": "In Psalm 1, what is the person who delights in God's law compared to?",
+    "format": "short-answer",
+    "answer": "a tree",
+    "aliases": [
+      "tree planted by water"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 1
-    }
+    },
+    "explanation": "Like a tree planted by streams of water that yields its fruit in its season."
   },
   {
     "id": "psalms-q9",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What does the psalm 'God is our refuge and strength' say stays true even if the earth gives way and the mountains fall into the sea?",
+    "prompt": "In Psalm 46, what does the psalmist say remains true even if the earth gives way and the mountains fall into the sea?",
     "options": [
       "God remains a secure refuge even if the earth gives way",
       "Safety comes only from living inside a heavily fortified and well-defended city",
@@ -161,126 +138,137 @@
     "id": "psalms-q10",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What does the psalmist marvel at when he says humanity is 'crowned... with glory and honor' in the psalm about the heavens and human dignity?",
-    "options": [
-      "God's care in giving humanity dominion over creation",
-      "God's judgment on human sin",
-      "The beauty of the created animals",
-      "The strength and military conquests of Israel's greatest kings"
+    "prompt": "In Psalm 8, what does the psalmist marvel that God is mindful of, when he looks at the heavens?",
+    "format": "short-answer",
+    "answer": "man",
+    "aliases": [
+      "mankind",
+      "humanity",
+      "humans",
+      "human",
+      "people",
+      "son of man"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 8
-    }
+    },
+    "explanation": "\"What is man that you are mindful of him, and the son of man that you care for him?\""
   },
   {
     "id": "psalms-q11",
     "book": "psalms",
     "category": "theme",
-    "prompt": "In the psalm about being fully known by God, what does the psalmist ask God to do at the end?",
-    "options": [
-      "Search his heart and lead him in the way everlasting",
-      "Forgive the sins of his enemies before they ever repent of them",
-      "Rebuild the temple in Jerusalem",
-      "Grant him victory in battle"
+    "prompt": "In Psalm 139, what does the psalmist ask God to do in the final two verses?",
+    "format": "short-answer",
+    "answer": "search him",
+    "aliases": [
+      "search",
+      "try",
+      "test",
+      "lead",
+      "know heart",
+      "search me",
+      "test me",
+      "lead me"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 139
-    }
+    },
+    "explanation": "\"Search me, O God, and know my heart... and lead me in the way everlasting!\""
   },
   {
     "id": "psalms-q12",
     "book": "psalms",
     "category": "theme",
-    "prompt": "What does the closing psalm of the whole book call on to praise the Lord?",
-    "options": [
-      "An all-out call for everything that breathes to praise the Lord",
-      "A lament over Israel's exile",
-      "A prayer pleading for the arrival of the long-promised coming Messiah",
-      "A covenant renewal ceremony"
+    "prompt": "In Psalm 150, who or what does the final verse call on to praise the LORD?",
+    "format": "short-answer",
+    "answer": "everything with breath",
+    "aliases": [
+      "everything that breathes",
+      "everything that has breath",
+      "all that breathes",
+      "breath"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 150
-    }
+    },
+    "explanation": "\"Let everything that has breath praise the LORD!\""
   },
   {
     "id": "psalms-q13",
     "book": "psalms",
-    "category": "arc",
-    "prompt": "What do the psalm about the Lord as shepherd, the psalm calling God 'our refuge and strength,' the psalm about dwelling in God's shelter, and the psalm about lifting eyes to the hills all have in common?",
-    "options": [
-      "Trust and refuge in God's protection",
-      "Warnings against idolatry",
-      "The coronation of Israel's kings",
-      "Detailed instructions for how temple sacrifices are to be offered"
+    "category": "theme",
+    "prompt": "In Psalm 100, with what does the psalmist say to enter God's gates?",
+    "format": "short-answer",
+    "answer": "thanksgiving",
+    "aliases": [
+      "thanks",
+      "praise"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
-      "chapter": 23
-    }
+      "chapter": 100
+    },
+    "explanation": "\"Enter his gates with thanksgiving, and his courts with praise!\""
   },
   {
     "id": "psalms-q14",
     "book": "psalms",
-    "category": "arc",
-    "prompt": "The psalm crying 'why have you forsaken me,' the psalm about the relief of confessed sin, the psalm confessing sin after Bathsheba, and the psalm crying out 'from the depths' are grouped together for sharing what?",
-    "options": [
-      "Repentance and lament over sin and suffering",
-      "Songs sung exclusively at Passover",
-      "Celebrations of military victory",
-      "Psalms written specifically during Israel's long exile in Babylon"
+    "category": "theme",
+    "prompt": "In Psalm 130, from where does the psalmist cry out to the LORD?",
+    "format": "short-answer",
+    "answer": "the depths",
+    "aliases": [
+      "out of the depths"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
-      "chapter": 51
-    }
+      "chapter": 130
+    },
+    "explanation": "\"Out of the depths I cry to you, O LORD!\""
   },
   {
     "id": "psalms-q15",
     "book": "psalms",
-    "category": "arc",
-    "prompt": "What connects the call to enter God's gates with thanksgiving, the psalm 'Bless the LORD, O my soul,' the psalm praising God's greatness across generations, and the closing call for everything that breathes to praise the Lord?",
+    "category": "theme",
+    "prompt": "In Psalm 32, whom does the psalmist call blessed in the opening line?",
     "options": [
-      "Praise and thanksgiving",
-      "Imprecatory prayers against enemies",
-      "Royal coronation psalms",
-      "Wisdom psalms about the two ways"
+      "The one whose transgression is forgiven and whose sin is covered",
+      "The one who walks not in the counsel of the wicked",
+      "The one who fears the LORD and greatly delights in his commandments",
+      "The one whose help is the God of Jacob"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "psalms",
-      "chapter": 100
-    }
+      "chapter": 32
+    },
+    "explanation": "Psalm 32 opens with the blessing of forgiveness; the other lines open Psalms 1 and 112, and Psalm 146:5 calls blessed the one whose help is the God of Jacob."
   },
   {
     "id": "psalms-q16",
     "book": "psalms",
-    "category": "arc",
-    "prompt": "The psalm about the two ways, the psalm on humanity's place in creation, the psalm about the heavens declaring God's glory, the psalm welcoming the King of glory, and the psalm reflecting on numbering our days are grouped together around what?",
-    "options": [
-      "Wisdom, creation, and God's presence",
-      "The exodus from Egypt",
-      "The long conflict between David and King Saul before he became king",
-      "The fall of Jerusalem"
+    "category": "theme",
+    "prompt": "In Psalm 19, what does the psalmist say the heavens declare?",
+    "format": "short-answer",
+    "answer": "the glory of God",
+    "aliases": [
+      "glory"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 19
-    }
+    },
+    "explanation": "\"The heavens declare the glory of God, and the sky above proclaims his handiwork.\""
   },
   {
     "id": "psalms-q17",
     "book": "psalms",
     "category": "argument",
-    "prompt": "How does the psalm that begins 'My God, my God, why have you forsaken me?' move across its length?",
+    "prompt": "How does Psalm 22, which begins \"My God, my God, why have you forsaken me?\", move across its length?",
     "options": [
       "From anguished lament to confident praise",
       "From praise to a curse on enemies",
@@ -297,7 +285,7 @@
     "id": "psalms-q18",
     "book": "psalms",
     "category": "argument",
-    "prompt": "What shift happens between the first half and second half of the psalm confessing David's sin with Bathsheba?",
+    "prompt": "What shift happens between the first half and the second half of Psalm 51, David's confession after Bathsheba?",
     "options": [
       "Confession and a plea for cleansing give way to a promise to teach other sinners",
       "Despair gives way to a public call for the whole nation to repent together",
@@ -314,7 +302,7 @@
     "id": "psalms-q19",
     "book": "psalms",
     "category": "argument",
-    "prompt": "How does the psalm about God's protection move from its opening picture to its closing promise?",
+    "prompt": "How does Psalm 91 move from its opening picture to its closing promise?",
     "options": [
       "From describing the safety of dwelling in God's shelter to God's own promise of rescue and honor",
       "From a battle scene to a coronation",
@@ -331,7 +319,7 @@
     "id": "psalms-q20",
     "book": "psalms",
     "category": "argument",
-    "prompt": "What is the movement of thought in the psalm that asks 'From where does my help come?'",
+    "prompt": "What is the movement of thought in Psalm 121, which asks \"From where does my help come?\"",
     "options": [
       "It moves from a question about help to confidence in the Lord's unsleeping watch",
       "It moves from open praise of God to a quiet plea for his forgiveness",
@@ -348,7 +336,7 @@
     "id": "psalms-q21",
     "book": "psalms",
     "category": "argument",
-    "prompt": "How does the psalm 'Bless the LORD, O my soul' develop its praise?",
+    "prompt": "How does Psalm 103, \"Bless the LORD, O my soul,\" develop its praise?",
     "options": [
       "It moves from personal thanksgiving for God's benefits to praise of his enduring, fatherly compassion",
       "It moves from a battle report to a victory song",
@@ -364,70 +352,72 @@
   {
     "id": "psalms-q22",
     "book": "psalms",
-    "category": "covenant",
-    "prompt": "The psalm welcoming 'the King of glory' in through the city's ancient gates echoes which covenant theme?",
-    "options": [
-      "God's kingship over Israel and its worship",
-      "The covenant with Noah after the flood",
-      "The covenant of circumcision with Abraham",
-      "The new covenant that God later promises through the prophet Jeremiah"
+    "category": "theme",
+    "prompt": "In Psalm 24, who does the psalmist say the King of glory is?",
+    "format": "short-answer",
+    "answer": "the LORD of hosts",
+    "aliases": [
+      "the LORD",
+      "LORD strong and mighty",
+      "LORD mighty in battle",
+      "God",
+      "Yahweh"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 24
-    }
+    },
+    "explanation": "\"Who is this King of glory? The LORD of hosts, he is the King of glory!\""
   },
   {
     "id": "psalms-q23",
     "book": "psalms",
-    "category": "covenant",
-    "prompt": "Which promise underlies the confidence of the psalm 'God is our refuge and strength' that the city of God will not be moved?",
-    "options": [
-      "God's covenant commitment to dwell with and defend his people",
-      "A treaty with a foreign king",
-      "A promise made only to the tribe of Judah",
-      "A guarantee that depends entirely on Israel keeping the sacrificial calendar"
+    "category": "theme",
+    "prompt": "In Psalm 46, what does God tell the nations to do, right before \"and know that I am God\"?",
+    "format": "short-answer",
+    "answer": "be still",
+    "aliases": [
+      "still"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 46
-    }
+    },
+    "explanation": "\"Be still, and know that I am God. I will be exalted among the nations.\""
   },
   {
     "id": "psalms-q24",
     "book": "psalms",
     "category": "covenant",
-    "prompt": "In the psalm attributed to Moses, what does the opening line call God, grounding the whole prayer in his long relationship with his people?",
-    "options": [
-      "Our dwelling place in all generations",
-      "Our rock, our fortress, and our redeemer from every enemy",
-      "A sun and shield",
-      "Our refuge and strength"
+    "prompt": "In Psalm 90, what does the opening line call the Lord?",
+    "format": "short-answer",
+    "answer": "dwelling place",
+    "aliases": [
+      "dwelling",
+      "refuge"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 90
     },
-    "explanation": "It opens \"Lord, you have been our dwelling place in all generations.\""
+    "explanation": "\"Lord, you have been our dwelling place in all generations.\""
   },
   {
     "id": "psalms-q25",
     "book": "psalms",
     "category": "theme",
-    "prompt": "The longest chapter in the Bible spends its 176 verses meditating on what?",
+    "prompt": "What is Psalm 119, the longest chapter in the Bible, about?",
     "options": [
       "The goodness and guidance of God's law",
-      "The long genealogy of Israel's twelve tribes and their allotted territories",
-      "The building and dedication of the temple in Jerusalem",
-      "The defeat of the Philistines at the hands of Israel's armies"
+      "The exodus from Egypt and the giving of the law at Sinai",
+      "The history of Israel's kings from Saul to the exile",
+      "The building and dedication of Solomon's temple"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "psalms",
       "chapter": 119
-    }
+    },
+    "explanation": "An acrostic of 176 verses, nearly every one naming God's law, testimonies, precepts, statutes, commandments, rules, word, or promise."
   }
 ]

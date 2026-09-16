@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { selectQuiz, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, maxPointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
+import { selectQuiz, selectQuizMulti, poolsForTier, selectDailyQuestion, scoreQuiz, gapReport, correctAnswerText, userAnswerText, pointsFor, maxPointsFor, isCorrect, type Answer, type QuizItem } from "./quiz";
 import type { BookData } from "./generate";
 import type { AuthoredQuestion } from "../content/schema";
 
@@ -70,7 +70,7 @@ test("scoreQuiz and gapReport produce expected percentages for a known answer ke
   // Answer everything correctly except deliberately miss one MC item.
   let missedOne = false;
   const answers: Answer[] = items.map((item) => {
-    if (item.kind === "authored" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+    if ("correctIndex" in item) {
       if (!missedOne) {
         missedOne = true;
         return { itemId: item.id, kind: "mc", selectedIndex: (item.correctIndex + 1) % item.options.length };
@@ -270,4 +270,50 @@ test("gapReport buckets by whatever categorize returns, not a fixed mechanic/the
   const report = gapReport(items, answers, () => "Everything");
   assert.deepEqual(Object.keys(report), ["Everything"]);
   assert.equal(report["Everything"].wrong, items.length);
+});
+
+test("tier: General mode draws only from general items, untagged books contribute nothing", () => {
+  const untagged = fixtureData();
+  const tagged = fixtureData();
+  tagged.book = { id: "misc", name: "Misc", defaultTier: "general" };
+  for (const list of [tagged.arcs, tagged.chapters, tagged.events, tagged.quotes]) for (const x of list) x.book = "misc";
+  tagged.events[0].tier = "deep";
+
+  const sources = [
+    { data: untagged, questions: authored },
+    { data: tagged, questions: [{ ...authored[0], id: "a2", book: "misc", citation: { book: "misc", chapter: 1 } }] },
+  ];
+  const { generated, authored: authoredPool } = poolsForTier(sources, "general");
+  assert.ok(generated.length > 0);
+  assert.ok(generated.every((g) => g.tier === "general"));
+  assert.ok(!generated.some((g) => g.id === "gen:chapter:e1"), "an event tagged deep overrides the book default");
+  assert.ok(!generated.some((g) => g.citation.book === "genesis"), "untagged book is all deep");
+  assert.deepEqual(authoredPool.map((q) => q.id), ["a2"]);
+
+  const items = selectQuizMulti(sources, { seedStr: "t", targetCount: 25, tier: "general" });
+  assert.ok(items.length > 0);
+  assert.ok(items.every((i) => i.citation.book === "misc"));
+});
+
+test("short-answer authored items are typed, graded by contained words, and print/review their answer", () => {
+  const data = fixtureData();
+  const question: AuthoredQuestion = {
+    id: "sa1",
+    book: "genesis",
+    category: "character",
+    prompt: "In Genesis, where does Terah settle the family on the way to Canaan?",
+    format: "short-answer",
+    answer: "Haran",
+    aliases: [],
+    citation: { book: "genesis", chapter: 11 },
+  };
+  const items = selectQuiz(data, [question], { seedStr: "sa", targetCount: 3 });
+  const item = items.find((i) => i.id === "sa1");
+  assert.ok(item && "answer" in item && item.type === "short-answer");
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "free-response", text: "Haran" }), true);
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "free-response", text: "Ur of the Chaldeans" }), false);
+  assert.equal(isCorrect(item, { itemId: "sa1", kind: "mc", selectedIndex: 0 }), false);
+  assert.equal(pointsFor(item, { itemId: "sa1", kind: "free-response", text: "haran" }), 1);
+  assert.equal(correctAnswerText(item), "Haran");
+  assert.equal(userAnswerText(item, { itemId: "sa1", kind: "free-response", text: "Ur" }), "Ur");
 });

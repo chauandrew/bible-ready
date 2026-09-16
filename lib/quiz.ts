@@ -1,6 +1,6 @@
-import type { AuthoredQuestion, Citation } from "../content/schema";
+import type { AuthoredQuestion, Citation, Tier } from "../content/schema";
 import { mulberry32, hashSeed, shuffle } from "./rng";
-import { gradeFreeResponse } from "./grade";
+import { gradeFreeResponse, shortAnswerTerms } from "./grade";
 import { chapterSummaryFor, formatCitation, bookMeta } from "./content";
 import {
   generateAll,
@@ -9,6 +9,7 @@ import {
   toRuntimeSequence,
   toRuntimeMatch,
   toRuntimeFreeResponse,
+  tierOf,
   type BookData,
   type GeneratedItem,
   type GeneratedMC,
@@ -40,9 +41,46 @@ export interface RuntimeAuthoredMC {
   explanation?: string;
 }
 
-export type QuizItem = RuntimeAuthoredMC | RuntimeMC | RuntimeChapterGuess | RuntimeSequence | RuntimeMatch | RuntimeFreeResponse;
+/** An authored question answered by typing one or two words (see
+ * AuthoredShortAnswerQuestionSchema). `type` sits alongside `kind` so the
+ * per-type dispatch in QuizRunner/DailyQuestionRunner can branch on it the
+ * same way it does for generated items. */
+export interface RuntimeAuthoredShortAnswer {
+  kind: "authored";
+  type: "short-answer";
+  id: string;
+  category: AuthoredQuestion["category"];
+  prompt: string;
+  answer: string;
+  /** One phrase per accepted answer; grade with minTerms 1 (see shortAnswerTerms). */
+  terms: string[];
+  citation: Citation;
+  explanation?: string;
+}
 
-function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC {
+export type QuizItem =
+  | RuntimeAuthoredMC
+  | RuntimeAuthoredShortAnswer
+  | RuntimeMC
+  | RuntimeChapterGuess
+  | RuntimeSequence
+  | RuntimeMatch
+  | RuntimeFreeResponse;
+
+function toRuntimeAuthored(q: AuthoredQuestion, seed: number): RuntimeAuthoredMC | RuntimeAuthoredShortAnswer {
+  if ("answer" in q) {
+    return {
+      kind: "authored",
+      type: "short-answer",
+      id: q.id,
+      category: q.category,
+      prompt: q.prompt,
+      answer: q.answer,
+      terms: shortAnswerTerms(q.answer, q.aliases),
+      citation: q.citation,
+      explanation: q.explanation,
+    };
+  }
   const rand = mulberry32(seed);
   const correctText = q.options[q.correctIndex];
   const options = shuffle(q.options, rand);
@@ -64,6 +102,9 @@ export interface SelectQuizOptions {
   targetCount: number;
   /** Fraction of targetCount drawn from the generated pool. Default 0.6. */
   generatedRatio?: number;
+  /** Restrict both pools to items of this tier (see TierSchema in
+   * content/schema.ts). Unset draws from everything. */
+  tier?: Tier;
 }
 
 export function selectQuiz(
@@ -83,9 +124,20 @@ export function selectQuizMulti(
   sources: { data: BookData; questions: AuthoredQuestion[] }[],
   opts: SelectQuizOptions
 ): QuizItem[] {
-  const generatedPool = sources.flatMap((s) => generateAll(s.data));
-  const authoredPool = sources.flatMap((s) => s.questions);
-  return selectFromPools(generatedPool, authoredPool, opts);
+  const { generated, authored } = poolsForTier(sources, opts.tier);
+  return selectFromPools(generated, authored, opts);
+}
+
+/** Both pools across several books, optionally restricted to one tier. Exposed so
+ * the setup screen can tell whether General mode has anything to draw from. */
+export function poolsForTier(
+  sources: { data: BookData; questions: AuthoredQuestion[] }[],
+  tier?: Tier
+): { generated: GeneratedItem[]; authored: AuthoredQuestion[] } {
+  return {
+    generated: sources.flatMap((s) => generateAll(s.data).filter((g) => !tier || g.tier === tier)),
+    authored: sources.flatMap((s) => s.questions.filter((q) => !tier || tierOf(q, s.data.book) === tier)),
+  };
 }
 
 /** Picks the single global "question of the day" — same date -> same item, deterministically seeded. */
@@ -161,8 +213,14 @@ export type Answer =
   | { itemId: string; kind: "free-response"; text: string };
 
 export function isCorrect(item: QuizItem, answer: Answer): boolean {
-  if (item.kind === "authored" || item.type === "location" || item.type === "speaker" || item.type === "chapter-summary") {
+  if ("correctIndex" in item) {
     return answer.kind === "mc" && answer.selectedIndex === item.correctIndex;
+  }
+  if (item.type === "short-answer") {
+    return (
+      answer.kind === "free-response" &&
+      gradeFreeResponse({ terms: item.terms, minTerms: 1, titleTerms: [] }, answer.text).correct
+    );
   }
   if (item.type === "chapter-guess") {
     return answer.kind === "chapter-guess" && answer.book === item.citation.book && answer.chapter === item.correctChapter;
@@ -243,6 +301,7 @@ export function pointsColor(points: number, max = 1): string {
  * uses, pulled out here so other callers (the daily question) don't duplicate it. */
 export function correctAnswerText(item: QuizItem): string {
   if ("correctIndex" in item) return item.options[item.correctIndex];
+  if ("answer" in item) return item.answer;
   if ("correctChapter" in item) return formatCitation({ book: item.citation.book, chapter: item.correctChapter });
   if ("correctOrder" in item) return item.correctOrder.join(" → ");
   if ("correctPairs" in item) return item.correctPairs.map((p) => `${p.left} → ${p.right}`).join(", ");
