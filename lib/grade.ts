@@ -134,7 +134,7 @@ export function gradeFreeResponse(grading: GradingTerms, rawAnswer: string): Gra
 /** Words a player shouldn't have to type to get a short answer right. Number
  * words stay, unlike STOPWORDS above: "three" is the whole answer to "how many
  * times does Peter deny Jesus". */
-const SHORT_ANSWER_STOPWORDS = new Set(["a", "an", "the", "of", "in", "on", "at", "to", "and", "or"]);
+const SHORT_ANSWER_STOPWORDS = new Set(["a", "an", "the", "of", "in", "on", "at", "to", "and", "or", "into", "for", "with", "from", "by"]);
 
 /** Grading terms for an authored short-answer question: one phrase term per
  * accepted answer (the answer itself plus each alias), with articles and
