@@ -283,9 +283,12 @@ function checkBook(bookId: string) {
     }
     // Derived from the book rather than hardcoded to "genesis", so "In Psalm 23..."
     // is caught the same way "In Genesis 23..." is.
+    // A "selection" book's chapters are famous *as* chapters (Psalm 23, Isaiah
+    // 53, Proverbs 31), so "What is Psalm 119 about?" names its subject, not
+    // its answer. The leak rule only applies to contiguous books.
     const names = [...new Set(["chapter", book.id, book.name, book.citationName ?? book.name])];
     const chapterLeak = new RegExp(`(${names.join("|")})\\s+0*${q.citation.chapter}\\b`, "i");
-    if (chapterLeak.test(q.prompt)) {
+    if (!isSelection && chapterLeak.test(q.prompt)) {
       errors.push(`questions: "${q.id}" prompt leaks its own chapter reference (${q.citation.chapter})`);
     }
   }

@@ -534,6 +534,20 @@ by shared theme is unavoidable, since Psalms genuinely has no plot — but even
 there, prefer asking about a specific verse, image, or occasion over naming
 an abstract theme when one is available.
 
+**Authored question prompts name the book and stay plain.** The whole-Bible
+quiz mixes books, so a prompt has to say which one it's about: "In Exodus,
+what role do Shiphrah and Puah play?", not "What role do Shiphrah and Puah
+play early in the story?". The chapter number stays out of the prompt
+(`check:content`'s chapter-leak rule) *except* in a `"selection"` book, where
+the chapter is the unit's own name, so "What is Psalm 119 about?" and "In
+Psalm 23, what does the psalmist compare the LORD to?" are the right wording
+and the rule exempts `"selection"` books for it. Plain over clever: no trick
+questions, no synthesis across passages ("what do these two wise women have
+in common"), no "traditionally credited with" trivia. The general-knowledge
+tier is deliberately broad (see the tiers note above and `CONTENT_PLAN.md`'s
+calibrated rubric): a plain question about what a minor character does is
+general; how loudly Joseph wept is not.
+
 ## Journeys — event-by-event map walkthroughs
 
 A journey is a character arc that crosses several existing arcs (Abraham →

@@ -76,14 +76,25 @@ Authored questions
   `argument`); no new ones.
 - Prompts ask what happens, not what it means (`check:content` warns on the
   "what does X show/reveal/teach" pattern).
+- Prompts name the book, since the whole-Bible quiz mixes books: "In Exodus,
+  what role do Shiphrah and Puah play?", "In Paul's allegory in Galatians,
+  whom does Hagar represent?". Never the chapter number, except in a
+  `selection` book where the chapter is the unit's name ("What is Psalm 119
+  about?"); `check:content`'s chapter-leak rule exempts `selection` books for
+  exactly this.
+- Plain and straightforward. No trick questions, no synthesis across
+  passages ("what do these two women have in common"), no "traditionally
+  credited with" trivia. Breadth comes from asking many plain questions
+  across the whole book, not from making each one clever.
 - Full-sentence, plausible distractors in the 1-2 Samuel style, not short
   strawmen. The Galatians set gets rewritten (retro task).
 - Explanation on every question: one sentence or a brief phrase.
 - Authorship only as the text itself claims (no "Paul wrote Hebrews"), no
   dating, no interpretive stances on Revelation or Daniel. Ask what the text
   says.
-- The `general` tier targets "knows the famous stories", not "read the book
-  once". Calibration set below.
+- The `general` tier is broad: any plain plot-level fact, even about a minor
+  character. `deep` is the minority (incidental detail, ritual mechanics,
+  synthesis, trivia). See the rubric and the labeled calibration set.
 
 Process
 - Automated gates plus a rubric self-review plus adversarial review agents,
@@ -104,6 +115,8 @@ Process
   list modules? Decide at the first one.
 - Book id for the Song: `song-of-solomon` (ESV title) is assumed.
 - Any other reference resources beyond The Bible Project?
+- Typed (free-response) answers for authored questions: see the log entry
+  for 2026-09-16; decision pending.
 
 ## Conventions by genre
 
@@ -222,12 +235,16 @@ the table row to `partial: chapters 1-N`, and note in the log what's left.
   plausible to someone who half-remembers the book, never accidentally true.
 - No "all/none of the above", no two options that are both defensible.
 - ESV spellings and names; "the LORD" as written.
-- Tier: `general` = a story or line most churchgoers know without having
-  read the book (David and Goliath, the golden calf, "the LORD is my
-  shepherd", Jonah and the fish); everything else unset. Expect roughly
-  25-40% of a famous narrative book's items to be general, nearly all of
-  Jonah's, almost none of Leviticus's. Calibrate against the labeled set
-  below.
+- Tier, calibrated on the labeled set below (Andrew, 2026-09-16): `general`
+  is any plain plot-level fact, including what a named minor character does
+  or says (Ittai's loyalty, Shecaniah's proposal, Caiaphas's argument all
+  labeled general). `deep` is incidental detail (how loudly Joseph wept,
+  where Terah settled), ritual mechanics and their meaning (the fire pot and
+  torch), synthesis across passages (the two wise women, a group of psalms'
+  shared theme), and authorship trivia. So the general share of a narrative
+  book is high, most of its authored questions; deep is the minority. Tag
+  events the same way: the event is general if a plain "what happens" question
+  about it would be.
 - Explanations confirm, they don't lecture.
 
 ## Roadmap
@@ -280,41 +297,50 @@ Code follow-ups, each with its trigger:
 - [ ] Fix the three meaning-style prompts (`exo-q-theme-3`, `jn-q-theme-5`,
       `jn-q-theme-7`) and the cross-book duplicate (`exo-q-theme-4` vs
       `qz-22`).
-- [ ] Tag `tier: "general"` across the nine original books once the
-      calibration set is labeled.
+- [ ] Tag `tier` across the nine original books using the calibrated
+      rubric (labels are in; most authored questions will be general).
+- [ ] Add the book name to every existing authored prompt (277 across nine
+      books) in the "In Exodus, ..." style, one book per pass.
+- [ ] Psalms: reword prompts to name the psalm ("In Psalm 23, ..." instead of
+      "the psalm that begins ..."), now allowed for `selection` books.
+- [ ] Calibration-set rewrites: #6 (`exo-q-arc-1`) and #25 (`psalms-q25`,
+      "What is Psalm 119 about?") plainer wording; #23 (`psalms-q1`) replaced
+      with a content question about Psalm 23; #13 (`2sam-aq-theme-7`) split
+      into one plain question per wise woman.
 
 ## Calibration set (label each G = general, D = deep/too specific)
 
-Existing authored questions, chosen to span the range. Labels go in the
-right-hand column; the rubric's tier guidance gets rewritten from them.
+Existing authored questions, chosen to span the range. Labeled by Andrew on
+2026-09-16 ("fine" = general); the rubric's tier guidance above is derived
+from these labels.
 
 | # | Id | Prompt | Answer | Label |
 |---|---|---|---|---|
-| 1 | qz-47 | Why does Cain kill his brother Abel? | God favored Abel's offering, not his | |
-| 2 | qz-15 | What happens to Lot's wife as the family flees Sodom? | Looks back, becomes a pillar of salt | |
-| 3 | qz-59 | Where does Abram's father Terah settle the family on the way from Ur to Canaan? | Haran | |
-| 4 | qz-44 | How loudly does Joseph weep when he reveals himself to his brothers? | So loudly the Egyptians and Pharaoh's household hear | |
-| 5 | qz-26 | What ritual accompanies God's covenant-making with Abram, and what does it signify? | Fire pot and torch pass between the pieces; God alone takes on the obligation | |
-| 6 | exo-q-arc-1 | What is the overall shift in Israel's circumstances across this part of the story? | Oppressed slaves to a free people | |
-| 7 | exo-q-character-3 | What role do Shiphrah and Puah play early in the story? | Midwives who refuse to kill Hebrew boys | |
-| 8 | 1sam-aq-character-5 | What reasons does David give Saul for why he can defeat Goliath? | He killed a lion and a bear; the LORD will save him | |
-| 9 | 1sam-aq-theme-10 | What does the text say about how often the LORD was speaking to Israel right before he calls Samuel? | The word of the LORD was rare | |
-| 10 | 1sam-aq-character-11 | What does Abigail do when she learns Nabal has insulted David's messengers? | Brings food and gifts to David before he takes revenge | |
-| 11 | 2sam-aq-covenant-2 | What does God promise David through Nathan instead of letting David build him a house? | An everlasting dynasty | |
-| 12 | 2sam-aq-character-8 | What does Ittai say when David tells him he is free to stay behind? | Wherever the king goes, he goes | |
-| 13 | 2sam-aq-theme-7 | What do the wise woman of Tekoa and the wise woman of Abel Beth-maacah have in common? | Ordinary women whose words change a conflict involving the king | |
-| 14 | ezra-aq-1 | What does Cyrus's decree permit the Jewish exiles to do? | Return to Jerusalem and rebuild the temple | |
-| 15 | ezra-aq-17 | What does Shecaniah propose to Ezra and the assembly? | A covenant to put away the foreign wives | |
-| 16 | gal-aq-15 | Which of these is not a fruit of the Spirit? | Enmity | |
-| 17 | gal-aq-10 | In Paul's allegory, whom does Hagar represent? | The covenant from Sinai, bearing children for slavery | |
-| 18 | matt-aq-42 | How many times does Peter deny knowing Jesus before the rooster crows? | Three | |
-| 19 | matt-aq-33 | In the parable of the workers in the vineyard, what surprises the workers hired first? | Same wage as those hired last | |
-| 20 | matt-aq-21 | What title does Jesus claim after healing a withered hand on the Sabbath? | Lord of the Sabbath | |
-| 21 | jn-q-theme-1 | What common thread connects the seven signs Jesus performs in this Gospel? | Each reveals Jesus' identity and points toward belief | |
-| 22 | jn-q-character-5 | What does Caiaphas argue when the council debates what to do about Jesus after Lazarus is raised? | Better one man die than the nation perish | |
-| 23 | psalms-q1 | Which king is traditionally credited with "The LORD is my shepherd"? | David | |
-| 24 | psalms-q16 | The two-ways psalm, the humanity psalm, the heavens psalm, the King-of-glory psalm, and the numbering-our-days psalm are grouped around what? | Wisdom, creation, and God's presence | |
-| 25 | psalms-q25 | The longest chapter in the Bible spends its 176 verses meditating on what? | God's law | |
+| 1 | qz-47 | Why does Cain kill his brother Abel? | God favored Abel's offering, not his | G |
+| 2 | qz-15 | What happens to Lot's wife as the family flees Sodom? | Looks back, becomes a pillar of salt | G |
+| 3 | qz-59 | Where does Abram's father Terah settle the family on the way from Ur to Canaan? | Haran | D |
+| 4 | qz-44 | How loudly does Joseph weep when he reveals himself to his brothers? | So loudly the Egyptians and Pharaoh's household hear | D |
+| 5 | qz-26 | What ritual accompanies God's covenant-making with Abram, and what does it signify? | Fire pot and torch pass between the pieces; God alone takes on the obligation | D (fine as MC) |
+| 6 | exo-q-arc-1 | What is the overall shift in Israel's circumstances across this part of the story? | Oppressed slaves to a free people | G, reword |
+| 7 | exo-q-character-3 | What role do Shiphrah and Puah play early in the story? | Midwives who refuse to kill Hebrew boys | G |
+| 8 | 1sam-aq-character-5 | What reasons does David give Saul for why he can defeat Goliath? | He killed a lion and a bear; the LORD will save him | G |
+| 9 | 1sam-aq-theme-10 | What does the text say about how often the LORD was speaking to Israel right before he calls Samuel? | The word of the LORD was rare | G |
+| 10 | 1sam-aq-character-11 | What does Abigail do when she learns Nabal has insulted David's messengers? | Brings food and gifts to David before he takes revenge | G |
+| 11 | 2sam-aq-covenant-2 | What does God promise David through Nathan instead of letting David build him a house? | An everlasting dynasty | G |
+| 12 | 2sam-aq-character-8 | What does Ittai say when David tells him he is free to stay behind? | Wherever the king goes, he goes | G |
+| 13 | 2sam-aq-theme-7 | What do the wise woman of Tekoa and the wise woman of Abel Beth-maacah have in common? | Ordinary women whose words change a conflict involving the king | D, split |
+| 14 | ezra-aq-1 | What does Cyrus's decree permit the Jewish exiles to do? | Return to Jerusalem and rebuild the temple | G |
+| 15 | ezra-aq-17 | What does Shecaniah propose to Ezra and the assembly? | A covenant to put away the foreign wives | G |
+| 16 | gal-aq-15 | Which of these is not a fruit of the Spirit? | Enmity | G |
+| 17 | gal-aq-10 | In Paul's allegory, whom does Hagar represent? | The covenant from Sinai, bearing children for slavery | G |
+| 18 | matt-aq-42 | How many times does Peter deny knowing Jesus before the rooster crows? | Three | G |
+| 19 | matt-aq-33 | In the parable of the workers in the vineyard, what surprises the workers hired first? | Same wage as those hired last | G |
+| 20 | matt-aq-21 | What title does Jesus claim after healing a withered hand on the Sabbath? | Lord of the Sabbath | G |
+| 21 | jn-q-theme-1 | What common thread connects the seven signs Jesus performs in this Gospel? | Each reveals Jesus' identity and points toward belief | G |
+| 22 | jn-q-character-5 | What does Caiaphas argue when the council debates what to do about Jesus after Lazarus is raised? | Better one man die than the nation perish | G |
+| 23 | psalms-q1 | Which king is traditionally credited with "The LORD is my shepherd"? | David | replace |
+| 24 | psalms-q16 | The two-ways psalm, the humanity psalm, the heavens psalm, the King-of-glory psalm, and the numbering-our-days psalm are grouped around what? | Wisdom, creation, and God's presence | D |
+| 25 | psalms-q25 | The longest chapter in the Bible spends its 176 verses meditating on what? | God's law | G, reword |
 
 ## Coverage table
 
@@ -397,3 +423,8 @@ Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
 
 - 2026-09-15: Phase 0. Decisions above settled with Andrew. Tier field,
   General mode, verse cap 1,000, new gates, this file.
+- 2026-09-16: Calibration set labeled. Tier rubric rewritten (general is the
+  majority; deep is incidental detail, ritual mechanics, synthesis, trivia).
+  New prompt conventions: name the book, keep it plain. `check:content`'s
+  chapter-leak rule now exempts `selection` books. Retro tasks added for
+  existing prompts. Andrew asked about typed answers for authored questions.
