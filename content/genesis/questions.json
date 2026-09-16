@@ -3,24 +3,24 @@
     "id": "qz-1",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does God create on the sixth day, completing his work of creation?",
-    "options": [
-      "Land animals and humankind, in his own image",
-      "The sun, moon, and stars",
-      "The birds and sea creatures",
-      "The dry land and the seas"
+    "prompt": "In Genesis, on which day of creation does God make humankind?",
+    "format": "short-answer",
+    "answer": "the sixth",
+    "aliases": [
+      "6",
+      "six"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 1
-    }
+    },
+    "explanation": "Land animals and humankind, made in God's image, come on the sixth day."
   },
   {
     "id": "qz-2",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What do Adam and Eve do immediately after eating the forbidden fruit?",
+    "prompt": "In Genesis, what do Adam and Eve do immediately after eating the forbidden fruit?",
     "options": [
       "They realize they are naked and sew fig leaves together to cover themselves",
       "They immediately die a physical death",
@@ -37,7 +37,7 @@
     "id": "qz-3",
     "book": "genesis",
     "category": "arc",
-    "prompt": "Why does God decide to send a flood over the earth?",
+    "prompt": "In Genesis, why does God decide to send a flood over the earth?",
     "options": [
       "Because human wickedness and violence on the earth have become great and continual",
       "Because Cain murdered Abel, and the shed blood cries out from the ground for judgment",
@@ -54,7 +54,7 @@
     "id": "qz-4",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does God do after the people build a tower at Babel to make a name for themselves?",
+    "prompt": "In Genesis, what does God do after the people build a tower at Babel to make a name for themselves?",
     "options": [
       "He confuses their language and scatters them across the earth",
       "He destroys the tower with fire sent down from heaven before anyone can finish building it",
@@ -71,7 +71,7 @@
     "id": "qz-6",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Abram ask God for, just before the covenant ceremony with the smoking pot and torch?",
+    "prompt": "In Genesis, what does Abram ask God for just before the covenant ceremony with the smoking fire pot and torch?",
     "options": [
       "Reassurance that he will actually possess the land he has been promised",
       "A son through his wife Sarai",
@@ -88,24 +88,20 @@
     "id": "qz-7",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does God provide as a substitute after Abraham binds Isaac on the altar?",
-    "options": [
-      "A ram caught by its horns in a thicket",
-      "A lamb from Abraham's own flock",
-      "Nothing; Isaac is spared with no substitute offered",
-      "A dove Abraham brought from home"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, what animal does God provide as a substitute after Abraham binds Isaac on the altar?",
+    "format": "short-answer",
+    "answer": "a ram",
     "citation": {
       "book": "genesis",
       "chapter": 22
-    }
+    },
+    "explanation": "A ram caught by its horns in a thicket, offered in place of Isaac."
   },
   {
     "id": "qz-8",
     "book": "genesis",
     "category": "arc",
-    "prompt": "How does Jacob trick his father Isaac into giving him Esau's blessing?",
+    "prompt": "In Genesis, how does Jacob trick his father Isaac into giving him Esau's blessing?",
     "options": [
       "He wears goatskins on his arms and neck and brings in a meal, pretending to be Esau",
       "He forges a written blessing while Isaac sleeps",
@@ -122,24 +118,20 @@
     "id": "qz-9",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does the man Jacob wrestles with all night do just before letting him go at daybreak?",
-    "options": [
-      "He touches Jacob's hip and renames him Israel",
-      "He blesses Jacob's flocks and servants",
-      "He tells Jacob to return to Laban",
-      "He gives Jacob a new set of laws"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, what new name does the man Jacob wrestles with all night give him at daybreak?",
+    "format": "short-answer",
+    "answer": "Israel",
     "citation": {
       "book": "genesis",
       "chapter": 32
-    }
+    },
+    "explanation": "Because he has striven with God and with men and has prevailed."
   },
   {
     "id": "qz-10",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What do Joseph's brothers do to him after he arrives to check on them wearing his colorful robe?",
+    "prompt": "In Genesis, what do Joseph's brothers do to him when he arrives to check on them wearing his colorful robe?",
     "options": [
       "They strip him, throw him into a pit, and sell him to traders heading to Egypt",
       "They kill him on the spot and tell their father a wild animal must have devoured him",
@@ -156,7 +148,7 @@
     "id": "qz-11",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Joseph do that leads Pharaoh to put him in charge of Egypt?",
+    "prompt": "In Genesis, what does Joseph do that leads Pharaoh to put him in charge of Egypt?",
     "options": [
       "He interprets Pharaoh's dreams and proposes storing grain for the coming famine",
       "He defeats Egypt's enemies in battle",
@@ -173,7 +165,7 @@
     "id": "qz-12",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Joseph do when he finally reveals his identity to his brothers?",
+    "prompt": "In Genesis, what does Joseph do when he finally reveals his identity to his brothers?",
     "options": [
       "He weeps aloud, tells them he is Joseph, and sends for their father",
       "He has them arrested for their earlier crime",
@@ -207,7 +199,7 @@
     "id": "qz-14",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What does Noah do after planting a vineyard, setting off the incident that leads to Canaan being cursed?",
+    "prompt": "In Genesis, what does Noah do after planting a vineyard, setting off the incident that leads to Canaan being cursed?",
     "options": [
       "He drinks its wine, becomes drunk, and lies uncovered in his tent",
       "He offers its first fruits to God at an altar",
@@ -224,41 +216,39 @@
     "id": "qz-15",
     "book": "genesis",
     "category": "arc",
-    "prompt": "What happens to Lot's wife as the family flees the destruction of Sodom?",
-    "options": [
-      "She looks back and turns into a pillar of salt",
-      "She dies in the fire that destroys the city",
-      "She refuses to leave and stays behind",
-      "She leads her daughters safely to Zoar"
+    "prompt": "In Genesis, what does Lot's wife turn into when she looks back as the family flees Sodom?",
+    "format": "short-answer",
+    "answer": "a pillar of salt",
+    "aliases": [
+      "salt"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 19
-    }
+    },
+    "explanation": "She looks back at the burning city and becomes a pillar of salt."
   },
   {
     "id": "qz-16",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What sign does God give as a reminder of his covenant not to flood the earth again?",
-    "options": [
-      "A rainbow",
-      "A burning bush",
-      "A pillar of cloud",
-      "A dove"
+    "prompt": "In Genesis, what sign does God give as a reminder of his covenant never to flood the earth again?",
+    "format": "short-answer",
+    "answer": "a rainbow",
+    "aliases": [
+      "bow"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 9
-    }
+    },
+    "explanation": "God sets his bow in the cloud as the sign of the covenant with every living creature."
   },
   {
     "id": "qz-17",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What threefold promise does God make when he first calls Abram?",
+    "prompt": "In Genesis, what threefold promise does God make when he first calls Abram?",
     "options": [
       "Wealth, fame, and a large army",
       "Land, descendants, and blessing to the nations",
@@ -275,7 +265,7 @@
     "id": "qz-18",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "How does Abram respond when God promises him offspring as numerous as the stars?",
+    "prompt": "In Genesis, how does Abram respond when God promises him offspring as numerous as the stars?",
     "options": [
       "He demands a written contract",
       "He doubts and walks away",
@@ -292,41 +282,36 @@
     "id": "qz-19",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What new sign does God introduce as the mark of his covenant with Abraham's household?",
-    "options": [
-      "Circumcision",
-      "Sacrifice of a firstborn son",
-      "Wearing special garments",
-      "Building a temple"
+    "prompt": "In Genesis, what sign does God give as the mark of his covenant with Abraham's household?",
+    "format": "short-answer",
+    "answer": "circumcision",
+    "aliases": [
+      "circumcised"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 17
-    }
+    },
+    "explanation": "Every male in Abraham's household is to be circumcised as the sign of the covenant."
   },
   {
     "id": "qz-20",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What name changes accompany the covenant of circumcision?",
-    "options": [
-      "Isaac becomes Israel",
-      "Abram and Sarai become Abraham and Sarah",
-      "Jacob becomes Abraham",
-      "Abram becomes Abraham while Sarai keeps her own name"
-    ],
-    "correctIndex": 1,
+    "prompt": "In Genesis, what new name does God give Abram when he establishes the covenant of circumcision?",
+    "format": "short-answer",
+    "answer": "Abraham",
     "citation": {
       "book": "genesis",
       "chapter": 17
-    }
+    },
+    "explanation": "Abram, \"exalted father,\" becomes Abraham, \"father of a multitude\"; Sarai becomes Sarah."
   },
   {
     "id": "qz-21",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "How is the Abrahamic covenant reaffirmed after Abraham's willingness to offer Isaac?",
+    "prompt": "In Genesis, how is the covenant reaffirmed after Abraham shows he is willing to offer Isaac?",
     "options": [
       "God withdraws the promise as a warning",
       "God repeats the promise of numerous offspring and blessing to the nations",
@@ -343,7 +328,7 @@
     "id": "qz-22",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "How does God confirm the covenant promise to Isaac?",
+    "prompt": "In Genesis, how does God confirm the covenant promise to Isaac?",
     "options": [
       "By giving Isaac a new name",
       "By repeating to Isaac the same promises made to Abraham",
@@ -360,7 +345,7 @@
     "id": "qz-23",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What does God promise Jacob in his dream at Bethel?",
+    "prompt": "In Genesis, what does God promise Jacob in his dream at Bethel?",
     "options": [
       "To abandon him if he leaves Canaan",
       "To be with him, protect him, and bring him back to the land",
@@ -377,7 +362,7 @@
     "id": "qz-24",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What does the name Israel, given to Jacob at Peniel, become for the people descended from him?",
+    "prompt": "In Genesis, what does the name Israel, given to Jacob at Peniel, later become?",
     "options": [
       "A curse on his family",
       "The name of the nation that will come from him",
@@ -394,7 +379,7 @@
     "id": "qz-25",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What does God promise Abram after Lot chooses to settle near Sodom and Abram stays in Canaan?",
+    "prompt": "In Genesis, what does God promise Abram after Lot chooses to settle near Sodom and Abram stays in Canaan?",
     "options": [
       "That all the land he can see will belong to him and offspring as numerous as the dust of the earth",
       "That Lot's descendants will inherit the promise instead",
@@ -411,7 +396,7 @@
     "id": "qz-26",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What ritual accompanies God's covenant-making with Abram, and what does it signify?",
+    "prompt": "In Genesis, what passes between the animal pieces when God makes his covenant with Abram, and what does that signify?",
     "options": [
       "A smoking fire pot and flaming torch pass between the pieces, signifying God alone takes on the obligation",
       "Abram and God pass between the pieces together, signifying that the two of them take on matching obligations",
@@ -428,24 +413,20 @@
     "id": "qz-27",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What covenant-related event happens between Abraham and Abimelech at Beersheba?",
-    "options": [
-      "They divide the land of Canaan permanently",
-      "They make a treaty over a disputed well",
-      "They exchange sons as hostages",
-      "They agree to worship the same idols"
-    ],
-    "correctIndex": 1,
+    "prompt": "In Genesis, what do Abraham and Abimelech make a treaty over at Beersheba?",
+    "format": "short-answer",
+    "answer": "a well",
     "citation": {
       "book": "genesis",
       "chapter": 21
-    }
+    },
+    "explanation": "Abraham complains that Abimelech's servants seized a well, and the two swear an oath at Beersheba."
   },
   {
     "id": "qz-28",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "Besides the later sign of the rainbow, what commitment does God make to Noah after the flood?",
+    "prompt": "In Genesis, besides the sign of the rainbow, what does God commit to after Noah's sacrifice following the flood?",
     "options": [
       "A promise that seedtime and harvest will not cease",
       "A command to never eat meat",
@@ -462,7 +443,7 @@
     "id": "qz-29",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "Who besides Abraham's direct line is included in the covenant sign of circumcision?",
+    "prompt": "In Genesis, who besides Abraham's own descendants must receive the covenant sign of circumcision?",
     "options": [
       "Only Isaac",
       "Every male in Abraham's household, including servants",
@@ -479,7 +460,7 @@
     "id": "qz-30",
     "book": "genesis",
     "category": "covenant",
-    "prompt": "What happens at Bethel when Jacob returns there in obedience to God?",
+    "prompt": "In Genesis, what happens at Bethel when Jacob returns there in obedience to God?",
     "options": [
       "God renames him Israel again and reaffirms the covenant blessing",
       "God transfers the covenant blessing from Jacob to his firstborn son Reuben",
@@ -496,7 +477,7 @@
     "id": "qz-31",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Cain say to God after being sentenced to wander the earth for killing Abel?",
+    "prompt": "In Genesis, what does Cain say to God after being sentenced to wander the earth for killing Abel?",
     "options": [
       "\"My punishment is greater than I can bear\"",
       "\"I am willing to accept whatever punishment you give\"",
@@ -530,7 +511,7 @@
     "id": "qz-33",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Abram do when God tells him to leave his country, his people, and his father's household?",
+    "prompt": "In Genesis, what does Abram do when God tells him to leave his country, his people, and his father's household?",
     "options": [
       "He sets out for Canaan as the LORD told him, taking Sarai and Lot with him",
       "He refuses and stays behind in Haran, unwilling to leave everything familiar to his father's household",
@@ -547,7 +528,7 @@
     "id": "qz-34",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does the angel of the LORD tell Hagar to do when she flees from Sarai into the wilderness?",
+    "prompt": "In Genesis, what does the angel of the LORD tell Hagar to do when she flees from Sarai into the wilderness?",
     "options": [
       "Return to Sarai and submit to her, and he promises to multiply her offspring",
       "Continue on to Egypt where her family will take her in",
@@ -564,7 +545,7 @@
     "id": "qz-35",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Sarah say when she gives birth to Isaac in her old age?",
+    "prompt": "In Genesis, what does Sarah say when she gives birth to Isaac in her old age?",
     "options": [
       "\"God has made laughter for me; everyone who hears will laugh with me\"",
       "\"I no longer believe God keeps his promises\"",
@@ -581,24 +562,23 @@
     "id": "qz-36",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Esau do when he comes in from the field exhausted and smells Jacob's stew?",
-    "options": [
-      "He sells his birthright to Jacob for a bowl of stew and some bread",
-      "He refuses to trade and insists on hunting his own food instead of trading anything away",
-      "He shares the stew with Jacob without asking for anything",
-      "He orders a servant to prepare the same stew for him"
+    "prompt": "In Genesis, what does Esau trade to Jacob for a bowl of stew when he comes in from the field exhausted?",
+    "format": "short-answer",
+    "answer": "his birthright",
+    "aliases": [
+      "birth right"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 25
-    }
+    },
+    "explanation": "Esau swears away his birthright to Jacob for bread and lentil stew."
   },
   {
     "id": "qz-37",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Rebekah do to help Jacob receive Esau's blessing from Isaac?",
+    "prompt": "In Genesis, what does Rebekah do to help Jacob receive Esau's blessing from Isaac?",
     "options": [
       "She overhears Isaac's plan, prepares a meal like Esau's, and dresses Jacob in Esau's clothes and goatskins",
       "She tells Isaac the truth about Esau's earlier sale of his birthright",
@@ -615,24 +595,20 @@
     "id": "qz-38",
     "book": "genesis",
     "category": "character",
-    "prompt": "How does Laban trick Jacob on his wedding night?",
-    "options": [
-      "He substitutes Leah for Rachel, and Jacob doesn't realize until morning",
-      "He demands a much higher bride price than the two of them had originally agreed upon",
-      "He marries Rachel to another man first",
-      "He refuses to let Jacob marry either daughter"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, which daughter does Laban give Jacob on his wedding night in place of Rachel?",
+    "format": "short-answer",
+    "answer": "Leah",
     "citation": {
       "book": "genesis",
       "chapter": 29
-    }
+    },
+    "explanation": "Laban brings Leah to Jacob in the dark; Jacob discovers the switch in the morning."
   },
   {
     "id": "qz-39",
     "book": "genesis",
     "category": "character",
-    "prompt": "What do Rachel and Leah each do to gain more sons through Jacob once they stop bearing children themselves?",
+    "prompt": "In Genesis, what do Rachel and Leah each do to gain more sons through Jacob once they stop bearing children themselves?",
     "options": [
       "They each give their servant to Jacob as a wife to bear children in their name",
       "They ask their father Laban to arrange yet another marriage for Jacob to grow the family",
@@ -649,7 +625,7 @@
     "id": "qz-40",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Jacob do the night before he wrestles with the man at Peniel, fearing Esau's approach?",
+    "prompt": "In Genesis, what does Jacob do the night before he wrestles with the man at Peniel, fearing Esau's approach?",
     "options": [
       "He sends his family and possessions across the Jabbok river ahead of him and remains alone",
       "He gathers his men to prepare for battle against Esau",
@@ -666,7 +642,7 @@
     "id": "qz-41",
     "book": "genesis",
     "category": "character",
-    "prompt": "Why do Joseph's brothers grow to hate him?",
+    "prompt": "In Genesis, why do Joseph's brothers grow to hate him?",
     "options": [
       "Because their father favors him and because of his dreams of ruling over them",
       "Because Joseph refuses to work in the fields alongside them and stays home with their father instead",
@@ -683,7 +659,7 @@
     "id": "qz-42",
     "book": "genesis",
     "category": "character",
-    "prompt": "How does Joseph respond when Potiphar's wife tries to seduce him?",
+    "prompt": "In Genesis, how does Joseph respond when Potiphar's wife tries to seduce him?",
     "options": [
       "He refuses, citing his loyalty to Potiphar and to God",
       "He gives in to avoid conflict",
@@ -700,24 +676,20 @@
     "id": "qz-43",
     "book": "genesis",
     "category": "character",
-    "prompt": "What does Judah offer to do when Joseph threatens to keep Benjamin as a slave?",
-    "options": [
-      "He offers to remain as a slave himself in Benjamin's place, for the sake of their father",
-      "He offers to pay back double the money that mysteriously went missing from all of their sacks",
-      "He argues that Benjamin deserves the punishment alone",
-      "He abandons Benjamin and returns home with the others"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, which brother offers to stay as a slave in Benjamin's place when Joseph threatens to keep him?",
+    "format": "short-answer",
+    "answer": "Judah",
     "citation": {
       "book": "genesis",
       "chapter": 44
-    }
+    },
+    "explanation": "Judah pleads to remain as Joseph's slave instead of Benjamin, for their father's sake."
   },
   {
     "id": "qz-44",
     "book": "genesis",
     "category": "character",
-    "prompt": "How loudly does Joseph weep when he finally reveals himself to his brothers?",
+    "prompt": "In Genesis, how loudly does Joseph weep when he finally reveals himself to his brothers?",
     "options": [
       "So loudly that the Egyptians and Pharaoh's household hear it",
       "Quietly, so that only his brothers hear",
@@ -734,7 +706,7 @@
     "id": "qz-45",
     "book": "genesis",
     "category": "character",
-    "prompt": "What is Jacob doing when he gathers his twelve sons before his death?",
+    "prompt": "In Genesis, what is Jacob doing when he gathers his twelve sons before his death?",
     "options": [
       "Dividing his wealth equally with no distinctions",
       "Pronouncing blessings and prophetic words specific to each son's future",
@@ -751,7 +723,7 @@
     "id": "qz-46",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does God do to prevent Adam and Eve from returning to the garden of Eden after expelling them?",
+    "prompt": "In Genesis, what does God do to keep Adam and Eve from returning to the garden of Eden after expelling them?",
     "options": [
       "He stations cherubim and a flaming sword to guard the way to the tree of life",
       "He destroys the garden completely",
@@ -768,7 +740,7 @@
     "id": "qz-47",
     "book": "genesis",
     "category": "theme",
-    "prompt": "Why does Cain kill his brother Abel?",
+    "prompt": "In Genesis, why does Cain kill his brother Abel?",
     "options": [
       "Cain is angry that the LORD looked with favor on Abel's offering but not his own",
       "Abel steals Cain's inheritance",
@@ -785,7 +757,7 @@
     "id": "qz-48",
     "book": "genesis",
     "category": "theme",
-    "prompt": "Why does Sarai give her servant Hagar to Abram as a wife?",
+    "prompt": "In Genesis, why does Sarai give her servant Hagar to Abram as a wife?",
     "options": [
       "Because the LORD had kept her from bearing children and she wants a child through Hagar",
       "Because Abram himself requests a second wife to help build up his household while they wait",
@@ -802,7 +774,7 @@
     "id": "qz-49",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does Esau do when he learns Jacob has stolen his blessing?",
+    "prompt": "In Genesis, what does Esau do when he learns Jacob has stolen his blessing?",
     "options": [
       "He weeps bitterly, begs Isaac for a blessing of his own, and vows to kill Jacob once their father dies",
       "He forgives Jacob immediately, asks for nothing at all in return, and welcomes him warmly home",
@@ -819,7 +791,7 @@
     "id": "qz-50",
     "book": "genesis",
     "category": "theme",
-    "prompt": "When his brothers fear revenge after their father's death, what does Joseph say God did with their evil intentions toward him?",
+    "prompt": "In Genesis, when his brothers fear revenge after their father's death, what does Joseph say God did with their evil intentions toward him?",
     "options": [
       "God meant it for good, to bring about the saving of many lives",
       "God punished them severely for it",
@@ -837,24 +809,24 @@
     "id": "qz-51",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does God promise will happen to \"all the families of the earth\" when he first calls Abram?",
-    "options": [
-      "They will be blessed through Abram",
-      "They will be scattered and confused in language",
-      "They will be destroyed by a flood",
-      "They will be enslaved to Abram's descendants"
+    "prompt": "In Genesis, what does God promise will happen to \"all the families of the earth\" through Abram when he first calls him?",
+    "format": "short-answer",
+    "answer": "blessed",
+    "aliases": [
+      "blessing",
+      "bless"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 12
-    }
+    },
+    "explanation": "\"In you all the families of the earth shall be blessed.\""
   },
   {
     "id": "qz-52",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does Abraham name the place where God provides the ram in place of Isaac?",
+    "prompt": "In Genesis, what does Abraham name the place where God provides the ram in place of Isaac?",
     "options": [
       "\"The LORD Will Provide\"",
       "\"The Place of Testing\"",
@@ -871,7 +843,7 @@
     "id": "qz-53",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What do Adam and Eve do when God calls out to them in the garden after they eat the fruit?",
+    "prompt": "In Genesis, what do Adam and Eve do when God calls out to them in the garden after they eat the fruit?",
     "options": [
       "They hide among the trees, and each then blames someone else when confronted",
       "They confess immediately to God, without waiting to be asked anything at all",
@@ -888,7 +860,7 @@
     "id": "qz-54",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What does Jacob do when Joseph presents his two sons, Manasseh and Ephraim, for a blessing?",
+    "prompt": "In Genesis, what does Jacob do when Joseph presents his two sons, Manasseh and Ephraim, for a blessing?",
     "options": [
       "He crosses his hands to place his right hand on the younger son, Ephraim, instead of the firstborn",
       "He refuses to bless either son",
@@ -905,7 +877,7 @@
     "id": "qz-55",
     "book": "genesis",
     "category": "theme",
-    "prompt": "What instructions does God give Noah about the ark he must build?",
+    "prompt": "In Genesis, what instructions does God give Noah about the ark he must build?",
     "options": [
       "Its dimensions, the wood to use, and to bring pairs of every kind of animal aboard",
       "Only to gather food for forty days",
@@ -922,24 +894,23 @@
     "id": "qz-56",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does God call his completed work, at the end of the six days of creation?",
-    "options": [
-      "\"Very good\"",
-      "\"Perfect and unchanging\"",
-      "\"A temporary dwelling\"",
-      "\"Very great\""
+    "prompt": "In Genesis, what does God call his completed work at the end of the six days of creation?",
+    "format": "short-answer",
+    "answer": "very good",
+    "aliases": [
+      "good"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 1
-    }
+    },
+    "explanation": "God sees everything he has made, and behold, it is very good."
   },
   {
     "id": "qz-58",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What two dreams does Joseph tell his brothers about, provoking their hatred?",
+    "prompt": "In Genesis, what two dreams does Joseph tell his brothers about, provoking their hatred?",
     "options": [
       "A dream of bundled sheaves bowing to his, and a dream of the sun, moon, and stars bowing to him",
       "A dream of seven fat, healthy cows and seven thin, sickly cows grazing beside the river Nile",
@@ -956,24 +927,20 @@
     "id": "qz-59",
     "book": "genesis",
     "category": "argument",
-    "prompt": "Where does Abram's father Terah settle the family on their way from Ur to Canaan?",
-    "options": [
-      "Haran",
-      "Egypt",
-      "Beersheba",
-      "Shechem"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, where does Abram's father Terah settle the family on their way from Ur to Canaan?",
+    "format": "short-answer",
+    "answer": "Haran",
     "citation": {
       "book": "genesis",
       "chapter": 11
-    }
+    },
+    "explanation": "Terah leaves Ur with Abram, Sarai, and Lot, and settles in Haran, where he dies."
   },
   {
     "id": "qz-60",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does Joseph do for his father Jacob's body after he dies in Egypt?",
+    "prompt": "In Genesis, what does Joseph do for his father Jacob's body after he dies in Egypt?",
     "options": [
       "He has Jacob embalmed and carries his body to Canaan to bury him with his fathers",
       "He buries Jacob right there in Egypt immediately, without any journey back to Canaan at all",
@@ -990,7 +957,7 @@
     "id": "qz-61",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What curse does God pronounce on the serpent after the fall?",
+    "prompt": "In Genesis, what curse does God pronounce on the serpent after the fall?",
     "options": [
       "It will crawl on its belly and eat dust, and be at enmity with the woman's offspring",
       "It will lose the ability to speak",
@@ -1007,7 +974,7 @@
     "id": "qz-62",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does the angel of the LORD stop Abraham from doing at the last moment on Mount Moriah?",
+    "prompt": "In Genesis, what does the angel of the LORD stop Abraham from doing at the last moment on Mount Moriah?",
     "options": [
       "Plunging the knife into Isaac",
       "Lighting the altar fire",
@@ -1024,41 +991,36 @@
     "id": "qz-63",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does God tell Abram will happen to his descendants for four hundred years?",
-    "options": [
-      "They will be sojourners and slaves in a land not their own, before coming out with great possessions",
-      "They will rule as kings over Egypt",
-      "They will multiply in Canaan and never leave the land",
-      "They will be conquered and completely destroyed by all of the neighboring nations surrounding their land"
+    "prompt": "In Genesis, for how many years does God tell Abram his descendants will be sojourners and slaves in a land not their own?",
+    "format": "short-answer",
+    "answer": "four hundred",
+    "aliases": [
+      "400"
     ],
-    "correctIndex": 0,
     "citation": {
       "book": "genesis",
       "chapter": 15
-    }
+    },
+    "explanation": "They will be afflicted four hundred years, then come out with great possessions."
   },
   {
     "id": "qz-64",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What do Simeon and Levi do to the men of Shechem after their sister Dinah is assaulted?",
-    "options": [
-      "They kill all the men of the city while the men are still recovering from circumcision, in revenge",
-      "They accept a bride price and make peace",
-      "They demand Shechem's father hand over his kingdom",
-      "They report the crime to their grandfather Isaac and leave him to decide how the matter should be judged"
-    ],
-    "correctIndex": 0,
+    "prompt": "In Genesis, which two of Jacob's sons kill the men of Shechem after their sister Dinah is assaulted?",
+    "format": "short-answer",
+    "answer": "Simeon and Levi",
     "citation": {
       "book": "genesis",
       "chapter": 34
-    }
+    },
+    "explanation": "Dinah's full brothers kill every male in the city while the men are still sore from circumcision."
   },
   {
     "id": "qz-65",
     "book": "genesis",
     "category": "argument",
-    "prompt": "What does Jacob say about his son Judah's future, in his final words to his twelve sons?",
+    "prompt": "In Genesis, what does Jacob say about Judah's future in his final words to his twelve sons?",
     "options": [
       "That the scepter and ruler's staff will not depart from Judah",
       "That Judah will be cursed and scattered among his brothers",

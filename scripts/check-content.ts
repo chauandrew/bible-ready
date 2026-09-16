@@ -293,7 +293,7 @@ function checkBook(bookId: string) {
     if (significant > 2) {
       errors.push(`questions: "${q.id}" short answer "${q.answer}" is ${significant} significant words; keep it to 1-2 or make it multiple choice`);
     }
-    if (/\b(which of (these|the following)|not|except)\b/i.test(q.prompt)) {
+    if (/\b(which of (these|the following)|(is|are|was|were|does|do|did) not|except)\b/i.test(q.prompt)) {
       errors.push(`questions: "${q.id}" short-answer prompt only makes sense against options ("${q.prompt.slice(0, 60)}")`);
     }
     const seen = new Set<string>();
