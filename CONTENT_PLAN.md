@@ -312,10 +312,11 @@ Code follow-ups, each with its trigger:
       cap; the gate is an error from here on (2026-09-16).
 - [x] Rewrite Galatians' authored distractors to full-sentence style
       (2026-09-16, with the short-answer pass).
-- [ ] Exodus: `quizWorthy` on chapters 1-14 (currently none), then author
-      chapters 15-40 (the first Phase 1 item; both in one PR is fine).
-      Exodus's 22 questions are still mostly arc/theme synthesis; rewrite
-      them to plain plot-level questions in that same PR.
+- [x] Exodus: `quizWorthy` backfilled on chapters 1-14 (12 of 14; 6 and 11
+      skipped — 6 has an embedded genealogy and repeats the ch3-4 covenant
+      revelation, 11 is a short transitional recap), chapters 15-40 authored,
+      and the original 22 questions rewritten off arc/theme synthesis onto
+      plain plot-level facts (2026-09-16).
 - [x] Meaning-style prompts and the cross-book duplicate (2026-09-16).
 - [ ] Tag `tier` across the nine original books using the calibrated
       rubric (most authored questions will be general).
@@ -371,7 +372,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Book | Id | Ch | Depth | Status | Notes |
 |---|---|---|---|---|---|
 | Genesis | genesis | 50 | narrative | done | tier backfill pending |
-| Exodus | exodus | 40 | narrative | partial (1-14) | first Phase 1 item; quizWorthy backfill |
+| Exodus | exodus | 40 | narrative | done | tier backfill pending (ch 1-14); 25-31/35-39 use 1 event/chapter (law/construction) |
 | Leviticus | leviticus | 27 | sparse | todo | Phase 2 pilot for sparse |
 | Numbers | numbers | 36 | narrative | todo | law/census chapters get one event |
 | Deuteronomy | deuteronomy | 34 | sparse | todo | |
@@ -438,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
+Totals: 9 of 66 books have a module (1 partial); 229 of 1,189 chapters.
 
 ## Log
 
@@ -457,3 +458,21 @@ Totals: 9 of 66 books have a module (2 partial); 203 of 1,189 chapters.
   book (or pair) checked every answer, alias, distractor, and explanation
   against the ESV afterward. The 20 God/LORD quotes were removed and that
   gate became an error.
+- 2026-09-16: Exodus 15-40 authored (Phase 1's first item), closing out the
+  book: 5 new arcs (To Sinai, The Covenant at Sinai, Tabernacle Instructions,
+  The Golden Calf, Building the Tabernacle), 26 chapters, events at full
+  narrative density except the tabernacle instruction/construction chapters
+  (25-31, 35-39), which get 1 event/chapter since they're law/repetitive-
+  construction content rather than narrated action. `quizWorthy` backfilled
+  on chapters 1-14 (12 of 14). Quotes went from 4 to 15 (people only —
+  Miriam, Moses, Aaron, Jethro; corpus total now 126/1,000). The original 22
+  authored questions were rewritten off whole-book synthesis ("how does
+  Moses change," "how do Israel's circumstances change") onto single
+  concrete-moment facts, plus 21 new questions for chapters 15-40 (43 total,
+  16 short answer). Three adversarial review agents (one per new arc-pair)
+  found and fixed: two place-in-name leaks past regex evasion (`Elim's`,
+  a shortName), one inconsistent `peopleIds` tag, one summary overclaiming
+  Exodus 40 narrates Aaron's ordination (that's Leviticus 8), and two weak
+  distractors. `app/page.tsx`'s Exodus card now says 40 chapters and is
+  featured. Tier backfill on chapters 1-14 stays deferred to the Phase 4
+  blanket pass with Genesis/1-2 Samuel/Ezra/Matthew/John, per Andrew.

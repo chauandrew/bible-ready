@@ -3,19 +3,20 @@
     "id": "exo-q-theme-1",
     "book": "exodus",
     "category": "theme",
-    "prompt": "In Exodus, what reason does the LORD give again and again for what he is doing to Egypt?",
+    "prompt": "In Exodus, what do some of Pharaoh's officials do to protect their slaves and livestock before the plague of hail strikes?",
     "options": [
-      "So that Egypt and Israel alike will know that he is the LORD",
-      "So that Israel can take Egypt's throne once Pharaoh gives in",
-      "So that Pharaoh's magicians will admit Moses is the better sorcerer",
-      "So that Egypt will become a permanent ally of Israel"
+      "They hurry them indoors after being warned in advance",
+      "They send them out of Egypt entirely before the storm arrives",
+      "They ignore the warning, since the earlier plague on livestock had already spared their animals",
+      "They hide them in the same houses already marked safe from the earlier plague of flies"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
-      "chapter": 7
+      "chapter": 9
     },
-    "explanation": "The refrain runs from the first plague to the sea: you shall know that I am the LORD (7:5, 7:17, 8:22, 10:2, 14:4)."
+    "explanation": "Moses warns Pharaoh in advance; those who fear the LORD's word bring their people and animals inside before the hail falls (9:19-21).",
+    "tier": "general"
   },
   {
     "id": "exo-q-theme-2",
@@ -90,22 +91,61 @@
     "explanation": "God chooses the harder route to protect Israel from an early, discouraging conflict."
   },
   {
+    "id": "exo-q-theme-6",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "In Exodus, what does the LORD do about the bitter water at Marah?",
+    "options": [
+      "He shows Moses a log to throw into the water, and it becomes sweet",
+      "He has Aaron strike the water with his staff, turning it to blood and then back to water",
+      "He sends manna to replace the need for water entirely",
+      "He tells the people to dig a well nearby instead"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 15
+    },
+    "explanation": "The LORD shows Moses a log; once thrown into the water, it becomes sweet enough to drink.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-theme-7",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "In Exodus, why does the LORD say he will not personally go up among the Israelites to the promised land after the golden calf?",
+    "options": [
+      "Because they are a stiff-necked people and he might consume them on the way",
+      "Because Moses asks him to send an angel instead so Moses can lead alone",
+      "Because the tabernacle is not yet built to house his presence",
+      "Because Aaron has been disqualified from the priesthood"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 33
+    },
+    "explanation": "The LORD tells Moses he will send an angel ahead, but will not go among the stubborn people himself, for fear of consuming them on the way.",
+    "tier": "general"
+  },
+  {
     "id": "exo-q-arc-1",
     "book": "exodus",
     "category": "arc",
-    "prompt": "In Exodus, how do Israel's circumstances change between the start of the book and the crossing of the sea?",
+    "prompt": "In Exodus, why does a new king who does not remember Joseph decide to oppress the Israelites?",
     "options": [
-      "From growing but oppressed slaves in Egypt to a free people delivered by God",
-      "From a free and independent nation living in Canaan to a conquered people enslaved by a foreign empire",
-      "From wandering nomads to settled landowners in Egypt",
-      "From a united people to a divided and scattered one"
+      "He fears they have grown too numerous and might side with an enemy in a war",
+      "He wants to force them to build a temple to the Egyptian gods",
+      "He blames them for a famine sweeping through Egypt",
+      "He wants to seize their livestock to replace Egypt's own losses"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
       "chapter": 1
     },
-    "explanation": "The arc moves from slavery toward deliverance."
+    "explanation": "Pharaoh fears Israel's rapid growth could make them a threat if war breaks out, and moves to oppress them.",
+    "tier": "general"
   },
   {
     "id": "exo-q-arc-2",
@@ -131,19 +171,19 @@
     "id": "exo-q-arc-3",
     "book": "exodus",
     "category": "arc",
-    "prompt": "In Exodus, how does the story connect Moses' rescue as a baby to his later role?",
+    "prompt": "In Exodus, why does Moses flee to Midian as an adult?",
     "options": [
-      "The Nile meant to kill him becomes his rescue",
-      "Pharaoh's daughter names him for the reed basket, and he later leads Israel through the reeds of the sea",
-      "The midwives who saved him become the first to follow him out of Egypt",
-      "His Hebrew mother, hired as his nurse, is the one who later sends him to Midian"
+      "He kills an Egyptian who was beating a Hebrew, and Pharaoh seeks to kill him for it",
+      "Pharaoh's daughter sends him away once he grows too old to remain in the household",
+      "He is caught stealing from Pharaoh's treasury",
+      "He refuses to worship the Egyptian gods and is exiled"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
       "chapter": 2
     },
-    "explanation": "Moses' rescue from the Nile places him in a position to later lead Israel out."
+    "explanation": "Moses kills an Egyptian in defense of a Hebrew, and when it becomes known, Pharaoh seeks to kill him, so Moses flees to Midian."
   },
   {
     "id": "exo-q-arc-4",
@@ -182,22 +222,89 @@
     "explanation": "Pharaoh's pursuit forces the crossing of the Red Sea."
   },
   {
+    "id": "exo-q-arc-6",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "In Exodus, how many commandments does God speak aloud to Israel from Mount Sinai?",
+    "format": "short-answer",
+    "answer": "ten",
+    "aliases": ["10"],
+    "citation": {
+      "book": "exodus",
+      "chapter": 20
+    },
+    "explanation": "God speaks the Ten Commandments directly to the assembled people before Moses becomes their mediator."
+  },
+  {
+    "id": "exo-q-arc-7",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "In Exodus, how many elders go up the mountain with Moses and Aaron and see the God of Israel?",
+    "format": "short-answer",
+    "answer": "seventy",
+    "aliases": ["70"],
+    "citation": {
+      "book": "exodus",
+      "chapter": 24
+    },
+    "explanation": "Moses, Aaron, Nadab, Abihu, and seventy of Israel's elders go up and see the God of Israel, then eat and drink.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-arc-8",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "In Exodus, why does Moses have to command the people to stop bringing materials for the tabernacle?",
+    "options": [
+      "They had already brought more than enough for all the work to be done",
+      "The craftsmen refused to work with any more raw gold and silver",
+      "Pharaoh demanded Egypt's gold and silver be returned",
+      "The LORD limited the offering to a fixed amount per tribe"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 36
+    },
+    "explanation": "The people keep bringing freewill gifts morning after morning until the craftsmen report there is more than enough, and Moses has to restrain them.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-arc-9",
+    "book": "exodus",
+    "category": "arc",
+    "prompt": "In Exodus, what tells Israel when to set out on their journeys once the tabernacle is completed?",
+    "options": [
+      "Whether the cloud of the LORD has lifted from the tabernacle",
+      "A trumpet Aaron blows each morning at sunrise",
+      "A message carried by the seventy elders",
+      "The position of the pillar of fire relative to the sun"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 40
+    },
+    "explanation": "Whenever the cloud lifts from the tabernacle, Israel sets out; when it does not lift, the people stay in camp.",
+    "tier": "general"
+  },
+  {
     "id": "exo-q-covenant-1",
     "book": "exodus",
     "category": "covenant",
-    "prompt": "In Exodus, how does God's earlier covenant with Abraham, Isaac, and Jacob connect to Israel's rescue?",
+    "prompt": "In Exodus, what does God remember when he hears Israel groaning under their slavery?",
     "options": [
-      "God explicitly remembers that covenant as the reason he acts to rescue Israel",
-      "God says the covenant with the patriarchs will be replaced by a new one made at Sinai",
-      "God tells Moses the promise of the land passed to Ishmael's descendants in Midian",
-      "God says he will keep the covenant only if Israel first obeys him in Egypt"
+      "His covenant with Abraham, Isaac, and Jacob",
+      "A promise he made to Pharaoh's ancestors to protect Egypt",
+      "An oath sworn to Ishmael's descendants in Midian",
+      "A vow he made only after Moses first prayed for Israel"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
       "chapter": 2
     },
-    "explanation": "God's rescue of Israel is rooted in his earlier covenant promises."
+    "explanation": "God hears Israel's cry and remembers his covenant with Abraham, Isaac, and Jacob."
   },
   {
     "id": "exo-q-covenant-2",
@@ -254,40 +361,58 @@
     "explanation": "God promises Moses will worship at Horeb after leading Israel out, confirming the call."
   },
   {
-    "id": "exo-q-character-1",
+    "id": "exo-q-covenant-5",
     "book": "exodus",
-    "category": "character",
-    "prompt": "In Exodus, how does Moses change from his first objections at the burning bush to his words facing the sea?",
+    "category": "covenant",
+    "prompt": "In Exodus, what does the LORD call the Sabbath when he repeats the command to Moses on the mountain?",
     "options": [
-      "He moves from reluctance and excuses to confidently telling Israel the LORD will fight for them",
-      "He becomes less willing to speak for God over time",
-      "He hands leadership entirely to Aaron",
-      "He refuses to lead Israel any further the moment Pharaoh issues his first harsh refusal to let them go"
+      "A sign forever between him and Israel",
+      "A burden lifted only for the priests",
+      "A day reserved only for offering sacrifices",
+      "A memorial of the seventh plague"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
-      "chapter": 14
+      "chapter": 31
     },
-    "explanation": "Moses grows from a reluctant, objecting figure into a confident leader."
+    "explanation": "The LORD tells Moses the Sabbath is to be kept as a lasting sign of the covenant between him and Israel."
   },
   {
-    "id": "exo-q-character-2",
+    "id": "exo-q-character-1",
     "book": "exodus",
     "category": "character",
-    "prompt": "In Exodus, what best characterizes Pharaoh across his repeated encounters with Moses and Aaron?",
+    "prompt": "In Exodus, what does Moses tell Pharaoh after Pharaoh warns him never to see his face again?",
     "options": [
-      "He relents under pressure but hardens his heart again once relief comes",
-      "He agrees to release Israel the very first time he is asked, before any plague ever strikes Egypt",
-      "He is persuaded by his magicians to worship the LORD",
-      "He lets Israel go after the first plague, then pursues them when the magicians urge him to"
+      "That Pharaoh is right — Moses will not see his face again",
+      "That Pharaoh will beg to see his face within the week",
+      "That he will send Aaron in his place from then on",
+      "That the LORD will strike Pharaoh blind before he ever sees Moses again"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "exodus",
       "chapter": 10
     },
-    "explanation": "Pharaoh's pattern is short-lived concession followed by renewed defiance."
+    "explanation": "Pharaoh threatens to kill Moses if he sees his face again; Moses agrees he will not."
+  },
+  {
+    "id": "exo-q-character-2",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, what do Pharaoh's magicians tell him after they cannot reproduce the plague of gnats?",
+    "options": [
+      "\"This is the finger of God\"",
+      "\"This is a trick of Moses and Aaron\"",
+      "\"The Hebrew God is greater than our own gods\"",
+      "\"We can no longer serve you as magicians\""
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 8
+    },
+    "explanation": "Unable to copy the plague of gnats, the magicians admit to Pharaoh that this is the finger of God, though Pharaoh's heart stays hard."
   },
   {
     "id": "exo-q-character-3",
@@ -337,6 +462,121 @@
       "chapter": 5
     },
     "explanation": "Moses' discouragement shows his very human doubt in the midst of the call."
+  },
+  {
+    "id": "exo-q-character-6",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, who helps Aaron hold up Moses' hands during the battle with Amalek?",
+    "format": "short-answer",
+    "answer": "Hur",
+    "citation": {
+      "book": "exodus",
+      "chapter": 17
+    },
+    "explanation": "As Moses tires, Aaron and Hur seat him on a stone and hold up his hands until sunset, and Israel prevails.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-7",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, who leads the women of Israel in song and dance after Israel crosses the sea?",
+    "format": "short-answer",
+    "answer": "Miriam",
+    "citation": {
+      "book": "exodus",
+      "chapter": 15
+    },
+    "explanation": "Miriam the prophetess takes a tambourine, and all the women follow her in dance.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-8",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, what does Jethro do after Moses tells him everything the LORD has done for Israel?",
+    "options": [
+      "He blesses the LORD and offers a sacrifice, and Aaron and the elders eat with him",
+      "He returns to Midian immediately, unconvinced the LORD is real",
+      "He asks to be made a priest alongside Aaron",
+      "He warns Moses that Pharaoh will pursue them into the wilderness"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 18
+    },
+    "explanation": "Jethro rejoices at what the LORD has done, blesses him, and offers sacrifices that Aaron and Israel's elders share in.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-9",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, what excuse does Aaron give Moses for how the golden calf came to be?",
+    "options": [
+      "He says he threw the people's gold into the fire, and the calf simply came out",
+      "He says Joshua made it while Aaron was away",
+      "He blames Egyptian craftsmen who were traveling with Israel",
+      "He denies that any calf was ever made"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 32
+    },
+    "explanation": "Aaron downplays his own role, telling Moses he only collected the gold and threw it into the fire, and the calf came out.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-10",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, which tribe rallies to Moses' side and carries out judgment after the golden calf?",
+    "format": "short-answer",
+    "answer": "Levi",
+    "aliases": ["levites", "the levites", "tribe of levi"],
+    "citation": {
+      "book": "exodus",
+      "chapter": 32
+    },
+    "explanation": "When Moses calls for whoever is on the LORD's side, the sons of Levi gather to him and execute judgment on the guilty.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-11",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, what does Moses wear over his face after he finishes speaking with the people, once his face begins to shine?",
+    "format": "short-answer",
+    "answer": "a veil",
+    "aliases": ["veil"],
+    "citation": {
+      "book": "exodus",
+      "chapter": 34
+    },
+    "explanation": "Moses' face shines from speaking with the LORD, so he veils it before the people and removes the veil only to speak with the LORD again.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-character-12",
+    "book": "exodus",
+    "category": "character",
+    "prompt": "In Exodus, what does Moses do after inspecting the finished tabernacle work?",
+    "options": [
+      "He blesses the people",
+      "He immediately sets up the tabernacle alone that same day",
+      "He sends the work back to be rebuilt to a different design",
+      "He orders a second freewill offering to cover a shortage"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 39
+    },
+    "explanation": "Moses sees that everything has been made exactly as the LORD commanded and blesses the people for their work.",
+    "tier": "general"
   },
   {
     "id": "exo-q-argument-1",
@@ -391,5 +631,130 @@
       "chapter": 12
     },
     "explanation": "The Passover becomes a lasting memorial of the exodus."
+  },
+  {
+    "id": "exo-q-argument-4",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what does Moses offer God in his intercession after the golden calf, if God will not forgive Israel's sin?",
+    "options": [
+      "To be blotted out of the book God has written",
+      "To die in Israel's place immediately, right there on the mountain",
+      "To give up his role as leader in Aaron's favor",
+      "To lead Israel back into slavery in Egypt"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 32
+    },
+    "explanation": "Moses pleads for Israel's forgiveness and asks to be blotted out of God's book himself rather than have Israel go unforgiven."
+  },
+  {
+    "id": "exo-q-argument-5",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what three feasts does the LORD command Israel to keep for him every year?",
+    "options": [
+      "Unleavened Bread, the Harvest, and Ingathering",
+      "Passover, the Day of Atonement, and Trumpets",
+      "Sabbath, Jubilee, and New Moon",
+      "Sabbath, New Moon, and Day of Atonement"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 23
+    },
+    "explanation": "The LORD names three yearly feasts Israel must keep: Unleavened Bread, the Harvest, and Ingathering at the end of the year."
+  },
+  {
+    "id": "exo-q-argument-6",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what happens when some of the people try to keep manna overnight against Moses' instructions?",
+    "options": [
+      "It breeds worms and becomes foul",
+      "It turns to stone and cannot be eaten later",
+      "It multiplies overnight into far more than they gathered",
+      "It disappears completely by morning either way"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 16
+    },
+    "explanation": "Moses tells the people to leave none of the manna until morning, but some disobey, and it breeds worms and stinks."
+  },
+  {
+    "id": "exo-q-argument-7",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what does the LORD instruct to be set into Aaron's breastpiece, one for each of Israel's twelve tribes?",
+    "options": [
+      "Twelve precious stones, one for each tribe",
+      "Twelve gold bells sewn along the hem",
+      "Twelve loaves of bread carried in a pouch",
+      "Twelve rams' horns mounted on the front"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 28
+    },
+    "explanation": "The breastpiece of judgment holds twelve stones engraved with the names of Israel's tribes.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-argument-8",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what two winged figures does the LORD instruct to be hammered out of gold on the ark's mercy seat?",
+    "format": "short-answer",
+    "answer": "cherubim",
+    "aliases": ["cherub", "cherubs"],
+    "citation": {
+      "book": "exodus",
+      "chapter": 25
+    },
+    "explanation": "Two cherubim of hammered gold face each other over the mercy seat, their wings spread to overshadow it.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-argument-9",
+    "book": "exodus",
+    "category": "argument",
+    "prompt": "In Exodus, what principle does the law of eye for eye, tooth for tooth put a limit on?",
+    "options": [
+      "Retaliation for injury, capping the punishment at the harm actually done",
+      "The length of time a Hebrew servant could be held",
+      "How much interest could be charged on a loan to a fellow Israelite",
+      "The number of witnesses required to convict someone of a crime"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 21
+    },
+    "explanation": "The principle limits retribution to match the injury rather than allowing an unlimited response.",
+    "tier": "general"
+  },
+  {
+    "id": "exo-q-theme-8",
+    "book": "exodus",
+    "category": "theme",
+    "prompt": "In Exodus, what does the LORD call Israel when he first proposes his covenant at Sinai, if they obey him and keep it?",
+    "options": [
+      "A treasured possession, a kingdom of priests, and a holy nation",
+      "A great army that will conquer every nation in Canaan",
+      "The equal of Egypt in wealth and power",
+      "A people ruled directly by seventy appointed elders"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "exodus",
+      "chapter": 19
+    },
+    "explanation": "Before giving the law, the LORD calls Israel to be his treasured possession, a kingdom of priests, and a holy nation."
   }
 ]

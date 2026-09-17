@@ -34,5 +34,104 @@
     "speakerId": "moses",
     "text": "The LORD will fight for you, and you have only to be silent.",
     "citation": {"book": "exodus", "chapter": 14, "verses": "14"}
+  },
+  {
+    "id": "exo-q-15-21",
+    "book": "exodus",
+    "chapter": 15,
+    "verse": 21,
+    "speakerId": "miriam",
+    "text": "Sing to the LORD, for he has triumphed gloriously; the horse and his rider he has thrown into the sea.",
+    "citation": {"book": "exodus", "chapter": 15, "verses": "21"}
+  },
+  {
+    "id": "exo-q-16-15",
+    "book": "exodus",
+    "chapter": 16,
+    "verse": 15,
+    "speakerId": "moses",
+    "text": "It is the bread that the LORD has given you to eat.",
+    "citation": {"book": "exodus", "chapter": 16, "verses": "15"}
+  },
+  {
+    "id": "exo-q-17-2",
+    "book": "exodus",
+    "chapter": 17,
+    "verse": 2,
+    "speakerId": "moses",
+    "text": "Why do you quarrel with me? Why do you test the LORD?",
+    "citation": {"book": "exodus", "chapter": 17, "verses": "2"}
+  },
+  {
+    "id": "exo-q-18-18",
+    "book": "exodus",
+    "chapter": 18,
+    "verse": 18,
+    "speakerId": "jethro",
+    "text": "You will certainly wear yourself out, both you and this people with you, for the thing is too heavy for you. You are not able to do it alone.",
+    "citation": {"book": "exodus", "chapter": 18, "verses": "18"}
+  },
+  {
+    "id": "exo-q-19-15",
+    "book": "exodus",
+    "chapter": 19,
+    "verse": 15,
+    "speakerId": "moses",
+    "text": "Be ready for the third day; do not go near a woman.",
+    "citation": {"book": "exodus", "chapter": 19, "verses": "15"}
+  },
+  {
+    "id": "exo-q-20-20",
+    "book": "exodus",
+    "chapter": 20,
+    "verse": 20,
+    "speakerId": "moses",
+    "text": "Do not fear, for God has come to test you, that the fear of him may be before you, that you may not sin.",
+    "citation": {"book": "exodus", "chapter": 20, "verses": "20"}
+  },
+  {
+    "id": "exo-q-32-24",
+    "book": "exodus",
+    "chapter": 32,
+    "verse": 24,
+    "speakerId": "aaron",
+    "text": "So I said to them, 'Let any who have gold take it off.' So they gave it to me, and I threw it into the fire, and out came this calf.",
+    "citation": {"book": "exodus", "chapter": 32, "verses": "24"}
+  },
+  {
+    "id": "exo-q-32-26",
+    "book": "exodus",
+    "chapter": 32,
+    "verse": 26,
+    "speakerId": "moses",
+    "text": "Who is on the LORD's side? Come to me.",
+    "citation": {"book": "exodus", "chapter": 32, "verses": "26"}
+  },
+  {
+    "id": "exo-q-32-32",
+    "book": "exodus",
+    "chapter": 32,
+    "verse": 32,
+    "speakerId": "moses",
+    "text": "But now, if you will forgive their sin—but if not, please blot me out of your book that you have written.",
+    "citation": {"book": "exodus", "chapter": 32, "verses": "32"}
+  },
+  {
+    "id": "exo-q-33-15",
+    "book": "exodus",
+    "chapter": 33,
+    "verse": 15,
+    "speakerId": "moses",
+    "text": "If your presence will not go with me, do not bring us up from here.",
+    "citation": {"book": "exodus", "chapter": 33, "verses": "15"}
+  },
+  {
+    "id": "exo-q-33-18",
+    "book": "exodus",
+    "chapter": 33,
+    "verse": 18,
+    "speakerId": "moses",
+    "text": "Please show me your glory.",
+    "citation": {"book": "exodus", "chapter": 33, "verses": "18"}
   }
 ]
