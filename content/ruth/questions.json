@@ -1,0 +1,96 @@
+[
+  {
+    "id": "ruth-aq-1",
+    "book": "ruth",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Ruth, what name does Naomi ask the women of Bethlehem to call her instead of Naomi, since the Almighty has dealt bitterly with her?",
+    "answer": "Mara",
+    "aliases": [],
+    "citation": { "book": "ruth", "chapter": 1 },
+    "explanation": "Naomi asks to be called Mara ('bitter') after losing her husband and both sons in Moab."
+  },
+  {
+    "id": "ruth-aq-2",
+    "book": "ruth",
+    "category": "character",
+    "prompt": "In Ruth, what does Ruth say when Naomi urges her to turn back to Moab like Orpah?",
+    "options": [
+      "Where you go I will go, and where you lodge I will lodge; your people shall be my people, and your God my God.",
+      "I will go with you only until we reach the border of Moab, and then I will turn back to my own family.",
+      "Let me remain in Moab a little longer to properly bury my husband before I decide what to do.",
+      "I would rather return to my own people and worship the gods of Moab, just as Orpah has chosen to do."
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "ruth", "chapter": 1 },
+    "explanation": "Ruth's vow to Naomi is her pledge never to leave her, her people, or her God."
+  },
+  {
+    "id": "ruth-aq-3",
+    "book": "ruth",
+    "category": "character",
+    "prompt": "In Ruth, what does Boaz instruct his young men to do for Ruth as she gleans in his field?",
+    "options": [
+      "Pull grain from the bundles on purpose and leave it for her to glean",
+      "Cut extra sheaves at the field's edge for her to carry home whole",
+      "Pay her a day's wage in silver instead of letting her glean",
+      "Set aside the first portion of the harvest before the threshing begins"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "ruth", "chapter": 2 },
+    "explanation": "Boaz has his workers leave extra grain from the bundles so Ruth gathers more than an ordinary gleaner would."
+  },
+  {
+    "id": "ruth-aq-4",
+    "book": "ruth",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Ruth, what does Ruth ask Boaz to spread over her at the threshing floor, as a claim on him as her redeemer?",
+    "answer": "wings",
+    "aliases": ["garment", "cloak"],
+    "citation": { "book": "ruth", "chapter": 3 },
+    "explanation": "Ruth asks Boaz to spread his wings (garment) over her, echoing his own earlier blessing on her."
+  },
+  {
+    "id": "ruth-aq-5",
+    "book": "ruth",
+    "category": "covenant",
+    "prompt": "In Ruth, what does the nearer redeemer do at the city gate to formally hand his right of redemption over to Boaz?",
+    "options": [
+      "He takes off his sandal and hands it to Boaz",
+      "He hands Boaz his shepherd's staff before the elders",
+      "He tears his cloak in front of the ten witnesses",
+      "He pours out a drink offering at the city gate"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "ruth", "chapter": 4 },
+    "explanation": "Removing a sandal and handing it over was the customary way to confirm a transaction like this in Israel.",
+    "tier": "deep"
+  },
+  {
+    "id": "ruth-aq-6",
+    "book": "ruth",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Ruth, which future king of Israel is the great-grandson of Ruth and Boaz through their son Obed?",
+    "answer": "David",
+    "aliases": [],
+    "citation": { "book": "ruth", "chapter": 4 },
+    "explanation": "The book's closing genealogy traces Obed's line through Jesse to David."
+  },
+  {
+    "id": "ruth-aq-7",
+    "book": "ruth",
+    "category": "theme",
+    "prompt": "In Ruth, whom do the elders and people at the gate say Boaz's bride will be like, women who built up the house of Israel?",
+    "options": [
+      "Rachel and Leah",
+      "Sarah and Hagar",
+      "Deborah and Jael",
+      "Naomi and Orpah"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "ruth", "chapter": 4 },
+    "explanation": "The people at the gate bless Ruth by comparing her to Rachel and Leah, who built up the house of Israel."
+  }
+]

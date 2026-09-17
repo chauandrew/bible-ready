@@ -1,0 +1,101 @@
+[
+  {
+    "id": "ruth-naomi",
+    "name": "Naomi",
+    "summary": "Elimelech's widow who loses her husband and both sons in Moab; she returns to Bethlehem with her daughter-in-law Ruth and arranges Ruth's marriage to Boaz.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [
+      { "personId": "ruth-elimelech", "relation": "married" },
+      { "personId": "ruth-ruth", "relation": "mother-in-law" }
+    ]
+  },
+  {
+    "id": "ruth-ruth",
+    "name": "Ruth",
+    "summary": "A Moabite widow who vows loyalty to her mother-in-law Naomi, gleans in Boaz's field, and becomes his wife; her son Obed is King David's great-grandfather.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [
+      { "personId": "ruth-naomi", "relation": "daughter-in-law" },
+      { "personId": "ruth-mahlon", "relation": "married" },
+      { "personId": "ruth-boaz", "relation": "married" }
+    ]
+  },
+  {
+    "id": "ruth-orpah",
+    "name": "Orpah",
+    "summary": "Naomi's other Moabite daughter-in-law; unlike Ruth, she kisses Naomi goodbye and returns to her own people and gods.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [
+      { "personId": "ruth-naomi", "relation": "daughter-in-law" },
+      { "personId": "ruth-chilion", "relation": "married" }
+    ]
+  },
+  {
+    "id": "ruth-elimelech",
+    "name": "Elimelech",
+    "summary": "Naomi's husband, who moves the family from Bethlehem to Moab during a famine and dies there; his land is later redeemed by Boaz.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [{ "personId": "ruth-naomi", "relation": "married" }]
+  },
+  {
+    "id": "ruth-mahlon",
+    "name": "Mahlon",
+    "summary": "One of Elimelech and Naomi's two sons; he marries Ruth in Moab and dies there, and Boaz later redeems his inheritance by marrying his widow.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [
+      { "personId": "ruth-elimelech", "relation": "son" },
+      { "personId": "ruth-ruth", "relation": "married" }
+    ]
+  },
+  {
+    "id": "ruth-chilion",
+    "name": "Chilion",
+    "summary": "One of Elimelech and Naomi's two sons; he marries Orpah in Moab and dies there like his father and brother.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": [
+      { "personId": "ruth-elimelech", "relation": "son" },
+      { "personId": "ruth-orpah", "relation": "married" }
+    ]
+  },
+  {
+    "id": "ruth-women-of-bethlehem",
+    "name": "The Women of Bethlehem",
+    "summary": "The town's women who are stirred by Naomi's return, bless Boaz's marriage to Ruth, and celebrate the birth of Obed as a restorer of Naomi's life.",
+    "firstAppearance": { "book": "ruth", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "ruth-boaz",
+    "name": "Boaz",
+    "summary": "A worthy, wealthy relative of Naomi's husband Elimelech; he shows Ruth kindness in his field and, as a family redeemer, marries her and buys back Elimelech's land.",
+    "firstAppearance": { "book": "ruth", "chapter": 2 },
+    "relations": [
+      { "personId": "ruth-ruth", "relation": "married" },
+      { "personId": "ruth-obed", "relation": "father" }
+    ]
+  },
+  {
+    "id": "ruth-nearer-redeemer",
+    "name": "The Nearer Redeemer",
+    "summary": "An unnamed relative of Elimelech with a stronger right of redemption than Boaz; he declines to redeem the land once he learns it requires marrying Ruth, and transfers his right to Boaz.",
+    "firstAppearance": { "book": "ruth", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "ruth-witnesses-at-gate",
+    "name": "The Elders and People at the Gate",
+    "summary": "The ten elders and townspeople Boaz gathers as witnesses to the redemption of Elimelech's land and his marriage to Ruth.",
+    "firstAppearance": { "book": "ruth", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "ruth-obed",
+    "name": "Obed",
+    "summary": "Son of Boaz and Ruth, nursed by Naomi as her own; he is the father of Jesse and grandfather of King David.",
+    "firstAppearance": { "book": "ruth", "chapter": 4 },
+    "relations": [
+      { "personId": "ruth-boaz", "relation": "son" },
+      { "personId": "ruth-ruth", "relation": "son" }
+    ]
+  }
+]
