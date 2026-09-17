@@ -524,5 +524,13 @@ Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
   quote whose collective speaker name, "The People of Israel," shared
   the word "Israel" with its own quoted text; the quote was dropped
   rather than kept for a trivial question). Two adversarial review
-  agents (one content, one code-wiring) reviewed before push; see the PR
-  for findings.
+  agents (one content, one code-wiring) found and fixed: chapter 20's
+  troop count conflated Benjamin's 700 Gibeah slingers with its 26,000
+  swordsmen instead of adding them per the text's "besides" (20:15-16),
+  three MC distractors invented lore the text never states (a
+  Barak/Shamgar sibling relation, a magic ring, Babylon exile) instead
+  of exploiting real in-book confusions, an arc summary had a
+  pronoun-verb typo, Samson's birth was left untagged despite being
+  general-knowledge famous, and the log's own quote-speaker tally was
+  off by one for both Gideon and Samson. The code-wiring review found no
+  other issues.
