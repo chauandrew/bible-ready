@@ -83,8 +83,7 @@
     "peopleIds": ["ruth-naomi", "ruth-ruth"],
     "order": 1,
     "summary": "Naomi tells Ruth to wash, anoint herself, and go down to the threshing floor that night, wait until Boaz has finished eating and lain down, then uncover his feet and lie there until he tells her what to do.",
-    "notable": true,
-    "tier": "deep"
+    "notable": true
   },
   {
     "id": "ruth-e-c3-2",
@@ -121,8 +120,7 @@
     "peopleIds": ["ruth-boaz", "ruth-nearer-redeemer", "ruth-elimelech", "ruth-witnesses-at-gate"],
     "order": 1,
     "summary": "At the town gate before ten elders, Boaz offers the nearer redeemer the right to buy Elimelech's land; once told the purchase requires marrying Ruth to preserve the family name, the man declines and transfers his right to Boaz by removing his sandal.",
-    "notable": true,
-    "tier": "deep"
+    "notable": true
   },
   {
     "id": "ruth-e-c4-2",

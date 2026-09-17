@@ -12,7 +12,7 @@
   {
     "id": "ruth-ruth",
     "name": "Ruth",
-    "summary": "A Moabite widow who vows loyalty to her mother-in-law Naomi, gleans in Boaz's field, and becomes his wife; her son Obed is King David's great-grandfather.",
+    "summary": "A Moabite widow who vows loyalty to her mother-in-law Naomi, gleans in Boaz's field, and becomes his wife; her son Obed is King David's grandfather.",
     "firstAppearance": { "book": "ruth", "chapter": 1 },
     "relations": [
       { "personId": "ruth-naomi", "relation": "daughter-in-law" },
@@ -60,14 +60,14 @@
   {
     "id": "ruth-women-of-bethlehem",
     "name": "The Women of Bethlehem",
-    "summary": "The town's women who are stirred by Naomi's return, bless Boaz's marriage to Ruth, and celebrate the birth of Obed as a restorer of Naomi's life.",
+    "summary": "The town's women who are stirred by Naomi's return, then celebrate the birth of Obed and bless the LORD for giving Naomi a redeemer.",
     "firstAppearance": { "book": "ruth", "chapter": 1 },
     "relations": []
   },
   {
     "id": "ruth-boaz",
     "name": "Boaz",
-    "summary": "A worthy, wealthy relative of Naomi's husband Elimelech; he shows Ruth kindness in his field and, as a family redeemer, marries her and buys back Elimelech's land.",
+    "summary": "A worthy relative of Naomi's husband Elimelech; he shows Ruth kindness in his field and, as a family redeemer, marries her and buys back Elimelech's land.",
     "firstAppearance": { "book": "ruth", "chapter": 2 },
     "relations": [
       { "personId": "ruth-ruth", "relation": "married" },
