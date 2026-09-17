@@ -276,7 +276,8 @@
     },
     "peopleIds": [
       "moses",
-      "aaron"
+      "aaron",
+      "god"
     ],
     "order": 2,
     "summary": "God tells Moses that his brother Aaron is already on his way to meet him and will speak to the people on his behalf.",
@@ -380,7 +381,8 @@
     },
     "peopleIds": [
       "moses",
-      "aaron"
+      "aaron",
+      "god"
     ],
     "order": 1,
     "summary": "Despite Moses' discouragement, God sends him and Aaron back to Pharaoh to demand Israel's release.",
@@ -584,7 +586,8 @@
     },
     "peopleIds": [
       "moses",
-      "pharaoh"
+      "pharaoh",
+      "god"
     ],
     "order": 0,
     "summary": "Before the final plague, God tells Moses that every firstborn in Egypt will die and Pharaoh will finally drive Israel out.",
@@ -602,7 +605,8 @@
     },
     "peopleIds": [
       "moses",
-      "aaron"
+      "aaron",
+      "god"
     ],
     "order": 0,
     "summary": "God gives Moses and Aaron detailed instructions for the Passover meal and the blood on the doorframes that will protect Israel's homes.",
@@ -675,7 +679,8 @@
     },
     "place": "The wilderness",
     "peopleIds": [
-      "moses"
+      "moses",
+      "god"
     ],
     "order": 1,
     "summary": "God leads Israel away from the shorter Philistine road and guides the people with a visible pillar of cloud by day and fire by night.",
@@ -703,15 +708,16 @@
     "id": "exo-e-c14-1",
     "book": "exodus",
     "chapter": 14,
-    "name": "Israel crosses the Red Sea on dry ground",
-    "shortName": "Crossing the Red Sea",
+    "name": "Israel crosses the sea on dry ground",
+    "shortName": "Crossing the sea",
     "citation": {
       "book": "exodus",
       "chapter": 14
     },
     "place": "The Red Sea",
     "peopleIds": [
-      "moses"
+      "moses",
+      "god"
     ],
     "order": 1,
     "summary": "Moses stretches out his hand, the LORD drives back the sea with a strong wind, and Israel walks across on dry ground.",
