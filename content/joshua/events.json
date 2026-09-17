@@ -279,7 +279,8 @@
     },
     "peopleIds": [
       "jos-rahab",
-      "jos-joshua"
+      "jos-joshua",
+      "jos-spies"
     ],
     "order": 3,
     "summary": "As promised, the spies bring Rahab and her whole family out of Jericho safely before the city is burned, and she lives among Israel from then on.",
@@ -314,7 +315,6 @@
       "book": "joshua",
       "chapter": 7
     },
-    "place": "Ai",
     "peopleIds": [
       "jos-joshua"
     ],
@@ -352,7 +352,6 @@
       "book": "joshua",
       "chapter": 8
     },
-    "place": "Ai",
     "peopleIds": [
       "jos-joshua"
     ],
@@ -510,7 +509,7 @@
     "id": "jos-e-c12-1",
     "book": "joshua",
     "chapter": 12,
-    "name": "Israel's defeated kings are counted at thirty-one",
+    "name": "Israel's kings defeated west of the Jordan are counted at thirty-one",
     "shortName": "Thirty-one kings",
     "citation": {
       "book": "joshua",
@@ -520,7 +519,7 @@
       "jos-joshua"
     ],
     "order": 1,
-    "summary": "The chapter tallies every king defeated in the conquest: two east of the Jordan under Moses and twenty-nine west of it under Joshua, thirty-one kings in all.",
+    "summary": "The chapter tallies every king defeated in the conquest: two east of the Jordan under Moses, and the kings Joshua defeated west of it are counted at thirty-one, thirty-three kings in all.",
     "notable": true,
     "tier": "general"
   },
@@ -647,6 +646,24 @@
     ],
     "order": 1,
     "summary": "Israel sets up the tent of meeting at Shiloh, and Joshua sends men to survey the land still undivided among the seven remaining tribes before casting lots for it there.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c18-2",
+    "book": "joshua",
+    "chapter": 18,
+    "name": "Benjamin's territory is allotted between Judah and Joseph",
+    "shortName": "Benjamin's territory",
+    "citation": {
+      "book": "joshua",
+      "chapter": 18
+    },
+    "place": "Jerusalem",
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "The first lot drawn among the seven remaining tribes gives Benjamin a narrow territory between Judah and the house of Joseph, including Jerusalem on its southern border.",
     "notable": true
   },
   {

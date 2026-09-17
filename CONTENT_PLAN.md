@@ -479,18 +479,27 @@ Totals: 10 of 66 books have a module (1 partial); 253 of 1,189 chapters.
 - 2026-09-17: Joshua authored (Phase 1's second item), the book's first
   module: 6 arcs (Entering the Land, Jericho and Ai, Conquering the Land,
   Dividing the Land, Refuge and Levite Cities, Covenant Renewal), 24
-  chapters, 47 events at full narrative density (2-3/chapter) except the
+  chapters, 48 events at full narrative density (2-3/chapter) except the
   land-division chapters (13-21), which get 1 event/chapter since they're
-  territorial lists rather than narrated action (15 gets 2, for the
-  Othniel/Achsah story). `quizWorthy` on 16 of 24 chapters. 12 quotes,
-  people only (Joshua, Rahab, Achan, Caleb, and several collective
-  speakers — the people of Israel, the Gibeonites, Zelophehad's daughters,
-  the Transjordan tribes — following 1 Samuel's "The Elders of Israel"
-  precedent); corpus total now 138/1,000. 18 authored questions (7 short
-  answer). `check:content` passed with zero new warnings after removing
-  13 `Event.place` tags that leaked into their own event's `name` (Jericho,
-  the Jordan, Gilgal, Gibeon, Makkedah, Hazor, Hebron, Shiloh,
-  Timnath-serah, Mount Ebal, the waters of Merom) and lengthening 3
-  distractors to clear the answer-length-tell gate (7/11 MC questions had
-  started with the correct option as the single longest). journeys.json
-  out of scope per this plan's decisions.
+  territorial lists rather than narrated action (15 and 18 get 2, for the
+  Othniel/Achsah story and Benjamin's allotment). `quizWorthy` on 16 of 24
+  chapters. 12 quotes, people only (Joshua, Rahab, Achan, Caleb, and
+  several collective speakers — the people of Israel, the Gibeonites,
+  Zelophehad's daughters, the Transjordan tribes — following 1 Samuel's
+  "The Elders of Israel" precedent); corpus total now 138/1,000. 19
+  authored questions (8 short answer). `check:content` passed with zero
+  new warnings after removing 13 `Event.place` tags that leaked into their
+  own event's `name` (Jericho, the Jordan, Gilgal, Gibeon, Makkedah, Hazor,
+  Hebron, Shiloh, Timnath-serah, Mount Ebal, the waters of Merom) and
+  lengthening 3 distractors to clear the answer-length-tell gate (7/11 MC
+  questions had started with the correct option as the single longest).
+  journeys.json out of scope per this plan's decisions. Two adversarial
+  review agents (one content, one code-wiring) found and fixed: a wrong
+  king count in ch12 (the text's "thirty-one" is Joshua's own west-of-
+  Jordan tally, not a combined total with Moses's 2 — the real combined
+  total is 33), a speaker misattribution (ch1:16's pledge belongs to the
+  Transjordan tribes addressed in the preceding verses, not Israel
+  generally), a chapter-18 gap (Benjamin's allotment, over half the
+  chapter, had no event at all), two more place/name leaks the automated
+  check's 4-character-minimum heuristic missed ("Ai"), and one missing
+  `peopleIds` tag. The code-wiring review found no issues.

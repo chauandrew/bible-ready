@@ -196,6 +196,17 @@
     "tier": "general"
   },
   {
+    "id": "jos-aq-21",
+    "book": "joshua",
+    "category": "theme",
+    "format": "short-answer",
+    "prompt": "In Joshua, how many cities are given to the Levites out of the other tribes' territory?",
+    "answer": "forty-eight",
+    "aliases": ["48"],
+    "citation": { "book": "joshua", "chapter": 21 },
+    "explanation": "The Levites, who received no territory of their own, are given forty-eight cities with pasturelands."
+  },
+  {
     "id": "jos-aq-22",
     "book": "joshua",
     "category": "covenant",
