@@ -510,9 +510,9 @@ Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
   Collapse), 21 chapters, 67 events at full narrative density (the book
   has little list-heavy content compared to Joshua, so most chapters get
   3-4 events). 14 of 21 chapters `quizWorthy` (2/3, per convention).
-  14 quotes, people only (Adoni-bezek, Ehud, Deborah, Gideon, Gideon's
+  14 quotes, people only (Adoni-bezek, Ehud, Deborah, Gideon x2, Gideon's
   Three Hundred as a collective speaker, Jotham, Jephthah, Jephthah's
-  daughter, Manoah's wife, Samson x2, Micah; corpus total now 152/1,000)
+  daughter, Manoah's wife, Samson x3, Micah; corpus total now 152/1,000)
   — the angel of the LORD's speeches (2:1-3, 6:11-24, 13:3-23) were
   excluded from the quote corpus as a LORD-adjacent speaker, per the
   pre-flight judgment call. Chapter 19's content (the Levite's concubine)
