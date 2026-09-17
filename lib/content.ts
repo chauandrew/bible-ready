@@ -15,6 +15,14 @@ import exodusEventsJson from "@/content/exodus/events.json";
 import exodusQuotesJson from "@/content/exodus/quotes.json";
 import exodusQuestionsJson from "@/content/exodus/questions.json";
 import exodusDecksJson from "@/content/exodus/decks.json";
+import joshuaBookJson from "@/content/joshua/book.json";
+import joshuaArcsJson from "@/content/joshua/arcs.json";
+import joshuaChaptersJson from "@/content/joshua/chapters.json";
+import joshuaPeopleJson from "@/content/joshua/people.json";
+import joshuaEventsJson from "@/content/joshua/events.json";
+import joshuaQuotesJson from "@/content/joshua/quotes.json";
+import joshuaQuestionsJson from "@/content/joshua/questions.json";
+import joshuaDecksJson from "@/content/joshua/decks.json";
 import psalmsBookJson from "@/content/psalms/book.json";
 import psalmsArcsJson from "@/content/psalms/arcs.json";
 import psalmsChaptersJson from "@/content/psalms/chapters.json";
@@ -126,6 +134,17 @@ const exodusContent: BookContent = BookContentSchema.parse({
   decks: exodusDecksJson,
 });
 
+const joshuaContent: BookContent = BookContentSchema.parse({
+  book: joshuaBookJson,
+  arcs: joshuaArcsJson,
+  chapters: joshuaChaptersJson,
+  people: joshuaPeopleJson,
+  events: joshuaEventsJson,
+  quotes: joshuaQuotesJson,
+  questions: joshuaQuestionsJson,
+  decks: joshuaDecksJson,
+});
+
 const psalmsContent: BookContent = BookContentSchema.parse({
   book: psalmsBookJson,
   arcs: psalmsArcsJson,
@@ -226,6 +245,7 @@ const miscContent: BookContent = BookContentSchema.parse({
 const booksContent: Record<string, BookContent> = {
   [genesisContent.book.id]: genesisContent,
   [exodusContent.book.id]: exodusContent,
+  [joshuaContent.book.id]: joshuaContent,
   [samuel1Content.book.id]: samuel1Content,
   [samuel2Content.book.id]: samuel2Content,
   [ezraContent.book.id]: ezraContent,
@@ -247,7 +267,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "1-samuel", "2-samuel", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "joshua", "1-samuel", "2-samuel", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

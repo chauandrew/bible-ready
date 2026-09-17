@@ -1,0 +1,255 @@
+[
+  {
+    "id": "jos-aq-1",
+    "book": "joshua",
+    "category": "arc",
+    "prompt": "In Joshua, what does the LORD command Joshua to do after Moses's death?",
+    "options": [
+      "Lead Israel across the Jordan into the land promised to them",
+      "Return to Egypt to free the Israelites still living there",
+      "Wait forty more years in the wilderness before advancing",
+      "Appoint a new high priest before the people move at all"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 1 },
+    "explanation": "The LORD tells Joshua to take up Moses's role and lead Israel across the Jordan into Canaan.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-2",
+    "book": "joshua",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Joshua, who hides the Israelite spies in Jericho and asks them to spare her family?",
+    "answer": "Rahab",
+    "aliases": [],
+    "citation": { "book": "joshua", "chapter": 2 },
+    "explanation": "Rahab shelters the spies on her roof and secures a promise that she and her household will be spared.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-3",
+    "book": "joshua",
+    "category": "theme",
+    "prompt": "In Joshua, what happens to the Jordan River as Israel crosses it?",
+    "options": [
+      "The water is cut off upstream and the riverbed stays dry until everyone has crossed",
+      "The priests part it by striking the water with a staff, the same way Moses parted the Red Sea",
+      "It turns to blood as a warning sign to the Canaanites",
+      "It floods over its banks and sweeps away the rear guard"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 3 },
+    "explanation": "The water is cut off upstream the moment the priests carrying the ark step into the river, leaving the riverbed dry.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-4",
+    "book": "joshua",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Joshua, how many stones are set up at Gilgal to memorialize crossing the Jordan?",
+    "answer": "twelve",
+    "aliases": ["12"],
+    "citation": { "book": "joshua", "chapter": 4 },
+    "explanation": "One man from each of the twelve tribes carries a stone from the riverbed for the memorial."
+  },
+  {
+    "id": "jos-aq-5",
+    "book": "joshua",
+    "category": "theme",
+    "prompt": "In Joshua, what happens to the manna the day after Israel first eats the produce of Canaan?",
+    "options": [
+      "It stops falling for good",
+      "It doubles so Israel can store extra for the coming campaigns",
+      "It turns bitter as a warning against complaining",
+      "It is gathered up and sealed permanently in a jar"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 5 },
+    "explanation": "Once Israel eats the land's own produce, the manna that fed them in the wilderness stops."
+  },
+  {
+    "id": "jos-aq-6",
+    "book": "joshua",
+    "category": "arc",
+    "prompt": "In Joshua, what happens to Jericho's walls on the seventh day of Israel's march around the city?",
+    "options": [
+      "They collapse when the people shout after the seventh circuit",
+      "They are battered down by siege engines Israel builds overnight",
+      "They are opened from the inside by Rahab at night",
+      "They crumble in an earthquake that strikes the whole region"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 6 },
+    "explanation": "After marching around Jericho seven times on the seventh day, the people shout and the walls collapse.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-7",
+    "book": "joshua",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Joshua, whose theft of devoted plunder from Jericho causes Israel's defeat at Ai?",
+    "answer": "Achan",
+    "aliases": [],
+    "citation": { "book": "joshua", "chapter": 7 },
+    "explanation": "Achan secretly keeps plunder Israel had vowed to destroy, and Israel is defeated at Ai as a result.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-8",
+    "book": "joshua",
+    "category": "arc",
+    "prompt": "In Joshua, what strategy finally lets Israel capture Ai?",
+    "options": [
+      "An ambush hidden behind the city while Israel feigns retreat",
+      "A prolonged siege that starves the city into surrender",
+      "A direct nighttime assault on the city gates",
+      "Negotiating the city's surrender through one of Rahab's relatives"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 8 },
+    "explanation": "Joshua hides a force behind Ai and draws its army out with a feigned retreat, letting the ambush take the city."
+  },
+  {
+    "id": "jos-aq-9",
+    "book": "joshua",
+    "category": "character",
+    "prompt": "In Joshua, how do the Gibeonites trick Israel's leaders into a peace treaty?",
+    "options": [
+      "They pose as travelers from a distant land, wearing worn-out clothes and carrying moldy bread",
+      "They bribe Israel's commanders with silver and gold from their own treasury",
+      "They send their king to Gilgal to surrender the city in person",
+      "They pretend to be refugees fleeing the destruction of Jericho"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 9 },
+    "explanation": "The Gibeonites disguise themselves as weary travelers from far away, and Israel makes a treaty without consulting the LORD.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-10",
+    "book": "joshua",
+    "category": "theme",
+    "prompt": "In Joshua, what does Joshua command to stand still over the battle for Gibeon?",
+    "options": [
+      "The sun and the moon",
+      "The clouds and the rain",
+      "The rivers and the sea",
+      "The stars and the wind"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 10 },
+    "explanation": "At Joshua's command the sun and moon stand still until Israel finishes defeating its enemies.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-11",
+    "book": "joshua",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Joshua, which northern city does Israel burn after defeating King Jabin's coalition?",
+    "answer": "Hazor",
+    "aliases": [],
+    "citation": { "book": "joshua", "chapter": 11 },
+    "explanation": "Hazor is the only city of the northern campaign that Israel sets on fire."
+  },
+  {
+    "id": "jos-aq-14",
+    "book": "joshua",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Joshua, which of the twelve spies from decades earlier requests and receives Hebron as his inheritance?",
+    "answer": "Caleb",
+    "aliases": [],
+    "citation": { "book": "joshua", "chapter": 14 },
+    "explanation": "Caleb reminds Joshua of his faithful report as a spy and asks for the hill country of Hebron.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-17",
+    "book": "joshua",
+    "category": "character",
+    "prompt": "In Joshua, what do Zelophehad's daughters ask Joshua and Eleazar to give them?",
+    "options": [
+      "An inheritance of land among their father's brothers, since he had no sons",
+      "Permission to marry outside their own tribe, which the elders initially refuse to grant",
+      "A share of the plunder from the northern campaign",
+      "Release from a debt their father owed the priests"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 17 },
+    "explanation": "Since Zelophehad had no sons, his daughters ask for and receive a land inheritance of their own.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-20",
+    "book": "joshua",
+    "category": "theme",
+    "format": "short-answer",
+    "prompt": "In Joshua, how many cities of refuge are designated for someone who kills a person by accident?",
+    "answer": "six",
+    "aliases": ["6"],
+    "citation": { "book": "joshua", "chapter": 20 },
+    "explanation": "Six cities, three on each side of the Jordan, are set apart as places of refuge.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-22",
+    "book": "joshua",
+    "category": "covenant",
+    "prompt": "In Joshua, why do the western tribes prepare for war against Reuben, Gad, and the half-tribe of Manasseh?",
+    "options": [
+      "They believe the altar the eastern tribes built by the Jordan is an act of rebellion against the LORD",
+      "The eastern tribes refuse to send their promised share of the plunder",
+      "The eastern tribes have refused to send their fighting men home until they receive a larger share of the land",
+      "The eastern tribes refuse to let Levites live in their territory"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 22 },
+    "explanation": "Israel assumes the new altar means the eastern tribes are turning from the LORD, until Phinehas's delegation learns otherwise."
+  },
+  {
+    "id": "jos-aq-23",
+    "book": "joshua",
+    "category": "theme",
+    "prompt": "In Joshua, what does Joshua warn Israel's leaders against in his farewell speech?",
+    "options": [
+      "Intermarrying with the remaining nations and worshiping their gods",
+      "Dividing the conquered land unevenly among the tribes",
+      "Appointing judges instead of asking for a king",
+      "Rebuilding any part of Jericho's ruined walls"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 23 },
+    "explanation": "Joshua's farewell warning centers on the danger of intermarrying with the remaining nations and adopting their gods."
+  },
+  {
+    "id": "jos-aq-24a",
+    "book": "joshua",
+    "category": "covenant",
+    "prompt": "In Joshua, what choice does Joshua challenge the assembled people to make at Shechem?",
+    "options": [
+      "Choose that day whom they will serve, other gods or the LORD",
+      "Choose a new king to succeed Joshua as their leader",
+      "Choose which tribe will lead the army from then on",
+      "Choose whether to rebuild the ruins of Jericho"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "joshua", "chapter": 24 },
+    "explanation": "Joshua challenges Israel to choose that day whom they will serve, and the people pledge to serve the LORD.",
+    "tier": "general"
+  },
+  {
+    "id": "jos-aq-24b",
+    "book": "joshua",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Joshua, at what town in the hill country of Ephraim is Joshua buried?",
+    "answer": "Timnath-serah",
+    "aliases": [],
+    "citation": { "book": "joshua", "chapter": 24 },
+    "explanation": "Joshua is buried at Timnath-serah, the town given to him as his own inheritance."
+  }
+]

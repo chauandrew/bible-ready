@@ -376,7 +376,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Leviticus | leviticus | 27 | sparse | todo | Phase 2 pilot for sparse |
 | Numbers | numbers | 36 | narrative | todo | law/census chapters get one event |
 | Deuteronomy | deuteronomy | 34 | sparse | todo | |
-| Joshua | joshua | 24 | narrative | todo | journey follow-up (conquest) |
+| Joshua | joshua | 24 | narrative | done | journey follow-up (conquest) |
 | Judges | judges | 21 | narrative | todo | |
 | Ruth | ruth | 4 | narrative | todo | candidate `defaultTier: general` |
 | 1 Samuel | 1-samuel | 31 | narrative | done | tier backfill pending |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 9 of 66 books have a module (1 partial); 229 of 1,189 chapters.
+Totals: 10 of 66 books have a module (1 partial); 253 of 1,189 chapters.
 
 ## Log
 
@@ -476,3 +476,21 @@ Totals: 9 of 66 books have a module (1 partial); 229 of 1,189 chapters.
   distractors. `app/page.tsx`'s Exodus card now says 40 chapters and is
   featured. Tier backfill on chapters 1-14 stays deferred to the Phase 4
   blanket pass with Genesis/1-2 Samuel/Ezra/Matthew/John, per Andrew.
+- 2026-09-17: Joshua authored (Phase 1's second item), the book's first
+  module: 6 arcs (Entering the Land, Jericho and Ai, Conquering the Land,
+  Dividing the Land, Refuge and Levite Cities, Covenant Renewal), 24
+  chapters, 47 events at full narrative density (2-3/chapter) except the
+  land-division chapters (13-21), which get 1 event/chapter since they're
+  territorial lists rather than narrated action (15 gets 2, for the
+  Othniel/Achsah story). `quizWorthy` on 16 of 24 chapters. 12 quotes,
+  people only (Joshua, Rahab, Achan, Caleb, and several collective
+  speakers — the people of Israel, the Gibeonites, Zelophehad's daughters,
+  the Transjordan tribes — following 1 Samuel's "The Elders of Israel"
+  precedent); corpus total now 138/1,000. 18 authored questions (7 short
+  answer). `check:content` passed with zero new warnings after removing
+  13 `Event.place` tags that leaked into their own event's `name` (Jericho,
+  the Jordan, Gilgal, Gibeon, Makkedah, Hazor, Hebron, Shiloh,
+  Timnath-serah, Mount Ebal, the waters of Merom) and lengthening 3
+  distractors to clear the answer-length-tell gate (7/11 MC questions had
+  started with the correct option as the single longest). journeys.json
+  out of scope per this plan's decisions.

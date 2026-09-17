@@ -1,0 +1,110 @@
+[
+  {
+    "id": "jos-joshua",
+    "name": "Joshua",
+    "summary": "Israel's leader after Moses, a former spy known for his faith at Kadesh-barnea, commissioned by the LORD to bring Israel into Canaan. Joshua leads the conquest, divides the land among the tribes, and dies at a hundred and ten after renewing Israel's covenant at Shechem.",
+    "firstAppearance": { "book": "joshua", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "jos-rahab",
+    "name": "Rahab",
+    "summary": "A prostitute living in Jericho's city wall who hides Israel's two spies and is spared with her family when the city falls, becoming part of Israel.",
+    "firstAppearance": { "book": "joshua", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "jos-achan",
+    "name": "Achan",
+    "summary": "An Israelite of the tribe of Judah who secretly keeps devoted plunder from Jericho, bringing Israel's defeat at Ai until his sin is exposed by lot and he is executed.",
+    "firstAppearance": { "book": "joshua", "chapter": 7 },
+    "relations": []
+  },
+  {
+    "id": "jos-caleb",
+    "name": "Caleb",
+    "summary": "One of the twelve spies who gave a faithful report of Canaan forty-five years earlier; now eighty-five, he asks Joshua for the hill country of Hebron as his inheritance.",
+    "firstAppearance": { "book": "joshua", "chapter": 14 },
+    "relations": [{ "personId": "jos-achsah", "relation": "father" }]
+  },
+  {
+    "id": "jos-eleazar",
+    "name": "Eleazar",
+    "summary": "The priest who, alongside Joshua, oversees the division of the land among the tribes by lot at Shiloh.",
+    "firstAppearance": { "book": "joshua", "chapter": 14 },
+    "relations": [{ "personId": "jos-phinehas", "relation": "father" }]
+  },
+  {
+    "id": "jos-phinehas",
+    "name": "Phinehas",
+    "summary": "Eleazar's son, who leads the delegation confronting the Transjordan tribes about the altar they build by the Jordan.",
+    "firstAppearance": { "book": "joshua", "chapter": 22 },
+    "relations": [{ "personId": "jos-eleazar", "relation": "son" }]
+  },
+  {
+    "id": "jos-othniel",
+    "name": "Othniel",
+    "summary": "Caleb's younger relative who captures Kiriath-sepher and wins Caleb's daughter Achsah in marriage.",
+    "firstAppearance": { "book": "joshua", "chapter": 15 },
+    "relations": [{ "personId": "jos-achsah", "relation": "married" }]
+  },
+  {
+    "id": "jos-achsah",
+    "name": "Achsah",
+    "summary": "Caleb's daughter, given in marriage to Othniel after he captures Kiriath-sepher; she asks her father for springs of water to go with her inherited land.",
+    "firstAppearance": { "book": "joshua", "chapter": 15 },
+    "relations": [
+      { "personId": "jos-caleb", "relation": "daughter" },
+      { "personId": "jos-othniel", "relation": "married" }
+    ]
+  },
+  {
+    "id": "jos-spies",
+    "name": "The Two Spies",
+    "summary": "The two unnamed men Joshua sends to scout Jericho, sheltered by Rahab and smuggled out of the city by a rope.",
+    "firstAppearance": { "book": "joshua", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "jos-israelites",
+    "name": "The People of Israel",
+    "summary": "The assembled people of Israel, who pledge obedience to Joshua at the outset of the conquest and renew their covenant with the LORD at Shechem.",
+    "firstAppearance": { "book": "joshua", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "jos-gibeonites",
+    "name": "The Gibeonites",
+    "summary": "The inhabitants of Gibeon, who disguise themselves as distant travelers to trick Israel into a peace treaty and are afterward made servants for the community's worship.",
+    "firstAppearance": { "book": "joshua", "chapter": 9 },
+    "relations": []
+  },
+  {
+    "id": "jos-zelophehads-daughters",
+    "name": "Zelophehad's Daughters",
+    "summary": "The five daughters of the late Zelophehad, who receive a land inheritance in Manasseh's territory since their father died with no sons.",
+    "firstAppearance": { "book": "joshua", "chapter": 17 },
+    "relations": []
+  },
+  {
+    "id": "jos-transjordan-tribes",
+    "name": "The Reubenites, Gadites, and Half-Tribe of Manasseh",
+    "summary": "Reuben, Gad, and the half-tribe of Manasseh, already settled east of the Jordan, who send their armed men to help conquer Canaan before returning home and building a disputed altar.",
+    "firstAppearance": { "book": "joshua", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "jos-adoni-zedek",
+    "name": "Adoni-zedek",
+    "summary": "The king of Jerusalem who leads a coalition of five Amorite kings against Gibeon and is captured and executed at Makkedah.",
+    "firstAppearance": { "book": "joshua", "chapter": 10 },
+    "relations": []
+  },
+  {
+    "id": "jos-jabin",
+    "name": "Jabin",
+    "summary": "The king of Hazor who leads a large northern coalition against Israel at the waters of Merom; Israel defeats his army and burns his city.",
+    "firstAppearance": { "book": "joshua", "chapter": 11 },
+    "relations": []
+  }
+]
