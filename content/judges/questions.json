@@ -17,7 +17,7 @@
     "prompt": "In Judges, what does the angel of the LORD warn will happen because Israel made covenants with Canaan's peoples instead of driving them out?",
     "options": [
       "The LORD will destroy the covenant-breakers immediately by fire",
-      "Israel will be exiled to Babylon within a generation",
+      "The Israelites will be forced to worship at Bethel instead of Shiloh",
       "The remaining nations will become thorns in their sides and their gods a snare",
       "The tabernacle will be moved out of the land entirely"
     ],
@@ -47,7 +47,7 @@
       "That Israel first defeats the Philistines",
       "That Deborah goes with him",
       "That the ark of the covenant is brought into battle",
-      "That his brother Shamgar joins the command"
+      "That Deborah leads the army into battle herself instead of him"
     ],
     "correctIndex": 1,
     "citation": { "book": "judges", "chapter": 4 },
@@ -213,7 +213,7 @@
     "category": "character",
     "prompt": "In Judges, what does Samson finally tell Delilah is the true secret of his strength?",
     "options": [
-      "A magic ring given to him by the angel of the LORD",
+      "That his strength depends on the vow his mother kept never to drink wine",
       "His unbroken vow of silence",
       "The blessing his father Manoah spoke over him",
       "His hair has never been cut because he is a Nazirite from birth"

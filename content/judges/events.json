@@ -525,7 +525,8 @@
     "peopleIds": ["jdg-samson", "jdg-manoah", "jdg-manoahs-wife"],
     "order": 3,
     "summary": "Manoah's wife bears a son named Samson, and as he grows the Spirit of the LORD begins to stir him in the camp between Zorah and Eshtaol.",
-    "notable": true
+    "notable": true,
+    "tier": "general"
   },
   {
     "id": "jdg-e-c14-1",
@@ -787,7 +788,7 @@
     "citation": { "book": "judges", "chapter": 20 },
     "peopleIds": ["jdg-people-of-israel"],
     "order": 2,
-    "summary": "Benjamin refuses to surrender the men of Gibeah and musters twenty-six thousand swordsmen, including seven hundred elite left-handed slingers, defeating Israel's larger army in two separate battles.",
+    "summary": "Benjamin refuses to surrender the men of Gibeah and musters twenty-six thousand swordsmen plus seven hundred more from Gibeah, among them elite left-handed slingers, defeating Israel's larger army in two separate battles.",
     "notable": true
   },
   {
