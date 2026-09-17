@@ -12,7 +12,8 @@
       "exo-e-c1-1",
       "exo-e-c1-2",
       "exo-e-c1-3"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-2",
@@ -29,7 +30,8 @@
       "exo-e-c2-3",
       "exo-e-c2-4",
       "exo-e-c2-5"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-3",
@@ -43,7 +45,8 @@
       "exo-e-c3-0",
       "exo-e-c3-1",
       "exo-e-c3-2"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-4",
@@ -59,7 +62,8 @@
       "exo-e-c4-2",
       "exo-e-c4-3",
       "exo-e-c4-4"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-5",
@@ -72,7 +76,8 @@
     "eventIds": [
       "exo-e-c5-0",
       "exo-e-c5-1"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-6",
@@ -98,7 +103,8 @@
     "eventIds": [
       "exo-e-c7-0",
       "exo-e-c7-1"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-8",
@@ -112,7 +118,8 @@
       "exo-e-c8-0",
       "exo-e-c8-1",
       "exo-e-c8-2"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-9",
@@ -126,7 +133,8 @@
       "exo-e-c9-0",
       "exo-e-c9-1",
       "exo-e-c9-2"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-10",
@@ -139,7 +147,8 @@
     "eventIds": [
       "exo-e-c10-0",
       "exo-e-c10-1"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-11",
@@ -165,7 +174,8 @@
       "exo-e-c12-0",
       "exo-e-c12-1",
       "exo-e-c12-2"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-13",
@@ -178,7 +188,8 @@
     "eventIds": [
       "exo-e-c13-0",
       "exo-e-c13-1"
-    ]
+    ],
+    "quizWorthy": true
   },
   {
     "id": "exo-ch-14",
@@ -192,6 +203,282 @@
       "exo-e-c14-0",
       "exo-e-c14-1",
       "exo-e-c14-2"
-    ]
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-15",
+    "book": "exodus",
+    "number": 15,
+    "title": "The Song of the Sea",
+    "summary": "After crossing the sea, Moses and Israel sing praise to the LORD and Miriam leads the women in dance. Three days later the people find bitter water at Marah, and the LORD sweetens it, then leads them to the springs of Elim.",
+    "blurb": "Israel sings after the sea, then finds bitter water",
+    "arcId": "exo-arc-to-sinai",
+    "eventIds": ["exo-e-c15-0", "exo-e-c15-1", "exo-e-c15-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-16",
+    "book": "exodus",
+    "number": 16,
+    "title": "Manna and Quail in the Wilderness",
+    "summary": "Israel grumbles for food in the wilderness of Sin, and the LORD provides quail each evening and bread called manna each morning, with instructions to gather double on the sixth day and rest on the seventh.",
+    "blurb": "The LORD provides manna, quail, and a Sabbath pattern",
+    "arcId": "exo-arc-to-sinai",
+    "eventIds": ["exo-e-c16-0", "exo-e-c16-1", "exo-e-c16-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-17",
+    "book": "exodus",
+    "number": 17,
+    "title": "Water from the Rock and Victory over Amalek",
+    "summary": "Israel quarrels with Moses over water at Rephidim, and the LORD provides water from the rock at Horeb. Amalek then attacks, and Israel prevails as long as Moses' hands, held up by Aaron and Hur, stay lifted.",
+    "blurb": "Moses strikes the rock; Israel defeats Amalek",
+    "arcId": "exo-arc-to-sinai",
+    "eventIds": ["exo-e-c17-0", "exo-e-c17-1", "exo-e-c17-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-18",
+    "book": "exodus",
+    "number": 18,
+    "title": "Jethro's Advice to Moses",
+    "summary": "Jethro brings Moses' wife and sons to him in the wilderness and rejoices at what the LORD has done for Israel. Seeing Moses judge the people alone all day, Jethro advises him to appoint capable men over smaller groups.",
+    "blurb": "Jethro advises Moses to share the burden of judging",
+    "arcId": "exo-arc-to-sinai",
+    "eventIds": ["exo-e-c18-0", "exo-e-c18-1", "exo-e-c18-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-19",
+    "book": "exodus",
+    "number": 19,
+    "title": "Israel Arrives at Sinai",
+    "summary": "Israel camps before Mount Sinai, and the LORD proposes a covenant, calling the people to be his treasured possession and a kingdom of priests. The people consecrate themselves for three days, and the LORD descends on the mountain in thunder, fire, and smoke.",
+    "blurb": "The LORD descends on Sinai in fire and thunder",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c19-0", "exo-e-c19-1", "exo-e-c19-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-20",
+    "book": "exodus",
+    "number": 20,
+    "title": "The Ten Commandments",
+    "summary": "God speaks the Ten Commandments directly to Israel from the mountain. Terrified by the thunder, lightning, and trumpet blast, the people beg Moses to speak for God instead, and God gives instructions about building altars.",
+    "blurb": "God speaks the Ten Commandments to a terrified Israel",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c20-0", "exo-e-c20-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-21",
+    "book": "exodus",
+    "number": 21,
+    "title": "Laws on Servants and Injuries",
+    "summary": "The LORD gives Moses case laws covering Hebrew servants, violence between people, and compensation for injury or loss, including the principle of eye for eye and tooth for tooth as a limit on retaliation.",
+    "blurb": "Laws on servants, injury, and eye for eye",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c21-0"]
+  },
+  {
+    "id": "exo-ch-22",
+    "book": "exodus",
+    "number": 22,
+    "title": "Laws on Property and the Vulnerable",
+    "summary": "The LORD gives laws on restitution for theft and property damage, protection for widows, orphans, and sojourners, lending without charging interest to the poor, and offering the firstfruits and firstborn to him.",
+    "blurb": "Laws protecting property, the poor, and lending fairly",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c22-0"]
+  },
+  {
+    "id": "exo-ch-23",
+    "book": "exodus",
+    "number": 23,
+    "title": "Justice, the Feasts, and the Promised Angel",
+    "summary": "The LORD commands impartial justice, rest for the land every seventh year, and three annual feasts to be kept before him. He promises to send his angel ahead of Israel and warns against worshiping the gods of Canaan.",
+    "blurb": "God promises to send his angel before Israel",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c23-0", "exo-e-c23-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-24",
+    "book": "exodus",
+    "number": 24,
+    "title": "The Covenant Ratified with Blood",
+    "summary": "Israel agrees to all the LORD's words, and Moses sprinkles the blood of the covenant on the people. Moses, Aaron, and seventy elders go up and see the God of Israel, and Moses then enters the cloud on the mountain for forty days and nights.",
+    "blurb": "Moses sprinkles the blood of the covenant",
+    "arcId": "exo-arc-sinai-covenant",
+    "eventIds": ["exo-e-c24-0", "exo-e-c24-1", "exo-e-c24-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-25",
+    "book": "exodus",
+    "number": 25,
+    "title": "Instructions for the Ark, Table, and Lampstand",
+    "summary": "The LORD calls for a freewill offering of materials and gives Moses detailed instructions for building the ark of the covenant with its mercy seat, the table for the bread of the Presence, and the golden lampstand.",
+    "blurb": "Plans for the ark of the covenant",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c25-0"]
+  },
+  {
+    "id": "exo-ch-26",
+    "book": "exodus",
+    "number": 26,
+    "title": "Instructions for the Tabernacle Structure",
+    "summary": "The LORD gives detailed instructions for the tabernacle's linen curtains, wooden frames, and coverings, and for the veil that will separate the Holy Place from the Most Holy Place where the ark will rest.",
+    "blurb": "Plans for the tabernacle's curtains and frame",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c26-0"]
+  },
+  {
+    "id": "exo-ch-27",
+    "book": "exodus",
+    "number": 27,
+    "title": "Instructions for the Bronze Altar and Courtyard",
+    "summary": "The LORD gives instructions for the bronze altar of burnt offering and for the courtyard that will surround the tabernacle, with its linen hangings, and commands Israel to keep oil burning in the lamp continually.",
+    "blurb": "Plans for the bronze altar and courtyard",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c27-0"]
+  },
+  {
+    "id": "exo-ch-28",
+    "book": "exodus",
+    "number": 28,
+    "title": "Instructions for the Priestly Garments",
+    "summary": "The LORD gives instructions for the sacred garments Aaron and his sons will wear as priests, including the ephod and the breastpiece of judgment set with twelve stones representing Israel's tribes, and the Urim and Thummim.",
+    "blurb": "Plans for Aaron's ephod and breastpiece",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c28-0"]
+  },
+  {
+    "id": "exo-ch-29",
+    "book": "exodus",
+    "number": 29,
+    "title": "Instructions for Ordaining the Priests",
+    "summary": "The LORD gives detailed instructions for the seven-day ceremony that will ordain Aaron and his sons as priests, including specific sacrifices, anointing with oil, and the daily burnt offering to be kept at the tabernacle's entrance.",
+    "blurb": "Plans for ordaining Aaron and his sons",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c29-0"]
+  },
+  {
+    "id": "exo-ch-30",
+    "book": "exodus",
+    "number": 30,
+    "title": "Instructions for the Incense Altar and Basin",
+    "summary": "The LORD gives instructions for the altar of incense, the atonement money collected in a census, the bronze basin for washing, and the recipes for the anointing oil and incense that are reserved for sacred use alone.",
+    "blurb": "Plans for the incense altar and basin",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c30-0"]
+  },
+  {
+    "id": "exo-ch-31",
+    "book": "exodus",
+    "number": 31,
+    "title": "Bezalel, Oholiab, and the Tablets of the Testimony",
+    "summary": "The LORD appoints craftsmen filled with his Spirit to build the tabernacle and everything in it, reaffirms the Sabbath as a lasting sign of the covenant, and gives Moses the two stone tablets written by his own finger.",
+    "blurb": "God gives Moses the two stone tablets",
+    "arcId": "exo-arc-tabernacle-plans",
+    "eventIds": ["exo-e-c31-0", "exo-e-c31-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-32",
+    "book": "exodus",
+    "number": 32,
+    "title": "The Golden Calf",
+    "summary": "While Moses delays on the mountain, the people persuade Aaron to make a golden calf to worship. God threatens to destroy Israel, but Moses intercedes. Coming down, Moses breaks the tablets, destroys the calf, and the Levites execute judgment on the guilty.",
+    "blurb": "Israel worships a golden calf while Moses is away",
+    "arcId": "exo-arc-golden-calf",
+    "eventIds": ["exo-e-c32-0", "exo-e-c32-1", "exo-e-c32-2", "exo-e-c32-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-33",
+    "book": "exodus",
+    "number": 33,
+    "title": "Moses Seeks the LORD's Presence",
+    "summary": "The LORD says he will not personally go with the stiff-necked people, and Israel mourns. Moses meets with the LORD face to face at the tent of meeting, pleads for his presence to go with them, and asks to see his glory.",
+    "blurb": "Moses asks the LORD to show him his glory",
+    "arcId": "exo-arc-golden-calf",
+    "eventIds": ["exo-e-c33-0", "exo-e-c33-1", "exo-e-c33-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-34",
+    "book": "exodus",
+    "number": 34,
+    "title": "The Covenant Renewed and Moses' Shining Face",
+    "summary": "Moses cuts new tablets, and the LORD passes before him proclaiming his name as merciful, gracious, and slow to anger. The LORD renews the covenant, and Moses comes down with a face shining so brightly he must wear a veil.",
+    "blurb": "The LORD proclaims his name; Moses' face shines",
+    "arcId": "exo-arc-golden-calf",
+    "eventIds": ["exo-e-c34-0", "exo-e-c34-1", "exo-e-c34-2"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-35",
+    "book": "exodus",
+    "number": 35,
+    "title": "Israel's Offering for the Tabernacle",
+    "summary": "Moses gathers Israel, restates the Sabbath command, and calls for a freewill offering of materials to build the tabernacle. Men and women whose hearts are stirred bring gold, silver, bronze, yarns, wood, and gems generously.",
+    "blurb": "Israel brings materials to build the tabernacle",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c35-0"]
+  },
+  {
+    "id": "exo-ch-36",
+    "book": "exodus",
+    "number": 36,
+    "title": "More Than Enough Is Given",
+    "summary": "The people bring so much material for the tabernacle that Moses has to restrain them from giving any more. Bezalel and the craftsmen begin constructing the tabernacle's curtains, frames, and coverings exactly as the LORD commanded.",
+    "blurb": "The people give more than enough for the work",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c36-0"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-37",
+    "book": "exodus",
+    "number": 37,
+    "title": "The Ark, Table, and Lampstand Are Built",
+    "summary": "Bezalel builds the ark of the covenant with its mercy seat and cherubim, the table for the bread of the Presence, the golden lampstand, and the altar of incense, following the pattern the LORD gave Moses.",
+    "blurb": "The ark and lampstand are built as instructed",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c37-0"]
+  },
+  {
+    "id": "exo-ch-38",
+    "book": "exodus",
+    "number": 38,
+    "title": "The Bronze Altar and Courtyard Are Built",
+    "summary": "The craftsmen build the bronze altar and the tabernacle's courtyard with its hangings and posts, and the text records the exact amounts of gold, silver, and bronze that Israel contributed to the whole project.",
+    "blurb": "The bronze altar is built; materials are recorded",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c38-0"]
+  },
+  {
+    "id": "exo-ch-39",
+    "book": "exodus",
+    "number": 39,
+    "title": "The Priestly Garments Finished and Moses' Blessing",
+    "summary": "The craftsmen finish Aaron's priestly garments exactly as the LORD commanded, down to the engraved gold plate reading \"Holy to the LORD.\" Moses inspects all the completed work and blesses the people for their labor.",
+    "blurb": "Moses inspects the finished work and blesses Israel",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c39-0", "exo-e-c39-1"],
+    "quizWorthy": true
+  },
+  {
+    "id": "exo-ch-40",
+    "book": "exodus",
+    "number": 40,
+    "title": "The Tabernacle Set Up and Filled with Glory",
+    "summary": "Moses sets up the tabernacle and its furnishings exactly as commanded, and the glory of the LORD fills it so completely that even Moses cannot enter. From then on, the cloud of the LORD guides when Israel sets out and when it stays.",
+    "blurb": "The glory of the LORD fills the tabernacle",
+    "arcId": "exo-arc-tabernacle-built",
+    "eventIds": ["exo-e-c40-0", "exo-e-c40-1", "exo-e-c40-2"],
+    "quizWorthy": true
   }
 ]

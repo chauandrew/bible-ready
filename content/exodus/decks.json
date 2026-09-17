@@ -17,7 +17,7 @@
       "exo-e-c8-0", "exo-e-c8-1", "exo-e-c8-2",
       "exo-e-c9-0", "exo-e-c9-1", "exo-e-c9-2",
       "exo-e-c10-0", "exo-e-c10-1",
-      "exo-e-c11-0"
+      "exo-e-c11-0", "exo-e-c12-1"
     ]
   },
   {
@@ -28,6 +28,57 @@
       "exo-e-c12-0", "exo-e-c12-1", "exo-e-c12-2",
       "exo-e-c13-0", "exo-e-c13-1",
       "exo-e-c14-0", "exo-e-c14-1", "exo-e-c14-2"
+    ]
+  },
+  {
+    "id": "exo-deck-to-sinai",
+    "book": "exodus",
+    "name": "To Sinai",
+    "cardEventIds": [
+      "exo-e-c15-0", "exo-e-c15-1", "exo-e-c15-2",
+      "exo-e-c16-0", "exo-e-c16-1", "exo-e-c16-2",
+      "exo-e-c17-0", "exo-e-c17-1", "exo-e-c17-2",
+      "exo-e-c18-0", "exo-e-c18-1", "exo-e-c18-2"
+    ]
+  },
+  {
+    "id": "exo-deck-sinai-covenant",
+    "book": "exodus",
+    "name": "The Covenant at Sinai",
+    "cardEventIds": [
+      "exo-e-c19-0", "exo-e-c19-1", "exo-e-c19-2",
+      "exo-e-c20-0", "exo-e-c20-1",
+      "exo-e-c21-0", "exo-e-c22-0", "exo-e-c23-0", "exo-e-c23-1",
+      "exo-e-c24-0", "exo-e-c24-1", "exo-e-c24-2"
+    ]
+  },
+  {
+    "id": "exo-deck-tabernacle-plans",
+    "book": "exodus",
+    "name": "Tabernacle Instructions",
+    "cardEventIds": [
+      "exo-e-c25-0", "exo-e-c26-0", "exo-e-c27-0", "exo-e-c28-0",
+      "exo-e-c29-0", "exo-e-c30-0", "exo-e-c31-0", "exo-e-c31-1"
+    ]
+  },
+  {
+    "id": "exo-deck-golden-calf",
+    "book": "exodus",
+    "name": "The Golden Calf",
+    "cardEventIds": [
+      "exo-e-c32-0", "exo-e-c32-1", "exo-e-c32-2", "exo-e-c32-3",
+      "exo-e-c33-0", "exo-e-c33-1", "exo-e-c33-2",
+      "exo-e-c34-0", "exo-e-c34-1", "exo-e-c34-2"
+    ]
+  },
+  {
+    "id": "exo-deck-tabernacle-built",
+    "book": "exodus",
+    "name": "Building the Tabernacle",
+    "cardEventIds": [
+      "exo-e-c35-0", "exo-e-c36-0", "exo-e-c37-0", "exo-e-c38-0",
+      "exo-e-c39-0", "exo-e-c39-1",
+      "exo-e-c40-0", "exo-e-c40-1", "exo-e-c40-2"
     ]
   }
 ]

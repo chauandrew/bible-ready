@@ -30,5 +30,45 @@
     "startChapter": 12,
     "endChapter": 14,
     "summary": "God institutes the Passover, the tenth plague finally breaks Pharaoh's resistance, Israel leaves Egypt behind a pillar of cloud and fire, and the LORD parts the Red Sea so Israel escapes while Pharaoh's army drowns."
+  },
+  {
+    "id": "exo-arc-to-sinai",
+    "book": "exodus",
+    "name": "To Sinai",
+    "startChapter": 15,
+    "endChapter": 18,
+    "summary": "Israel sings after crossing the sea, then grumbles its way through the wilderness over water and food, and the LORD provides sweet water, manna, and quail, water from the rock, and victory over Amalek before Jethro advises Moses on sharing the burden of leading."
+  },
+  {
+    "id": "exo-arc-sinai-covenant",
+    "book": "exodus",
+    "name": "The Covenant at Sinai",
+    "startChapter": 19,
+    "endChapter": 24,
+    "summary": "Israel arrives at Sinai and the LORD descends on the mountain in fire and thunder to give the Ten Commandments and the Book of the Covenant, and the people ratify the covenant with blood before Moses goes up the mountain to receive the tablets."
+  },
+  {
+    "id": "exo-arc-tabernacle-plans",
+    "book": "exodus",
+    "name": "Tabernacle Instructions",
+    "startChapter": 25,
+    "endChapter": 31,
+    "summary": "The LORD gives Moses detailed instructions for the tabernacle and its furnishings, the priestly garments and ordination, the altar of incense and bronze basin, and appoints Bezalel and Oholiab before giving Moses the two tablets of the testimony."
+  },
+  {
+    "id": "exo-arc-golden-calf",
+    "book": "exodus",
+    "name": "The Golden Calf",
+    "startChapter": 32,
+    "endChapter": 34,
+    "summary": "While Moses is on the mountain, Israel persuades Aaron to make a golden calf, and Moses intercedes to turn aside God's wrath, breaks the tablets, judges the guilty, and returns to the mountain where God proclaims his name and renews the covenant."
+  },
+  {
+    "id": "exo-arc-tabernacle-built",
+    "book": "exodus",
+    "name": "Building the Tabernacle",
+    "startChapter": 35,
+    "endChapter": 40,
+    "summary": "Israel gives so generously that Moses must restrain further gifts, Bezalel and the craftsmen build everything exactly as the LORD commanded, and once the tabernacle is set up the glory of the LORD fills it and leads Israel's ongoing journeys."
   }
 ]
