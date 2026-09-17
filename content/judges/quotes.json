@@ -1,0 +1,137 @@
+[
+  {
+    "id": "jdg-q-c1-v7",
+    "book": "judges",
+    "chapter": 1,
+    "verse": 7,
+    "speakerId": "jdg-adonibezek",
+    "text": "As I have done, so God has repaid me.",
+    "citation": { "book": "judges", "chapter": 1, "verses": "7" }
+  },
+  {
+    "id": "jdg-q-c3-v20",
+    "book": "judges",
+    "chapter": 3,
+    "verse": 20,
+    "speakerId": "jdg-ehud",
+    "text": "I have a message from God for you.",
+    "citation": { "book": "judges", "chapter": 3, "verses": "20" }
+  },
+  {
+    "id": "jdg-q-c4-v14",
+    "book": "judges",
+    "chapter": 4,
+    "verse": 14,
+    "speakerId": "jdg-deborah",
+    "text": "Up! For this is the day in which the LORD has given Sisera into your hand.",
+    "citation": { "book": "judges", "chapter": 4, "verses": "14" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c6-v15",
+    "book": "judges",
+    "chapter": 6,
+    "verse": 15,
+    "speakerId": "jdg-gideon",
+    "text": "Please, Lord, how can I save Israel? Behold, my clan is the weakest in Manasseh, and I am the least in my father's house.",
+    "citation": { "book": "judges", "chapter": 6, "verses": "15" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c7-v20",
+    "book": "judges",
+    "chapter": 7,
+    "verse": 20,
+    "speakerId": "jdg-gideons-300",
+    "text": "A sword for the LORD and for Gideon!",
+    "citation": { "book": "judges", "chapter": 7, "verses": "20" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c8-v23",
+    "book": "judges",
+    "chapter": 8,
+    "verse": 23,
+    "speakerId": "jdg-gideon",
+    "text": "I will not rule over you, and my son will not rule over you; the LORD will rule over you.",
+    "citation": { "book": "judges", "chapter": 8, "verses": "23" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c9-v7",
+    "book": "judges",
+    "chapter": 9,
+    "verse": 7,
+    "speakerId": "jdg-jotham",
+    "text": "Listen to me, you leaders of Shechem, that God may listen to you.",
+    "citation": { "book": "judges", "chapter": 9, "verses": "7" }
+  },
+  {
+    "id": "jdg-q-c11-v31",
+    "book": "judges",
+    "chapter": 11,
+    "verse": 31,
+    "speakerId": "jdg-jephthah",
+    "text": "Whatever comes out from the doors of my house to meet me when I return in peace from the Ammonites shall be the LORD's, and I will offer it up for a burnt offering.",
+    "citation": { "book": "judges", "chapter": 11, "verses": "31" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c11-v36",
+    "book": "judges",
+    "chapter": 11,
+    "verse": 36,
+    "speakerId": "jdg-jephthahs-daughter",
+    "text": "My father, you have opened your mouth to the LORD; do to me according to what has gone out of your mouth, now that the LORD has avenged you on your enemies, on the Ammonites.",
+    "citation": { "book": "judges", "chapter": 11, "verses": "36" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c13-v23",
+    "book": "judges",
+    "chapter": 13,
+    "verse": 23,
+    "speakerId": "jdg-manoahs-wife",
+    "text": "If the LORD had meant to kill us, he would not have accepted a burnt offering and a grain offering at our hands, or shown us all these things, or now announced to us such things as these.",
+    "citation": { "book": "judges", "chapter": 13, "verses": "23" }
+  },
+  {
+    "id": "jdg-q-c14-v14",
+    "book": "judges",
+    "chapter": 14,
+    "verse": 14,
+    "speakerId": "jdg-samson",
+    "text": "Out of the eater came something to eat. Out of the strong came something sweet.",
+    "citation": { "book": "judges", "chapter": 14, "verses": "14" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c16-v17",
+    "book": "judges",
+    "chapter": 16,
+    "verse": 17,
+    "speakerId": "jdg-samson",
+    "text": "A razor has never come upon my head, for I have been a Nazirite to God from my mother's womb. If my head is shaved, then my strength will leave me, and I shall become weak and be like any other man.",
+    "citation": { "book": "judges", "chapter": 16, "verses": "17" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c16-v28",
+    "book": "judges",
+    "chapter": 16,
+    "verse": 28,
+    "speakerId": "jdg-samson",
+    "text": "O Lord GOD, please remember me and please strengthen me only this once, O God, that I may be avenged on the Philistines for my two eyes.",
+    "citation": { "book": "judges", "chapter": 16, "verses": "28" },
+    "tier": "general"
+  },
+  {
+    "id": "jdg-q-c17-v13",
+    "book": "judges",
+    "chapter": 17,
+    "verse": 13,
+    "speakerId": "jdg-micah",
+    "text": "Now I know that the LORD will prosper me, because I have a Levite as priest.",
+    "citation": { "book": "judges", "chapter": 17, "verses": "13" }
+  }
+]

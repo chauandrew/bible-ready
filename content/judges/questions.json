@@ -1,0 +1,300 @@
+[
+  {
+    "id": "jdg-aq-1",
+    "book": "judges",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Judges, what does Achsah ask her father Caleb for, to go along with the land Othniel wins by capturing Kiriath-sepher?",
+    "answer": "springs of water",
+    "aliases": ["water springs", "springs"],
+    "citation": { "book": "judges", "chapter": 1 },
+    "explanation": "Achsah asks Caleb for springs of water in addition to the land, and he grants her the upper and lower springs."
+  },
+  {
+    "id": "jdg-aq-2",
+    "book": "judges",
+    "category": "theme",
+    "prompt": "In Judges, what does the angel of the LORD warn will happen because Israel made covenants with Canaan's peoples instead of driving them out?",
+    "options": [
+      "The LORD will destroy the covenant-breakers immediately by fire",
+      "Israel will be exiled to Babylon within a generation",
+      "The remaining nations will become thorns in their sides and their gods a snare",
+      "The tabernacle will be moved out of the land entirely"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "judges", "chapter": 2 },
+    "explanation": "The angel warns that the nations Israel failed to drive out will become thorns in their sides and a snare through their gods.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-3",
+    "book": "judges",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Judges, which judge assassinates the Moabite king Eglon with a sword hidden on his right thigh?",
+    "answer": "Ehud",
+    "aliases": [],
+    "citation": { "book": "judges", "chapter": 3 },
+    "explanation": "Left-handed Ehud hides his sword on his right thigh, gains a private audience with Eglon, and kills him.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-4",
+    "book": "judges",
+    "category": "arc",
+    "prompt": "In Judges, what condition does Barak set before he will lead the army against Sisera?",
+    "options": [
+      "That Israel first defeats the Philistines",
+      "That Deborah goes with him",
+      "That the ark of the covenant is brought into battle",
+      "That his brother Shamgar joins the command"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 4 },
+    "explanation": "Barak will only go if Deborah accompanies him, so she tells him the glory of Sisera's death will go to a woman instead.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-5",
+    "book": "judges",
+    "category": "theme",
+    "prompt": "In Judges, which tribe does the song of Deborah curse by name for failing to help fight Sisera?",
+    "options": ["Reuben", "Dan", "Asher", "Meroz"],
+    "correctIndex": 3,
+    "citation": { "book": "judges", "chapter": 5 },
+    "explanation": "The song singles out Meroz for a curse, while tribes like Reuben are only criticized for hesitating, not cursed by name."
+  },
+  {
+    "id": "jdg-aq-6",
+    "book": "judges",
+    "category": "character",
+    "prompt": "In Judges, what sign does Gideon ask the LORD for twice using a wool fleece?",
+    "options": [
+      "That the LORD would send rain on the day of battle",
+      "That dew would collect on the fleece alone, and then on the ground alone",
+      "That his father's altar to Baal would fall on its own",
+      "That the enemy camp would flee before he attacked"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 6 },
+    "explanation": "Gideon asks for dew on the fleece alone, then reverses the test and asks for dew on the ground with the fleece dry.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-7",
+    "book": "judges",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Judges, how many men does the LORD leave Gideon to fight Midian with, after the water test at the spring?",
+    "answer": "300",
+    "aliases": ["three hundred"],
+    "citation": { "book": "judges", "chapter": 7 },
+    "explanation": "The LORD narrows Gideon's army down to the three hundred men who lapped water like a dog.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-8",
+    "book": "judges",
+    "category": "theme",
+    "prompt": "In Judges, what does Gideon's golden ephod become after he makes it from the plunder of Midian?",
+    "options": [
+      "A permanent memorial displayed in the tabernacle at Shiloh",
+      "A gift sent to the king of Egypt as tribute",
+      "A snare that leads Israel and his own family into idol worship",
+      "The model for the high priest's official garment"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "judges", "chapter": 8 },
+    "explanation": "Israel worships the ephod, and it becomes a snare to Gideon and his household.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-9",
+    "book": "judges",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In Judges, which of Gideon's seventy sons escapes Abimelech's massacre by hiding?",
+    "answer": "Jotham",
+    "aliases": [],
+    "citation": { "book": "judges", "chapter": 9 },
+    "explanation": "Jotham is the youngest son and the only one to escape, later cursing Abimelech from Mount Gerizim.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-10",
+    "book": "judges",
+    "category": "arc",
+    "prompt": "In Judges, what does the LORD tell Israel to do when they first cry out for help against the Ammonites and Philistines?",
+    "options": [
+      "Appoint a king to unite the tribes against their enemies",
+      "Go and cry out to the gods they had chosen instead",
+      "Rebuild the altar at Shiloh before he will listen",
+      "Wait forty years before he will raise up a deliverer"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 10 },
+    "explanation": "The LORD first tells Israel to seek help from the foreign gods they chose, before relenting when they put those gods away."
+  },
+  {
+    "id": "jdg-aq-11",
+    "book": "judges",
+    "category": "theme",
+    "prompt": "In Judges, what is Jephthah's reaction when his daughter is the first to come out of his house to meet him?",
+    "options": [
+      "Celebrates with her before revealing the vow",
+      "Sends her away before she can see him",
+      "Refuses to acknowledge her as his daughter",
+      "Tears his clothes in anguish over his vow"
+    ],
+    "correctIndex": 3,
+    "citation": { "book": "judges", "chapter": 11 },
+    "explanation": "Jephthah tears his clothes, realizing his vow now binds him to offer up his only child.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-12",
+    "book": "judges",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Judges, what password does Gilead use to catch fleeing Ephraimites at the Jordan, since their dialect could not pronounce it correctly?",
+    "answer": "Shibboleth",
+    "aliases": [],
+    "citation": { "book": "judges", "chapter": 12 },
+    "explanation": "Ephraimites say 'Sibboleth' instead of 'Shibboleth,' giving away that they are not Gileadites.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-13",
+    "book": "judges",
+    "category": "character",
+    "prompt": "In Judges, what does the angel of the LORD say Manoah's promised son must never do?",
+    "options": [
+      "Marry a woman from outside the twelve tribes of Israel",
+      "Cut his hair, since he will be a Nazirite from birth",
+      "Enter the tabernacle courts",
+      "Eat meat offered in sacrifice"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 13 },
+    "explanation": "The angel tells Manoah's wife their son will be a Nazirite to God from birth, so no razor may touch his head.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-14",
+    "book": "judges",
+    "category": "theme",
+    "format": "short-answer",
+    "prompt": "In Judges, what does Samson find inside the carcass of the lion he killed earlier at Timnah?",
+    "answer": "honey",
+    "aliases": [],
+    "citation": { "book": "judges", "chapter": 14 },
+    "explanation": "Bees have made honey in the lion's carcass, which becomes the answer to Samson's wedding riddle.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-15",
+    "book": "judges",
+    "category": "arc",
+    "prompt": "In Judges, what does Samson use to kill a thousand Philistines after Judah's men hand him over to keep the peace?",
+    "options": [
+      "Three hundred foxes carrying torches",
+      "The city gate of Gaza",
+      "A fresh donkey's jawbone",
+      "An oxgoad taken from a farmer"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "judges", "chapter": 15 },
+    "explanation": "The Spirit of the LORD rushes on Samson and he kills a thousand men with a fresh donkey's jawbone.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-16",
+    "book": "judges",
+    "category": "character",
+    "prompt": "In Judges, what does Samson finally tell Delilah is the true secret of his strength?",
+    "options": [
+      "A magic ring given to him by the angel of the LORD",
+      "His unbroken vow of silence",
+      "The blessing his father Manoah spoke over him",
+      "His hair has never been cut because he is a Nazirite from birth"
+    ],
+    "correctIndex": 3,
+    "citation": { "book": "judges", "chapter": 16 },
+    "explanation": "Worn down by her daily pressure, Samson tells Delilah his strength depends on his uncut Nazirite hair.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-17",
+    "book": "judges",
+    "category": "character",
+    "prompt": "In Judges, what does Micah's household shrine include, in addition to the Levite he hires as priest?",
+    "options": [
+      "A copy of the ark of the covenant",
+      "A carved image, a metal image, and an ephod",
+      "An altar plated entirely in gold",
+      "A bronze serpent like the one Moses made"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 17 },
+    "explanation": "Micah's shrine holds a carved image, a metal image, and an ephod, alongside his household gods."
+  },
+  {
+    "id": "jdg-aq-18",
+    "book": "judges",
+    "category": "arc",
+    "prompt": "In Judges, how do the migrating Danites persuade Micah's priest to leave with them?",
+    "options": [
+      "Pay him double his wages to stay behind and guard the shrine",
+      "Take him captive and sell him to the Philistines",
+      "Leave him behind along with Micah's idols",
+      "Persuade him to come with them and be priest to an entire tribe"
+    ],
+    "correctIndex": 3,
+    "citation": { "book": "judges", "chapter": 18 },
+    "explanation": "The Danites offer the Levite a whole tribe to serve as priest instead of just one household, and he goes with them."
+  },
+  {
+    "id": "jdg-aq-19",
+    "book": "judges",
+    "category": "theme",
+    "prompt": "In Judges, what does the Levite do with his concubine's body after finding her dead at Gibeah?",
+    "options": [
+      "Buries her immediately in Gibeah without telling anyone",
+      "Cuts her into twelve pieces and sends them to every tribe of Israel",
+      "Carries her to Shiloh for burial at the tabernacle",
+      "Leaves her in Gibeah as evidence for the elders to find"
+    ],
+    "correctIndex": 1,
+    "citation": { "book": "judges", "chapter": 19 },
+    "explanation": "The Levite cuts her body into twelve pieces and sends one to each tribe, provoking outrage across Israel.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-20",
+    "book": "judges",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In Judges, how many men of Benjamin survive Israel's war against them at the rock of Rimmon?",
+    "answer": "600",
+    "aliases": ["six hundred"],
+    "citation": { "book": "judges", "chapter": 20 },
+    "explanation": "Only six hundred Benjaminite men survive the war, fleeing to the rock of Rimmon.",
+    "tier": "general"
+  },
+  {
+    "id": "jdg-aq-21",
+    "book": "judges",
+    "category": "arc",
+    "prompt": "In Judges, how does Israel find wives for Benjamin's last surviving men after Jabesh-gilead's women are not enough?",
+    "options": [
+      "Send messengers to Ammon and Moab to arrange marriages",
+      "Lift the oath entirely and let any Israelite family volunteer a daughter",
+      "Let them seize wives from among the dancers at Shiloh's yearly festival",
+      "Wait a full generation for a new group of women to come of age"
+    ],
+    "correctIndex": 2,
+    "citation": { "book": "judges", "chapter": 21 },
+    "explanation": "Israel's elders let Benjamin's remaining men seize wives from among the dancing daughters of Shiloh at its yearly festival.",
+    "tier": "general"
+  }
+]

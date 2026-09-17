@@ -377,7 +377,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Numbers | numbers | 36 | narrative | todo | law/census chapters get one event |
 | Deuteronomy | deuteronomy | 34 | sparse | todo | |
 | Joshua | joshua | 24 | narrative | done | journey follow-up (conquest) |
-| Judges | judges | 21 | narrative | todo | |
+| Judges | judges | 21 | narrative | done | |
 | Ruth | ruth | 4 | narrative | todo | candidate `defaultTier: general` |
 | 1 Samuel | 1-samuel | 31 | narrative | done | tier backfill pending |
 | 2 Samuel | 2-samuel | 24 | narrative | done | tier backfill pending |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 10 of 66 books have a module (1 partial); 253 of 1,189 chapters.
+Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
 
 ## Log
 
@@ -503,3 +503,26 @@ Totals: 10 of 66 books have a module (1 partial); 253 of 1,189 chapters.
   chapter, had no event at all), two more place/name leaks the automated
   check's 4-character-minimum heuristic missed ("Ai"), and one missing
   `peopleIds` tag. The code-wiring review found no issues.
+- 2026-09-17: Judges authored (Phase 1's third item), the book's first
+  module: 7 arcs following the judge-by-judge structure (Incomplete
+  Conquest and the Broken Cycle, Deborah and Barak, Gideon, Abimelech's
+  Kingship, Jephthah and the Minor Judges, Samson, Israel's Moral
+  Collapse), 21 chapters, 67 events at full narrative density (the book
+  has little list-heavy content compared to Joshua, so most chapters get
+  3-4 events). 14 of 21 chapters `quizWorthy` (2/3, per convention).
+  14 quotes, people only (Adoni-bezek, Ehud, Deborah, Gideon, Gideon's
+  Three Hundred as a collective speaker, Jotham, Jephthah, Jephthah's
+  daughter, Manoah's wife, Samson x2, Micah; corpus total now 152/1,000)
+  — the angel of the LORD's speeches (2:1-3, 6:11-24, 13:3-23) were
+  excluded from the quote corpus as a LORD-adjacent speaker, per the
+  pre-flight judgment call. Chapter 19's content (the Levite's concubine)
+  is stated factually and matter-of-factly with no graphic language, per
+  the pre-flight plan. 21 authored questions (7 short answer, one per
+  chapter). Fixed pre-push: one length-tell violation (8/14 MC questions
+  had the correct option as the single longest; lengthened one
+  distractor) and one generated-ambiguity warning (a "who says this"
+  quote whose collective speaker name, "The People of Israel," shared
+  the word "Israel" with its own quoted text; the quote was dropped
+  rather than kept for a trivial question). Two adversarial review
+  agents (one content, one code-wiring) reviewed before push; see the PR
+  for findings.
