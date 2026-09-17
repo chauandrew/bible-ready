@@ -378,7 +378,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Deuteronomy | deuteronomy | 34 | sparse | todo | |
 | Joshua | joshua | 24 | narrative | done | journey follow-up (conquest) |
 | Judges | judges | 21 | narrative | done | |
-| Ruth | ruth | 4 | narrative | todo | candidate `defaultTier: general` |
+| Ruth | ruth | 4 | narrative | done | |
 | 1 Samuel | 1-samuel | 31 | narrative | done | tier backfill pending |
 | 2 Samuel | 2-samuel | 24 | narrative | done | tier backfill pending |
 | 1 Kings | 1-kings | 22 | narrative | todo | |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
+Totals: 12 of 66 books have a module (1 partial); 278 of 1,189 chapters.
 
 ## Log
 
@@ -534,3 +534,27 @@ Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
   general-knowledge famous, and the log's own quote-speaker tally was
   off by one for both Gideon and Samson. The code-wiring review found no
   other issues.
+- 2026-09-17: Ruth authored (Phase 1's fourth item), the book's first
+  module: 2 arcs (Loyalty and Provision, chapters 1-2; Redemption at the
+  Threshing Floor, chapters 3-4), 4 chapters, 12 events at full narrative
+  density (3/chapter). `defaultTier: "general"` set per this plan's own
+  guidance (every fact in Ruth is broadly famous), so only two outlier
+  items needed an explicit tag at all. `quizWorthy` on 3 of 4 chapters
+  (all but the gleaning chapter). 15 quotes, people only (Naomi, Ruth,
+  Boaz, the unnamed nearer redeemer, and the women of Bethlehem as a
+  collective speaker, following the "Elders of Israel" precedent);
+  corpus total now 167/1,000. 7 authored questions (3 short answer).
+  `check:content` passed with zero new warnings after two quotes that
+  named their own speaker mid-verse ("call me Mara" naming Naomi, "I am
+  Ruth" naming Ruth) were dropped or swapped for a different verse.
+  Two adversarial review agents (one content, one code-wiring) found and
+  fixed: a genealogical error (Ruth's person entry called Obed David's
+  great-grandfather instead of grandfather), a misattributed action (the
+  women of Bethlehem credited with the wedding blessing that Ruth 4:11-12
+  actually gives to the elders and people at the gate), two tier
+  miscalibrations (Naomi's threshing-floor instructions and the nearer
+  redeemer's forfeiture are plain plot-level facts, not "deep" ritual
+  mechanics — the ritual-mechanic detail itself stayed deep-tagged on its
+  own authored question), and an unsupported "wealthy" embellishment for
+  Boaz where the text says "worthy." The code-wiring review found no
+  issues.
