@@ -1,0 +1,14 @@
+{
+  "id": "joshua",
+  "name": "Joshua",
+  "chapterCount": 24,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "jos-arc-entering-the-land",
+    "jos-arc-jericho-and-ai",
+    "jos-arc-conquering-the-land",
+    "jos-arc-dividing-the-land",
+    "jos-arc-refuge-and-levite-cities",
+    "jos-arc-covenant-renewal"
+  ]
+}

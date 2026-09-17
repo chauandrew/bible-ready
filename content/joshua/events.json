@@ -1,0 +1,868 @@
+[
+  {
+    "id": "jos-e-c1-1",
+    "book": "joshua",
+    "chapter": 1,
+    "name": "The LORD commissions Joshua to lead Israel into Canaan",
+    "shortName": "Joshua's commission",
+    "citation": {
+      "book": "joshua",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "After Moses's death, the LORD tells Joshua to lead Israel across the Jordan into the land he promised, urging him repeatedly to be strong and courageous.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c1-2",
+    "book": "joshua",
+    "chapter": 1,
+    "name": "Joshua orders Israel to prepare to cross the Jordan",
+    "shortName": "Prepare to cross",
+    "citation": {
+      "book": "joshua",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "Joshua instructs the officers to tell the people to get their provisions ready, since they will cross the Jordan into the land within three days.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c1-3",
+    "book": "joshua",
+    "chapter": 1,
+    "name": "The Transjordan tribes pledge to fight for the land",
+    "shortName": "Tribes pledge loyalty",
+    "citation": {
+      "book": "joshua",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-transjordan-tribes"
+    ],
+    "order": 3,
+    "summary": "Reuben, Gad, and the half-tribe of Manasseh, already settled east of the Jordan, promise to send their armed men ahead of the other tribes until the whole land is conquered.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c2-1",
+    "book": "joshua",
+    "chapter": 2,
+    "name": "Joshua sends two spies to scout Jericho",
+    "shortName": "Spies sent to Jericho",
+    "citation": {
+      "book": "joshua",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-spies"
+    ],
+    "order": 1,
+    "summary": "Joshua secretly sends two men to spy out the land, and they lodge at the house of a prostitute named Rahab in Jericho.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c2-2",
+    "book": "joshua",
+    "chapter": 2,
+    "name": "Rahab hides the spies and secures a pledge to spare her family",
+    "shortName": "Rahab's pledge",
+    "citation": {
+      "book": "joshua",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "jos-rahab",
+      "jos-spies"
+    ],
+    "order": 2,
+    "summary": "Rahab hides the spies from the king of Jericho's men under stalks of flax on her roof, and in exchange for her protection the spies swear to spare her and her family when Israel takes the city.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c2-3",
+    "book": "joshua",
+    "chapter": 2,
+    "name": "The spies escape and report back to Joshua",
+    "shortName": "Spies report back",
+    "citation": {
+      "book": "joshua",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "jos-spies",
+      "jos-joshua"
+    ],
+    "order": 3,
+    "summary": "Rahab lets the spies down by a rope through her window in the city wall, tying a scarlet cord there as the agreed sign, and they return to Joshua with a favorable report.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c3-1",
+    "book": "joshua",
+    "chapter": 3,
+    "name": "Israel crosses the Jordan on dry ground",
+    "shortName": "Crossing the Jordan",
+    "citation": {
+      "book": "joshua",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "As the priests carrying the ark of the covenant step into the flooded Jordan, the water upstream is cut off and Israel crosses the riverbed on dry ground.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c3-2",
+    "book": "joshua",
+    "chapter": 3,
+    "name": "The priests stand in the riverbed until all Israel has crossed",
+    "shortName": "Priests hold the ark",
+    "citation": {
+      "book": "joshua",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "The priests carrying the ark stand firmly in the middle of the dry riverbed while the whole nation finishes passing over into Canaan.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c4-1",
+    "book": "joshua",
+    "chapter": 4,
+    "name": "Twelve men set up a memorial of stones at Gilgal",
+    "shortName": "Memorial stones",
+    "citation": {
+      "book": "joshua",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-israelites"
+    ],
+    "order": 1,
+    "summary": "One man from each tribe carries a stone out of the Jordan riverbed, and Joshua sets them up at Gilgal as a memorial so future generations will ask what they mean.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c4-2",
+    "book": "joshua",
+    "chapter": 4,
+    "name": "The priests come up from the Jordan and the water returns",
+    "shortName": "Jordan returns to flood",
+    "citation": {
+      "book": "joshua",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "Once the priests carrying the ark come up out of the riverbed, the Jordan's water returns and overflows its banks as before.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c5-1",
+    "book": "joshua",
+    "chapter": 5,
+    "name": "Israel is circumcised at Gilgal",
+    "shortName": "Circumcision at Gilgal",
+    "citation": {
+      "book": "joshua",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Joshua circumcises the generation born in the wilderness, since none of them had been circumcised on the journey, and the place is named Gibeath-haaraloth.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c5-2",
+    "book": "joshua",
+    "chapter": 5,
+    "name": "Israel keeps the Passover and the manna stops",
+    "shortName": "Passover and manna ends",
+    "citation": {
+      "book": "joshua",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "Israel keeps the Passover at Gilgal, and the day after they eat the produce of the land for the first time, the manna stops falling.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c5-3",
+    "book": "joshua",
+    "chapter": 5,
+    "name": "Joshua meets the commander of the LORD's army",
+    "shortName": "Commander of the LORD's army",
+    "citation": {
+      "book": "joshua",
+      "chapter": 5
+    },
+    "place": "near Jericho",
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 3,
+    "summary": "Near Jericho, Joshua encounters a man with a drawn sword who identifies himself as the commander of the LORD's army, and Joshua removes his sandals on holy ground.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c6-1",
+    "book": "joshua",
+    "chapter": 6,
+    "name": "Israel marches around Jericho for seven days",
+    "shortName": "Marching around Jericho",
+    "citation": {
+      "book": "joshua",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "On the LORD's instructions, Israel marches silently around Jericho once a day for six days behind seven priests blowing trumpets and the ark, then seven times on the seventh day.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c6-2",
+    "book": "joshua",
+    "chapter": 6,
+    "name": "Jericho's walls fall and the city is destroyed",
+    "shortName": "Jericho's walls fall",
+    "citation": {
+      "book": "joshua",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "When the priests blow their trumpets and the people shout on the seventh day's seventh circuit, Jericho's walls collapse and Israel devotes the city to destruction.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c6-3",
+    "book": "joshua",
+    "chapter": 6,
+    "name": "Rahab and her family are spared",
+    "shortName": "Rahab is spared",
+    "citation": {
+      "book": "joshua",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "jos-rahab",
+      "jos-joshua",
+      "jos-spies"
+    ],
+    "order": 3,
+    "summary": "As promised, the spies bring Rahab and her whole family out of Jericho safely before the city is burned, and she lives among Israel from then on.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c7-1",
+    "book": "joshua",
+    "chapter": 7,
+    "name": "Achan takes devoted plunder from Jericho",
+    "shortName": "Achan's theft",
+    "citation": {
+      "book": "joshua",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "jos-achan"
+    ],
+    "order": 1,
+    "summary": "Achan secretly takes a beautiful cloak, silver, and gold from Jericho's devoted plunder and hides it in his tent, breaking Israel's oath to destroy everything in the city.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c7-2",
+    "book": "joshua",
+    "chapter": 7,
+    "name": "Israel is defeated at Ai because of Achan's sin",
+    "shortName": "Defeat at Ai",
+    "citation": {
+      "book": "joshua",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "Israel's small force is routed at Ai and thirty-six men die, and Joshua tears his clothes in grief until the LORD reveals that someone has kept devoted plunder.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c7-3",
+    "book": "joshua",
+    "chapter": 7,
+    "name": "Achan is exposed by lot and executed",
+    "shortName": "Achan is exposed",
+    "citation": {
+      "book": "joshua",
+      "chapter": 7
+    },
+    "place": "the Valley of Achor",
+    "peopleIds": [
+      "jos-achan",
+      "jos-joshua"
+    ],
+    "order": 3,
+    "summary": "Joshua narrows the guilty party down by lot to Achan, who confesses, and Achan, his family, and his plunder are destroyed in the Valley of Achor.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c8-1",
+    "book": "joshua",
+    "chapter": 8,
+    "name": "Israel captures Ai by ambush",
+    "shortName": "Ai falls by ambush",
+    "citation": {
+      "book": "joshua",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Joshua hides a large force behind Ai, lures the city's army out with a feigned retreat, and the ambush burns the city and kills its king.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c8-2",
+    "book": "joshua",
+    "chapter": 8,
+    "name": "Joshua builds an altar and reads the law at Mount Ebal",
+    "shortName": "Altar at Mount Ebal",
+    "citation": {
+      "book": "joshua",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "Following Moses's instructions, Joshua builds an altar on Mount Ebal and reads the whole law aloud to Israel, including its blessings and curses.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c9-1",
+    "book": "joshua",
+    "chapter": 9,
+    "name": "The Gibeonites deceive Israel into a treaty",
+    "shortName": "Gibeonite deception",
+    "citation": {
+      "book": "joshua",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "jos-gibeonites",
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Wearing worn-out clothes and carrying moldy bread, the Gibeonites pose as travelers from a distant country and trick Israel's leaders into a peace treaty without consulting the LORD.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c9-2",
+    "book": "joshua",
+    "chapter": 9,
+    "name": "Israel honors the treaty and makes the Gibeonites servants",
+    "shortName": "Gibeonites made servants",
+    "citation": {
+      "book": "joshua",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "jos-gibeonites",
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "When the deception is discovered three days later, Israel spares the Gibeonites because of the oath but assigns them to cut wood and carry water for the community and the altar.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c10-1",
+    "book": "joshua",
+    "chapter": 10,
+    "name": "Five kings besiege Gibeon and Joshua marches to relieve it",
+    "shortName": "Kings besiege Gibeon",
+    "citation": {
+      "book": "joshua",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-adoni-zedek"
+    ],
+    "order": 1,
+    "summary": "Adoni-zedek of Jerusalem leads four other Amorite kings against Gibeon for making peace with Israel, and Joshua marches all night from Gilgal to defend his new allies.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c10-2",
+    "book": "joshua",
+    "chapter": 10,
+    "name": "The LORD sends hailstones and the sun stands still",
+    "shortName": "Sun stands still",
+    "citation": {
+      "book": "joshua",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "The LORD hurls hailstones on the fleeing enemy, and at Joshua's command the sun and moon stand still over the battle until Israel finishes avenging itself.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c10-3",
+    "book": "joshua",
+    "chapter": 10,
+    "name": "The five kings are captured at Makkedah and executed",
+    "shortName": "Five kings executed",
+    "citation": {
+      "book": "joshua",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-adoni-zedek"
+    ],
+    "order": 3,
+    "summary": "The five kings are found hiding in a cave at Makkedah; Joshua's commanders put their feet on the kings' necks before the kings are killed and hung until evening.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c11-1",
+    "book": "joshua",
+    "chapter": 11,
+    "name": "Jabin's northern coalition is defeated at the waters of Merom",
+    "shortName": "Battle at Merom",
+    "citation": {
+      "book": "joshua",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-jabin"
+    ],
+    "order": 1,
+    "summary": "Jabin, king of Hazor, gathers a large northern coalition with horses and chariots at the waters of Merom, and Israel routs them there, hamstringing the horses and burning the chariots.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c11-2",
+    "book": "joshua",
+    "chapter": 11,
+    "name": "Israel burns Hazor",
+    "shortName": "Hazor burned",
+    "citation": {
+      "book": "joshua",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-jabin"
+    ],
+    "order": 2,
+    "summary": "Joshua captures Hazor, kills its king, and burns the city, the only one of the northern cities Israel sets on fire in this campaign.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c12-1",
+    "book": "joshua",
+    "chapter": 12,
+    "name": "Israel's kings defeated west of the Jordan are counted at thirty-one",
+    "shortName": "Thirty-one kings",
+    "citation": {
+      "book": "joshua",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "The chapter tallies every king defeated in the conquest: two east of the Jordan under Moses, and the kings Joshua defeated west of it are counted at thirty-one, thirty-three kings in all.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c13-1",
+    "book": "joshua",
+    "chapter": 13,
+    "name": "The Transjordan tribes' territory east of the Jordan is confirmed",
+    "shortName": "Transjordan territory",
+    "citation": {
+      "book": "joshua",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-transjordan-tribes"
+    ],
+    "order": 1,
+    "summary": "With Joshua now old and much land still unconquered, the LORD directs him to allot it anyway, starting with the territory Moses already assigned Reuben, Gad, and half of Manasseh east of the Jordan.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c14-1",
+    "book": "joshua",
+    "chapter": 14,
+    "name": "Caleb requests and receives Hebron as his inheritance",
+    "shortName": "Caleb's inheritance",
+    "citation": {
+      "book": "joshua",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "jos-caleb",
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "At eighty-five, Caleb reminds Joshua of his faithful report as one of the twelve spies forty-five years earlier and asks for the hill country of Hebron, which Joshua grants him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c15-1",
+    "book": "joshua",
+    "chapter": 15,
+    "name": "Judah's tribal territory is described in detail",
+    "shortName": "Judah's territory",
+    "citation": {
+      "book": "joshua",
+      "chapter": 15
+    },
+    "peopleIds": [],
+    "order": 1,
+    "summary": "The chapter traces Judah's allotted borders and lists its many towns, the largest territory given to any tribe.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c15-2",
+    "book": "joshua",
+    "chapter": 15,
+    "name": "Othniel captures Kiriath-sepher and marries Achsah",
+    "shortName": "Othniel wins Achsah",
+    "citation": {
+      "book": "joshua",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "jos-othniel",
+      "jos-achsah",
+      "jos-caleb"
+    ],
+    "order": 2,
+    "summary": "Caleb offers his daughter Achsah in marriage to whoever captures Kiriath-sepher, and Othniel takes the town and wins her, after which she asks her father for springs of water.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c16-1",
+    "book": "joshua",
+    "chapter": 16,
+    "name": "Ephraim's territory is allotted but Gezer's Canaanites remain",
+    "shortName": "Ephraim's territory",
+    "citation": {
+      "book": "joshua",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Ephraim receives its territory in the hill country, but the tribe fails to drive out the Canaanites living in Gezer, who remain as forced laborers.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c17-1",
+    "book": "joshua",
+    "chapter": 17,
+    "name": "Zelophehad's daughters receive their inheritance in Manasseh",
+    "shortName": "Zelophehad's daughters",
+    "citation": {
+      "book": "joshua",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "jos-zelophehads-daughters",
+      "jos-joshua",
+      "jos-eleazar"
+    ],
+    "order": 1,
+    "summary": "Since Zelophehad had no sons, his five daughters come forward and receive a land inheritance among their father's brothers in Manasseh's territory, as the LORD had commanded Moses.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c18-1",
+    "book": "joshua",
+    "chapter": 18,
+    "name": "The tabernacle is set up at Shiloh and the remaining land is surveyed",
+    "shortName": "Tabernacle at Shiloh",
+    "citation": {
+      "book": "joshua",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Israel sets up the tent of meeting at Shiloh, and Joshua sends men to survey the land still undivided among the seven remaining tribes before casting lots for it there.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c18-2",
+    "book": "joshua",
+    "chapter": 18,
+    "name": "Benjamin's territory is allotted between Judah and Joseph",
+    "shortName": "Benjamin's territory",
+    "citation": {
+      "book": "joshua",
+      "chapter": 18
+    },
+    "place": "Jerusalem",
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "The first lot drawn among the seven remaining tribes gives Benjamin a narrow territory between Judah and the house of Joseph, including Jerusalem on its southern border.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c19-1",
+    "book": "joshua",
+    "chapter": 19,
+    "name": "Joshua receives Timnath-serah as his personal inheritance",
+    "shortName": "Joshua's inheritance",
+    "citation": {
+      "book": "joshua",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "After the last of the seven tribes receive their territory, Israel gives Joshua the town he asked for, Timnath-serah in the hill country of Ephraim.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c20-1",
+    "book": "joshua",
+    "chapter": 20,
+    "name": "Six cities of refuge are designated",
+    "shortName": "Cities of refuge",
+    "citation": {
+      "book": "joshua",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Joshua designates six cities across the land, three on each side of the Jordan, where anyone who kills a person by accident may flee for protection from revenge.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c21-1",
+    "book": "joshua",
+    "chapter": 21,
+    "name": "The Levites receive forty-eight cities among the other tribes",
+    "shortName": "Levitical cities",
+    "citation": {
+      "book": "joshua",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "The Levites, who received no territory of their own, are given forty-eight cities with pasturelands out of the other tribes' allotments, including the six cities of refuge.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c21-2",
+    "book": "joshua",
+    "chapter": 21,
+    "name": "The LORD gives Israel rest, fulfilling every promise",
+    "shortName": "Israel's rest",
+    "citation": {
+      "book": "joshua",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 2,
+    "summary": "The LORD gives Israel every piece of land he swore to their ancestors and rest from its enemies on every side; not one of his good promises fails.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c22-1",
+    "book": "joshua",
+    "chapter": 22,
+    "name": "Joshua sends the Transjordan tribes home with a blessing",
+    "shortName": "Tribes sent home",
+    "citation": {
+      "book": "joshua",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-transjordan-tribes"
+    ],
+    "order": 1,
+    "summary": "With the conquest finished, Joshua commends Reuben, Gad, and the half-tribe of Manasseh for keeping their pledge and sends them home east of the Jordan with a blessing and their plunder.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c22-2",
+    "book": "joshua",
+    "chapter": 22,
+    "name": "The Transjordan tribes build a witness altar, alarming the rest of Israel",
+    "shortName": "Witness altar built",
+    "citation": {
+      "book": "joshua",
+      "chapter": 22
+    },
+    "place": "the Jordan",
+    "peopleIds": [
+      "jos-transjordan-tribes"
+    ],
+    "order": 2,
+    "summary": "On their way home the eastern tribes build a large altar by the Jordan, and when the rest of Israel hears of it they assume it is rebellion and prepare for war.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c22-3",
+    "book": "joshua",
+    "chapter": 22,
+    "name": "Phinehas's delegation confronts them and war is averted",
+    "shortName": "Altar dispute resolved",
+    "citation": {
+      "book": "joshua",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "jos-phinehas",
+      "jos-transjordan-tribes"
+    ],
+    "order": 3,
+    "summary": "Phinehas leads a delegation to confront the eastern tribes, who explain the altar named Witness is only a reminder of their shared worship, and the assembly is satisfied.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c23-1",
+    "book": "joshua",
+    "chapter": 23,
+    "name": "Joshua delivers a farewell warning to Israel's leaders",
+    "shortName": "Joshua's farewell warning",
+    "citation": {
+      "book": "joshua",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 1,
+    "summary": "Now old, Joshua gathers Israel's leaders and warns them not to intermarry with the remaining nations or serve their gods, reminding them how faithfully the LORD has fought for them.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c24-1",
+    "book": "joshua",
+    "chapter": 24,
+    "name": "Joshua recounts Israel's history and challenges them to choose whom to serve",
+    "shortName": "Choose this day",
+    "citation": {
+      "book": "joshua",
+      "chapter": 24
+    },
+    "place": "Shechem",
+    "peopleIds": [
+      "jos-joshua",
+      "jos-israelites"
+    ],
+    "order": 1,
+    "summary": "At Shechem, Joshua retells Israel's story from Abraham to the conquest and challenges the people to choose that day whom they will serve, declaring his own household will serve the LORD.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "jos-e-c24-2",
+    "book": "joshua",
+    "chapter": 24,
+    "name": "Israel renews the covenant and Joshua sets up a witness stone",
+    "shortName": "Covenant renewed",
+    "citation": {
+      "book": "joshua",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "jos-joshua",
+      "jos-israelites"
+    ],
+    "order": 2,
+    "summary": "The people pledge to serve the LORD, and Joshua makes a covenant for them at Shechem and sets up a large stone under an oak as a witness to their promise.",
+    "notable": true
+  },
+  {
+    "id": "jos-e-c24-3",
+    "book": "joshua",
+    "chapter": 24,
+    "name": "Joshua dies and is buried at Timnath-serah",
+    "shortName": "Joshua's death",
+    "citation": {
+      "book": "joshua",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "jos-joshua"
+    ],
+    "order": 3,
+    "summary": "Joshua dies at a hundred and ten years old and is buried in his own inheritance at Timnath-serah, and Israel serves the LORD throughout his lifetime and beyond.",
+    "notable": true,
+    "tier": "general"
+  }
+]

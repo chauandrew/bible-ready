@@ -1,0 +1,114 @@
+[
+  {
+    "id": "jos-q-c1-v16",
+    "book": "joshua",
+    "chapter": 1,
+    "verse": 16,
+    "speakerId": "jos-transjordan-tribes",
+    "text": "All that you have commanded us we will do, and wherever you send us we will go.",
+    "citation": { "book": "joshua", "chapter": 1, "verses": "16" }
+  },
+  {
+    "id": "jos-q-c2-v11",
+    "book": "joshua",
+    "chapter": 2,
+    "verse": 11,
+    "speakerId": "jos-rahab",
+    "text": "And as soon as we heard it, our hearts melted, and there was no spirit left in any man because of you, for the LORD your God, he is God in the heavens above and on the earth beneath.",
+    "citation": { "book": "joshua", "chapter": 2, "verses": "11" }
+  },
+  {
+    "id": "jos-q-c3-v5",
+    "book": "joshua",
+    "chapter": 3,
+    "verse": 5,
+    "speakerId": "jos-joshua",
+    "text": "Consecrate yourselves, for tomorrow the LORD will do wonders among you.",
+    "citation": { "book": "joshua", "chapter": 3, "verses": "5" }
+  },
+  {
+    "id": "jos-q-c6-v16",
+    "book": "joshua",
+    "chapter": 6,
+    "verse": 16,
+    "speakerId": "jos-joshua",
+    "text": "Shout, for the LORD has given you the city.",
+    "citation": { "book": "joshua", "chapter": 6, "verses": "16" },
+    "tier": "general"
+  },
+  {
+    "id": "jos-q-c7-v20",
+    "book": "joshua",
+    "chapter": 7,
+    "verse": 20,
+    "speakerId": "jos-achan",
+    "text": "Truly I have sinned against the LORD, the God of Israel, and this is what I did:",
+    "citation": { "book": "joshua", "chapter": 7, "verses": "20" },
+    "tier": "general"
+  },
+  {
+    "id": "jos-q-c9-v25",
+    "book": "joshua",
+    "chapter": 9,
+    "verse": 25,
+    "speakerId": "jos-gibeonites",
+    "text": "And now, behold, we are in your hand. Whatever seems good and right in your sight to do to us, do it.",
+    "citation": { "book": "joshua", "chapter": 9, "verses": "25" }
+  },
+  {
+    "id": "jos-q-c10-v12",
+    "book": "joshua",
+    "chapter": 10,
+    "verse": 12,
+    "speakerId": "jos-joshua",
+    "text": "Sun, stand still at Gibeon, and moon, in the Valley of Aijalon.",
+    "citation": { "book": "joshua", "chapter": 10, "verses": "12" },
+    "tier": "general"
+  },
+  {
+    "id": "jos-q-c14-v12",
+    "book": "joshua",
+    "chapter": 14,
+    "verse": 12,
+    "speakerId": "jos-caleb",
+    "text": "So now give me this hill country of which the LORD spoke on that day, for you heard on that day how the Anakim were there, with great fortified cities. It may be that the LORD will be with me, and I shall drive them out just as the LORD said.",
+    "citation": { "book": "joshua", "chapter": 14, "verses": "12" }
+  },
+  {
+    "id": "jos-q-c17-v4",
+    "book": "joshua",
+    "chapter": 17,
+    "verse": 4,
+    "speakerId": "jos-zelophehads-daughters",
+    "text": "The LORD commanded Moses to give us an inheritance along with our brothers.",
+    "citation": { "book": "joshua", "chapter": 17, "verses": "4" }
+  },
+  {
+    "id": "jos-q-c22-v22",
+    "book": "joshua",
+    "chapter": 22,
+    "verse": 22,
+    "speakerId": "jos-transjordan-tribes",
+    "text": "The Mighty One, God, the LORD! The Mighty One, God, the LORD! He knows; and let Israel itself know! If it was in rebellion or in breach of faith against the LORD, do not spare us today",
+    "citation": { "book": "joshua", "chapter": 22, "verses": "22" }
+  },
+  {
+    "id": "jos-q-c24-v15",
+    "book": "joshua",
+    "chapter": 24,
+    "verse": 15,
+    "speakerId": "jos-joshua",
+    "text": "And if it is evil in your eyes to serve the LORD, choose this day whom you will serve, whether the gods your fathers served in the region beyond the River, or the gods of the Amorites in whose land you dwell. But as for me and my house, we will serve the LORD.",
+    "citation": { "book": "joshua", "chapter": 24, "verses": "15" },
+    "tier": "general"
+  },
+  {
+    "id": "jos-q-c24-v24",
+    "book": "joshua",
+    "chapter": 24,
+    "verse": 24,
+    "speakerId": "jos-israelites",
+    "text": "The LORD our God we will serve, and his voice we will obey.",
+    "citation": { "book": "joshua", "chapter": 24, "verses": "24" }
+  }
+]

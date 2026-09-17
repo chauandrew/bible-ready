@@ -1,0 +1,50 @@
+[
+  {
+    "id": "jos-arc-entering-the-land",
+    "book": "joshua",
+    "name": "Entering the Land",
+    "startChapter": 1,
+    "endChapter": 5,
+    "summary": "After Moses's death the LORD commissions Joshua to lead Israel into Canaan; spies scout Jericho and are saved by Rahab, Israel crosses the Jordan on dry ground, sets up a memorial of stones, and the new generation is circumcised and keeps the Passover at Gilgal."
+  },
+  {
+    "id": "jos-arc-jericho-and-ai",
+    "book": "joshua",
+    "name": "Jericho and Ai",
+    "startChapter": 6,
+    "endChapter": 8,
+    "summary": "Jericho's walls fall after Israel marches around the city for seven days, but Achan's theft of devoted plunder brings defeat at Ai until his sin is exposed; Israel then captures Ai by ambush and renews the covenant at Mount Ebal."
+  },
+  {
+    "id": "jos-arc-conquering-the-land",
+    "book": "joshua",
+    "name": "Conquering the Land",
+    "startChapter": 9,
+    "endChapter": 12,
+    "summary": "The Gibeonites trick Israel into a treaty, a coalition of southern kings besieges Gibeon and is defeated with the LORD's help, a northern coalition led by Jabin of Hazor falls next, and the book tallies every king Moses and Joshua defeated."
+  },
+  {
+    "id": "jos-arc-dividing-the-land",
+    "book": "joshua",
+    "name": "Dividing the Land",
+    "startChapter": 13,
+    "endChapter": 19,
+    "summary": "Joshua and Eleazar divide the conquered and still-unconquered land among the twelve tribes by lot, from Judah's and Ephraim's large territories to the seven tribes who draw their portions last at Shiloh, including Caleb's and Zelophehad's daughters' individual inheritances."
+  },
+  {
+    "id": "jos-arc-refuge-and-levite-cities",
+    "book": "joshua",
+    "name": "Refuge and Levite Cities",
+    "startChapter": 20,
+    "endChapter": 21,
+    "summary": "Six cities of refuge are set apart for anyone who kills a person by accident, the Levites receive forty-eight cities scattered among the other tribes' territories, and the LORD is said to have given Israel every promised inheritance and rest from its enemies."
+  },
+  {
+    "id": "jos-arc-covenant-renewal",
+    "book": "joshua",
+    "name": "Covenant Renewal",
+    "startChapter": 22,
+    "endChapter": 24,
+    "summary": "The eastern tribes return home and build a witness altar that nearly starts a war until they explain its purpose, and an aging Joshua delivers two farewell addresses, renewing Israel's covenant at Shechem, before he dies and is buried in his own inheritance."
+  }
+]

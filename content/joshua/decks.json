@@ -1,0 +1,68 @@
+[
+  {
+    "id": "jos-deck-entering-the-land",
+    "book": "joshua",
+    "name": "Entering the Land",
+    "cardEventIds": [
+      "jos-e-c1-1", "jos-e-c1-2", "jos-e-c1-3",
+      "jos-e-c2-1", "jos-e-c2-2", "jos-e-c2-3",
+      "jos-e-c3-1", "jos-e-c3-2",
+      "jos-e-c4-1", "jos-e-c4-2",
+      "jos-e-c5-1", "jos-e-c5-2", "jos-e-c5-3"
+    ]
+  },
+  {
+    "id": "jos-deck-jericho-and-ai",
+    "book": "joshua",
+    "name": "Jericho and Ai",
+    "cardEventIds": [
+      "jos-e-c6-1", "jos-e-c6-2", "jos-e-c6-3",
+      "jos-e-c7-1", "jos-e-c7-2", "jos-e-c7-3",
+      "jos-e-c8-1", "jos-e-c8-2"
+    ]
+  },
+  {
+    "id": "jos-deck-conquering-the-land",
+    "book": "joshua",
+    "name": "Conquering the Land",
+    "cardEventIds": [
+      "jos-e-c9-1", "jos-e-c9-2",
+      "jos-e-c10-1", "jos-e-c10-2", "jos-e-c10-3",
+      "jos-e-c11-1", "jos-e-c11-2",
+      "jos-e-c12-1"
+    ]
+  },
+  {
+    "id": "jos-deck-dividing-the-land",
+    "book": "joshua",
+    "name": "Dividing the Land",
+    "cardEventIds": [
+      "jos-e-c13-1",
+      "jos-e-c14-1",
+      "jos-e-c15-1", "jos-e-c15-2",
+      "jos-e-c16-1",
+      "jos-e-c17-1",
+      "jos-e-c18-1", "jos-e-c18-2",
+      "jos-e-c19-1"
+    ]
+  },
+  {
+    "id": "jos-deck-refuge-and-levite-cities",
+    "book": "joshua",
+    "name": "Refuge and Levite Cities",
+    "cardEventIds": [
+      "jos-e-c20-1",
+      "jos-e-c21-1", "jos-e-c21-2"
+    ]
+  },
+  {
+    "id": "jos-deck-covenant-renewal",
+    "book": "joshua",
+    "name": "Covenant Renewal",
+    "cardEventIds": [
+      "jos-e-c22-1", "jos-e-c22-2", "jos-e-c22-3",
+      "jos-e-c23-1",
+      "jos-e-c24-1", "jos-e-c24-2", "jos-e-c24-3"
+    ]
+  }
+]
