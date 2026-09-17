@@ -1,0 +1,15 @@
+{
+  "id": "judges",
+  "name": "Judges",
+  "chapterCount": 21,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "jdg-arc-broken-cycle",
+    "jdg-arc-deborah-and-barak",
+    "jdg-arc-gideon",
+    "jdg-arc-abimelech",
+    "jdg-arc-jephthah-and-minor-judges",
+    "jdg-arc-samson",
+    "jdg-arc-moral-collapse"
+  ]
+}

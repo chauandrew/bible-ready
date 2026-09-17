@@ -1,0 +1,58 @@
+[
+  {
+    "id": "jdg-arc-broken-cycle",
+    "book": "judges",
+    "name": "Incomplete Conquest and the Broken Cycle",
+    "startChapter": 1,
+    "endChapter": 3,
+    "summary": "After Joshua's death Israel's tribes fail to fully drive out the Canaanites, an angel rebukes them at Bochim, and a new generation forgets the LORD; the pattern that will repeat throughout the book begins as Othniel, Ehud, and Shamgar deliver Israel from foreign oppressors."
+  },
+  {
+    "id": "jdg-arc-deborah-and-barak",
+    "book": "judges",
+    "name": "Deborah and Barak",
+    "startChapter": 4,
+    "endChapter": 5,
+    "summary": "The prophetess Deborah summons Barak to fight Sisera's iron chariots, Jael kills the fleeing commander with a tent peg, and Deborah and Barak celebrate the victory in a song that recalls the battle and its aftermath."
+  },
+  {
+    "id": "jdg-arc-gideon",
+    "book": "judges",
+    "name": "Gideon",
+    "startChapter": 6,
+    "endChapter": 8,
+    "summary": "The angel of the LORD calls the fearful Gideon to save Israel from Midian; after testing God with a fleece, Gideon routs Midian's army with three hundred men, trumpets, and torches, captures its kings, and refuses Israel's offer to make him king."
+  },
+  {
+    "id": "jdg-arc-abimelech",
+    "book": "judges",
+    "name": "Abimelech's Kingship",
+    "startChapter": 9,
+    "endChapter": 9,
+    "summary": "Gideon's son Abimelech murders his seventy brothers and makes himself king over Shechem, but Jotham's curse comes true as Shechem turns against him and he dies at Thebez when a woman drops a millstone on his head."
+  },
+  {
+    "id": "jdg-arc-jephthah-and-minor-judges",
+    "book": "judges",
+    "name": "Jephthah and the Minor Judges",
+    "startChapter": 10,
+    "endChapter": 12,
+    "summary": "Tola and Jair judge Israel before the Ammonites oppress Gilead; the outcast Jephthah is recruited to lead Israel, makes a vow that costs his daughter's life, defeats Ammon, and puts down a revolt by Ephraim, and Ibzan, Elon, and Abdon judge Israel in turn."
+  },
+  {
+    "id": "jdg-arc-samson",
+    "book": "judges",
+    "name": "Samson",
+    "startChapter": 13,
+    "endChapter": 16,
+    "summary": "An angel announces the birth of Samson, a Nazirite who will begin delivering Israel from the Philistines; his riddle, his revenge, and his betrayal by Delilah lead to his capture and blinding, and his final act of strength kills more Philistines in his death than in his life."
+  },
+  {
+    "id": "jdg-arc-moral-collapse",
+    "book": "judges",
+    "name": "Israel's Moral Collapse",
+    "startChapter": 17,
+    "endChapter": 21,
+    "summary": "With no king in Israel, Micah's household idols are stolen by the migrating tribe of Dan, a Levite's concubine is abused and killed at Gibeah, and the resulting war nearly wipes out the tribe of Benjamin before Israel finds its survivors wives so the tribe can continue."
+  }
+]

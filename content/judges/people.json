@@ -1,0 +1,214 @@
+[
+  {
+    "id": "jdg-adonibezek",
+    "name": "Adoni-bezek",
+    "summary": "A Canaanite king defeated at Bezek; Judah cuts off his thumbs and big toes, and he dies in Jerusalem admitting it is fitting payback for what he did to seventy other kings.",
+    "firstAppearance": { "book": "judges", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "jdg-caleb",
+    "name": "Caleb",
+    "summary": "One of the twelve spies who gave a faithful report of Canaan; he offers his daughter Achsah in marriage to whoever captures Kiriath-sepher.",
+    "firstAppearance": { "book": "judges", "chapter": 1 },
+    "relations": [{ "personId": "jdg-achsah", "relation": "father" }]
+  },
+  {
+    "id": "jdg-othniel",
+    "name": "Othniel",
+    "summary": "Caleb's younger relative who captures Kiriath-sepher and marries Achsah, then becomes Israel's first judge, delivering the nation from Cushan-rishathaim.",
+    "firstAppearance": { "book": "judges", "chapter": 1 },
+    "relations": [{ "personId": "jdg-achsah", "relation": "married" }]
+  },
+  {
+    "id": "jdg-achsah",
+    "name": "Achsah",
+    "summary": "Caleb's daughter, given in marriage to Othniel after he captures Kiriath-sepher; she asks her father for springs of water to go with her land.",
+    "firstAppearance": { "book": "judges", "chapter": 1 },
+    "relations": [
+      { "personId": "jdg-caleb", "relation": "daughter" },
+      { "personId": "jdg-othniel", "relation": "married" }
+    ]
+  },
+  {
+    "id": "jdg-ehud",
+    "name": "Ehud",
+    "summary": "A left-handed Benjaminite judge who assassinates Moab's king Eglon with a hidden sword and then leads Israel to defeat the Moabite army at the Jordan.",
+    "firstAppearance": { "book": "judges", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "jdg-eglon",
+    "name": "Eglon",
+    "summary": "The obese king of Moab who oppresses Israel for eighteen years until Ehud assassinates him in his upper room.",
+    "firstAppearance": { "book": "judges", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "jdg-shamgar",
+    "name": "Shamgar",
+    "summary": "A judge who kills six hundred Philistines with an oxgoad and saves Israel.",
+    "firstAppearance": { "book": "judges", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "jdg-deborah",
+    "name": "Deborah",
+    "summary": "A prophetess and judge who holds court under a palm tree in Ephraim's hill country and summons Barak to fight Sisera.",
+    "firstAppearance": { "book": "judges", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "jdg-barak",
+    "name": "Barak",
+    "summary": "The commander Deborah summons to lead Israel's army against Sisera; he agrees only if Deborah goes with him.",
+    "firstAppearance": { "book": "judges", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "jdg-sisera",
+    "name": "Sisera",
+    "summary": "The commander of King Jabin's army and its nine hundred iron chariots; he flees the battle on foot and is killed by Jael.",
+    "firstAppearance": { "book": "judges", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "jdg-jabin",
+    "name": "Jabin",
+    "summary": "The Canaanite king of Hazor whose commander Sisera oppresses Israel for twenty years.",
+    "firstAppearance": { "book": "judges", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "jdg-jael",
+    "name": "Jael",
+    "summary": "The wife of Heber the Kenite who shelters the fleeing Sisera in her tent and kills him with a tent peg while he sleeps.",
+    "firstAppearance": { "book": "judges", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "jdg-gideon",
+    "name": "Gideon",
+    "summary": "A reluctant deliverer from Manasseh whom the angel of the LORD calls to save Israel from Midian; he defeats Midian's army with three hundred men and refuses to be made king.",
+    "firstAppearance": { "book": "judges", "chapter": 6 },
+    "relations": []
+  },
+  {
+    "id": "jdg-gideons-300",
+    "name": "Gideon's Three Hundred",
+    "summary": "The three hundred men selected because they lapped water like dogs, who rout Midian's camp at night with trumpets, jars, and torches.",
+    "firstAppearance": { "book": "judges", "chapter": 7 },
+    "relations": []
+  },
+  {
+    "id": "jdg-zebah",
+    "name": "Zebah",
+    "summary": "One of the two Midianite kings Gideon pursues, captures, and executes for killing his brothers at Tabor.",
+    "firstAppearance": { "book": "judges", "chapter": 8 },
+    "relations": []
+  },
+  {
+    "id": "jdg-zalmunna",
+    "name": "Zalmunna",
+    "summary": "One of the two Midianite kings Gideon pursues, captures, and executes for killing his brothers at Tabor.",
+    "firstAppearance": { "book": "judges", "chapter": 8 },
+    "relations": []
+  },
+  {
+    "id": "jdg-abimelech",
+    "name": "Abimelech",
+    "summary": "Gideon's son by a Shechemite concubine; he murders his seventy brothers to become king over Shechem and dies at Thebez when a woman drops a millstone on his head.",
+    "firstAppearance": { "book": "judges", "chapter": 9 },
+    "relations": [{ "personId": "jdg-gideon", "relation": "son" }]
+  },
+  {
+    "id": "jdg-jotham",
+    "name": "Jotham",
+    "summary": "Gideon's youngest son, the only brother to escape Abimelech's massacre; he tells the fable of the trees and curses Abimelech and Shechem.",
+    "firstAppearance": { "book": "judges", "chapter": 9 },
+    "relations": [
+      { "personId": "jdg-gideon", "relation": "son" },
+      { "personId": "jdg-abimelech", "relation": "half-brother" }
+    ]
+  },
+  {
+    "id": "jdg-jephthah",
+    "name": "Jephthah",
+    "summary": "A Gileadite outcast, son of a prostitute, recruited by Gilead's elders to lead Israel against Ammon; his rash vow costs his only daughter's life.",
+    "firstAppearance": { "book": "judges", "chapter": 11 },
+    "relations": [{ "personId": "jdg-jephthahs-daughter", "relation": "father" }]
+  },
+  {
+    "id": "jdg-jephthahs-daughter",
+    "name": "Jephthah's Daughter",
+    "summary": "Jephthah's only child, who greets him with tambourines after his victory over Ammon and is sacrificed to fulfill his vow.",
+    "firstAppearance": { "book": "judges", "chapter": 11 },
+    "relations": [{ "personId": "jdg-jephthah", "relation": "daughter" }]
+  },
+  {
+    "id": "jdg-manoah",
+    "name": "Manoah",
+    "summary": "A Danite from Zorah whose barren wife is visited by the angel of the LORD; he offers a sacrifice on which the angel ascends.",
+    "firstAppearance": { "book": "judges", "chapter": 13 },
+    "relations": [{ "personId": "jdg-manoahs-wife", "relation": "married" }]
+  },
+  {
+    "id": "jdg-manoahs-wife",
+    "name": "Manoah's Wife",
+    "summary": "Manoah's barren wife, told by the angel of the LORD that she will bear Samson; she reasons that the LORD would not have accepted their offering if he meant to kill them.",
+    "firstAppearance": { "book": "judges", "chapter": 13 },
+    "relations": [{ "personId": "jdg-manoah", "relation": "married" }]
+  },
+  {
+    "id": "jdg-samson",
+    "name": "Samson",
+    "summary": "A Nazirite from birth whose great strength comes from his uncut hair; he judges Israel twenty years and dies pulling down the temple of Dagon on the Philistines.",
+    "firstAppearance": { "book": "judges", "chapter": 13 },
+    "relations": [
+      { "personId": "jdg-manoah", "relation": "son" },
+      { "personId": "jdg-manoahs-wife", "relation": "son" }
+    ]
+  },
+  {
+    "id": "jdg-delilah",
+    "name": "Delilah",
+    "summary": "A woman from the Valley of Sorek paid by the Philistine lords to discover the secret of Samson's strength; she has his hair cut after he tells her the truth.",
+    "firstAppearance": { "book": "judges", "chapter": 16 },
+    "relations": []
+  },
+  {
+    "id": "jdg-micah",
+    "name": "Micah",
+    "summary": "An Ephraimite who builds a household shrine with idols made from his mother's silver and hires a wandering Levite as his priest, until the tribe of Dan takes both.",
+    "firstAppearance": { "book": "judges", "chapter": 17 },
+    "relations": []
+  },
+  {
+    "id": "jdg-micahs-priest",
+    "name": "Micah's Levite Priest",
+    "summary": "A young Levite from Bethlehem hired by Micah as his household priest; he leaves with the tribe of Dan when they offer to make him priest to an entire tribe.",
+    "firstAppearance": { "book": "judges", "chapter": 17 },
+    "relations": []
+  },
+  {
+    "id": "jdg-the-levite",
+    "name": "The Levite of Ephraim",
+    "summary": "A Levite from Ephraim's hill country whose concubine is abused and killed at Gibeah; he cuts her body into twelve pieces and sends them throughout Israel.",
+    "firstAppearance": { "book": "judges", "chapter": 19 },
+    "relations": []
+  },
+  {
+    "id": "jdg-the-concubine",
+    "name": "The Levite's Concubine",
+    "summary": "The Levite's concubine from Bethlehem, whose abuse and death at the hands of the men of Gibeah leads Israel to war against the tribe of Benjamin.",
+    "firstAppearance": { "book": "judges", "chapter": 19 },
+    "relations": []
+  },
+  {
+    "id": "jdg-people-of-israel",
+    "name": "The People of Israel",
+    "summary": "The assembled tribes of Israel, who gather at Mizpah to hear the Levite's account and demand Gibeah's guilty men be handed over.",
+    "firstAppearance": { "book": "judges", "chapter": 20 },
+    "relations": []
+  }
+]

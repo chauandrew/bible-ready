@@ -1,0 +1,233 @@
+[
+  {
+    "id": "jdg-ch1",
+    "book": "judges",
+    "number": 1,
+    "title": "Incomplete Conquest of Canaan",
+    "summary": "After Joshua's death, Judah and Simeon defeat Adoni-bezek and capture cities in the hill country, Othniel wins Achsah in marriage, but Benjamin, Manasseh, and the other tribes fail to drive out the Canaanites from their territory.",
+    "blurb": "Judah conquers south Canaan; other tribes fail",
+    "arcId": "jdg-arc-broken-cycle",
+    "eventIds": ["jdg-e-c1-1", "jdg-e-c1-2", "jdg-e-c1-3"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch2",
+    "book": "judges",
+    "number": 2,
+    "title": "The Angel's Rebuke and Joshua's Death",
+    "summary": "An angel confronts Israel at Bochim for failing to break down pagan altars, Joshua dies at a hundred and ten, and a new generation arises that does not know the LORD or his works.",
+    "blurb": "The angel's rebuke at Bochim; Joshua's death",
+    "arcId": "jdg-arc-broken-cycle",
+    "eventIds": ["jdg-e-c2-1", "jdg-e-c2-2", "jdg-e-c2-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch3",
+    "book": "judges",
+    "number": 3,
+    "title": "Othniel, Ehud, and Shamgar",
+    "summary": "The LORD leaves nations in Canaan to test Israel; Othniel defeats Cushan-rishathaim, Ehud assassinates the Moabite king Eglon and routs his army at the Jordan, and Shamgar kills six hundred Philistines with an oxgoad.",
+    "blurb": "Othniel, Ehud's assassination of Eglon, and Shamgar",
+    "arcId": "jdg-arc-broken-cycle",
+    "eventIds": ["jdg-e-c3-1", "jdg-e-c3-2", "jdg-e-c3-3", "jdg-e-c3-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch4",
+    "book": "judges",
+    "number": 4,
+    "title": "Deborah and Barak Defeat Sisera",
+    "summary": "Deborah summons Barak to fight Sisera's nine hundred chariots at Mount Tabor, the LORD routs the Canaanite army by the Kishon River, and Jael kills the fleeing Sisera with a tent peg in her tent.",
+    "blurb": "Jael kills Sisera with a tent peg",
+    "arcId": "jdg-arc-deborah-and-barak",
+    "eventIds": ["jdg-e-c4-1", "jdg-e-c4-2", "jdg-e-c4-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch5",
+    "book": "judges",
+    "number": 5,
+    "title": "The Song of Deborah",
+    "summary": "Deborah and Barak celebrate the victory over Sisera in song, praising the tribes who fought and cursing Meroz for staying home, and picturing Sisera's mother waiting anxiously at her window for a son who will not return.",
+    "blurb": "Deborah and Barak's victory song",
+    "arcId": "jdg-arc-deborah-and-barak",
+    "eventIds": ["jdg-e-c5-1", "jdg-e-c5-2"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch6",
+    "book": "judges",
+    "number": 6,
+    "title": "Gideon's Call and the Fleece",
+    "summary": "Midian's raids drive Israel into hiding until the angel of the LORD calls the fearful Gideon to save Israel; Gideon tears down his father's altar to Baal by night and tests the LORD twice with a wool fleece.",
+    "blurb": "Gideon's call and the fleece test",
+    "arcId": "jdg-arc-gideon",
+    "eventIds": ["jdg-e-c6-1", "jdg-e-c6-2", "jdg-e-c6-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch7",
+    "book": "judges",
+    "number": 7,
+    "title": "Gideon's Three Hundred",
+    "summary": "The LORD narrows Gideon's army to three hundred men by a water test, Gideon overhears a Midianite's dream of a barley loaf, and the three hundred rout Midian's camp at night with trumpets, jars, and torches.",
+    "blurb": "Three hundred men rout Midian by night",
+    "arcId": "jdg-arc-gideon",
+    "eventIds": ["jdg-e-c7-1", "jdg-e-c7-2", "jdg-e-c7-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch8",
+    "book": "judges",
+    "number": 8,
+    "title": "Gideon's Victory and Refusal to Rule",
+    "summary": "Gideon pursues and captures the Midianite kings Zebah and Zalmunna, punishing Succoth and Penuel for refusing his men bread, executes the kings, and refuses Israel's offer to make him king, though his golden ephod later becomes a snare.",
+    "blurb": "Gideon refuses to be king",
+    "arcId": "jdg-arc-gideon",
+    "eventIds": ["jdg-e-c8-1", "jdg-e-c8-2", "jdg-e-c8-3", "jdg-e-c8-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch9",
+    "book": "judges",
+    "number": 9,
+    "title": "Abimelech's Kingship and Death",
+    "summary": "Abimelech murders his seventy brothers and is made king at Shechem; Jotham curses him with a fable of the trees, Gaal's revolt leads Abimelech to destroy Shechem, and Abimelech dies at Thebez when a woman drops a millstone on his head.",
+    "blurb": "Abimelech's murder of his brothers and death",
+    "arcId": "jdg-arc-abimelech",
+    "eventIds": ["jdg-e-c9-1", "jdg-e-c9-2", "jdg-e-c9-3", "jdg-e-c9-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch10",
+    "book": "judges",
+    "number": 10,
+    "title": "Tola, Jair, and Israel's Idolatry",
+    "summary": "Tola and Jair judge Israel for a combined forty-five years; Israel then worships foreign gods, and the LORD hands them over to the Ammonites and Philistines until their cry for help moves him to relent.",
+    "blurb": "Tola and Jair judge Israel",
+    "arcId": "jdg-arc-jephthah-and-minor-judges",
+    "eventIds": ["jdg-e-c10-1", "jdg-e-c10-2", "jdg-e-c10-3"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch11",
+    "book": "judges",
+    "number": 11,
+    "title": "Jephthah's Vow",
+    "summary": "Gilead's outcast son Jephthah is recruited to lead Israel against Ammon, vows to sacrifice whatever meets him at his door if he wins, defeats the Ammonites, and is met by his only daughter, whom he then sacrifices.",
+    "blurb": "Jephthah's vow costs his daughter's life",
+    "arcId": "jdg-arc-jephthah-and-minor-judges",
+    "eventIds": ["jdg-e-c11-1", "jdg-e-c11-2", "jdg-e-c11-3", "jdg-e-c11-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch12",
+    "book": "judges",
+    "number": 12,
+    "title": "Ephraim's Revolt and the Shibboleth",
+    "summary": "Ephraim threatens Jephthah for excluding them from the battle against Ammon, Gilead defeats Ephraim and catches fleeing survivors at the Jordan with the password Shibboleth, and Ibzan, Elon, and Abdon judge Israel in turn.",
+    "blurb": "The Shibboleth test at the Jordan",
+    "arcId": "jdg-arc-jephthah-and-minor-judges",
+    "eventIds": ["jdg-e-c12-1", "jdg-e-c12-2", "jdg-e-c12-3"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch13",
+    "book": "judges",
+    "number": 13,
+    "title": "The Angel Announces Samson's Birth",
+    "summary": "An angel tells the barren wife of Manoah that she will bear a Nazirite son who will begin delivering Israel from the Philistines, and after the angel ascends in the flame of their offering, Samson is born.",
+    "blurb": "The angel announces Samson's birth",
+    "arcId": "jdg-arc-samson",
+    "eventIds": ["jdg-e-c13-1", "jdg-e-c13-2", "jdg-e-c13-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch14",
+    "book": "judges",
+    "number": 14,
+    "title": "Samson's Riddle at Timnah",
+    "summary": "Samson insists on marrying a Philistine woman from Timnah, kills a lion barehanded and later eats honey from its carcass, and loses a riddle wager at his wedding feast after his wife pries out the answer.",
+    "blurb": "Samson's riddle and the lion's honey",
+    "arcId": "jdg-arc-samson",
+    "eventIds": ["jdg-e-c14-1", "jdg-e-c14-2", "jdg-e-c14-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch15",
+    "book": "judges",
+    "number": 15,
+    "title": "Samson's Revenge on the Philistines",
+    "summary": "After his wife is given to another man, Samson burns Philistine fields with three hundred foxes, kills a thousand men with a donkey's jawbone after Judah hands him over, and drinks water the LORD provides at Lehi.",
+    "blurb": "Samson kills a thousand with a jawbone",
+    "arcId": "jdg-arc-samson",
+    "eventIds": ["jdg-e-c15-1", "jdg-e-c15-2", "jdg-e-c15-3", "jdg-e-c15-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch16",
+    "book": "judges",
+    "number": 16,
+    "title": "Samson and Delilah",
+    "summary": "Samson tears down Gaza's city gate, Delilah wears him down until he reveals that his strength lies in his uncut Nazirite hair, and after the Philistines blind him he pulls down the temple of Dagon in his death.",
+    "blurb": "Samson pulls down the temple of Dagon",
+    "arcId": "jdg-arc-samson",
+    "eventIds": ["jdg-e-c16-1", "jdg-e-c16-2", "jdg-e-c16-3", "jdg-e-c16-4"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch17",
+    "book": "judges",
+    "number": 17,
+    "title": "Micah's Household Shrine",
+    "summary": "Micah's mother dedicates silver he stole from her to make idols for a household shrine, and a wandering Levite from Bethlehem agrees to serve as Micah's priest, since Israel has no king to keep it from doing as it pleases.",
+    "blurb": "Micah hires a Levite as his priest",
+    "arcId": "jdg-arc-moral-collapse",
+    "eventIds": ["jdg-e-c17-1", "jdg-e-c17-2"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch18",
+    "book": "judges",
+    "number": 18,
+    "title": "The Danites Take Micah's Idols",
+    "summary": "Danite spies find Micah's shrine and are told their journey is blessed; six hundred armed Danites take his idols and his priest for themselves, then conquer the peaceful city of Laish and rename it Dan.",
+    "blurb": "Dan steals Micah's idols and conquers Laish",
+    "arcId": "jdg-arc-moral-collapse",
+    "eventIds": ["jdg-e-c18-1", "jdg-e-c18-2", "jdg-e-c18-3"],
+    "quizWorthy": false
+  },
+  {
+    "id": "jdg-ch19",
+    "book": "judges",
+    "number": 19,
+    "title": "The Levite's Concubine at Gibeah",
+    "summary": "A Levite retrieves his concubine from Bethlehem, but the men of Gibeah surround the house where they lodge for the night and abuse her until she dies, and he cuts her body into twelve pieces to send throughout Israel.",
+    "blurb": "Gibeah's crime against the Levite's concubine",
+    "arcId": "jdg-arc-moral-collapse",
+    "eventIds": ["jdg-e-c19-1", "jdg-e-c19-2", "jdg-e-c19-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch20",
+    "book": "judges",
+    "number": 20,
+    "title": "Israel's War Against Benjamin",
+    "summary": "Israel assembles to hear the Levite's account and demands Gibeah's guilty men, but Benjamin refuses and wins two battles before Israel ambushes and burns Gibeah, killing all but six hundred men of Benjamin.",
+    "blurb": "Israel nearly wipes out the tribe of Benjamin",
+    "arcId": "jdg-arc-moral-collapse",
+    "eventIds": ["jdg-e-c20-1", "jdg-e-c20-2", "jdg-e-c20-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "jdg-ch21",
+    "book": "judges",
+    "number": 21,
+    "title": "Wives for Benjamin",
+    "summary": "Israel regrets its oath never to give Benjamin wives, destroys Jabesh-gilead for skipping the assembly and spares its virgins for Benjamin, and lets the tribe's last survivors seize wives from among the dancers at Shiloh's festival.",
+    "blurb": "Benjamin's survivors find wives at Shiloh",
+    "arcId": "jdg-arc-moral-collapse",
+    "eventIds": ["jdg-e-c21-1", "jdg-e-c21-2", "jdg-e-c21-3"],
+    "quizWorthy": false
+  }
+]

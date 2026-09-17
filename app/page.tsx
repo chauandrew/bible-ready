@@ -9,6 +9,7 @@ export const available = [
   { href: "/genesis", name: "Genesis", desc: "From creation to Joseph, 50 chapters with quizzes and flashcards.", featured: true },
   { href: "/exodus", name: "Exodus", desc: "From slavery in Egypt to the tabernacle filled with God's glory, 40 chapters with quizzes and flashcards.", featured: true },
   { href: "/joshua", name: "Joshua", desc: "Israel crosses the Jordan and conquers the promised land, 24 chapters with quizzes and flashcards.", featured: true },
+  { href: "/judges", name: "Judges", desc: "Othniel, Deborah, Gideon, Jephthah, and Samson deliver Israel through a repeating cycle of sin and rescue, 21 chapters.", featured: true },
   { href: "/1-samuel", name: "1 Samuel", desc: "Israel's first king rises and falls, and a shepherd named David is anointed to replace him, 31 chapters.", featured: true },
   { href: "/2-samuel", name: "2 Samuel", desc: "David's rise to the throne, his worst sin, and the family rebellion that follows, 24 chapters.", featured: true },
   { href: "/ezra", name: "Ezra", desc: "Exiles return from Babylon, rebuild the temple, and confront a crisis of unfaithfulness, 10 chapters.", featured: true },

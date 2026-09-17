@@ -1,0 +1,72 @@
+[
+  {
+    "id": "jdg-deck-broken-cycle",
+    "book": "judges",
+    "name": "Incomplete Conquest and the Broken Cycle",
+    "cardEventIds": [
+      "jdg-e-c1-1", "jdg-e-c1-2", "jdg-e-c1-3",
+      "jdg-e-c2-1", "jdg-e-c2-2", "jdg-e-c2-3",
+      "jdg-e-c3-1", "jdg-e-c3-2", "jdg-e-c3-3", "jdg-e-c3-4"
+    ]
+  },
+  {
+    "id": "jdg-deck-deborah-and-barak",
+    "book": "judges",
+    "name": "Deborah and Barak",
+    "cardEventIds": [
+      "jdg-e-c4-1", "jdg-e-c4-2", "jdg-e-c4-3",
+      "jdg-e-c5-1", "jdg-e-c5-2"
+    ]
+  },
+  {
+    "id": "jdg-deck-gideon",
+    "book": "judges",
+    "name": "Gideon",
+    "cardEventIds": [
+      "jdg-e-c6-1", "jdg-e-c6-2", "jdg-e-c6-3",
+      "jdg-e-c7-1", "jdg-e-c7-2", "jdg-e-c7-3",
+      "jdg-e-c8-1", "jdg-e-c8-2", "jdg-e-c8-3", "jdg-e-c8-4"
+    ]
+  },
+  {
+    "id": "jdg-deck-abimelech",
+    "book": "judges",
+    "name": "Abimelech's Kingship",
+    "cardEventIds": [
+      "jdg-e-c9-1", "jdg-e-c9-2", "jdg-e-c9-3", "jdg-e-c9-4"
+    ]
+  },
+  {
+    "id": "jdg-deck-jephthah-and-minor-judges",
+    "book": "judges",
+    "name": "Jephthah and the Minor Judges",
+    "cardEventIds": [
+      "jdg-e-c10-1", "jdg-e-c10-2", "jdg-e-c10-3",
+      "jdg-e-c11-1", "jdg-e-c11-2", "jdg-e-c11-3", "jdg-e-c11-4",
+      "jdg-e-c12-1", "jdg-e-c12-2", "jdg-e-c12-3"
+    ]
+  },
+  {
+    "id": "jdg-deck-samson",
+    "book": "judges",
+    "name": "Samson",
+    "cardEventIds": [
+      "jdg-e-c13-1", "jdg-e-c13-2", "jdg-e-c13-3",
+      "jdg-e-c14-1", "jdg-e-c14-2", "jdg-e-c14-3",
+      "jdg-e-c15-1", "jdg-e-c15-2", "jdg-e-c15-3", "jdg-e-c15-4",
+      "jdg-e-c16-1", "jdg-e-c16-2", "jdg-e-c16-3", "jdg-e-c16-4"
+    ]
+  },
+  {
+    "id": "jdg-deck-moral-collapse",
+    "book": "judges",
+    "name": "Israel's Moral Collapse",
+    "cardEventIds": [
+      "jdg-e-c17-1", "jdg-e-c17-2",
+      "jdg-e-c18-1", "jdg-e-c18-2", "jdg-e-c18-3",
+      "jdg-e-c19-1", "jdg-e-c19-2", "jdg-e-c19-3",
+      "jdg-e-c20-1", "jdg-e-c20-2", "jdg-e-c20-3",
+      "jdg-e-c21-1", "jdg-e-c21-2", "jdg-e-c21-3"
+    ]
+  }
+]
