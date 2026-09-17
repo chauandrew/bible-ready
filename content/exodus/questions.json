@@ -63,7 +63,7 @@
       "I AM WHO I AM",
       "God Almighty",
       "Jealous",
-      "The God of your fathers"
+      "The Redeemer of Israel"
     ],
     "correctIndex": 0,
     "citation": {
@@ -153,9 +153,9 @@
     "category": "arc",
     "prompt": "In Exodus, which plague finally makes Pharaoh let Israel go?",
     "format": "short-answer",
-    "answer": "the death of the firstborn",
+    "answer": "tenth plague",
     "aliases": [
-      "tenth plague",
+      "the death of the firstborn",
       "firstborn",
       "first born",
       "tenth",
@@ -194,7 +194,7 @@
       "Israel keeps the Passover, the firstborn die, Pharaoh releases Israel, and the people leave Rameses",
       "Pharaoh releases Israel, the people leave Rameses, and they keep the first Passover on the road",
       "The firstborn die, Israel keeps the Passover, and Pharaoh's army escorts the people to the border",
-      "Israel leaves Rameses immediately, waits forty years in Goshen for further instructions, and then keeps the first Passover"
+      "Israel keeps the Passover, Pharaoh releases them at once, and the firstborn die as Pharaoh's army pursues them to the sea"
     ],
     "correctIndex": 0,
     "citation": {
@@ -314,7 +314,7 @@
     "options": [
       "To bring them out from slavery and take them as his own people",
       "To make Pharaoh their permanent ruler",
-      "To send them back to Canaan without ever actually leaving Egyptian territory or authority behind",
+      "To send them back into slavery under a different Egyptian ruler",
       "To give them Pharaoh's throne"
     ],
     "correctIndex": 0,

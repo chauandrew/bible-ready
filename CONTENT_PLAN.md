@@ -372,7 +372,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Book | Id | Ch | Depth | Status | Notes |
 |---|---|---|---|---|---|
 | Genesis | genesis | 50 | narrative | done | tier backfill pending |
-| Exodus | exodus | 40 | narrative | done | tier backfill pending (ch 1-14); 25-31/35-39 use 1 event/chapter (law/construction) |
+| Exodus | exodus | 40 | narrative | done | tier backfill pending (ch 1-14); 25-31/35-39 mostly 1 event/chapter (law/construction; 31 and 39 have 2) |
 | Leviticus | leviticus | 27 | sparse | todo | Phase 2 pilot for sparse |
 | Numbers | numbers | 36 | narrative | todo | law/census chapters get one event |
 | Deuteronomy | deuteronomy | 34 | sparse | todo | |
