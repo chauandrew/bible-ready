@@ -172,17 +172,6 @@ const judgesContent: BookContent = BookContentSchema.parse({
   decks: judgesDecksJson,
 });
 
-const kings1Content: BookContent = BookContentSchema.parse({
-  book: kings1BookJson,
-  arcs: kings1ArcsJson,
-  chapters: kings1ChaptersJson,
-  people: kings1PeopleJson,
-  events: kings1EventsJson,
-  quotes: kings1QuotesJson,
-  questions: kings1QuestionsJson,
-  decks: kings1DecksJson,
-});
-
 const psalmsContent: BookContent = BookContentSchema.parse({
   book: psalmsBookJson,
   arcs: psalmsArcsJson,
@@ -252,6 +241,17 @@ const samuel2Content: BookContent = BookContentSchema.parse({
   journeys: samuel2JourneysJson,
 });
 
+const kings1Content: BookContent = BookContentSchema.parse({
+  book: kings1BookJson,
+  arcs: kings1ArcsJson,
+  chapters: kings1ChaptersJson,
+  people: kings1PeopleJson,
+  events: kings1EventsJson,
+  quotes: kings1QuotesJson,
+  questions: kings1QuestionsJson,
+  decks: kings1DecksJson,
+});
+
 const ezraContent: BookContent = BookContentSchema.parse({
   book: ezraBookJson,
   arcs: ezraArcsJson,
@@ -285,9 +285,9 @@ const booksContent: Record<string, BookContent> = {
   [exodusContent.book.id]: exodusContent,
   [joshuaContent.book.id]: joshuaContent,
   [judgesContent.book.id]: judgesContent,
-  [kings1Content.book.id]: kings1Content,
   [samuel1Content.book.id]: samuel1Content,
   [samuel2Content.book.id]: samuel2Content,
+  [kings1Content.book.id]: kings1Content,
   [ezraContent.book.id]: ezraContent,
   [psalmsContent.book.id]: psalmsContent,
   [matthewContent.book.id]: matthewContent,
@@ -307,7 +307,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "joshua", "judges", "1-kings", "1-samuel", "2-samuel", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "joshua", "judges", "1-samuel", "2-samuel", "1-kings", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;
