@@ -1,0 +1,294 @@
+[
+  {
+    "id": "1kg-david",
+    "name": "David",
+    "summary": "Israel's aging king; on his deathbed he secures Solomon's succession and charges him to walk faithfully with God and settle old scores.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": [
+      { "personId": "1kg-solomon", "relation": "father" },
+      { "personId": "1kg-adonijah", "relation": "father" }
+    ]
+  },
+  {
+    "id": "1kg-solomon",
+    "name": "Solomon",
+    "summary": "David's son who becomes king, asks God for wisdom instead of wealth, builds the temple, and whose later foreign wives and idolatry lead the LORD to tear the kingdom from his son.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": [
+      { "personId": "1kg-david", "relation": "son" },
+      { "personId": "1kg-bathsheba", "relation": "son" }
+    ]
+  },
+  {
+    "id": "1kg-adonijah",
+    "name": "Adonijah",
+    "summary": "David's son who declares himself king while David is still alive; Solomon spares him once but later has him executed for requesting Abishag as a wife.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": [{ "personId": "1kg-david", "relation": "son" }]
+  },
+  {
+    "id": "1kg-joab",
+    "name": "Joab",
+    "summary": "David's longtime army commander who backs Adonijah's claim to the throne; Solomon has Benaiah execute him at the altar for his earlier killings of Abner and Amasa.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-abiathar",
+    "name": "Abiathar",
+    "summary": "A priest who supports Adonijah's claim to the throne; Solomon exiles him from the priesthood rather than executing him, ending his family's priestly line.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-nathan",
+    "name": "Nathan",
+    "summary": "The prophet who alerts Bathsheba to Adonijah's claim and helps persuade David to make Solomon king instead.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-bathsheba",
+    "name": "Bathsheba",
+    "summary": "Solomon's mother; she appeals to David to keep his oath that Solomon would be king, and later unwittingly relays Adonijah's fatal request for Abishag.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": [{ "personId": "1kg-solomon", "relation": "mother" }]
+  },
+  {
+    "id": "1kg-zadok",
+    "name": "Zadok",
+    "summary": "A priest loyal to Solomon who anoints him king at Gihon and later replaces Abiathar as high priest.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-benaiah",
+    "name": "Benaiah",
+    "summary": "A loyal officer who helps anoint Solomon king, then executes Adonijah, Joab, and Shimei on Solomon's orders and becomes his army commander.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-shimei",
+    "name": "Shimei",
+    "summary": "A man who once cursed David; Solomon confines him to Jerusalem under threat of death, then executes him three years later when he leaves the city.",
+    "firstAppearance": { "book": "1-kings", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "1kg-abishag",
+    "name": "Abishag",
+    "summary": "A young woman brought to care for the aging David; Adonijah's request to marry her after David's death leads Solomon to have him executed.",
+    "firstAppearance": { "book": "1-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "1kg-true-mother",
+    "name": "The Boy's True Mother",
+    "summary": "One of two women who claim the same surviving infant before Solomon; her plea to spare the child rather than divide him reveals she is his real mother.",
+    "firstAppearance": { "book": "1-kings", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "1kg-hiram-king",
+    "name": "Hiram of Tyre",
+    "summary": "The king of Tyre who supplies Solomon with cedar and cypress timber for the temple in exchange for grain and oil, and later cities and sailors.",
+    "firstAppearance": { "book": "1-kings", "chapter": 5 },
+    "relations": []
+  },
+  {
+    "id": "1kg-hiram-craftsman",
+    "name": "Hiram the Bronze Craftsman",
+    "summary": "A skilled bronze worker from Tyre, distinct from King Hiram, whom Solomon brings in to cast the temple's pillars, the bronze sea, and other bronze furnishings.",
+    "firstAppearance": { "book": "1-kings", "chapter": 7 },
+    "relations": []
+  },
+  {
+    "id": "1kg-queen-of-sheba",
+    "name": "The Queen of Sheba",
+    "summary": "A foreign queen who travels to Jerusalem to test Solomon with hard questions and is overwhelmed by his wisdom and wealth.",
+    "firstAppearance": { "book": "1-kings", "chapter": 10 },
+    "relations": []
+  },
+  {
+    "id": "1kg-jeroboam",
+    "name": "Jeroboam",
+    "summary": "A capable official of Solomon who becomes his adversary; the prophet Ahijah promises him ten tribes, and he becomes the first king of the divided northern kingdom, setting up golden calves at Bethel and Dan.",
+    "firstAppearance": { "book": "1-kings", "chapter": 11 },
+    "relations": []
+  },
+  {
+    "id": "1kg-ahijah",
+    "name": "Ahijah",
+    "summary": "A prophet who tears his cloak into twelve pieces to promise Jeroboam ten tribes, and who later, now blind, pronounces judgment on Jeroboam's house.",
+    "firstAppearance": { "book": "1-kings", "chapter": 11 },
+    "relations": []
+  },
+  {
+    "id": "1kg-rehoboam",
+    "name": "Rehoboam",
+    "summary": "Solomon's son who becomes king of Judah; his harsh answer to Israel at Shechem splits the kingdom, and Egypt's Shishak later plunders Jerusalem during his reign.",
+    "firstAppearance": { "book": "1-kings", "chapter": 11 },
+    "relations": [{ "personId": "1kg-solomon", "relation": "son" }]
+  },
+  {
+    "id": "1kg-man-of-god",
+    "name": "The Man of God from Judah",
+    "summary": "An unnamed prophet who confronts Jeroboam's altar at Bethel; he is later deceived into disobeying the LORD's command and is killed by a lion on the road.",
+    "firstAppearance": { "book": "1-kings", "chapter": 13 },
+    "relations": []
+  },
+  {
+    "id": "1kg-old-prophet-of-bethel",
+    "name": "The Old Prophet of Bethel",
+    "summary": "An aging prophet living in Bethel who falsely claims an angel told him to feed the man of God from Judah, leading to the younger prophet's death.",
+    "firstAppearance": { "book": "1-kings", "chapter": 13 },
+    "relations": []
+  },
+  {
+    "id": "1kg-jeroboams-wife",
+    "name": "Jeroboam's Wife",
+    "summary": "Jeroboam's unnamed wife, sent in disguise to ask the prophet Ahijah about their sick son; he recognizes her anyway and pronounces judgment on the family.",
+    "firstAppearance": { "book": "1-kings", "chapter": 14 },
+    "relations": [{ "personId": "1kg-jeroboam", "relation": "married" }]
+  },
+  {
+    "id": "1kg-asa",
+    "name": "Asa",
+    "summary": "A king of Judah who removes his grandmother Maacah for making an idol and reforms the kingdom, though he later allies with Syria against Israel.",
+    "firstAppearance": { "book": "1-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "1kg-baasha",
+    "name": "Baasha",
+    "summary": "A king of Israel who assassinates Nadab and wipes out Jeroboam's entire family, fulfilling Ahijah's prophecy, before his own house is later condemned in turn.",
+    "firstAppearance": { "book": "1-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "1kg-nadab",
+    "name": "Nadab",
+    "summary": "Jeroboam's son and successor as king of Israel; he is assassinated by Baasha after a brief reign.",
+    "firstAppearance": { "book": "1-kings", "chapter": 15 },
+    "relations": [{ "personId": "1kg-jeroboam", "relation": "son" }]
+  },
+  {
+    "id": "1kg-elah",
+    "name": "Elah",
+    "summary": "Baasha's son and successor as king of Israel; he is assassinated by Zimri while drinking.",
+    "firstAppearance": { "book": "1-kings", "chapter": 16 },
+    "relations": [{ "personId": "1kg-baasha", "relation": "son" }]
+  },
+  {
+    "id": "1kg-zimri",
+    "name": "Zimri",
+    "summary": "An officer who assassinates Elah and seizes the throne, but reigns only seven days before burning the palace down around himself when Omri is made king instead.",
+    "firstAppearance": { "book": "1-kings", "chapter": 16 },
+    "relations": []
+  },
+  {
+    "id": "1kg-omri",
+    "name": "Omri",
+    "summary": "A king of Israel who outlasts his rivals for the throne and builds Samaria as the kingdom's new capital; the text calls him more evil than every king before him.",
+    "firstAppearance": { "book": "1-kings", "chapter": 16 },
+    "relations": [{ "personId": "1kg-ahab", "relation": "father" }]
+  },
+  {
+    "id": "1kg-ahab",
+    "name": "Ahab",
+    "summary": "Omri's son and king of Israel; he marries Jezebel and promotes Baal worship, clashes repeatedly with Elijah, takes Naboth's vineyard by murder, and dies in battle at Ramoth-gilead.",
+    "firstAppearance": { "book": "1-kings", "chapter": 16 },
+    "relations": [
+      { "personId": "1kg-omri", "relation": "son" },
+      { "personId": "1kg-jezebel", "relation": "married" }
+    ]
+  },
+  {
+    "id": "1kg-jezebel",
+    "name": "Jezebel",
+    "summary": "Ahab's Phoenician wife who promotes Baal worship, purges the LORD's prophets, threatens Elijah's life, and arranges Naboth's murder to seize his vineyard for Ahab.",
+    "firstAppearance": { "book": "1-kings", "chapter": 16 },
+    "relations": [{ "personId": "1kg-ahab", "relation": "married" }]
+  },
+  {
+    "id": "1kg-elijah",
+    "name": "Elijah",
+    "summary": "A prophet from Tishbe who announces a drought, is fed by ravens and a widow, defeats the prophets of Baal on Mount Carmel, hears the LORD in a low whisper at Horeb, and confronts Ahab over Naboth's murder.",
+    "firstAppearance": { "book": "1-kings", "chapter": 17 },
+    "relations": []
+  },
+  {
+    "id": "1kg-obadiah",
+    "name": "Obadiah",
+    "summary": "Ahab's official who secretly hides and feeds a hundred of the LORD's prophets during Jezebel's persecution.",
+    "firstAppearance": { "book": "1-kings", "chapter": 18 },
+    "relations": []
+  },
+  {
+    "id": "1kg-benhadad",
+    "name": "Ben-hadad",
+    "summary": "The king of Syria who besieges Samaria and is defeated by Ahab twice; Ahab spares his life, which an unnamed prophet condemns as a costly mercy.",
+    "firstAppearance": { "book": "1-kings", "chapter": 20 },
+    "relations": []
+  },
+  {
+    "id": "1kg-naboth",
+    "name": "Naboth",
+    "summary": "A man of Jezreel who refuses to sell his family's vineyard to Ahab; Jezebel has him falsely accused and stoned to death so Ahab can take it.",
+    "firstAppearance": { "book": "1-kings", "chapter": 21 },
+    "relations": []
+  },
+  {
+    "id": "1kg-micaiah",
+    "name": "Micaiah",
+    "summary": "The one prophet who truthfully predicts Ahab's defeat at Ramoth-gilead against four hundred false prophets, and is imprisoned by Ahab for it.",
+    "firstAppearance": { "book": "1-kings", "chapter": 22 },
+    "relations": []
+  },
+  {
+    "id": "1kg-jehoshaphat",
+    "name": "Jehoshaphat",
+    "summary": "The king of Judah who allies with Ahab against Syria, asks for Micaiah's true prophecy, and reigns righteously over Judah for twenty-five years.",
+    "firstAppearance": { "book": "1-kings", "chapter": 22 },
+    "relations": []
+  },
+  {
+    "id": "1kg-ahaziah",
+    "name": "Ahaziah",
+    "summary": "Ahab and Jezebel's son who succeeds his father as king of Israel and continues his parents' worship of Baal.",
+    "firstAppearance": { "book": "1-kings", "chapter": 22 },
+    "relations": [
+      { "personId": "1kg-ahab", "relation": "son" },
+      { "personId": "1kg-jezebel", "relation": "son" }
+    ]
+  },
+  {
+    "id": "1kg-elisha",
+    "name": "Elisha",
+    "summary": "A farmer whom Elijah calls as his successor by throwing his cloak over him; Elisha leaves his oxen behind to follow and serve him.",
+    "firstAppearance": { "book": "1-kings", "chapter": 19 },
+    "relations": []
+  },
+  {
+    "id": "1kg-hadad",
+    "name": "Hadad the Edomite",
+    "summary": "A member of Edom's royal family who fled to Egypt as a boy when David conquered Edom, and whom the LORD raises up as an adversary against Solomon.",
+    "firstAppearance": { "book": "1-kings", "chapter": 11 },
+    "relations": []
+  },
+  {
+    "id": "1kg-rezon",
+    "name": "Rezon",
+    "summary": "A man who becomes king of Damascus and opposes Israel throughout Solomon's reign, another adversary the LORD raises up against him.",
+    "firstAppearance": { "book": "1-kings", "chapter": 11 },
+    "relations": []
+  },
+  {
+    "id": "1kg-people-of-israel",
+    "name": "The People of Israel",
+    "summary": "The crowd gathered on Mount Carmel who fall on their faces and declare that the LORD is God once fire falls on Elijah's sacrifice.",
+    "firstAppearance": { "book": "1-kings", "chapter": 18 },
+    "relations": []
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "id": "1kg-aq-1",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, which of David's sons declares himself king while David is still alive, before Solomon is anointed?",
+    "options": ["Adonijah", "Absalom", "Amnon", "Chileab"],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 1 },
+    "explanation": "Adonijah exalts himself as king and gathers support from Joab and Abiathar before Solomon is anointed instead.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-2",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, what does Solomon do when Adonijah asks to marry Abishag, David's former attendant?",
+    "options": [
+      "Has Benaiah execute him for making the request",
+      "Exiles him from Jerusalem to Anathoth",
+      "Grants the request to keep peace in the family",
+      "Places him under house arrest in Jerusalem"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 2 },
+    "explanation": "Solomon treats the request as a renewed claim on the throne and has Benaiah execute Adonijah for it.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-3",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, what does Solomon ask God for at Gibeon instead of wealth or long life?",
+    "options": [
+      "An understanding mind to govern rightly",
+      "Victory over all his enemies",
+      "A son to succeed him on the throne",
+      "Wealth greater than any king before him"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 3 },
+    "explanation": "Solomon asks for an understanding mind to govern God's people rather than riches or a long life, so God grants him wisdom plus riches and honor besides.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-4",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, how does Solomon expose which of the two women is the true mother of the surviving child?",
+    "options": [
+      "He orders the child cut in two, and the real mother begs him to spare it",
+      "He has each woman swear an oath before the priests",
+      "He asks witnesses from the house to corroborate one account",
+      "He lets the elders vote on which woman seems more sincere"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 3 },
+    "explanation": "The true mother reveals herself by begging Solomon to give the child to the other woman rather than see him killed.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-5",
+    "book": "1-kings",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, about how many proverbs does Solomon speak?",
+    "answer": "3,000",
+    "aliases": ["3000", "three thousand"],
+    "citation": { "book": "1-kings", "chapter": 4 },
+    "explanation": "Solomon speaks about three thousand proverbs and composes over a thousand songs.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-6",
+    "book": "1-kings",
+    "category": "theme",
+    "prompt": "In 1 Kings, what does Solomon ask God to do for anyone, even a foreigner, who prays toward the temple?",
+    "options": [
+      "Hear their prayer from heaven and act",
+      "Grant them citizenship among the Israelites",
+      "Require them to sacrifice at the temple first",
+      "Forward their request to the high priest"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 8 },
+    "explanation": "Solomon's dedication prayer repeatedly asks God to hear and act on prayer offered toward the temple, including from foreigners.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-7",
+    "book": "1-kings",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, what foreign ruler visits Jerusalem specifically to test Solomon with hard questions?",
+    "answer": "the queen of Sheba",
+    "aliases": ["queen of Sheba"],
+    "citation": { "book": "1-kings", "chapter": 10 },
+    "explanation": "The queen of Sheba travels to Jerusalem with hard questions and leaves overwhelmed by Solomon's wisdom and wealth.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-8",
+    "book": "1-kings",
+    "category": "covenant",
+    "prompt": "In 1 Kings, what does the LORD promise to leave Solomon's son despite tearing away the rest of the kingdom?",
+    "options": [
+      "One tribe, for David's sake",
+      "Two tribes, for Solomon's own sake",
+      "The city of Jerusalem alone, with no tribal territory",
+      "Nothing; the LORD tears away the entire kingdom"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 11 },
+    "explanation": "For David's sake, the LORD promises to leave one tribe for Solomon's son rather than taking the whole kingdom.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-9",
+    "book": "1-kings",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, how many pieces does the prophet Ahijah tear Jeroboam's new cloak into?",
+    "answer": "twelve",
+    "aliases": ["12"],
+    "citation": { "book": "1-kings", "chapter": 11 },
+    "explanation": "Ahijah tears the cloak into twelve pieces and gives Jeroboam ten, one for each tribe he will rule.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-10",
+    "book": "1-kings",
+    "category": "theme",
+    "prompt": "In 1 Kings, why does Jeroboam set up golden calves at Bethel and Dan?",
+    "options": [
+      "So his people won't return to worship at Jerusalem's temple and rejoin Rehoboam",
+      "Because the LORD commands him to build new worship sites",
+      "To honor a vow he made before becoming king",
+      "Because Bethel and Dan are closer to his own hometown"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 12 },
+    "explanation": "Jeroboam fears that pilgrimages to Jerusalem's temple will turn his people's loyalty back to Rehoboam.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-11",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, whose harsh advice does Rehoboam follow instead of the elders' gentle counsel?",
+    "options": [
+      "The young men who grew up with him",
+      "His father Solomon's former officials",
+      "The prophet Ahijah",
+      "His mother, an Ammonite woman"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 12 },
+    "explanation": "Rehoboam rejects the elders' advice to be gracious and follows the young men who grew up with him instead.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-12",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, why does a lion kill the man of God from Judah on his way home from Bethel?",
+    "options": [
+      "He disobeyed the LORD's command not to eat or drink there",
+      "He refused to bless Jeroboam's altar before leaving",
+      "He tried to destroy the golden calf himself",
+      "He revealed Jeroboam's prophecy to the wrong person"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 13 },
+    "explanation": "Deceived into eating and drinking in Bethel, the man of God breaks the LORD's direct command and is killed by a lion on the road.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-13",
+    "book": "1-kings",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, which king builds Samaria and makes it Israel's capital?",
+    "answer": "Omri",
+    "aliases": [],
+    "citation": { "book": "1-kings", "chapter": 16 },
+    "explanation": "Omri buys a hill and builds Samaria, naming it after its former owner and making it Israel's new capital.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-14",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, what miracle does Elijah perform for the widow of Zarephath during the famine?",
+    "options": [
+      "Her jar of flour and jug of oil never run out",
+      "Her well never runs dry even in the drought",
+      "Her small field yields grain out of season",
+      "Her lamp burns all night without oil"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 17 },
+    "explanation": "Elijah promises the widow's flour and oil will not run out, and it sustains her household through the famine.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-15",
+    "book": "1-kings",
+    "category": "arc",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, how many prophets of Baal does Elijah challenge on Mount Carmel?",
+    "answer": "450",
+    "aliases": ["four hundred fifty", "four hundred and fifty"],
+    "citation": { "book": "1-kings", "chapter": 18 },
+    "explanation": "Elijah challenges four hundred fifty prophets of Baal to the contest on Mount Carmel.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-16",
+    "book": "1-kings",
+    "category": "theme",
+    "prompt": "In 1 Kings, in what form does the LORD finally speak to Elijah at Horeb, after the wind, earthquake, and fire?",
+    "options": [
+      "A low whisper",
+      "A voice from a burning bush",
+      "A message delivered by an angel",
+      "A dream while Elijah sleeps"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 19 },
+    "explanation": "After the dramatic wind, earthquake, and fire, the LORD's presence comes to Elijah in a low whisper.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-17",
+    "book": "1-kings",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, what family title does Ahab call the surrendering Ben-hadad, leading Ben-hadad's servants to echo it back and secure his release?",
+    "answer": "brother",
+    "aliases": [],
+    "citation": { "book": "1-kings", "chapter": 20 },
+    "explanation": "Ahab calls Ben-hadad his brother, and spares his life and makes a covenant with him instead of killing him.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-18",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, what does Jezebel accuse Naboth of, through false witnesses, to have him executed?",
+    "options": [
+      "Cursing God and the king",
+      "Stealing from the royal treasury",
+      "Plotting with Syria against Ahab",
+      "Refusing to pay his taxes"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 21 },
+    "explanation": "Jezebel's false witnesses accuse Naboth of cursing God and the king, a capital charge that gets him stoned.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-19",
+    "book": "1-kings",
+    "category": "character",
+    "format": "short-answer",
+    "prompt": "In 1 Kings, which prophet alone truthfully predicts Ahab's defeat at Ramoth-gilead, against four hundred others?",
+    "answer": "Micaiah",
+    "aliases": [],
+    "citation": { "book": "1-kings", "chapter": 22 },
+    "explanation": "Micaiah alone predicts Israel's defeat, while four hundred other prophets promise Ahab victory.",
+    "tier": "general"
+  },
+  {
+    "id": "1kg-aq-20",
+    "book": "1-kings",
+    "category": "character",
+    "prompt": "In 1 Kings, how does Ahab try to protect himself before the battle at Ramoth-gilead?",
+    "options": [
+      "He disguises himself while Jehoshaphat wears his royal robes",
+      "He stays behind the front lines with his guard",
+      "He wears armor forged specially for the battle",
+      "He sends a decoy chariot ahead of his own"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "1-kings", "chapter": 22 },
+    "explanation": "Ahab disguises himself and has Jehoshaphat wear the royal robes, but Ahab is still struck by a stray arrow and dies.",
+    "tier": "general"
+  }
+]

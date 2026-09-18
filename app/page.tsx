@@ -13,6 +13,7 @@ export const available = [
   { href: "/ruth", name: "Ruth", desc: "A Moabite widow's loyalty leads to redemption and a place in King David's family line, 4 chapters.", featured: true },
   { href: "/1-samuel", name: "1 Samuel", desc: "Israel's first king rises and falls, and a shepherd named David is anointed to replace him, 31 chapters.", featured: true },
   { href: "/2-samuel", name: "2 Samuel", desc: "David's rise to the throne, his worst sin, and the family rebellion that follows, 24 chapters.", featured: true },
+  { href: "/1-kings", name: "1 Kings", desc: "Solomon's wisdom and temple give way to a divided kingdom, and Elijah confronts Ahab and the prophets of Baal, 22 chapters.", featured: true },
   { href: "/ezra", name: "Ezra", desc: "Exiles return from Babylon, rebuild the temple, and confront a crisis of unfaithfulness, 10 chapters.", featured: true },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme.", featured: true },
   { href: "/matthew", name: "Matthew", desc: "From Jesus's birth to the Great Commission, 28 chapters with a ministry map, quizzes, and flashcards.", featured: true },
