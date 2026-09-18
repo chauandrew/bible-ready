@@ -381,7 +381,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Ruth | ruth | 4 | narrative | todo | candidate `defaultTier: general` |
 | 1 Samuel | 1-samuel | 31 | narrative | done | tier backfill pending |
 | 2 Samuel | 2-samuel | 24 | narrative | done | tier backfill pending |
-| 1 Kings | 1-kings | 22 | narrative | todo | |
+| 1 Kings | 1-kings | 22 | narrative | done | |
 | 2 Kings | 2-kings | 25 | narrative | todo | |
 | 1 Chronicles | 1-chronicles | 29 | sparse | todo | last; genealogies 1-9 |
 | 2 Chronicles | 2-chronicles | 36 | sparse | todo | last; parallels Kings |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
+Totals: 12 of 66 books have a module (1 partial); 296 of 1,189 chapters.
 
 ## Log
 
@@ -534,3 +534,35 @@ Totals: 11 of 66 books have a module (1 partial); 274 of 1,189 chapters.
   general-knowledge famous, and the log's own quote-speaker tally was
   off by one for both Gideon and Samson. The code-wiring review found no
   other issues.
+- 2026-09-17: 1 Kings authored (Phase 1's fifth item, on a branch cut
+  before Ruth merged — 1 Kings is wired into its correct canonical slot,
+  after 1-2 Samuel and before Ezra, but the coverage table/totals below
+  reflect this branch's own base and will need reconciling with Ruth's
+  numbers at merge time), the book's first module: 8 arcs (Solomon
+  Succeeds David, Solomon's Wisdom and Kingdom, Building the Temple,
+  Solomon's Wealth and Downfall, The Kingdom Divides, Kings of Israel
+  and Judah, Elijah Confronts Ahab, Ahab's Wars and Naboth's Vineyard),
+  22 chapters, 55 events at full narrative density except the
+  temple-construction/administrative chapters (4-7, 9), which get 1-2
+  events/chapter. 16 of 22 chapters `quizWorthy`. 15 quotes, people
+  only (Adonijah, David, Solomon, the boy's true mother, the queen of
+  Sheba, Rehoboam, Jeroboam, Elijah x3, the people of Israel, Naboth,
+  Ahab, Micaiah; corpus total now 167/1,000, budget shared independently
+  of Ruth's branch). 20 authored questions (7 short answer, roughly one
+  per chapter). Two Hirams needed disambiguating throughout (Hiram king
+  of Tyre, who supplies timber, vs. Hiram the bronze craftsman, who
+  casts the temple's furnishings) — separate `Person` entries, checked
+  at every citing event. `check:content` passed with zero new warnings
+  after two candidate quotes ("call me Mara"-style self-naming) were
+  swapped or trimmed before they became warnings. Two adversarial
+  review agents (one content, one code-wiring) found and fixed: 1 Kings
+  had been wired into the wrong canonical slot (between Judges and 1
+  Samuel instead of after 2 Samuel — this book has no `defaultTier`
+  like Ruth's, so getting the slot right actually mattered for nothing
+  else), all 20 authored questions plus 2 quotes and 1 event were
+  missing `tier: "general"` despite reading as plain plot-level facts,
+  the temple arc's summary conflated the two Hirams into one person,
+  one question's "brother" prompt had Ahab and Ben-hadad's roles
+  reversed, and one question's distractor ("Samaria as a consolation")
+  was anachronistic since Samaria isn't founded until five chapters
+  later.
