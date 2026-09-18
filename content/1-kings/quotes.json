@@ -6,7 +6,8 @@
     "verse": 5,
     "speakerId": "1kg-adonijah",
     "text": "I will be king.",
-    "citation": { "book": "1-kings", "chapter": 1, "verses": "5" }
+    "citation": { "book": "1-kings", "chapter": 1, "verses": "5" },
+    "tier": "general"
   },
   {
     "id": "1kg-q-c2-v2",
@@ -15,7 +16,8 @@
     "verse": 2,
     "speakerId": "1kg-david",
     "text": "I am about to go the way of all the earth. Be strong, and show yourself a man,",
-    "citation": { "book": "1-kings", "chapter": 2, "verses": "2" }
+    "citation": { "book": "1-kings", "chapter": 2, "verses": "2" },
+    "tier": "general"
   },
   {
     "id": "1kg-q-c3-v9",

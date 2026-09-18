@@ -614,7 +614,8 @@
     "peopleIds": ["1kg-ahab", "1kg-benhadad"],
     "order": 2,
     "summary": "Ben-hadad returns the next year with a larger army, but Israel defeats a hundred thousand Syrian foot soldiers in one day, and a collapsing wall in Aphek kills thousands more of his men.",
-    "notable": true
+    "notable": true,
+    "tier": "general"
   },
   {
     "id": "1kg-e-c20-3",
