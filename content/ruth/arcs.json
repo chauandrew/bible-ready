@@ -1,0 +1,18 @@
+[
+  {
+    "id": "ruth-arc-loyalty-and-provision",
+    "book": "ruth",
+    "name": "Loyalty and Provision",
+    "startChapter": 1,
+    "endChapter": 2,
+    "summary": "Famine and death leave Naomi without husband or sons in Moab; her daughter-in-law Ruth vows to stay with her and returns to Bethlehem, where Ruth's gleaning in the field of Naomi's relative Boaz begins to provide for them."
+  },
+  {
+    "id": "ruth-arc-redemption",
+    "book": "ruth",
+    "name": "Redemption at the Threshing Floor",
+    "startChapter": 3,
+    "endChapter": 4,
+    "summary": "Naomi sends Ruth to ask Boaz, a family redeemer, to marry her; Boaz secures the right of redemption from a nearer relative at the city gate, marries Ruth, and their son Obed becomes the grandfather of David."
+  }
+]
