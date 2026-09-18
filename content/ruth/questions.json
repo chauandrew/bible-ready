@@ -41,33 +41,6 @@
     "explanation": "Boaz has his workers leave extra grain from the bundles so Ruth gathers more than an ordinary gleaner would."
   },
   {
-    "id": "ruth-aq-4",
-    "book": "ruth",
-    "category": "character",
-    "format": "short-answer",
-    "prompt": "In Ruth, what does Ruth ask Boaz to spread over her at the threshing floor, as a claim on him as her redeemer?",
-    "answer": "wings",
-    "aliases": ["garment", "cloak"],
-    "citation": { "book": "ruth", "chapter": 3 },
-    "explanation": "Ruth asks Boaz to spread his wings (garment) over her, echoing his own earlier blessing on her."
-  },
-  {
-    "id": "ruth-aq-5",
-    "book": "ruth",
-    "category": "covenant",
-    "prompt": "In Ruth, what does the nearer redeemer do at the city gate to formally hand his right of redemption over to Boaz?",
-    "options": [
-      "He takes off his sandal and hands it to Boaz",
-      "He hands Boaz his shepherd's staff before the elders",
-      "He tears his cloak in front of the ten witnesses",
-      "He pours out a drink offering at the city gate"
-    ],
-    "correctIndex": 0,
-    "citation": { "book": "ruth", "chapter": 4 },
-    "explanation": "Removing a sandal and handing it over was the customary way to confirm a transaction like this in Israel.",
-    "tier": "deep"
-  },
-  {
     "id": "ruth-aq-6",
     "book": "ruth",
     "category": "arc",
@@ -92,5 +65,20 @@
     "correctIndex": 0,
     "citation": { "book": "ruth", "chapter": 4 },
     "explanation": "The people at the gate bless Ruth by comparing her to Rachel and Leah, who built up the house of Israel."
+  },
+  {
+    "id": "ruth-aq-8",
+    "book": "ruth",
+    "category": "character",
+    "prompt": "In Ruth, what does Boaz tell Ruth to do when he first meets her gleaning in his field?",
+    "options": [
+      "Stay close to his young women and drink from the water his workers draw",
+      "Return to Moab and glean with her own people instead",
+      "Wait until the wheat harvest before she may glean anything",
+      "Pay a portion of her gleanings to Naomi before keeping the rest"
+    ],
+    "correctIndex": 0,
+    "citation": { "book": "ruth", "chapter": 2 },
+    "explanation": "Boaz tells Ruth to stay close to his young women, glean only in his field, and drink from the water his workers draw."
   }
 ]
