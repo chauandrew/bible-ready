@@ -1,0 +1,67 @@
+[
+  {
+    "id": "1kg-arc-succession",
+    "book": "1-kings",
+    "name": "Solomon Succeeds David",
+    "startChapter": 1,
+    "endChapter": 2,
+    "summary": "As David's health fails, his son Adonijah tries to seize the throne, but Nathan and Bathsheba persuade David to make Solomon king instead; after David dies, Solomon secures his kingdom by dealing with Adonijah, Joab, Abiathar, and Shimei."
+  },
+  {
+    "id": "1kg-arc-wisdom-and-kingdom",
+    "book": "1-kings",
+    "name": "Solomon's Wisdom and Kingdom",
+    "startChapter": 3,
+    "endChapter": 4,
+    "summary": "Solomon asks God for wisdom rather than wealth, proves it by judging rightly between two women claiming the same child, and organizes a kingdom whose administration, provisions, and renowned wisdom exceed every neighboring nation."
+  },
+  {
+    "id": "1kg-arc-temple",
+    "book": "1-kings",
+    "name": "Building the Temple",
+    "startChapter": 5,
+    "endChapter": 8,
+    "summary": "Solomon partners with Hiram of Tyre for materials and craftsmanship, builds the temple over seven years and his own palace over thirteen, then brings the ark into the finished temple and dedicates it with a prayer asking God to hear Israel's prayers toward it.",
+    "sequenceLimit": 8
+  },
+  {
+    "id": "1kg-arc-decline",
+    "book": "1-kings",
+    "name": "Solomon's Wealth and Downfall",
+    "startChapter": 9,
+    "endChapter": 11,
+    "summary": "The LORD warns Solomon a second time that disobedience will cost Israel the temple and the land; his wealth and fame peak with the queen of Sheba's visit, but his foreign wives turn his heart to other gods, and the LORD raises up adversaries, including Jeroboam, before Solomon dies."
+  },
+  {
+    "id": "1kg-arc-divided-kingdom",
+    "book": "1-kings",
+    "name": "The Kingdom Divides",
+    "startChapter": 12,
+    "endChapter": 14,
+    "summary": "Rehoboam's harsh answer at Shechem splits the kingdom; Jeroboam becomes king over the north and sets up golden calves at Bethel and Dan, a prophet's confrontation and death at Bethel foreshadow judgment, and both Jeroboam's and Rehoboam's reigns end under prophetic condemnation."
+  },
+  {
+    "id": "1kg-arc-kings-of-israel-and-judah",
+    "book": "1-kings",
+    "name": "Kings of Israel and Judah",
+    "startChapter": 15,
+    "endChapter": 16,
+    "summary": "A rapid succession of kings rules both kingdoms — Abijam, Asa, and reforms in Judah; Nadab, Baasha, Elah, Zimri, and Omri in Israel, each fulfilling prophetic judgment on the house before them — until Ahab becomes Israel's most idolatrous king yet."
+  },
+  {
+    "id": "1kg-arc-elijah",
+    "book": "1-kings",
+    "name": "Elijah Confronts Ahab",
+    "startChapter": 17,
+    "endChapter": 19,
+    "summary": "The prophet Elijah announces a drought, is fed by ravens and a widow whose flour and oil never run out, defeats the prophets of Baal in a fire contest on Mount Carmel, then flees Jezebel to Horeb, where the LORD speaks in a low whisper and commissions Elisha as his successor."
+  },
+  {
+    "id": "1kg-arc-ahabs-wars",
+    "book": "1-kings",
+    "name": "Ahab's Wars and Naboth's Vineyard",
+    "startChapter": 20,
+    "endChapter": 22,
+    "summary": "Ahab defeats Ben-hadad of Syria twice but is condemned for sparing him; Jezebel has Naboth murdered so Ahab can take his vineyard, drawing Elijah's judgment; Ahab later dies in battle at Ramoth-gilead after ignoring Micaiah's true prophecy in favor of four hundred false ones."
+  }
+]

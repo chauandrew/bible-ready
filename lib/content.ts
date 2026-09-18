@@ -64,6 +64,14 @@ import galatiansEventsJson from "@/content/galatians/events.json";
 import galatiansQuotesJson from "@/content/galatians/quotes.json";
 import galatiansQuestionsJson from "@/content/galatians/questions.json";
 import galatiansDecksJson from "@/content/galatians/decks.json";
+import kings1BookJson from "@/content/1-kings/book.json";
+import kings1ArcsJson from "@/content/1-kings/arcs.json";
+import kings1ChaptersJson from "@/content/1-kings/chapters.json";
+import kings1PeopleJson from "@/content/1-kings/people.json";
+import kings1EventsJson from "@/content/1-kings/events.json";
+import kings1QuotesJson from "@/content/1-kings/quotes.json";
+import kings1QuestionsJson from "@/content/1-kings/questions.json";
+import kings1DecksJson from "@/content/1-kings/decks.json";
 import samuel1BookJson from "@/content/1-samuel/book.json";
 import samuel1ArcsJson from "@/content/1-samuel/arcs.json";
 import samuel1ChaptersJson from "@/content/1-samuel/chapters.json";
@@ -162,6 +170,17 @@ const judgesContent: BookContent = BookContentSchema.parse({
   quotes: judgesQuotesJson,
   questions: judgesQuestionsJson,
   decks: judgesDecksJson,
+});
+
+const kings1Content: BookContent = BookContentSchema.parse({
+  book: kings1BookJson,
+  arcs: kings1ArcsJson,
+  chapters: kings1ChaptersJson,
+  people: kings1PeopleJson,
+  events: kings1EventsJson,
+  quotes: kings1QuotesJson,
+  questions: kings1QuestionsJson,
+  decks: kings1DecksJson,
 });
 
 const psalmsContent: BookContent = BookContentSchema.parse({
@@ -266,6 +285,7 @@ const booksContent: Record<string, BookContent> = {
   [exodusContent.book.id]: exodusContent,
   [joshuaContent.book.id]: joshuaContent,
   [judgesContent.book.id]: judgesContent,
+  [kings1Content.book.id]: kings1Content,
   [samuel1Content.book.id]: samuel1Content,
   [samuel2Content.book.id]: samuel2Content,
   [ezraContent.book.id]: ezraContent,
@@ -287,7 +307,7 @@ export const bookRegistry: Book[] = Object.values(booksContent).map((c) => c.boo
  * thematic, overlapping arcs and index-based (not chapter.number +/- 1)
  * chapter navigation instead of the "narrative" book assumptions.
  */
-export const wiredBookIds: string[] = ["genesis", "exodus", "joshua", "judges", "1-samuel", "2-samuel", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
+export const wiredBookIds: string[] = ["genesis", "exodus", "joshua", "judges", "1-kings", "1-samuel", "2-samuel", "ezra", "psalms", "matthew", "john", "galatians", "misc"];
 
 export function bookMeta(bookId: string): Book | undefined {
   return booksContent[bookId]?.book;

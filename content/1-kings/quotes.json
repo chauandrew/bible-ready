@@ -1,0 +1,150 @@
+[
+  {
+    "id": "1kg-q-c1-v5",
+    "book": "1-kings",
+    "chapter": 1,
+    "verse": 5,
+    "speakerId": "1kg-adonijah",
+    "text": "I will be king.",
+    "citation": { "book": "1-kings", "chapter": 1, "verses": "5" }
+  },
+  {
+    "id": "1kg-q-c2-v2",
+    "book": "1-kings",
+    "chapter": 2,
+    "verse": 2,
+    "speakerId": "1kg-david",
+    "text": "I am about to go the way of all the earth. Be strong, and show yourself a man,",
+    "citation": { "book": "1-kings", "chapter": 2, "verses": "2" }
+  },
+  {
+    "id": "1kg-q-c3-v9",
+    "book": "1-kings",
+    "chapter": 3,
+    "verse": 9,
+    "speakerId": "1kg-solomon",
+    "text": "Give your servant therefore an understanding mind to govern your people, that I may discern between good and evil, for who is able to govern this your great people?",
+    "citation": { "book": "1-kings", "chapter": 3, "verses": "9" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c3-v26",
+    "book": "1-kings",
+    "chapter": 3,
+    "verse": 26,
+    "speakerId": "1kg-true-mother",
+    "text": "Oh, my lord, give her the living child, and by no means put him to death.",
+    "citation": { "book": "1-kings", "chapter": 3, "verses": "26" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c8-v27",
+    "book": "1-kings",
+    "chapter": 8,
+    "verse": 27,
+    "speakerId": "1kg-solomon",
+    "text": "But will God indeed dwell on the earth? Behold, heaven and the highest heaven cannot contain you; how much less this house that I have built!",
+    "citation": { "book": "1-kings", "chapter": 8, "verses": "27" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c10-v7",
+    "book": "1-kings",
+    "chapter": 10,
+    "verse": 7,
+    "speakerId": "1kg-queen-of-sheba",
+    "text": "but I did not believe the reports until I came and my own eyes had seen it. And behold, the half was not told me. Your wisdom and prosperity surpass the report that I heard.",
+    "citation": { "book": "1-kings", "chapter": 10, "verses": "7" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c12-v14",
+    "book": "1-kings",
+    "chapter": 12,
+    "verse": 14,
+    "speakerId": "1kg-rehoboam",
+    "text": "My father made your yoke heavy, but I will add to your yoke. My father disciplined you with whips, but I will discipline you with scorpions.",
+    "citation": { "book": "1-kings", "chapter": 12, "verses": "14" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c12-v28",
+    "book": "1-kings",
+    "chapter": 12,
+    "verse": 28,
+    "speakerId": "1kg-jeroboam",
+    "text": "You have gone up to Jerusalem long enough. Behold your gods, O Israel, who brought you up out of the land of Egypt.",
+    "citation": { "book": "1-kings", "chapter": 12, "verses": "28" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c17-v1",
+    "book": "1-kings",
+    "chapter": 17,
+    "verse": 1,
+    "speakerId": "1kg-elijah",
+    "text": "As the LORD, the God of Israel, lives, before whom I stand, there shall be neither dew nor rain these years, except by my word.",
+    "citation": { "book": "1-kings", "chapter": 17, "verses": "1" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c18-v21",
+    "book": "1-kings",
+    "chapter": 18,
+    "verse": 21,
+    "speakerId": "1kg-elijah",
+    "text": "How long will you go limping between two different opinions? If the LORD is God, follow him; but if Baal, then follow him.",
+    "citation": { "book": "1-kings", "chapter": 18, "verses": "21" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c18-v39",
+    "book": "1-kings",
+    "chapter": 18,
+    "verse": 39,
+    "speakerId": "1kg-people-of-israel",
+    "text": "The LORD, he is God; the LORD, he is God.",
+    "citation": { "book": "1-kings", "chapter": 18, "verses": "39" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c19-v10",
+    "book": "1-kings",
+    "chapter": 19,
+    "verse": 10,
+    "speakerId": "1kg-elijah",
+    "text": "I have been very jealous for the LORD, the God of hosts. For the people of Israel have forsaken your covenant, thrown down your altars, and killed your prophets with the sword, and I, even I only, am left, and they seek my life, to take it away.",
+    "citation": { "book": "1-kings", "chapter": 19, "verses": "10" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c21-v3",
+    "book": "1-kings",
+    "chapter": 21,
+    "verse": 3,
+    "speakerId": "1kg-naboth",
+    "text": "The LORD forbid that I should give you the inheritance of my fathers.",
+    "citation": { "book": "1-kings", "chapter": 21, "verses": "3" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c21-v20",
+    "book": "1-kings",
+    "chapter": 21,
+    "verse": 20,
+    "speakerId": "1kg-ahab",
+    "text": "Have you found me, O my enemy?",
+    "citation": { "book": "1-kings", "chapter": 21, "verses": "20" },
+    "tier": "general"
+  },
+  {
+    "id": "1kg-q-c22-v17",
+    "book": "1-kings",
+    "chapter": 22,
+    "verse": 17,
+    "speakerId": "1kg-micaiah",
+    "text": "I saw all Israel scattered on the mountains, as sheep that have no shepherd.",
+    "citation": { "book": "1-kings", "chapter": 22, "verses": "17" },
+    "tier": "general"
+  }
+]

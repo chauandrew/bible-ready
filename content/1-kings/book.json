@@ -1,0 +1,16 @@
+{
+  "id": "1-kings",
+  "name": "1 Kings",
+  "chapterCount": 22,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "1kg-arc-succession",
+    "1kg-arc-wisdom-and-kingdom",
+    "1kg-arc-temple",
+    "1kg-arc-decline",
+    "1kg-arc-divided-kingdom",
+    "1kg-arc-kings-of-israel-and-judah",
+    "1kg-arc-elijah",
+    "1kg-arc-ahabs-wars"
+  ]
+}
