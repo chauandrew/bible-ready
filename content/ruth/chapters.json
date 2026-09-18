@@ -1,0 +1,46 @@
+[
+  {
+    "id": "ruth-ch1",
+    "book": "ruth",
+    "number": 1,
+    "title": "Naomi's Loss and Ruth's Vow",
+    "summary": "Famine drives Elimelech's family to Moab, where he and his two sons die; when Naomi decides to return to Bethlehem, her daughter-in-law Ruth vows to stay with her and worship her God.",
+    "blurb": "Ruth vows loyalty to Naomi",
+    "arcId": "ruth-arc-loyalty-and-provision",
+    "eventIds": ["ruth-e-c1-1", "ruth-e-c1-2", "ruth-e-c1-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ruth-ch2",
+    "book": "ruth",
+    "number": 2,
+    "title": "Ruth Gleans in Boaz's Field",
+    "summary": "Ruth gleans leftover grain to provide for Naomi and happens into the field of Boaz, a worthy relative of Naomi's dead husband, who shows her unusual kindness and provision.",
+    "blurb": "Boaz shows Ruth kindness while gleaning",
+    "arcId": "ruth-arc-loyalty-and-provision",
+    "eventIds": ["ruth-e-c2-1", "ruth-e-c2-2", "ruth-e-c2-3"],
+    "quizWorthy": false
+  },
+  {
+    "id": "ruth-ch3",
+    "book": "ruth",
+    "number": 3,
+    "title": "Ruth's Request at the Threshing Floor",
+    "summary": "At Naomi's instruction, Ruth approaches Boaz by night at the threshing floor and asks him, as a family redeemer, to take her under his protection; he agrees but names a nearer redeemer first.",
+    "blurb": "Ruth asks Boaz to redeem her",
+    "arcId": "ruth-arc-redemption",
+    "eventIds": ["ruth-e-c3-1", "ruth-e-c3-2", "ruth-e-c3-3"],
+    "quizWorthy": true
+  },
+  {
+    "id": "ruth-ch4",
+    "book": "ruth",
+    "number": 4,
+    "title": "Boaz Redeems Ruth and Marries Her",
+    "summary": "At the town gate, Boaz secures the right of redemption from a nearer relative and marries Ruth; their son Obed becomes the grandfather of David, closing the book with a genealogy.",
+    "blurb": "Boaz redeems Ruth; Obed's line to David",
+    "arcId": "ruth-arc-redemption",
+    "eventIds": ["ruth-e-c4-1", "ruth-e-c4-2", "ruth-e-c4-3"],
+    "quizWorthy": true
+  }
+]

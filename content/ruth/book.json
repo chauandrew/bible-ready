@@ -1,0 +1,8 @@
+{
+  "id": "ruth",
+  "name": "Ruth",
+  "chapterCount": 4,
+  "coverageDepth": "narrative",
+  "arcOrder": ["ruth-arc-loyalty-and-provision", "ruth-arc-redemption"],
+  "defaultTier": "general"
+}

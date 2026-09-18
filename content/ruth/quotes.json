@@ -1,0 +1,141 @@
+[
+  {
+    "id": "ruth-q-c1-v9",
+    "book": "ruth",
+    "chapter": 1,
+    "verse": 9,
+    "speakerId": "ruth-naomi",
+    "text": "The LORD grant that you may find rest, each of you in the house of her husband!",
+    "citation": { "book": "ruth", "chapter": 1, "verses": "9" }
+  },
+  {
+    "id": "ruth-q-c1-v16",
+    "book": "ruth",
+    "chapter": 1,
+    "verse": 16,
+    "speakerId": "ruth-ruth",
+    "text": "Do not urge me to leave you or to return from following you. For where you go I will go, and where you lodge I will lodge. Your people shall be my people, and your God my God.",
+    "citation": { "book": "ruth", "chapter": 1, "verses": "16" },
+    "tier": "general"
+  },
+  {
+    "id": "ruth-q-c2-v4",
+    "book": "ruth",
+    "chapter": 2,
+    "verse": 4,
+    "speakerId": "ruth-boaz",
+    "text": "The LORD be with you!",
+    "citation": { "book": "ruth", "chapter": 2, "verses": "4" }
+  },
+  {
+    "id": "ruth-q-c2-v10",
+    "book": "ruth",
+    "chapter": 2,
+    "verse": 10,
+    "speakerId": "ruth-ruth",
+    "text": "Why have I found favor in your eyes, that you should take notice of me, since I am a foreigner?",
+    "citation": { "book": "ruth", "chapter": 2, "verses": "10" }
+  },
+  {
+    "id": "ruth-q-c2-v12",
+    "book": "ruth",
+    "chapter": 2,
+    "verse": 12,
+    "speakerId": "ruth-boaz",
+    "text": "The LORD repay you for what you have done, and a full reward be given you by the LORD, the God of Israel, under whose wings you have come to take refuge!",
+    "citation": { "book": "ruth", "chapter": 2, "verses": "12" },
+    "tier": "general"
+  },
+  {
+    "id": "ruth-q-c2-v20",
+    "book": "ruth",
+    "chapter": 2,
+    "verse": 20,
+    "speakerId": "ruth-naomi",
+    "text": "May he be blessed by the LORD, whose kindness has not forsaken the living or the dead!",
+    "citation": { "book": "ruth", "chapter": 2, "verses": "20" }
+  },
+  {
+    "id": "ruth-q-c3-v5",
+    "book": "ruth",
+    "chapter": 3,
+    "verse": 5,
+    "speakerId": "ruth-ruth",
+    "text": "All that you say I will do.",
+    "citation": { "book": "ruth", "chapter": 3, "verses": "5" }
+  },
+  {
+    "id": "ruth-q-c3-v11",
+    "book": "ruth",
+    "chapter": 3,
+    "verse": 11,
+    "speakerId": "ruth-boaz",
+    "text": "And now, my daughter, do not fear. I will do for you all that you ask, for all my fellow townsmen know that you are a worthy woman.",
+    "citation": { "book": "ruth", "chapter": 3, "verses": "11" }
+  },
+  {
+    "id": "ruth-q-c3-v13",
+    "book": "ruth",
+    "chapter": 3,
+    "verse": 13,
+    "speakerId": "ruth-boaz",
+    "text": "Remain tonight, and in the morning, if he will redeem you, good; let him do it. But if he is not willing to redeem you, then, as the LORD lives, I will redeem you. Lie down until the morning.",
+    "citation": { "book": "ruth", "chapter": 3, "verses": "13" }
+  },
+  {
+    "id": "ruth-q-c3-v18",
+    "book": "ruth",
+    "chapter": 3,
+    "verse": 18,
+    "speakerId": "ruth-naomi",
+    "text": "Wait, my daughter, until you learn how the matter turns out, for the man will not rest but will settle the matter today.",
+    "citation": { "book": "ruth", "chapter": 3, "verses": "18" }
+  },
+  {
+    "id": "ruth-q-c4-v4",
+    "book": "ruth",
+    "chapter": 4,
+    "verse": 4,
+    "speakerId": "ruth-boaz",
+    "text": "So I thought I would tell you of it and say, 'Buy it in the presence of those sitting here and in the presence of the elders of my people.' If you will redeem it, redeem it. But if you will not, tell me, that I may know, for there is no one besides you to redeem it, and I come after you.",
+    "citation": { "book": "ruth", "chapter": 4, "verses": "4" }
+  },
+  {
+    "id": "ruth-q-c4-v6",
+    "book": "ruth",
+    "chapter": 4,
+    "verse": 6,
+    "speakerId": "ruth-nearer-redeemer",
+    "text": "I cannot redeem it for myself, lest I impair my own inheritance. Take my right of redemption yourself, for I cannot redeem it.",
+    "citation": { "book": "ruth", "chapter": 4, "verses": "6" }
+  },
+  {
+    "id": "ruth-q-c4-v10",
+    "book": "ruth",
+    "chapter": 4,
+    "verse": 10,
+    "speakerId": "ruth-boaz",
+    "text": "Also Ruth the Moabite, the widow of Mahlon, I have bought to be my wife, to perpetuate the name of the dead in his inheritance, that the name of the dead may not be cut off from among his brothers and from the gate of his native place. You are witnesses this day.",
+    "citation": { "book": "ruth", "chapter": 4, "verses": "10" }
+  },
+  {
+    "id": "ruth-q-c4-v14",
+    "book": "ruth",
+    "chapter": 4,
+    "verse": 14,
+    "speakerId": "ruth-women-of-bethlehem",
+    "text": "Blessed be the LORD, who has not left you this day without a redeemer, and may his name be renowned in Israel!",
+    "citation": { "book": "ruth", "chapter": 4, "verses": "14" },
+    "tier": "general"
+  },
+  {
+    "id": "ruth-q-c4-v17",
+    "book": "ruth",
+    "chapter": 4,
+    "verse": 17,
+    "speakerId": "ruth-women-of-bethlehem",
+    "text": "A son has been born to Naomi.",
+    "citation": { "book": "ruth", "chapter": 4, "verses": "17" },
+    "tier": "general"
+  }
+]

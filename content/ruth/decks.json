@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ruth-deck-loyalty-and-provision",
+    "book": "ruth",
+    "name": "Loyalty and Provision",
+    "cardEventIds": [
+      "ruth-e-c1-1", "ruth-e-c1-2", "ruth-e-c1-3",
+      "ruth-e-c2-1", "ruth-e-c2-2", "ruth-e-c2-3"
+    ]
+  },
+  {
+    "id": "ruth-deck-redemption",
+    "book": "ruth",
+    "name": "Redemption at the Threshing Floor",
+    "cardEventIds": [
+      "ruth-e-c3-1", "ruth-e-c3-2", "ruth-e-c3-3",
+      "ruth-e-c4-1", "ruth-e-c4-2", "ruth-e-c4-3"
+    ]
+  }
+]
