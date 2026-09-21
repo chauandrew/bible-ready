@@ -49,7 +49,7 @@ export default function Home() {
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "0.5rem", marginTop: "2.25rem" }}>
         <h2 className="section-title" style={{ margin: 0 }}>Modules</h2>
-        <Link href="/modules" className="btn btn-primary">View all modules →</Link>
+        <Link href="/modules" style={{ fontFamily: "var(--font-sans)", fontSize: "0.85rem" }}>View all modules →</Link>
       </div>
       {/* Lower max-track than the shared .grid-cards default so this row settles
           at 3 columns on a desktop-wide screen instead of 4 — auto-fill's
