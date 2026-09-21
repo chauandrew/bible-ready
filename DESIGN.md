@@ -882,9 +882,13 @@ before React hydrates — that's expected, not a bug to "fix" by removing it.
   Psalms, ..., John, ..., with `misc` last since it has no real position);
   insert a new book at its canonical spot in both places, not at the end.
   `available` entries also carry a `featured` flag: the home page shows only
-  the featured ones (currently everything but Exodus), and `/modules`
-  (`app/modules/page.tsx`) lists the full set. A new book defaults to
-  `featured: true` unless there's a reason to hide it from the home page.
+  a small curated set (currently Genesis, 1/2 Samuel, Ezra, Matthew,
+  Galatians) so the home page doesn't grow a card per book as the library
+  fills out, and `/modules` (`app/modules/page.tsx`) lists every book,
+  grouped into collapsible sections by canonical division (Law, Historical,
+  Wisdom & Poetry, ...) via a static `sections` map in that file covering
+  all 66 books + misc. A new book defaults to `featured: false`; add it to
+  the home page's curated set only if there's a reason to feature it.
 - **Short and one-chapter books** (Haggai, Obadiah, Philemon, 2-3 John,
   Jude) aren't handled yet: Chapter Order would build a 1- or 2-slot board,
   and a one-chapter book's "which chapter" question is trivial in a
