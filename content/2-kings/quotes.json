@@ -1,0 +1,172 @@
+[
+  {
+    "id": "2kg-q-c1-v10",
+    "book": "2-kings",
+    "chapter": 1,
+    "verse": 10,
+    "speakerId": "2kg-elijah",
+    "text": "If I am a man of God, let fire come down from heaven and consume you and your fifty.",
+    "citation": { "book": "2-kings", "chapter": 1, "verses": "10" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c2-v9",
+    "book": "2-kings",
+    "chapter": 2,
+    "verse": 9,
+    "speakerId": "2kg-elisha",
+    "text": "Please let there be a double portion of your spirit on me.",
+    "citation": { "book": "2-kings", "chapter": 2, "verses": "9" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c2-v12",
+    "book": "2-kings",
+    "chapter": 2,
+    "verse": 12,
+    "speakerId": "2kg-elisha",
+    "text": "My father, my father! The chariots of Israel and its horsemen!",
+    "citation": { "book": "2-kings", "chapter": 2, "verses": "12" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c4-v16",
+    "book": "2-kings",
+    "chapter": 4,
+    "verse": 16,
+    "speakerId": "2kg-elisha",
+    "text": "At this season, about this time next year, you shall embrace a son.",
+    "citation": { "book": "2-kings", "chapter": 4, "verses": "16" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c4-v9",
+    "book": "2-kings",
+    "chapter": 4,
+    "verse": 9,
+    "speakerId": "2kg-shunammite-woman",
+    "text": "I know that this is a holy man of God who is continually passing our way.",
+    "citation": { "book": "2-kings", "chapter": 4, "verses": "9" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c5-v15",
+    "book": "2-kings",
+    "chapter": 5,
+    "verse": 15,
+    "speakerId": "2kg-naaman",
+    "text": "Behold, I know that there is no God in all the earth but in Israel; so accept now a present from your servant.",
+    "citation": { "book": "2-kings", "chapter": 5, "verses": "15" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c5-v26",
+    "book": "2-kings",
+    "chapter": 5,
+    "verse": 26,
+    "speakerId": "2kg-elisha",
+    "text": "Was it a time to accept money and garments, olive orchards and vineyards, sheep and oxen, male servants and female servants?",
+    "citation": { "book": "2-kings", "chapter": 5, "verses": "26" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c6-v16",
+    "book": "2-kings",
+    "chapter": 6,
+    "verse": 16,
+    "speakerId": "2kg-elisha",
+    "text": "Do not be afraid, for those who are with us are more than those who are with them.",
+    "citation": { "book": "2-kings", "chapter": 6, "verses": "16" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c7-v2",
+    "book": "2-kings",
+    "chapter": 7,
+    "verse": 2,
+    "speakerId": "2kg-elisha",
+    "text": "You shall see it with your own eyes, but you shall not eat of it.",
+    "citation": { "book": "2-kings", "chapter": 7, "verses": "2" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c8-v13",
+    "book": "2-kings",
+    "chapter": 8,
+    "verse": 13,
+    "speakerId": "2kg-hazael",
+    "text": "What is your servant, who is but a dog, that he should do this great thing?",
+    "citation": { "book": "2-kings", "chapter": 8, "verses": "13" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c9-v22",
+    "book": "2-kings",
+    "chapter": 9,
+    "verse": 22,
+    "speakerId": "2kg-jehu",
+    "text": "What peace can there be, so long as the whorings and the sorceries of your mother Jezebel are so many?",
+    "citation": { "book": "2-kings", "chapter": 9, "verses": "22" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c9-v31",
+    "book": "2-kings",
+    "chapter": 9,
+    "verse": 31,
+    "speakerId": "2kg-jezebel",
+    "text": "Is it peace, you Zimri, murderer of your master?",
+    "citation": { "book": "2-kings", "chapter": 9, "verses": "31" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c10-v16",
+    "book": "2-kings",
+    "chapter": 10,
+    "verse": 16,
+    "speakerId": "2kg-jehu",
+    "text": "Come with me, and see my zeal for the Lord.",
+    "citation": { "book": "2-kings", "chapter": 10, "verses": "16" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c18-v22",
+    "book": "2-kings",
+    "chapter": 18,
+    "verse": 22,
+    "speakerId": "2kg-rabshakeh",
+    "text": "Is it not he whose high places and altars Hezekiah has removed, saying to Judah and to Jerusalem, You shall worship before this altar in Jerusalem?",
+    "citation": { "book": "2-kings", "chapter": 18, "verses": "22" },
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-q-c19-v19",
+    "book": "2-kings",
+    "chapter": 19,
+    "verse": 19,
+    "speakerId": "2kg-hezekiah",
+    "text": "Save us, please, from his hand, that all the kingdoms of the earth may know that you, O Lord, are God alone.",
+    "citation": { "book": "2-kings", "chapter": 19, "verses": "19" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c20-v3",
+    "book": "2-kings",
+    "chapter": 20,
+    "verse": 3,
+    "speakerId": "2kg-hezekiah",
+    "text": "Now, O Lord, please remember how I have walked before you in faithfulness and with a whole heart, and have done what is good in your sight.",
+    "citation": { "book": "2-kings", "chapter": 20, "verses": "3" },
+    "tier": "general"
+  },
+  {
+    "id": "2kg-q-c22-v13",
+    "book": "2-kings",
+    "chapter": 22,
+    "verse": 13,
+    "speakerId": "2kg-josiah",
+    "text": "Great is the wrath of the Lord that is kindled against us, because our fathers have not obeyed the words of this book.",
+    "citation": { "book": "2-kings", "chapter": 22, "verses": "13" },
+    "tier": "general"
+  }
+]

@@ -1,0 +1,338 @@
+[
+  {
+    "id": "2kg-elijah",
+    "name": "Elijah",
+    "summary": "The prophet who confronted Ahab and the prophets of Baal in 1 Kings; here he announces Ahaziah's death, calls down fire on two captains of fifty, and is taken up to heaven in a whirlwind, leaving his mantle to Elisha.",
+    "firstAppearance": { "book": "2-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "2kg-elisha",
+    "name": "Elisha",
+    "summary": "Elijah's successor and Israel's prophet through most of this book; he performs miracles for the poor and powerful alike, advises kings, and even his bones revive a dead man after his death.",
+    "firstAppearance": { "book": "2-kings", "chapter": 2 },
+    "relations": []
+  },
+  {
+    "id": "2kg-ahaziah-israel",
+    "name": "Ahaziah",
+    "summary": "Ahab's son and king of Israel; after a fall leaves him injured, he inquires of the god of Ekron rather than the LORD and dies as Elijah foretold, leaving no son to succeed him.",
+    "firstAppearance": { "book": "2-kings", "chapter": 1 },
+    "relations": []
+  },
+  {
+    "id": "2kg-joram-israel",
+    "name": "Joram",
+    "summary": "Ahab's second son and king of Israel; he campaigns against Moab with Elisha's help, is wounded fighting Hazael, and is shot dead by Jehu on Naboth's old plot of ground.",
+    "firstAppearance": { "book": "2-kings", "chapter": 3 },
+    "relations": [{ "personId": "2kg-ahaziah-israel", "relation": "brother" }]
+  },
+  {
+    "id": "2kg-jehoshaphat",
+    "name": "Jehoshaphat",
+    "summary": "King of Judah who joins Israel's campaign against Moab and, because of his own faithfulness, is the reason Elisha agrees to help the allied kings at all.",
+    "firstAppearance": { "book": "2-kings", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "2kg-mesha",
+    "name": "Mesha",
+    "summary": "King of Moab who rebels against Israel after Ahab's death; when his desperate breakout fails during the siege of Kir-hareseth, he sacrifices his own son as a burnt offering on the city wall.",
+    "firstAppearance": { "book": "2-kings", "chapter": 3 },
+    "relations": []
+  },
+  {
+    "id": "2kg-shunammite-woman",
+    "name": "The Shunammite woman",
+    "summary": "A wealthy woman of Shunem who hosts Elisha regularly and is given a room for him; Elisha promises and later raises her son from death, and years afterward the king restores her land after a famine.",
+    "firstAppearance": { "book": "2-kings", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "2kg-gehazi",
+    "name": "Gehazi",
+    "summary": "Elisha's servant who fails to revive the Shunammite's son with Elisha's staff, later secretly extorts payment from the healed Naaman, and is struck with Naaman's leprosy for his deceit.",
+    "firstAppearance": { "book": "2-kings", "chapter": 4 },
+    "relations": []
+  },
+  {
+    "id": "2kg-naaman",
+    "name": "Naaman",
+    "summary": "Commander of Syria's army who is healed of leprosy after washing seven times in the Jordan at Elisha's word, and afterward confesses that the LORD alone is God.",
+    "firstAppearance": { "book": "2-kings", "chapter": 5 },
+    "relations": []
+  },
+  {
+    "id": "2kg-benhadad",
+    "name": "Ben-hadad",
+    "summary": "King of Syria who besieges Samaria until famine breaks the city; later, sick and near death, he is murdered by his own officer Hazael, who takes the throne.",
+    "firstAppearance": { "book": "2-kings", "chapter": 6 },
+    "relations": []
+  },
+  {
+    "id": "2kg-hazael",
+    "name": "Hazael",
+    "summary": "A Syrian officer whom Elisha foresees will become king and inflict great cruelty on Israel; he murders Ben-hadad to take the throne and goes on to oppress Israel and threaten Judah for decades.",
+    "firstAppearance": { "book": "2-kings", "chapter": 8 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jehoram-judah",
+    "name": "Jehoram",
+    "summary": "King of Judah who marries into Ahab's family and walks in the evil ways of Israel's kings; Edom revolts from Judah's rule during his reign.",
+    "firstAppearance": { "book": "2-kings", "chapter": 8 },
+    "relations": [{ "personId": "2kg-ahaziah-judah", "relation": "father" }]
+  },
+  {
+    "id": "2kg-ahaziah-judah",
+    "name": "Ahaziah of Judah",
+    "summary": "Jehoram's son and king of Judah, related by marriage to Ahab's house; he is fatally wounded fleeing Jehu after visiting the injured Joram of Israel at Jezreel.",
+    "firstAppearance": { "book": "2-kings", "chapter": 8 },
+    "relations": [{ "personId": "2kg-jehoram-judah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-jehu",
+    "name": "Jehu",
+    "summary": "An army commander secretly anointed king of Israel and commissioned to destroy Ahab's house; he kills Joram, Ahaziah, and Jezebel, wipes out Ahab's remaining family, and tricks Baal's worshipers into a fatal assembly, though he never abandons Jeroboam's golden calves.",
+    "firstAppearance": { "book": "2-kings", "chapter": 9 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jezebel",
+    "name": "Jezebel",
+    "summary": "Ahab's widow, still in Jezreel when Jehu arrives; she taunts him from a window and is thrown down at his order, her body eaten by dogs as Elijah had prophesied.",
+    "firstAppearance": { "book": "2-kings", "chapter": 9 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jehonadab",
+    "name": "Jehonadab",
+    "summary": "Son of Rechab who joins Jehu's chariot to witness his zeal for the LORD, riding with him into Samaria during the purge of Baal worship.",
+    "firstAppearance": { "book": "2-kings", "chapter": 10 },
+    "relations": []
+  },
+  {
+    "id": "2kg-athaliah",
+    "name": "Athaliah",
+    "summary": "Ahaziah's mother, of Ahab's house, who destroys the rest of Judah's royal family and rules for six years until Jehoiada crowns the hidden Joash and has her put to death.",
+    "firstAppearance": { "book": "2-kings", "chapter": 11 },
+    "relations": [{ "personId": "2kg-ahaziah-judah", "relation": "mother" }]
+  },
+  {
+    "id": "2kg-jehosheba",
+    "name": "Jehosheba",
+    "summary": "Ahaziah's sister who steals away the infant Joash during Athaliah's purge and hides him with his nurse in the temple for six years.",
+    "firstAppearance": { "book": "2-kings", "chapter": 11 },
+    "relations": [{ "personId": "2kg-ahaziah-judah", "relation": "sister" }]
+  },
+  {
+    "id": "2kg-jehoiada",
+    "name": "Jehoiada",
+    "summary": "The priest who protects Joash in hiding, then arms the temple guard and crowns Joash king in Athaliah's place; he later instructs Joash and sets up the chest that funds the temple's repair.",
+    "firstAppearance": { "book": "2-kings", "chapter": 11 },
+    "relations": []
+  },
+  {
+    "id": "2kg-joash-judah",
+    "name": "Joash",
+    "summary": "Judah's king from age seven, crowned after Athaliah's coup and instructed by Jehoiada; he repairs the temple through an honest collection chest but later strips it to pay off Hazael and is assassinated by his own servants.",
+    "firstAppearance": { "book": "2-kings", "chapter": 11 },
+    "relations": [{ "personId": "2kg-ahaziah-judah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-jehoahaz-israel",
+    "name": "Jehoahaz",
+    "summary": "King of Israel whose army is reduced to almost nothing by Syrian oppression; he seeks the LORD's favor and receives some relief, but Israel's underlying sin continues.",
+    "firstAppearance": { "book": "2-kings", "chapter": 13 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jehoash-israel",
+    "name": "Jehoash",
+    "summary": "King of Israel who weeps over the dying Elisha and receives his prophecy of three victories over Syria; he later defeats Amaziah of Judah in battle and breaks down part of Jerusalem's wall.",
+    "firstAppearance": { "book": "2-kings", "chapter": 13 },
+    "relations": [{ "personId": "2kg-jehoahaz-israel", "relation": "son" }]
+  },
+  {
+    "id": "2kg-amaziah",
+    "name": "Amaziah",
+    "summary": "King of Judah who defeats Edom but, made proud by victory, provokes Jehoash of Israel into a battle that leaves Judah routed and Jerusalem's wall broken; he is later assassinated after fleeing to Lachish.",
+    "firstAppearance": { "book": "2-kings", "chapter": 14 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jeroboam-ii",
+    "name": "Jeroboam II",
+    "summary": "King of Israel whose long reign restores Israel's borders to their widest extent, fulfilling a word the LORD spoke through the prophet Jonah.",
+    "firstAppearance": { "book": "2-kings", "chapter": 14 },
+    "relations": [{ "personId": "2kg-jehoash-israel", "relation": "son" }]
+  },
+  {
+    "id": "2kg-azariah",
+    "name": "Azariah",
+    "summary": "Also called Uzziah, king of Judah who reigns fifty-two years but is struck with leprosy and lives apart, leaving his son Jotham to govern the people.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": [{ "personId": "2kg-jotham", "relation": "father" }]
+  },
+  {
+    "id": "2kg-jotham",
+    "name": "Jotham",
+    "summary": "Azariah's son who governs Judah while his leprous father lives apart, and later succeeds him as king.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": [{ "personId": "2kg-azariah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-zechariah-israel",
+    "name": "Zechariah",
+    "summary": "Jeroboam II's son and king of Israel for six months before Shallum assassinates him, ending Jehu's dynasty exactly at the fourth generation the LORD had promised.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": [{ "personId": "2kg-jeroboam-ii", "relation": "son" }]
+  },
+  {
+    "id": "2kg-shallum",
+    "name": "Shallum",
+    "summary": "Assassinates Zechariah and reigns over Israel for just one month before Menahem kills him and takes the throne.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2kg-menahem",
+    "name": "Menahem",
+    "summary": "Kills Shallum and reigns brutally over Israel for ten years, at one point ripping open pregnant women in a conquered town; he pays off the Assyrian king Pul with silver exacted from Israel's wealthy.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2kg-pekahiah",
+    "name": "Pekahiah",
+    "summary": "Menahem's son and king of Israel for two years before his own captain Pekah murders him in the citadel of the royal palace.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": [{ "personId": "2kg-menahem", "relation": "son" }]
+  },
+  {
+    "id": "2kg-pekah",
+    "name": "Pekah",
+    "summary": "Assassinates Pekahiah and reigns twenty years over Israel while Assyria's Tiglath-pileser conquers large stretches of Israelite territory; Hoshea later conspires against him and takes the throne.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2kg-ahaz",
+    "name": "Ahaz",
+    "summary": "King of Judah who, besieged by Syria and Israel, strips the temple treasury to buy Assyria's help and later copies a pagan altar he saw in Damascus for use in the temple.",
+    "firstAppearance": { "book": "2-kings", "chapter": 16 },
+    "relations": []
+  },
+  {
+    "id": "2kg-hoshea",
+    "name": "Hoshea",
+    "summary": "The last king of Israel; his rebellion against Assyria and appeal to Egypt bring a three-year siege that ends with Samaria's fall and Israel's exile.",
+    "firstAppearance": { "book": "2-kings", "chapter": 15 },
+    "relations": []
+  },
+  {
+    "id": "2kg-hezekiah",
+    "name": "Hezekiah",
+    "summary": "King of Judah whose trust in the LORD is unmatched by any king before or after him; he survives Sennacherib's siege through prayer, is healed of a fatal illness, but is later warned that his pride before Babylonian envoys foreshadows Judah's own exile.",
+    "firstAppearance": { "book": "2-kings", "chapter": 18 },
+    "relations": [{ "personId": "2kg-ahaz", "relation": "son" }]
+  },
+  {
+    "id": "2kg-sennacherib",
+    "name": "Sennacherib",
+    "summary": "King of Assyria who invades Judah, besieges Jerusalem after collecting tribute, and loses 185,000 soldiers to the angel of the LORD before being assassinated by his own sons at home.",
+    "firstAppearance": { "book": "2-kings", "chapter": 18 },
+    "relations": []
+  },
+  {
+    "id": "2kg-rabshakeh",
+    "name": "The Rabshakeh",
+    "summary": "Sennacherib's officer who stands outside Jerusalem's wall and mocks Hezekiah's trust in the LORD, urging the people to surrender rather than believe the LORD can save them.",
+    "firstAppearance": { "book": "2-kings", "chapter": 18 },
+    "relations": []
+  },
+  {
+    "id": "2kg-isaiah",
+    "name": "Isaiah",
+    "summary": "The prophet who reassures Hezekiah during Sennacherib's siege, promises the Assyrian army's defeat, and later both heals and warns Hezekiah about his illness and his pride before Babylon's envoys.",
+    "firstAppearance": { "book": "2-kings", "chapter": 19 },
+    "relations": []
+  },
+  {
+    "id": "2kg-manasseh",
+    "name": "Manasseh",
+    "summary": "Hezekiah's son and king of Judah for fifty-five years; his idolatry, child sacrifice, and shedding of innocent blood provoke the LORD's irreversible sentence of judgment on Jerusalem.",
+    "firstAppearance": { "book": "2-kings", "chapter": 21 },
+    "relations": [{ "personId": "2kg-hezekiah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-amon",
+    "name": "Amon",
+    "summary": "Manasseh's son and king of Judah for two evil years before his own servants assassinate him in his house.",
+    "firstAppearance": { "book": "2-kings", "chapter": 21 },
+    "relations": [{ "personId": "2kg-manasseh", "relation": "son" }]
+  },
+  {
+    "id": "2kg-josiah",
+    "name": "Josiah",
+    "summary": "Amon's son and king of Judah from age eight; he orders the temple repaired, hears the newly found Book of the Law, leads Judah's last great reform and Passover, and dies in battle against Pharaoh Neco at Megiddo.",
+    "firstAppearance": { "book": "2-kings", "chapter": 22 },
+    "relations": [{ "personId": "2kg-amon", "relation": "son" }]
+  },
+  {
+    "id": "2kg-hilkiah",
+    "name": "Hilkiah",
+    "summary": "The high priest who discovers the Book of the Law in the temple during Josiah's repairs and has it read to the king.",
+    "firstAppearance": { "book": "2-kings", "chapter": 22 },
+    "relations": []
+  },
+  {
+    "id": "2kg-huldah",
+    "name": "Huldah",
+    "summary": "A prophetess Josiah's officials consult about the newly found Book of the Law; she confirms disaster is coming on Jerusalem but promises Josiah he will die in peace first.",
+    "firstAppearance": { "book": "2-kings", "chapter": 22 },
+    "relations": []
+  },
+  {
+    "id": "2kg-jehoahaz-judah",
+    "name": "Jehoahaz",
+    "summary": "Josiah's son, made king by the people of Judah after his father's death, but deposed by Pharaoh Neco after just three months and taken captive to Egypt.",
+    "firstAppearance": { "book": "2-kings", "chapter": 23 },
+    "relations": [{ "personId": "2kg-josiah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-jehoiakim",
+    "name": "Jehoiakim",
+    "summary": "Installed as king of Judah by Pharaoh Neco in place of his brother Jehoahaz; he later becomes Nebuchadnezzar's servant for three years before rebelling.",
+    "firstAppearance": { "book": "2-kings", "chapter": 23 },
+    "relations": [{ "personId": "2kg-josiah", "relation": "son" }]
+  },
+  {
+    "id": "2kg-jehoiachin",
+    "name": "Jehoiachin",
+    "summary": "Jehoiakim's son who reigns only three months before surrendering Jerusalem to Nebuchadnezzar and being deported to Babylon; decades later a new Babylonian king frees him from prison and honors him at his own table.",
+    "firstAppearance": { "book": "2-kings", "chapter": 24 },
+    "relations": [{ "personId": "2kg-jehoiakim", "relation": "son" }]
+  },
+  {
+    "id": "2kg-zedekiah",
+    "name": "Zedekiah",
+    "summary": "Jehoiachin's uncle, installed as king of Judah by Nebuchadnezzar and renamed from Mattaniah; his later rebellion brings Jerusalem's final siege, and he is captured, blinded, and taken to Babylon after watching his sons killed.",
+    "firstAppearance": { "book": "2-kings", "chapter": 24 },
+    "relations": [{ "personId": "2kg-jehoiachin", "relation": "uncle" }]
+  },
+  {
+    "id": "2kg-nebuchadnezzar",
+    "name": "Nebuchadnezzar",
+    "summary": "King of Babylon who subdues Jehoiakim, deports Jehoiachin, installs and later punishes Zedekiah's rebellion by destroying Jerusalem and its temple.",
+    "firstAppearance": { "book": "2-kings", "chapter": 24 },
+    "relations": []
+  },
+  {
+    "id": "2kg-gedaliah",
+    "name": "Gedaliah",
+    "summary": "Appointed governor over Judah's remaining people after Jerusalem's fall; he is assassinated within months by Ishmael, a member of the royal family, prompting many survivors to flee to Egypt.",
+    "firstAppearance": { "book": "2-kings", "chapter": 25 },
+    "relations": []
+  }
+]

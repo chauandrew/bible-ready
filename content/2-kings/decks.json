@@ -1,0 +1,83 @@
+[
+  {
+    "id": "2kg-deck-elisha-begins",
+    "book": "2-kings",
+    "name": "Elisha Begins",
+    "cardEventIds": [
+      "2kg-e-c1-1", "2kg-e-c1-2",
+      "2kg-e-c2-1", "2kg-e-c2-2", "2kg-e-c2-3",
+      "2kg-e-c3-1", "2kg-e-c3-2",
+      "2kg-e-c4-1", "2kg-e-c4-2", "2kg-e-c4-3"
+    ]
+  },
+  {
+    "id": "2kg-deck-naaman-and-sieges",
+    "book": "2-kings",
+    "name": "Naaman and the Sieges",
+    "cardEventIds": [
+      "2kg-e-c5-1", "2kg-e-c5-2",
+      "2kg-e-c6-1", "2kg-e-c6-2", "2kg-e-c6-3",
+      "2kg-e-c7-1", "2kg-e-c7-2",
+      "2kg-e-c8-1", "2kg-e-c8-2", "2kg-e-c8-3"
+    ]
+  },
+  {
+    "id": "2kg-deck-jehus-purge",
+    "book": "2-kings",
+    "name": "Jehu's Purge",
+    "cardEventIds": [
+      "2kg-e-c9-1", "2kg-e-c9-2", "2kg-e-c9-3",
+      "2kg-e-c10-1", "2kg-e-c10-2", "2kg-e-c10-3"
+    ]
+  },
+  {
+    "id": "2kg-deck-athaliah-and-joash",
+    "book": "2-kings",
+    "name": "Athaliah and Joash",
+    "cardEventIds": [
+      "2kg-e-c11-1", "2kg-e-c11-2",
+      "2kg-e-c12-1", "2kg-e-c12-2"
+    ]
+  },
+  {
+    "id": "2kg-deck-decline-to-exile",
+    "book": "2-kings",
+    "name": "Israel's Decline to Exile",
+    "cardEventIds": [
+      "2kg-e-c13-1", "2kg-e-c13-2", "2kg-e-c13-3",
+      "2kg-e-c14-1", "2kg-e-c14-2", "2kg-e-c14-3",
+      "2kg-e-c15-1", "2kg-e-c15-2", "2kg-e-c15-3",
+      "2kg-e-c16-1", "2kg-e-c16-2",
+      "2kg-e-c17-1", "2kg-e-c17-2", "2kg-e-c17-3"
+    ]
+  },
+  {
+    "id": "2kg-deck-hezekiah-and-assyria",
+    "book": "2-kings",
+    "name": "Hezekiah and the Assyrian Crisis",
+    "cardEventIds": [
+      "2kg-e-c18-1", "2kg-e-c18-2", "2kg-e-c18-3",
+      "2kg-e-c19-1", "2kg-e-c19-2", "2kg-e-c19-3",
+      "2kg-e-c20-1", "2kg-e-c20-2"
+    ]
+  },
+  {
+    "id": "2kg-deck-manasseh-to-josiah",
+    "book": "2-kings",
+    "name": "Manasseh to Josiah's Reforms",
+    "cardEventIds": [
+      "2kg-e-c21-1", "2kg-e-c21-2", "2kg-e-c21-3",
+      "2kg-e-c22-1", "2kg-e-c22-2",
+      "2kg-e-c23-1", "2kg-e-c23-2", "2kg-e-c23-3"
+    ]
+  },
+  {
+    "id": "2kg-deck-fall-of-jerusalem",
+    "book": "2-kings",
+    "name": "The Fall of Jerusalem",
+    "cardEventIds": [
+      "2kg-e-c24-1", "2kg-e-c24-2",
+      "2kg-e-c25-1", "2kg-e-c25-2", "2kg-e-c25-3"
+    ]
+  }
+]
