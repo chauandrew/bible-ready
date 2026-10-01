@@ -382,7 +382,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | 1 Samuel | 1-samuel | 31 | narrative | done | tier backfill pending |
 | 2 Samuel | 2-samuel | 24 | narrative | done | tier backfill pending |
 | 1 Kings | 1-kings | 22 | narrative | done | |
-| 2 Kings | 2-kings | 25 | narrative | todo | |
+| 2 Kings | 2-kings | 25 | narrative | done | |
 | 1 Chronicles | 1-chronicles | 29 | sparse | todo | last; genealogies 1-9 |
 | 2 Chronicles | 2-chronicles | 36 | sparse | todo | last; parallels Kings |
 | Ezra | ezra | 10 | narrative | done | tier backfill pending |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 13 of 66 books have a module (1 partial); 300 of 1,189 chapters.
+Totals: 14 of 66 books have a module (1 partial); 325 of 1,189 chapters.
 
 ## Log
 
@@ -588,3 +588,48 @@ Totals: 13 of 66 books have a module (1 partial); 300 of 1,189 chapters.
   later. Reconciled onto main after Ruth's PR merged (both branches had
   been cut independently); `lib/content.ts`/`app/page.tsx`'s canonical
   ordering and this file's totals now reflect both books.
+- 2026-09-28: 2 Kings authored (Phase 1's sixth item): 8 arcs (Elisha
+  Begins, Naaman and the Sieges, Jehu's Purge, Athaliah and Joash,
+  Israel's Decline to Exile, Hezekiah and the Assyrian Crisis, Manasseh
+  to Josiah's Reforms, The Fall of Jerusalem), 25 chapters, 65 events at
+  full narrative density throughout (2 Kings has almost no
+  administrative/genealogical filler, unlike 1 Kings). 20 of 25 chapters
+  `quizWorthy`. 17 quotes, people only (Elijah, Elisha x6, Naaman,
+  the Shunammite woman, Hazael, Jehu x2, Jezebel, the Rabshakeh,
+  Hezekiah x2, Josiah; corpus total now 199/1,000). 25 authored
+  questions, one per chapter (8 short answer). Every event and question
+  was authored directly against the full ESV text fetched chapter by
+  chapter (not from memory), and tier was calibrated more generously
+  toward "general" than the first pass — the rubric's own calibration
+  examples (Ittai's loyalty, Shecaniah's proposal) show plain
+  plot-level facts about minor characters count as general, not just
+  famous ones, so about 20 events and 6 questions that had been marked
+  "deep" as merely non-famous were moved to "general" on self-review.
+  `check:content` initially failed on two things, both fixed before
+  passing clean: chapter 3 had been wired into the wrong arc range, and
+  every chapter summary ran 47-70 words against the 15-45 ceiling and
+  had to be trimmed. A pre-launch distractor-length pass also found 9 of
+  17 multiple-choice questions where the correct option was the single
+  longest (59%, over the 50% ceiling) and rebalanced option lengths to
+  bring it to 3/17. Two kings needed disambiguating across both
+  kingdoms at once (Joram of Israel vs. Jehoram of Judah, contemporaries
+  and easily confused even in the ESV's own inconsistent spelling),
+  handled the same way 1 Kings disambiguated its two Hirams — separate
+  `Person` entries per kingdom, checked at every citing event.
+  Self-reviewed chapter-by-chapter against the fetched ESV text and the
+  code-wiring diff, then independently re-reviewed by nine fresh agents
+  (one per arc, plus one on the code-wiring diff), each fetching the
+  ESV text live and checking every event, quote, question, distractor,
+  and tier assignment cold. Seven of eight arcs came back with no
+  findings; the two exceptions: ch2's summary said Elijah's whirlwind
+  itself was fire (only the chariot and horses were, per 2:11 — fixed),
+  and `2kg-aq-3` (asking for a musician before prophesying) was retiered
+  general to deep as a ritual-mechanics detail, matching the calibration
+  set's precedent for the same pattern. The code-diff review caught this
+  log entry's own errors: the `Totals` line hadn't been bumped, and this
+  paragraph's original quote tally (Elisha x4, Jehu x3, plus a
+  nonexistent Gehazi quote; distractor rebalance stated as 2/17) was
+  wrong — both corrected above against an actual count.
+  `npm test`, `tsc`, `eslint`, and a full `next build` all passed, and
+  the book's home, chapter, arc, person, flashcard, print, quiz, and
+  Chapter Order pages were all checked from a static build.

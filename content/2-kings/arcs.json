@@ -1,0 +1,66 @@
+[
+  {
+    "id": "2kg-arc-elisha-begins",
+    "book": "2-kings",
+    "name": "Elisha Begins",
+    "startChapter": 1,
+    "endChapter": 4,
+    "summary": "Elijah calls down fire on Ahaziah's captains before Ahaziah dies childless, then is taken up to heaven in a whirlwind, leaving Elisha his mantle and a double portion of his spirit; Elisha parts the Jordan, heals Jericho's water, and multiplies a widow's oil, raises the Shunammite woman's son, and feeds a hundred men."
+  },
+  {
+    "id": "2kg-arc-naaman-and-sieges",
+    "book": "2-kings",
+    "name": "Naaman and the Sieges",
+    "startChapter": 5,
+    "endChapter": 8,
+    "summary": "Elisha heals the Syrian commander Naaman of leprosy while his greedy servant Gehazi contracts it instead, recovers a floating axe head, and blinds a Syrian raiding party; Ben-hadad's siege starves Samaria until the LORD routs the Syrian army overnight, and Hazael murders Ben-hadad to become king of Syria as Jehoram and Ahaziah reign badly in Judah."
+  },
+  {
+    "id": "2kg-arc-jehus-purge",
+    "book": "2-kings",
+    "name": "Jehu's Purge",
+    "startChapter": 9,
+    "endChapter": 10,
+    "summary": "A prophet anoints Jehu king of Israel and commands him to destroy Ahab's house; Jehu kills Joram and Ahaziah, has Jezebel thrown from a window to be eaten by dogs, wipes out every remaining descendant of Ahab, and tricks the worshipers of Baal into a fatal assembly, though he never fully abandons Jeroboam's golden calves."
+  },
+  {
+    "id": "2kg-arc-athaliah-and-joash",
+    "book": "2-kings",
+    "name": "Athaliah and Joash",
+    "startChapter": 11,
+    "endChapter": 12,
+    "summary": "Athaliah seizes Judah's throne by slaughtering the royal family, but the infant Joash is hidden in the temple for six years until the priest Jehoiada crowns him and has Athaliah put to death; Joash repairs the temple through a collection chest but later strips it to buy off Hazael and is assassinated by his own servants."
+  },
+  {
+    "id": "2kg-arc-decline-to-exile",
+    "book": "2-kings",
+    "name": "Israel's Decline to Exile",
+    "startChapter": 13,
+    "endChapter": 17,
+    "summary": "Elisha dies after promising Jehoash three victories over Syria, and a corpse touching his bones is revived; a rapid succession of Israelite kings and assassinations follows as Assyria presses in, and Hoshea's rebellion brings Shalmaneser's siege and the fall of Samaria, ending in exile for sins the text spells out at length."
+  },
+  {
+    "id": "2kg-arc-hezekiah-and-assyria",
+    "book": "2-kings",
+    "name": "Hezekiah and the Assyrian Crisis",
+    "startChapter": 18,
+    "endChapter": 20,
+    "summary": "Hezekiah trusts the LORD more than any king before or after him, but Sennacherib's army besieges Jerusalem and his officer the Rabshakeh mocks God to the city's face; Hezekiah's prayer brings Isaiah's promise that the angel of the LORD will destroy the Assyrian camp, and Hezekiah's later illness, healing, and pride before Babylonian envoys draw a warning of exile to come."
+  },
+  {
+    "id": "2kg-arc-manasseh-to-josiah",
+    "book": "2-kings",
+    "name": "Manasseh to Josiah's Reforms",
+    "startChapter": 21,
+    "endChapter": 23,
+    "summary": "Manasseh's decades of idolatry and bloodshed draw an irreversible sentence of judgment on Judah, and his son Amon is assassinated after two more evil years; Josiah orders temple repairs that uncover the Book of the Law, hears Huldah's prophecy, leads Judah in covenant renewal and a nationwide purge of idolatry, keeps an unmatched Passover, and dies in battle at Megiddo."
+  },
+  {
+    "id": "2kg-arc-fall-of-jerusalem",
+    "book": "2-kings",
+    "name": "The Fall of Jerusalem",
+    "startChapter": 24,
+    "endChapter": 25,
+    "summary": "Babylon subdues Jehoiakim, deports the young Jehoiachin along with Jerusalem's elite, and installs Zedekiah, who later rebels; Nebuchadnezzar besieges and burns Jerusalem, blinds Zedekiah after killing his sons, and the governor Gedaliah is assassinated, but the book closes decades later with the exiled Jehoiachin freed and honored at the Babylonian king's table."
+  }
+]

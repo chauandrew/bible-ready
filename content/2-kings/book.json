@@ -1,0 +1,16 @@
+{
+  "id": "2-kings",
+  "name": "2 Kings",
+  "chapterCount": 25,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "2kg-arc-elisha-begins",
+    "2kg-arc-naaman-and-sieges",
+    "2kg-arc-jehus-purge",
+    "2kg-arc-athaliah-and-joash",
+    "2kg-arc-decline-to-exile",
+    "2kg-arc-hezekiah-and-assyria",
+    "2kg-arc-manasseh-to-josiah",
+    "2kg-arc-fall-of-jerusalem"
+  ]
+}

@@ -1,0 +1,1212 @@
+[
+  {
+    "id": "2kg-e-c1-1",
+    "book": "2-kings",
+    "chapter": 1,
+    "name": "Ahaziah inquires of Baal-zebub and Elijah intercepts his messengers",
+    "shortName": "Ahaziah's inquiry to Baal-zebub",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "2kg-ahaziah-israel",
+      "2kg-elijah"
+    ],
+    "order": 1,
+    "summary": "After falling through a lattice and being injured, Ahaziah sends messengers to inquire of Baal-zebub, the god of Ekron, whether he will recover, but Elijah meets the messengers and sends back word that Ahaziah will die for consulting a foreign god instead of the LORD.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c1-2",
+    "book": "2-kings",
+    "chapter": 1,
+    "name": "Fire from heaven consumes two captains of fifty",
+    "shortName": "Fire consumes the captains",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "2kg-elijah",
+      "2kg-ahaziah-israel"
+    ],
+    "order": 2,
+    "summary": "Ahaziah sends a captain and fifty men to arrest Elijah, and when the captain orders him down, fire falls from heaven and consumes them; a second captain and his fifty suffer the same fate, but Elijah spares a third captain who begs for mercy and goes down to repeat the LORD's verdict to Ahaziah, who dies as foretold.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c2-1",
+    "book": "2-kings",
+    "chapter": 2,
+    "name": "Elijah is taken up to heaven in a whirlwind",
+    "shortName": "Elijah's ascension",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "2kg-elijah",
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "Elijah and Elisha cross the Jordan on dry ground after Elijah strikes the water with his cloak, and when Elijah asks what he can do for him, Elisha asks for a double portion of his spirit; chariots and horses of fire then separate them, and Elijah is swept up to heaven in a whirlwind.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c2-2",
+    "book": "2-kings",
+    "chapter": 2,
+    "name": "Elisha parts the Jordan and heals Jericho's water",
+    "shortName": "Elisha's mantle and healed water",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 2,
+    "summary": "Elisha picks up Elijah's fallen cloak, strikes the Jordan, and parts it just as Elijah had, proving the spirit of Elijah rests on him; at Jericho he throws salt into the city's bad spring, and the LORD heals the water permanently.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c2-3",
+    "book": "2-kings",
+    "chapter": 2,
+    "name": "Elisha curses the boys who jeer at him near Bethel",
+    "shortName": "Bears maul the jeering boys",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 3,
+    "summary": "As Elisha walks toward Bethel, a crowd of boys comes out of the city jeering, 'Go up, you baldhead,' and Elisha curses them in the name of the LORD, after which two bears come out of the woods and maul forty-two of them.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c3-1",
+    "book": "2-kings",
+    "chapter": 3,
+    "name": "Joram, Jehoshaphat, and Edom march against Moab",
+    "shortName": "The march against Moab",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "2kg-joram-israel",
+      "2kg-jehoshaphat",
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "When Moab rebels after Ahab's death, Joram of Israel musters Jehoshaphat of Judah and the king of Edom for a joint campaign, but a seven-day march through the wilderness leaves the armies without water; Elisha, consulted only for Jehoshaphat's sake, calls for a musician and promises the LORD will fill the dry streambed overnight without wind or rain.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c3-2",
+    "book": "2-kings",
+    "chapter": 3,
+    "name": "Israel routs Moab; Mesha sacrifices his son",
+    "shortName": "Moab routed; Mesha's sacrifice",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "2kg-mesha",
+      "2kg-joram-israel"
+    ],
+    "order": 2,
+    "summary": "The Moabites mistake sunlit water for blood and rush to plunder the camp, but the allied armies rout them, ruining their land and besieging Mesha king of Moab in Kir-hareseth; when his attempt to break out fails, Mesha offers his oldest son as a burnt offering on the wall, and the horrified armies withdraw.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c4-1",
+    "book": "2-kings",
+    "chapter": 4,
+    "name": "Elisha multiplies a widow's oil",
+    "shortName": "The widow's multiplied oil",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "A prophet's widow facing debt slavery for her sons tells Elisha she has nothing but a jar of oil, so he has her borrow empty vessels from her neighbors and pour her oil into them; the oil keeps flowing until every vessel is full, enough to pay her debts and live on the rest.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c4-2",
+    "book": "2-kings",
+    "chapter": 4,
+    "name": "The Shunammite's son is promised, dies, and is raised",
+    "shortName": "The Shunammite's son raised",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "2kg-elisha",
+      "2kg-shunammite-woman",
+      "2kg-gehazi"
+    ],
+    "order": 2,
+    "summary": "Elisha promises a childless Shunammite woman who has hosted him a son, and she bears one as he said; years later the boy dies suddenly in the field, and after Gehazi's staff fails to revive him, Elisha stretches himself over the child's body twice until he sneezes seven times and opens his eyes.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c4-3",
+    "book": "2-kings",
+    "chapter": 4,
+    "name": "Elisha purifies a poisoned stew and feeds a hundred men",
+    "shortName": "Poisoned stew and feeding a hundred",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 3,
+    "summary": "During a famine at Gilgal, wild gourds mixed into a pot of stew make the sons of the prophets cry out that there is death in the pot, but Elisha throws in flour and the stew becomes harmless; soon after, he takes twenty loaves of barley bread from a visitor and feeds a hundred men with food left over.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c5-1",
+    "book": "2-kings",
+    "chapter": 5,
+    "name": "Naaman is healed of leprosy in the Jordan",
+    "shortName": "Naaman's healing",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "2kg-naaman",
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "Naaman, commander of Syria's army, comes to Elisha to be cured of leprosy on a captive Israelite girl's word, and is furious when Elisha merely sends a messenger telling him to wash seven times in the Jordan; his servants talk him into obeying, and his flesh is restored like a child's, leading him to confess that the LORD alone is God.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c5-2",
+    "book": "2-kings",
+    "chapter": 5,
+    "name": "Gehazi's greed brings Naaman's leprosy on him",
+    "shortName": "Gehazi's leprosy",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "2kg-gehazi",
+      "2kg-naaman",
+      "2kg-elisha"
+    ],
+    "order": 2,
+    "summary": "After Elisha refuses any payment from Naaman, his servant Gehazi secretly runs after Naaman and lies to obtain silver and clothing for himself; Elisha confronts Gehazi for his deceit and pronounces that Naaman's leprosy will cling to Gehazi and his descendants forever.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c6-1",
+    "book": "2-kings",
+    "chapter": 6,
+    "name": "Elisha makes a borrowed axe head float",
+    "shortName": "The floating axe head",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "While cutting logs at the Jordan with the sons of the prophets, one man's borrowed axe head falls into the water, and Elisha throws in a stick that makes the iron float to the surface so it can be retrieved.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c6-2",
+    "book": "2-kings",
+    "chapter": 6,
+    "name": "Elisha's warnings frustrate Syria; the raiders are blinded",
+    "shortName": "Syrian raiders blinded at Dothan",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 2,
+    "summary": "Elisha repeatedly warns Israel's king of Syrian ambush sites, and when the frustrated king of Syria learns Elisha is the source, he sends an army to seize him at Dothan; Elisha prays and the LORD strikes the raiders blind, then leads them into Samaria, where the king feeds them and sends them home instead of killing them.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c6-3",
+    "book": "2-kings",
+    "chapter": 6,
+    "name": "Ben-hadad's siege drives Samaria to cannibalism",
+    "shortName": "Famine and cannibalism in Samaria",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 6
+    },
+    "peopleIds": [],
+    "order": 3,
+    "summary": "Ben-hadad king of Syria besieges Samaria until famine grows so severe that a donkey's head sells for eighty shekels; when a desperate mother tells the king that she and another woman agreed to eat their sons and the other has hidden hers, the king tears his clothes and vows to kill Elisha for the disaster.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c7-1",
+    "book": "2-kings",
+    "chapter": 7,
+    "name": "Elisha promises sudden abundance in besieged Samaria",
+    "shortName": "Elisha's promise of abundance",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "Elisha declares that by the next day, fine flour and barley will sell cheaply at Samaria's gate despite the famine, and when the king's captain scoffs that even windows in heaven couldn't make that happen, Elisha tells him he will see it but not eat any of it.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c7-2",
+    "book": "2-kings",
+    "chapter": 7,
+    "name": "Four lepers find the Syrian camp abandoned",
+    "shortName": "The lepers' discovery ends the siege",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 7
+    },
+    "peopleIds": [],
+    "order": 2,
+    "summary": "The LORD makes the besieging Syrian army hear the sound of a great approaching army and flee in the night, leaving their camp intact; four starving lepers discover it empty, plunder it, and report the news, so the people rush out to loot the camp and food becomes cheap exactly as Elisha said, while the doubting captain is trampled to death in the gate.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c8-1",
+    "book": "2-kings",
+    "chapter": 8,
+    "name": "The Shunammite's land is restored",
+    "shortName": "The Shunammite's land restored",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "2kg-shunammite-woman",
+      "2kg-gehazi"
+    ],
+    "order": 1,
+    "summary": "Warned by Elisha of a coming seven-year famine, the Shunammite woman leaves the land and returns to find it seized; she appeals to the king just as Gehazi is telling him how Elisha raised her son, and the king orders her house and land restored along with its produce.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c8-2",
+    "book": "2-kings",
+    "chapter": 8,
+    "name": "Hazael murders Ben-hadad and becomes king of Syria",
+    "shortName": "Hazael's rise to power",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "2kg-hazael",
+      "2kg-elisha",
+      "2kg-benhadad"
+    ],
+    "order": 2,
+    "summary": "Elisha weeps before Hazael, foreseeing the cruelty Hazael will inflict on Israel once he becomes king of Syria; the next day Hazael smothers the sick Ben-hadad with a wet cloth and takes the throne for himself.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c8-3",
+    "book": "2-kings",
+    "chapter": 8,
+    "name": "Jehoram and Ahaziah reign evilly over Judah",
+    "shortName": "Jehoram and Ahaziah of Judah",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "2kg-jehoram-judah",
+      "2kg-ahaziah-judah"
+    ],
+    "order": 3,
+    "summary": "Jehoram of Judah marries into Ahab's family and walks in the evil ways of Israel's kings, losing Edom to revolt before dying; his son Ahaziah follows the same path as a son-in-law of Ahab's house and later joins Joram of Israel in battle against Hazael.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c9-1",
+    "book": "2-kings",
+    "chapter": 9,
+    "name": "Elisha's servant anoints Jehu king of Israel",
+    "shortName": "Jehu anointed king",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "2kg-jehu",
+      "2kg-elisha"
+    ],
+    "order": 1,
+    "summary": "Elisha sends a young prophet to anoint Jehu king of Israel in secret and commission him to strike down the house of Ahab in judgment for Jezebel's murders; when Jehu's fellow commanders learn what happened, they proclaim him king on the spot.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c9-2",
+    "book": "2-kings",
+    "chapter": 9,
+    "name": "Jehu kills Joram and Ahaziah",
+    "shortName": "Jehu kills Joram and Ahaziah",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "2kg-jehu",
+      "2kg-joram-israel",
+      "2kg-ahaziah-judah"
+    ],
+    "order": 2,
+    "summary": "Jehu drives furiously to Jezreel, and when Joram rides out to meet him and asks if it is peace, Jehu shoots him through the heart and orders his body thrown on Naboth's plot of ground in fulfillment of Elijah's earlier word; Jehu then pursues the fleeing Ahaziah of Judah and has him mortally wounded as well.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c9-3",
+    "book": "2-kings",
+    "chapter": 9,
+    "name": "Jezebel is thrown from her window and eaten by dogs",
+    "shortName": "Jezebel's death",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "2kg-jehu",
+      "2kg-jezebel"
+    ],
+    "order": 3,
+    "summary": "Jezebel paints her eyes and taunts Jehu from a window as he enters Jezreel, so Jehu calls for her own eunuchs to throw her down; her body is trampled and eaten by dogs, leaving almost nothing to bury, exactly as Elijah had prophesied against her.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c10-1",
+    "book": "2-kings",
+    "chapter": 10,
+    "name": "Jehu has Ahab's seventy sons beheaded",
+    "shortName": "Ahab's seventy sons beheaded",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "2kg-jehu"
+    ],
+    "order": 1,
+    "summary": "Jehu writes to Samaria's rulers challenging them to defend one of Ahab's seventy sons as king, and when they submit instead, he orders the sons beheaded and their heads piled in two heaps at the city gate as proof of his purge.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c10-2",
+    "book": "2-kings",
+    "chapter": 10,
+    "name": "Jehu tricks and kills the worshipers of Baal",
+    "shortName": "Baal worshipers destroyed",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "2kg-jehu",
+      "2kg-jehonadab"
+    ],
+    "order": 2,
+    "summary": "Jehu calls a solemn assembly for Baal, claiming he will serve Baal even more than Ahab did, but once every worshiper of Baal has filled the temple, he has his guards slaughter them all and orders the temple of Baal torn down and turned into a latrine.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c10-3",
+    "book": "2-kings",
+    "chapter": 10,
+    "name": "Jehu keeps Jeroboam's calves; Israel's territory shrinks",
+    "shortName": "Jehu's incomplete reform",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "2kg-jehu",
+      "2kg-hazael"
+    ],
+    "order": 3,
+    "summary": "The LORD commends Jehu for carrying out judgment on Ahab's house and promises his descendants four generations on the throne, but Jehu never departs from Jeroboam's golden calves, and in his days Hazael begins to defeat Israel and strip away its territory east of the Jordan.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c11-1",
+    "book": "2-kings",
+    "chapter": 11,
+    "name": "Athaliah seizes the throne; Joash is hidden",
+    "shortName": "Athaliah's coup; Joash hidden",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "2kg-athaliah",
+      "2kg-jehosheba",
+      "2kg-joash-judah"
+    ],
+    "order": 1,
+    "summary": "When Ahaziah dies, his mother Athaliah destroys the rest of the royal family and seizes Judah's throne, but Ahaziah's sister Jehosheba steals away the infant Joash and hides him with his nurse in the temple, where he remains for six years while Athaliah reigns.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c11-2",
+    "book": "2-kings",
+    "chapter": 11,
+    "name": "Jehoiada crowns Joash and Athaliah is executed",
+    "shortName": "Joash crowned; Athaliah killed",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "2kg-jehoiada",
+      "2kg-joash-judah",
+      "2kg-athaliah"
+    ],
+    "order": 2,
+    "summary": "In the seventh year, Jehoiada the priest arms the temple guard with David's old spears and shields, brings out the seven-year-old Joash, crowns and anoints him king; when Athaliah rushes in crying treason, Jehoiada has her taken outside and put to death, and the people tear down the house of Baal.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c12-1",
+    "book": "2-kings",
+    "chapter": 12,
+    "name": "Joash repairs the temple through a collection chest",
+    "shortName": "Joash's temple repair chest",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "2kg-joash-judah",
+      "2kg-jehoiada"
+    ],
+    "order": 1,
+    "summary": "After the priests fail to repair the temple with donated funds, Jehoiada sets up a chest by the altar to collect the money instead, and the honest workmen who receive it repair the temple without ever being asked for an accounting.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c12-2",
+    "book": "2-kings",
+    "chapter": 12,
+    "name": "Joash pays off Hazael and is assassinated",
+    "shortName": "Joash strips the temple; his assassination",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "2kg-joash-judah",
+      "2kg-hazael"
+    ],
+    "order": 2,
+    "summary": "When Hazael threatens Jerusalem after taking Gath, Joash strips the temple and palace treasuries of every sacred gift to send him off; not long after, Joash's own servants conspire against him and strike him down.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c13-1",
+    "book": "2-kings",
+    "chapter": 13,
+    "name": "Jehoahaz and Jehoash reign as Syria oppresses Israel",
+    "shortName": "Israel oppressed by Syria",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "2kg-jehoahaz-israel",
+      "2kg-jehoash-israel"
+    ],
+    "order": 1,
+    "summary": "Jehoahaz reigns over an Israel so reduced by Syrian oppression that only a small army remains to him, and though the LORD grants a measure of relief after he seeks the LORD's favor, the nation's sin continues; his son Jehoash succeeds him and also does evil.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c13-2",
+    "book": "2-kings",
+    "chapter": 13,
+    "name": "Elisha's arrow of victory over Syria",
+    "shortName": "Elisha's arrow of victory",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "2kg-elisha",
+      "2kg-jehoash-israel"
+    ],
+    "order": 2,
+    "summary": "As Elisha lies dying, Jehoash weeps over him and calls him the chariots and horsemen of Israel; Elisha has him shoot an arrow eastward as a sign of victory over Syria, then strike the ground with more arrows, but Jehoash stops after only three strikes, so Elisha tells him he will defeat Syria only three times instead of finishing them off.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c13-3",
+    "book": "2-kings",
+    "chapter": 13,
+    "name": "A dead man revives touching Elisha's bones",
+    "shortName": "A corpse revived by Elisha's bones",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "2kg-elisha"
+    ],
+    "order": 3,
+    "summary": "After Elisha dies and is buried, men burying another man see a band of raiders coming and hastily throw the corpse into Elisha's tomb; as soon as the body touches Elisha's bones, the dead man comes back to life and stands on his feet.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c14-1",
+    "book": "2-kings",
+    "chapter": 14,
+    "name": "Amaziah defeats Edom",
+    "shortName": "Amaziah defeats Edom",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "2kg-amaziah"
+    ],
+    "order": 1,
+    "summary": "Amaziah of Judah executes his father's assassins but spares their children as the Law commands, then strikes down ten thousand Edomites in the Valley of Salt and captures their city Sela, renaming it Joktheel.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c14-2",
+    "book": "2-kings",
+    "chapter": 14,
+    "name": "Amaziah is defeated by Jehoash and later assassinated",
+    "shortName": "Amaziah's defeat and death",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "2kg-amaziah",
+      "2kg-jehoash-israel"
+    ],
+    "order": 2,
+    "summary": "Flush with victory, Amaziah challenges Jehoash of Israel to battle despite Jehoash's parable warning him to stay home; Judah is routed at Beth-shemesh, Amaziah is captured and Jerusalem's wall broken down, and years later Amaziah is assassinated in a conspiracy after fleeing to Lachish.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c14-3",
+    "book": "2-kings",
+    "chapter": 14,
+    "name": "Jeroboam II restores Israel's borders",
+    "shortName": "Jeroboam II's expansion",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "2kg-jeroboam-ii"
+    ],
+    "order": 3,
+    "summary": "Jeroboam II reigns over Israel for forty-one years and restores its border from Lebo-hamath to the Sea of the Arabah, fulfilling a word the LORD spoke through his servant Jonah son of Amittai, because the LORD had not yet decided to blot out Israel's name entirely.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c15-1",
+    "book": "2-kings",
+    "chapter": 15,
+    "name": "Azariah is struck with leprosy",
+    "shortName": "Azariah's leprosy",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "2kg-azariah",
+      "2kg-jotham"
+    ],
+    "order": 1,
+    "summary": "Azariah (also called Uzziah) reigns in Judah doing what is right, but the LORD strikes him with leprosy, so he lives apart for the rest of his life while his son Jotham governs the people in his place.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c15-2",
+    "book": "2-kings",
+    "chapter": 15,
+    "name": "A chain of assassinations ends Jehu's dynasty",
+    "shortName": "Assassinations end Jehu's line",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "2kg-zechariah-israel",
+      "2kg-shallum",
+      "2kg-menahem",
+      "2kg-pekahiah"
+    ],
+    "order": 2,
+    "summary": "Zechariah, Jehu's great-grandson, is assassinated by Shallum after only six months, fulfilling the LORD's word that Jehu's line would end at the fourth generation; Shallum himself is killed within a month by Menahem, whose brutal reign is followed by his son Pekahiah, who reigns two years before his own captain Pekah murders him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c15-3",
+    "book": "2-kings",
+    "chapter": 15,
+    "name": "Assyria begins conquering Israelite territory under Pekah",
+    "shortName": "Assyria conquers Israelite territory",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "2kg-pekah",
+      "2kg-hoshea"
+    ],
+    "order": 3,
+    "summary": "During Pekah's twenty-year reign, Tiglath-pileser king of Assyria captures large stretches of Israel's territory, including all of Naphtali, and carries the people captive to Assyria; Hoshea then conspires against Pekah, kills him, and reigns in his place.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c16-1",
+    "book": "2-kings",
+    "chapter": 16,
+    "name": "Ahaz buys Assyria's help against Syria and Israel",
+    "shortName": "Ahaz appeals to Assyria",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "2kg-ahaz"
+    ],
+    "order": 1,
+    "summary": "Besieged by Syria and Israel and unable to break through, Ahaz strips the temple and palace treasuries to send Tiglath-pileser of Assyria a plea for rescue, calling himself Assyria's servant and son; Assyria responds by conquering Damascus and killing Rezin.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c16-2",
+    "book": "2-kings",
+    "chapter": 16,
+    "name": "Ahaz copies a pagan altar for the temple",
+    "shortName": "Ahaz's copied altar",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "2kg-ahaz"
+    ],
+    "order": 2,
+    "summary": "After seeing an altar in Damascus, Ahaz sends its design to the priest Uriah, who builds a copy in the temple; Ahaz then makes it the main altar for sacrifice, moving the LORD's bronze altar aside and reserving it only for his own private use.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c17-1",
+    "book": "2-kings",
+    "chapter": 17,
+    "name": "Samaria falls after Hoshea's rebellion",
+    "shortName": "The fall of Samaria",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 17
+    },
+    "peopleIds": [
+      "2kg-hoshea"
+    ],
+    "order": 1,
+    "summary": "Hoshea stops paying tribute to Assyria and seeks help from Egypt instead, so the king of Assyria imprisons him and besieges Samaria for three years; the city falls, and the king of Assyria deports the Israelites to Halah, the Habor river region, and the cities of the Medes.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c17-2",
+    "book": "2-kings",
+    "chapter": 17,
+    "name": "The text explains why Israel was exiled",
+    "shortName": "Why Israel was exiled",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 17
+    },
+    "peopleIds": [],
+    "order": 2,
+    "summary": "The narrator explains at length that Israel's exile came because the people persistently worshiped idols, followed the nations' customs, and ignored every prophet's warning to turn back, until the LORD removed Israel from his sight, leaving only Judah in the land.",
+    "notable": true,
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-e-c17-3",
+    "book": "2-kings",
+    "chapter": 17,
+    "name": "Assyria resettles Samaria with a mixed worship",
+    "shortName": "Samaria resettled",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 17
+    },
+    "peopleIds": [],
+    "order": 3,
+    "summary": "The king of Assyria brings foreign peoples to live in Samaria's cities, and when lions kill some of them for not knowing the LORD's ways, he sends back an exiled priest to teach them; the newcomers end up fearing the LORD alongside their own national gods, a mixed worship that continues to the writer's own day.",
+    "notable": true,
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-e-c18-1",
+    "book": "2-kings",
+    "chapter": 18,
+    "name": "Hezekiah's reforms and unmatched trust in the LORD",
+    "shortName": "Hezekiah's reforms",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "2kg-hezekiah"
+    ],
+    "order": 1,
+    "summary": "Hezekiah removes the high places, breaks the sacred pillars, cuts down the Asherah, and destroys the bronze serpent Moses had made after it became an object of worship; the text says no king of Judah before or after him trusted the LORD so completely.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c18-2",
+    "book": "2-kings",
+    "chapter": 18,
+    "name": "Sennacherib invades Judah and Hezekiah pays tribute",
+    "shortName": "Sennacherib's invasion begins",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "2kg-hezekiah",
+      "2kg-sennacherib"
+    ],
+    "order": 2,
+    "summary": "Sennacherib king of Assyria invades Judah and captures its fortified cities, so Hezekiah admits wrongdoing and strips the temple of its silver and gold, even tearing gold off the temple doors, to pay the tribute Sennacherib demands.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c18-3",
+    "book": "2-kings",
+    "chapter": 18,
+    "name": "The Rabshakeh mocks the LORD outside Jerusalem",
+    "shortName": "The Rabshakeh's mocking speech",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 18
+    },
+    "peopleIds": [
+      "2kg-rabshakeh",
+      "2kg-hezekiah"
+    ],
+    "order": 3,
+    "summary": "Despite the tribute, Sennacherib sends his officer the Rabshakeh with an army to Jerusalem, where he stands within earshot of the people on the wall and loudly mocks Hezekiah's trust in the LORD, claiming no god has ever saved a nation from Assyria and urging the people to surrender.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c19-1",
+    "book": "2-kings",
+    "chapter": 19,
+    "name": "Hezekiah sends to Isaiah for reassurance",
+    "shortName": "Hezekiah consults Isaiah",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "2kg-hezekiah",
+      "2kg-isaiah"
+    ],
+    "order": 1,
+    "summary": "Hezekiah tears his clothes and puts on sackcloth in distress, then sends officials to the prophet Isaiah asking him to pray for the surviving remnant; Isaiah answers that Sennacherib will hear a rumor, return home, and fall by the sword there.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c19-2",
+    "book": "2-kings",
+    "chapter": 19,
+    "name": "Hezekiah spreads the threatening letter before the LORD",
+    "shortName": "Hezekiah's prayer in the temple",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "2kg-hezekiah"
+    ],
+    "order": 2,
+    "summary": "When Sennacherib sends a letter threatening Jerusalem, Hezekiah goes up to the temple, spreads it out before the LORD, and prays that the LORD alone is God of all the earth's kingdoms and asks him to save the city so every kingdom will know it.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c19-3",
+    "book": "2-kings",
+    "chapter": 19,
+    "name": "The angel of the LORD destroys the Assyrian army",
+    "shortName": "The Assyrian army's destruction",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 19
+    },
+    "peopleIds": [
+      "2kg-isaiah",
+      "2kg-sennacherib"
+    ],
+    "order": 3,
+    "summary": "Isaiah delivers the LORD's promise that Sennacherib will not enter Jerusalem or even shoot an arrow at it, and that night the angel of the LORD strikes down 185,000 men in the Assyrian camp; Sennacherib returns to Nineveh, where his own sons later assassinate him while he worships his god.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c20-1",
+    "book": "2-kings",
+    "chapter": 20,
+    "name": "Hezekiah's illness, prayer, and healing",
+    "shortName": "Hezekiah's illness and healing",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "2kg-hezekiah",
+      "2kg-isaiah"
+    ],
+    "order": 1,
+    "summary": "When Isaiah tells the dying Hezekiah to set his house in order, Hezekiah weeps and prays, reminding the LORD of his faithfulness, and the LORD sends Isaiah back with a promise to heal him and add fifteen years to his life, confirmed by making the sun's shadow move backward ten steps.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c20-2",
+    "book": "2-kings",
+    "chapter": 20,
+    "name": "Babylonian envoys and Isaiah's warning of exile",
+    "shortName": "Babylon's envoys foreshadow exile",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 20
+    },
+    "peopleIds": [
+      "2kg-hezekiah",
+      "2kg-isaiah"
+    ],
+    "order": 2,
+    "summary": "Envoys from Babylon visit Hezekiah after his illness, and he proudly shows them every treasure in his kingdom; Isaiah rebukes him afterward, prophesying that everything Hezekiah showed them, and some of his own descendants, will one day be carried off to Babylon.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c21-1",
+    "book": "2-kings",
+    "chapter": 21,
+    "name": "Manasseh rebuilds the high places and worships the host of heaven",
+    "shortName": "Manasseh's idolatry",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "2kg-manasseh"
+    ],
+    "order": 1,
+    "summary": "Manasseh rebuilds the high places Hezekiah destroyed, erects altars to Baal and the host of heaven inside the temple itself, sacrifices his own son, and practices divination, leading Judah to do more evil than the nations the LORD had driven out before Israel.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c21-2",
+    "book": "2-kings",
+    "chapter": 21,
+    "name": "The LORD pronounces judgment on Jerusalem",
+    "shortName": "Judgment pronounced on Jerusalem",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "2kg-manasseh"
+    ],
+    "order": 2,
+    "summary": "Because of Manasseh's abominations and the innocent blood he has shed, the LORD announces through his prophets that he will bring such disaster on Jerusalem that it will make the ears of everyone who hears of it tingle, wiping the city out like a dish wiped and turned upside down.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c21-3",
+    "book": "2-kings",
+    "chapter": 21,
+    "name": "Amon is assassinated after two evil years",
+    "shortName": "Amon's assassination",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 21
+    },
+    "peopleIds": [
+      "2kg-amon"
+    ],
+    "order": 3,
+    "summary": "Amon succeeds his father Manasseh and follows the same evil path for two years before his own servants conspire against him and put him to death in his house; the people of the land then kill the conspirators and make Amon's son Josiah king instead.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c22-1",
+    "book": "2-kings",
+    "chapter": 22,
+    "name": "The Book of the Law is found during temple repairs",
+    "shortName": "The Book of the Law found",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "2kg-josiah",
+      "2kg-hilkiah"
+    ],
+    "order": 1,
+    "summary": "Josiah orders the temple repaired using money collected by honest workmen, and during the work, Hilkiah the high priest discovers the Book of the Law and has it read to Josiah, who tears his clothes in distress at how far Judah has strayed from it.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c22-2",
+    "book": "2-kings",
+    "chapter": 22,
+    "name": "Huldah prophesies disaster but peace for Josiah",
+    "shortName": "Huldah's prophecy",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 22
+    },
+    "peopleIds": [
+      "2kg-huldah",
+      "2kg-josiah"
+    ],
+    "order": 2,
+    "summary": "Josiah sends his officials to the prophetess Huldah, who confirms that the LORD will bring the disaster the book describes on Jerusalem for its idolatry, but promises Josiah that because his heart was humbled and penitent, he will die in peace before he sees it.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c23-1",
+    "book": "2-kings",
+    "chapter": 23,
+    "name": "Josiah renews the covenant and purges idolatry",
+    "shortName": "Josiah's covenant renewal and purge",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "2kg-josiah"
+    ],
+    "order": 1,
+    "summary": "Josiah reads the Book of the Covenant to all the people and leads them in renewing it, then purges Judah and Jerusalem of pagan altars, Asherah poles, and high places, even reaching to Bethel, where he destroys Jeroboam's old altar and burns human bones on it in fulfillment of an old prophecy.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c23-2",
+    "book": "2-kings",
+    "chapter": 23,
+    "name": "Josiah keeps an unmatched Passover",
+    "shortName": "Josiah's great Passover",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "2kg-josiah"
+    ],
+    "order": 2,
+    "summary": "Josiah commands all the people to keep the Passover to the LORD as the Book of the Covenant requires, and the text says no such Passover had been kept since the days of the judges or through any king of Israel or Judah before him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c23-3",
+    "book": "2-kings",
+    "chapter": 23,
+    "name": "Josiah dies at Megiddo; Jehoahaz and Jehoiakim succeed him",
+    "shortName": "Josiah's death at Megiddo",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 23
+    },
+    "peopleIds": [
+      "2kg-josiah",
+      "2kg-jehoahaz-judah",
+      "2kg-jehoiakim"
+    ],
+    "order": 3,
+    "summary": "Despite Josiah's reforms, the LORD's fierce anger against Judah for Manasseh's sins does not relent, and Pharaoh Neco kills Josiah at Megiddo; the people make Jehoahaz king, but Neco deposes him within three months and installs his brother Jehoiakim in his place.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c24-1",
+    "book": "2-kings",
+    "chapter": 24,
+    "name": "Jehoiakim submits to Babylon; Jehoiachin is deported",
+    "shortName": "Jehoiachin's deportation",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "2kg-jehoiakim",
+      "2kg-jehoiachin",
+      "2kg-nebuchadnezzar"
+    ],
+    "order": 1,
+    "summary": "Nebuchadnezzar makes Jehoiakim his servant for three years before Jehoiakim rebels, and after Jehoiakim's death his son Jehoiachin reigns only three months before Nebuchadnezzar besieges Jerusalem and deports him along with the city's officials, soldiers, and craftsmen to Babylon.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c24-2",
+    "book": "2-kings",
+    "chapter": 24,
+    "name": "Zedekiah is installed and later rebels",
+    "shortName": "Zedekiah installed; his rebellion",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 24
+    },
+    "peopleIds": [
+      "2kg-zedekiah",
+      "2kg-nebuchadnezzar"
+    ],
+    "order": 2,
+    "summary": "Nebuchadnezzar makes Jehoiachin's uncle Mattaniah king in his place and renames him Zedekiah; Zedekiah does evil like Jehoiakim before him and eventually rebels against Babylon despite the LORD's anger already set against Jerusalem.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c25-1",
+    "book": "2-kings",
+    "chapter": 25,
+    "name": "Nebuchadnezzar besieges and captures Zedekiah",
+    "shortName": "Zedekiah captured and blinded",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 25
+    },
+    "peopleIds": [
+      "2kg-zedekiah",
+      "2kg-nebuchadnezzar"
+    ],
+    "order": 1,
+    "summary": "Nebuchadnezzar besieges Jerusalem until famine breaks the city, and when Zedekiah's army flees by night, the Chaldeans capture him near Jericho; at Riblah they kill his sons before his eyes, then put out his eyes and bind him in chains for Babylon.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c25-2",
+    "book": "2-kings",
+    "chapter": 25,
+    "name": "Jerusalem and the temple are burned",
+    "shortName": "The temple is burned",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 25
+    },
+    "peopleIds": [],
+    "order": 2,
+    "summary": "Nebuzaradan, the captain of the guard, burns the temple, the palace, and every great house in Jerusalem, breaks down the city walls, and carries off the temple's bronze pillars, the bronze sea, and every vessel of gold and silver to Babylon.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "2kg-e-c25-3",
+    "book": "2-kings",
+    "chapter": 25,
+    "name": "Gedaliah is assassinated; Jehoiachin is later freed",
+    "shortName": "Gedaliah's murder; Jehoiachin freed",
+    "citation": {
+      "book": "2-kings",
+      "chapter": 25
+    },
+    "peopleIds": [
+      "2kg-gedaliah",
+      "2kg-jehoiachin"
+    ],
+    "order": 3,
+    "summary": "Nebuchadnezzar appoints Gedaliah governor over the people left in Judah, but Ishmael, a member of the royal family, assassinates him within months, driving the remaining people to flee to Egypt; decades later, a new Babylonian king frees the exiled Jehoiachin from prison and gives him an honored seat at his own table for the rest of his life.",
+    "notable": true,
+    "tier": "general"
+  }
+]

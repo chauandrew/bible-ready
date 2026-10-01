@@ -1,0 +1,465 @@
+[
+  {
+    "id": "2kg-aq-1",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Ahaziah do after falling and injuring himself in his upper chamber?",
+    "options": [
+      "Sends messengers to inquire of Baal-zebub, the god of Ekron",
+      "Prays to the LORD for healing at the temple in Samaria",
+      "Summons Elijah directly to come and heal him",
+      "Consults the prophets of Asherah kept by his mother"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 1
+    },
+    "explanation": "Ahaziah sends to a foreign god instead of the LORD, which is exactly what draws Elijah's death sentence against him.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-2",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Elisha ask Elijah for just before Elijah is taken up to heaven?",
+    "format": "short-answer",
+    "answer": "double portion",
+    "aliases": [
+      "a double portion of his spirit",
+      "double portion of his spirit"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 2
+    },
+    "explanation": "Elisha asks for a double portion of Elijah's spirit, and seeing Elijah taken up confirms the request is granted.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-3",
+    "book": "2-kings",
+    "category": "arc",
+    "prompt": "In 2 Kings, what does Elisha ask for before delivering his prophecy to the three kings marching against Moab?",
+    "options": [
+      "A musician, so the hand of the LORD may come on him",
+      "A mantle like the one Elijah left behind",
+      "An altar of stones to offer a sacrifice",
+      "A jar of water from the Jordan River"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 3
+    },
+    "explanation": "Elisha calls for a musician, and as the music plays, the hand of the LORD comes on him and he prophesies.",
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-aq-4",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, how many times does Elisha stretch himself over the Shunammite's dead son before the boy comes back to life?",
+    "format": "short-answer",
+    "answer": "twice",
+    "aliases": [
+      "2",
+      "two times"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 4
+    },
+    "explanation": "Elisha lies on the child once, gets up and walks the house, then stretches himself over him a second time, and the boy sneezes seven times and opens his eyes.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-5",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Elisha tell Naaman to do to be healed of his leprosy?",
+    "options": [
+      "Wash seven times in the Jordan River",
+      "Offer a burnt sacrifice at Gilgal",
+      "Anoint himself with oil from the temple",
+      "Bathe in the rivers of Damascus"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 5
+    },
+    "explanation": "Naaman is furious at the plain instruction, expecting a dramatic ritual, but washing seven times in the Jordan heals him.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-6",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Elisha throw into the water to make a borrowed axe head float back to the surface?",
+    "format": "short-answer",
+    "answer": "a stick",
+    "aliases": [
+      "stick",
+      "a piece of wood"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 6
+    },
+    "explanation": "Elisha cuts off a stick, throws it in at the place where the axe head fell, and the iron floats.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-7",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what causes the Syrian army besieging Samaria to panic and flee in the night?",
+    "options": [
+      "The LORD makes them hear an approaching army",
+      "Fire suddenly descends from heaven onto their camp",
+      "A plague suddenly breaks out among their soldiers",
+      "Elisha's prayer strikes their commanders with blindness"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 7
+    },
+    "explanation": "The LORD makes the Syrians hear phantom chariots and horses, convincing them Israel has hired foreign kings against them, so they flee and abandon their camp intact.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-8",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, how does Hazael kill the sick Ben-hadad to become king of Syria?",
+    "options": [
+      "Smothers him with a wet cloth",
+      "Poisons his wine at a banquet",
+      "Stabs him during a hunting trip",
+      "Strangles him while he sleeps"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 8
+    },
+    "explanation": "The day after Elisha weeps over what Hazael will do to Israel, Hazael takes a wet cloth, spreads it over Ben-hadad's face, and kills him.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-9",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, where does Jehu order Joram's body thrown after shooting him with an arrow?",
+    "format": "short-answer",
+    "answer": "Naboth's plot",
+    "aliases": [
+      "Naboth's field",
+      "the plot of Naboth",
+      "Naboth's vineyard"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 9
+    },
+    "explanation": "Jehu recalls the LORD's judgment against Ahab's house on Naboth's ground and has Joram's body thrown there in fulfillment of it.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-10",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, how does Jehu trick the worshipers of Baal into gathering in one place so he can kill them?",
+    "options": [
+      "Claims to serve Baal even more than Ahab did",
+      "Promises them a generous share of Ahab's royal treasure",
+      "Announces a festival to celebrate his new coronation",
+      "Offers full amnesty to anyone who attends"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 10
+    },
+    "explanation": "Jehu calls a solemn assembly for Baal under false pretenses, filling the temple of Baal with its worshipers before his guards kill them all.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-11",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, who hides the infant Joash in the temple to save him from Athaliah's purge?",
+    "format": "short-answer",
+    "answer": "Jehosheba",
+    "aliases": [],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 11
+    },
+    "explanation": "Jehosheba, Ahaziah's sister, steals Joash away from among the king's sons being killed and hides him with his nurse in the temple for six years.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-12",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, how does Jehoiada ensure the temple-repair funds are used honestly without requiring the workmen to give an accounting?",
+    "options": [
+      "A chest with a hole in the lid collects donations",
+      "The king personally audits and signs off on every payment",
+      "Only the priests are permitted to personally handle the silver",
+      "Three independent officials weigh and record every payment made"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 12
+    },
+    "explanation": "Money placed directly into the chest by the door goes straight to the workmen, who are trusted without any accounting because they deal honestly.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-13",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, why does Elisha become angry with King Jehoash during their final meeting?",
+    "options": [
+      "Jehoash stops striking the ground after only three strikes",
+      "Jehoash refuses to shoot the arrow eastward as instructed",
+      "Jehoash brings the wrong kind of bow to the meeting",
+      "Jehoash weeps instead of showing courage before him"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 13
+    },
+    "explanation": "Elisha wanted Jehoash to strike the ground five or six times for complete victory over Syria; stopping at three limits him to three victories instead.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-14",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Amaziah rename the Edomite city he captures in the Valley of Salt?",
+    "options": [
+      "Joktheel",
+      "Kir-hareseth",
+      "Beth-shemesh",
+      "Lachish"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 14
+    },
+    "explanation": "Amaziah captures Sela by storm and renames it Joktheel, a name the text says it still carries.",
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-aq-15",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, how long does Shallum reign over Israel after assassinating Zechariah?",
+    "options": [
+      "One month",
+      "Six months",
+      "One year",
+      "Ten years"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 15
+    },
+    "explanation": "Shallum reigns only one month in Samaria before Menahem kills him and takes the throne.",
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-aq-16",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what does Ahaz do after seeing a pagan altar in Damascus?",
+    "options": [
+      "Sends its design to the priest Uriah for a copy",
+      "Burns an image of it before the LORD in protest",
+      "Destroys the temple's bronze altar entirely without replacing it",
+      "Demands Assyria replace it with a golden altar instead"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 16
+    },
+    "explanation": "Ahaz sends the altar's exact pattern to Uriah the priest, who builds a copy that becomes the temple's main altar in place of the LORD's own.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-17",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what does the king of Assyria do after lions begin killing the foreign settlers he placed in Samaria?",
+    "options": [
+      "Sends back an exiled priest to teach them the LORD's ways",
+      "Orders all the foreign settlers removed from the whole land",
+      "Builds new shrines to the settlers' own native gods",
+      "Appoints Hoshea again to govern the settlers"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 17
+    },
+    "explanation": "Told the settlers don't know the god of the land, the king of Assyria sends back one of the exiled priests to teach them how to fear the LORD.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-18",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what object does Hezekiah destroy that Moses had made, because Israel had begun worshiping it?",
+    "format": "short-answer",
+    "answer": "bronze serpent",
+    "aliases": [
+      "Nehushtan",
+      "the bronze snake"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 18
+    },
+    "explanation": "Hezekiah breaks the bronze serpent in pieces, calling it Nehushtan, because the people had been burning offerings to it.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-19",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what does Hezekiah do with Sennacherib's threatening letter?",
+    "options": [
+      "Spreads it before the LORD and prays for deliverance",
+      "Burns it publicly in front of the city's main square",
+      "Sends it back to Sennacherib still unopened",
+      "Tears it apart before all his officials"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 19
+    },
+    "explanation": "Hezekiah takes the letter into the temple, spreads it out before the LORD, and prays for deliverance so that all the kingdoms of the earth will know the LORD alone is God.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-20",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, what moves backward ten steps as the sign confirming Hezekiah will be healed?",
+    "format": "short-answer",
+    "answer": "the shadow",
+    "aliases": [
+      "shadow",
+      "sundial shadow",
+      "the sun's shadow"
+    ],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 20
+    },
+    "explanation": "Isaiah lets Hezekiah choose the direction, and Hezekiah asks for the harder sign: the shadow moving backward ten steps on the stairway of Ahaz.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-21",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what does Manasseh rebuild that his father Hezekiah had destroyed?",
+    "options": [
+      "The high places",
+      "The golden calves of Bethel and Dan",
+      "Solomon's original bronze altar",
+      "The shrine at Shiloh"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 21
+    },
+    "explanation": "Manasseh rebuilds the high places Hezekiah had torn down and adds altars to Baal and the host of heaven inside the temple itself.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-22",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, who discovers the Book of the Law during the temple repairs Josiah orders?",
+    "format": "short-answer",
+    "answer": "Hilkiah",
+    "aliases": [],
+    "citation": {
+      "book": "2-kings",
+      "chapter": 22
+    },
+    "explanation": "Hilkiah the high priest finds the Book of the Law in the temple and has it read to Shaphan the secretary, who reports it to Josiah.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-23",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what had not been kept in Israel or Judah since the days of the judges before Josiah's reign?",
+    "options": [
+      "A Passover like the one Josiah keeps",
+      "A covenant renewal ceremony like this one",
+      "A dedication ceremony for the temple",
+      "A full year of jubilee celebration"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 23
+    },
+    "explanation": "The text says no Passover like Josiah's had been kept since the days of the judges who judged Israel.",
+    "tier": "general"
+  },
+  {
+    "id": "2kg-aq-24",
+    "book": "2-kings",
+    "category": "character",
+    "prompt": "In 2 Kings, how long does Jehoiachin reign in Jerusalem before surrendering to Nebuchadnezzar?",
+    "options": [
+      "Three months",
+      "One year",
+      "Three years",
+      "Eleven years"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 24
+    },
+    "explanation": "Jehoiachin reigns only three months before Nebuchadnezzar's siege forces his surrender and deportation to Babylon.",
+    "tier": "deep"
+  },
+  {
+    "id": "2kg-aq-25",
+    "book": "2-kings",
+    "category": "theme",
+    "prompt": "In 2 Kings, what happens to Zedekiah's sons before his own eyes at Riblah?",
+    "options": [
+      "They are slaughtered by the Chaldeans",
+      "They are taken captive to Egypt",
+      "They are forced to renounce the throne",
+      "They are blinded alongside him"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "2-kings",
+      "chapter": 25
+    },
+    "explanation": "Nebuchadnezzar's men kill Zedekiah's sons in front of him at Riblah before putting out his own eyes and binding him for Babylon.",
+    "tier": "general"
+  }
+]
