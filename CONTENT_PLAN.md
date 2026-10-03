@@ -411,7 +411,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Zechariah | zechariah | 14 | sparse | todo | |
 | Malachi | malachi | 4 | sparse | todo | |
 | Matthew | matthew | 28 | narrative | done | tier backfill pending |
-| Mark | mark | 16 | narrative | todo | unique material first |
+| Mark | mark | 16 | narrative | done | |
 | Luke | luke | 24 | narrative | todo | unique material first |
 | John | john | 21 | narrative | done | tier backfill pending |
 | Acts | acts | 28 | narrative | todo | journey follow-up (Paul) |
@@ -439,7 +439,7 @@ Depth is the planned `coverageDepth`. Ch is the real chapter count.
 | Revelation | revelation | 22 | narrative | todo | visions as events |
 | Miscellaneous | misc | 4 sections | selection | done | `defaultTier: general`; more lists in Phase 4 |
 
-Totals: 14 of 66 books have a module (1 partial); 325 of 1,189 chapters.
+Totals: 15 of 66 books have a module (1 partial); 341 of 1,189 chapters.
 
 ## Log
 
@@ -633,3 +633,80 @@ Totals: 14 of 66 books have a module (1 partial); 325 of 1,189 chapters.
   `npm test`, `tsc`, `eslint`, and a full `next build` all passed, and
   the book's home, chapter, arc, person, flashcard, print, quiz, and
   Chapter Order pages were all checked from a static build.
+- 2026-10-02: Mark authored (Phase 1's seventh item): 6 arcs (Authority
+  and Opposition, Parables and Power over Chaos, Who Is Jesus?, The
+  Road to Jerusalem, Confrontation in Jerusalem, Death and
+  Resurrection), 16 chapters, 52 events (all tagged general — Mark's
+  headline miracles and confrontations are plot-level facts by the
+  rubric's own standard, not incidental detail). 12 of 16 chapters
+  `quizWorthy`; the four non-quizWorthy chapters (3, 7, 12, 13) are
+  controversy-dialogue or discourse chapters rather than narrated
+  action. 17 quotes, people only (Jesus x6, the disciples, the
+  Gerasene demoniac, the woman with the flow of blood, Herodias's
+  daughter, the Syrophoenician woman, Peter, the boy's father,
+  Bartimaeus, the crowd, the centurion, the young man at the tomb;
+  corpus total now 216/1,000). 19 authored questions, roughly one per
+  chapter with an extra on three dense chapters (6, 12, 14) — 13
+  multiple choice, 6 short answer, 17 general/2 deep (the young man
+  who flees naked at the arrest, and the Corban rule added after
+  independent review below, both vivid incidental/ritual-mechanics
+  detail matching the rubric's "how loudly Joseph wept" and covenant-
+  ritual examples). Every event, quote, and
+  question was authored directly against the full ESV text fetched
+  chapter by chapter (not from memory). Mark being a Synoptic parallel
+  to the already-authored Matthew, questions were authored normally per
+  this plan's existing convention (line 162) rather than pre-emptively
+  avoided; `check:content` flagged exactly one cross-book near-duplicate
+  (`mk-aq-13` restated Matthew's "render to Caesar" question verbatim),
+  fixed by retargeting it to a detail Matthew's parallel account omits
+  entirely (the scribe's exchange in 12:28-34), and one distractor
+  option used the parallel account's own wording as a wrong answer on
+  purpose (Luke's "Truly this man was innocent!" as a distractor for
+  Mark's "Truly this man was the Son of God!"), per this plan's
+  explicitly sanctioned technique for Synoptic confusion. `check:content`
+  otherwise failed on first pass on two short-answer prompts running
+  3-4 significant words ("dig through the roof," "five loaves and two
+  fish" — the second converted to multiple choice instead) and a
+  distractor-length tell of 7/12 (58%, over the 50% ceiling), fixed by
+  lengthening one distractor per flagged question rather than
+  shortening correct answers, down to 1/13. One warning surfaced and
+  was fixed rather than accepted: a quote's own text named its
+  speaker's `Person.name` ("My name is Legion" against a person named
+  "The Man Called Legion"), fixed by renaming the person "The Gerasene
+  Demoniac" instead — the fact itself is unchanged, only the display
+  name. Self-reviewed chapter-by-chapter against the fetched ESV text
+  and the code-wiring diff; `npm test`, `tsc`, `eslint`, and a full
+  `next build` all passed, and the book's home, chapter, arc, flashcard,
+  people, and quiz pages were all checked from a static build, plus
+  Chapter Order's 16-chapter drag list. Independent adversarial review
+  followed (one fresh agent per arc plus one on the code diff, the 2
+  Kings precedent), each fetching the ESV text live and cold-checking
+  every event, quote, question, distractor, and tier assignment. The
+  code diff came back clean. Of the six arcs, two needed no fixes;
+  the other four turned up: a Matthew-parallel detail bleeding into
+  Mark's own narration ("his own tomb" for Joseph of Arimathea's
+  tomb — Mark only says "a tomb cut out of the rock," unlike Matthew
+  27:60; fixed in events.json, chapters.json, and people.json), one
+  factual slip in an explanation (`mk-aq-6` crediting "a boy's lunch"
+  for the loaves and fish, a John 6:9 detail absent from Mark, removed),
+  one length-tell (`mk-aq-7`, rebalanced), a missing `peopleIds` entry
+  (`mk-e-c13-1` omitted Andrew despite naming him in its own summary,
+  added), a wrong directional detail (the Road to Jerusalem arc summary
+  said Bartimaeus was healed "just before reaching Jericho"; Mark
+  10:46 says Jesus heals him leaving Jericho, after arriving — fixed),
+  a genuine content gap (no event covered the third passion prediction,
+  10:32-34, despite Mark's own three-fold pattern; added as
+  `mk-e-c10-5` and wired into the chapter, deck, and summary), and four
+  questions that restated a fact Matthew's parallel already quizzes
+  without adding any Mark-specific angle, missed by `check:content`'s
+  exact-string near-duplicate check because the wording differed even
+  though the underlying fact was the same (`mk-aq-8` defilement,
+  `mk-aq-10` Transfiguration witnesses, `mk-aq-11` what the rich man
+  lacks, `mk-aq-15` who knows the day or hour) — each retargeted to a
+  detail unique to Mark's account (the Corban rule, Peter's terrified
+  tent proposal, Jesus loving the man before the hard command, the
+  doorkeeper parable) per this plan's parallel-book convention. A
+  lesson for future Mark/Luke/Chronicles rounds: that near-duplicate
+  gate only catches identical answer strings, not same-fact-different-
+  wording — worth a self-review pass specifically for this before
+  relying on the automated check.

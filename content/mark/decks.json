@@ -1,0 +1,96 @@
+[
+  {
+    "id": "mk-deck-authority-and-opposition",
+    "book": "mark",
+    "name": "Authority and Opposition",
+    "cardEventIds": [
+      "mk-e-c1-1",
+      "mk-e-c1-2",
+      "mk-e-c1-3",
+      "mk-e-c2-1",
+      "mk-e-c2-2",
+      "mk-e-c2-3",
+      "mk-e-c3-1",
+      "mk-e-c3-2",
+      "mk-e-c3-3"
+    ]
+  },
+  {
+    "id": "mk-deck-parables-and-power",
+    "book": "mark",
+    "name": "Parables and Power over Chaos",
+    "cardEventIds": [
+      "mk-e-c4-1",
+      "mk-e-c4-2",
+      "mk-e-c4-3",
+      "mk-e-c5-1",
+      "mk-e-c5-2",
+      "mk-e-c5-3",
+      "mk-e-c6-1",
+      "mk-e-c6-2",
+      "mk-e-c6-3"
+    ]
+  },
+  {
+    "id": "mk-deck-who-is-jesus",
+    "book": "mark",
+    "name": "Who Is Jesus?",
+    "cardEventIds": [
+      "mk-e-c7-1",
+      "mk-e-c7-2",
+      "mk-e-c7-3",
+      "mk-e-c8-1",
+      "mk-e-c8-2",
+      "mk-e-c8-3"
+    ]
+  },
+  {
+    "id": "mk-deck-road-to-jerusalem",
+    "book": "mark",
+    "name": "The Road to Jerusalem",
+    "cardEventIds": [
+      "mk-e-c9-1",
+      "mk-e-c9-2",
+      "mk-e-c9-3",
+      "mk-e-c10-1",
+      "mk-e-c10-2",
+      "mk-e-c10-5",
+      "mk-e-c10-3",
+      "mk-e-c10-4"
+    ]
+  },
+  {
+    "id": "mk-deck-confrontation-in-jerusalem",
+    "book": "mark",
+    "name": "Confrontation in Jerusalem",
+    "cardEventIds": [
+      "mk-e-c11-1",
+      "mk-e-c11-2",
+      "mk-e-c11-3",
+      "mk-e-c12-1",
+      "mk-e-c12-2",
+      "mk-e-c12-3",
+      "mk-e-c12-4",
+      "mk-e-c13-1",
+      "mk-e-c13-2",
+      "mk-e-c13-3"
+    ]
+  },
+  {
+    "id": "mk-deck-death-and-resurrection",
+    "book": "mark",
+    "name": "Death and Resurrection",
+    "cardEventIds": [
+      "mk-e-c14-1",
+      "mk-e-c14-2",
+      "mk-e-c14-3",
+      "mk-e-c14-4",
+      "mk-e-c15-1",
+      "mk-e-c15-2",
+      "mk-e-c15-3",
+      "mk-e-c15-4",
+      "mk-e-c16-1",
+      "mk-e-c16-2"
+    ]
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "id": "mk-arc-authority-and-opposition",
+    "book": "mark",
+    "name": "Authority and Opposition",
+    "startChapter": 1,
+    "endChapter": 3,
+    "summary": "John the Baptist prepares the way and baptizes Jesus, who is tempted in the wilderness, calls his first disciples, and begins teaching and healing in Galilee with an authority that draws crowds and provokes the Pharisees, who plot against him after he appoints the Twelve."
+  },
+  {
+    "id": "mk-arc-parables-and-power",
+    "book": "mark",
+    "name": "Parables and Power over Chaos",
+    "startChapter": 4,
+    "endChapter": 6,
+    "summary": "Jesus teaches the kingdom of God in parables, calms a storm, frees a man possessed by a legion of demons, heals a bleeding woman and raises a dead girl, is rejected in his hometown, and feeds a crowd of five thousand before walking on the sea, while John the Baptist is beheaded by Herod."
+  },
+  {
+    "id": "mk-arc-who-is-jesus",
+    "book": "mark",
+    "name": "Who Is Jesus?",
+    "startChapter": 7,
+    "endChapter": 8,
+    "summary": "Jesus declares all foods clean, frees a Gentile woman's daughter from a demon, heals a deaf man and feeds four thousand more, then is confessed by Peter as the Christ at Caesarea Philippi before predicting his death for the first time."
+  },
+  {
+    "id": "mk-arc-road-to-jerusalem",
+    "book": "mark",
+    "name": "The Road to Jerusalem",
+    "startChapter": 9,
+    "endChapter": 10,
+    "summary": "Jesus is transfigured before three disciples, heals a boy no one else could help, predicts his death again, and teaches on service, divorce, and wealth on the way south, healing the blind beggar Bartimaeus as he leaves Jericho."
+  },
+  {
+    "id": "mk-arc-confrontation-in-jerusalem",
+    "book": "mark",
+    "name": "Confrontation in Jerusalem",
+    "startChapter": 11,
+    "endChapter": 13,
+    "summary": "Jesus enters Jerusalem to acclaim, curses a fig tree and drives sellers from the temple, survives a string of trap questions from the religious leaders, praises a poor widow's offering, and tells his disciples what to expect before the temple falls and the Son of Man returns."
+  },
+  {
+    "id": "mk-arc-death-and-resurrection",
+    "book": "mark",
+    "name": "Death and Resurrection",
+    "startChapter": 14,
+    "endChapter": 16,
+    "summary": "Jesus is anointed at Bethany, shares the Passover with his disciples, prays in anguish at Gethsemane, is betrayed, condemned, and crucified, then is found raised from an empty tomb and appears to his disciples before being taken up to heaven."
+  }
+]

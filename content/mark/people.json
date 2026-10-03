@@ -1,0 +1,373 @@
+[
+  {
+    "id": "mk-jesus",
+    "name": "Jesus",
+    "summary": "The Son of God whose authoritative teaching, exorcisms, and healings in Galilee give way to rejection, suffering, death, and resurrection in Jerusalem, a path Mark structures around the question of who he really is.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-peter",
+        "relation": "called as disciple"
+      }
+    ]
+  },
+  {
+    "id": "mk-john-baptist",
+    "name": "John the Baptist",
+    "summary": "A wilderness preacher who baptizes Jesus in the Jordan, is later imprisoned by Herod Antipas for condemning his marriage to Herodias, and is beheaded at a birthday banquet.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "baptized"
+      },
+      {
+        "personId": "mk-herod-antipas",
+        "relation": "imprisoned and executed by"
+      }
+    ]
+  },
+  {
+    "id": "mk-peter",
+    "name": "Peter",
+    "summary": "A fisherman renamed Peter by Jesus who becomes a leading disciple, confesses Jesus as the Christ, witnesses the Transfiguration, and denies knowing Jesus three times the night of his arrest.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-andrew",
+        "relation": "brother"
+      },
+      {
+        "personId": "mk-jesus",
+        "relation": "denied"
+      }
+    ]
+  },
+  {
+    "id": "mk-andrew",
+    "name": "Andrew",
+    "summary": "A fisherman and Peter's brother, called together with him to leave their nets and follow Jesus.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-peter",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "mk-james",
+    "name": "James son of Zebedee",
+    "summary": "A fisherman called with his brother John, one of the inner three who witness the Transfiguration, who together with John asks Jesus for the seats of honor in his glory.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-john-apostle",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "mk-john-apostle",
+    "name": "John son of Zebedee",
+    "summary": "A fisherman called with his brother James and given the name Boanerges, Sons of Thunder, one of the inner three who witness the Transfiguration and reports stopping a man who cast out demons in Jesus's name.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "relations": [
+      {
+        "personId": "mk-james",
+        "relation": "brother"
+      }
+    ]
+  },
+  {
+    "id": "mk-levi",
+    "name": "Levi",
+    "summary": "A tax collector Jesus calls away from his tax booth to follow him, who then hosts a meal where Jesus eats with tax collectors and sinners.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 2
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "called by"
+      }
+    ]
+  },
+  {
+    "id": "mk-legion",
+    "name": "The Gerasene Demoniac",
+    "summary": "A man living among the tombs of the Gerasenes, possessed by so many unclean spirits that he calls himself Legion, whom Jesus frees by sending the spirits into a herd of pigs.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-bleeding-woman",
+    "name": "The Woman with the Flow of Blood",
+    "summary": "A woman who has suffered a discharge of blood for twelve years and spent all she had on physicians, healed instantly when she touches Jesus's garment in a crowd.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-jairus",
+    "name": "Jairus",
+    "summary": "A ruler of the synagogue whose twelve-year-old daughter Jesus raises from death after she is reported dead.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "asked for healing"
+      }
+    ]
+  },
+  {
+    "id": "mk-herod-antipas",
+    "name": "Herod Antipas",
+    "summary": "The tetrarch who imprisons John the Baptist for condemning his marriage to Herodias and has him beheaded after a rash oath to her dancing daughter, though he had feared John as a righteous man.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "relations": [
+      {
+        "personId": "mk-herodias",
+        "relation": "husband"
+      },
+      {
+        "personId": "mk-john-baptist",
+        "relation": "imprisoned and executed"
+      }
+    ]
+  },
+  {
+    "id": "mk-herodias",
+    "name": "Herodias",
+    "summary": "Herod Antipas's wife, whose marriage John the Baptist publicly condemns, and who presses her daughter to demand John's execution.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "relations": [
+      {
+        "personId": "mk-herod-antipas",
+        "relation": "wife"
+      }
+    ]
+  },
+  {
+    "id": "mk-herodias-daughter",
+    "name": "Herodias's Daughter",
+    "summary": "Herod Antipas's stepdaughter, unnamed in Mark, whose dancing pleases Herod at his birthday banquet and who, prompted by her mother, asks for John the Baptist's head on a platter.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "relations": [
+      {
+        "personId": "mk-herodias",
+        "relation": "daughter"
+      }
+    ]
+  },
+  {
+    "id": "mk-disciples",
+    "name": "The Disciples",
+    "summary": "Jesus's followers, including the Twelve, who marvel at his authority over the storm and are warned to beware the leaven of the Pharisees and of Herod.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 4
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-syrophoenician-woman",
+    "name": "The Syrophoenician Woman",
+    "summary": "A Gentile woman from the region of Tyre who persists in asking Jesus to free her daughter from a demon even after he first refuses, and whose answer about the dogs under the table wins her request.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 7
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-bartimaeus",
+    "name": "Bartimaeus",
+    "summary": "A blind beggar at Jericho, the son of Timaeus, who cries out to Jesus as the Son of David despite the crowd's rebukes and receives his sight for his faith.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-crowd",
+    "name": "The Crowd",
+    "summary": "The crowd that spreads cloaks and branches on the road and shouts Hosanna as Jesus rides into Jerusalem.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 11
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-judas",
+    "name": "Judas Iscariot",
+    "summary": "One of the Twelve who goes to the chief priests to betray Jesus for money and identifies him to the arresting crowd with a kiss at Gethsemane.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 3
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "betrayed"
+      }
+    ]
+  },
+  {
+    "id": "mk-high-priest",
+    "name": "The High Priest",
+    "summary": "The unnamed presiding officer of the Sanhedrin who tears his robes and condemns Jesus for blasphemy after Jesus affirms he is the Christ, the Son of the Blessed.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "condemned"
+      }
+    ]
+  },
+  {
+    "id": "mk-pilate",
+    "name": "Pontius Pilate",
+    "summary": "The Roman governor who questions Jesus, offers to release him in place of Barabbas, and has him flogged and crucified when the crowd demands it.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "sentenced"
+      },
+      {
+        "personId": "mk-barabbas",
+        "relation": "released instead of Jesus"
+      }
+    ]
+  },
+  {
+    "id": "mk-barabbas",
+    "name": "Barabbas",
+    "summary": "A prisoner jailed for murder during an insurrection whom the crowd chooses to have released instead of Jesus.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": [
+      {
+        "personId": "mk-pilate",
+        "relation": "released by"
+      }
+    ]
+  },
+  {
+    "id": "mk-simon-of-cyrene",
+    "name": "Simon of Cyrene",
+    "summary": "A passerby, the father of Alexander and Rufus, whom the soldiers compel to carry Jesus's cross to Golgotha.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-centurion",
+    "name": "The Centurion",
+    "summary": "The Roman officer standing watch at the cross who, seeing how Jesus dies, declares him the Son of God.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-joseph-arimathea",
+    "name": "Joseph of Arimathea",
+    "summary": "A respected member of the council looking for the kingdom of God, who asks Pilate for Jesus's body and lays it in a rock-cut tomb.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "buried"
+      }
+    ]
+  },
+  {
+    "id": "mk-mary-magdalene",
+    "name": "Mary Magdalene",
+    "summary": "A woman out of whom Jesus had cast seven demons, who watches the crucifixion and burial, finds the tomb empty, and is the first to see the risen Jesus.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-young-man-tomb",
+    "name": "The Young Man at the Tomb",
+    "summary": "A young man dressed in a white robe sitting in the empty tomb who tells the women Jesus has risen and is going ahead of them to Galilee.",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 16
+    },
+    "relations": []
+  },
+  {
+    "id": "mk-boy-father",
+    "name": "The Boy's Father",
+    "summary": "A desperate father whose son has been afflicted by a mute spirit since childhood, who cries out to Jesus, \"I believe; help my unbelief!\"",
+    "firstAppearance": {
+      "book": "mark",
+      "chapter": 9
+    },
+    "relations": [
+      {
+        "personId": "mk-jesus",
+        "relation": "asked for healing"
+      }
+    ]
+  }
+]

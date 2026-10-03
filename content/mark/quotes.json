@@ -1,0 +1,240 @@
+[
+  {
+    "id": "mk-q-c1-v17",
+    "book": "mark",
+    "chapter": 1,
+    "verse": 17,
+    "speakerId": "mk-jesus",
+    "text": "Follow me, and I will make you become fishers of men.",
+    "citation": {
+      "book": "mark",
+      "chapter": 1,
+      "verses": "17"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c2-v17",
+    "book": "mark",
+    "chapter": 2,
+    "verse": 17,
+    "speakerId": "mk-jesus",
+    "text": "Those who are well have no need of a physician, but those who are sick. I came not to call the righteous, but sinners.",
+    "citation": {
+      "book": "mark",
+      "chapter": 2,
+      "verses": "17"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c4-v41",
+    "book": "mark",
+    "chapter": 4,
+    "verse": 41,
+    "speakerId": "mk-disciples",
+    "text": "Who then is this, that even the wind and the sea obey him?",
+    "citation": {
+      "book": "mark",
+      "chapter": 4,
+      "verses": "41"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c5-v9",
+    "book": "mark",
+    "chapter": 5,
+    "verse": 9,
+    "speakerId": "mk-legion",
+    "text": "My name is Legion, for we are many.",
+    "citation": {
+      "book": "mark",
+      "chapter": 5,
+      "verses": "9"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c5-v28",
+    "book": "mark",
+    "chapter": 5,
+    "verse": 28,
+    "speakerId": "mk-bleeding-woman",
+    "text": "If I touch even his garments, I will be made well.",
+    "citation": {
+      "book": "mark",
+      "chapter": 5,
+      "verses": "28"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c6-v25",
+    "book": "mark",
+    "chapter": 6,
+    "verse": 25,
+    "speakerId": "mk-herodias-daughter",
+    "text": "I want you to give me at once the head of John the Baptist on a platter.",
+    "citation": {
+      "book": "mark",
+      "chapter": 6,
+      "verses": "25"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c7-v28",
+    "book": "mark",
+    "chapter": 7,
+    "verse": 28,
+    "speakerId": "mk-syrophoenician-woman",
+    "text": "Yes, Lord; yet even the dogs under the table eat the children's crumbs.",
+    "citation": {
+      "book": "mark",
+      "chapter": 7,
+      "verses": "28"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c8-v29",
+    "book": "mark",
+    "chapter": 8,
+    "verse": 29,
+    "speakerId": "mk-peter",
+    "text": "You are the Christ.",
+    "citation": {
+      "book": "mark",
+      "chapter": 8,
+      "verses": "29"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c9-v24",
+    "book": "mark",
+    "chapter": 9,
+    "verse": 24,
+    "speakerId": "mk-boy-father",
+    "text": "I believe; help my unbelief!",
+    "citation": {
+      "book": "mark",
+      "chapter": 9,
+      "verses": "24"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c9-v35",
+    "book": "mark",
+    "chapter": 9,
+    "verse": 35,
+    "speakerId": "mk-jesus",
+    "text": "If anyone would be first, he must be last of all and servant of all.",
+    "citation": {
+      "book": "mark",
+      "chapter": 9,
+      "verses": "35"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c10-v51",
+    "book": "mark",
+    "chapter": 10,
+    "verse": 51,
+    "speakerId": "mk-bartimaeus",
+    "text": "Rabbi, let me recover my sight.",
+    "citation": {
+      "book": "mark",
+      "chapter": 10,
+      "verses": "51"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c11-v9",
+    "book": "mark",
+    "chapter": 11,
+    "verse": 9,
+    "speakerId": "mk-crowd",
+    "text": "Hosanna! Blessed is he who comes in the name of the Lord!",
+    "citation": {
+      "book": "mark",
+      "chapter": 11,
+      "verses": "9"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c12-v17",
+    "book": "mark",
+    "chapter": 12,
+    "verse": 17,
+    "speakerId": "mk-jesus",
+    "text": "Render to Caesar the things that are Caesar's, and to God the things that are God's.",
+    "citation": {
+      "book": "mark",
+      "chapter": 12,
+      "verses": "17"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c14-v36",
+    "book": "mark",
+    "chapter": 14,
+    "verse": 36,
+    "speakerId": "mk-jesus",
+    "text": "Abba, Father, all things are possible for you. Remove this cup from me. Yet not what I will, but what you will.",
+    "citation": {
+      "book": "mark",
+      "chapter": 14,
+      "verses": "36"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c15-v34",
+    "book": "mark",
+    "chapter": 15,
+    "verse": 34,
+    "speakerId": "mk-jesus",
+    "text": "My God, my God, why have you forsaken me?",
+    "citation": {
+      "book": "mark",
+      "chapter": 15,
+      "verses": "34"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c15-v39",
+    "book": "mark",
+    "chapter": 15,
+    "verse": 39,
+    "speakerId": "mk-centurion",
+    "text": "Truly this man was the Son of God!",
+    "citation": {
+      "book": "mark",
+      "chapter": 15,
+      "verses": "39"
+    },
+    "tier": "general"
+  },
+  {
+    "id": "mk-q-c16-v6",
+    "book": "mark",
+    "chapter": 16,
+    "verse": 6,
+    "speakerId": "mk-young-man-tomb",
+    "text": "Do not be alarmed. You seek Jesus of Nazareth, who was crucified. He has risen; he is not here. See the place where they laid him.",
+    "citation": {
+      "book": "mark",
+      "chapter": 16,
+      "verses": "6"
+    },
+    "tier": "general"
+  }
+]

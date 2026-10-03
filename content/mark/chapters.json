@@ -1,0 +1,249 @@
+[
+  {
+    "id": "mk-ch-1",
+    "book": "mark",
+    "number": 1,
+    "title": "John the Baptist and the Baptism of Jesus",
+    "summary": "John the Baptist preaches repentance and baptizes Jesus in the Jordan, where a voice from heaven calls him God's Son; Satan then tempts Jesus in the wilderness before he calls Simon, Andrew, James, and John and begins teaching and healing in Capernaum.",
+    "blurb": "John baptizes Jesus; the first disciples are called",
+    "arcId": "mk-arc-authority-and-opposition",
+    "eventIds": [
+      "mk-e-c1-1",
+      "mk-e-c1-2",
+      "mk-e-c1-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-2",
+    "book": "mark",
+    "number": 2,
+    "title": "A Paralytic Forgiven, Levi Called, and Sabbath Disputes",
+    "summary": "Four men lower a paralyzed man through a roof so Jesus can forgive and heal him; Jesus calls the tax collector Levi and eats with sinners, then defends his disciples' fasting and Sabbath grain-picking against the Pharisees' objections.",
+    "blurb": "The paralytic through the roof; Levi called",
+    "arcId": "mk-arc-authority-and-opposition",
+    "eventIds": [
+      "mk-e-c2-1",
+      "mk-e-c2-2",
+      "mk-e-c2-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-3",
+    "book": "mark",
+    "number": 3,
+    "title": "The Withered Hand, the Twelve, and Jesus's True Family",
+    "summary": "Jesus heals a withered hand on the Sabbath, drawing a plot against his life; he appoints twelve apostles, answers the charge that he casts out demons by Beelzebul, and tells a crowd that whoever does God's will is his true family.",
+    "blurb": "The Twelve appointed; the Beelzebul accusation",
+    "arcId": "mk-arc-authority-and-opposition",
+    "eventIds": [
+      "mk-e-c3-1",
+      "mk-e-c3-2",
+      "mk-e-c3-3"
+    ],
+    "quizWorthy": false
+  },
+  {
+    "id": "mk-ch-4",
+    "book": "mark",
+    "number": 4,
+    "title": "The Parable of the Sower and Calming the Storm",
+    "summary": "Jesus teaches the crowd in parables, including the sower, the growing seed, and the mustard seed, explaining the sower privately to his disciples, then calms a violent storm on the Sea of Galilee with a word, astonishing them.",
+    "blurb": "The sower; Jesus calms the storm",
+    "arcId": "mk-arc-parables-and-power",
+    "eventIds": [
+      "mk-e-c4-1",
+      "mk-e-c4-2",
+      "mk-e-c4-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-5",
+    "book": "mark",
+    "number": 5,
+    "title": "Legion, a Bleeding Woman, and Jairus's Daughter",
+    "summary": "Jesus frees a man possessed by a legion of demons who drown a herd of pigs, heals a woman who touches his garment after twelve years of bleeding, and raises the twelve-year-old daughter of the synagogue ruler Jairus from death.",
+    "blurb": "Legion and the pigs; Jairus's daughter raised",
+    "arcId": "mk-arc-parables-and-power",
+    "eventIds": [
+      "mk-e-c5-1",
+      "mk-e-c5-2",
+      "mk-e-c5-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-6",
+    "book": "mark",
+    "number": 6,
+    "title": "Rejection at Nazareth, John's Death, and Feeding the 5,000",
+    "summary": "Jesus is rejected in his hometown and sends out the Twelve two by two; Herod beheads John the Baptist at a birthday banquet; Jesus then feeds five thousand with five loaves and two fish and walks on the sea to his disciples.",
+    "blurb": "John the Baptist beheaded; feeding the 5,000",
+    "arcId": "mk-arc-parables-and-power",
+    "eventIds": [
+      "mk-e-c6-1",
+      "mk-e-c6-2",
+      "mk-e-c6-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-7",
+    "book": "mark",
+    "number": 7,
+    "title": "Clean and Unclean, the Syrophoenician Woman, and a Deaf Man Healed",
+    "summary": "Jesus declares all foods clean after condemning the Pharisees' Corban tradition, frees the demon-possessed daughter of a persistent Syrophoenician woman, and heals a deaf man with a speech impediment by touching his ears and tongue.",
+    "blurb": "All foods declared clean; the Syrophoenician woman",
+    "arcId": "mk-arc-who-is-jesus",
+    "eventIds": [
+      "mk-e-c7-1",
+      "mk-e-c7-2",
+      "mk-e-c7-3"
+    ],
+    "quizWorthy": false
+  },
+  {
+    "id": "mk-ch-8",
+    "book": "mark",
+    "number": 8,
+    "title": "Feeding the 4,000 and Peter's Confession",
+    "summary": "Jesus feeds four thousand people and warns of the Pharisees' leaven, heals a blind man at Bethsaida in two stages, and is confessed by Peter as the Christ at Caesarea Philippi before predicting his death and calling his followers to take up their cross.",
+    "blurb": "Peter confesses Jesus as the Christ",
+    "arcId": "mk-arc-who-is-jesus",
+    "eventIds": [
+      "mk-e-c8-1",
+      "mk-e-c8-2",
+      "mk-e-c8-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-9",
+    "book": "mark",
+    "number": 9,
+    "title": "The Transfiguration and a Boy Freed from a Spirit",
+    "summary": "Jesus is transfigured before Peter, James, and John as Moses and Elijah appear with him; he then frees a boy from a spirit his disciples could not cast out, predicts his death again, and teaches that true greatness means welcoming a child.",
+    "blurb": "The Transfiguration; the boy with the spirit",
+    "arcId": "mk-arc-road-to-jerusalem",
+    "eventIds": [
+      "mk-e-c9-1",
+      "mk-e-c9-2",
+      "mk-e-c9-3"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-10",
+    "book": "mark",
+    "number": 10,
+    "title": "Divorce, the Rich Man, and Blind Bartimaeus",
+    "summary": "Jesus teaches on divorce, tells a rich man to sell all he has, predicts his death a third time, and answers James and John's request for the seats of honor by calling his followers to serve, then heals the blind beggar Bartimaeus near Jericho.",
+    "blurb": "The rich man's sorrow; Bartimaeus healed",
+    "arcId": "mk-arc-road-to-jerusalem",
+    "eventIds": [
+      "mk-e-c10-1",
+      "mk-e-c10-2",
+      "mk-e-c10-5",
+      "mk-e-c10-3",
+      "mk-e-c10-4"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-11",
+    "book": "mark",
+    "number": 11,
+    "title": "The Triumphal Entry and the Temple Cleansed",
+    "summary": "Jesus rides into Jerusalem on a colt to shouts of Hosanna, curses a fruitless fig tree, and drives the buyers and sellers out of the temple, then refuses to answer the chief priests and elders when they demand to know his authority.",
+    "blurb": "Jesus enters Jerusalem; the temple cleansed",
+    "arcId": "mk-arc-confrontation-in-jerusalem",
+    "eventIds": [
+      "mk-e-c11-1",
+      "mk-e-c11-2",
+      "mk-e-c11-3"
+    ],
+    "quizWorthy": true,
+    "freeResponseAliases": [
+      "Palm Sunday"
+    ]
+  },
+  {
+    "id": "mk-ch-12",
+    "book": "mark",
+    "number": 12,
+    "title": "The Wicked Tenants, Trap Questions, and the Widow's Offering",
+    "summary": "Jesus tells the parable of the wicked tenants, answers questions on taxes, the resurrection, and the greatest commandment, challenges how the Christ can be David's son and Lord, and praises a poor widow's two small coins over the rich donors' large sums.",
+    "blurb": "Render to Caesar; the widow's two coins",
+    "arcId": "mk-arc-confrontation-in-jerusalem",
+    "eventIds": [
+      "mk-e-c12-1",
+      "mk-e-c12-2",
+      "mk-e-c12-3",
+      "mk-e-c12-4"
+    ],
+    "quizWorthy": false
+  },
+  {
+    "id": "mk-ch-13",
+    "book": "mark",
+    "number": 13,
+    "title": "The Olivet Discourse",
+    "summary": "Jesus predicts the temple's destruction and describes wars, persecution, and the abomination of desolation as birth pains before the end, then describes the Son of Man coming in power and tells his disciples to stay awake, since no one knows the day or hour.",
+    "blurb": "The temple's fall foretold; stay awake",
+    "arcId": "mk-arc-confrontation-in-jerusalem",
+    "eventIds": [
+      "mk-e-c13-1",
+      "mk-e-c13-2",
+      "mk-e-c13-3"
+    ],
+    "quizWorthy": false
+  },
+  {
+    "id": "mk-ch-14",
+    "book": "mark",
+    "number": 14,
+    "title": "The Last Supper, Gethsemane, and Jesus's Arrest",
+    "summary": "A woman anoints Jesus at Bethany as Judas plots his betrayal; at the Passover, Jesus institutes the Lord's Supper, prays in anguish at Gethsemane, and is arrested and condemned by the Sanhedrin while Peter denies him three times.",
+    "blurb": "The Last Supper; Peter's denial foretold",
+    "arcId": "mk-arc-death-and-resurrection",
+    "eventIds": [
+      "mk-e-c14-1",
+      "mk-e-c14-2",
+      "mk-e-c14-3",
+      "mk-e-c14-4"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-15",
+    "book": "mark",
+    "number": 15,
+    "title": "The Crucifixion of Jesus",
+    "summary": "Pilate releases Barabbas and hands Jesus over to be crucified; soldiers mock him before leading him to Golgotha, where he is crucified between two robbers, dies as the temple curtain tears, and is buried by Joseph of Arimathea in a rock-cut tomb.",
+    "blurb": "Jesus is crucified and buried",
+    "arcId": "mk-arc-death-and-resurrection",
+    "eventIds": [
+      "mk-e-c15-1",
+      "mk-e-c15-2",
+      "mk-e-c15-3",
+      "mk-e-c15-4"
+    ],
+    "quizWorthy": true
+  },
+  {
+    "id": "mk-ch-16",
+    "book": "mark",
+    "number": 16,
+    "title": "The Resurrection of Jesus",
+    "summary": "Women find Jesus's tomb empty and are told by a young man that he has risen, but flee in fear; the risen Jesus then appears to Mary Magdalene and his disciples, commissioning them before being taken up into heaven.",
+    "blurb": "The empty tomb; the risen Jesus appears",
+    "arcId": "mk-arc-death-and-resurrection",
+    "eventIds": [
+      "mk-e-c16-1",
+      "mk-e-c16-2"
+    ],
+    "quizWorthy": true
+  }
+]
