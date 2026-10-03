@@ -546,6 +546,24 @@
     "tier": "general"
   },
   {
+    "id": "mk-e-c10-5",
+    "book": "mark",
+    "chapter": 10,
+    "name": "Jesus predicts his death a third time",
+    "shortName": "Third passion prediction",
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "On the road to Jerusalem, Jesus tells the Twelve a third time that he will be delivered to the chief priests and scribes, condemned to death, mocked, flogged, and killed, and will rise after three days.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
     "id": "mk-e-c10-3",
     "book": "mark",
     "chapter": 10,
@@ -560,7 +578,7 @@
       "mk-james",
       "mk-john-apostle"
     ],
-    "order": 3,
+    "order": 4,
     "summary": "James and John ask to sit at Jesus's right and left in his glory; Jesus tells the indignant ten that whoever would be great among them must be a servant, since the Son of Man came to serve and give his life as a ransom for many.",
     "notable": true,
     "tier": "general"
@@ -579,7 +597,7 @@
       "mk-jesus",
       "mk-bartimaeus"
     ],
-    "order": 4,
+    "order": 5,
     "summary": "Blind Bartimaeus cries out to Jesus as the Son of David despite the crowd telling him to be quiet, and when Jesus calls him over and restores his sight, Bartimaeus follows him on the way.",
     "notable": true,
     "tier": "general"
@@ -725,7 +743,8 @@
       "mk-jesus",
       "mk-peter",
       "mk-james",
-      "mk-john-apostle"
+      "mk-john-apostle",
+      "mk-andrew"
     ],
     "order": 1,
     "summary": "As they leave the temple, Jesus tells an admiring disciple that not one of its stones will be left on another, prompting Peter, James, John, and Andrew to ask him privately for a sign of when this will happen.",
@@ -907,7 +926,7 @@
     "id": "mk-e-c15-4",
     "book": "mark",
     "chapter": 15,
-    "name": "Joseph of Arimathea buries Jesus in his own tomb",
+    "name": "Joseph of Arimathea buries Jesus in a rock-cut tomb",
     "shortName": "Joseph of Arimathea's tomb",
     "citation": {
       "book": "mark",
@@ -919,7 +938,7 @@
       "mk-mary-magdalene"
     ],
     "order": 4,
-    "summary": "Joseph of Arimathea asks Pilate for Jesus's body, wraps it in a linen shroud, and lays it in his own rock-cut tomb, sealing the entrance with a stone as Mary Magdalene and another Mary watch.",
+    "summary": "Joseph of Arimathea asks Pilate for Jesus's body, wraps it in a linen shroud, and lays it in a tomb cut out of the rock, sealing the entrance with a stone as Mary Magdalene and another Mary watch.",
     "notable": true,
     "tier": "general"
   },

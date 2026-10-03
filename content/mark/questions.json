@@ -112,7 +112,7 @@
       "book": "mark",
       "chapter": 6
     },
-    "explanation": "Jesus takes the five loaves and two fish a boy's lunch provides and feeds a crowd of five thousand men, with twelve baskets of scraps left over.",
+    "explanation": "Jesus takes the five loaves and two fish the disciples have on hand and feeds a crowd of five thousand men, with twelve baskets of scraps left over.",
     "tier": "general"
   },
   {
@@ -121,7 +121,7 @@
     "category": "character",
     "prompt": "In Mark, how does Herod Antipas treat John the Baptist while John is in prison, before his death?",
     "options": [
-      "He keeps him safe, knowing he is righteous, and likes to hear him, though greatly perplexed",
+      "He keeps him safe as a righteous man and likes to hear him, though perplexed",
       "He has him tortured for a confession of treason",
       "He plans to release him quietly before the next feast",
       "He quietly forgets about John in prison and takes no further interest in him at all"
@@ -138,20 +138,20 @@
     "id": "mk-aq-8",
     "book": "mark",
     "category": "character",
-    "prompt": "In Mark, what does Jesus say actually defiles a person?",
+    "prompt": "In Mark, what tradition does Jesus condemn the Pharisees for using to avoid supporting their parents?",
     "options": [
-      "What comes out of a person, from the heart",
-      "Eating without washing one's hands",
-      "Breaking the Sabbath",
-      "Touching something ritually unclean, such as a corpse or a Gentile's house"
+      "Declaring the support they owe their parents \"Corban,\" a gift devoted to God",
+      "Requiring parents to pay a temple tax before receiving help",
+      "Claiming the fifth commandment only applies to young children",
+      "Teaching that parents forfeit honor once their children are grown"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "mark",
       "chapter": 7
     },
-    "explanation": "Jesus teaches that nothing entering a person from outside can defile him, since it bypasses the heart; it is what comes out of the heart that defiles.",
-    "tier": "general"
+    "explanation": "Jesus condemns the Pharisees' Corban rule, which let someone declare their resources off-limits to their parents by dedicating them to God, \"thus making void the word of God by your tradition.\"",
+    "tier": "deep"
   },
   {
     "id": "mk-aq-9",
@@ -176,38 +176,38 @@
     "id": "mk-aq-10",
     "book": "mark",
     "category": "character",
-    "prompt": "In Mark, who appears with Jesus at the Transfiguration?",
+    "prompt": "In Mark, why does Peter suggest building three tents during the Transfiguration?",
     "options": [
-      "Moses and Elijah",
-      "Moses and Abraham",
-      "Elijah and John the Baptist",
-      "Enoch and Elijah"
+      "He doesn't know what to say, since he and the others are terrified",
+      "He wants to start a new sect centered on Moses and Elijah",
+      "He believes they are about to be glorified like Moses and Elijah",
+      "Moses and Elijah ask him to build the tents"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "mark",
       "chapter": 9
     },
-    "explanation": "On the mountain, Moses and Elijah appear and are seen talking with the transfigured Jesus.",
+    "explanation": "Mark notes that Peter's odd suggestion comes because he and the others are terrified and \"did not know what to say.\"",
     "tier": "general"
   },
   {
     "id": "mk-aq-11",
     "book": "mark",
     "category": "character",
-    "prompt": "In Mark, what does Jesus tell the rich man he lacks?",
+    "prompt": "In Mark, what does Jesus do just before telling the rich man to sell his possessions?",
     "options": [
-      "Selling all he has to give to the poor, then following Jesus",
-      "Keeping the Ten Commandments more strictly",
-      "Paying the temple tax in full",
-      "Loving his neighbor as himself, which Jesus later calls the second greatest commandment"
+      "Looks at him and loves him",
+      "Rebukes him for his wealth",
+      "Weeps over his unbelief",
+      "Turns to the crowd to warn them about riches first"
     ],
     "correctIndex": 0,
     "citation": {
       "book": "mark",
       "chapter": 10
     },
-    "explanation": "Jesus, loving him, tells the man he lacks one thing: to sell all he has, give to the poor, and follow him.",
+    "explanation": "Mark alone notes that \"Jesus, looking at him, loved him\" before giving the hard command to sell all he has, give to the poor, and follow him.",
     "tier": "general"
   },
   {
@@ -271,19 +271,19 @@
     "id": "mk-aq-15",
     "book": "mark",
     "category": "theme",
-    "prompt": "In Mark's Olivet Discourse, who does Jesus say knows the day or hour of his coming, when not even the angels or the Son do?",
-    "format": "short-answer",
-    "answer": "the Father",
-    "aliases": [
-      "only the Father",
-      "God the Father",
-      "the Father alone"
+    "prompt": "In Mark's Olivet Discourse, what does Jesus compare the need to stay watchful for his return to?",
+    "options": [
+      "A master who leaves servants in charge and tells the doorkeeper to stay alert",
+      "A thief who could break in at any hour of the night",
+      "A bridegroom whose arrival is delayed until midnight",
+      "A farmer who sows seed and waits for the harvest without knowing the day"
     ],
+    "correctIndex": 0,
     "citation": {
       "book": "mark",
       "chapter": 13
     },
-    "explanation": "Jesus says that concerning that day or hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.",
+    "explanation": "Jesus closes the discourse with a brief parable: like a master who leaves servants in charge and tells the doorkeeper to stay alert, since no one knows when the master will return.",
     "tier": "general"
   },
   {
