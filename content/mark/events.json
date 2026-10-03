@@ -1,0 +1,965 @@
+[
+  {
+    "id": "mk-e-c1-1",
+    "book": "mark",
+    "chapter": 1,
+    "name": "John the Baptist prepares the way and baptizes Jesus",
+    "shortName": "John baptizes Jesus",
+    "citation": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "mk-john-baptist",
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "John the Baptist preaches repentance in the wilderness and baptizes Jesus in the Jordan, where the Spirit descends like a dove and a voice from heaven declares Jesus God's beloved Son.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c1-2",
+    "book": "mark",
+    "chapter": 1,
+    "name": "Satan tempts Jesus in the wilderness and Jesus calls his first four disciples",
+    "shortName": "Temptation and first disciples called",
+    "citation": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter",
+      "mk-andrew",
+      "mk-james",
+      "mk-john-apostle"
+    ],
+    "order": 2,
+    "summary": "Driven into the wilderness by the Spirit, Jesus is tempted by Satan for forty days among wild animals; back in Galilee he calls Simon, Andrew, James, and John away from their nets to follow him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c1-3",
+    "book": "mark",
+    "chapter": 1,
+    "name": "Jesus teaches with authority, casts out a demon, and heals many, including a leper",
+    "shortName": "Authority, healing, and a cleansed leper",
+    "citation": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "In Capernaum, Jesus teaches with an authority unlike the scribes, casts an unclean spirit out of a man in the synagogue, heals Simon's mother-in-law and a crowd of the sick, and cleanses a leper who publicizes it despite being told to stay silent.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c2-1",
+    "book": "mark",
+    "chapter": 2,
+    "name": "Jesus forgives and heals a paralytic lowered through a roof",
+    "shortName": "The paralytic through the roof",
+    "citation": {
+      "book": "mark",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "When four men dig through a roof to lower a paralyzed man to Jesus, Jesus first forgives his sins, then heals him to prove the Son of Man's authority to forgive, over the scribes' silent objection.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c2-2",
+    "book": "mark",
+    "chapter": 2,
+    "name": "Jesus calls Levi and eats with tax collectors and sinners",
+    "shortName": "Calling Levi",
+    "citation": {
+      "book": "mark",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-levi"
+    ],
+    "order": 2,
+    "summary": "Jesus calls the tax collector Levi to follow him, then reclines at a meal with tax collectors and sinners, telling the scandalized Pharisees that he came to call sinners, not the righteous.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c2-3",
+    "book": "mark",
+    "chapter": 2,
+    "name": "Jesus defends his disciples on fasting and the Sabbath",
+    "shortName": "Fasting and Sabbath sayings",
+    "citation": {
+      "book": "mark",
+      "chapter": 2
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "Jesus answers questions about why his disciples don't fast with the image of a wedding's bridegroom, then defends them for picking grain on the Sabbath by declaring the Sabbath made for man and himself lord of the Sabbath.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c3-1",
+    "book": "mark",
+    "chapter": 3,
+    "name": "Jesus heals a man's withered hand on the Sabbath",
+    "shortName": "The withered hand",
+    "citation": {
+      "book": "mark",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Watched by Pharisees looking for a reason to accuse him, Jesus heals a man's withered hand in the synagogue on the Sabbath, prompting the Pharisees to plot with the Herodians to destroy him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c3-2",
+    "book": "mark",
+    "chapter": 3,
+    "name": "Jesus appoints the Twelve apostles",
+    "shortName": "Appointing the Twelve",
+    "citation": {
+      "book": "mark",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter",
+      "mk-james",
+      "mk-john-apostle",
+      "mk-judas"
+    ],
+    "order": 2,
+    "summary": "Jesus goes up a mountain and appoints twelve apostles to be with him and to preach and cast out demons, naming Simon Peter and giving James and John the name Boanerges, Sons of Thunder.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c3-3",
+    "book": "mark",
+    "chapter": 3,
+    "name": "Jesus answers the Beelzebul accusation and redefines his family",
+    "shortName": "Beelzebul and true family",
+    "citation": {
+      "book": "mark",
+      "chapter": 3
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "When scribes accuse Jesus of casting out demons by Beelzebul, he answers that a divided kingdom cannot stand and warns that blasphemy against the Holy Spirit is unforgivable, then tells a crowd that whoever does God's will is his brother and sister and mother.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c4-1",
+    "book": "mark",
+    "chapter": 4,
+    "name": "Jesus tells and explains the parable of the sower",
+    "shortName": "The parable of the sower",
+    "citation": {
+      "book": "mark",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Teaching a large crowd from a boat, Jesus tells the parable of the sower, then privately explains to the disciples that the seed is the word and the soils represent different responses to it.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c4-2",
+    "book": "mark",
+    "chapter": 4,
+    "name": "Jesus teaches the parables of the growing seed and the mustard seed",
+    "shortName": "Growing seed and mustard seed",
+    "citation": {
+      "book": "mark",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus compares the kingdom of God to seed that grows on its own once scattered and to a mustard seed that starts smaller than any other seed but grows into the largest of garden plants.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c4-3",
+    "book": "mark",
+    "chapter": 4,
+    "name": "Jesus calms a storm on the Sea of Galilee",
+    "shortName": "Calming the storm",
+    "citation": {
+      "book": "mark",
+      "chapter": 4
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-disciples"
+    ],
+    "order": 3,
+    "summary": "Asleep in the stern during a violent windstorm, Jesus wakes to rebuke the wind and sea with a word, and the terrified disciples ask one another who he can be that even the wind and sea obey him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c5-1",
+    "book": "mark",
+    "chapter": 5,
+    "name": "Jesus casts a legion of demons out of a man into a herd of pigs",
+    "shortName": "Legion and the pigs",
+    "citation": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-legion"
+    ],
+    "order": 1,
+    "summary": "Among the tombs of the Gerasenes, Jesus casts out a man's unclean spirits, who call themselves Legion, into a herd of about two thousand pigs that rush down a bank into the sea and drown.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c5-2",
+    "book": "mark",
+    "chapter": 5,
+    "name": "A woman with a twelve-year hemorrhage is healed by touching Jesus's garment",
+    "shortName": "The woman with the flow of blood",
+    "citation": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-bleeding-woman"
+    ],
+    "order": 2,
+    "summary": "A woman who has suffered a flow of blood for twelve years and spent all she had on physicians touches Jesus's garment in a crowd and is instantly healed, and Jesus tells her that her faith has made her well.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c5-3",
+    "book": "mark",
+    "chapter": 5,
+    "name": "Jesus raises Jairus's daughter from death",
+    "shortName": "Jairus's daughter raised",
+    "citation": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-jairus"
+    ],
+    "order": 3,
+    "summary": "After Jairus's twelve-year-old daughter is reported dead, Jesus takes only Peter, James, and John inside, tells the mourners she is only sleeping, and raises her by the hand, then tells them to keep it quiet and feed her.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c6-1",
+    "book": "mark",
+    "chapter": 6,
+    "name": "Jesus is rejected at Nazareth and sends out the Twelve",
+    "shortName": "Rejected at Nazareth; the Twelve sent out",
+    "citation": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus is dismissed by his own hometown as just the local carpenter and can do few miracles there because of their unbelief, so he sends the Twelve out two by two with authority over unclean spirits.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c6-2",
+    "book": "mark",
+    "chapter": 6,
+    "name": "Herod Antipas beheads John the Baptist at a birthday banquet",
+    "shortName": "John the Baptist beheaded",
+    "citation": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "mk-herod-antipas",
+      "mk-herodias",
+      "mk-herodias-daughter",
+      "mk-john-baptist"
+    ],
+    "order": 2,
+    "summary": "Though Herod feared John as a righteous man and liked to hear him, he has him beheaded in prison after Herodias's daughter, prompted by her mother, asks for his head on a platter following a rash birthday oath.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c6-3",
+    "book": "mark",
+    "chapter": 6,
+    "name": "Jesus feeds five thousand and walks on the sea",
+    "shortName": "Feeding the 5,000 and walking on water",
+    "citation": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-disciples"
+    ],
+    "order": 3,
+    "summary": "Jesus feeds five thousand men with five loaves and two fish with twelve baskets left over, then walks on the sea toward his disciples' storm-tossed boat late at night, calming their terror and the wind.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c7-1",
+    "book": "mark",
+    "chapter": 7,
+    "name": "Jesus declares all foods clean and condemns the Corban loophole",
+    "shortName": "All foods declared clean",
+    "citation": {
+      "book": "mark",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Challenged over his disciples' unwashed hands, Jesus condemns the Pharisees' Corban tradition for voiding God's command to honor one's parents and declares all foods clean, since defilement comes from the heart, not food.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c7-2",
+    "book": "mark",
+    "chapter": 7,
+    "name": "Jesus frees a Gentile woman's daughter from a demon",
+    "shortName": "The Syrophoenician woman",
+    "citation": {
+      "book": "mark",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-syrophoenician-woman"
+    ],
+    "order": 2,
+    "summary": "A Syrophoenician woman persists even after Jesus says it is not right to take the children's bread and give it to the dogs, and for her answer he casts the demon out of her daughter from a distance.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c7-3",
+    "book": "mark",
+    "chapter": 7,
+    "name": "Jesus heals a deaf man with a speech impediment",
+    "shortName": "Healing the deaf-mute",
+    "citation": {
+      "book": "mark",
+      "chapter": 7
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "Jesus takes a deaf man with a speech impediment aside, touches his ears and tongue, and says 'Ephphatha'; the man's hearing and speech are restored, and the crowd cannot stop talking about it despite his order to silence.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c8-1",
+    "book": "mark",
+    "chapter": 8,
+    "name": "Jesus feeds four thousand and warns of the leaven of the Pharisees",
+    "shortName": "Feeding the 4,000; the leaven warning",
+    "citation": {
+      "book": "mark",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus feeds four thousand people with seven loaves and a few small fish, refuses the Pharisees' demand for a sign from heaven, and warns his disciples in the boat to beware the leaven of the Pharisees and of Herod.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c8-2",
+    "book": "mark",
+    "chapter": 8,
+    "name": "Jesus heals a blind man at Bethsaida in two stages",
+    "shortName": "The two-stage healing at Bethsaida",
+    "citation": {
+      "book": "mark",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus leads a blind man out of the village of Bethsaida and heals him in two stages, the man first seeing people who look like trees walking before his sight is fully and clearly restored.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c8-3",
+    "book": "mark",
+    "chapter": 8,
+    "name": "Peter confesses Jesus as the Christ and Jesus predicts his death",
+    "shortName": "Peter's confession; first passion prediction",
+    "citation": {
+      "book": "mark",
+      "chapter": 8
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter"
+    ],
+    "order": 3,
+    "summary": "At Caesarea Philippi, Peter confesses Jesus as the Christ; Jesus then predicts for the first time that he must suffer, be rejected, and die before rising, and rebukes Peter for opposing it, telling the crowd that whoever follows him must take up his cross.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c9-1",
+    "book": "mark",
+    "chapter": 9,
+    "name": "Jesus is transfigured before Peter, James, and John",
+    "shortName": "The Transfiguration",
+    "citation": {
+      "book": "mark",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter",
+      "mk-james",
+      "mk-john-apostle"
+    ],
+    "order": 1,
+    "summary": "On a mountain, Jesus is transfigured before three disciples, his clothes becoming dazzling white as Moses and Elijah appear talking with him, and a voice from a cloud again calls him God's beloved Son.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c9-2",
+    "book": "mark",
+    "chapter": 9,
+    "name": "Jesus casts an unclean spirit out of a boy the disciples could not help",
+    "shortName": "The boy with the unclean spirit",
+    "citation": {
+      "book": "mark",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-boy-father"
+    ],
+    "order": 2,
+    "summary": "After his disciples fail to cast out a spirit that throws a boy into fire and water, Jesus tells the boy's desperate father that all things are possible for one who believes, then commands the spirit out for good.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c9-3",
+    "book": "mark",
+    "chapter": 9,
+    "name": "Jesus predicts his death again and teaches on true greatness",
+    "shortName": "Second passion prediction; who is greatest",
+    "citation": {
+      "book": "mark",
+      "chapter": 9
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "Jesus predicts a second time that he will be killed and rise after three days, then settles the disciples' private argument over who is greatest by placing a child among them and saying whoever receives such a child receives him.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c10-1",
+    "book": "mark",
+    "chapter": 10,
+    "name": "Jesus teaches on divorce and blesses the children",
+    "shortName": "Divorce and blessing the children",
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Tested by Pharisees over divorce, Jesus points back to God's creation of marriage as one flesh, then rebukes his disciples for turning away children brought to him and blesses them, saying the kingdom belongs to such as these.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c10-2",
+    "book": "mark",
+    "chapter": 10,
+    "name": "A rich man goes away sorrowful rather than sell his possessions",
+    "shortName": "The rich man's sorrow",
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "A man who has kept the commandments from his youth goes away sorrowful when Jesus tells him to sell all he has and follow him, leading Jesus to tell his astonished disciples it is easier for a camel to pass through a needle's eye than for the rich to enter God's kingdom.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c10-3",
+    "book": "mark",
+    "chapter": 10,
+    "name": "James and John ask for the seats of honor and Jesus teaches on servanthood",
+    "shortName": "James and John's request",
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-james",
+      "mk-john-apostle"
+    ],
+    "order": 3,
+    "summary": "James and John ask to sit at Jesus's right and left in his glory; Jesus tells the indignant ten that whoever would be great among them must be a servant, since the Son of Man came to serve and give his life as a ransom for many.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c10-4",
+    "book": "mark",
+    "chapter": 10,
+    "name": "Jesus heals the blind beggar Bartimaeus outside Jericho",
+    "shortName": "Blind Bartimaeus healed",
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-bartimaeus"
+    ],
+    "order": 4,
+    "summary": "Blind Bartimaeus cries out to Jesus as the Son of David despite the crowd telling him to be quiet, and when Jesus calls him over and restores his sight, Bartimaeus follows him on the way.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c11-1",
+    "book": "mark",
+    "chapter": 11,
+    "name": "Jesus rides into Jerusalem to shouts of Hosanna",
+    "shortName": "The triumphal entry",
+    "citation": {
+      "book": "mark",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-crowd"
+    ],
+    "order": 1,
+    "summary": "Jesus sends two disciples ahead for a colt no one has ridden, then rides it into Jerusalem as a crowd spreads cloaks and branches on the road and shouts Hosanna, blessing the coming kingdom of David.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c11-2",
+    "book": "mark",
+    "chapter": 11,
+    "name": "Jesus curses a fig tree and drives sellers out of the temple",
+    "shortName": "Cursing the fig tree; cleansing the temple",
+    "citation": {
+      "book": "mark",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "Finding no fruit on a fig tree out of season, Jesus curses it, then drives out the buyers and sellers in the temple and overturns the money-changers' tables, calling it a den of robbers meant to be a house of prayer for all nations.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c11-3",
+    "book": "mark",
+    "chapter": 11,
+    "name": "The withered fig tree prompts teaching on faith, and leaders question Jesus's authority",
+    "shortName": "The withered fig tree; the authority question",
+    "citation": {
+      "book": "mark",
+      "chapter": 11
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "The disciples find the cursed fig tree withered to its roots, and Jesus teaches on faith and forgiveness in prayer; when the chief priests and elders demand to know his authority, he refuses to answer after they dodge his question about John's baptism.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c12-1",
+    "book": "mark",
+    "chapter": 12,
+    "name": "Jesus tells the parable of the wicked tenants",
+    "shortName": "The parable of the tenants",
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 1,
+    "summary": "Jesus tells the parable of tenants who beat and kill the servants sent by a vineyard owner and finally kill his beloved son, a story the religious leaders recognize is told against them.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c12-2",
+    "book": "mark",
+    "chapter": 12,
+    "name": "Jesus answers questions about taxes and the resurrection",
+    "shortName": "Taxes to Caesar; the resurrection question",
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus answers a trap about paying taxes to Caesar by telling his questioners to render to Caesar what is Caesar's and to God what is God's, then silences the Sadducees' question about marriage in the resurrection by appealing to the God of the living.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c12-3",
+    "book": "mark",
+    "chapter": 12,
+    "name": "Jesus names the greatest commandment and questions the scribes about the Christ",
+    "shortName": "The greatest commandment",
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "Asked for the most important commandment, Jesus names loving God with all one's heart and loving one's neighbor as oneself, then asks the crowd how the scribes can call the Christ David's son when David himself calls him Lord.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c12-4",
+    "book": "mark",
+    "chapter": 12,
+    "name": "Jesus warns against the scribes and praises a poor widow's offering",
+    "shortName": "The widow's two coins",
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 4,
+    "summary": "Jesus warns the crowd against scribes who seek status while devouring widows' houses, then tells his disciples that a poor widow who gives two small copper coins has given more than all the rich donors, since she gave out of her poverty.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c13-1",
+    "book": "mark",
+    "chapter": 13,
+    "name": "Jesus predicts the temple's destruction",
+    "shortName": "Predicting the temple's fall",
+    "citation": {
+      "book": "mark",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter",
+      "mk-james",
+      "mk-john-apostle"
+    ],
+    "order": 1,
+    "summary": "As they leave the temple, Jesus tells an admiring disciple that not one of its stones will be left on another, prompting Peter, James, John, and Andrew to ask him privately for a sign of when this will happen.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c13-2",
+    "book": "mark",
+    "chapter": 13,
+    "name": "Jesus describes coming wars, persecution, and the abomination of desolation",
+    "shortName": "Wars, persecution, and the abomination of desolation",
+    "citation": {
+      "book": "mark",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "Jesus warns of false christs, wars, earthquakes, and famines as only the beginning of birth pains, tells the disciples they will be handed over and hated for his name, and says that when they see the abomination of desolation, those in Judea must flee to the mountains.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c13-3",
+    "book": "mark",
+    "chapter": 13,
+    "name": "Jesus describes the Son of Man's coming and calls for watchfulness",
+    "shortName": "The Son of Man's coming; stay awake",
+    "citation": {
+      "book": "mark",
+      "chapter": 13
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 3,
+    "summary": "Jesus says that after the tribulation the Son of Man will come in the clouds with great power to gather his elect, that not even the angels or the Son know the day or hour, and that the disciples must stay awake like servants watching for a returning master.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c14-1",
+    "book": "mark",
+    "chapter": 14,
+    "name": "A woman anoints Jesus at Bethany and Judas agrees to betray him",
+    "shortName": "The anointing at Bethany; Judas's betrayal",
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-judas"
+    ],
+    "order": 1,
+    "summary": "A woman breaks a flask of costly perfume over Jesus's head at Bethany, which he defends as anointing his body for burial despite the complaint it could have been sold for the poor; Judas Iscariot then goes to the chief priests to betray him for money.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c14-2",
+    "book": "mark",
+    "chapter": 14,
+    "name": "Jesus shares the Passover and institutes the Lord's Supper",
+    "shortName": "The Last Supper",
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "mk-jesus"
+    ],
+    "order": 2,
+    "summary": "At the Passover meal, Jesus tells the Twelve that one of them will betray him, then takes bread and a cup, calling them his body and his blood of the covenant poured out for many.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c14-3",
+    "book": "mark",
+    "chapter": 14,
+    "name": "Jesus prays in anguish at Gethsemane and is arrested",
+    "shortName": "Gethsemane and the arrest",
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-peter",
+      "mk-judas"
+    ],
+    "order": 3,
+    "summary": "Jesus predicts Peter will deny him three times, then prays in Gethsemane for the cup to pass while his disciples repeatedly fall asleep, before Judas arrives with an armed crowd and identifies him with a kiss, and everyone flees as he is seized.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c14-4",
+    "book": "mark",
+    "chapter": 14,
+    "name": "Jesus is condemned by the Sanhedrin while Peter denies him",
+    "shortName": "Condemned by the Sanhedrin; Peter's denial",
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-high-priest",
+      "mk-peter"
+    ],
+    "order": 4,
+    "summary": "The Sanhedrin condemns Jesus for blasphemy after the high priest asks if he is the Christ and Jesus affirms it, while in the courtyard below Peter denies knowing Jesus three times before the rooster crows twice and he breaks down weeping.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c15-1",
+    "book": "mark",
+    "chapter": 15,
+    "name": "Pilate has Jesus flogged and releases Barabbas instead",
+    "shortName": "Pilate releases Barabbas",
+    "citation": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-pilate",
+      "mk-barabbas"
+    ],
+    "order": 1,
+    "summary": "Pilate questions Jesus and offers to release him as a Passover custom, but the chief priests stir up the crowd to demand Barabbas instead, so Pilate has Jesus flogged and handed over to be crucified.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c15-2",
+    "book": "mark",
+    "chapter": 15,
+    "name": "Roman soldiers mock Jesus before leading him to Golgotha",
+    "shortName": "Mocked and led to Golgotha",
+    "citation": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-simon-of-cyrene"
+    ],
+    "order": 2,
+    "summary": "Soldiers dress Jesus in a purple cloak and crown of thorns, mock him as king, strike and spit on him, then lead him out to be crucified, compelling Simon of Cyrene to carry his cross.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c15-3",
+    "book": "mark",
+    "chapter": 15,
+    "name": "Jesus is crucified and dies at Golgotha",
+    "shortName": "The crucifixion",
+    "citation": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-centurion"
+    ],
+    "order": 3,
+    "summary": "Jesus is crucified between two robbers under the charge 'The King of the Jews,' is mocked by passersby and the chief priests, cries out in abandonment, and dies as the temple curtain tears in two and a centurion calls him the Son of God.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c15-4",
+    "book": "mark",
+    "chapter": 15,
+    "name": "Joseph of Arimathea buries Jesus in his own tomb",
+    "shortName": "Joseph of Arimathea's tomb",
+    "citation": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-joseph-arimathea",
+      "mk-mary-magdalene"
+    ],
+    "order": 4,
+    "summary": "Joseph of Arimathea asks Pilate for Jesus's body, wraps it in a linen shroud, and lays it in his own rock-cut tomb, sealing the entrance with a stone as Mary Magdalene and another Mary watch.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c16-1",
+    "book": "mark",
+    "chapter": 16,
+    "name": "Women find the tomb empty and are told Jesus has risen",
+    "shortName": "The empty tomb",
+    "citation": {
+      "book": "mark",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "mk-mary-magdalene",
+      "mk-young-man-tomb"
+    ],
+    "order": 1,
+    "summary": "Women bringing spices to anoint Jesus find the tomb's stone already rolled away and a young man in white tells them Jesus has risen and gone ahead to Galilee, but they flee in fear and tell no one.",
+    "notable": true,
+    "tier": "general"
+  },
+  {
+    "id": "mk-e-c16-2",
+    "book": "mark",
+    "chapter": 16,
+    "name": "The risen Jesus appears to his disciples and is taken up to heaven",
+    "shortName": "Resurrection appearances; the ascension",
+    "citation": {
+      "book": "mark",
+      "chapter": 16
+    },
+    "peopleIds": [
+      "mk-jesus",
+      "mk-mary-magdalene",
+      "mk-peter"
+    ],
+    "order": 2,
+    "summary": "The risen Jesus appears first to Mary Magdalene, then to two disciples on the road, then to the Eleven, commissioning them to proclaim the gospel to all creation before he is taken up into heaven to sit at God's right hand.",
+    "notable": true,
+    "tier": "general"
+  }
+]

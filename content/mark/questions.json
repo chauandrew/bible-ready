@@ -1,0 +1,366 @@
+[
+  {
+    "id": "mk-aq-1",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what happens immediately after Jesus comes up out of the water at his baptism?",
+    "options": [
+      "The heavens open, the Spirit descends like a dove, and a voice calls him God's beloved Son",
+      "A cloud overshadows him and a voice calls him God's Son as Moses and Elijah appear",
+      "The crowd shouts Hosanna and spreads cloaks on the road before him",
+      "Two men in dazzling clothes suddenly stand beside the frightened women and ask why they are seeking the living among the dead"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 1
+    },
+    "explanation": "As Jesus comes up from the Jordan, he sees the heavens torn open and the Spirit descending like a dove, and a voice from heaven declares him God's beloved Son.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-2",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what do four men do to get a paralyzed man to Jesus through a crowded house?",
+    "format": "short-answer",
+    "answer": "remove the roof",
+    "aliases": [
+      "dig through the roof",
+      "break through the roof",
+      "tear open the roof",
+      "the roof"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 2
+    },
+    "explanation": "Unable to reach Jesus through the crowd, the four men dig through the roof above him and lower the paralyzed man down on his bed.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-3",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus say makes someone his true brother, sister, and mother?",
+    "options": [
+      "Whoever does the will of God",
+      "Whoever is baptized by John",
+      "Whoever leaves everything to follow him",
+      "Whoever confesses him as the Christ"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 3
+    },
+    "explanation": "When told his mother and brothers are outside seeking him, Jesus looks at those sitting around him and says whoever does the will of God is his brother and sister and mother.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-4",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus do that amazes his disciples during a storm on the Sea of Galilee?",
+    "format": "short-answer",
+    "answer": "calms the storm",
+    "aliases": [
+      "stills the storm",
+      "rebukes the wind",
+      "calms the sea",
+      "calms the wind and the waves"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 4
+    },
+    "explanation": "Woken in the stern, Jesus rebukes the wind and says to the sea, 'Peace! Be still!' and the wind ceases, leaving the disciples in awe.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-5",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what name does the demon-possessed man from the tombs give Jesus?",
+    "options": [
+      "Legion, for we are many",
+      "Beelzebul, prince of demons",
+      "The Holy One of God",
+      "Son of David"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 5
+    },
+    "explanation": "Asked his name, the man replies, 'My name is Legion, for we are many,' since he is possessed by a great number of unclean spirits.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-6",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, how many loaves and fish does Jesus use to feed the five thousand?",
+    "options": [
+      "Five loaves and two fish",
+      "Seven loaves and a few small fish",
+      "Twelve loaves and five fish",
+      "Two loaves and five fish"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "explanation": "Jesus takes the five loaves and two fish a boy's lunch provides and feeds a crowd of five thousand men, with twelve baskets of scraps left over.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-7",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, how does Herod Antipas treat John the Baptist while John is in prison, before his death?",
+    "options": [
+      "He keeps him safe, knowing he is righteous, and likes to hear him, though greatly perplexed",
+      "He has him tortured for a confession of treason",
+      "He plans to release him quietly before the next feast",
+      "He quietly forgets about John in prison and takes no further interest in him at all"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 6
+    },
+    "explanation": "Though Herodias wants John dead, Herod fears him as a righteous and holy man, keeps him safe, and likes to hear him even though he leaves him perplexed.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-8",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus say actually defiles a person?",
+    "options": [
+      "What comes out of a person, from the heart",
+      "Eating without washing one's hands",
+      "Breaking the Sabbath",
+      "Touching something ritually unclean, such as a corpse or a Gentile's house"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 7
+    },
+    "explanation": "Jesus teaches that nothing entering a person from outside can defile him, since it bypasses the heart; it is what comes out of the heart that defiles.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-9",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus warn the disciples to beware of after feeding the four thousand?",
+    "format": "short-answer",
+    "answer": "the leaven of the Pharisees",
+    "aliases": [
+      "leaven of the Pharisees and Herod",
+      "yeast of the Pharisees",
+      "the leaven of the Pharisees and of Herod"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 8
+    },
+    "explanation": "In the boat, Jesus cautions the disciples, 'Watch out; beware of the leaven of the Pharisees and the leaven of Herod.'",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-10",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, who appears with Jesus at the Transfiguration?",
+    "options": [
+      "Moses and Elijah",
+      "Moses and Abraham",
+      "Elijah and John the Baptist",
+      "Enoch and Elijah"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 9
+    },
+    "explanation": "On the mountain, Moses and Elijah appear and are seen talking with the transfigured Jesus.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-11",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus tell the rich man he lacks?",
+    "options": [
+      "Selling all he has to give to the poor, then following Jesus",
+      "Keeping the Ten Commandments more strictly",
+      "Paying the temple tax in full",
+      "Forgiving his enemies seventy times seven, as he later teaches the disciples"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 10
+    },
+    "explanation": "Jesus, loving him, tells the man he lacks one thing: to sell all he has, give to the poor, and follow him.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-12",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus do to a fig tree that has no fruit on his way into Jerusalem?",
+    "format": "short-answer",
+    "answer": "curses it",
+    "aliases": [
+      "curses the fig tree",
+      "says no one will eat from it again",
+      "pronounces a curse on it"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 11
+    },
+    "explanation": "Finding only leaves and no fruit, Jesus says, 'May no one ever eat fruit from you again,' and the disciples later find it withered to its roots.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-13",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus tell the scribe who agrees that loving God and neighbor matters more than any burnt offering or sacrifice?",
+    "options": [
+      "You are not far from the kingdom of God",
+      "You have found eternal life, so go and sell all you have",
+      "Your faith has made you well; go in peace",
+      "Blessed are you, for flesh and blood has not revealed this to you"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "explanation": "Jesus tells the scribe who affirms that love of God and neighbor outweighs sacrifice that he is not far from the kingdom of God, and after this no one dares question him further.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-14",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus say about the poor widow's offering of two small coins?",
+    "options": [
+      "She has put in more than all the others, giving out of her poverty",
+      "Her gift is too small to matter next to the large sums the rich are contributing",
+      "She should have given to the poor instead of the temple",
+      "The scribes will use her gift to devour more widows' houses"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 12
+    },
+    "explanation": "Jesus tells his disciples the widow has put in more than all the rich donors, since they gave out of their abundance but she gave out of her poverty, all she had to live on.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-15",
+    "book": "mark",
+    "category": "theme",
+    "prompt": "In Mark's Olivet Discourse, who does Jesus say knows the day or hour of his coming, when not even the angels or the Son do?",
+    "format": "short-answer",
+    "answer": "the Father",
+    "aliases": [
+      "only the Father",
+      "God the Father",
+      "the Father alone"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 13
+    },
+    "explanation": "Jesus says that concerning that day or hour, no one knows, not even the angels in heaven, nor the Son, but only the Father.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-16",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does Jesus say the woman who anoints him with costly perfume at Bethany has done?",
+    "options": [
+      "Anointed his body beforehand for burial",
+      "Wasted precious oil that should have gone to the poor",
+      "Fulfilled a vow she made at his birth",
+      "Prepared him for his coronation as king"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "explanation": "When some object that the ointment could have been sold and given to the poor, Jesus says she has anointed his body beforehand for burial.",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-17",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does the young man following Jesus at his arrest leave behind as he flees naked?",
+    "format": "short-answer",
+    "answer": "his linen cloth",
+    "aliases": [
+      "his linen garment",
+      "the linen cloth",
+      "a linen cloth",
+      "linen cloth"
+    ],
+    "citation": {
+      "book": "mark",
+      "chapter": 14
+    },
+    "explanation": "A young man following Jesus with nothing but a linen cloth about his body is seized, but he leaves the cloth behind and runs away naked.",
+    "tier": "deep"
+  },
+  {
+    "id": "mk-aq-18",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does the centurion say after watching Jesus die?",
+    "options": [
+      "Truly this man was the Son of God!",
+      "Truly this man was innocent!",
+      "Truly this man was a great prophet!",
+      "Truly this man was King of the Jews!"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 15
+    },
+    "explanation": "Seeing how Jesus breathed his last, the centurion facing him says, 'Truly this man was the Son of God!'",
+    "tier": "general"
+  },
+  {
+    "id": "mk-aq-19",
+    "book": "mark",
+    "category": "character",
+    "prompt": "In Mark, what does the young man in the tomb tell the women to do?",
+    "options": [
+      "Go tell his disciples and Peter that he is going before them to Galilee",
+      "Stay and guard the tomb until he returns",
+      "Tell no one what they have seen until he himself appears to them back in Jerusalem",
+      "Return home, for he has already ascended to heaven"
+    ],
+    "correctIndex": 0,
+    "citation": {
+      "book": "mark",
+      "chapter": 16
+    },
+    "explanation": "The young man tells the women to go and tell the disciples and Peter that Jesus is going ahead of them to Galilee, where they will see him.",
+    "tier": "general"
+  }
+]

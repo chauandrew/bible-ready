@@ -1,0 +1,14 @@
+{
+  "id": "mark",
+  "name": "Mark",
+  "chapterCount": 16,
+  "coverageDepth": "narrative",
+  "arcOrder": [
+    "mk-arc-authority-and-opposition",
+    "mk-arc-parables-and-power",
+    "mk-arc-who-is-jesus",
+    "mk-arc-road-to-jerusalem",
+    "mk-arc-confrontation-in-jerusalem",
+    "mk-arc-death-and-resurrection"
+  ]
+}

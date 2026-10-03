@@ -19,6 +19,7 @@ export const available = [
   { href: "/ezra", name: "Ezra", desc: "Exiles return from Babylon, rebuild the temple, and confront a crisis of unfaithfulness, 10 chapters.", featured: true },
   { href: "/psalms", name: "Psalms", desc: "19 of the most well-known psalms, grouped by theme.", featured: false },
   { href: "/matthew", name: "Matthew", desc: "From Jesus's birth to the Great Commission, 28 chapters with a ministry map, quizzes, and flashcards.", featured: true },
+  { href: "/mark", name: "Mark", desc: "Jesus's authority and identity unfold at a breathless pace from Galilee to the cross and the empty tomb, 16 chapters.", featured: true },
   { href: "/john", name: "John", desc: "The Word made flesh through the empty tomb, 21 chapters with quizzes and flashcards.", featured: false },
   { href: "/galatians", name: "Galatians", desc: "Paul defends justification by faith and confronts Peter, 6 chapters.", featured: true },
   { href: "/misc", name: "Miscellaneous", desc: "The twelve disciples, the twelve tribes of Israel, and putting the Old and New Testament books in order.", featured: false },
