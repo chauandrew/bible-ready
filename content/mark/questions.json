@@ -81,7 +81,7 @@
     "id": "mk-aq-5",
     "book": "mark",
     "category": "character",
-    "prompt": "In Mark, what name does the demon-possessed man from the tombs give Jesus?",
+    "prompt": "In Mark, what name does the demon-possessed man living among the tombs give himself?",
     "options": [
       "Legion, for we are many",
       "Beelzebul, prince of demons",
@@ -200,7 +200,7 @@
       "Selling all he has to give to the poor, then following Jesus",
       "Keeping the Ten Commandments more strictly",
       "Paying the temple tax in full",
-      "Forgiving his enemies seventy times seven, as he later teaches the disciples"
+      "Loving his neighbor as himself, which Jesus later calls the second greatest commandment"
     ],
     "correctIndex": 0,
     "citation": {
